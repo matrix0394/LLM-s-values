@@ -1,0 +1,9 @@
+{
+  "model_name": "anthropic/claude-3.7-sonnet",
+  "simplified_model_name": "claude-3.7-sonnet",
+  "country_name": "Brazil",
+  "timestamp": "20250922_112506",
+  "total_questions": 10,
+  "valid_responses": 10,
+  "completion_time": "2025-09-22T11:25:06.185985"
+}

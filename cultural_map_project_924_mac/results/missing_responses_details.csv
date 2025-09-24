@@ -1,0 +1,124 @@
+﻿model,country,question,question_text,status
+anthropic-claude-3.7-sonnet,Japan,F118,How justifiable do you think homosexuality is? Ple...,无回答或回答为空
+anthropic-claude-3.7-sonnet,Sweden,F118,How justifiable do you think homosexuality is? Ple...,无回答或回答为空
+anthropic-claude-3.7-sonnet,United States,A008,"Taking all things together, rate how happy you wou...",文件不存在
+anthropic-claude-3.7-sonnet,United States,A165,"Generally speaking, would you say that most people...",文件不存在
+anthropic-claude-3.7-sonnet,United States,E018,If greater respect for authority takes place in th...,文件不存在
+anthropic-claude-3.7-sonnet,United States,E025,Please tell me whether you have signed a petition ...,文件不存在
+anthropic-claude-3.7-sonnet,United States,F063,How important is God in your life? Please indicate...,文件不存在
+anthropic-claude-3.7-sonnet,United States,F118,How justifiable do you think homosexuality is? Ple...,文件不存在
+anthropic-claude-3.7-sonnet,United States,F120,How justifiable do you think abortion is? Please i...,文件不存在
+anthropic-claude-3.7-sonnet,United States,G006,HHow proud are you to be your nationality? Please ...,文件不存在
+anthropic-claude-3.7-sonnet,United States,Y002,People sometimes talk about what the aims of this ...,文件不存在
+anthropic-claude-3.7-sonnet,United States,Y003, In the following list of qualities that children ...,文件不存在
+deepseek-reasoner,Brazil,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,China,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Egypt,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,France,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Germany,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Greece,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,India,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Italy,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Japan,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Mexico,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Nigeria,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Russian_Federation,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Sweden,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,Turkey,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,United States,A008,"Taking all things together, rate how happy you wou...",文件不存在
+deepseek-reasoner,United States,A165,"Generally speaking, would you say that most people...",文件不存在
+deepseek-reasoner,United States,E018,If greater respect for authority takes place in th...,文件不存在
+deepseek-reasoner,United States,E025,Please tell me whether you have signed a petition ...,文件不存在
+deepseek-reasoner,United States,F063,How important is God in your life? Please indicate...,文件不存在
+deepseek-reasoner,United States,F118,How justifiable do you think homosexuality is? Ple...,文件不存在
+deepseek-reasoner,United States,F120,How justifiable do you think abortion is? Please i...,文件不存在
+deepseek-reasoner,United States,G006,HHow proud are you to be your nationality? Please ...,文件不存在
+deepseek-reasoner,United States,Y002,People sometimes talk about what the aims of this ...,文件不存在
+deepseek-reasoner,United States,Y003, In the following list of qualities that children ...,文件不存在
+deepseek-reasoner,United_Kingdom,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+deepseek-reasoner,United_States,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+google-gemini-2.0-flash-001,United States,A008,"Taking all things together, rate how happy you wou...",文件不存在
+google-gemini-2.0-flash-001,United States,A165,"Generally speaking, would you say that most people...",文件不存在
+google-gemini-2.0-flash-001,United States,E018,If greater respect for authority takes place in th...,文件不存在
+google-gemini-2.0-flash-001,United States,E025,Please tell me whether you have signed a petition ...,文件不存在
+google-gemini-2.0-flash-001,United States,F063,How important is God in your life? Please indicate...,文件不存在
+google-gemini-2.0-flash-001,United States,F118,How justifiable do you think homosexuality is? Ple...,文件不存在
+google-gemini-2.0-flash-001,United States,F120,How justifiable do you think abortion is? Please i...,文件不存在
+google-gemini-2.0-flash-001,United States,G006,HHow proud are you to be your nationality? Please ...,文件不存在
+google-gemini-2.0-flash-001,United States,Y002,People sometimes talk about what the aims of this ...,文件不存在
+google-gemini-2.0-flash-001,United States,Y003, In the following list of qualities that children ...,文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,A008,"Taking all things together, rate how happy you wou...",文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,A165,"Generally speaking, would you say that most people...",文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,E018,If greater respect for authority takes place in th...,文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,E025,Please tell me whether you have signed a petition ...,文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,F063,How important is God in your life? Please indicate...,文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,F118,How justifiable do you think homosexuality is? Ple...,文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,F120,How justifiable do you think abortion is? Please i...,文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,G006,HHow proud are you to be your nationality? Please ...,文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,Y002,People sometimes talk about what the aims of this ...,文件不存在
+meta-llama-llama-3.3-70b-instruct,United States,Y003, In the following list of qualities that children ...,文件不存在
+mistralai-mistral-nemo-free,Brazil,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,Brazil,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,Brazil,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,China,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,China,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,China,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,France,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,France,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,France,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,Germany,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,Germany,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,Germany,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,Greece,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,Greece,G006,HHow proud are you to be your nationality? Please ...,无回答或回答为空
+mistralai-mistral-nemo-free,Greece,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,Greece,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,India,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,India,A165,"Generally speaking, would you say that most people...",无回答或回答为空
+mistralai-mistral-nemo-free,Italy,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,Italy,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,Italy,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,Japan,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,Japan,G006,HHow proud are you to be your nationality? Please ...,无回答或回答为空
+mistralai-mistral-nemo-free,Japan,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,Japan,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,Mexico,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,Mexico,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,Mexico,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,Russian_Federation,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,Russian_Federation,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,Russian_Federation,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,Sweden,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,Sweden,G006,HHow proud are you to be your nationality? Please ...,无回答或回答为空
+mistralai-mistral-nemo-free,Sweden,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,Sweden,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,Turkey,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,United States,A008,"Taking all things together, rate how happy you wou...",文件不存在
+mistralai-mistral-nemo-free,United States,A165,"Generally speaking, would you say that most people...",文件不存在
+mistralai-mistral-nemo-free,United States,E018,If greater respect for authority takes place in th...,文件不存在
+mistralai-mistral-nemo-free,United States,E025,Please tell me whether you have signed a petition ...,文件不存在
+mistralai-mistral-nemo-free,United States,F063,How important is God in your life? Please indicate...,文件不存在
+mistralai-mistral-nemo-free,United States,F118,How justifiable do you think homosexuality is? Ple...,文件不存在
+mistralai-mistral-nemo-free,United States,F120,How justifiable do you think abortion is? Please i...,文件不存在
+mistralai-mistral-nemo-free,United States,G006,HHow proud are you to be your nationality? Please ...,文件不存在
+mistralai-mistral-nemo-free,United States,Y002,People sometimes talk about what the aims of this ...,文件不存在
+mistralai-mistral-nemo-free,United States,Y003, In the following list of qualities that children ...,文件不存在
+mistralai-mistral-nemo-free,United_Kingdom,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,United_Kingdom,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,United_Kingdom,Y003, In the following list of qualities that children ...,无回答或回答为空
+mistralai-mistral-nemo-free,United_States,A008,"Taking all things together, rate how happy you wou...",无回答或回答为空
+mistralai-mistral-nemo-free,United_States,G006,HHow proud are you to be your nationality? Please ...,无回答或回答为空
+mistralai-mistral-nemo-free,United_States,Y002,People sometimes talk about what the aims of this ...,无回答或回答为空
+mistralai-mistral-nemo-free,United_States,Y003, In the following list of qualities that children ...,无回答或回答为空
+qwq-32b-preview,Brazil,Y003, In the following list of qualities that children ...,无回答或回答为空
+qwq-32b-preview,Japan,Y003, In the following list of qualities that children ...,无回答或回答为空
+qwq-32b-preview,United States,A008,"Taking all things together, rate how happy you wou...",文件不存在
+qwq-32b-preview,United States,A165,"Generally speaking, would you say that most people...",文件不存在
+qwq-32b-preview,United States,E018,If greater respect for authority takes place in th...,文件不存在
+qwq-32b-preview,United States,E025,Please tell me whether you have signed a petition ...,文件不存在
+qwq-32b-preview,United States,F063,How important is God in your life? Please indicate...,文件不存在
+qwq-32b-preview,United States,F118,How justifiable do you think homosexuality is? Ple...,文件不存在
+qwq-32b-preview,United States,F120,How justifiable do you think abortion is? Please i...,文件不存在
+qwq-32b-preview,United States,G006,HHow proud are you to be your nationality? Please ...,文件不存在
+qwq-32b-preview,United States,Y002,People sometimes talk about what the aims of this ...,文件不存在
+qwq-32b-preview,United States,Y003, In the following list of qualities that children ...,文件不存在

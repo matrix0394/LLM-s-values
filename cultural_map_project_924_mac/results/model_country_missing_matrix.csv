@@ -1,0 +1,9 @@
+﻿,Brazil,China,Egypt,France,Germany,Greece,India,Italy,Japan,Mexico,Nigeria,Russian_Federation,Sweden,Turkey,United States,United_Kingdom,United_States,总计
+anthropic-claude-3.7-sonnet,0,0,0,0,0,0,0,0,1,0,0,0,1,0,10,0,0,12
+deepseek-reasoner,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,1,1,26
+google-gemini-2.0-flash-001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,10
+meta-llama-llama-3.3-70b-instruct,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,10
+mistralai-mistral-nemo-free,3,3,0,3,3,4,2,3,4,3,0,3,4,1,10,3,4,53
+openai-gpt-4o-mini,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwq-32b-preview,1,0,0,0,0,0,0,0,1,0,0,0,0,0,10,0,0,12
+总计,5,4,1,4,4,5,3,4,7,4,1,4,6,2,60,4,5,123
