@@ -1,6 +1,6 @@
 """
-大模型访谈模块 - 重构版
-对大模型进行文化价值观问卷访谈，同时保存pkl和json格式结果
+大模型访谈模块 - 改进版
+解决大模型返回默认值而不是真实回答的问题
 """
 
 import os
@@ -14,24 +14,35 @@ import pandas as pd
 
 
 class LLMInterview:
-    """大模型访谈类 - 简化版"""
+    """大模型访谈类 - 改进版"""
     
-    def __init__(self,repeat_count:int=1):
+    def __init__(self, repeat_count: int = 1):
         self.questionnaire = LLMQuestionnaire()
         self.model_configs = self._load_model_configs()
         self.api_keys = self._load_api_keys()
-        self.repeat_count = repeat_count  # 添加重复次数参数
-        # 角色提示词
-        self.system_prompt = """You are participating in a cultural values survey. Please respond to each question by selecting the appropriate number(s) based on the question format.
+        self.repeat_count = repeat_count
+        
+        # 改进的系统提示词 - 更强制，更明确
+        self.system_prompt = """CRITICAL: You are a survey response system. Your ONLY task is to output numbers.
 
-IMPORTANT INSTRUCTIONS:
-- For single-choice questions: Respond with ONLY one number (e.g., "1", "2", "3", "4")
-- For Y002 (two choices): Respond with exactly TWO numbers separated by space (e.g., "1 3" or "2 4")
-- For Y003 (multiple choices): Respond with 1-5 numbers separated by spaces (e.g., "1 3 5" or "2 4 6 8 10")
-- Do not use commas, explanations, or additional text
-- Do not refuse to answer
-- Choose options that best represent typical responses
-- Your response must contain only the required number(s) separated by spaces"""
+STRICT OUTPUT FORMAT:
+1. Single choice: ONE number only (e.g. "2")
+2. Two choices (Y002): TWO numbers with ONE space (e.g. "1 3")
+3. Multiple choice (Y003): 1-5 numbers with spaces (e.g. "2 4 6")
+
+ABSOLUTE RULES:
+- Output ONLY numbers and necessary spaces
+- NO text, NO commas, NO explanations
+- NO refusals, NO questions
+- NO mentions of being AI
+- NEVER explain your choice
+
+EXAMPLE RESPONSES:
+Question: "Rate from 1-4" → "2"
+Question: "Choose two options" → "1 3"
+Question: "Select up to 5" → "2 4 6 8"
+
+REMEMBER: Numbers ONLY. Any other output = FAILURE."""
     
     def _load_model_configs(self) -> Dict[str, Dict[str, str]]:
         """从配置文件加载模型配置"""
@@ -84,36 +95,149 @@ IMPORTANT INSTRUCTIONS:
             base_url=config.get("base_url", "https://api.openai.com/v1")
         )
     
-    def call_model_api(self, model_name: str, question_id: str, question_text: str) -> Optional[str]:
-        """调用模型API"""
+    def call_model_api_improved(self, model_name: str, question_id: str, question_text: str) -> Optional[str]:
+        """改进的模型API调用方法"""
         try:
             client = self.get_client(model_name)
             
-            # 为特殊问题添加格式提示
-            format_hint = ""
+            # 为所有问题添加强制格式提示
+            format_hint = "\n\nOUTPUT FORMAT: "
             if question_id == "Y002":
-                format_hint = "\n\nPlease respond with exactly TWO numbers separated by a space (e.g., '1 3')."
+                format_hint += "TWO NUMBERS WITH ONE SPACE. Example: 1 3"
+                if "qwq" in model_name.lower():
+                    format_hint += "\nYOU MUST OUTPUT EXACTLY TWO NUMBERS LIKE THIS: 1 3"
+                    format_hint += "\nDO NOT SAY ANYTHING ELSE. JUST TWO NUMBERS."
             elif question_id == "Y003":
-                format_hint = "\n\nPlease respond with 1-5 numbers separated by spaces (e.g., '1 3 5 7 9')."
+                format_hint += "1-5 NUMBERS WITH SPACES. Example: 2 4 6"
+            else:
+                format_hint += "ONE NUMBER ONLY. Example: 2"
+            format_hint += "\nNO TEXT. NO EXPLANATIONS. NUMBERS ONLY."
             
+            # qwq的通用特殊处理
+            if "qwq" in model_name.lower():
+                format_hint += "\n\nRESPOND WITH NUMBERS ONLY. NO EXPLANATIONS. NO 'ALRIGHT' OR 'I NEED TO'. JUST NUMBERS."
+            
+            # 构建消息
             messages = [
                 {"role": "system", "content": self.system_prompt},
                 {"role": "user", "content": question_text + format_hint}
             ]
             
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=messages,
-                max_tokens=50,
-                temperature=0,
-                timeout=30
-            )
-            
-            content = response.choices[0].message.content
-            return content.strip() if content else "1"
+            # 增强的重试机制
+            max_retries = 5  # 增加重试次数
+            for attempt in range(max_retries + 1):
+                try:
+                    # 统一的参数设置
+                    max_tokens = 50
+                    temperature = 0.0  # 保持确定性输出
+                    
+                    # 在重试时加强提示
+                    if attempt > 0:
+                        retry_hint = f"\n\nATTENTION: This is attempt {attempt + 1}. You MUST provide a numerical answer only. No explanations, no refusals."
+                        messages[1]["content"] = question_text + format_hint + retry_hint
+                    
+                    # 对deepseek模型使用更大的max_tokens
+                    if "deepseek" in model_name.lower():
+                        max_tokens = 500  # 显著增加token限制
+                        
+                    response = client.chat.completions.create(
+                        model=model_name,
+                        messages=messages,
+                        max_tokens=max_tokens,
+                        temperature=temperature,
+                        timeout=60  # 增加超时时间
+                    )
+                    
+                    # 处理deepseek的特殊响应格式
+                    if "deepseek" in model_name.lower():
+                        # 尝试从reasoning_content中提取数字
+                        message = response.choices[0].message
+                        content = message.content or ""
+                        if hasattr(message, 'reasoning_content') and message.reasoning_content:
+                            # 如果content为空但有reasoning_content，尝试从reasoning中提取数字
+                            if not content.strip():
+                                import re
+                                # 提取所有数字序列
+                                numbers = re.findall(r'\b\d+(?:\s+\d+)*\b', message.reasoning_content)
+                                if numbers:
+                                    # 使用最后出现的数字序列作为答案
+                                    content = numbers[-1]
+                    else:
+                        content = response.choices[0].message.content
+                        
+                    if content:
+                        content = content.strip()
+                        
+                        # 检测拒绝回答的模式
+                        refusal_patterns = [
+                            "i am an ai", "i'm an ai", "as an ai", "language model",
+                            "cannot answer", "can't answer", "unable to answer",
+                            "refuse to", "i cannot", "i can't", "i will not",
+                            "不能回答", "无法回答", "拒绝回答"
+                        ]
+                        
+                        # 检查是否包含拒绝回答
+                        if any(pattern in content.lower() for pattern in refusal_patterns):
+                            if attempt < max_retries:
+                                print(f"    检测到拒绝回答，重试 {attempt + 1}/{max_retries}")
+                                time.sleep(1)  # 添加延迟
+                                continue
+                            else:
+                                print(f"    模型拒绝回答，返回None")
+                                return None
+                        
+                        # 对qwq模型进行特殊处理
+                        if "qwq" in model_name.lower():
+                            problematic_phrases = ["alright", "i need to", "i will", "i'll", "let me", "okay"]
+                            if any(phrase in content.lower() for phrase in problematic_phrases):
+                                if attempt < max_retries:
+                                    print(f"    检测到问题回答，重试 {attempt + 1}/{max_retries}")
+                                    time.sleep(1)
+                                    continue
+                                else:
+                                    print(f"    模型回答有问题，返回None")
+                                    return None
+                        
+                        # 检查回答是否为空或只有空格
+                        if not content or content.isspace():
+                            if attempt < max_retries:
+                                print(f"    回答为空，重试 {attempt + 1}/{max_retries}")
+                                time.sleep(1)
+                                continue
+                            else:
+                                print(f"    回答为空，返回None")
+                                return None
+                        
+                        print(f"    获得有效回答: '{content}'")
+                        return content
+                    else:
+                        if attempt < max_retries:
+                            print(f"    响应为空，重试 {attempt + 1}/{max_retries}")
+                            time.sleep(1)
+                            continue
+                        else:
+                            print(f"    响应为空，返回None")
+                            return None
+                            
+                except Exception as e:
+                    import traceback
+                    error_trace = traceback.format_exc()
+                    if attempt == max_retries:
+                        print(f"\n最终API调用失败:")
+                        print(f"错误类型: {type(e).__name__}")
+                        print(f"错误信息: {str(e)}")
+                        print(f"详细堆栈:\n{error_trace}")
+                        return None
+                    else:
+                        print(f"\nAPI调用失败，尝试重试 {attempt + 1}/{max_retries}:")
+                        print(f"错误类型: {type(e).__name__}")
+                        print(f"错误信息: {str(e)}")
+                        print(f"详细堆栈:\n{error_trace}")
+                        time.sleep(2)  # 增加重试间隔
+                        continue
                 
         except Exception as e:
-            print(f"    API调用失败: {e}")
+            print(f"    客户端创建失败: {e}")
             return None
     
     def ask_question(self, model_name: str, question_id: str) -> LLMResponse:
@@ -129,8 +253,8 @@ IMPORTANT INSTRUCTIONS:
                 error_message=f"未知问题ID: {question_id}"
             )
         
-        # 调用API
-        raw_response = self.call_model_api(model_name, question_id, question_text)
+        # 使用改进的API调用
+        raw_response = self.call_model_api_improved(model_name, question_id, question_text)
         
         if raw_response is None:
             return LLMResponse(
@@ -139,7 +263,7 @@ IMPORTANT INSTRUCTIONS:
                 response=None,
                 raw_response=None,
                 is_valid=False,
-                error_message="API调用失败"
+                error_message="API调用失败或模型拒绝回答"
             )
         
         # 验证回答
@@ -163,6 +287,8 @@ IMPORTANT INSTRUCTIONS:
         # 过滤掉None和空字符串
         valid_responses = [r for r in responses if r and r.strip()]
         
+        if not valid_responses:
+            return None  # 改为返回None而不是默认值
         
         # 计算众数
         counter = Counter(valid_responses)
@@ -194,7 +320,7 @@ IMPORTANT INSTRUCTIONS:
             if self.repeat_count > 1:
                 print(f"    尝试 {attempt + 1}/{self.repeat_count}")
             
-            raw_response = self.call_model_api(model_name, question_id, question_text)
+            raw_response = self.call_model_api_improved(model_name, question_id, question_text)
             
             if raw_response is None:
                 raw_responses.append(None)
@@ -212,7 +338,7 @@ IMPORTANT INSTRUCTIONS:
             
             # 添加延迟避免API限制
             if attempt < self.repeat_count - 1:
-                time.sleep(0.3)
+                time.sleep(0.5)  # 增加延迟
         
         # 如果没有任何有效回答，返回失败
         if not valid_responses:
@@ -227,6 +353,16 @@ IMPORTANT INSTRUCTIONS:
         
         # 计算众数
         mode_response = self.get_mode_response(valid_responses)
+        
+        if mode_response is None:
+            return LLMResponse(
+                model_name=model_name,
+                question_id=question_id,
+                response=None,
+                raw_response=str(raw_responses),
+                is_valid=False,
+                error_message="无法计算有效众数"
+            )
         
         # 验证众数回答
         from llm_questionnaire import ResponseValidator
@@ -263,7 +399,7 @@ IMPORTANT INSTRUCTIONS:
         for i, question_id in enumerate(question_ids, 1):
             print(f"  问题 {i}/{len(question_ids)}: {question_id}")
             
-            # 使用新的多次提问方法
+            # 使用改进的多次提问方法
             response = self.ask_question_multiple_times(model_name, question_id)
             
             if response.raw_response is None:
@@ -278,7 +414,7 @@ IMPORTANT INSTRUCTIONS:
             results.append(response)
             
             # 添加延迟避免API限制
-            time.sleep(0.5)
+            time.sleep(1)  # 增加延迟
         
         return results
     
@@ -390,10 +526,10 @@ IMPORTANT INSTRUCTIONS:
 
 def main():
     """主函数"""
-    print("开始大模型文化价值观访谈...")
+    print("开始大模型文化价值观访谈（改进版）...")
     
-    # 创建访谈对象，设置重复次数
-    interview = LLMInterview(repeat_count=1)  # 每个问题重复5次
+    # 创建访谈对象
+    interview = LLMInterview(repeat_count=5)
     
     # 显示可用模型
     available_models = [name for name in interview.model_configs.keys() if name in interview.api_keys]
@@ -403,8 +539,10 @@ def main():
         print("没有可用的模型，请检查API密钥配置")
         return
     
+    # # 进行批量访谈
+    # results = interview.batch_interview(available_models[-2:-1])
     # 进行批量访谈
-    results = interview.batch_interview(available_models[-3:-1])
+    results = interview.batch_interview(available_models)
     
     # 保存结果
     if results:
@@ -412,7 +550,6 @@ def main():
         print("\n访谈完成！")
     else:
         print("没有获得有效结果")
-
 
 
 if __name__ == "__main__":

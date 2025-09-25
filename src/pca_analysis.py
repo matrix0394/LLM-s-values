@@ -63,7 +63,7 @@ class PCAAnalyzer:
         self.valid_data = ppca_df.dropna(subset=['PC1_rescaled', 'PC2_rescaled'])
         
         # Save the dataframe (模仿参考项目)
-        self.valid_data.to_pickle("../data/valid_data.pkl")
+        self.valid_data.to_pickle(os.path.join(self.data_path, "valid_data.pkl"))
         
         print(f"PCA analysis completed. {len(self.valid_data)} valid observations.")
         return self.valid_data

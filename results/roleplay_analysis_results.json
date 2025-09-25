@@ -1,0 +1,1065 @@
+{
+  "summary": {
+    "total_responses": 320,
+    "responses_ones": 88,
+    "ones_rate": 27.500000000000004
+  },
+  "question_difficulty": [
+    {
+      "question_id": "E018",
+      "total": 32,
+      "ones": 24,
+      "invalid": 24,
+      "ones_rate": 75.0,
+      "invalid_rate": 75.0
+    },
+    {
+      "question_id": "G006",
+      "total": 32,
+      "ones": 24,
+      "invalid": 24,
+      "ones_rate": 75.0,
+      "invalid_rate": 75.0
+    },
+    {
+      "question_id": "A165",
+      "total": 32,
+      "ones": 8,
+      "invalid": 8,
+      "ones_rate": 25.0,
+      "invalid_rate": 25.0
+    },
+    {
+      "question_id": "E025",
+      "total": 32,
+      "ones": 7,
+      "invalid": 7,
+      "ones_rate": 21.875,
+      "invalid_rate": 21.875
+    },
+    {
+      "question_id": "A008",
+      "total": 32,
+      "ones": 6,
+      "invalid": 6,
+      "ones_rate": 18.75,
+      "invalid_rate": 18.75
+    },
+    {
+      "question_id": "F118",
+      "total": 32,
+      "ones": 5,
+      "invalid": 5,
+      "ones_rate": 15.625,
+      "invalid_rate": 15.625
+    },
+    {
+      "question_id": "F120",
+      "total": 32,
+      "ones": 5,
+      "invalid": 5,
+      "ones_rate": 15.625,
+      "invalid_rate": 15.625
+    },
+    {
+      "question_id": "Y003",
+      "total": 32,
+      "ones": 4,
+      "invalid": 5,
+      "ones_rate": 12.5,
+      "invalid_rate": 15.625
+    },
+    {
+      "question_id": "F063",
+      "total": 32,
+      "ones": 3,
+      "invalid": 4,
+      "ones_rate": 9.375,
+      "invalid_rate": 12.5
+    },
+    {
+      "question_id": "Y002",
+      "total": 32,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 6.25,
+      "invalid_rate": 6.25
+    }
+  ],
+  "country_difficulty": [
+    {
+      "country": "qwq-Nigeria",
+      "total": 10,
+      "ones": 9,
+      "invalid": 9,
+      "ones_rate": 90.0,
+      "invalid_rate": 90.0
+    },
+    {
+      "country": "qwq-Egypt",
+      "total": 10,
+      "ones": 6,
+      "invalid": 6,
+      "ones_rate": 60.0,
+      "invalid_rate": 60.0
+    },
+    {
+      "country": "qwq-China",
+      "total": 10,
+      "ones": 5,
+      "invalid": 5,
+      "ones_rate": 50.0,
+      "invalid_rate": 50.0
+    },
+    {
+      "country": "qwq-Brazil",
+      "total": 10,
+      "ones": 4,
+      "invalid": 4,
+      "ones_rate": 40.0,
+      "invalid_rate": 40.0
+    },
+    {
+      "country": "qwq-Sweden",
+      "total": 10,
+      "ones": 4,
+      "invalid": 4,
+      "ones_rate": 40.0,
+      "invalid_rate": 40.0
+    },
+    {
+      "country": "qwq-India",
+      "total": 10,
+      "ones": 4,
+      "invalid": 4,
+      "ones_rate": 40.0,
+      "invalid_rate": 40.0
+    },
+    {
+      "country": "qwq-United_States",
+      "total": 10,
+      "ones": 4,
+      "invalid": 4,
+      "ones_rate": 40.0,
+      "invalid_rate": 40.0
+    },
+    {
+      "country": "deepseek-chat-v3-Sweden",
+      "total": 10,
+      "ones": 3,
+      "invalid": 3,
+      "ones_rate": 30.0,
+      "invalid_rate": 30.0
+    },
+    {
+      "country": "deepseek-chat-v3-Nigeria",
+      "total": 10,
+      "ones": 3,
+      "invalid": 4,
+      "ones_rate": 30.0,
+      "invalid_rate": 40.0
+    },
+    {
+      "country": "deepseek-chat-v3-Egypt",
+      "total": 10,
+      "ones": 3,
+      "invalid": 3,
+      "ones_rate": 30.0,
+      "invalid_rate": 30.0
+    },
+    {
+      "country": "qwq-Greece",
+      "total": 10,
+      "ones": 3,
+      "invalid": 3,
+      "ones_rate": 30.0,
+      "invalid_rate": 30.0
+    },
+    {
+      "country": "qwq-Russian_Federation",
+      "total": 10,
+      "ones": 3,
+      "invalid": 3,
+      "ones_rate": 30.0,
+      "invalid_rate": 30.0
+    },
+    {
+      "country": "qwq-Mexico",
+      "total": 10,
+      "ones": 3,
+      "invalid": 3,
+      "ones_rate": 30.0,
+      "invalid_rate": 30.0
+    },
+    {
+      "country": "deepseek-chat-v3-Germany",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-Turkey",
+      "total": 10,
+      "ones": 2,
+      "invalid": 3,
+      "ones_rate": 20.0,
+      "invalid_rate": 30.0
+    },
+    {
+      "country": "deepseek-chat-v3-Brazil",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-China",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-Greece",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-Russian_Federation",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-United_States",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-Mexico",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-India",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-Italy",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-Japan",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "deepseek-chat-v3-France",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "qwq-Turkey",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "qwq-Germany",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "qwq-Italy",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "qwq-Japan",
+      "total": 10,
+      "ones": 2,
+      "invalid": 2,
+      "ones_rate": 20.0,
+      "invalid_rate": 20.0
+    },
+    {
+      "country": "qwq-United_Kingdom",
+      "total": 10,
+      "ones": 1,
+      "invalid": 1,
+      "ones_rate": 10.0,
+      "invalid_rate": 10.0
+    },
+    {
+      "country": "qwq-France",
+      "total": 10,
+      "ones": 1,
+      "invalid": 1,
+      "ones_rate": 10.0,
+      "invalid_rate": 10.0
+    },
+    {
+      "country": "deepseek-chat-v3-United_Kingdom",
+      "total": 10,
+      "ones": 0,
+      "invalid": 0,
+      "ones_rate": 0.0,
+      "invalid_rate": 0.0
+    }
+  ],
+  "model_stats": {
+    "roleplay_intermediate_deepseek_deepseek_chat_v3_0324": {
+      "total": 160,
+      "ones": 33,
+      "invalid": 35
+    },
+    "roleplay_intermediate_qwen_qwq_32b": {
+      "total": 160,
+      "ones": 55,
+      "invalid": 55
+    }
+  },
+  "response_ones_details": [
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Germany",
+      "question_id": "A165",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Germany",
+      "question_id": "E025",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Turkey",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Turkey",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Brazil",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Brazil",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-China",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-China",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Greece",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Greece",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Sweden",
+      "question_id": "A008",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Sweden",
+      "question_id": "A165",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Sweden",
+      "question_id": "E025",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Russian_Federation",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Russian_Federation",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-United_States",
+      "question_id": "E025",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-United_States",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Mexico",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Mexico",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-India",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-India",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Italy",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Italy",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Nigeria",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Nigeria",
+      "question_id": "F118",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Nigeria",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Japan",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Japan",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Egypt",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Egypt",
+      "question_id": "F118",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-Egypt",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-France",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_deepseek_deepseek_chat_v3_0324",
+      "country": "deepseek-chat-v3-France",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Turkey",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Turkey",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Greece",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Greece",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Greece",
+      "question_id": "Y002",
+      "raw_response": "1",
+      "is_valid": false,
+      "error_message": "Must provide exactly two different numbers (1-4), got: [1]"
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Brazil",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Brazil",
+      "question_id": "E025",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Brazil",
+      "question_id": "F120",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Brazil",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-China",
+      "question_id": "A008",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-China",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-China",
+      "question_id": "E025",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-China",
+      "question_id": "F120",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-China",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Sweden",
+      "question_id": "A008",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Sweden",
+      "question_id": "A165",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Sweden",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Sweden",
+      "question_id": "E025",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Germany",
+      "question_id": "A165",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Germany",
+      "question_id": "F063",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-United_Kingdom",
+      "question_id": "A165",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-India",
+      "question_id": "A008",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-India",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-India",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-India",
+      "question_id": "Y003",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Italy",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Italy",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "A008",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "A165",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "F063",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "F118",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "F120",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "Y002",
+      "raw_response": "1",
+      "is_valid": false,
+      "error_message": "Must provide exactly two different numbers (1-4), got: [1]"
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Nigeria",
+      "question_id": "Y003",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-United_States",
+      "question_id": "F118",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-United_States",
+      "question_id": "F120",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-United_States",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-United_States",
+      "question_id": "Y003",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Japan",
+      "question_id": "A165",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Japan",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-France",
+      "question_id": "E025",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Egypt",
+      "question_id": "A165",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Egypt",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Egypt",
+      "question_id": "F063",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Egypt",
+      "question_id": "F118",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Egypt",
+      "question_id": "F120",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Egypt",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Russian_Federation",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Russian_Federation",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Russian_Federation",
+      "question_id": "Y003",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Mexico",
+      "question_id": "A008",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Mexico",
+      "question_id": "E018",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "model": "roleplay_intermediate_qwen_qwq_32b",
+      "country": "qwq-Mexico",
+      "question_id": "G006",
+      "raw_response": "1",
+      "is_valid": true,
+      "error_message": null
+    }
+  ]
+}

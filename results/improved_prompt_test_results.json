@@ -1,0 +1,126 @@
+{
+  "openai/gpt-4o-mini": {
+    "United States": {
+      "E018": {
+        "raw_response": "3",
+        "parsed_response": 3,
+        "is_valid": true,
+        "error_message": null
+      },
+      "G006": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "A008": {
+        "raw_response": "2",
+        "parsed_response": 2,
+        "is_valid": true,
+        "error_message": null
+      }
+    },
+    "China": {
+      "E018": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "G006": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "A008": {
+        "raw_response": "2",
+        "parsed_response": 2,
+        "is_valid": true,
+        "error_message": null
+      }
+    },
+    "Nigeria": {
+      "E018": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "G006": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "A008": {
+        "raw_response": "2",
+        "parsed_response": 2,
+        "is_valid": true,
+        "error_message": null
+      }
+    }
+  },
+  "google/gemini-2.0-flash-001": {
+    "United States": {
+      "E018": {
+        "raw_response": "2",
+        "parsed_response": 2,
+        "is_valid": true,
+        "error_message": null
+      },
+      "G006": {
+        "raw_response": "2",
+        "parsed_response": 2,
+        "is_valid": true,
+        "error_message": null
+      },
+      "A008": {
+        "raw_response": "2",
+        "parsed_response": 2,
+        "is_valid": true,
+        "error_message": null
+      }
+    },
+    "China": {
+      "E018": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "G006": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "A008": {
+        "raw_response": "2",
+        "parsed_response": 2,
+        "is_valid": true,
+        "error_message": null
+      }
+    },
+    "Nigeria": {
+      "E018": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "G006": {
+        "raw_response": null,
+        "parsed_response": null,
+        "is_valid": false,
+        "error_message": "API调用失败"
+      },
+      "A008": {
+        "raw_response": "2",
+        "parsed_response": 2,
+        "is_valid": true,
+        "error_message": null
+      }
+    }
+  }
+}

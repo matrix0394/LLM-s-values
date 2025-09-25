@@ -1,0 +1,1525 @@
+=== 完整并发Roleplay访谈系统 ===
+支持功能:
+  - 所有7个模型
+  - 109个国家完整覆盖
+  - 断点续传
+  - 随时停止 (Ctrl+C)
+  - 自动跳过已完成任务
+
+警告: 未找到国家数据文件 ../data/country_codes.pkl
+可用模型: ['openai/gpt-4o-mini', 'google/gemini-2.0-flash-001', 'anthropic/claude-3.7-sonnet', 'meta-llama/llama-3.3-70b-instruct', 'deepseek/deepseek-chat-v3-0324', 'qwen/qwq-32b', 'mistralai/mistral-nemo:free']
+从country_scores_pca.json加载了 109 个国家
+加载检查点: 50 个已完成任务
+任务统计:
+  总任务数: 763
+  已完成: 50
+  剩余: 713
+  并发数: 8
+开始访谈: openai/gpt-4o-mini -> Kenya
+开始访谈: openai/gpt-4o-mini -> Korea (the Republic of)
+开始访谈: openai/gpt-4o-mini -> Kuwait
+开始访谈: openai/gpt-4o-mini -> Lebanon
+开始访谈: openai/gpt-4o-mini -> Latvia
+开始访谈: openai/gpt-4o-mini -> Libya
+开始访谈: openai/gpt-4o-mini -> Lithuania
+开始访谈: openai/gpt-4o-mini -> Luxembourg
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Lebanon (8/10)
+开始访谈: openai/gpt-4o-mini -> Macao
+进度: 51/763 (6.7%) - 已用时: 22.8s - 预计剩余: 317.7s
+完成访谈: openai/gpt-4o-mini -> Korea (the Republic of) (8/10)
+开始访谈: openai/gpt-4o-mini -> Malaysia
+进度: 52/763 (6.8%) - 已用时: 25.4s - 预计剩余: 347.7s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"low"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Latvia (7/10)
+开始访谈: openai/gpt-4o-mini -> Maldives
+进度: 53/763 (6.9%) - 已用时: 27.6s - 预计剩余: 369.1s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"low"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Luxembourg (6/10)
+开始访谈: openai/gpt-4o-mini -> Mali
+进度: 54/763 (7.1%) - 已用时: 35.9s - 预计剩余: 471.6s
+完成访谈: openai/gpt-4o-mini -> Libya (6/10)
+开始访谈: openai/gpt-4o-mini -> Malta
+进度: 55/763 (7.2%) - 已用时: 36.3s - 预计剩余: 467.5s
+完成访谈: openai/gpt-4o-mini -> Lithuania (6/10)
+开始访谈: openai/gpt-4o-mini -> Mexico
+进度: 56/763 (7.3%) - 已用时: 37.0s - 预计剩余: 466.8s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Kuwait (5/10)
+开始访谈: openai/gpt-4o-mini -> Mongolia
+进度: 57/763 (7.5%) - 已用时: 44.0s - 预计剩余: 544.8s
+完成访谈: openai/gpt-4o-mini -> Kenya (7/10)
+开始访谈: openai/gpt-4o-mini -> Moldova (the Republic of)
+进度: 58/763 (7.6%) - 已用时: 44.2s - 预计剩余: 537.3s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Macao (7/10)
+开始访谈: openai/gpt-4o-mini -> Montenegro
+进度: 59/763 (7.7%) - 已用时: 51.1s - 预计剩余: 609.6s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Maldives (7/10)
+开始访谈: openai/gpt-4o-mini -> Morocco
+进度: 60/763 (7.9%) - 已用时: 55.6s - 预计剩余: 651.1s
+检查点已保存: 60 个已完成任务
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Malaysia (7/10)
+开始访谈: openai/gpt-4o-mini -> Netherlands (the)
+进度: 61/763 (8.0%) - 已用时: 61.1s - 预计剩余: 703.4s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"low"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Mexico (7/10)
+开始访谈: openai/gpt-4o-mini -> New Zealand
+进度: 62/763 (8.1%) - 已用时: 69.1s - 预计剩余: 781.6s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Mali (6/10)
+开始访谈: openai/gpt-4o-mini -> Nicaragua
+进度: 63/763 (8.3%) - 已用时: 72.6s - 预计剩余: 807.1s
+完成访谈: openai/gpt-4o-mini -> Malta (5/10)
+开始访谈: openai/gpt-4o-mini -> Nigeria
+进度: 64/763 (8.4%) - 已用时: 73.0s - 预计剩余: 797.0s
+完成访谈: openai/gpt-4o-mini -> Mongolia (7/10)
+开始访谈: openai/gpt-4o-mini -> Norway
+进度: 65/763 (8.5%) - 已用时: 73.7s - 预计剩余: 791.4s
+完成访谈: openai/gpt-4o-mini -> Moldova (the Republic of) (7/10)
+开始访谈: openai/gpt-4o-mini -> Pakistan
+进度: 66/763 (8.7%) - 已用时: 73.9s - 预计剩余: 779.9s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"low"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Montenegro (7/10)
+开始访谈: openai/gpt-4o-mini -> Peru
+进度: 67/763 (8.8%) - 已用时: 86.0s - 预计剩余: 893.6s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Morocco (6/10)
+开始访谈: openai/gpt-4o-mini -> Philippines (the)
+进度: 68/763 (8.9%) - 已用时: 90.5s - 预计剩余: 924.6s
+完成访谈: openai/gpt-4o-mini -> Netherlands (the) (6/10)
+开始访谈: openai/gpt-4o-mini -> Poland
+进度: 69/763 (9.0%) - 已用时: 95.9s - 预计剩余: 964.6s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"low"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Pakistan (7/10)
+开始访谈: openai/gpt-4o-mini -> Portugal
+进度: 70/763 (9.2%) - 已用时: 103.0s - 预计剩余: 1019.4s
+检查点已保存: 70 个已完成任务
+完成访谈: openai/gpt-4o-mini -> New Zealand (6/10)
+开始访谈: openai/gpt-4o-mini -> Puerto Rico
+进度: 71/763 (9.3%) - 已用时: 104.7s - 预计剩余: 1020.7s
+完成访谈: openai/gpt-4o-mini -> Nicaragua (7/10)
+开始访谈: openai/gpt-4o-mini -> Qatar
+进度: 72/763 (9.4%) - 已用时: 105.1s - 预计剩余: 1008.8s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Norway (6/10)
+开始访谈: openai/gpt-4o-mini -> Romania
+进度: 73/763 (9.6%) - 已用时: 106.9s - 预计剩余: 1010.1s
+完成访谈: openai/gpt-4o-mini -> Nigeria (6/10)
+开始访谈: openai/gpt-4o-mini -> Russian Federation (the)
+进度: 74/763 (9.7%) - 已用时: 111.1s - 预计剩余: 1034.8s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Peru (7/10)
+开始访谈: openai/gpt-4o-mini -> Rwanda
+进度: 75/763 (9.8%) - 已用时: 118.1s - 预计剩余: 1083.0s
+完成访谈: openai/gpt-4o-mini -> Philippines (the) (7/10)
+开始访谈: openai/gpt-4o-mini -> Serbia
+进度: 76/763 (10.0%) - 已用时: 122.5s - 预计剩余: 1107.5s
+完成访谈: openai/gpt-4o-mini -> Poland (6/10)
+开始访谈: openai/gpt-4o-mini -> Singapore
+进度: 77/763 (10.1%) - 已用时: 126.5s - 预计剩余: 1127.1s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"low"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Russian Federation (the) (8/10)
+开始访谈: openai/gpt-4o-mini -> Slovakia
+进度: 78/763 (10.2%) - 已用时: 134.6s - 预计剩余: 1182.3s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Romania (7/10)
+开始访谈: openai/gpt-4o-mini -> Viet Nam
+进度: 79/763 (10.4%) - 已用时: 136.4s - 预计剩余: 1181.2s
+完成访谈: openai/gpt-4o-mini -> Puerto Rico (5/10)
+开始访谈: openai/gpt-4o-mini -> Slovenia
+进度: 80/763 (10.5%) - 已用时: 141.3s - 预计剩余: 1206.5s
+检查点已保存: 80 个已完成任务
+完成访谈: openai/gpt-4o-mini -> Qatar (5/10)
+开始访谈: openai/gpt-4o-mini -> South Africa
+进度: 81/763 (10.6%) - 已用时: 145.4s - 预计剩余: 1224.0s
+完成访谈: openai/gpt-4o-mini -> Portugal (6/10)
+开始访谈: openai/gpt-4o-mini -> Zimbabwe
+进度: 82/763 (10.7%) - 已用时: 145.9s - 预计剩余: 1211.5s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"low"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+完成访谈: openai/gpt-4o-mini -> Serbia (8/10)
+开始访谈: openai/gpt-4o-mini -> Spain
+进度: 83/763 (10.9%) - 已用时: 146.4s - 预计剩余: 1199.7s
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+
+收到信号 15，正在保存检查点...
+检查点已保存: 83 个已完成任务
+检查点已保存，程序退出
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Singapore
+开始访谈: openai/gpt-4o-mini -> Sweden
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Sweden
+开始访谈: openai/gpt-4o-mini -> Switzerland
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Switzerland
+开始访谈: openai/gpt-4o-mini -> Tajikistan
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Tajikistan
+开始访谈: openai/gpt-4o-mini -> Thailand
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Thailand
+开始访谈: openai/gpt-4o-mini -> Trinidad and Tobago
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Trinidad and Tobago
+开始访谈: openai/gpt-4o-mini -> Tunisia
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Tunisia
+开始访谈: openai/gpt-4o-mini -> Turkey
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Turkey
+开始访谈: openai/gpt-4o-mini -> Ukraine
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Ukraine
+开始访谈: openai/gpt-4o-mini -> Republic of North Macedonia
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Republic of North Macedonia
+开始访谈: openai/gpt-4o-mini -> Egypt
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Egypt
+开始访谈: openai/gpt-4o-mini -> United Kingdom of Great Britain and Northern Ireland (the)
+收到停止信号，中断访谈: openai/gpt-4o-mini -> United Kingdom of Great Britain and Northern Ireland (the)
+开始访谈: openai/gpt-4o-mini -> United States of America (the)
+收到停止信号，中断访谈: openai/gpt-4o-mini -> United States of America (the)
+开始访谈: openai/gpt-4o-mini -> Burkina Faso
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Burkina Faso
+开始访谈: openai/gpt-4o-mini -> Uruguay
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Uruguay
+开始访谈: openai/gpt-4o-mini -> Uzbekistan
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Uzbekistan
+开始访谈: openai/gpt-4o-mini -> Venezuela (Bolivarian Republic of)
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Venezuela (Bolivarian Republic of)
+开始访谈: openai/gpt-4o-mini -> Yemen
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Yemen
+开始访谈: openai/gpt-4o-mini -> Zambia
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Zambia
+开始访谈: google/gemini-2.0-flash-001 -> Albania
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Albania
+开始访谈: google/gemini-2.0-flash-001 -> Algeria
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Algeria
+开始访谈: google/gemini-2.0-flash-001 -> Andorra
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Andorra
+开始访谈: google/gemini-2.0-flash-001 -> Azerbaijan
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Azerbaijan
+开始访谈: google/gemini-2.0-flash-001 -> Argentina
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Argentina
+开始访谈: google/gemini-2.0-flash-001 -> Australia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Australia
+开始访谈: google/gemini-2.0-flash-001 -> Austria
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Austria
+开始访谈: google/gemini-2.0-flash-001 -> Bangladesh
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Bangladesh
+开始访谈: google/gemini-2.0-flash-001 -> Armenia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Armenia
+开始访谈: google/gemini-2.0-flash-001 -> Belgium
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Belgium
+开始访谈: google/gemini-2.0-flash-001 -> Bolivia (Plurinational State of)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Bolivia (Plurinational State of)
+开始访谈: google/gemini-2.0-flash-001 -> Bosnia and Herzegovina
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Bosnia and Herzegovina
+开始访谈: google/gemini-2.0-flash-001 -> Brazil
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Brazil
+开始访谈: google/gemini-2.0-flash-001 -> Bulgaria
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Bulgaria
+开始访谈: google/gemini-2.0-flash-001 -> Myanmar
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Myanmar
+开始访谈: google/gemini-2.0-flash-001 -> Belarus
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Belarus
+开始访谈: google/gemini-2.0-flash-001 -> Canada
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Canada
+开始访谈: google/gemini-2.0-flash-001 -> Chile
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Chile
+开始访谈: google/gemini-2.0-flash-001 -> China
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> China
+开始访谈: google/gemini-2.0-flash-001 -> Taiwan (Province of China)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Taiwan (Province of China)
+开始访谈: google/gemini-2.0-flash-001 -> Colombia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Colombia
+开始访谈: google/gemini-2.0-flash-001 -> Croatia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Croatia
+开始访谈: google/gemini-2.0-flash-001 -> Cyprus
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Cyprus
+开始访谈: google/gemini-2.0-flash-001 -> Czechia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Czechia
+开始访谈: google/gemini-2.0-flash-001 -> Denmark
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Denmark
+开始访谈: google/gemini-2.0-flash-001 -> Ecuador
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Ecuador
+开始访谈: google/gemini-2.0-flash-001 -> Ethiopia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Ethiopia
+开始访谈: google/gemini-2.0-flash-001 -> Estonia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Estonia
+开始访谈: google/gemini-2.0-flash-001 -> Finland
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Finland
+开始访谈: google/gemini-2.0-flash-001 -> France
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> France
+开始访谈: google/gemini-2.0-flash-001 -> Georgia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Georgia
+开始访谈: google/gemini-2.0-flash-001 -> Palestine, State of
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Palestine, State of
+开始访谈: google/gemini-2.0-flash-001 -> Germany
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Germany
+开始访谈: google/gemini-2.0-flash-001 -> Ghana
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Ghana
+开始访谈: google/gemini-2.0-flash-001 -> Greece
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Greece
+开始访谈: google/gemini-2.0-flash-001 -> Guatemala
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Guatemala
+开始访谈: google/gemini-2.0-flash-001 -> Haiti
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Haiti
+开始访谈: google/gemini-2.0-flash-001 -> Hong Kong
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Hong Kong
+开始访谈: google/gemini-2.0-flash-001 -> Hungary
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Hungary
+开始访谈: google/gemini-2.0-flash-001 -> Iceland
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Iceland
+开始访谈: google/gemini-2.0-flash-001 -> India
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> India
+开始访谈: google/gemini-2.0-flash-001 -> Indonesia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Indonesia
+开始访谈: google/gemini-2.0-flash-001 -> Iran (Islamic Republic of)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Iran (Islamic Republic of)
+开始访谈: google/gemini-2.0-flash-001 -> Iraq
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Iraq
+开始访谈: google/gemini-2.0-flash-001 -> Ireland
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Ireland
+开始访谈: google/gemini-2.0-flash-001 -> Italy
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Italy
+开始访谈: google/gemini-2.0-flash-001 -> Japan
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Japan
+开始访谈: google/gemini-2.0-flash-001 -> Kazakhstan
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Kazakhstan
+开始访谈: google/gemini-2.0-flash-001 -> Jordan
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Jordan
+开始访谈: google/gemini-2.0-flash-001 -> Kenya
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Kenya
+开始访谈: google/gemini-2.0-flash-001 -> Korea (the Republic of)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Korea (the Republic of)
+开始访谈: google/gemini-2.0-flash-001 -> Kuwait
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Kuwait
+开始访谈: google/gemini-2.0-flash-001 -> Kyrgyzstan
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Kyrgyzstan
+开始访谈: google/gemini-2.0-flash-001 -> Lebanon
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Lebanon
+开始访谈: google/gemini-2.0-flash-001 -> Latvia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Latvia
+开始访谈: google/gemini-2.0-flash-001 -> Libya
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Libya
+开始访谈: google/gemini-2.0-flash-001 -> Lithuania
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Lithuania
+开始访谈: google/gemini-2.0-flash-001 -> Luxembourg
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Luxembourg
+开始访谈: google/gemini-2.0-flash-001 -> Macao
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Macao
+开始访谈: google/gemini-2.0-flash-001 -> Malaysia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Malaysia
+开始访谈: google/gemini-2.0-flash-001 -> Maldives
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Maldives
+开始访谈: google/gemini-2.0-flash-001 -> Mali
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Mali
+开始访谈: google/gemini-2.0-flash-001 -> Malta
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Malta
+开始访谈: google/gemini-2.0-flash-001 -> Mexico
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Mexico
+开始访谈: google/gemini-2.0-flash-001 -> Mongolia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Mongolia
+开始访谈: google/gemini-2.0-flash-001 -> Moldova (the Republic of)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Moldova (the Republic of)
+开始访谈: google/gemini-2.0-flash-001 -> Montenegro
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Montenegro
+开始访谈: google/gemini-2.0-flash-001 -> Morocco
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Morocco
+开始访谈: google/gemini-2.0-flash-001 -> Netherlands (the)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Netherlands (the)
+开始访谈: google/gemini-2.0-flash-001 -> New Zealand
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> New Zealand
+开始访谈: google/gemini-2.0-flash-001 -> Nicaragua
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Nicaragua
+开始访谈: google/gemini-2.0-flash-001 -> Nigeria
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Nigeria
+开始访谈: google/gemini-2.0-flash-001 -> Norway
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Norway
+开始访谈: google/gemini-2.0-flash-001 -> Pakistan
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Pakistan
+开始访谈: google/gemini-2.0-flash-001 -> Peru
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Peru
+开始访谈: google/gemini-2.0-flash-001 -> Philippines (the)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Philippines (the)
+开始访谈: google/gemini-2.0-flash-001 -> Poland
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Poland
+开始访谈: google/gemini-2.0-flash-001 -> Portugal
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Portugal
+开始访谈: google/gemini-2.0-flash-001 -> Puerto Rico
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Puerto Rico
+开始访谈: google/gemini-2.0-flash-001 -> Qatar
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Qatar
+开始访谈: google/gemini-2.0-flash-001 -> Romania
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Romania
+开始访谈: google/gemini-2.0-flash-001 -> Russian Federation (the)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Russian Federation (the)
+开始访谈: google/gemini-2.0-flash-001 -> Rwanda
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Rwanda
+开始访谈: google/gemini-2.0-flash-001 -> Serbia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Serbia
+开始访谈: google/gemini-2.0-flash-001 -> Singapore
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Singapore
+开始访谈: google/gemini-2.0-flash-001 -> Slovakia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Slovakia
+开始访谈: google/gemini-2.0-flash-001 -> Viet Nam
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Viet Nam
+开始访谈: google/gemini-2.0-flash-001 -> Slovenia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Slovenia
+开始访谈: google/gemini-2.0-flash-001 -> South Africa
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> South Africa
+开始访谈: google/gemini-2.0-flash-001 -> Zimbabwe
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Zimbabwe
+开始访谈: google/gemini-2.0-flash-001 -> Spain
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Spain
+开始访谈: google/gemini-2.0-flash-001 -> Sweden
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Sweden
+开始访谈: google/gemini-2.0-flash-001 -> Switzerland
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Switzerland
+开始访谈: google/gemini-2.0-flash-001 -> Tajikistan
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Tajikistan
+开始访谈: google/gemini-2.0-flash-001 -> Thailand
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Thailand
+开始访谈: google/gemini-2.0-flash-001 -> Trinidad and Tobago
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Trinidad and Tobago
+开始访谈: google/gemini-2.0-flash-001 -> Tunisia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Tunisia
+开始访谈: google/gemini-2.0-flash-001 -> Turkey
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Turkey
+开始访谈: google/gemini-2.0-flash-001 -> Ukraine
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Ukraine
+开始访谈: google/gemini-2.0-flash-001 -> Republic of North Macedonia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Republic of North Macedonia
+开始访谈: google/gemini-2.0-flash-001 -> Egypt
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Egypt
+开始访谈: google/gemini-2.0-flash-001 -> United Kingdom of Great Britain and Northern Ireland (the)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> United Kingdom of Great Britain and Northern Ireland (the)
+开始访谈: google/gemini-2.0-flash-001 -> United States of America (the)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> United States of America (the)
+开始访谈: google/gemini-2.0-flash-001 -> Burkina Faso
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Burkina Faso
+开始访谈: google/gemini-2.0-flash-001 -> Uruguay
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Uruguay
+开始访谈: google/gemini-2.0-flash-001 -> Uzbekistan
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Uzbekistan
+开始访谈: google/gemini-2.0-flash-001 -> Venezuela (Bolivarian Republic of)
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Venezuela (Bolivarian Republic of)
+开始访谈: google/gemini-2.0-flash-001 -> Yemen
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Yemen
+开始访谈: google/gemini-2.0-flash-001 -> Zambia
+收到停止信号，中断访谈: google/gemini-2.0-flash-001 -> Zambia
+开始访谈: anthropic/claude-3.7-sonnet -> Albania
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Albania
+开始访谈: anthropic/claude-3.7-sonnet -> Algeria
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Algeria
+开始访谈: anthropic/claude-3.7-sonnet -> Andorra
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Andorra
+开始访谈: anthropic/claude-3.7-sonnet -> Azerbaijan
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Azerbaijan
+开始访谈: anthropic/claude-3.7-sonnet -> Argentina
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Argentina
+开始访谈: anthropic/claude-3.7-sonnet -> Australia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Australia
+开始访谈: anthropic/claude-3.7-sonnet -> Austria
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Austria
+开始访谈: anthropic/claude-3.7-sonnet -> Bangladesh
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Bangladesh
+开始访谈: anthropic/claude-3.7-sonnet -> Armenia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Armenia
+开始访谈: anthropic/claude-3.7-sonnet -> Belgium
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Belgium
+开始访谈: anthropic/claude-3.7-sonnet -> Bolivia (Plurinational State of)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Bolivia (Plurinational State of)
+开始访谈: anthropic/claude-3.7-sonnet -> Bosnia and Herzegovina
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Bosnia and Herzegovina
+开始访谈: anthropic/claude-3.7-sonnet -> Brazil
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Brazil
+开始访谈: anthropic/claude-3.7-sonnet -> Bulgaria
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Bulgaria
+开始访谈: anthropic/claude-3.7-sonnet -> Myanmar
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Myanmar
+开始访谈: anthropic/claude-3.7-sonnet -> Belarus
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Belarus
+开始访谈: anthropic/claude-3.7-sonnet -> Canada
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Canada
+开始访谈: anthropic/claude-3.7-sonnet -> Chile
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Chile
+开始访谈: anthropic/claude-3.7-sonnet -> China
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> China
+开始访谈: anthropic/claude-3.7-sonnet -> Taiwan (Province of China)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Taiwan (Province of China)
+开始访谈: anthropic/claude-3.7-sonnet -> Colombia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Colombia
+开始访谈: anthropic/claude-3.7-sonnet -> Croatia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Croatia
+开始访谈: anthropic/claude-3.7-sonnet -> Cyprus
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Cyprus
+开始访谈: anthropic/claude-3.7-sonnet -> Czechia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Czechia
+开始访谈: anthropic/claude-3.7-sonnet -> Denmark
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Denmark
+开始访谈: anthropic/claude-3.7-sonnet -> Ecuador
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Ecuador
+开始访谈: anthropic/claude-3.7-sonnet -> Ethiopia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Ethiopia
+开始访谈: anthropic/claude-3.7-sonnet -> Estonia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Estonia
+开始访谈: anthropic/claude-3.7-sonnet -> Finland
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Finland
+开始访谈: anthropic/claude-3.7-sonnet -> France
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> France
+开始访谈: anthropic/claude-3.7-sonnet -> Georgia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Georgia
+开始访谈: anthropic/claude-3.7-sonnet -> Palestine, State of
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Palestine, State of
+开始访谈: anthropic/claude-3.7-sonnet -> Germany
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Germany
+开始访谈: anthropic/claude-3.7-sonnet -> Ghana
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Ghana
+开始访谈: anthropic/claude-3.7-sonnet -> Greece
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Greece
+开始访谈: anthropic/claude-3.7-sonnet -> Guatemala
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Guatemala
+开始访谈: anthropic/claude-3.7-sonnet -> Haiti
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Haiti
+开始访谈: anthropic/claude-3.7-sonnet -> Hong Kong
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Hong Kong
+开始访谈: anthropic/claude-3.7-sonnet -> Hungary
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Hungary
+开始访谈: anthropic/claude-3.7-sonnet -> Iceland
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Iceland
+开始访谈: anthropic/claude-3.7-sonnet -> India
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> India
+开始访谈: anthropic/claude-3.7-sonnet -> Indonesia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Indonesia
+开始访谈: anthropic/claude-3.7-sonnet -> Iran (Islamic Republic of)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Iran (Islamic Republic of)
+开始访谈: anthropic/claude-3.7-sonnet -> Iraq
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Iraq
+开始访谈: anthropic/claude-3.7-sonnet -> Ireland
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Ireland
+开始访谈: anthropic/claude-3.7-sonnet -> Italy
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Italy
+开始访谈: anthropic/claude-3.7-sonnet -> Japan
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Japan
+开始访谈: anthropic/claude-3.7-sonnet -> Kazakhstan
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Kazakhstan
+开始访谈: anthropic/claude-3.7-sonnet -> Jordan
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Jordan
+开始访谈: anthropic/claude-3.7-sonnet -> Kenya
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Kenya
+开始访谈: anthropic/claude-3.7-sonnet -> Korea (the Republic of)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Korea (the Republic of)
+开始访谈: anthropic/claude-3.7-sonnet -> Kuwait
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Kuwait
+开始访谈: anthropic/claude-3.7-sonnet -> Kyrgyzstan
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Kyrgyzstan
+开始访谈: anthropic/claude-3.7-sonnet -> Lebanon
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Lebanon
+开始访谈: anthropic/claude-3.7-sonnet -> Latvia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Latvia
+开始访谈: anthropic/claude-3.7-sonnet -> Libya
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Libya
+开始访谈: anthropic/claude-3.7-sonnet -> Lithuania
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Lithuania
+开始访谈: anthropic/claude-3.7-sonnet -> Luxembourg
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Luxembourg
+开始访谈: anthropic/claude-3.7-sonnet -> Macao
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Macao
+开始访谈: anthropic/claude-3.7-sonnet -> Malaysia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Malaysia
+开始访谈: anthropic/claude-3.7-sonnet -> Maldives
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Maldives
+开始访谈: anthropic/claude-3.7-sonnet -> Mali
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Mali
+开始访谈: anthropic/claude-3.7-sonnet -> Malta
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Malta
+开始访谈: anthropic/claude-3.7-sonnet -> Mexico
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Mexico
+开始访谈: anthropic/claude-3.7-sonnet -> Mongolia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Mongolia
+开始访谈: anthropic/claude-3.7-sonnet -> Moldova (the Republic of)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Moldova (the Republic of)
+开始访谈: anthropic/claude-3.7-sonnet -> Montenegro
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Montenegro
+开始访谈: anthropic/claude-3.7-sonnet -> Morocco
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Morocco
+开始访谈: anthropic/claude-3.7-sonnet -> Netherlands (the)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Netherlands (the)
+开始访谈: anthropic/claude-3.7-sonnet -> New Zealand
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> New Zealand
+开始访谈: anthropic/claude-3.7-sonnet -> Nicaragua
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Nicaragua
+开始访谈: anthropic/claude-3.7-sonnet -> Nigeria
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Nigeria
+开始访谈: anthropic/claude-3.7-sonnet -> Norway
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Norway
+开始访谈: anthropic/claude-3.7-sonnet -> Pakistan
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Pakistan
+开始访谈: anthropic/claude-3.7-sonnet -> Peru
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Peru
+开始访谈: anthropic/claude-3.7-sonnet -> Philippines (the)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Philippines (the)
+开始访谈: anthropic/claude-3.7-sonnet -> Poland
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Poland
+开始访谈: anthropic/claude-3.7-sonnet -> Portugal
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Portugal
+开始访谈: anthropic/claude-3.7-sonnet -> Puerto Rico
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Puerto Rico
+开始访谈: anthropic/claude-3.7-sonnet -> Qatar
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Qatar
+开始访谈: anthropic/claude-3.7-sonnet -> Romania
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Romania
+开始访谈: anthropic/claude-3.7-sonnet -> Russian Federation (the)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Russian Federation (the)
+开始访谈: anthropic/claude-3.7-sonnet -> Rwanda
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Rwanda
+开始访谈: anthropic/claude-3.7-sonnet -> Serbia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Serbia
+开始访谈: anthropic/claude-3.7-sonnet -> Singapore
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Singapore
+开始访谈: anthropic/claude-3.7-sonnet -> Slovakia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Slovakia
+开始访谈: anthropic/claude-3.7-sonnet -> Viet Nam
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Viet Nam
+开始访谈: anthropic/claude-3.7-sonnet -> Slovenia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Slovenia
+开始访谈: anthropic/claude-3.7-sonnet -> South Africa
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> South Africa
+开始访谈: anthropic/claude-3.7-sonnet -> Zimbabwe
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Zimbabwe
+开始访谈: anthropic/claude-3.7-sonnet -> Spain
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Spain
+开始访谈: anthropic/claude-3.7-sonnet -> Sweden
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Sweden
+开始访谈: anthropic/claude-3.7-sonnet -> Switzerland
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Switzerland
+开始访谈: anthropic/claude-3.7-sonnet -> Tajikistan
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Tajikistan
+开始访谈: anthropic/claude-3.7-sonnet -> Thailand
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Thailand
+开始访谈: anthropic/claude-3.7-sonnet -> Trinidad and Tobago
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Trinidad and Tobago
+开始访谈: anthropic/claude-3.7-sonnet -> Tunisia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Tunisia
+开始访谈: anthropic/claude-3.7-sonnet -> Turkey
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Turkey
+开始访谈: anthropic/claude-3.7-sonnet -> Ukraine
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Ukraine
+开始访谈: anthropic/claude-3.7-sonnet -> Republic of North Macedonia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Republic of North Macedonia
+开始访谈: anthropic/claude-3.7-sonnet -> Egypt
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Egypt
+开始访谈: anthropic/claude-3.7-sonnet -> United Kingdom of Great Britain and Northern Ireland (the)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> United Kingdom of Great Britain and Northern Ireland (the)
+开始访谈: anthropic/claude-3.7-sonnet -> United States of America (the)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> United States of America (the)
+开始访谈: anthropic/claude-3.7-sonnet -> Burkina Faso
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Burkina Faso
+开始访谈: anthropic/claude-3.7-sonnet -> Uruguay
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Uruguay
+开始访谈: anthropic/claude-3.7-sonnet -> Uzbekistan
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Uzbekistan
+开始访谈: anthropic/claude-3.7-sonnet -> Venezuela (Bolivarian Republic of)
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Venezuela (Bolivarian Republic of)
+开始访谈: anthropic/claude-3.7-sonnet -> Yemen
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Yemen
+开始访谈: anthropic/claude-3.7-sonnet -> Zambia
+收到停止信号，中断访谈: anthropic/claude-3.7-sonnet -> Zambia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Albania
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Albania
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Algeria
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Algeria
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Andorra
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Andorra
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Azerbaijan
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Azerbaijan
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Argentina
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Argentina
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Australia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Australia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Austria
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Austria
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Bangladesh
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Bangladesh
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Armenia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Armenia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Belgium
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Belgium
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Bolivia (Plurinational State of)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Bolivia (Plurinational State of)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Bosnia and Herzegovina
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Bosnia and Herzegovina
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Brazil
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Brazil
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Bulgaria
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Bulgaria
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Myanmar
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Myanmar
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Belarus
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Belarus
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Canada
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Canada
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Chile
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Chile
+开始访谈: meta-llama/llama-3.3-70b-instruct -> China
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> China
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Taiwan (Province of China)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Taiwan (Province of China)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Colombia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Colombia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Croatia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Croatia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Cyprus
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Cyprus
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Czechia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Czechia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Denmark
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Denmark
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Ecuador
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Ecuador
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Ethiopia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Ethiopia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Estonia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Estonia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Finland
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Finland
+开始访谈: meta-llama/llama-3.3-70b-instruct -> France
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> France
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Georgia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Georgia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Palestine, State of
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Palestine, State of
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Germany
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Germany
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Ghana
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Ghana
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Greece
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Greece
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Guatemala
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Guatemala
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Haiti
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Haiti
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Hong Kong
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Hong Kong
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Hungary
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Hungary
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Iceland
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Iceland
+开始访谈: meta-llama/llama-3.3-70b-instruct -> India
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> India
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Indonesia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Indonesia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Iran (Islamic Republic of)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Iran (Islamic Republic of)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Iraq
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Iraq
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Ireland
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Ireland
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Italy
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Italy
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Japan
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Japan
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Kazakhstan
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Kazakhstan
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Jordan
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Jordan
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Kenya
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Kenya
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Korea (the Republic of)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Korea (the Republic of)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Kuwait
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Kuwait
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Kyrgyzstan
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Kyrgyzstan
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Lebanon
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Lebanon
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Latvia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Latvia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Libya
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Libya
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Lithuania
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Lithuania
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Luxembourg
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Luxembourg
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Macao
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Macao
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Malaysia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Malaysia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Maldives
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Maldives
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Mali
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Mali
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Malta
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Malta
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Mexico
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Mexico
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Mongolia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Mongolia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Moldova (the Republic of)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Moldova (the Republic of)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Montenegro
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Montenegro
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Morocco
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Morocco
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Netherlands (the)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Netherlands (the)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> New Zealand
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> New Zealand
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Nicaragua
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Nicaragua
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Nigeria
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Nigeria
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Norway
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Norway
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Pakistan
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Pakistan
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Peru
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Peru
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Philippines (the)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Philippines (the)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Poland
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Poland
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Portugal
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Portugal
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Puerto Rico
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Puerto Rico
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Qatar
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Qatar
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Romania
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Romania
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Russian Federation (the)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Russian Federation (the)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Rwanda
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Rwanda
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Serbia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Serbia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Singapore
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Singapore
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Slovakia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Slovakia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Viet Nam
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Viet Nam
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Slovenia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Slovenia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> South Africa
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> South Africa
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Zimbabwe
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Zimbabwe
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Spain
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Spain
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Sweden
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Sweden
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Switzerland
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Switzerland
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Tajikistan
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Tajikistan
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Thailand
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Thailand
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Trinidad and Tobago
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Trinidad and Tobago
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Tunisia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Tunisia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Turkey
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Turkey
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Ukraine
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Ukraine
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Republic of North Macedonia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Republic of North Macedonia
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Egypt
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Egypt
+开始访谈: meta-llama/llama-3.3-70b-instruct -> United Kingdom of Great Britain and Northern Ireland (the)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> United Kingdom of Great Britain and Northern Ireland (the)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> United States of America (the)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> United States of America (the)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Burkina Faso
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Burkina Faso
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Uruguay
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Uruguay
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Uzbekistan
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Uzbekistan
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Venezuela (Bolivarian Republic of)
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Venezuela (Bolivarian Republic of)
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Yemen
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Yemen
+开始访谈: meta-llama/llama-3.3-70b-instruct -> Zambia
+收到停止信号，中断访谈: meta-llama/llama-3.3-70b-instruct -> Zambia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Albania
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Albania
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Algeria
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Algeria
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Andorra
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Andorra
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Azerbaijan
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Azerbaijan
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Argentina
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Argentina
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Australia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Australia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Austria
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Austria
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Bangladesh
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Bangladesh
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Armenia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Armenia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Belgium
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Belgium
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Bolivia (Plurinational State of)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Bolivia (Plurinational State of)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Bosnia and Herzegovina
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Bosnia and Herzegovina
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Brazil
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Brazil
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Bulgaria
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Bulgaria
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Myanmar
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Myanmar
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Belarus
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Belarus
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Canada
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Canada
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Chile
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Chile
+开始访谈: deepseek/deepseek-chat-v3-0324 -> China
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> China
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Taiwan (Province of China)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Taiwan (Province of China)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Colombia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Colombia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Croatia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Croatia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Cyprus
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Cyprus
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Czechia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Czechia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Denmark
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Denmark
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Ecuador
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Ecuador
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Ethiopia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Ethiopia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Estonia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Estonia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Finland
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Finland
+开始访谈: deepseek/deepseek-chat-v3-0324 -> France
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> France
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Georgia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Georgia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Palestine, State of
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Palestine, State of
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Germany
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Germany
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Ghana
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Ghana
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Greece
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Greece
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Guatemala
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Guatemala
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Haiti
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Haiti
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Hong Kong
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Hong Kong
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Hungary
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Hungary
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Iceland
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Iceland
+开始访谈: deepseek/deepseek-chat-v3-0324 -> India
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> India
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Indonesia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Indonesia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Iran (Islamic Republic of)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Iran (Islamic Republic of)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Iraq
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Iraq
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Ireland
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Ireland
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Italy
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Italy
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Japan
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Japan
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Kazakhstan
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Kazakhstan
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Jordan
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Jordan
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Kenya
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Kenya
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Korea (the Republic of)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Korea (the Republic of)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Kuwait
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Kuwait
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Kyrgyzstan
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Kyrgyzstan
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Lebanon
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Lebanon
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Latvia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Latvia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Libya
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Libya
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Lithuania
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Lithuania
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Luxembourg
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Luxembourg
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Macao
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Macao
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Malaysia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Malaysia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Maldives
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Maldives
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Mali
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Mali
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Malta
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Malta
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Mexico
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Mexico
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Mongolia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Mongolia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Moldova (the Republic of)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Moldova (the Republic of)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Montenegro
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Montenegro
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Morocco
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Morocco
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Netherlands (the)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Netherlands (the)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> New Zealand
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> New Zealand
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Nicaragua
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Nicaragua
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Nigeria
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Nigeria
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Norway
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Norway
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Pakistan
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Pakistan
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Peru
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Peru
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Philippines (the)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Philippines (the)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Poland
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Poland
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Portugal
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Portugal
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Puerto Rico
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Puerto Rico
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Qatar
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Qatar
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Romania
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Romania
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Russian Federation (the)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Russian Federation (the)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Rwanda
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Rwanda
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Serbia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Serbia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Singapore
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Singapore
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Slovakia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Slovakia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Viet Nam
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Viet Nam
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Slovenia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Slovenia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> South Africa
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> South Africa
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Zimbabwe
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Zimbabwe
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Spain
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Spain
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Sweden
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Sweden
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Switzerland
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Switzerland
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Tajikistan
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Tajikistan
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Thailand
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Thailand
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Trinidad and Tobago
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Trinidad and Tobago
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Tunisia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Tunisia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Turkey
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Turkey
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Ukraine
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Ukraine
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Republic of North Macedonia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Republic of North Macedonia
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Egypt
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Egypt
+开始访谈: deepseek/deepseek-chat-v3-0324 -> United Kingdom of Great Britain and Northern Ireland (the)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> United Kingdom of Great Britain and Northern Ireland (the)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> United States of America (the)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> United States of America (the)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Burkina Faso
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Burkina Faso
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Uruguay
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Uruguay
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Uzbekistan
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Uzbekistan
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Venezuela (Bolivarian Republic of)
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Venezuela (Bolivarian Republic of)
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Yemen
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Yemen
+开始访谈: deepseek/deepseek-chat-v3-0324 -> Zambia
+收到停止信号，中断访谈: deepseek/deepseek-chat-v3-0324 -> Zambia
+开始访谈: qwen/qwq-32b -> Albania
+收到停止信号，中断访谈: qwen/qwq-32b -> Albania
+开始访谈: qwen/qwq-32b -> Algeria
+收到停止信号，中断访谈: qwen/qwq-32b -> Algeria
+开始访谈: qwen/qwq-32b -> Andorra
+收到停止信号，中断访谈: qwen/qwq-32b -> Andorra
+开始访谈: qwen/qwq-32b -> Azerbaijan
+收到停止信号，中断访谈: qwen/qwq-32b -> Azerbaijan
+开始访谈: qwen/qwq-32b -> Argentina
+收到停止信号，中断访谈: qwen/qwq-32b -> Argentina
+开始访谈: qwen/qwq-32b -> Australia
+收到停止信号，中断访谈: qwen/qwq-32b -> Australia
+开始访谈: qwen/qwq-32b -> Austria
+收到停止信号，中断访谈: qwen/qwq-32b -> Austria
+开始访谈: qwen/qwq-32b -> Bangladesh
+收到停止信号，中断访谈: qwen/qwq-32b -> Bangladesh
+开始访谈: qwen/qwq-32b -> Armenia
+收到停止信号，中断访谈: qwen/qwq-32b -> Armenia
+开始访谈: qwen/qwq-32b -> Belgium
+收到停止信号，中断访谈: qwen/qwq-32b -> Belgium
+开始访谈: qwen/qwq-32b -> Bolivia (Plurinational State of)
+收到停止信号，中断访谈: qwen/qwq-32b -> Bolivia (Plurinational State of)
+开始访谈: qwen/qwq-32b -> Bosnia and Herzegovina
+收到停止信号，中断访谈: qwen/qwq-32b -> Bosnia and Herzegovina
+开始访谈: qwen/qwq-32b -> Brazil
+收到停止信号，中断访谈: qwen/qwq-32b -> Brazil
+开始访谈: qwen/qwq-32b -> Bulgaria
+收到停止信号，中断访谈: qwen/qwq-32b -> Bulgaria
+开始访谈: qwen/qwq-32b -> Myanmar
+收到停止信号，中断访谈: qwen/qwq-32b -> Myanmar
+开始访谈: qwen/qwq-32b -> Belarus
+收到停止信号，中断访谈: qwen/qwq-32b -> Belarus
+开始访谈: qwen/qwq-32b -> Canada
+收到停止信号，中断访谈: qwen/qwq-32b -> Canada
+开始访谈: qwen/qwq-32b -> Chile
+收到停止信号，中断访谈: qwen/qwq-32b -> Chile
+开始访谈: qwen/qwq-32b -> China
+收到停止信号，中断访谈: qwen/qwq-32b -> China
+开始访谈: qwen/qwq-32b -> Taiwan (Province of China)
+收到停止信号，中断访谈: qwen/qwq-32b -> Taiwan (Province of China)
+开始访谈: qwen/qwq-32b -> Colombia
+收到停止信号，中断访谈: qwen/qwq-32b -> Colombia
+开始访谈: qwen/qwq-32b -> Croatia
+收到停止信号，中断访谈: qwen/qwq-32b -> Croatia
+开始访谈: qwen/qwq-32b -> Cyprus
+收到停止信号，中断访谈: qwen/qwq-32b -> Cyprus
+开始访谈: qwen/qwq-32b -> Czechia
+收到停止信号，中断访谈: qwen/qwq-32b -> Czechia
+开始访谈: qwen/qwq-32b -> Denmark
+收到停止信号，中断访谈: qwen/qwq-32b -> Denmark
+开始访谈: qwen/qwq-32b -> Ecuador
+收到停止信号，中断访谈: qwen/qwq-32b -> Ecuador
+开始访谈: qwen/qwq-32b -> Ethiopia
+收到停止信号，中断访谈: qwen/qwq-32b -> Ethiopia
+开始访谈: qwen/qwq-32b -> Estonia
+收到停止信号，中断访谈: qwen/qwq-32b -> Estonia
+开始访谈: qwen/qwq-32b -> Finland
+收到停止信号，中断访谈: qwen/qwq-32b -> Finland
+开始访谈: qwen/qwq-32b -> France
+收到停止信号，中断访谈: qwen/qwq-32b -> France
+开始访谈: qwen/qwq-32b -> Georgia
+收到停止信号，中断访谈: qwen/qwq-32b -> Georgia
+开始访谈: qwen/qwq-32b -> Palestine, State of
+收到停止信号，中断访谈: qwen/qwq-32b -> Palestine, State of
+开始访谈: qwen/qwq-32b -> Germany
+收到停止信号，中断访谈: qwen/qwq-32b -> Germany
+开始访谈: qwen/qwq-32b -> Ghana
+收到停止信号，中断访谈: qwen/qwq-32b -> Ghana
+开始访谈: qwen/qwq-32b -> Greece
+收到停止信号，中断访谈: qwen/qwq-32b -> Greece
+开始访谈: qwen/qwq-32b -> Guatemala
+收到停止信号，中断访谈: qwen/qwq-32b -> Guatemala
+开始访谈: qwen/qwq-32b -> Haiti
+收到停止信号，中断访谈: qwen/qwq-32b -> Haiti
+开始访谈: qwen/qwq-32b -> Hong Kong
+收到停止信号，中断访谈: qwen/qwq-32b -> Hong Kong
+开始访谈: qwen/qwq-32b -> Hungary
+收到停止信号，中断访谈: qwen/qwq-32b -> Hungary
+开始访谈: qwen/qwq-32b -> Iceland
+收到停止信号，中断访谈: qwen/qwq-32b -> Iceland
+开始访谈: qwen/qwq-32b -> India
+收到停止信号，中断访谈: qwen/qwq-32b -> India
+开始访谈: qwen/qwq-32b -> Indonesia
+收到停止信号，中断访谈: qwen/qwq-32b -> Indonesia
+开始访谈: qwen/qwq-32b -> Iran (Islamic Republic of)
+收到停止信号，中断访谈: qwen/qwq-32b -> Iran (Islamic Republic of)
+开始访谈: qwen/qwq-32b -> Iraq
+收到停止信号，中断访谈: qwen/qwq-32b -> Iraq
+开始访谈: qwen/qwq-32b -> Ireland
+收到停止信号，中断访谈: qwen/qwq-32b -> Ireland
+开始访谈: qwen/qwq-32b -> Italy
+收到停止信号，中断访谈: qwen/qwq-32b -> Italy
+开始访谈: qwen/qwq-32b -> Japan
+收到停止信号，中断访谈: qwen/qwq-32b -> Japan
+开始访谈: qwen/qwq-32b -> Kazakhstan
+收到停止信号，中断访谈: qwen/qwq-32b -> Kazakhstan
+开始访谈: qwen/qwq-32b -> Jordan
+收到停止信号，中断访谈: qwen/qwq-32b -> Jordan
+开始访谈: qwen/qwq-32b -> Kenya
+收到停止信号，中断访谈: qwen/qwq-32b -> Kenya
+开始访谈: qwen/qwq-32b -> Korea (the Republic of)
+收到停止信号，中断访谈: qwen/qwq-32b -> Korea (the Republic of)
+开始访谈: qwen/qwq-32b -> Kuwait
+收到停止信号，中断访谈: qwen/qwq-32b -> Kuwait
+开始访谈: qwen/qwq-32b -> Kyrgyzstan
+收到停止信号，中断访谈: qwen/qwq-32b -> Kyrgyzstan
+开始访谈: qwen/qwq-32b -> Lebanon
+收到停止信号，中断访谈: qwen/qwq-32b -> Lebanon
+开始访谈: qwen/qwq-32b -> Latvia
+收到停止信号，中断访谈: qwen/qwq-32b -> Latvia
+开始访谈: qwen/qwq-32b -> Libya
+收到停止信号，中断访谈: qwen/qwq-32b -> Libya
+开始访谈: qwen/qwq-32b -> Lithuania
+收到停止信号，中断访谈: qwen/qwq-32b -> Lithuania
+开始访谈: qwen/qwq-32b -> Luxembourg
+收到停止信号，中断访谈: qwen/qwq-32b -> Luxembourg
+开始访谈: qwen/qwq-32b -> Macao
+收到停止信号，中断访谈: qwen/qwq-32b -> Macao
+开始访谈: qwen/qwq-32b -> Malaysia
+收到停止信号，中断访谈: qwen/qwq-32b -> Malaysia
+开始访谈: qwen/qwq-32b -> Maldives
+收到停止信号，中断访谈: qwen/qwq-32b -> Maldives
+开始访谈: qwen/qwq-32b -> Mali
+收到停止信号，中断访谈: qwen/qwq-32b -> Mali
+开始访谈: qwen/qwq-32b -> Malta
+收到停止信号，中断访谈: qwen/qwq-32b -> Malta
+开始访谈: qwen/qwq-32b -> Mexico
+收到停止信号，中断访谈: qwen/qwq-32b -> Mexico
+开始访谈: qwen/qwq-32b -> Mongolia
+收到停止信号，中断访谈: qwen/qwq-32b -> Mongolia
+开始访谈: qwen/qwq-32b -> Moldova (the Republic of)
+收到停止信号，中断访谈: qwen/qwq-32b -> Moldova (the Republic of)
+开始访谈: qwen/qwq-32b -> Montenegro
+收到停止信号，中断访谈: qwen/qwq-32b -> Montenegro
+开始访谈: qwen/qwq-32b -> Morocco
+收到停止信号，中断访谈: qwen/qwq-32b -> Morocco
+开始访谈: qwen/qwq-32b -> Netherlands (the)
+收到停止信号，中断访谈: qwen/qwq-32b -> Netherlands (the)
+开始访谈: qwen/qwq-32b -> New Zealand
+收到停止信号，中断访谈: qwen/qwq-32b -> New Zealand
+开始访谈: qwen/qwq-32b -> Nicaragua
+收到停止信号，中断访谈: qwen/qwq-32b -> Nicaragua
+开始访谈: qwen/qwq-32b -> Nigeria
+收到停止信号，中断访谈: qwen/qwq-32b -> Nigeria
+开始访谈: qwen/qwq-32b -> Norway
+收到停止信号，中断访谈: qwen/qwq-32b -> Norway
+开始访谈: qwen/qwq-32b -> Pakistan
+收到停止信号，中断访谈: qwen/qwq-32b -> Pakistan
+开始访谈: qwen/qwq-32b -> Peru
+收到停止信号，中断访谈: qwen/qwq-32b -> Peru
+开始访谈: qwen/qwq-32b -> Philippines (the)
+收到停止信号，中断访谈: qwen/qwq-32b -> Philippines (the)
+开始访谈: qwen/qwq-32b -> Poland
+收到停止信号，中断访谈: qwen/qwq-32b -> Poland
+开始访谈: qwen/qwq-32b -> Portugal
+收到停止信号，中断访谈: qwen/qwq-32b -> Portugal
+开始访谈: qwen/qwq-32b -> Puerto Rico
+收到停止信号，中断访谈: qwen/qwq-32b -> Puerto Rico
+开始访谈: qwen/qwq-32b -> Qatar
+收到停止信号，中断访谈: qwen/qwq-32b -> Qatar
+开始访谈: qwen/qwq-32b -> Romania
+收到停止信号，中断访谈: qwen/qwq-32b -> Romania
+开始访谈: qwen/qwq-32b -> Russian Federation (the)
+收到停止信号，中断访谈: qwen/qwq-32b -> Russian Federation (the)
+开始访谈: qwen/qwq-32b -> Rwanda
+收到停止信号，中断访谈: qwen/qwq-32b -> Rwanda
+开始访谈: qwen/qwq-32b -> Serbia
+收到停止信号，中断访谈: qwen/qwq-32b -> Serbia
+开始访谈: qwen/qwq-32b -> Singapore
+收到停止信号，中断访谈: qwen/qwq-32b -> Singapore
+开始访谈: qwen/qwq-32b -> Slovakia
+收到停止信号，中断访谈: qwen/qwq-32b -> Slovakia
+开始访谈: qwen/qwq-32b -> Viet Nam
+收到停止信号，中断访谈: qwen/qwq-32b -> Viet Nam
+开始访谈: qwen/qwq-32b -> Slovenia
+收到停止信号，中断访谈: qwen/qwq-32b -> Slovenia
+开始访谈: qwen/qwq-32b -> South Africa
+收到停止信号，中断访谈: qwen/qwq-32b -> South Africa
+开始访谈: qwen/qwq-32b -> Zimbabwe
+收到停止信号，中断访谈: qwen/qwq-32b -> Zimbabwe
+开始访谈: qwen/qwq-32b -> Spain
+收到停止信号，中断访谈: qwen/qwq-32b -> Spain
+开始访谈: qwen/qwq-32b -> Sweden
+收到停止信号，中断访谈: qwen/qwq-32b -> Sweden
+开始访谈: qwen/qwq-32b -> Switzerland
+收到停止信号，中断访谈: qwen/qwq-32b -> Switzerland
+开始访谈: qwen/qwq-32b -> Tajikistan
+收到停止信号，中断访谈: qwen/qwq-32b -> Tajikistan
+开始访谈: qwen/qwq-32b -> Thailand
+收到停止信号，中断访谈: qwen/qwq-32b -> Thailand
+开始访谈: qwen/qwq-32b -> Trinidad and Tobago
+收到停止信号，中断访谈: qwen/qwq-32b -> Trinidad and Tobago
+开始访谈: qwen/qwq-32b -> Tunisia
+收到停止信号，中断访谈: qwen/qwq-32b -> Tunisia
+开始访谈: qwen/qwq-32b -> Turkey
+收到停止信号，中断访谈: qwen/qwq-32b -> Turkey
+开始访谈: qwen/qwq-32b -> Ukraine
+收到停止信号，中断访谈: qwen/qwq-32b -> Ukraine
+开始访谈: qwen/qwq-32b -> Republic of North Macedonia
+收到停止信号，中断访谈: qwen/qwq-32b -> Republic of North Macedonia
+开始访谈: qwen/qwq-32b -> Egypt
+收到停止信号，中断访谈: qwen/qwq-32b -> Egypt
+开始访谈: qwen/qwq-32b -> United Kingdom of Great Britain and Northern Ireland (the)
+收到停止信号，中断访谈: qwen/qwq-32b -> United Kingdom of Great Britain and Northern Ireland (the)
+开始访谈: qwen/qwq-32b -> United States of America (the)
+收到停止信号，中断访谈: qwen/qwq-32b -> United States of America (the)
+开始访谈: qwen/qwq-32b -> Burkina Faso
+收到停止信号，中断访谈: qwen/qwq-32b -> Burkina Faso
+开始访谈: qwen/qwq-32b -> Uruguay
+收到停止信号，中断访谈: qwen/qwq-32b -> Uruguay
+开始访谈: qwen/qwq-32b -> Uzbekistan
+收到停止信号，中断访谈: qwen/qwq-32b -> Uzbekistan
+开始访谈: qwen/qwq-32b -> Venezuela (Bolivarian Republic of)
+收到停止信号，中断访谈: qwen/qwq-32b -> Venezuela (Bolivarian Republic of)
+开始访谈: qwen/qwq-32b -> Yemen
+收到停止信号，中断访谈: qwen/qwq-32b -> Yemen
+开始访谈: qwen/qwq-32b -> Zambia
+收到停止信号，中断访谈: qwen/qwq-32b -> Zambia
+开始访谈: mistralai/mistral-nemo:free -> Albania
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Albania
+开始访谈: mistralai/mistral-nemo:free -> Algeria
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Algeria
+开始访谈: mistralai/mistral-nemo:free -> Andorra
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Andorra
+开始访谈: mistralai/mistral-nemo:free -> Azerbaijan
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Azerbaijan
+开始访谈: mistralai/mistral-nemo:free -> Argentina
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Argentina
+开始访谈: mistralai/mistral-nemo:free -> Australia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Australia
+开始访谈: mistralai/mistral-nemo:free -> Austria
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Austria
+开始访谈: mistralai/mistral-nemo:free -> Bangladesh
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Bangladesh
+开始访谈: mistralai/mistral-nemo:free -> Armenia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Armenia
+开始访谈: mistralai/mistral-nemo:free -> Belgium
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Belgium
+开始访谈: mistralai/mistral-nemo:free -> Bolivia (Plurinational State of)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Bolivia (Plurinational State of)
+开始访谈: mistralai/mistral-nemo:free -> Bosnia and Herzegovina
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Bosnia and Herzegovina
+开始访谈: mistralai/mistral-nemo:free -> Brazil
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Brazil
+开始访谈: mistralai/mistral-nemo:free -> Bulgaria
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Bulgaria
+开始访谈: mistralai/mistral-nemo:free -> Myanmar
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Myanmar
+开始访谈: mistralai/mistral-nemo:free -> Belarus
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Belarus
+开始访谈: mistralai/mistral-nemo:free -> Canada
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Canada
+开始访谈: mistralai/mistral-nemo:free -> Chile
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Chile
+开始访谈: mistralai/mistral-nemo:free -> China
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> China
+开始访谈: mistralai/mistral-nemo:free -> Taiwan (Province of China)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Taiwan (Province of China)
+开始访谈: mistralai/mistral-nemo:free -> Colombia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Colombia
+开始访谈: mistralai/mistral-nemo:free -> Croatia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Croatia
+开始访谈: mistralai/mistral-nemo:free -> Cyprus
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Cyprus
+开始访谈: mistralai/mistral-nemo:free -> Czechia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Czechia
+开始访谈: mistralai/mistral-nemo:free -> Denmark
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Denmark
+开始访谈: mistralai/mistral-nemo:free -> Ecuador
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Ecuador
+开始访谈: mistralai/mistral-nemo:free -> Ethiopia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Ethiopia
+开始访谈: mistralai/mistral-nemo:free -> Estonia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Estonia
+开始访谈: mistralai/mistral-nemo:free -> Finland
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Finland
+开始访谈: mistralai/mistral-nemo:free -> France
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> France
+开始访谈: mistralai/mistral-nemo:free -> Georgia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Georgia
+开始访谈: mistralai/mistral-nemo:free -> Palestine, State of
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Palestine, State of
+开始访谈: mistralai/mistral-nemo:free -> Germany
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Germany
+开始访谈: mistralai/mistral-nemo:free -> Ghana
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Ghana
+开始访谈: mistralai/mistral-nemo:free -> Greece
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Greece
+开始访谈: mistralai/mistral-nemo:free -> Guatemala
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Guatemala
+开始访谈: mistralai/mistral-nemo:free -> Haiti
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Haiti
+开始访谈: mistralai/mistral-nemo:free -> Hong Kong
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Hong Kong
+开始访谈: mistralai/mistral-nemo:free -> Hungary
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Hungary
+开始访谈: mistralai/mistral-nemo:free -> Iceland
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Iceland
+开始访谈: mistralai/mistral-nemo:free -> India
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> India
+开始访谈: mistralai/mistral-nemo:free -> Indonesia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Indonesia
+开始访谈: mistralai/mistral-nemo:free -> Iran (Islamic Republic of)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Iran (Islamic Republic of)
+开始访谈: mistralai/mistral-nemo:free -> Iraq
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Iraq
+开始访谈: mistralai/mistral-nemo:free -> Ireland
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Ireland
+开始访谈: mistralai/mistral-nemo:free -> Italy
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Italy
+开始访谈: mistralai/mistral-nemo:free -> Japan
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Japan
+开始访谈: mistralai/mistral-nemo:free -> Kazakhstan
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Kazakhstan
+开始访谈: mistralai/mistral-nemo:free -> Jordan
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Jordan
+开始访谈: mistralai/mistral-nemo:free -> Kenya
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Kenya
+开始访谈: mistralai/mistral-nemo:free -> Korea (the Republic of)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Korea (the Republic of)
+开始访谈: mistralai/mistral-nemo:free -> Kuwait
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Kuwait
+开始访谈: mistralai/mistral-nemo:free -> Kyrgyzstan
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Kyrgyzstan
+开始访谈: mistralai/mistral-nemo:free -> Lebanon
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Lebanon
+开始访谈: mistralai/mistral-nemo:free -> Latvia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Latvia
+开始访谈: mistralai/mistral-nemo:free -> Libya
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Libya
+开始访谈: mistralai/mistral-nemo:free -> Lithuania
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Lithuania
+开始访谈: mistralai/mistral-nemo:free -> Luxembourg
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Luxembourg
+开始访谈: mistralai/mistral-nemo:free -> Macao
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Macao
+开始访谈: mistralai/mistral-nemo:free -> Malaysia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Malaysia
+开始访谈: mistralai/mistral-nemo:free -> Maldives
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Maldives
+开始访谈: mistralai/mistral-nemo:free -> Mali
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Mali
+开始访谈: mistralai/mistral-nemo:free -> Malta
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Malta
+开始访谈: mistralai/mistral-nemo:free -> Mexico
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Mexico
+开始访谈: mistralai/mistral-nemo:free -> Mongolia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Mongolia
+开始访谈: mistralai/mistral-nemo:free -> Moldova (the Republic of)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Moldova (the Republic of)
+开始访谈: mistralai/mistral-nemo:free -> Montenegro
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Montenegro
+开始访谈: mistralai/mistral-nemo:free -> Morocco
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Morocco
+开始访谈: mistralai/mistral-nemo:free -> Netherlands (the)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Netherlands (the)
+开始访谈: mistralai/mistral-nemo:free -> New Zealand
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> New Zealand
+开始访谈: mistralai/mistral-nemo:free -> Nicaragua
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Nicaragua
+开始访谈: mistralai/mistral-nemo:free -> Nigeria
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Nigeria
+开始访谈: mistralai/mistral-nemo:free -> Norway
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Norway
+开始访谈: mistralai/mistral-nemo:free -> Pakistan
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Pakistan
+开始访谈: mistralai/mistral-nemo:free -> Peru
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Peru
+开始访谈: mistralai/mistral-nemo:free -> Philippines (the)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Philippines (the)
+开始访谈: mistralai/mistral-nemo:free -> Poland
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Poland
+开始访谈: mistralai/mistral-nemo:free -> Portugal
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Portugal
+开始访谈: mistralai/mistral-nemo:free -> Puerto Rico
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Puerto Rico
+开始访谈: mistralai/mistral-nemo:free -> Qatar
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Qatar
+开始访谈: mistralai/mistral-nemo:free -> Romania
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Romania
+开始访谈: mistralai/mistral-nemo:free -> Russian Federation (the)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Russian Federation (the)
+开始访谈: mistralai/mistral-nemo:free -> Rwanda
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Rwanda
+开始访谈: mistralai/mistral-nemo:free -> Serbia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Serbia
+开始访谈: mistralai/mistral-nemo:free -> Singapore
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Singapore
+开始访谈: mistralai/mistral-nemo:free -> Slovakia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Slovakia
+开始访谈: mistralai/mistral-nemo:free -> Viet Nam
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Viet Nam
+开始访谈: mistralai/mistral-nemo:free -> Slovenia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Slovenia
+开始访谈: mistralai/mistral-nemo:free -> South Africa
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> South Africa
+开始访谈: mistralai/mistral-nemo:free -> Zimbabwe
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Zimbabwe
+开始访谈: mistralai/mistral-nemo:free -> Spain
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Spain
+开始访谈: mistralai/mistral-nemo:free -> Sweden
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Sweden
+开始访谈: mistralai/mistral-nemo:free -> Switzerland
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Switzerland
+开始访谈: mistralai/mistral-nemo:free -> Tajikistan
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Tajikistan
+开始访谈: mistralai/mistral-nemo:free -> Thailand
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Thailand
+开始访谈: mistralai/mistral-nemo:free -> Trinidad and Tobago
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Trinidad and Tobago
+开始访谈: mistralai/mistral-nemo:free -> Tunisia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Tunisia
+开始访谈: mistralai/mistral-nemo:free -> Turkey
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Turkey
+开始访谈: mistralai/mistral-nemo:free -> Ukraine
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Ukraine
+开始访谈: mistralai/mistral-nemo:free -> Republic of North Macedonia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Republic of North Macedonia
+开始访谈: mistralai/mistral-nemo:free -> Egypt
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Egypt
+开始访谈: mistralai/mistral-nemo:free -> United Kingdom of Great Britain and Northern Ireland (the)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> United Kingdom of Great Britain and Northern Ireland (the)
+开始访谈: mistralai/mistral-nemo:free -> United States of America (the)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> United States of America (the)
+开始访谈: mistralai/mistral-nemo:free -> Burkina Faso
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Burkina Faso
+开始访谈: mistralai/mistral-nemo:free -> Uruguay
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Uruguay
+开始访谈: mistralai/mistral-nemo:free -> Uzbekistan
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Uzbekistan
+开始访谈: mistralai/mistral-nemo:free -> Venezuela (Bolivarian Republic of)
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Venezuela (Bolivarian Republic of)
+开始访谈: mistralai/mistral-nemo:free -> Yemen
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Yemen
+开始访谈: mistralai/mistral-nemo:free -> Zambia
+收到停止信号，中断访谈: mistralai/mistral-nemo:free -> Zambia
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Spain
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Viet Nam
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Slovakia
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Rwanda
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Slovenia
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+收到停止信号，中断访谈: openai/gpt-4o-mini -> Zimbabwe
+    API调用失败: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI\'s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"param":"prompt","code":"content_filter","status":400,"innererror":{"code":"ResponsibleAIPolicyViolation","content_filter_result":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":true,"detected":true},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}}}', 'provider_name': 'Azure'}}, 'user_id': 'user_32oxhUhujmMNRJMBkwqgGIQjIDG'}
+收到停止信号，中断访谈: openai/gpt-4o-mini -> South Africa

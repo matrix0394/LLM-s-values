@@ -1,9 +1,0 @@
-{
-  "model_name": "mistralai/mistral-nemo:free",
-  "simplified_model_name": "mistral-nemo-free",
-  "country_name": "Nigeria",
-  "timestamp": "20250922_115544",
-  "total_questions": 10,
-  "valid_responses": 10,
-  "completion_time": "2025-09-22T11:55:44.482067"
-}

@@ -1,9 +1,0 @@
-{
-  "model_name": "meta-llama/llama-3.3-70b-instruct",
-  "simplified_model_name": "llama-3.3-70b-instruct",
-  "country_name": "China",
-  "timestamp": "20250922_112849",
-  "total_questions": 10,
-  "valid_responses": 10,
-  "completion_time": "2025-09-22T11:28:49.589072"
-}

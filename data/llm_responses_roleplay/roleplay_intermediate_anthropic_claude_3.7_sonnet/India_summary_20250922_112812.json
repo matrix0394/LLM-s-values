@@ -1,9 +1,0 @@
-{
-  "model_name": "anthropic/claude-3.7-sonnet",
-  "simplified_model_name": "claude-3.7-sonnet",
-  "country_name": "India",
-  "timestamp": "20250922_112812",
-  "total_questions": 10,
-  "valid_responses": 10,
-  "completion_time": "2025-09-22T11:28:12.831118"
-}

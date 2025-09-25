@@ -1,9 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler
 import os
-import glob
 from typing import List, Tuple, Optional
 from ppca import PPCA
 from factor_analyzer import Rotator

@@ -6,8 +6,6 @@
 import pandas as pd
 import numpy as np
 import os
-import glob
-import pickle
 from typing import Dict, List, Optional, Tuple, Any
 from dataclasses import dataclass
 import json
@@ -314,10 +312,10 @@ class LLMDataProcessor:
         # 创建兼容格式的DataFrame
         ivs_compatible = pd.DataFrame()
         
-        # 添加元数据列
-        ivs_compatible['year'] = 2025  # 使用当前年份
+        # 添加元数据列（修复标量赋值问题）
+        ivs_compatible['year'] = [2025] * len(processed_df)  # 使用当前年份
         ivs_compatible['country_code'] = processed_df['model_name']  # 使用模型名作为"国家"代码
-        ivs_compatible['weight'] = 1.0  # 统一权重
+        ivs_compatible['weight'] = [1.0] * len(processed_df)  # 统一权重
         ivs_compatible['model_region'] = processed_df['model_region']
         
         # 添加IVS问题列
@@ -392,14 +390,7 @@ class LLMDataProcessor:
     
 
 if __name__ == "__main__":
-    # 测试代码
     processor = LLMDataProcessor()
-    
-    # 注释掉模拟数据创建
-    # print("创建模拟数据...")
-    # processor.create_mock_data_for_testing()
-    
-    # 直接处理现有的真实数据
     print("处理现有LLM回答数据...")
     processed_df = processor.process_all_models()
     

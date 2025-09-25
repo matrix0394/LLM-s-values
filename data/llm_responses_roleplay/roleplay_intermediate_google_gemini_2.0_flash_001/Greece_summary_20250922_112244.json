@@ -1,9 +1,0 @@
-{
-  "model_name": "google/gemini-2.0-flash-001",
-  "simplified_model_name": "gemini-2.0-flash-001",
-  "country_name": "Greece",
-  "timestamp": "20250922_112244",
-  "total_questions": 10,
-  "valid_responses": 10,
-  "completion_time": "2025-09-22T11:22:44.913663"
-}
