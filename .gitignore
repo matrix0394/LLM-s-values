@@ -1,0 +1,87 @@
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# 大型数据文件（> 100MB）
+# IVS原始数据
+data/raw/*.sav
+data/**/ivs_df.pkl
+data/**/ivs_df_backup.pkl
+
+# 大型JSON数据文件
+data/**/valid_data.json
+
+# 备份目录（包含大量重复的大文件）
+data/backup/
+data/backup_*/
+
+# 中间结果文件（PCA等，可重新生成）
+data/**/pca_results*.pkl
+data/**/roleplay_pca_results*.pkl
+data/**/llm_pca_results*.pkl
+data/**/llm_processed_responses*.pkl
+data/**/*_processed_responses*.pkl
+results/**/*.pkl
+
+# 带时间戳的临时文件 - 已允许上传（用户已清理旧文件）
+# data/**/interview_data_*_202*.json
+# data/**/llm_responses_*_202*.json
+# data/**/*_202*.pkl
+# results/**/*_202*.html
+# results/**/*_202*.png
+
+# 大型HTML可视化文件 - 已允许上传（用户已清理旧文件）
+# results/**/*.html
+# *.html
+
+# 临时文件
+temp_*.png
+temp_*.json
+
+# 日志文件
+logs/
+*.log
+
+# 测试输出
+simple_multilingual_test_*.csv
+simple_multilingual_test_*.json
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 敏感信息（如果有API密钥等）
+.env
+*.key
+*.secret
+
+# 但是保留一些重要的小配置文件
+!config/**/*.json
+!config/**/*.pkl
+!**/country_codes.pkl
+!**/cultural_regions.json
+
+# 保留最终结果的轻量级版本
+!results/**/*.json
+!results/**/*.csv
+!results/**/*.md
+
+# 保留小型可视化图片（< 2MB的重要图表）
+!results/llm_values/*.png
+!results/country_values/*.png
+

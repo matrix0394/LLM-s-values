@@ -1,0 +1,23 @@
+Roleplay English Analysis Summary
+==================================================
+
+Total entities: 160
+
+Entities by Data Source:
+  IVS: 112
+  llm_roleplay: 48
+
+Roleplay Models:
+  anthropic/claude-3.7-sonnet: 8
+  deepseek/deepseek-chat-v3-0324: 8
+  google/gemini-2.0-flash-001: 8
+  meta-llama/llama-3.3-70b-instruct: 8
+  mistralai/mistral-nemo: 8
+  openai/gpt-4o-mini: 8
+
+Principal Component Statistics:
+PC1 range: [-2.91, 6.51]
+PC2 range: [-2.72, 3.66]
+
+Accuracy Analysis:
+{'total_entities': 160, 'data_sources': {'IVS': 112, 'llm_roleplay': 48}, 'models': {'anthropic/claude-3.7-sonnet': 8, 'deepseek/deepseek-chat-v3-0324': 8, 'google/gemini-2.0-flash-001': 8, 'meta-llama/llama-3.3-70b-instruct': 8, 'mistralai/mistral-nemo': 8, 'openai/gpt-4o-mini': 8}, 'cultural_regions': {'African-Islamic': 25, 'West & South Asia': 16, 'Catholic Europe': 16, 'Latin America': 15, 'Orthodox Europe': 13, 'Protestant Europe': 8, 'Confucian': 7, 'English-Speaking': 5, 'Other': 4}, 'pca_statistics': {'pc1_range': [-2.906726467313058, 6.51014116435988], 'pc2_range': [-2.7191697991274224, 3.6617963443022217], 'pc1_mean': 0.6637484877632114, 'pc2_mean': 0.058435201241282764}}

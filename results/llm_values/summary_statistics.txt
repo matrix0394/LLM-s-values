@@ -1,0 +1,24 @@
+LLM Values Analysis Summary
+==================================================
+
+Total entities: 116
+
+Entities by Data Source:
+  IVS: 109
+  LLM: 7
+
+LLM Models:
+  anthropic/claude-3.7-sonnet: 1
+  deepseek/deepseek-chat-v3-0324: 1
+  google/gemini-2.0-flash-001: 1
+  meta-llama/llama-3.3-70b-instruct: 1
+  mistralai/mistral-nemo:free: 1
+  openai/gpt-4o-mini: 1
+  qwen/qwq-32b: 1
+
+Principal Component Statistics:
+PC1 range: [-2.11, 4.50]
+PC2 range: [-2.73, 3.27]
+
+Detailed Statistics:
+{'total_entities': 116, 'ivs_countries': 109, 'llm_models': 7, 'pc1_range': [np.float64(-2.1146869262379586), np.float64(4.495171459701592)], 'pc2_range': [np.float64(-2.727427266499585), np.float64(3.2656014467982963)]}

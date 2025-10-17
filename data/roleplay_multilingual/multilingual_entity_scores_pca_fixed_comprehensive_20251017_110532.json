@@ -1,0 +1,4832 @@
+[
+  {
+    "country_code":"100",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.6230300499,
+    "PC2_rescaled":1.0883715344,
+    "Country":"Bulgaria",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"104",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.2947973763,
+    "PC2_rescaled":-1.4832376763,
+    "Country":"Myanmar",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"112",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.3651835435,
+    "PC2_rescaled":0.5165578724,
+    "Country":"Belarus",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"12",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.1718322731,
+    "PC2_rescaled":-0.878871064,
+    "Country":"Algeria",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"124",
+    "data_source":"IVS",
+    "PC1_rescaled":3.1480885321,
+    "PC2_rescaled":0.9605308574,
+    "Country":"Canada",
+    "Cultural Region":"English-Speaking",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"152",
+    "data_source":"IVS",
+    "PC1_rescaled":0.2044643186,
+    "PC2_rescaled":-0.1635587734,
+    "Country":"Chile",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"156",
+    "data_source":"IVS",
+    "PC1_rescaled":0.0087011993,
+    "PC2_rescaled":0.7051024202,
+    "Country":"China",
+    "Cultural Region":"Confucian",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"158",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.152468222,
+    "PC2_rescaled":1.3509470705,
+    "Country":"Taiwan (Province of China)",
+    "Cultural Region":"Confucian",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"170",
+    "data_source":"IVS",
+    "PC1_rescaled":0.1210618438,
+    "PC2_rescaled":-1.9604085214,
+    "Country":"Colombia",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"191",
+    "data_source":"IVS",
+    "PC1_rescaled":0.440037275,
+    "PC2_rescaled":0.4536613156,
+    "Country":"Croatia",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"196",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.2477183323,
+    "PC2_rescaled":-0.4351639348,
+    "Country":"Cyprus",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"197",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.7295697174,
+    "PC2_rescaled":-0.2058296091,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"20",
+    "data_source":"IVS",
+    "PC1_rescaled":2.9955308914,
+    "PC2_rescaled":1.468335843,
+    "Country":"Andorra",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"203",
+    "data_source":"IVS",
+    "PC1_rescaled":1.5338336402,
+    "PC2_rescaled":1.8177887807,
+    "Country":"Czechia",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"208",
+    "data_source":"IVS",
+    "PC1_rescaled":4.3024420149,
+    "PC2_rescaled":1.859369196,
+    "Country":"Denmark",
+    "Cultural Region":"Protestant Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"218",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.196412955,
+    "PC2_rescaled":-2.0837396724,
+    "Country":"Ecuador",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"231",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.1169861996,
+    "PC2_rescaled":-1.2775101763,
+    "Country":"Ethiopia",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"233",
+    "data_source":"IVS",
+    "PC1_rescaled":0.3078997916,
+    "PC2_rescaled":1.3523222109,
+    "Country":"Estonia",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"246",
+    "data_source":"IVS",
+    "PC1_rescaled":2.9356116661,
+    "PC2_rescaled":1.3480558071,
+    "Country":"Finland",
+    "Cultural Region":"Protestant Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"250",
+    "data_source":"IVS",
+    "PC1_rescaled":2.6791728181,
+    "PC2_rescaled":1.2111447209,
+    "Country":"France",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"268",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.5412654786,
+    "PC2_rescaled":-1.1188849816,
+    "Country":"Georgia",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"275",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.7399088557,
+    "PC2_rescaled":-1.0512194263,
+    "Country":"Palestine, State of",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"276",
+    "data_source":"IVS",
+    "PC1_rescaled":2.3174199558,
+    "PC2_rescaled":1.83352756,
+    "Country":"Germany",
+    "Cultural Region":"Protestant Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"288",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.2060487132,
+    "PC2_rescaled":-2.3548251688,
+    "Country":"Ghana",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"300",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.0233923861,
+    "PC2_rescaled":0.2452899879,
+    "Country":"Greece",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"31",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.3566010375,
+    "PC2_rescaled":-1.1069830976,
+    "Country":"Azerbaijan",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"32",
+    "data_source":"IVS",
+    "PC1_rescaled":0.7569955331,
+    "PC2_rescaled":-0.1876625299,
+    "Country":"Argentina",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"320",
+    "data_source":"IVS",
+    "PC1_rescaled":0.328655299,
+    "PC2_rescaled":-1.0916898013,
+    "Country":"Guatemala",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"332",
+    "data_source":"IVS",
+    "PC1_rescaled":0.2753327969,
+    "PC2_rescaled":-0.708370747,
+    "Country":"Haiti",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"344",
+    "data_source":"IVS",
+    "PC1_rescaled":0.6092556154,
+    "PC2_rescaled":1.7835828391,
+    "Country":"Hong Kong",
+    "Cultural Region":"Confucian",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"348",
+    "data_source":"IVS",
+    "PC1_rescaled":0.1885059831,
+    "PC2_rescaled":0.8451530507,
+    "Country":"Hungary",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"352",
+    "data_source":"IVS",
+    "PC1_rescaled":3.9974584398,
+    "PC2_rescaled":1.1531391822,
+    "Country":"Iceland",
+    "Cultural Region":"Protestant Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"356",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.653627474,
+    "PC2_rescaled":-0.9284339589,
+    "Country":"India",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"36",
+    "data_source":"IVS",
+    "PC1_rescaled":3.3739965071,
+    "PC2_rescaled":0.7161802338,
+    "Country":"Australia",
+    "Cultural Region":"English-Speaking",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"360",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.258902716,
+    "PC2_rescaled":-1.3293589848,
+    "Country":"Indonesia",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"364",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.4053890312,
+    "PC2_rescaled":-0.9761485335,
+    "Country":"Iran (Islamic Republic of)",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"368",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.5085583177,
+    "PC2_rescaled":-0.8793519504,
+    "Country":"Iraq",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"372",
+    "data_source":"IVS",
+    "PC1_rescaled":1.4774028508,
+    "PC2_rescaled":-0.6766582057,
+    "Country":"Ireland",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"380",
+    "data_source":"IVS",
+    "PC1_rescaled":1.138634277,
+    "PC2_rescaled":0.5312606996,
+    "Country":"Italy",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"392",
+    "data_source":"IVS",
+    "PC1_rescaled":1.7100935577,
+    "PC2_rescaled":2.1168019596,
+    "Country":"Japan",
+    "Cultural Region":"Confucian",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"398",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.6978133568,
+    "PC2_rescaled":-0.5538403997,
+    "Country":"Kazakhstan",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"40",
+    "data_source":"IVS",
+    "PC1_rescaled":2.1718064648,
+    "PC2_rescaled":1.1021885021,
+    "Country":"Austria",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"400",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.7957280804,
+    "PC2_rescaled":-2.006258436,
+    "Country":"Jordan",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"404",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.1773151174,
+    "PC2_rescaled":-0.9394164727,
+    "Country":"Kenya",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"410",
+    "data_source":"IVS",
+    "PC1_rescaled":0.0266207424,
+    "PC2_rescaled":1.3418023246,
+    "Country":"Korea (the Republic of)",
+    "Cultural Region":"Confucian",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"414",
+    "data_source":"IVS",
+    "PC1_rescaled":0.0278086581,
+    "PC2_rescaled":-1.3355317056,
+    "Country":"Kuwait",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"417",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.8994547611,
+    "PC2_rescaled":-1.5962529416,
+    "Country":"Kyrgyzstan",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"422",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.1695212374,
+    "PC2_rescaled":-0.5390659288,
+    "Country":"Lebanon",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"428",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.0594435327,
+    "PC2_rescaled":1.019388291,
+    "Country":"Latvia",
+    "Cultural Region":"Other",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"434",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.3893867293,
+    "PC2_rescaled":-2.0168669289,
+    "Country":"Libya",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"440",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.3223852836,
+    "PC2_rescaled":1.1376397187,
+    "Country":"Lithuania",
+    "Cultural Region":"Other",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"442",
+    "data_source":"IVS",
+    "PC1_rescaled":2.2782419129,
+    "PC2_rescaled":0.9545249642,
+    "Country":"Luxembourg",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"446",
+    "data_source":"IVS",
+    "PC1_rescaled":0.8541236052,
+    "PC2_rescaled":1.6775571342,
+    "Country":"Macao",
+    "Cultural Region":"Confucian",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"458",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.5750052894,
+    "PC2_rescaled":-0.8425744655,
+    "Country":"Malaysia",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"462",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.8258960399,
+    "PC2_rescaled":-1.4862756453,
+    "Country":"Maldives",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"466",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.2477533233,
+    "PC2_rescaled":-1.432059564,
+    "Country":"Mali",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"470",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.2848156829,
+    "PC2_rescaled":-1.5030112818,
+    "Country":"Malta",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"484",
+    "data_source":"IVS",
+    "PC1_rescaled":0.5633121944,
+    "PC2_rescaled":-1.6033960766,
+    "Country":"Mexico",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"496",
+    "data_source":"IVS",
+    "PC1_rescaled":0.6384859808,
+    "PC2_rescaled":1.2476728602,
+    "Country":"Mongolia",
+    "Cultural Region":"Confucian",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"498",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.898132366,
+    "PC2_rescaled":0.5098676564,
+    "Country":"Moldova (the Republic of)",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"499",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.257880328,
+    "PC2_rescaled":0.0325218269,
+    "Country":"Montenegro",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"50",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.0672039542,
+    "PC2_rescaled":-1.8684904433,
+    "Country":"Bangladesh",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"504",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.4569464633,
+    "PC2_rescaled":-0.9710823546,
+    "Country":"Morocco",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"51",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.2452221471,
+    "PC2_rescaled":-1.0192624212,
+    "Country":"Armenia",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"528",
+    "data_source":"IVS",
+    "PC1_rescaled":3.4078374045,
+    "PC2_rescaled":1.5857595334,
+    "Country":"Netherlands (the)",
+    "Cultural Region":"Protestant Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"554",
+    "data_source":"IVS",
+    "PC1_rescaled":3.4252251543,
+    "PC2_rescaled":0.8027717585,
+    "Country":"New Zealand",
+    "Cultural Region":"English-Speaking",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"558",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.5339528091,
+    "PC2_rescaled":-1.9526821478,
+    "Country":"Nicaragua",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"56",
+    "data_source":"IVS",
+    "PC1_rescaled":2.414984023,
+    "PC2_rescaled":0.9022414116,
+    "Country":"Belgium",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"566",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.1898560984,
+    "PC2_rescaled":-1.5984443201,
+    "Country":"Nigeria",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"578",
+    "data_source":"IVS",
+    "PC1_rescaled":4.1954293029,
+    "PC2_rescaled":1.7724524758,
+    "Country":"Norway",
+    "Cultural Region":"Protestant Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"586",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.7942453252,
+    "PC2_rescaled":-1.5490362782,
+    "Country":"Pakistan",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"604",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.5398961242,
+    "PC2_rescaled":-1.031801005,
+    "Country":"Peru",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"608",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.0546442758,
+    "PC2_rescaled":-1.7209669618,
+    "Country":"Philippines (the)",
+    "Cultural Region":"Other",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"616",
+    "data_source":"IVS",
+    "PC1_rescaled":0.1809954628,
+    "PC2_rescaled":-0.3533554005,
+    "Country":"Poland",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"620",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.0768687664,
+    "PC2_rescaled":-0.2542243415,
+    "Country":"Portugal",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"630",
+    "data_source":"IVS",
+    "PC1_rescaled":0.8721625272,
+    "PC2_rescaled":-1.5949854704,
+    "Country":"Puerto Rico",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"634",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.6824059989,
+    "PC2_rescaled":-2.7269483487,
+    "Country":"Qatar",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"642",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.3143184979,
+    "PC2_rescaled":-0.2684034366,
+    "Country":"Romania",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"643",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.7168468921,
+    "PC2_rescaled":0.466522564,
+    "Country":"Russian Federation (the)",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"646",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.1934831429,
+    "PC2_rescaled":-1.610366103,
+    "Country":"Rwanda",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"68",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.5624769712,
+    "PC2_rescaled":-1.4013048986,
+    "Country":"Bolivia (Plurinational State of)",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"688",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.2551220504,
+    "PC2_rescaled":0.5990968862,
+    "Country":"Serbia",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"70",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.6865921216,
+    "PC2_rescaled":0.187211944,
+    "Country":"Bosnia and Herzegovina",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"702",
+    "data_source":"IVS",
+    "PC1_rescaled":0.3469845196,
+    "PC2_rescaled":-0.0459934742,
+    "Country":"Singapore",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"703",
+    "data_source":"IVS",
+    "PC1_rescaled":0.4918504581,
+    "PC2_rescaled":0.8707767101,
+    "Country":"Slovakia",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"704",
+    "data_source":"IVS",
+    "PC1_rescaled":0.4968493797,
+    "PC2_rescaled":-0.7048681787,
+    "Country":"Viet Nam",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"705",
+    "data_source":"IVS",
+    "PC1_rescaled":1.4932322158,
+    "PC2_rescaled":1.0977594877,
+    "Country":"Slovenia",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"710",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.0184523368,
+    "PC2_rescaled":-0.8445066669,
+    "Country":"South Africa",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"716",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.7237377841,
+    "PC2_rescaled":-1.3085548803,
+    "Country":"Zimbabwe",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"724",
+    "data_source":"IVS",
+    "PC1_rescaled":1.6718769267,
+    "PC2_rescaled":0.7924716739,
+    "Country":"Spain",
+    "Cultural Region":"Catholic Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"752",
+    "data_source":"IVS",
+    "PC1_rescaled":4.4987223095,
+    "PC2_rescaled":2.3352902631,
+    "Country":"Sweden",
+    "Cultural Region":"Protestant Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"756",
+    "data_source":"IVS",
+    "PC1_rescaled":3.2240051699,
+    "PC2_rescaled":1.2854695882,
+    "Country":"Switzerland",
+    "Cultural Region":"Protestant Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"76",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.0033767547,
+    "PC2_rescaled":-0.3617692161,
+    "Country":"Brazil",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"762",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.5584378366,
+    "PC2_rescaled":-1.9201187862,
+    "Country":"Tajikistan",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"764",
+    "data_source":"IVS",
+    "PC1_rescaled":0.1389064756,
+    "PC2_rescaled":-0.3708247943,
+    "Country":"Thailand",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"780",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.5736439194,
+    "PC2_rescaled":-2.144793107,
+    "Country":"Trinidad and Tobago",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"788",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.9283893797,
+    "PC2_rescaled":-0.9424658598,
+    "Country":"Tunisia",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"792",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.1367899698,
+    "PC2_rescaled":-1.0962634852,
+    "Country":"Turkey",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"8",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.0143770161,
+    "PC2_rescaled":-0.2873574204,
+    "Country":"Albania",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"804",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.8619657592,
+    "PC2_rescaled":0.5128267062,
+    "Country":"Ukraine",
+    "Cultural Region":"Orthodox Europe",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"807",
+    "data_source":"IVS",
+    "PC1_rescaled":0.0435903453,
+    "PC2_rescaled":0.2320010248,
+    "Country":"Republic of North Macedonia",
+    "Cultural Region":"Other",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"818",
+    "data_source":"IVS",
+    "PC1_rescaled":-2.1161071825,
+    "PC2_rescaled":-0.8932867356,
+    "Country":"Egypt",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"826",
+    "data_source":"IVS",
+    "PC1_rescaled":3.1272762188,
+    "PC2_rescaled":1.1119355827,
+    "Country":"United Kingdom of Great Britain and Northern Ireland (the)",
+    "Cultural Region":"English-Speaking",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"840",
+    "data_source":"IVS",
+    "PC1_rescaled":2.0842898932,
+    "PC2_rescaled":0.3200407753,
+    "Country":"United States of America (the)",
+    "Cultural Region":"English-Speaking",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"854",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.9236254686,
+    "PC2_rescaled":-1.2502614294,
+    "Country":"Burkina Faso",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"858",
+    "data_source":"IVS",
+    "PC1_rescaled":1.4376248505,
+    "PC2_rescaled":-0.1263578852,
+    "Country":"Uruguay",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"860",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.0845848535,
+    "PC2_rescaled":-2.0161221481,
+    "Country":"Uzbekistan",
+    "Cultural Region":"West & South Asia",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"862",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.2636146527,
+    "PC2_rescaled":-1.1707593276,
+    "Country":"Venezuela (Bolivarian Republic of)",
+    "Cultural Region":"Latin America",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"887",
+    "data_source":"IVS",
+    "PC1_rescaled":-1.5922210174,
+    "PC2_rescaled":-1.5034023964,
+    "Country":"Yemen",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"894",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.9875679586,
+    "PC2_rescaled":-0.5113377947,
+    "Country":"Zambia",
+    "Cultural Region":"African-Islamic",
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"909",
+    "data_source":"IVS",
+    "PC1_rescaled":1.7110371532,
+    "PC2_rescaled":0.1222449249,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"915",
+    "data_source":"IVS",
+    "PC1_rescaled":-0.7440930346,
+    "PC2_rescaled":-1.3799152839,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":null,
+    "language":null
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.600419109,
+    "PC2_rescaled":-1.7994716326,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ar"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3613376933,
+    "PC2_rescaled":-1.9011543179,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2751369777,
+    "PC2_rescaled":-2.1646767774,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ar"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3893301658,
+    "PC2_rescaled":-1.965709841,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0281666737,
+    "PC2_rescaled":-2.2733058704,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ar"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.1441147536,
+    "PC2_rescaled":-0.7826509482,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.5017421355,
+    "PC2_rescaled":-1.1513669007,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ar"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.56629264,
+    "PC2_rescaled":-1.1151273651,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.1684037515,
+    "PC2_rescaled":-0.4670216824,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ar"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0393102785,
+    "PC2_rescaled":-1.2719012461,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2115238606,
+    "PC2_rescaled":0.2698106763,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ar"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.333605937,
+    "PC2_rescaled":0.4757240204,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.2669882037,
+    "PC2_rescaled":0.4531190121,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ar"
+  },
+  {
+    "country_code":"Algeria",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3817997488,
+    "PC2_rescaled":-0.4271764685,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.980730001,
+    "PC2_rescaled":1.6233222667,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.3134468999,
+    "PC2_rescaled":1.5438372298,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"es"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.4635214487,
+    "PC2_rescaled":1.6851950508,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.4635214487,
+    "PC2_rescaled":1.6851950508,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"es"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2300097114,
+    "PC2_rescaled":0.7772017106,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.942024453,
+    "PC2_rescaled":0.3999899797,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"es"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.2566118632,
+    "PC2_rescaled":1.1973366973,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.8402022669,
+    "PC2_rescaled":0.9785291405,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"es"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.7163687835,
+    "PC2_rescaled":1.0670342946,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.6167095012,
+    "PC2_rescaled":1.6028760822,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"es"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.8243693801,
+    "PC2_rescaled":1.8427489512,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.4438411446,
+    "PC2_rescaled":1.566332279,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"es"
+  },
+  {
+    "country_code":"Argentina",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.775633858,
+    "PC2_rescaled":2.9001752103,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.4222747108,
+    "PC2_rescaled":0.9489957684,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.0563970972,
+    "PC2_rescaled":1.5066941381,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ru"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.6625625805,
+    "PC2_rescaled":-1.0125212845,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.5058425638,
+    "PC2_rescaled":-0.9534858421,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ru"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6264407533,
+    "PC2_rescaled":2.2083970567,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.8341403547,
+    "PC2_rescaled":1.6089231413,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ru"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.7143348642,
+    "PC2_rescaled":1.2014948873,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.3149199448,
+    "PC2_rescaled":2.2807866143,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ru"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.9763496068,
+    "PC2_rescaled":0.7363919528,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.4365837204,
+    "PC2_rescaled":1.740971477,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ru"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8869008476,
+    "PC2_rescaled":2.3810081547,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.9324267816,
+    "PC2_rescaled":0.8873775347,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ru"
+  },
+  {
+    "country_code":"Belarus",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.3634395082,
+    "PC2_rescaled":2.2989304522,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ru"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8917231342,
+    "PC2_rescaled":1.6629974024,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0574559564,
+    "PC2_rescaled":0.72406023,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"es"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.0133510899,
+    "PC2_rescaled":1.417274157,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.0133510899,
+    "PC2_rescaled":1.417274157,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"es"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4950616429,
+    "PC2_rescaled":0.7909931924,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.6167618579,
+    "PC2_rescaled":0.3985733422,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"es"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.9764847462,
+    "PC2_rescaled":1.1427975574,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0530697544,
+    "PC2_rescaled":0.3095685743,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"es"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.145824172,
+    "PC2_rescaled":-0.0677737125,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.3375014699,
+    "PC2_rescaled":1.0782778029,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"es"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.7090634361,
+    "PC2_rescaled":2.6903593199,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.071848915,
+    "PC2_rescaled":1.5249020075,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"es"
+  },
+  {
+    "country_code":"Chile",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.2347522756,
+    "PC2_rescaled":2.5759161553,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0368546682,
+    "PC2_rescaled":-0.0226296996,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5150174995,
+    "PC2_rescaled":0.180735671,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5508988603,
+    "PC2_rescaled":0.1231265557,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5508988603,
+    "PC2_rescaled":0.1231265557,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.0032719474,
+    "PC2_rescaled":-0.4455452936,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4197614958,
+    "PC2_rescaled":-1.1694818718,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.6678981996,
+    "PC2_rescaled":0.0188958969,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5458161232,
+    "PC2_rescaled":-0.1870174473,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.1637648524,
+    "PC2_rescaled":-0.0965782702,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.0240853875,
+    "PC2_rescaled":0.7685053778,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3229620086,
+    "PC2_rescaled":1.1894883012,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.3487843282,
+    "PC2_rescaled":1.2637486344,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.4339767878,
+    "PC2_rescaled":-0.2356403737,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"China",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.9085492498,
+    "PC2_rescaled":1.4017195551,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.6508343755,
+    "PC2_rescaled":-1.122272024,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.5567447716,
+    "PC2_rescaled":-1.3927408913,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"es"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.0687850816,
+    "PC2_rescaled":-2.1563526052,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.34008615,
+    "PC2_rescaled":-0.7526684449,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"es"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.76952711,
+    "PC2_rescaled":-0.4831229729,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.5226535059,
+    "PC2_rescaled":-1.4914514694,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"es"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4107624214,
+    "PC2_rescaled":-0.7100212021,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0744116538,
+    "PC2_rescaled":0.3631699573,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"es"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8982588002,
+    "PC2_rescaled":-0.5620063414,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8282853856,
+    "PC2_rescaled":0.6526596329,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"es"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.801946586,
+    "PC2_rescaled":1.1009938195,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.2696504064,
+    "PC2_rescaled":-0.0601603836,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"es"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3053291258,
+    "PC2_rescaled":1.2322247186,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Colombia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.1605673423,
+    "PC2_rescaled":-0.3496677738,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"es"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2006640166,
+    "PC2_rescaled":-1.3901929178,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.3176633559,
+    "PC2_rescaled":-1.4944235766,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"es"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.4397454323,
+    "PC2_rescaled":-1.2885102325,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.6788268479,
+    "PC2_rescaled":-1.1868275472,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"es"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.76952711,
+    "PC2_rescaled":-0.4831229729,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.7617349215,
+    "PC2_rescaled":-1.5931341547,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"es"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.0674004099,
+    "PC2_rescaled":-0.9133865727,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0744116538,
+    "PC2_rescaled":0.3631699573,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"es"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8982588002,
+    "PC2_rescaled":-0.5620063414,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.3512633634,
+    "PC2_rescaled":-0.407780434,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"es"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.5628651703,
+    "PC2_rescaled":0.9993111342,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.8295318396,
+    "PC2_rescaled":-0.3638322428,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"es"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.6557429331,
+    "PC2_rescaled":3.1601423149,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Ecuador",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.49763949,
+    "PC2_rescaled":-0.1153750524,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"es"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4783370326,
+    "PC2_rescaled":-2.0053849767,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ar"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.807067451,
+    "PC2_rescaled":-1.9601897603,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2672480894,
+    "PC2_rescaled":-2.1716231851,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ar"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3893301658,
+    "PC2_rescaled":-1.965709841,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.7861796722,
+    "PC2_rescaled":-2.3582249669,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ar"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.7861796722,
+    "PC2_rescaled":-2.3582249669,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.7180605841,
+    "PC2_rescaled":-1.999864896,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ar"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.9291495273,
+    "PC2_rescaled":-2.1661031045,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.338386457,
+    "PC2_rescaled":-1.8529710649,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ar"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5174731098,
+    "PC2_rescaled":-1.0685358754,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.1754957699,
+    "PC2_rescaled":-2.5148672785,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ar"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.6241643848,
+    "PC2_rescaled":0.1312901969,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.1275234969,
+    "PC2_rescaled":-1.4861123912,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ar"
+  },
+  {
+    "country_code":"Egypt",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.358656453,
+    "PC2_rescaled":-0.8905670641,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4134463551,
+    "PC2_rescaled":-0.4805749994,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.6284115814,
+    "PC2_rescaled":-1.8640271557,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"es"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.6525277708,
+    "PC2_rescaled":-0.3788923141,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0136912628,
+    "PC2_rescaled":-0.0712962847,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"es"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.5656658661,
+    "PC2_rescaled":-0.878610206,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.2398977528,
+    "PC2_rescaled":-1.7964995254,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"es"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.3937952971,
+    "PC2_rescaled":-0.2320144125,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.339973256,
+    "PC2_rescaled":-0.3184280855,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"es"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.127300301,
+    "PC2_rescaled":0.091068957,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.4722046307,
+    "PC2_rescaled":0.6552076064,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"es"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.4316477516,
+    "PC2_rescaled":1.802943258,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.9742940416,
+    "PC2_rescaled":-0.9187718878,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"es"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.7338385982,
+    "PC2_rescaled":1.3298628246,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Guatemala",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.4888504361,
+    "PC2_rescaled":0.9665747754,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"es"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.3319563424,
+    "PC2_rescaled":2.7893480394,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0411289488,
+    "PC2_rescaled":4.0129696945,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.99567086,
+    "PC2_rescaled":2.4742334699,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.200686262,
+    "PC2_rescaled":1.5600931228,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.331861334,
+    "PC2_rescaled":3.2974233535,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.05825178,
+    "PC2_rescaled":1.1095467719,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4074070393,
+    "PC2_rescaled":2.8959786731,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.6414057178,
+    "PC2_rescaled":2.6875173555,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.4549549299,
+    "PC2_rescaled":1.4256837336,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.9698150469,
+    "PC2_rescaled":0.8414312989,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.5812353592,
+    "PC2_rescaled":3.0607557367,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.3421539435,
+    "PC2_rescaled":2.9590730514,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.8298117067,
+    "PC2_rescaled":3.247852076,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Hong Kong",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.5311911934,
+    "PC2_rescaled":3.2584274295,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.5767567862,
+    "PC2_rescaled":0.0796713438,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ar"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.9859367414,
+    "PC2_rescaled":-0.8244264939,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.0907050666,
+    "PC2_rescaled":0.2899831222,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ar"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.1507026167,
+    "PC2_rescaled":-1.137542604,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.3552036968,
+    "PC2_rescaled":-0.9488891567,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ar"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-3.2122338417,
+    "PC2_rescaled":-1.1410110191,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.8969298746,
+    "PC2_rescaled":-0.8641016296,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ar"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.422767197,
+    "PC2_rescaled":-1.3455638266,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.534983261,
+    "PC2_rescaled":-0.8108572474,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ar"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.7939726488,
+    "PC2_rescaled":-2.009103341,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2115238606,
+    "PC2_rescaled":0.2698106763,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ar"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.6433587683,
+    "PC2_rescaled":1.2727051133,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-3.6643644203,
+    "PC2_rescaled":1.83231942,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ar"
+  },
+  {
+    "country_code":"Iraq",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-3.8396572698,
+    "PC2_rescaled":0.2326223949,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4783370326,
+    "PC2_rescaled":-2.0053849767,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ar"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.807067451,
+    "PC2_rescaled":-1.9601897603,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.5897820555,
+    "PC2_rescaled":-2.3637450475,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ar"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2672480894,
+    "PC2_rescaled":-2.1716231851,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.7861796722,
+    "PC2_rescaled":-2.3582249669,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ar"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2392556169,
+    "PC2_rescaled":-2.107067662,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.9291495273,
+    "PC2_rescaled":-2.1661031045,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ar"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.9291495273,
+    "PC2_rescaled":-2.1661031045,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.1221385964,
+    "PC2_rescaled":-1.3632502548,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ar"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2173772997,
+    "PC2_rescaled":-1.1950989482,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0070906257,
+    "PC2_rescaled":-2.573902721,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ar"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.2173045988,
+    "PC2_rescaled":0.0554911655,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Jordan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.5399051941,
+    "PC2_rescaled":-2.5497601014,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ar"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.8775278068,
+    "PC2_rescaled":0.3709308717,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.0527353892,
+    "PC2_rescaled":0.1470835479,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2947536206,
+    "PC2_rescaled":-1.1197240505,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.5058425638,
+    "PC2_rescaled":-0.9534858421,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.2997056932,
+    "PC2_rescaled":0.0384544548,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.351814355,
+    "PC2_rescaled":-1.3821248636,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.3013990885,
+    "PC2_rescaled":-0.7049252551,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.9357360499,
+    "PC2_rescaled":0.0428528891,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.9196006997,
+    "PC2_rescaled":-0.5084049584,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8396144724,
+    "PC2_rescaled":0.242418084,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.8556799645,
+    "PC2_rescaled":0.5623936298,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.2523103494,
+    "PC2_rescaled":-0.4917715123,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.0288558656,
+    "PC2_rescaled":0.5319286386,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Kazakhstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4382388396,
+    "PC2_rescaled":0.4158247981,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6608691852,
+    "PC2_rescaled":-0.2691415746,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5355284315,
+    "PC2_rescaled":-0.2746616553,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.961582601,
+    "PC2_rescaled":-1.4918756031,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.1446790717,
+    "PC2_rescaled":-1.2610818715,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5355284315,
+    "PC2_rescaled":-0.2746616553,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.8868322071,
+    "PC2_rescaled":0.3183819347,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6888616577,
+    "PC2_rescaled":-0.2045860515,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6529802969,
+    "PC2_rescaled":-0.2621951669,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.1995342783,
+    "PC2_rescaled":-1.0835489514,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.4854215492,
+    "PC2_rescaled":-0.7917781985,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.4736286937,
+    "PC2_rescaled":0.6528328069,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.7582360434,
+    "PC2_rescaled":-0.7391151279,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ru"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.563244434,
+    "PC2_rescaled":1.3121121123,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Kyrgyzstan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3253860454,
+    "PC2_rescaled":0.1470486678,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ru"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.004504351,
+    "PC2_rescaled":0.5535055817,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ar"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.1914771048,
+    "PC2_rescaled":1.8724022148,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.3887709829,
+    "PC2_rescaled":2.4812953039,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ar"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4134463551,
+    "PC2_rescaled":-0.4805749994,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-3.3164013163,
+    "PC2_rescaled":3.2673222567,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ar"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.4907706457,
+    "PC2_rescaled":0.5332735777,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.9274399428,
+    "PC2_rescaled":1.4500698361,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ar"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.9716174107,
+    "PC2_rescaled":0.1004620044,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.8281235767,
+    "PC2_rescaled":-0.5055532551,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ar"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5174731098,
+    "PC2_rescaled":-1.0685358754,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.4730280703,
+    "PC2_rescaled":1.1132484933,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ar"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2866559399,
+    "PC2_rescaled":1.97172944,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0395305233,
+    "PC2_rescaled":3.2325574338,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ar"
+  },
+  {
+    "country_code":"Lebanon",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.8043674075,
+    "PC2_rescaled":2.4827098099,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2949695361,
+    "PC2_rescaled":1.2540438244,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3229620086,
+    "PC2_rescaled":1.1894883012,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8963517506,
+    "PC2_rescaled":1.5215048158,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.937055398,
+    "PC2_rescaled":0.7458849481,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.2492904266,
+    "PC2_rescaled":0.7156540633,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.05825178,
+    "PC2_rescaled":1.1095467719,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2288724047,
+    "PC2_rescaled":0.919019434,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.6869316518,
+    "PC2_rescaled":1.1938867355,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2801264997,
+    "PC2_rescaled":-0.7863279293,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.3119570023,
+    "PC2_rescaled":-1.9804931488,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.1351176056,
+    "PC2_rescaled":1.4731453721,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.3044190112,
+    "PC2_rescaled":0.9288078061,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.9259284888,
+    "PC2_rescaled":0.0787438478,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Macao",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.4726399987,
+    "PC2_rescaled":0.4362161945,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8899157912,
+    "PC2_rescaled":-1.0205893387,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8899157912,
+    "PC2_rescaled":-1.0205893387,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"es"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.1010047344,
+    "PC2_rescaled":-0.8543511303,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.1010047344,
+    "PC2_rescaled":-0.8543511303,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"es"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.1955812795,
+    "PC2_rescaled":-1.7003369207,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.5226535059,
+    "PC2_rescaled":-1.4914514694,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"es"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.3453156554,
+    "PC2_rescaled":-0.0704086581,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0744116538,
+    "PC2_rescaled":0.3631699573,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"es"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3714644538,
+    "PC2_rescaled":0.5028956453,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5469144506,
+    "PC2_rescaled":0.1707587268,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"es"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.801946586,
+    "PC2_rescaled":1.1009938195,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.5853676869,
+    "PC2_rescaled":-0.7756589311,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"es"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0543376464,
+    "PC2_rescaled":1.2931365704,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Mexico",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0549250235,
+    "PC2_rescaled":-0.0517606249,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"es"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.600419109,
+    "PC2_rescaled":-1.7994716326,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ar"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3613376933,
+    "PC2_rescaled":-1.9011543179,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4783370326,
+    "PC2_rescaled":-2.0053849767,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ar"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.600419109,
+    "PC2_rescaled":-1.7994716326,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.7861796722,
+    "PC2_rescaled":-2.3582249669,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ar"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2392556169,
+    "PC2_rescaled":-2.107067662,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.4789791685,
+    "PC2_rescaled":-1.8981822107,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ar"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.9291495273,
+    "PC2_rescaled":-2.1661031045,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0324351945,
+    "PC2_rescaled":-1.2192274664,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ar"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.1972737156,
+    "PC2_rescaled":-1.1235970173,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.7865694152,
+    "PC2_rescaled":-2.3717543218,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ar"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.229464541,
+    "PC2_rescaled":0.2410061186,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.1188316106,
+    "PC2_rescaled":-0.9252251602,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ar"
+  },
+  {
+    "country_code":"Morocco",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.9672917621,
+    "PC2_rescaled":-0.8578219613,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.7746098471,
+    "PC2_rescaled":-0.17297897,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0136912628,
+    "PC2_rescaled":-0.0712962847,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"es"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0136912628,
+    "PC2_rescaled":-0.0712962847,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2527726785,
+    "PC2_rescaled":0.0303864006,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"es"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.6525277708,
+    "PC2_rescaled":-0.3788923141,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.7617349215,
+    "PC2_rescaled":-1.5931341547,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"es"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8899157912,
+    "PC2_rescaled":-1.0205893387,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0744116538,
+    "PC2_rescaled":0.3631699573,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"es"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.7062033092,
+    "PC2_rescaled":0.4467462888,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4698854207,
+    "PC2_rescaled":-0.1580494562,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"es"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.5628651703,
+    "PC2_rescaled":0.9993111342,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.45753961,
+    "PC2_rescaled":-0.4052625142,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"es"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.1695479863,
+    "PC2_rescaled":1.6142039783,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Peru",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.9068598904,
+    "PC2_rescaled":1.8364524611,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"es"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.7232260776,
+    "PC2_rescaled":1.8788456907,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.9619002745,
+    "PC2_rescaled":3.1774335446,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ru"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.4903201709,
+    "PC2_rescaled":0.4665889768,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0230011802,
+    "PC2_rescaled":1.6054047163,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ru"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.1776236168,
+    "PC2_rescaled":0.2443677989,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.6523971063,
+    "PC2_rescaled":-0.3922332787,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ru"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.6915718972,
+    "PC2_rescaled":0.4546795773,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.2693940108,
+    "PC2_rescaled":0.7871559942,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ru"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4935465302,
+    "PC2_rescaled":0.7088089894,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.0497072935,
+    "PC2_rescaled":0.7089478055,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ru"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4300799157,
+    "PC2_rescaled":2.2312441671,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.5532428867,
+    "PC2_rescaled":3.1253112599,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ru"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.2383937458,
+    "PC2_rescaled":0.8288717752,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Russian Federation (the)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.2696631802,
+    "PC2_rescaled":1.0981758209,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ru"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.9291495273,
+    "PC2_rescaled":-2.1661031045,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ar"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6073103818,
+    "PC2_rescaled":-3.4939882333,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6073103818,
+    "PC2_rescaled":-3.4939882333,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ar"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6073103818,
+    "PC2_rescaled":-3.4939882333,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.1402384705,
+    "PC2_rescaled":-2.3323413129,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ar"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.9972686154,
+    "PC2_rescaled":-2.5244631753,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.1402384705,
+    "PC2_rescaled":-2.3323413129,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ar"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.9972686154,
+    "PC2_rescaled":-2.5244631753,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.16158037,
+    "PC2_rescaled":-2.3859426959,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ar"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.0721193825,
+    "PC2_rescaled":-1.9739812421,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.5289277944,
+    "PC2_rescaled":-2.7772680916,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ar"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.7180605841,
+    "PC2_rescaled":-1.999864896,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Saudi Arabia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.0856958615,
+    "PC2_rescaled":-2.2020674172,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.1602835598,
+    "PC2_rescaled":0.6759789277,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.0361140569,
+    "PC2_rescaled":0.670458847,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.1060874715,
+    "PC2_rescaled":-0.5442071273,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4057933664,
+    "PC2_rescaled":-0.3641262337,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.1767637428,
+    "PC2_rescaled":-0.5015598845,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0015561604,
+    "PC2_rescaled":-0.7254072083,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.3013990885,
+    "PC2_rescaled":-0.7049252551,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.2134090659,
+    "PC2_rescaled":0.658044948,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8810090994,
+    "PC2_rescaled":0.2084697858,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.0139199133,
+    "PC2_rescaled":0.1482173719,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.9629040234,
+    "PC2_rescaled":-0.0685665502,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.6589319303,
+    "PC2_rescaled":1.3545607417,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.0840069333,
+    "PC2_rescaled":1.0425281537,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Singapore",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.1069141385,
+    "PC2_rescaled":0.3253607929,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.797146589,
+    "PC2_rescaled":2.5089831929,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8180343678,
+    "PC2_rescaled":2.1109479863,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"es"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.5856035251,
+    "PC2_rescaled":1.8911083949,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.44263367,
+    "PC2_rescaled":2.0832302573,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"es"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.1634256387,
+    "PC2_rescaled":1.558631978,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.1067903283,
+    "PC2_rescaled":0.7131060898,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"es"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.3950359433,
+    "PC2_rescaled":1.1607451006,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.2694177568,
+    "PC2_rescaled":1.0159516795,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"es"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.535757082,
+    "PC2_rescaled":-0.0551479987,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.6862867108,
+    "PC2_rescaled":0.7044862182,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"es"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.6132804369,
+    "PC2_rescaled":1.6765107427,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":6.0487646045,
+    "PC2_rescaled":-0.7866449353,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"es"
+  },
+  {
+    "country_code":"Spain",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.4532170857,
+    "PC2_rescaled":3.0692641728,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"es"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.3469762302,
+    "PC2_rescaled":2.2410622991,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.4671831183,
+    "PC2_rescaled":2.7957557467,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.018433827,
+    "PC2_rescaled":1.7274181599,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2967978225,
+    "PC2_rescaled":1.8538976706,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.7080257744,
+    "PC2_rescaled":0.6084512973,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.3409417068,
+    "PC2_rescaled":-1.80908144,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4301700063,
+    "PC2_rescaled":2.1491633631,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.0589238815,
+    "PC2_rescaled":1.2353170069,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.2316594295,
+    "PC2_rescaled":0.1962986742,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":4.6241381349,
+    "PC2_rescaled":-1.133495137,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.7090634361,
+    "PC2_rescaled":2.6903593199,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.9201523793,
+    "PC2_rescaled":2.8565975284,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0515677051,
+    "PC2_rescaled":2.8961094408,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Taiwan (Province of China)",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.9604160387,
+    "PC2_rescaled":1.5487222513,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"zh-cn"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.5959785077,
+    "PC2_rescaled":-1.7939515519,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.004504351,
+    "PC2_rescaled":0.5535055817,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ru"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.3893301658,
+    "PC2_rescaled":-1.965709841,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.4834197697,
+    "PC2_rescaled":-1.6952409737,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ru"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-3.0011448985,
+    "PC2_rescaled":-0.9747728106,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6821792234,
+    "PC2_rescaled":-2.0574740114,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ru"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.9291495273,
+    "PC2_rescaled":-2.1661031045,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-2.0751581833,
+    "PC2_rescaled":-0.5946715838,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ru"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.3820301257,
+    "PC2_rescaled":-1.7747583694,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.172824163,
+    "PC2_rescaled":-1.5901343663,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ru"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.6241643848,
+    "PC2_rescaled":0.1312901969,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2800732121,
+    "PC2_rescaled":-0.9424804985,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ru"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.175872315,
+    "PC2_rescaled":-1.4859473948,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Tajikistan",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.4176589758,
+    "PC2_rescaled":-0.464202866,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ru"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.1516019725,
+    "PC2_rescaled":0.1645576253,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ar"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.0647164762,
+    "PC2_rescaled":-0.6839403701,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.8128612745,
+    "PC2_rescaled":0.5987167275,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ar"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.1743649395,
+    "PC2_rescaled":-0.5822576848,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.905033338,
+    "PC2_rescaled":-0.6809682629,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ar"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.6659519223,
+    "PC2_rescaled":-0.5792855776,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.2864911355,
+    "PC2_rescaled":0.0154746585,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ar"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2456915764,
+    "PC2_rescaled":0.4350264925,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.8450319116,
+    "PC2_rescaled":0.3861523525,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ar"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":3.4893287721,
+    "PC2_rescaled":-1.2869491398,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.6616942195,
+    "PC2_rescaled":0.5377315701,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ar"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.6586481695,
+    "PC2_rescaled":2.0131597114,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.0388131755,
+    "PC2_rescaled":1.1376850228,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ar"
+  },
+  {
+    "country_code":"Tunisia",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-1.2348905176,
+    "PC2_rescaled":2.6311130483,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"en"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.9121759875,
+    "PC2_rescaled":3.1129615836,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"en"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.2018762534,
+    "PC2_rescaled":3.3779615737,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"anthropic\/claude-3.7-sonnet",
+    "language":"ru"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.6166403155,
+    "PC2_rescaled":2.0713952774,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"en"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.8557217311,
+    "PC2_rescaled":2.1730779627,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"deepseek\/deepseek-chat-v3-0324",
+    "language":"ru"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.1565591502,
+    "PC2_rescaled":-0.6969789908,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"en"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.0289607133,
+    "PC2_rescaled":0.5569411818,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"google\/gemini-2.0-flash-001",
+    "language":"ru"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.3110436617,
+    "PC2_rescaled":0.7310962496,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"en"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":1.3982321035,
+    "PC2_rescaled":1.76175716,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"meta-llama\/llama-3.3-70b-instruct",
+    "language":"ru"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.8949007697,
+    "PC2_rescaled":0.2221408636,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"en"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":0.1768843217,
+    "PC2_rescaled":3.3984748603,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"mistralai\/mistral-nemo",
+    "language":"ru"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.7631253759,
+    "PC2_rescaled":1.4317151007,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"en"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":2.9742143191,
+    "PC2_rescaled":1.5979533091,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"openai\/gpt-4o-mini",
+    "language":"ru"
+  },
+  {
+    "country_code":"Ukraine",
+    "data_source":"Multilingual",
+    "PC1_rescaled":-0.2165444554,
+    "PC2_rescaled":3.1071417159,
+    "Country":null,
+    "Cultural Region":null,
+    "model_name":"qwen\/qwq-32b",
+    "language":"ru"
+  }
+]

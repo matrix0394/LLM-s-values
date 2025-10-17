@@ -1,0 +1,343 @@
+{
+  "summary": {
+    "total_countries_analyzed": 3,
+    "native_language_avg_distance": 2.2181663100665654,
+    "english_language_avg_distance": 1.6233730052145243,
+    "language_improvement": 26.814639738811643
+  },
+  "country_details": {
+    "Egypt": {
+      "real_coordinates": [
+        -2.1147472782728363,
+        -0.8954168755112618
+      ],
+      "native_distances": [
+        2.822516247830071,
+        2.822516247830071,
+        1.610500395280409,
+        1.2853980061245003,
+        0.5174620218398371,
+        5.533730421113668,
+        1.3258187764951386
+      ],
+      "english_distances": [
+        1.1095938103804572,
+        2.8635169721855043,
+        1.610500395280409,
+        1.2853980061245003,
+        1.9254833461532996,
+        1.5399754120292375,
+        0.9424406679783995
+      ],
+      "models": {
+        "anthropic/claude-3.7-sonnet": {
+          "native_distance": 2.822516247830071,
+          "english_distance": 1.1095938103804572
+        },
+        "deepseek/deepseek-chat-v3-0324": {
+          "native_distance": 2.822516247830071,
+          "english_distance": 2.8635169721855043
+        },
+        "google/gemini-2.0-flash-001": {
+          "native_distance": 1.610500395280409,
+          "english_distance": 1.610500395280409
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "native_distance": 1.2853980061245003,
+          "english_distance": 1.2853980061245003
+        },
+        "mistralai/mistral-nemo": {
+          "native_distance": 0.5174620218398371,
+          "english_distance": 1.9254833461532996
+        },
+        "openai/gpt-4o-mini": {
+          "native_distance": 5.533730421113668,
+          "english_distance": 1.5399754120292375
+        },
+        "qwen/qwq-32b": {
+          "native_distance": 1.3258187764951386,
+          "english_distance": 0.9424406679783995
+        }
+      },
+      "avg_native_distance": 2.2739917309305278,
+      "avg_english_distance": 1.610986944304544
+    },
+    "Mexico": {
+      "real_coordinates": [
+        0.5649075456303079,
+        -1.6025242751057533
+      ],
+      "native_distances": [
+        1.190899347307589,
+        1.9697348260766532,
+        1.3264941644794621,
+        2.029172632072452,
+        1.8624676078011861,
+        3.492185790947353,
+        4.524653352171931
+      ],
+      "english_distances": [
+        1.449004032545106,
+        2.128698114217264,
+        0.440681276420869,
+        2.35023575173762,
+        1.6957374223961408,
+        4.217240694224014,
+        3.682339107796178
+      ],
+      "models": {
+        "anthropic/claude-3.7-sonnet": {
+          "native_distance": 1.190899347307589,
+          "english_distance": 1.449004032545106
+        },
+        "deepseek/deepseek-chat-v3-0324": {
+          "native_distance": 1.9697348260766532,
+          "english_distance": 2.128698114217264
+        },
+        "google/gemini-2.0-flash-001": {
+          "native_distance": 1.3264941644794621,
+          "english_distance": 0.440681276420869
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "native_distance": 2.029172632072452,
+          "english_distance": 2.35023575173762
+        },
+        "mistralai/mistral-nemo": {
+          "native_distance": 1.8624676078011861,
+          "english_distance": 1.6957374223961408
+        },
+        "openai/gpt-4o-mini": {
+          "native_distance": 3.492185790947353,
+          "english_distance": 4.217240694224014
+        },
+        "qwen/qwq-32b": {
+          "native_distance": 4.524653352171931,
+          "english_distance": 3.682339107796178
+        }
+      },
+      "avg_native_distance": 2.3422296744080895,
+      "avg_english_distance": 2.280562342762456
+    },
+    "China": {
+      "real_coordinates": [
+        0.006867452908538372,
+        0.7054346056747993
+      ],
+      "native_distances": [
+        0.7512945499353352,
+        1.4504722164972215,
+        1.9190709097604894,
+        1.0400446950410254,
+        4.326725802952497,
+        2.148125898942345,
+        2.63220860089863
+      ],
+      "english_distances": [
+        0.7287477315955438,
+        0.7289076902727161,
+        1.5326257963912218,
+        1.0118914375791235,
+        1.3489993142756385,
+        1.1240043579171335,
+        0.3748117720046358
+      ],
+      "models": {
+        "anthropic/claude-3.7-sonnet": {
+          "native_distance": 0.7512945499353352,
+          "english_distance": 0.7287477315955438
+        },
+        "deepseek/deepseek-chat-v3-0324": {
+          "native_distance": 1.4504722164972215,
+          "english_distance": 0.7289076902727161
+        },
+        "google/gemini-2.0-flash-001": {
+          "native_distance": 1.9190709097604894,
+          "english_distance": 1.5326257963912218
+        },
+        "meta-llama/llama-3.3-70b-instruct": {
+          "native_distance": 1.0400446950410254,
+          "english_distance": 1.0118914375791235
+        },
+        "mistralai/mistral-nemo": {
+          "native_distance": 4.326725802952497,
+          "english_distance": 1.3489993142756385
+        },
+        "openai/gpt-4o-mini": {
+          "native_distance": 2.148125898942345,
+          "english_distance": 1.1240043579171335
+        },
+        "qwen/qwq-32b": {
+          "native_distance": 2.63220860089863,
+          "english_distance": 0.3748117720046358
+        }
+      },
+      "avg_native_distance": 2.0382775248610776,
+      "avg_english_distance": 0.9785697285765732
+    }
+  },
+  "model_performance": {},
+  "language_effectiveness": {},
+  "model_specific_analysis": {
+    "openai/gpt-4o-mini": {
+      "model_name": "openai/gpt-4o-mini",
+      "native_distances": [
+        5.533730421113668,
+        3.492185790947353,
+        2.148125898942345
+      ],
+      "english_distances": [
+        1.5399754120292375,
+        4.217240694224014,
+        1.1240043579171335
+      ],
+      "native_avg_distance": 3.7246807036677883,
+      "english_avg_distance": 2.2937401547234617,
+      "language_improvement": 38.41780444523051,
+      "countries_analyzed": [
+        "Egypt",
+        "Mexico",
+        "China"
+      ],
+      "native_count": 3,
+      "english_count": 3
+    },
+    "anthropic/claude-3.7-sonnet": {
+      "model_name": "anthropic/claude-3.7-sonnet",
+      "native_distances": [
+        2.822516247830071,
+        1.190899347307589,
+        0.7512945499353352
+      ],
+      "english_distances": [
+        1.1095938103804572,
+        1.449004032545106,
+        0.7287477315955438
+      ],
+      "native_avg_distance": 1.5882367150243317,
+      "english_avg_distance": 1.0957818581737022,
+      "language_improvement": 31.006389173107934,
+      "countries_analyzed": [
+        "Egypt",
+        "Mexico",
+        "China"
+      ],
+      "native_count": 3,
+      "english_count": 3
+    },
+    "google/gemini-2.0-flash-001": {
+      "model_name": "google/gemini-2.0-flash-001",
+      "native_distances": [
+        1.610500395280409,
+        1.3264941644794621,
+        1.9190709097604894
+      ],
+      "english_distances": [
+        1.610500395280409,
+        0.440681276420869,
+        1.5326257963912218
+      ],
+      "native_avg_distance": 1.6186884898401201,
+      "english_avg_distance": 1.1946024893641665,
+      "language_improvement": 26.199358501513853,
+      "countries_analyzed": [
+        "Egypt",
+        "Mexico",
+        "China"
+      ],
+      "native_count": 3,
+      "english_count": 3
+    },
+    "mistralai/mistral-nemo": {
+      "model_name": "mistralai/mistral-nemo",
+      "native_distances": [
+        0.5174620218398371,
+        1.8624676078011861,
+        4.326725802952497
+      ],
+      "english_distances": [
+        1.9254833461532996,
+        1.6957374223961408,
+        1.3489993142756385
+      ],
+      "native_avg_distance": 2.2355518108645067,
+      "english_avg_distance": 1.6567400276083595,
+      "language_improvement": 25.89122651701442,
+      "countries_analyzed": [
+        "Egypt",
+        "Mexico",
+        "China"
+      ],
+      "native_count": 3,
+      "english_count": 3
+    },
+    "qwen/qwq-32b": {
+      "model_name": "qwen/qwq-32b",
+      "native_distances": [
+        1.3258187764951386,
+        4.524653352171931,
+        2.63220860089863
+      ],
+      "english_distances": [
+        0.9424406679783995,
+        3.682339107796178,
+        0.3748117720046358
+      ],
+      "native_avg_distance": 2.8275602431885667,
+      "english_avg_distance": 1.6665305159264043,
+      "language_improvement": 41.061184463143356,
+      "countries_analyzed": [
+        "Egypt",
+        "Mexico",
+        "China"
+      ],
+      "native_count": 3,
+      "english_count": 3
+    },
+    "deepseek/deepseek-chat-v3-0324": {
+      "model_name": "deepseek/deepseek-chat-v3-0324",
+      "native_distances": [
+        2.822516247830071,
+        1.9697348260766532,
+        1.4504722164972215
+      ],
+      "english_distances": [
+        2.8635169721855043,
+        2.128698114217264,
+        0.7289076902727161
+      ],
+      "native_avg_distance": 2.080907763467982,
+      "english_avg_distance": 1.9070409255584948,
+      "language_improvement": 8.355336116374792,
+      "countries_analyzed": [
+        "Egypt",
+        "Mexico",
+        "China"
+      ],
+      "native_count": 3,
+      "english_count": 3
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "model_name": "meta-llama/llama-3.3-70b-instruct",
+      "native_distances": [
+        1.2853980061245003,
+        2.029172632072452,
+        1.0400446950410254
+      ],
+      "english_distances": [
+        1.2853980061245003,
+        2.35023575173762,
+        1.0118914375791235
+      ],
+      "native_avg_distance": 1.4515384444126591,
+      "english_avg_distance": 1.5491750651470813,
+      "language_improvement": -6.72642334140376,
+      "countries_analyzed": [
+        "Egypt",
+        "Mexico",
+        "China"
+      ],
+      "native_count": 3,
+      "english_count": 3
+    }
+  }
+}

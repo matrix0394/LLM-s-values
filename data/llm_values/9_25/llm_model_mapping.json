@@ -1,0 +1,51 @@
+{
+  "gpt-4o-mini": {
+    "model_code": "LLM_001",
+    "model_name": "gpt-4o-mini",
+    "region": "US",
+    "display_name": "gpt-4o-mini",
+    "entity_type": "llm"
+  },
+  "gemini-2.0-flash-001": {
+    "model_code": "LLM_002",
+    "model_name": "gemini-2.0-flash-001",
+    "region": "US",
+    "display_name": "gemini-2.0-flash-001",
+    "entity_type": "llm"
+  },
+  "claude-3.7-sonnet": {
+    "model_code": "LLM_003",
+    "model_name": "claude-3.7-sonnet",
+    "region": "US",
+    "display_name": "claude-3.7-sonnet",
+    "entity_type": "llm"
+  },
+  "llama-3.3-70b-instruct": {
+    "model_code": "LLM_004",
+    "model_name": "llama-3.3-70b-instruct",
+    "region": "US",
+    "display_name": "llama-3.3-70b-instruct",
+    "entity_type": "llm"
+  },
+  "deepseek-chat-v3-0324": {
+    "model_code": "LLM_005",
+    "model_name": "deepseek-chat-v3-0324",
+    "region": "CN",
+    "display_name": "deepseek-chat-v3-0324",
+    "entity_type": "llm"
+  },
+  "qwq-32b": {
+    "model_code": "LLM_006",
+    "model_name": "qwq-32b",
+    "region": "CN",
+    "display_name": "qwq-32b",
+    "entity_type": "llm"
+  },
+  "mistral-nemo:free": {
+    "model_code": "LLM_007",
+    "model_name": "mistral-nemo:free",
+    "region": "EU",
+    "display_name": "mistral-nemo:free",
+    "entity_type": "llm"
+  }
+}

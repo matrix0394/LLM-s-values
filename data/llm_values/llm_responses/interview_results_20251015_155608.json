@@ -1,0 +1,74 @@
+{
+  "openai/gpt-4o-mini": [
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='A008', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='A165', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='E018', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='E025', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='F063', response=10, raw_response='10', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='F118', response=10, raw_response='10', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='F120', response=7, raw_response='7', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='G006', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='Y002', response=[2, 4], raw_response='2 4', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='openai/gpt-4o-mini', question_id='Y003', response=[1, 2, 3, 4, 6], raw_response='1 2 3 4 6', is_valid=True, error_message=None)"
+  ],
+  "google/gemini-2.0-flash-001": [
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='A008', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='A165', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='E018', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='E025', response=3, raw_response='3', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='F063', response=10, raw_response='10', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='F118', response=8, raw_response='8', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='F120', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='G006', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='Y002', response=[3, 1], raw_response='3 1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='google/gemini-2.0-flash-001', question_id='Y003', response=[1, 2, 4, 6, 8], raw_response='1 2 4 6 8', is_valid=True, error_message=None)"
+  ],
+  "anthropic/claude-3.7-sonnet": [
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='A008', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='A165', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='E018', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='E025', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='F063', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='F118', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='F120', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='G006', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='Y002', response=[2, 4], raw_response='2 4', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='anthropic/claude-3.7-sonnet', question_id='Y003', response=[1, 4, 6, 8, 10], raw_response='1 4 6 8 10', is_valid=True, error_message=None)"
+  ],
+  "meta-llama/llama-3.3-70b-instruct": [
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='A008', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='A165', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='E018', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='E025', response=3, raw_response='3', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='F063', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='F118', response=10, raw_response='10', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='F120', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='G006', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='Y002', response=[1, 2], raw_response='1 2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='meta-llama/llama-3.3-70b-instruct', question_id='Y003', response=[2, 4, 6, 8, 10], raw_response='2 4 6 8 10', is_valid=True, error_message=None)"
+  ],
+  "deepseek/deepseek-chat-v3-0324": [
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='A008', response=3, raw_response='3', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='A165', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='E018', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='E025', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='F063', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='F118', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='F120', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='G006', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='Y002', response=[1, 4], raw_response='1 4', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='deepseek/deepseek-chat-v3-0324', question_id='Y003', response=[1, 2, 4, 6, 8], raw_response='1 2 4 6 8', is_valid=True, error_message=None)"
+  ],
+  "mistralai/mistral-nemo": [
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='A008', response=2, raw_response='2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='A165', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='E018', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='E025', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='F063', response=5, raw_response='5', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='F118', response=9, raw_response='9', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='F120', response=7, raw_response='7', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='G006', response=1, raw_response='1', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='Y002', response=[1, 2], raw_response='1 2', is_valid=True, error_message=None)",
+    "LLMResponse(model_name='mistralai/mistral-nemo', question_id='Y003', response=[2, 3, 6, 8, 10], raw_response='2 3 6 8 10', is_valid=True, error_message=None)"
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "comprehensive_test_config": {
+    "description": "全面多语言测试配置：每语言多个真实国家，所有模型，每问题5次重复取众数",
+    "repeat_count": 5,
+    "temperature": 0.1,
+    "max_tokens": 50,
+    "languages": {
+      "zh-cn": {
+        "countries": [
+          {
+            "name": "China",
+            "code": "CHN",
+            "numeric": 156,
+            "priority": 1,
+            "reason": "主要中文国家，官方语言",
+            "cultural_region": "Confucian"
+          },
+          {
+            "name": "Taiwan (Province of China)",
+            "code": "TWN", 
+            "numeric": 158,
+            "priority": 2,
+            "reason": "繁体中文地区，华人文化核心",
+            "cultural_region": "Confucian"
+          },
+          {
+            "name": "Singapore",
+            "code": "SGP",
+            "numeric": 702,
+            "priority": 3,
+            "reason": "多元文化中文地区，官方语言之一",
+            "cultural_region": "West & South Asia"
+          },
+          {
+            "name": "Hong Kong",
+            "code": "HKG",
+            "numeric": 344,
+            "priority": 4,
+            "reason": "中文使用地区，国际金融中心",
+            "cultural_region": "Confucian"
+          },
+          {
+            "name": "Macao",
+            "code": "MAC",
+            "numeric": 446,
+            "priority": 5,
+            "reason": "中文使用地区，特别行政区",
+            "cultural_region": "Confucian"
+          }
+        ]
+      },
+      "ru": {
+        "countries": [
+          {
+            "name": "Russian Federation (the)",
+            "code": "RUS",
+            "numeric": 643,
+            "priority": 1,
+            "reason": "主要俄语国家，官方语言",
+            "cultural_region": "Orthodox Europe"
+          },
+          {
+            "name": "Belarus",
+            "code": "BLR",
+            "numeric": 112,
+            "priority": 2,
+            "reason": "俄语为官方语言之一",
+            "cultural_region": "Orthodox Europe"
+          },
+          {
+            "name": "Kazakhstan",
+            "code": "KAZ",
+            "numeric": 398,
+            "priority": 3,
+            "reason": "俄语为官方语言之一，中亚地区",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Ukraine",
+            "code": "UKR",
+            "numeric": 804,
+            "priority": 4,
+            "reason": "俄语广泛使用，东欧地区",
+            "cultural_region": "Orthodox Europe"
+          },
+          {
+            "name": "Kyrgyzstan",
+            "code": "KGZ",
+            "numeric": 417,
+            "priority": 5,
+            "reason": "俄语为官方语言之一，中亚地区",
+            "cultural_region": "West & South Asia"
+          },
+          {
+            "name": "Tajikistan",
+            "code": "TJK",
+            "numeric": 762,
+            "priority": 6,
+            "reason": "俄语广泛使用，中亚地区",
+            "cultural_region": "West & South Asia"
+          }
+        ]
+      },
+      "es": {
+        "countries": [
+          {
+            "name": "Spain",
+            "code": "ESP",
+            "numeric": 724,
+            "priority": 1,
+            "reason": "西班牙语发源地，欧洲西语地区",
+            "cultural_region": "Catholic Europe"
+          },
+          {
+            "name": "Mexico",
+            "code": "MEX",
+            "numeric": 484,
+            "priority": 2,
+            "reason": "最大西语人口国家，北美地区",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Argentina",
+            "code": "ARG",
+            "numeric": 32,
+            "priority": 3,
+            "reason": "南美重要西语国家",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Colombia",
+            "code": "COL",
+            "numeric": 170,
+            "priority": 4,
+            "reason": "南美西语国家，文化多样",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Peru",
+            "code": "PER",
+            "numeric": 604,
+            "priority": 5,
+            "reason": "安第斯山脉西语国家",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Chile",
+            "code": "CHL",
+            "numeric": 152,
+            "priority": 6,
+            "reason": "南美太平洋沿岸西语国家",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Ecuador",
+            "code": "ECU",
+            "numeric": 218,
+            "priority": 7,
+            "reason": "赤道西语国家",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Guatemala",
+            "code": "GTM",
+            "numeric": 320,
+            "priority": 8,
+            "reason": "中美洲西语国家",
+            "cultural_region": "Latin America"
+          }
+        ]
+      },
+      "ar": {
+        "countries": [
+          {
+            "name": "Egypt",
+            "code": "EGY",
+            "numeric": 818,
+            "priority": 1,
+            "reason": "阿拉伯世界文化中心，北非地区",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Saudi Arabia",
+            "code": "SAU",
+            "numeric": 682,
+            "priority": 2,
+            "reason": "阿拉伯半岛核心国家，伊斯兰圣地",
+            "cultural_region": "Other"
+          },
+          {
+            "name": "Morocco",
+            "code": "MAR",
+            "numeric": 504,
+            "priority": 3,
+            "reason": "西北非阿语国家，马格里布地区",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Algeria",
+            "code": "DZA",
+            "numeric": 12,
+            "priority": 4,
+            "reason": "北非最大阿语国家",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Tunisia",
+            "code": "TUN",
+            "numeric": 788,
+            "priority": 5,
+            "reason": "北非阿语国家，地中海沿岸",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Jordan",
+            "code": "JOR",
+            "numeric": 400,
+            "priority": 6,
+            "reason": "中东阿语国家，约旦河流域",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Lebanon",
+            "code": "LBN",
+            "numeric": 422,
+            "priority": 7,
+            "reason": "地中海东岸阿语国家",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Iraq",
+            "code": "IRQ",
+            "numeric": 368,
+            "priority": 8,
+            "reason": "美索不达米亚阿语国家",
+            "cultural_region": "African-Islamic"
+          }
+        ]
+      },
+      "en": {
+        "countries": [
+          {
+            "name": "China",
+            "code": "CHN",
+            "numeric": 156,
+            "priority": 1,
+            "reason": "中国用英文回答，与中文对比",
+            "cultural_region": "Confucian"
+          },
+          {
+            "name": "Taiwan (Province of China)",
+            "code": "TWN",
+            "numeric": 158,
+            "priority": 2,
+            "reason": "台湾用英文回答，与中文对比",
+            "cultural_region": "Confucian"
+          },
+          {
+            "name": "Singapore",
+            "code": "SGP",
+            "numeric": 702,
+            "priority": 3,
+            "reason": "新加坡用英文回答，与中文对比",
+            "cultural_region": "West & South Asia"
+          },
+          {
+            "name": "Hong Kong",
+            "code": "HKG",
+            "numeric": 344,
+            "priority": 4,
+            "reason": "香港用英文回答，与中文对比",
+            "cultural_region": "Confucian"
+          },
+          {
+            "name": "Macao",
+            "code": "MAC",
+            "numeric": 446,
+            "priority": 5,
+            "reason": "澳门用英文回答，与中文对比",
+            "cultural_region": "Confucian"
+          },
+          {
+            "name": "Russian Federation (the)",
+            "code": "RUS",
+            "numeric": 643,
+            "priority": 6,
+            "reason": "俄国用英文回答，与俄语对比",
+            "cultural_region": "Orthodox Europe"
+          },
+          {
+            "name": "Belarus",
+            "code": "BLR",
+            "numeric": 112,
+            "priority": 7,
+            "reason": "白俄罗斯用英文回答，与俄语对比",
+            "cultural_region": "Orthodox Europe"
+          },
+          {
+            "name": "Kazakhstan",
+            "code": "KAZ",
+            "numeric": 398,
+            "priority": 8,
+            "reason": "哈萨克斯坦用英文回答，与俄语对比",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Ukraine",
+            "code": "UKR",
+            "numeric": 804,
+            "priority": 9,
+            "reason": "乌克兰用英文回答，与俄语对比",
+            "cultural_region": "Orthodox Europe"
+          },
+          {
+            "name": "Kyrgyzstan",
+            "code": "KGZ",
+            "numeric": 417,
+            "priority": 10,
+            "reason": "吉尔吉斯斯坦用英文回答，与俄语对比",
+            "cultural_region": "West & South Asia"
+          },
+          {
+            "name": "Tajikistan",
+            "code": "TJK",
+            "numeric": 762,
+            "priority": 11,
+            "reason": "塔吉克斯坦用英文回答，与俄语对比",
+            "cultural_region": "West & South Asia"
+          },
+          {
+            "name": "Spain",
+            "code": "ESP",
+            "numeric": 724,
+            "priority": 12,
+            "reason": "西班牙用英文回答，与西语对比",
+            "cultural_region": "Catholic Europe"
+          },
+          {
+            "name": "Mexico",
+            "code": "MEX",
+            "numeric": 484,
+            "priority": 13,
+            "reason": "墨西哥用英文回答，与西语对比",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Argentina",
+            "code": "ARG",
+            "numeric": 32,
+            "priority": 14,
+            "reason": "阿根廷用英文回答，与西语对比",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Colombia",
+            "code": "COL",
+            "numeric": 170,
+            "priority": 15,
+            "reason": "哥伦比亚用英文回答，与西语对比",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Peru",
+            "code": "PER",
+            "numeric": 604,
+            "priority": 16,
+            "reason": "秘鲁用英文回答，与西语对比",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Chile",
+            "code": "CHL",
+            "numeric": 152,
+            "priority": 17,
+            "reason": "智利用英文回答，与西语对比",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Ecuador",
+            "code": "ECU",
+            "numeric": 218,
+            "priority": 18,
+            "reason": "厄瓜多尔用英文回答，与西语对比",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Guatemala",
+            "code": "GTM",
+            "numeric": 320,
+            "priority": 19,
+            "reason": "危地马拉用英文回答，与西语对比",
+            "cultural_region": "Latin America"
+          },
+          {
+            "name": "Egypt",
+            "code": "EGY",
+            "numeric": 818,
+            "priority": 20,
+            "reason": "埃及用英文回答，与阿语对比",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Saudi Arabia",
+            "code": "SAU",
+            "numeric": 682,
+            "priority": 21,
+            "reason": "沙特用英文回答，与阿语对比",
+            "cultural_region": "Other"
+          },
+          {
+            "name": "Morocco",
+            "code": "MAR",
+            "numeric": 504,
+            "priority": 22,
+            "reason": "摩洛哥用英文回答，与阿语对比",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Algeria",
+            "code": "DZA",
+            "numeric": 12,
+            "priority": 23,
+            "reason": "阿尔及利亚用英文回答，与阿语对比",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Tunisia",
+            "code": "TUN",
+            "numeric": 788,
+            "priority": 24,
+            "reason": "突尼斯用英文回答，与阿语对比",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Jordan",
+            "code": "JOR",
+            "numeric": 400,
+            "priority": 25,
+            "reason": "约旦用英文回答，与阿语对比",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Lebanon",
+            "code": "LBN",
+            "numeric": 422,
+            "priority": 26,
+            "reason": "黎巴嫩用英文回答，与阿语对比",
+            "cultural_region": "African-Islamic"
+          },
+          {
+            "name": "Iraq",
+            "code": "IRQ",
+            "numeric": 368,
+            "priority": 27,
+            "reason": "伊拉克用英文回答，与阿语对比",
+            "cultural_region": "African-Islamic"
+          }
+        ]
+      }
+    },
+    "models": [
+      "openai/gpt-4o-mini",
+      "anthropic/claude-3.7-sonnet",
+      "google/gemini-2.0-flash-001",
+      "meta-llama/llama-3.3-70b-instruct",
+      "deepseek/deepseek-chat-v3-0324",
+      "qwen/qwq-32b",
+      "mistralai/mistral-nemo"
+    ],
+    "ivs_questions": [
+      "A008", "A165", "E018", "E025", "F063", 
+      "F118", "F120", "G006", "Y002", "Y003"
+    ],
+    "task_calculation": {
+      "native_languages": 4,
+      "countries_per_native_language": {
+        "zh-cn": 5,
+        "ru": 6, 
+        "es": 8,
+        "ar": 8
+      },
+      "english_comparisons": 27,
+      "total_countries": "5+6+8+8+27 = 54个国家-语言组合",
+      "models": 7,
+      "questions": 10,
+      "repeat_count": 5,
+      "total_api_calls": "54 × 7 × 10 × 5 = 18,900",
+      "estimated_cost_usd": "~$189.00 (按每次调用$0.01估算)",
+      "estimated_time_hours": "~12-15小时 (并发执行)"
+    },
+    "data_processing": {
+      "majority_vote": "每个问题5次回答取众数",
+      "fallback_strategy": "如果无众数则取第一个有效回答",
+      "invalid_response_handling": "记录并跳过无效回答"
+    },
+    "output_format": {
+      "raw_responses": "保存所有5次原始回答",
+      "majority_vote_result": "保存众数结果",
+      "confidence_score": "计算众数置信度 (众数出现次数/总次数)",
+      "response_consistency": "计算回答一致性指标"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "small_scale_test_config": {
+    "description": "小规模验证测试：3个核心国家，3个主要模型，每问题3次重复取众数",
+    "repeat_count": 3,
+    "temperature": 0.1,
+    "max_tokens": 50,
+    "languages": {
+      "zh-cn": {
+        "countries": [
+          {
+            "name": "China",
+            "code": "CHN",
+            "priority": 1,
+            "reason": "主要中文国家"
+          }
+        ]
+      },
+      "ru": {
+        "countries": [
+          {
+            "name": "Russian Federation",
+            "code": "RUS",
+            "priority": 1,
+            "reason": "主要俄语国家"
+          }
+        ]
+      },
+      "es": {
+        "countries": [
+          {
+            "name": "Mexico",
+            "code": "MEX",
+            "priority": 1,
+            "reason": "拉美西语国家"
+          }
+        ]
+      },
+      "en": {
+        "countries": [
+          {
+            "name": "China",
+            "code": "CHN",
+            "priority": 1,
+            "reason": "中国用英文回答，与中文对比"
+          },
+          {
+            "name": "Russian Federation",
+            "code": "RUS",
+            "priority": 2,
+            "reason": "俄国用英文回答，与俄语对比"
+          },
+          {
+            "name": "Mexico",
+            "code": "MEX",
+            "priority": 3,
+            "reason": "墨西哥用英文回答，与西语对比"
+          }
+        ]
+      }
+    },
+    "models": [
+      "openai/gpt-4o-mini",
+      "deepseek/deepseek-chat-v3-0324",
+      "google/gemini-2.0-flash-001"
+    ],
+    "ivs_questions": [
+      "A008", "A165", "E018", "E025", "F063", 
+      "F118", "F120", "G006", "Y002", "Y003"
+    ],
+    "task_calculation": {
+      "native_languages": 3,
+      "countries_per_native_language": 1,
+      "english_comparisons": 3,
+      "models": 3,
+      "questions": 10,
+      "repeat_count": 3,
+      "total_countries": "3×1 + 3 = 6个国家-语言组合",
+      "total_api_calls": "6 × 3 × 10 × 3 = 540",
+      "estimated_cost_usd": "~$1.50 (按保守估算)",
+      "estimated_time_hours": "~1-2小时 (并发执行)"
+    },
+    "data_processing": {
+      "majority_vote": "每个问题3次回答取众数",
+      "fallback_strategy": "如果无众数则取第一个有效回答",
+      "invalid_response_handling": "记录并跳过无效回答"
+    },
+    "output_format": {
+      "raw_responses": "保存所有3次原始回答",
+      "majority_vote_result": "保存众数结果",
+      "confidence_score": "计算众数置信度 (众数出现次数/总次数)",
+      "response_consistency": "计算回答一致性指标"
+    },
+    "validation_goals": {
+      "system_stability": "验证系统在长时间运行下的稳定性",
+      "data_quality": "检验众数投票机制的有效性",
+      "api_reliability": "测试不同模型API的可靠性",
+      "processing_pipeline": "验证数据处理和分析流程",
+      "cost_accuracy": "验证实际费用与估算的差异"
+    }
+  }
+}
