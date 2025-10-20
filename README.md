@@ -1,5 +1,19 @@
 # 🌍 大语言模型跨语言文化价值观研究
 
+[![项目状态](https://img.shields.io/badge/状态-实验完成-success)](https://github.com/matrix0394/LLM-s-values)
+[![最后更新](https://img.shields.io/badge/更新-2025.10.20-blue)](https://github.com/matrix0394/LLM-s-values)
+[![阶段](https://img.shields.io/badge/阶段-Stage3完成-brightgreen)](https://github.com/matrix0394/LLM-s-values)
+
+## 🚀 快速导航
+
+- **查看研究成果** → [学术展示系统](slides/stage3/stage3_academic_presentation.html)
+- **开始使用** → [汇报材料使用指南](汇报材料使用指南_START_HERE.md)
+- **了解核心发现** → [英语悖论专题](#🎨-核心发现英语悖论)
+- **运行代码** → [快速开始指南](#🚀-快速开始)
+- **查看数据** → [项目结构](#🏗️-项目结构)
+
+---
+
 ## 📖 项目概述
 
 本项目是一个基于世界价值观调查（World Values Survey, WVS）数据的大语言模型跨语言文化价值观研究平台。项目通过让LLM用不同语言模仿不同国家的文化背景回答价值观问题，系统性地研究**语言对LLM文化价值表达的影响**。
@@ -10,13 +24,24 @@
 
 通过严格的控制变量实验，让LLM用英语和母语分别模仿同一国家文化，对比其文化价值表达的准确性差异。
 
-### 🔬 研究规模
+### 🔬 研究规模（三阶段设计）
 
-- **7个主流模型**：GPT-4o-mini, Claude-3.7-Sonnet, Gemini-2.0-Flash, Llama-3.3-70B, Mistral-nemo, DeepSeek-v3, Qwen-QwQ
-- **26个重点国家** + 112个参考国家
+#### Stage 1: LLM自身价值观
+- **7个主流模型** 直接回答价值观问题
+- **112个真实国家** 作为文化基准
+- **10个IVS核心问题** × 5次重复取众数
+
+#### Stage 2: 英语角色扮演
+- **7个模型** × **26个重点国家**
+- **英语** 提示词角色扮演
+- **182个LLM实体** vs 真实国家对比
+
+#### Stage 3: 多语言对比实验 ⭐
+- **7个模型** × **26个国家** × **2种语言**（英语+母语）
 - **5种语言**：英语、中文、俄语、西班牙语、阿拉伯语
 - **371个LLM实体** + 112个真实国家基准
 - **18,500+次API调用**
+- **控制变量设计**：仅改变语言，其他条件完全相同
 
 ## 🎨 核心发现：英语悖论
 
@@ -170,6 +195,21 @@ LLM's values/
 │   ├── roleplay_analysis_report.md         # 角色扮演分析报告
 │   └── ai_pca_analysis_report.md           # AI PCA分析报告
 │
+├── slides/                      # 学术展示材料 ⭐⭐⭐
+│   └── stage3/                  # Stage3多语言实验展示
+│       ├── stage3_academic_presentation.html     # 完整版学术展示系统
+│       ├── stage3_academic_presentation_small.html  # 精简版展示
+│       ├── images/                                # 可视化图表
+│       │   ├── chart_1_language_coverage.png
+│       │   ├── chart_2_84_percent_paradox.png
+│       │   ├── chart_3_china_example.png
+│       │   ├── chart_4_top_countries.png
+│       │   ├── chart_5_model_comparison.png
+│       │   ├── chart_6_language_regions.png
+│       │   └── chart_7_overall_summary.png
+│       ├── LLM跨文化价值观.pptx                  # PowerPoint版本
+│       └── README_使用指南.md                     # 使用说明
+│
 ├── logs/                        # 日志文件
 │
 └── references/                  # 参考资料
@@ -211,6 +251,27 @@ pip install -r requirements.txt
 }
 ```
 
+### 查看学术展示 ⭐
+
+```bash
+# 方式1：直接在浏览器打开学术展示系统
+open slides/stage3/stage3_academic_presentation.html
+
+# 方式2：使用提供的快捷脚本（macOS）
+cd slides/stage3
+./open_presentation.sh
+
+# 方式3：查看精简版（适合快速预览）
+open slides/stage3/stage3_academic_presentation_small.html
+```
+
+**学术展示系统特性：**
+- 📊 完整的研究成果可视化
+- 🎯 7个核心发现展示页
+- 📈 交互式图表和数据
+- 🎨 专业的学术风格设计
+- 📱 响应式布局，支持演示模式
+
 ### 运行实验
 
 #### 1. 多语言对比实验（核心功能）⭐
@@ -224,6 +285,9 @@ python scripts/analysis/quality_filtered_multilingual_analysis.py
 
 # 运行深度多语言分析（英语悖论研究）
 python scripts/analysis/deep_multilingual_analysis.py
+
+# Stage2 vs Stage3对比分析
+python scripts/analysis/compare_stage2_stage3_english.py
 ```
 
 #### 2. 统一分析流程
@@ -455,14 +519,60 @@ python scripts/runners/concurrent_roleplay_interview.py
 - **AI PCA分析**: [`docs/ai_pca_analysis_report.md`](docs/ai_pca_analysis_report.md)
 - **模型响应分析**: [`docs/model_response_analysis.md`](docs/model_response_analysis.md)
 
-### 开题汇报材料
+### 汇报材料（完整更新版）⭐
 
-- **完整汇报**: [`完整开题汇报_三阶段研究.md`](完整开题汇报_三阶段研究.md)
+**Stage3多语言实验专题：**
+- **完整汇报材料**: [`汇报材料_Stage3多语言实验_最新版.md`](汇报材料_Stage3多语言实验_最新版.md)
+- **学术展示系统**: [`slides/stage3/stage3_academic_presentation.html`](slides/stage3/stage3_academic_presentation.html)
+- **PPT制作指南**: [`Stage3_PPT制作指南.md`](Stage3_PPT制作指南.md)
+- **提示词示例**: [`Stage3_提示词示例详细版_PPT素材.md`](Stage3_提示词示例详细版_PPT素材.md)
+
+**三阶段研究整体：**
+- **完整三阶段汇报**: [`汇报材料_完整三阶段研究_最新版.md`](汇报材料_完整三阶段研究_最新版.md)
+- **完整开题汇报**: [`完整开题汇报_三阶段研究.md`](完整开题汇报_三阶段研究.md)
 - **核心数据**: [`开题汇报_核心数据.md`](开题汇报_核心数据.md)
 - **准备材料**: [`开题汇报_准备材料.md`](开题汇报_准备材料.md)
 - **练习脚本**: [`汇报练习脚本.md`](汇报练习脚本.md)
+- **口袋速查卡**: [`开题汇报_口袋速查卡.md`](开题汇报_口袋速查卡.md)
+
+**专题分析：**
+- **多语言英语悖论**: [`Stage3专题汇报_多语言英语悖论.md`](Stage3专题汇报_多语言英语悖论.md)
+- **Stage2 vs Stage3对比**: [`Stage2_vs_Stage3_英文对比分析_中文总结.md`](Stage2_vs_Stage3_英文对比分析_中文总结.md)
+- **PC2负数问题**: [`PC2负数问题分析报告.md`](PC2负数问题分析报告.md)
+
+**使用指南：**
+- **START HERE**: [`汇报材料使用指南_START_HERE.md`](汇报材料使用指南_START_HERE.md)
+- **材料更新总结**: [`汇报材料更新总结.md`](汇报材料更新总结.md)
 
 ## 🔧 开发指南
+
+### 技术特性
+
+**1. 统一的基类架构 ⭐**
+- `BaseInterview`: 统一的访谈接口和重复取众数机制
+- `BasePCAAnalyzer`: 统一的PCA分析方法（主成分分析 + Varimax旋转）
+- `BaseCulturalMapVisualizer`: 统一的Inglehart-Welzel文化地图可视化
+- `IVSQuestionProcessor`: 统一的IVS问题处理和评分逻辑
+
+**2. 模块化设计**
+- 每个研究阶段（Stage1/2/3）独立模块
+- 可复用的数据处理和分析组件
+- 灵活的配置管理系统
+
+**3. 重复访谈与众数机制**
+- 每个问题访谈5次，自动取众数
+- 提高数据可靠性，减少随机性影响
+- 保存完整的访谈历史和统计信息
+
+**4. 交互式可视化**
+- Plotly驱动的交互式文化地图
+- 支持缩放、悬停、筛选等交互操作
+- HTML格式，便于分享和展示
+
+**5. 完整的学术展示系统**
+- 基于HTML的专业展示系统
+- 响应式设计，支持演示模式
+- 集成所有核心研究发现
 
 ### 代码结构
 
@@ -520,5 +630,22 @@ python scripts/runners/concurrent_roleplay_interview.py
 
 ---
 
-**最后更新**: 2024年10月18日  
-**项目状态**: 已完成阶段一核心实验，正在进行深度分析和论文撰写
+## 📊 项目进度
+
+### ✅ 已完成
+- **Stage 1**: LLM自身价值观研究（7个模型 × 10个问题 × 5次重复）
+- **Stage 2**: 英语角色扮演实验（7个模型 × 26个国家）
+- **Stage 3**: 多语言对比实验（7个模型 × 26个国家 × 5种语言）
+- **数据分析**: 完整的PCA分析、文化地图可视化、统计检验
+- **学术展示**: 完整的HTML展示系统和PPT材料
+- **汇报材料**: 全套开题汇报和专题分析文档
+
+### 🔄 进行中
+- 深度分析和论文撰写
+- 补充实验和数据验证
+- 交互式可视化优化
+
+---
+
+**最后更新**: 2025年10月20日  
+**项目状态**: 三阶段实验全部完成，学术展示系统已上线，正在进行论文撰写
