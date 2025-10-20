@@ -177,11 +177,145 @@ Por favor proporcione respuestas significativas que reflejen su perspectiva cult
     
     
     
-    def interview_country_multilingual(self, model_name: str, country: str, language: str) -> Dict[str, Any]:
-        """对特定国家进行多语言访谈"""
-        print(f"\n🎭 开始访谈: {model_name} 模拟 {country} ({language})")
-        print("=" * 60)
+    def interview_country_multilingual_with_repeats(self, model_name: str, country: str, language: str) -> Dict[str, Any]:
+        """对特定国家进行多语言访谈（整个问卷重复N次，最后取众数）"""
+        print(f"\n" + "="*80)
+        print(f"🎭 开始重复访谈任务")
+        print(f"="*80)
+        print(f"📋 配置:")
+        print(f"   • 模型: {model_name}")
+        print(f"   • 国家: {country}")
+        print(f"   • 语言: {language}")
+        print(f"   • 重复次数: {self.repeat_count}")
+        print(f"   • 问题数: 10")
+        print("="*80)
         
+        # 存储每一轮的完整访谈结果
+        all_rounds = []
+        
+        # 重复进行N次完整问卷访谈
+        for round_idx in range(self.repeat_count):
+            print(f"\n┌{'─'*78}┐")
+            print(f"│ 🔄 第 {round_idx + 1}/{self.repeat_count} 轮完整问卷访谈" + " " * (78 - 20 - len(f"{round_idx + 1}/{self.repeat_count}")) + "│")
+            print(f"└{'─'*78}┘")
+            
+            # 进行一次完整的问卷访谈
+            round_result = self.interview_country_multilingual(model_name, country, language)
+            round_result['round_id'] = round_idx + 1
+            all_rounds.append(round_result)
+            
+            print(f"✅ 第 {round_idx + 1} 轮完成 - 成功率: {round_result['success_rate']:.0f}%")
+            
+            # 轮次间短暂延迟
+            if round_idx < self.repeat_count - 1:
+                time.sleep(0.5)
+        
+        # 计算每个问题的众数
+        print(f"\n{'='*80}")
+        print(f"📊 计算众数 - 汇总 {self.repeat_count} 轮回答")
+        print(f"{'='*80}")
+        
+        final_responses = self._aggregate_repeated_interviews(all_rounds)
+        
+        # 构建最终结果
+        result = {
+            "model": model_name,
+            "country": country,
+            "language": language,
+            "timestamp": datetime.now().isoformat(),
+            "repeat_count": self.repeat_count,
+            "total_questions": len(final_responses),
+            "responses": final_responses,
+            "all_rounds": all_rounds,  # 保存所有轮次的完整数据
+        }
+        
+        # 计算总体统计
+        valid_count = sum(1 for r in final_responses if r['final_response'] is not None)
+        avg_confidence = sum(r['confidence'] for r in final_responses) / len(final_responses) if final_responses else 0
+        
+        result['valid_responses'] = valid_count
+        result['success_rate'] = valid_count / len(final_responses) * 100 if final_responses else 0
+        result['average_confidence'] = avg_confidence
+        
+        # 打印最终总结
+        print(f"\n{'='*80}")
+        print(f"✅ 重复访谈完成")
+        print(f"{'='*80}")
+        print(f"📋 结果汇总:")
+        print(f"   🎯 模型: {model_name}")
+        print(f"   🌍 国家: {country}")
+        print(f"   🗣️ 语言: {language}")
+        print(f"   🔄 完成轮次: {self.repeat_count}")
+        print(f"   ✅ 最终成功率: {result['success_rate']:.1f}% ({valid_count}/{len(final_responses)})")
+        print(f"   📊 平均置信度: {avg_confidence*100:.1f}%")
+        
+        # 显示置信度分布
+        high_conf = sum(1 for r in final_responses if r['confidence'] >= 0.8)
+        med_conf = sum(1 for r in final_responses if 0.6 <= r['confidence'] < 0.8)
+        low_conf = sum(1 for r in final_responses if r['confidence'] < 0.6)
+        print(f"\n   置信度分布:")
+        print(f"     • 高 (≥80%): {high_conf} 个问题")
+        print(f"     • 中 (60-80%): {med_conf} 个问题")
+        print(f"     • 低 (<60%): {low_conf} 个问题")
+        print("=" * 80)
+        
+        return result
+    
+    def _aggregate_repeated_interviews(self, all_rounds: List[Dict]) -> List[Dict]:
+        """聚合多轮访谈结果，计算每个问题的众数"""
+        from collections import defaultdict, Counter
+        
+        # 按问题ID组织所有回答
+        question_responses = defaultdict(lambda: {
+            'question_id': None,
+            'question': None,
+            'scale': None,
+            'dimension': None,
+            'all_responses': [],
+            'all_raw_responses': []
+        })
+        
+        # 收集所有轮次的回答
+        for round_data in all_rounds:
+            for response in round_data['responses']:
+                qid = response['question_id']
+                question_responses[qid]['question_id'] = qid
+                question_responses[qid]['question'] = response['question']
+                question_responses[qid]['scale'] = response['scale']
+                question_responses[qid]['dimension'] = response['dimension']
+                question_responses[qid]['all_responses'].append(response['processed_response'])
+                question_responses[qid]['all_raw_responses'].append(response['raw_response'])
+        
+        # 计算每个问题的众数
+        final_responses = []
+        for qid, data in question_responses.items():
+            # 计算众数
+            final_response, confidence = self._calculate_mode(data['all_responses'])
+            
+            # 统计回答分布
+            valid_responses = [r for r in data['all_responses'] if r is not None]
+            response_distribution = dict(Counter(valid_responses)) if valid_responses else {}
+            
+            # 打印每个问题的众数结果（带颜色标记）
+            conf_emoji = "🟢" if confidence >= 0.8 else "🟡" if confidence >= 0.6 else "🔴"
+            print(f"  {conf_emoji} {qid}: {data['all_responses']} → [{final_response}] (置信度: {confidence*100:.0f}%)")
+            
+            final_responses.append({
+                'question_id': qid,
+                'question': data['question'],
+                'scale': data['scale'],
+                'dimension': data['dimension'],
+                'final_response': final_response,  # 最终众数结果
+                'confidence': confidence,  # 置信度
+                'all_responses': data['all_responses'],  # 所有轮次的处理后回答
+                'all_raw_responses': data['all_raw_responses'],  # 所有轮次的原始回答
+                'response_distribution': response_distribution,  # 回答分布
+            })
+        
+        return final_responses
+    
+    def interview_country_multilingual(self, model_name: str, country: str, language: str) -> Dict[str, Any]:
+        """对特定国家进行多语言访谈（单次完整问卷）"""
         # 获取该语言的问题
         questions = self.multilingual_config["languages"][language]["questions"]
         
@@ -193,13 +327,7 @@ Por favor proporcione respuestas significativas que reflejen su perspectiva cult
         
         for question_id, question_data in questions.items():
             try:
-                # 构建消息
-                messages = [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": question_data["question"]}
-                ]
-                
-                # 调用API - 使用基类方法
+                # 调用API
                 response_text = self.call_model_api(
                     model_name, 
                     question_id,
@@ -209,16 +337,11 @@ Por favor proporcione respuestas significativas que reflejen su perspectiva cult
                     timeout=30
                 )
                 
-                # 打印详细的问答过程 //by=>friday
-                print(f"  📝 问题 {question_id}: {question_data['question'][:50]}...")
+                print(f"  📝 {question_id}: ", end='')
                 
                 if response_text:
-                    # 处理和验证回答
                     processed_response = self._process_response(response_text, question_id)
-                    
-                    # 打印模型回答详情 //by=>friday
-                    print(f"  🤖 原始回答: '{response_text.strip()}'")
-                    print(f"  ✅ 处理后: '{processed_response}'" if processed_response else "  ❌ 处理失败")
+                    print(f"'{response_text.strip()}' → '{processed_response}'")
                     
                     if processed_response:
                         valid_responses += 1
@@ -232,6 +355,7 @@ Por favor proporcione respuestas significativas que reflejen su perspectiva cult
                         "dimension": question_data["dimension"]
                     })
                 else:
+                    print(f"❌ 无回答")
                     responses.append({
                         "question_id": question_id,
                         "question": question_data["question"],
@@ -243,12 +367,12 @@ Por favor proporcione respuestas significativas que reflejen su perspectiva cult
                 
                 # 根据模型类型调整延迟
                 if any(x in model_name.lower() for x in ['gpt', 'claude']):
-                    time.sleep(0.3)  # 较快的模型
+                    time.sleep(0.2)
                 else:
-                    time.sleep(0.5)  # 其他模型保持现有延迟
+                    time.sleep(0.3)
                 
             except Exception as e:
-                print(f"问题 {question_id} 处理失败: {e}")
+                print(f"  ❌ {question_id}: {e}")
                 responses.append({
                     "question_id": question_id,
                     "question": question_data.get("question", ""),
@@ -270,14 +394,31 @@ Por favor proporcione respuestas significativas que reflejen su perspectiva cult
             "responses": responses
         }
         
-        # 打印访谈总结 //by=>friday
-        print(f"\n📊 访谈总结:")
-        print(f"  🎯 模型: {model_name}")
-        print(f"  🌍 国家: {country}")
-        print(f"  🗣️ 语言: {language}")
-        print(f"  ✅ 成功率: {result['success_rate']:.1f}% ({valid_responses}/{len(questions)})")
-        print("=" * 60)
+        print(f"  ✅ 完成: {valid_responses}/{len(questions)}")
         return result
+    
+    def _calculate_mode(self, responses: List) -> Tuple[Any, float]:
+        """计算众数及其置信度"""
+        from collections import Counter
+        
+        # 过滤掉None值
+        valid_responses = [r for r in responses if r is not None]
+        
+        if not valid_responses:
+            return None, 0.0
+        
+        # 统计每个回答的出现次数
+        counter = Counter(valid_responses)
+        
+        # 获取出现最多的回答
+        most_common = counter.most_common(1)[0]
+        mode_value = most_common[0]
+        mode_count = most_common[1]
+        
+        # 计算置信度
+        confidence = mode_count / len(valid_responses)
+        
+        return mode_value, confidence
     
     def _process_response(self, response_text: str, question_id: str) -> Optional[str]:
         """处理和验证回答 - 使用统一的处理器"""
@@ -329,18 +470,38 @@ Por favor proporcione respuestas significativas que reflejen su perspectiva cult
                 for model in models:
                     tasks.append((model, country, language))
         
-        print(f"准备运行 {len(tasks)} 个多语言访谈任务")
+        # 注释掉自动降低并发度的逻辑，使用用户指定的并发度
+        # if self.repeat_count > 1 and max_workers > 2:
+        #     max_workers = 2
+        #     print(f"\n💡 检测到重复取众数模式 (repeat_count={self.repeat_count})")
+        #     print(f"   自动调整并发度为 {max_workers} 以便清晰显示进度")
+        
+        print(f"\n准备运行 {len(tasks)} 个多语言访谈任务")
+        print(f"并发度: {max_workers} (高并发模式)")
+        if max_workers >= 10:
+            print(f"⚡ 注意：高并发模式下输出会交织，但速度大幅提升")
+        if self.repeat_count > 1:
+            print(f"每个任务将重复 {self.repeat_count} 轮问卷")
+            print(f"预计总API调用: {len(tasks)} × 10问题 × {self.repeat_count}轮 = {len(tasks) * 10 * self.repeat_count} 次\n")
         
         results = []
         completed = 0
         
+        # 使用锁保护共享变量
+        import threading
+        progress_lock = threading.Lock()
+        
         def run_single_interview(task):
             model, country, language = task
             try:
-                result = self.interview_country_multilingual(model, country, language)
+                # 如果repeat_count > 1，使用重复访谈方法
+                if self.repeat_count > 1:
+                    result = self.interview_country_multilingual_with_repeats(model, country, language)
+                else:
+                    result = self.interview_country_multilingual(model, country, language)
                 return result
             except Exception as e:
-                print(f"任务失败: {model} - {country} ({language}): {e}")
+                print(f"\n❌ 任务失败: {model} - {country} ({language}): {e}")
                 return None
         
         # 使用线程池并发执行
@@ -351,8 +512,12 @@ Por favor proporcione respuestas significativas que reflejen su perspectiva cult
                 result = future.result()
                 if result:
                     results.append(result)
-                completed += 1
-                print(f"进度: {completed}/{len(tasks)} ({completed/len(tasks)*100:.1f}%)")
+                
+                with progress_lock:
+                    completed += 1
+                    task = future_to_task[future]
+                    model, country, language = task
+                    print(f"\n{'🟢' if result else '🔴'} 进度: [{completed}/{len(tasks)}] ({completed/len(tasks)*100:.1f}%) - {model}/{country}/{language}")
         
         # 保存结果
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

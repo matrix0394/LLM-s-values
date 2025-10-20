@@ -76,7 +76,7 @@ class LLMValuesAnalysisRunner:
         
         # 创建访谈对象
         print("🤖 初始化LLM访谈器...")
-        interviewer = LLMInterview(repeat_count=1)  # 每个问题问1次
+        interviewer = LLMInterview(repeat_count=5)  # 每个完整问卷重复5次，取众数
         
         # 获取可用模型
         available_models = [name for name in interviewer.model_configs.keys() if name in interviewer.api_keys]

@@ -179,9 +179,13 @@ class BasePCAAnalyzer(ABC):
             ppca_df["year"] = data["year"].values
         
         # 添加其他可用的元数据
+        print(f"🔍 检查元数据列在输入数据中的存在情况:")
         for col in ["data_source", "model_name", "cultural_region", "language"]:
-            if col in data.columns:
+            exists = col in data.columns
+            print(f"  {col}: {exists}")
+            if exists:
                 ppca_df[col] = data[col].values
+                print(f"    ✅ 已复制 {len(data[col].unique())} 个唯一值")
         
         # 合并国家元数据（修复数据类型不匹配问题）
         if self.country_codes is not None:
@@ -206,6 +210,10 @@ class BasePCAAnalyzer(ABC):
         
         # 过滤掉无效的主成分分数
         self.pca_results = ppca_df.dropna(subset=['PC1_rescaled', 'PC2_rescaled'])
+        
+        print(f"\n📊 PCA结果DataFrame列: {list(self.pca_results.columns)}")
+        print(f"   language列存在: {'language' in self.pca_results.columns}")
+        print(f"   model_name列存在: {'model_name' in self.pca_results.columns}")
         
         print(f"✅ PCA分析完成: {len(self.pca_results)} 个有效观测值")
         return self.pca_results
@@ -257,11 +265,18 @@ class BasePCAAnalyzer(ABC):
             
             # 处理非IVS数据（包含model_name和language分组）
             if len(non_ivs_data) > 0:
+                print(f"\n🔍 处理非IVS数据（{len(non_ivs_data)}行）:")
+                print(f"   可用列: {list(non_ivs_data.columns)}")
+                
                 non_ivs_group_by = group_by.copy()
                 if 'model_name' in non_ivs_data.columns and 'model_name' not in non_ivs_group_by:
                     non_ivs_group_by.append('model_name')
+                    print(f"   ✅ 添加 model_name 到分组列")
                 if 'language' in non_ivs_data.columns and 'language' not in non_ivs_group_by:
                     non_ivs_group_by.append('language')
+                    print(f"   ✅ 添加 language 到分组列")
+                
+                print(f"   最终分组列: {non_ivs_group_by}")
                 
                 non_ivs_agg_dict = {k: v for k, v in agg_dict.items() if k in non_ivs_data.columns}
                 
@@ -276,6 +291,11 @@ class BasePCAAnalyzer(ABC):
             # 合并结果
             if entity_scores_list:
                 entity_scores = pd.concat(entity_scores_list, ignore_index=True)
+                print(f"\n📊 合并后的entity_scores:")
+                print(f"   形状: {entity_scores.shape}")
+                print(f"   列名: {list(entity_scores.columns)}")
+                print(f"   language列存在: {'language' in entity_scores.columns}")
+                print(f"   model_name列存在: {'model_name' in entity_scores.columns}")
             else:
                 entity_scores = pd.DataFrame()
         else:

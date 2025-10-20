@@ -75,8 +75,8 @@ class RoleplayMultilingualAnalysisRunner:
             # 导入多语言访谈模块
             from src.roleplay_multilingual.multilingual_roleplay_interview import MultilingualRoleplayInterview
             
-            # 初始化访谈器
-            interviewer = MultilingualRoleplayInterview(data_path=str(self.data_path))
+            # 初始化访谈器（每个问题重复5次取众数）
+            interviewer = MultilingualRoleplayInterview(repeat_count=5, data_path=str(self.data_path))
             
             # 检查是否已有访谈数据
             existing_files = list(self.data_path.glob("interview_data_*.json"))
@@ -584,7 +584,6 @@ class RoleplayMultilingualAnalysisRunner:
                 processed_time = latest_processed_file.stat().st_mtime
                 interview_time = interview_data_file.stat().st_mtime
                 
-                from datetime import datetime
                 processed_dt = datetime.fromtimestamp(processed_time)
                 interview_dt = datetime.fromtimestamp(interview_time)
                 
@@ -781,15 +780,37 @@ class RoleplayMultilingualAnalysisRunner:
         if len(multilingual_data) > 0:
             # 检查多语言数据中实际存在的列
             available_columns = ['country_code', 'data_source', 'PC1_rescaled', 'PC2_rescaled']
-            if 'model_name' in multilingual_data.columns:
-                available_columns.append('model_name')
-            if 'language' in multilingual_data.columns:
-                available_columns.append('language')
+            optional_columns = ['model_name', 'language', 'Country', 'Cultural Region']
+            
+            print(f"多语言数据现有列: {list(multilingual_data.columns)}")
+            
+            for col in optional_columns:
+                if col in multilingual_data.columns:
+                    available_columns.append(col)
+                    print(f"  ✅ 保留: {col}")
+                else:
+                    print(f"  ⚠️ 缺失: {col}")
             
             multilingual_final = multilingual_data[available_columns].copy()
+            
+            # 确保multilingual_data也有Country和Cultural Region列（通过country_code匹配）
+            if 'Country' not in multilingual_final.columns and len(multilingual_final) > 0:
+                multilingual_final['country_code_int'] = pd.to_numeric(multilingual_final['country_code'], errors='coerce')
+                multilingual_final = multilingual_final.merge(
+                    country_codes[['Numeric_int', 'Country', 'Cultural Region']], 
+                    left_on='country_code_int', 
+                    right_on='Numeric_int', 
+                    how='left'
+                )
+                multilingual_final = multilingual_final.drop(['country_code_int', 'Numeric_int'], axis=1, errors='ignore')
+                print(f"  ✅ 为多语言数据添加Country和Cultural Region列")
+            
             entity_scores_final = pd.concat([ivs_final, multilingual_final], ignore_index=True)
         else:
             entity_scores_final = ivs_final
+        
+        print(f"\n最终数据列: {list(entity_scores_final.columns)}")
+        print(f"最终数据形状: {entity_scores_final.shape}")
         
         return entity_scores_final
     
@@ -2137,16 +2158,20 @@ class RoleplayMultilingualAnalysisRunner:
             
             # 估算成本和时间 - 基于新的配置
             # 54个语言-国家组合 (5+6+8+8+27) × 7模型 × 10问题 × 5重复
-            total_calls = 54 * 7 * 10 * 5  # 语言-国家组合×模型×问题×重复
-            estimated_cost = total_calls * 0.01  # 估算每次调用成本
-            estimated_hours = total_calls / 1000  # 估算时间（小时，考虑并发）
+            total_tasks = 54 * 7  # 378个任务
+            total_calls = total_tasks * 10 * 5  # 18,900次API调用
+            estimated_cost = total_calls * 0.0006  # 平均每次$0.0006（混合模型价格）
+            # 并发15：378任务÷15=25.2批，每批平均10分钟=4.2小时（快速模型）到8小时（含QWQ）
+            estimated_hours_min = (total_tasks / 15) * (10 / 60)  # 快速场景
+            estimated_hours_max = (total_tasks / 15) * (20 / 60)  # QWQ拖慢场景
             
             print(f"📊 预估统计:")
             print(f"   - 语言-国家组合: 54个 (中文5+俄语6+西语8+阿语8+英文27)")
             print(f"   - 独特国家数量: 27个")
-            print(f"   - 总API调用: {total_calls:,}")
-            print(f"   - 预估费用: ${estimated_cost:.2f}")
-            print(f"   - 预估时间: {estimated_hours:.1f}-{estimated_hours*1.2:.1f}小时 (并发执行)")
+            print(f"   - 总任务数: {total_tasks}个")
+            print(f"   - 总API调用: {total_calls:,}次")
+            print(f"   - 预估费用: ${estimated_cost:.2f} (混合模型平均价)")
+            print(f"   - 预估时间: {estimated_hours_min:.1f}-{estimated_hours_max:.1f}小时 (并发15)")
             
             confirm = input("\n确认继续? (y/N): ").strip().lower()
             if confirm != 'y':
@@ -2172,16 +2197,20 @@ class RoleplayMultilingualAnalysisRunner:
             print("🧪 开始小规模测试 (3模型×3国家×4语言×3重复)")
             
             # 估算成本和时间 - 修正为正确的问题数量
-            # 小规模: 3国家 × 4语言 = 12个语言-国家组合
-            total_calls = 12 * 3 * 10 * 3  # 语言-国家组合×模型×问题×重复
-            estimated_cost = total_calls * 0.01  # 估算每次调用成本
-            estimated_hours = total_calls / 1000  # 估算时间（小时，考虑并发）
+            # 小规模: 3国家 × 4语言 × 3模型 = 36个任务
+            total_tasks = 12 * 3  # 36个任务
+            total_calls = total_tasks * 10 * 3  # 1,080次API调用（每任务10问题×3重复）
+            estimated_cost = total_calls * 0.0006  # 平均每次$0.0006
+            # 并发15：36任务÷15=2.4批，每批约10分钟
+            estimated_hours_min = (total_tasks / 15) * (10 / 60)
+            estimated_hours_max = (total_tasks / 15) * (20 / 60)
             
             print(f"📊 预估统计:")
             print(f"   - 语言-国家组合: 12个 (3国家 × 4语言)")
-            print(f"   - 总API调用: {total_calls:,}")
-            print(f"   - 预估费用: ${estimated_cost:.2f}")
-            print(f"   - 预估时间: {estimated_hours:.1f}-{estimated_hours*1.2:.1f}小时 (并发执行)")
+            print(f"   - 总任务数: {total_tasks}个")
+            print(f"   - 总API调用: {total_calls:,}次")
+            print(f"   - 预估费用: ${estimated_cost:.2f} (混合模型平均价)")
+            print(f"   - 预估时间: {estimated_hours_min:.1f}-{estimated_hours_max:.1f}小时 (并发15)")
             
             confirm = input("\n确认继续? (y/N): ").strip().lower()
             if confirm != 'y':
@@ -2270,8 +2299,11 @@ class RoleplayMultilingualAnalysisRunner:
             print(f"   - 语言: {len(languages)} 个")
             print(f"   - 重复次数: {repeat_count}")
             
-            # 创建访谈器
-            interviewer = MultilingualRoleplayInterview()
+            # 创建访谈器（传入repeat_count）
+            interviewer = MultilingualRoleplayInterview(
+                repeat_count=repeat_count,
+                data_path=str(self.data_path)
+            )
             
             # 生成任务列表
             tasks = []
@@ -2282,11 +2314,10 @@ class RoleplayMultilingualAnalysisRunner:
             
             print(f"📋 总任务数: {len(tasks)}")
             
-            # 运行访谈
+            # 运行访谈（repeat_count已在初始化时设置）
             results = interviewer.run_multilingual_experiment(
                 models=models, 
-                max_workers=4, 
-                repeat_count=repeat_count,
+                max_workers=15,  # 提高并发度以加快实验速度
                 test_type=config_type
             )
             

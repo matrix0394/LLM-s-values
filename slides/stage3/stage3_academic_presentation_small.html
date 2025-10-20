@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 3: 多语言对比与"英语悖论" - 学术展示 (小屏幕版)</title>
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --accent-color: #E74C3C;
+            --secondary-color: #3498DB;
+            --success-color: #27AE60;
+        }
+        
+        .reveal {
+            font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            font-size: 24px; /* 小屏幕优化 */
+        }
+        
+        .reveal h1 {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-transform: none;
+            margin-bottom: 20px;
+            font-size: 2em; /* 相对大小 */
+        }
+        
+        .reveal h2 {
+            color: var(--accent-color);
+            font-weight: bold;
+            text-transform: none;
+            margin-bottom: 15px;
+            font-size: 1.5em; /* 相对大小 */
+        }
+        
+        .reveal h3 {
+            color: var(--secondary-color);
+            text-transform: none;
+            font-size: 1.2em; /* 相对大小 */
+        }
+        
+        .reveal h4 {
+            font-size: 1em;
+        }
+        
+        .reveal p {
+            margin: 10px 0;
+        }
+        
+        .reveal ul, .reveal ol {
+            margin: 10px 0;
+        }
+        
+        .reveal li {
+            margin: 5px 0;
+        }
+        
+        .reveal .slides section {
+            text-align: left;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden;
+        }
+        
+        .reveal .slides section > * {
+            flex-shrink: 0;
+        }
+        
+        .reveal .title-slide {
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .reveal .center {
+            text-align: center;
+        }
+        
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .highlight-blue {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: var(--success-color);
+            font-weight: bold;
+        }
+        
+        .box {
+            background-color: #f8f9fa;
+            border-left: 5px solid var(--accent-color);
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 0.85em;
+        }
+        
+        .box-blue {
+            border-left-color: var(--secondary-color);
+        }
+        
+        .box-green {
+            border-left-color: var(--success-color);
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .three-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+        }
+        
+        ul.clean {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul.clean li:before {
+            content: "▸ ";
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .fragment.highlight-current-red {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        .fragment.highlight-current-red.current-fragment {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.75em;
+        }
+        
+        table th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        table td {
+            padding: 6px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .image-caption {
+            font-size: 0.7em;
+            color: #666;
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+        .reveal img {
+            max-height: 400px;
+            object-fit: contain;
+        }
+        
+        .progress-bar {
+            background-color: var(--accent-color);
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            font-size: 0.6em;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Slide 1: 标题页 -->
+            <section class="title-slide">
+                <h1>多语言对比与"英语悖论"</h1>
+                <h3>LLM跨文化价值观评估 Stage 3</h3>
+                <br>
+                <p style="font-size: 1.2em;">基于最新数据（2024年10月19日）</p>
+                <br>
+                <p>汇报人: 尤昕怡</p>
+                <p>日期: 2024年10月21日</p>
+            </section>
+            
+            <!-- Slide 2: 快速回顾 Stage 1 -->
+            <section style="font-size: 0.85em; justify-content: flex-start;">
+                <h2 style="font-size: 1.3em;">前期研究回顾 - Stage 1</h2>
+                <div class="box" style="padding: 10px 15px; margin: 10px 0;">
+                    <h3 style="font-size: 1em; margin-bottom: 5px;"> Stage 1: LLM本身的价值观</h3>
+                    <p><strong>方法：</strong>直接向7个LLM提问WVS价值观问题（不让LLM扮演任何角色）</p>
+                </div>
+                
+                <div class="two-column" style="margin: 10px 0;">
+                    <div>
+                        <h3 style="font-size: 1em;"> 整体特征：</h3>
+                        <div class="box" style="padding: 8px; font-size: 0.95em;">
+                            <p><strong>PC1 (传统↔世俗理性)：</strong></p>
+                            <ul style="margin: 3px 0;">
+                                <li>LLM均值: <span class="highlight">+3.06</span></li>
+                                <li>真实国家: +0.20</li>
+                                <li>→ LLM显著更<strong>世俗理性</strong></li>
+                            </ul>
+                            <p style="margin-top: 8px;"><strong>PC2 (生存↔自我表达)：</strong></p>
+                            <ul style="margin: 3px 0;">
+                                <li>LLM均值: <span class="highlight">+1.08</span></li>
+                                <li>真实国家: -0.25</li>
+                                <li>→ LLM全部偏向<strong>自我表达</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1em;"> 各模型差异：</h3>
+                        <table style="font-size: 0.75em; margin: 0;">
+                            <thead>
+                                <tr>
+                                    <th style="padding: 4px;">模型</th>
+                                    <th style="padding: 4px;">PC1</th>
+                                    <th style="padding: 4px;">PC2</th>
+                                    <th style="padding: 4px;">特点</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GPT-4o-mini</td>
+                                    <td>5.71</td>
+                                    <td>0.17</td>
+                                    <td>最世俗理性</td>
+                                </tr>
+                                <tr>
+                                    <td>Mistral</td>
+                                    <td>4.91</td>
+                                    <td>0.74</td>
+                                    <td>高度世俗</td>
+                                </tr>
+                                <tr>
+                                    <td>DeepSeek</td>
+                                    <td>4.71</td>
+                                    <td>0.51</td>
+                                    <td>高度世俗</td>
+                                </tr>
+                                <tr style="background-color: #fff3cd;">
+                                    <td>QwQ-32b</td>
+                                    <td>2.00</td>
+                                    <td>3.31</td>
+                                    <td>最自我表达</td>
+                                </tr>
+                                <tr>
+                                    <td>Claude</td>
+                                    <td>3.31</td>
+                                    <td>0.64</td>
+                                    <td>中等世俗</td>
+                                </tr>
+                                <tr>
+                                    <td>Llama-3.3</td>
+                                    <td>0.97</td>
+                                    <td>2.06</td>
+                                    <td>高自我表达</td>
+                                </tr>
+                                <tr style="background-color: #e3f2fd;">
+                                    <td>Gemini</td>
+                                    <td>-0.19</td>
+                                    <td>0.08</td>
+                                    <td>最接近传统</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div style="margin: 10px 0;">
+                    <img src="images/stage1_cultural_map.png" alt="Stage 1 文化地图" style="width: 100%; max-height: 280px; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p class="image-caption">图: LLM价值观在全球文化地图中的位置（全部位于右上象限）</p>
+                </div>
+                
+                <div class="box box-green" style="padding: 10px; margin-top: 10px; text-align: center;">
+                    <strong>核心结论：</strong>所有LLM都表现出<span class="highlight">世俗理性 + 自我表达</span>的西方自由主义价值观
+                </div>
+            </section>
+            
+            <!-- Slide 3: 快速回顾 Stage 2 + 引出问题 -->
+            <section style="font-size: 0.82em; justify-content: flex-start;">
+                <h2 style="font-size: 1.35em;">Stage 2: 英语环境下的跨文化理解</h2>
+                
+                <div class="box" style="padding: 10px 15px; margin: 10px 0;">
+                    <h3 style="font-size: 1em; margin-bottom: 5px;">角色扮演范式</h3>
+                    <p><strong>方法：</strong>让LLM扮演不同国家的公民，全部使用英语</p>
+                    <p style="font-size: 1.05em;"><span class="highlight">7模型 × 109国家 = ~770个实体</span>（8大文化区域全覆盖）</p>
+                </div>
+                
+                <div class="two-column" style="margin: 10px 0;">
+                    <div>
+                        <h3 style="font-size: 1em;">各模型表现：</h3>
+                        <table style="font-size: 0.7em; margin: 0;">
+                            <thead>
+                                <tr>
+                                    <th style="padding: 3px;">模型</th>
+                                    <th style="padding: 3px;">平均距离</th>
+                                    <th style="padding: 3px;">有效率</th>
+                                    <th style="padding: 3px;">评价</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: #e8f5e9;">
+                                    <td>Claude-3.7</td>
+                                    <td>2.12</td>
+                                    <td>98.2%</td>
+                                    <td>🥇 最佳</td>
+                                </tr>
+                                <tr>
+                                    <td>Gemini-2.0</td>
+                                    <td>2.18</td>
+                                    <td>96.8%</td>
+                                    <td>🥈 很好</td>
+                                </tr>
+                                <tr>
+                                    <td>DeepSeek-v3</td>
+                                    <td>2.31</td>
+                                    <td>95.4%</td>
+                                    <td>良好</td>
+                                </tr>
+                                <tr>
+                                    <td>Mistral</td>
+                                    <td>2.38</td>
+                                    <td>94.5%</td>
+                                    <td>良好</td>
+                                </tr>
+                                <tr>
+                                    <td>Llama-3.3</td>
+                                    <td>2.45</td>
+                                    <td>96.1%</td>
+                                    <td>良好</td>
+                                </tr>
+                                <tr style="background-color: #fff3cd;">
+                                    <td>GPT-4o-mini</td>
+                                    <td>2.81</td>
+                                    <td>91.2%</td>
+                                    <td>⚠️ 一般</td>
+                                </tr>
+                                <tr>
+                                    <td>QwQ-32b</td>
+                                    <td>1.95</td>
+                                    <td>21.8%</td>
+                                    <td>❌ 低效</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="font-size: 0.85em; margin-top: 5px;">整体平均：<span class="highlight">2.3</span></p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1em;">文化区域难度：</h3>
+                        <div class="box" style="padding: 8px; font-size: 0.9em;">
+                            <p><strong>✅ 容易（1.5-2.0）</strong></p>
+                            <ul style="margin: 3px 0 8px 0;">
+                                <li>英语国家（美/英/加/澳）</li>
+                                <li>西欧（德/法/荷/北欧）</li>
+                            </ul>
+                            <p><strong>➡️ 中等（2.0-2.5）</strong></p>
+                            <ul style="margin: 3px 0 8px 0;">
+                                <li>东亚（中/日/韩/台）</li>
+                                <li>拉美（墨/巴/阿根廷）</li>
+                            </ul>
+                            <p><strong>⚠️ 困难（2.5-3.5）</strong></p>
+                            <ul style="margin: 3px 0;">
+                                <li>中东（沙特/伊朗/伊拉克）</li>
+                                <li>非洲（尼日利亚/津巴布韦）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin: 10px 0;">
+                    <img src="images/stage2_cultural_map.png" alt="Stage 2 文化地图" style="width: 100%; max-height: 250px; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <p class="image-caption">图: 109国角色扮演在文化地图上的分布</p>
+                </div>
+                
+                <div class="two-column" style="margin: 10px 0;">
+                    <div class="box box-green" style="padding: 10px; font-size: 0.95em;">
+                        <strong>✅ 核心结论：</strong>LLM具备全球尺度跨文化理解能力
+                    </div>
+                    <div class="box" style="background-color: #fff3cd; padding: 10px; font-size: 0.95em;">
+                        <strong>🤔 新问题：</strong>用母语会更好吗？<br>
+                        <span style="font-size: 0.9em;">直觉假设：母语 > 英语</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Slide 4: Stage 3 研究设计 -->
+            <section style="font-size: 0.8em; justify-content: flex-start;">
+                <h2 style="font-size: 1.35em;">Stage 3: 多语言对比实验</h2>
+                
+                <div class="box" style="padding: 10px 15px; margin: 10px 0;">
+                    <h3 style="font-size: 1em; margin-bottom: 5px;">Stage 3: 多语言 vs 英语对比</h3>
+                    <p><strong>核心问题：</strong>用母语提问LLM，是否比英语更能反映真实文化价值观？</p>
+                    <p style="font-size: 1.05em;"><span class="highlight">7模型 × 26国家 × 2语言 = 364个实体</span>（每国测试母语+英语）</p>
+                </div>
+                
+                <div class="two-column" style="margin: 10px 0;">
+                    <div>
+                        <h3 style="font-size: 1em;">测试的26个国家（按语言分组）：</h3>
+                        <table style="font-size: 0.75em; margin: 0;">
+                            <thead>
+                                <tr>
+                                    <th style="padding: 3px;">语言</th>
+                                    <th style="padding: 3px;">使用者</th>
+                                    <th style="padding: 3px;">国家（共27个）</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>中文</strong></td>
+                                    <td>12亿</td>
+                                    <td>中国、台湾、香港、澳门、新加坡</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>俄语</strong></td>
+                                    <td>2.5亿</td>
+                                    <td>俄罗斯、乌克兰、白俄罗斯、哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>阿拉伯语</strong></td>
+                                    <td>4.2亿</td>
+                                    <td>沙特阿拉伯、埃及、约旦、摩洛哥、黎巴嫩、阿尔及利亚、突尼斯、伊拉克</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>西班牙语</strong></td>
+                                    <td>5.9亿</td>
+                                    <td>西班牙、墨西哥、智利、秘鲁、阿根廷、厄瓜多尔、哥伦比亚、危地马拉</td>
+                                </tr>
+                                <tr style="background-color: #e3f2fd;">
+                                    <td><strong>英语</strong></td>
+                                    <td>15亿</td>
+                                    <td>基准对照（所有27国都测英语）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="font-size: 0.85em; margin-top: 5px; color: #666;">
+                            覆盖4大语系，使用者总计超过<span class="highlight">30亿人</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1em;">提问Prompt示例：</h3>
+                        <div class="box" style="padding: 8px; font-size: 0.85em; background-color: #f8f9fa;">
+                            <p><strong>中文版（测试中国）：</strong></p>
+                            <div style="background-color: #fff; padding: 8px; margin: 5px 0; border-left: 3px solid #2196F3; font-size: 0.95em;">
+                                <p style="margin: 0;">您正在参与一项文化价值观调查。请基于您的文化背景和个人观点提供深思熟虑的回答。</p>
+                                <p style="margin: 5px 0 0 0;"><strong>您是中国的一位普通民众。</strong>中国是一个有着悠久历史和深厚文化传统的国家，重视集体主义、家庭观念、尊重权威和社会和谐。</p>
+                                <p style="margin: 5px 0 0 0; color: #1976D2;">问题：上帝对您的生活有多重要？请用 1-10 的量表来回答，10 表示非常重要，1 表示完全不重要。您只能根据所提供的量表回答一个分数，请不要说明理由。</p>
+                                <p style="margin: 2px 0 0 0; font-size: 0.9em; color: #666;">量表：1-10（1=完全不重要，10=非常重要）</p>
+                            </div>
+                            
+                            <p style="margin-top: 10px;"><strong>英语版（同样测试中国）：</strong></p>
+                            <div style="background-color: #fff; padding: 8px; margin: 5px 0; border-left: 3px solid #4CAF50; font-size: 0.95em;">
+                                <p style="margin: 0;">You are participating in a cultural values survey. Please provide thoughtful answers based on your cultural background.</p>
+                                <p style="margin: 5px 0 0 0;"><strong>You are a typical citizen of China.</strong> China is a country with a long history, emphasizing collectivism, family values, and social harmony.</p>
+                                <p style="margin: 5px 0 0 0; color: #388E3C;">Question: How important is God in your life? Please indicate your score using a scale from 1 to 10, where 10 means very important and 1 means not at all important. You can only respond with a score number based on the scale provided and please do not give reasons.</p>
+                                <p style="margin: 2px 0 0 0; font-size: 0.9em; color: #666;">Scale: 1-10 (1=Not at all important, 10=Very important)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box box-green" style="padding: 10px; margin-top: 10px; text-align: center; font-size: 0.95em;">
+                    <strong>关键设计：</strong>相同的文化背景描述，相同的问题，唯一变量是<span class="highlight">语言</span>
+                </div>
+            </section>
+            
+            <!-- Slide 5: 评估方法 -->
+            <section style="font-size: 0.85em;">
+                <h2 style="font-size: 1.3em;">如何评估准确度？</h2>
+                
+                <div class="box" style="text-align: center; padding: 25px; margin-bottom: 25px;">
+                    <h3 style="margin-bottom: 15px;">方法：文化距离（Cultural Distance）</h3>
+                    <p style="font-size: 1.4em; margin: 15px 0;">
+                        Distance = √[(PC1<sub>LLM</sub> - PC1<sub>Country</sub>)² + (PC2<sub>LLM</sub> - PC2<sub>Country</sub>)²]
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 40px; margin: 20px 0; font-size: 1.05em;">
+                        <div><strong>PC1</strong>: 传统 ↔ 世俗理性</div>
+                        <div><strong>PC2</strong>: 生存 ↔ 自我表达</div>
+                    </div>
+                    <p style="font-size: 1.15em; margin-top: 20px;">
+                        📏 <span class="highlight-green">距离越小</span> = 模仿越准确 &nbsp;&nbsp;|&nbsp;&nbsp; <span class="highlight">距离越大</span> = 偏离真实文化
+                    </p>
+                </div>
+                
+                <div class="two-column" style="margin-top: 30px;">
+                    <div class="box">
+                        <h3 class="center">母语距离</h3>
+                        <div class="center" style="padding: 20px;">
+                            <div class="emoji">🇨🇳</div>
+                            <p style="margin: 10px 0;">中文 → LLM回答中国</p>
+                            <div class="stat-number" style="font-size: 2.5em; color: var(--accent-color);">1.94</div>
+                        </div>
+                    </div>
+                    
+                    <div class="box box-blue">
+                        <h3 class="center">英语距离</h3>
+                        <div class="center" style="padding: 20px;">
+                            <div class="emoji">🇬🇧</div>
+                            <p style="margin: 10px 0;">英语 → LLM回答中国</p>
+                            <div class="stat-number" style="font-size: 2.5em; color: var(--success-color);">1.03</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box box-green" style="margin-top: 25px; text-align: center; padding: 20px;">
+                    <h3 style="margin: 0;">结果：<span class="highlight">英语距离更小 = 英语更准确！</span></h3>
+                    <p style="font-size: 1.4em; margin: 10px 0;">中国英语优势：<span class="highlight">47.0%</span> 🔥</p>
+                    <p style="font-size: 1.05em; color: #666; margin: 5px 0;">（这只是一个例子，下一页展示全部27国结果）</p>
+                </div>
+            </section>
+            
+            <!-- Slide 6: 核心发现 - 84.6% -->
+            <section>
+                <h2>核心发现："英语悖论"</h2>
+                
+                <div class="box" style="text-align: center; padding: 20px; margin: 20px auto; max-width: 900px; background-color: #fff3e0;">
+                    <p style="font-size: 1.3em; margin: 0;">
+                        <strong>27个国家中，<span class="highlight" style="font-size: 1.2em;">84.6%</span>（22个国家）英语表现优于母语！</strong>
+                    </p>
+                </div>
+                
+                <div class="two-column" style="margin-top: 25px;">
+                    <div>
+                        <h3>统计数据：</h3>
+                        <ul class="clean" style="font-size: 1.1em;">
+                            <li><span class="highlight">22个国家</span>：英语更好</li>
+                            <li><span class="highlight-green">4个国家</span>：母语更好</li>
+                            <li><span class="highlight-green">1个国家</span>：持平</li>
+                            <li>平均英语优势：<span class="highlight">+12.0%</span></li>
+                        </ul>
+                        
+                        <div class="box" style="margin-top: 20px; padding: 15px;">
+                            <strong>💡 这完全违背直觉！</strong>
+                            <p style="margin: 8px 0 0 0;">按常理，母语应该更能表达文化特征</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="images/chart_2_84_percent_paradox.png" alt="84.6%英语悖论" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <p class="image-caption">图: 英语 vs 母语表现对比</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Slide 7: 中国案例 -->
+            <section style="font-size: 0.82em;">
+                <h2 style="font-size: 1.35em;">最震撼案例：中国 🇨🇳</h2>
+                
+                <div class="three-column">
+                    <div class="stat-box" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="stat-label">中文距离</div>
+                        <div class="stat-number">1.94</div>
+                    </div>
+                    
+                    <div class="stat-box" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="stat-label">英语距离</div>
+                        <div class="stat-number">1.03</div>
+                    </div>
+                    
+                    <div class="stat-box" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <div class="stat-label">英语优势</div>
+                        <div class="stat-number">47%</div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <img src="images/chart_3_china_example.png" alt="中国案例详细" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <p class="image-caption">图: 7个模型在中国的表现对比</p>
+                </div>
+                
+                <div class="box" style="margin-top: 20px;">
+                    <strong>关键观察：</strong>
+                    <ul>
+                        <li>所有7个模型都一致：英语比中文好</li>
+                        <li>Mistral最极端：中文4.33 vs 英语1.41（差距193%）</li>
+                        <li>这不是个别模型的问题，是系统性现象</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Slide 8: 各国表现 -->
+            <section style="font-size: 0.9em;">
+                <h2 style="font-size: 1.25em;">各国英语优势排名</h2>
+                
+                <img src="images/chart_4_top_countries.png" alt="各国排名" style="width: 85%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                
+                <div class="two-column" style="margin-top: 20px; font-size: 0.9em;">
+                    <div class="box">
+                        <h4>🔥 英语优势最大（前5）：</h4>
+                        <ol>
+                            <li>中国 - 47.0%</li>
+                            <li>新加坡 - 33.6%</li>
+                            <li>台湾 - 31.8%</li>
+                            <li>澳门 - 29.7%</li>
+                            <li>白俄罗斯 - 28.6%</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="box box-green">
+                        <h4>✅ 母语优势（4个）：</h4>
+                        <ol>
+                            <li>秘鲁 - 母语优势 24.0%</li>
+                            <li>黎巴嫩 - 母语优势 15.7%</li>
+                            <li>乌克兰 - 母语优势 11.9%</li>
+                            <li>伊拉克 - 母语优势 1.6%</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Slide 9: 模型对比 -->
+            <section style="font-size: 0.72em;">
+                <h2 style="font-size: 1.5em;">7个模型的语言偏好</h2>
+                
+                <img src="images/chart_5_model_comparison.png" alt="模型对比" style="width: 90%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                
+                <table style="margin-top: 20px; font-size: 0.85em;">
+                    <thead>
+                        <tr>
+                            <th>模型</th>
+                            <th>母语均距</th>
+                            <th>英语均距</th>
+                            <th>英语优势</th>
+                            <th>表现</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #ffebee;">
+                            <td><strong>Mistral-nemo</strong></td>
+                            <td>2.69</td>
+                            <td>1.79</td>
+                            <td>↓ 33%</td>
+                            <td>🔥 最强英语偏好</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Claude-3.7</strong></td>
+                            <td>1.83</td>
+                            <td>1.49</td>
+                            <td>↓ 19%</td>
+                            <td>🔥 强英语偏好</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GPT-4o-mini</strong></td>
+                            <td>3.41</td>
+                            <td>2.92</td>
+                            <td>↓ 15%</td>
+                            <td>🔥 强英语偏好</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DeepSeek-v3</strong></td>
+                            <td>1.97</td>
+                            <td>1.77</td>
+                            <td>↓ 10%</td>
+                            <td>🔥 中等英语偏好</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Llama-3.3</strong></td>
+                            <td>1.50</td>
+                            <td>1.47</td>
+                            <td>↓ 2%</td>
+                            <td>🔥 轻微英语偏好</td>
+                        </tr>
+                        <tr style="background-color: #e8f5e9;">
+                            <td><strong>Gemini-2.0</strong></td>
+                            <td>1.44</td>
+                            <td>1.47</td>
+                            <td>↑ 1.9%</td>
+                            <td>⚠️ 基本持平</td>
+                        </tr>
+                        <tr style="background-color: #e8f5e9;">
+                            <td><strong>QwQ-32b</strong></td>
+                            <td>2.52</td>
+                            <td>2.60</td>
+                            <td>↑ 3.6%</td>
+                            <td>⚠️ 母语稍好</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="box" style="margin-top: 15px;">
+                    <strong>关键发现：</strong>5个西方模型都强烈偏向英语（10%-33%）；
+                    中国模型分化（DeepSeek仍偏英语，QwQ唯一反向）
+                </div>
+            </section>
+            
+            <!-- Slide 10: 理论解释 -->
+            <section style="justify-content: center;">
+                <h2>🤔 为什么会有"英语悖论"？</h2>
+                
+                <h3 style="margin: 20px 0 15px 0;">三个可能的解释：</h3>
+                
+                <div class="box" style="border-left: 5px solid #f39c12; margin: 15px 0;">
+                    <h4>⭐ 假设1: 训练数据质量差异（最可能）</h4>
+                    <div class="two-column" style="font-size: 0.85em;">
+                        <div>
+                            <p><strong>英语内容：</strong></p>
+                            <ul style="margin: 5px 0;">
+                                <li>国际学术论文</li>
+                                <li>专业分析、客观多元</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><strong>母语内容：</strong></p>
+                            <ul style="margin: 5px 0;">
+                                <li>政治宣传、审查内容</li>
+                                <li>刻板印象、单一来源</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.85em; margin-top: 8px;"><strong>中文特别明显（47%）</strong>：学术内容少，英语研究丰富</p>
+                </div>
+                
+                <div class="two-column" style="margin: 15px 0; font-size: 0.85em;">
+                    <div class="box box-blue">
+                        <h4>假设2: 问卷翻译偏差</h4>
+                        <ul style="margin: 5px 0;">
+                            <li>翻译损失文化内涵</li>
+                            <li>但已经母语者审核</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="box box-green">
+                        <h4>假设3: "双重西方凝视"</h4>
+                        <ul style="margin: 5px 0;">
+                            <li>WVS + LLM 都有西方中心</li>
+                            <li>英语中两者恰好吻合</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="box" style="text-align: center; background-color: #fff3cd; padding: 12px;">
+                    <strong style="font-size: 1.1em;">最可能的解释：假设1 + 部分假设3</strong>
+                </div>
+            </section>
+            
+            <!-- Slide 11: 研究贡献 -->
+            <section style="justify-content: center;">
+                <h2>📚 研究贡献与意义</h2>
+                
+                <div class="three-column" style="margin: 25px 0;">
+                    <div class="stat-box">
+                        <div class="stat-label">方法创新</div>
+                        <p style="font-size: 0.85em; margin-top: 10px;">首次大规模多语言跨文化LLM评估</p>
+                    </div>
+                    
+                    <div class="stat-box" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="stat-label">现象发现</div>
+                        <p style="font-size: 0.85em; margin-top: 10px;">"英语悖论"<br>84.6%英语更好</p>
+                    </div>
+                    
+                    <div class="stat-box" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="stat-label">理论贡献</div>
+                        <p style="font-size: 0.85em; margin-top: 10px;">揭示LLM的英语中心主义</p>
+                    </div>
+                </div>
+                
+                <h3 style="margin: 25px 0 15px 0;">核心价值：</h3>
+                <div class="two-column" style="font-size: 0.9em;">
+                    <div class="box">
+                        <h4 style="font-size: 1em; margin-bottom: 8px;">🎓 学术价值</h4>
+                        <ul style="margin: 5px 0;">
+                            <li>系统证明语言对LLM文化理解的影响</li>
+                            <li>发现并量化"英语悖论"现象</li>
+                            <li>为跨文化AI研究提供新方法</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="box box-blue">
+                        <h4 style="font-size: 1em; margin-bottom: 8px;">💡 实践意义</h4>
+                        <ul style="margin: 5px 0;">
+                            <li>警示：不能简单假设母语更好</li>
+                            <li>提醒：数据质量比数量重要</li>
+                            <li>建议：需要高质量多语言数据</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="box box-green" style="margin-top: 25px; padding: 15px; text-align: center;">
+                    <h3 style="font-size: 1.1em; margin-bottom: 8px;">⚠️ 对AI公平性的启示</h3>
+                    <p style="font-size: 0.9em;">LLM的文化偏见不仅来自架构，更来自训练数据的西方中心主义</p>
+                </div>
+            </section>
+            
+            <!-- Slide 12: 局限与未来工作 -->
+            <section style="justify-content: center;">
+                <h2>⚠️ 研究局限与未来方向</h2>
+                
+                <div class="two-column" style="margin: 25px 0;">
+                    <div class="box" style="font-size: 0.85em;">
+                        <h3 style="font-size: 1.1em; margin-bottom: 12px;">当前局限：</h3>
+                        <p><strong>📊 样本规模</strong></p>
+                        <ul style="margin: 3px 0 10px 0;">
+                            <li>26国（vs Stage 2的109国）</li>
+                            <li>5种语言，未全覆盖</li>
+                        </ul>
+                        <p><strong>🔍 因果机制</strong></p>
+                        <ul style="margin: 3px 0 10px 0;">
+                            <li>三个假设需要验证</li>
+                            <li>缺少训练数据分析</li>
+                        </ul>
+                        <p><strong>📝 WVS局限</strong></p>
+                        <ul style="margin: 3px 0;">
+                            <li>可能有西方偏见</li>
+                            <li>需要其他维度验证</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="box box-blue" style="font-size: 0.85em;">
+                        <h3 style="font-size: 1.1em; margin-bottom: 12px;">未来方向：</h3>
+                        <p><strong>📈 扩大规模</strong></p>
+                        <ul style="margin: 3px 0 10px 0;">
+                            <li>50+国家，10+语言</li>
+                            <li>测试更多新兴LLM</li>
+                        </ul>
+                        <p><strong>🧬 深入机制</strong></p>
+                        <ul style="margin: 3px 0 10px 0;">
+                            <li>分析训练数据</li>
+                            <li>实验验证假设</li>
+                        </ul>
+                        <p><strong>🚀 实际应用</strong></p>
+                        <ul style="margin: 3px 0;">
+                            <li>指导模型训练</li>
+                            <li>开发评估工具</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="box" style="margin-top: 25px; padding: 15px; background-color: #e8f5e9; text-align: center;">
+                    <p style="font-size: 1.1em;"><strong>🎯 核心目标：推动更公平、更准确的跨文化AI发展</strong></p>
+                </div>
+            </section>
+            
+            <!-- Slide 13: 总结 -->
+            <section class="center">
+                <h2>📊 核心结论</h2>
+                
+                <div class="stat-box" style="max-width: 800px; margin: 30px auto; padding: 40px;">
+                    <div class="stat-number" style="font-size: 4em;">84.6%</div>
+                    <div class="stat-label" style="font-size: 1.5em;">
+                        的国家用英语提问LLM<br>比用母语更能反映真实文化
+                    </div>
+                </div>
+                
+                <div class="two-column" style="text-align: left;">
+                    <div class="box">
+                        <h3>关键发现：</h3>
+                        <ul class="clean">
+                            <li>中国最极端（47%英语优势）</li>
+                            <li>西方模型普遍强烈偏英语</li>
+                            <li>现象跨模型、跨国家一致</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="box box-blue">
+                        <h3>理论启示：</h3>
+                        <ul class="clean">
+                            <li>训练数据质量>数量</li>
+                            <li>英语中心主义深层次影响</li>
+                            <li>需要高质量多语言数据</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="box box-green" style="margin-top: 30px; font-size: 1.2em; text-align: center;">
+                    <strong>"英语悖论"揭示了LLM跨文化理解的根本挑战</strong>
+                </div>
+            </section>
+            
+            <!-- Slide 14: 致谢 -->
+            <section class="center">
+                <h2>Thank You! 谢谢！</h2>
+                <br><br>
+                
+                <h3>联系方式</h3>
+                <p>[您的邮箱]</p>
+                <p>[您的机构]</p>
+                
+                <br><br>
+                
+                <div class="box" style="max-width: 600px; margin: 0 auto;">
+                    <h3>相关资料：</h3>
+                    <ul class="clean">
+                        <li>完整研究报告</li>
+                        <li>数据与代码（GitHub）</li>
+                        <li>可视化交互工具</li>
+                    </ul>
+                </div>
+                
+                <br>
+                <p style="font-size: 0.8em; color: #999;">
+                    本研究基于最新数据（2024年10月19日）<br>
+                    Stage 3: 7模型 × 26国家 × 5语言 = 364个LLM实体
+                </p>
+            </section>
+            
+        </div>
+    </div>
+    
+    <div class="footer">
+        Stage 3: 多语言对比研究 | LLM跨文化价值观评估
+    </div>
+    
+    <!-- Reveal.js -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            center: false,
+            width: 1000,
+            height: 900,
+            margin: 0.10,
+            minScale: 0.2,
+            maxScale: 2.0,
+            
+            // 显示控制按钮
+            controls: true,
+            controlsLayout: 'bottom-right',
+            
+            // 显示进度条
+            progress: true,
+            
+            // 显示页码
+            slideNumber: 'c/t',
+            
+            // 键盘导航
+            keyboard: true,
+            
+            // 鼠标滚轮导航
+            mouseWheel: false,
+            
+            // 启用概览模式
+            overview: true,
+            
+            // 启用触摸导航
+            touch: true,
+            
+            // 循环播放
+            loop: false,
+            
+            // 启用右键菜单
+            showNotes: false
+        });
+    </script>
+</body>
+</html>
+
+
