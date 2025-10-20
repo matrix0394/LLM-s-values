@@ -31,11 +31,13 @@ class ComprehensiveMultilingualTest:
         self.data_path = Path("data/roleplay_multilingual")
         self.data_path.mkdir(parents=True, exist_ok=True)
         
-        # 初始化访谈器
+        # 初始化访谈器（使用配置文件中的repeat_count）
+        repeat_count = self.config.get('repeat_count', 5)
         self.interviewer = MultilingualRoleplayInterview(
-            repeat_count=1,  # 我们自己控制重复逻辑
+            repeat_count=repeat_count,  # 使用配置的重复次数
             data_path=str(self.data_path)
         )
+        print(f"📋 访谈器初始化: repeat_count={repeat_count}")
         
         # IVS问题处理器
         self.question_processor = IVSQuestionProcessor()
@@ -118,51 +120,32 @@ class ComprehensiveMultilingualTest:
         return majority_vote, confidence, stats
     
     def interview_single_task(self, model: str, country: str, language: str) -> Dict:
-        """执行单个访谈任务（5次重复）"""
+        """执行单个访谈任务（直接使用新的重复访谈方法）"""
         task_id = f"{model}_{country}_{language}"
         
         try:
-            print(f"\n🚀 开始任务: {task_id}")
-            print(f"📋 将进行 {self.config['repeat_count']} 次重复访谈")
-            
-            # 执行5次访谈
-            all_responses = []
-            for repeat_idx in range(self.config['repeat_count']):
-                try:
-                    print(f"\n🔄 第 {repeat_idx + 1}/{self.config['repeat_count']} 次访谈")
-                    
-                    # 单次访谈
-                    result = self.interviewer.interview_country_multilingual(
-                        model, country, language
-                    )
-                    
-                    # 添加重复标识
-                    result['repeat_id'] = repeat_idx + 1
-                    result['task_id'] = f"{task_id}_repeat_{repeat_idx + 1}"
-                    all_responses.append(result)
-                    
-                    # 短暂延迟避免API限制
-                    time.sleep(0.5)
-                    
-                except Exception as e:
-                    print(f"⚠️ 第{repeat_idx + 1}次访谈失败: {e}")
-                    continue
-            
-            # 处理5次回答，计算众数
-            processed_result = self._process_repeated_responses(
-                all_responses, model, country, language
+            # 直接调用新的重复访谈方法
+            # 它会自动处理重复、计算众数、显示清晰的进度
+            result = self.interviewer.interview_country_multilingual_with_repeats(
+                model, country, language
             )
+            
+            # 添加任务ID
+            result['task_id'] = task_id
+            result['success'] = True
             
             # 更新进度
             with self.lock:
                 self.progress_counter += 1
                 progress = (self.progress_counter / self.total_tasks) * 100
-                print(f"✅ 完成 {task_id} [{self.progress_counter}/{self.total_tasks}] ({progress:.1f}%)")
+                print(f"\n🟢 进度: [{self.progress_counter}/{self.total_tasks}] ({progress:.1f}%) - {task_id} 完成")
             
-            return processed_result
+            return result
             
         except Exception as e:
-            print(f"❌ 任务失败 {task_id}: {e}")
+            print(f"\n❌ 任务失败 {task_id}: {e}")
+            with self.lock:
+                self.progress_counter += 1
             return {
                 "model": model,
                 "country": country, 

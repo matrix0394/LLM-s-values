@@ -150,7 +150,7 @@ class RoleplayEnglishAnalysisRunner:
             print(f"⚠️ 数据分析失败: {e}")
             return {'error': str(e)}
 
-    def step1_interview(self, test_mode=True, force_restart=False, consensus_count=1):
+    def step1_interview(self, test_mode=True, force_restart=False, consensus_count=5):
         """步骤1: 角色扮演访谈"""
         print("\n" + "="*60)
         print("🎭 步骤1: 角色扮演访谈")
@@ -608,7 +608,7 @@ class RoleplayEnglishAnalysisRunner:
             traceback.print_exc()
             return False
     
-    def run_complete_analysis(self, test_mode=True, force_restart=False, skip_interview=False, consensus_count=1):
+    def run_complete_analysis(self, test_mode=True, force_restart=False, skip_interview=False, consensus_count=5):
         """运行完整分析流程"""
         print("🚀 开始Roleplay English完整分析流程...")
         print(f"⏰ 开始时间: {datetime.now()}")
@@ -697,16 +697,16 @@ def main():
         mode_choice = input("请选择模式 (1/2/3，默认1): ").strip()
         
         # 询问是否启用多次提问取众数
-        consensus_count = 1
+        consensus_count = 5  # 默认5次，保持三阶段一致
         if mode_choice in ["1", "2", ""]:
             print("\n🔄 多次提问取众数设置:")
             print("每个问题可以提问多次并取众数，提高回答的稳定性")
-            consensus_input = input("每个问题提问次数 (1-5，默认1): ").strip()
+            consensus_input = input("每个问题提问次数 (1-5，默认5): ").strip()
             try:
-                consensus_count = int(consensus_input) if consensus_input else 1
+                consensus_count = int(consensus_input) if consensus_input else 5
                 consensus_count = max(1, min(5, consensus_count))  # 限制在1-5之间
             except ValueError:
-                consensus_count = 1
+                consensus_count = 5
             
             if consensus_count > 1:
                 print(f"✅ 启用多次提问取众数：每个问题提问 {consensus_count} 次")

@@ -1,0 +1,31 @@
+Roleplay Multilingual Analysis Summary
+==================================================
+
+Total entities: 490
+
+Entities by Data Source:
+  Multilingual: 378
+  IVS: 112
+
+Language Distribution:
+  en: 189
+  ar: 56
+  es: 56
+  ru: 42
+  zh-cn: 35
+
+Multilingual Models:
+  anthropic/claude-3.7-sonnet: 54
+  deepseek/deepseek-chat-v3-0324: 54
+  google/gemini-2.0-flash-001: 54
+  meta-llama/llama-3.3-70b-instruct: 54
+  mistralai/mistral-nemo: 54
+  openai/gpt-4o-mini: 54
+  qwen/qwq-32b: 54
+
+Principal Component Statistics:
+PC1 range: [-4.74, 5.32]
+PC2 range: [-3.66, 5.32]
+
+Accuracy Analysis:
+{'timestamp': '20251019_151823', 'total_entities': 490, 'multilingual_entities': 378, 'ivs_entities': 112, 'pc1_range': [-4.744939215204653, 6.000756179281629], 'pc2_range': [-3.660890999559041, 5.320135153932603]}

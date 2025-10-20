@@ -441,12 +441,15 @@ class UnifiedMultilingualPCAAnalysis(BasePCAAnalyzer):
         ppca_df['PC2_rescaled'] = (self.pc_rescale_params['PC2'][0] * ppca_df['PC2'] + 
                                   self.pc_rescale_params['PC2'][1])
         
-        # 添加元数据
-        for col in ['country_code', 'year', 'data_source', 'model_name', 'language']:
+        # 添加元数据 - 确保关键列被保留
+        metadata_cols = ['country_code', 'year', 'data_source', 'model_name', 'language']
+        for col in metadata_cols:
             if col in self.combined_data.columns:
                 ppca_df[col] = self.combined_data[col].values
+                print(f"  ✅ 保留列: {col}")
             else:
-                ppca_df[col] = 'Unknown'
+                # 不设置默认值，让下游代码知道这列缺失
+                print(f"  ⚠️ 缺失列: {col}")
         
         # 合并国家元数据
         if not self.country_codes.empty and 'Numeric' in self.country_codes.columns:

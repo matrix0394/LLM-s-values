@@ -459,8 +459,12 @@ class MultilingualRoleplayDataProcessor:
                                 # 旧格式：{question_id: answer}
                                 response_items = responses.items()
                             elif isinstance(responses, list):
-                                # 新格式：[{question_id: ..., processed_response: ...}, ...]
-                                response_items = [(item['question_id'], item.get('processed_response', item.get('raw_response', ''))) 
+                                # 新格式：[{question_id: ..., final_response: ...}, ...]
+                                # 优先使用 final_response（众数），否则用 processed_response，最后用 raw_response
+                                response_items = [(item['question_id'], 
+                                                  item.get('final_response', 
+                                                          item.get('processed_response', 
+                                                                  item.get('raw_response', '')))) 
                                                 for item in responses if isinstance(item, dict) and 'question_id' in item]
                             else:
                                 print(f"⚠️ 未知的responses格式: {type(responses)}")

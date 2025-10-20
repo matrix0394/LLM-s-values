@@ -1,0 +1,23 @@
+type,country,model,language,distance,severity
+异常大距离,Taiwan (Province of China),gemini-2.0-flash-001,native,4.710593711858592,high
+异常大距离,Taiwan (Province of China),mistral-nemo,native,5.384089651111377,high
+异常大距离,Taiwan (Province of China),gpt-4o-mini,native,4.342029693993038,high
+异常大距离,Spain,gpt-4o-mini,native,4.653037181222458,high
+异常大距离,Lebanon,gemini-2.0-flash-001,native,4.370089826504192,high
+语言差异巨大,Lebanon,gemini-2.0-flash-001,both,3.1009899947357464,high
+异常大距离,Lebanon,qwq-32b,native,4.370932677394046,high
+异常大距离,Russian Federation (the),gpt-4o-mini,native,4.214575244466445,high
+异常大距离,Argentina,gpt-4o-mini,native,4.082808880269712,high
+异常大距离,Macao,mistral-nemo,native,5.033680927009393,high
+异常大距离,Morocco,gpt-4o-mini,native,6.398700843509912,high
+语言差异巨大,Morocco,gpt-4o-mini,both,3.4515051338800133,high
+异常大距离,Morocco,qwq-32b,native,4.5760078522207515,high
+语言差异巨大,Morocco,qwq-32b,both,4.053245725900856,high
+异常小距离,Tunisia,gemini-2.0-flash-001,native,0.2625385645478673,medium
+异常小距离,Jordan,llama-3.3-70b-instruct,native,0.2082104717966435,medium
+异常大距离,Ecuador,gpt-4o-mini,native,4.37793479346397,high
+语言差异巨大,Ecuador,qwq-32b,both,3.372372177688264,high
+异常大距离,Egypt,gpt-4o-mini,native,5.534490515235948,high
+语言差异巨大,Egypt,gpt-4o-mini,both,3.724614496775746,high
+异常大距离,Colombia,gpt-4o-mini,native,4.563083392550987,high
+异常大距离,Colombia,qwq-32b,native,4.348803332979674,high

@@ -139,8 +139,9 @@ class BaseInterview(ABC):
                     {"role": "user", "content": question_text + format_hint}
                 ]
                 
-                # 动态温度 - 重试时增加随机性
-                temperature = 0.1 + (attempt * 0.1)
+                # 固定温度 - 保持实验严格控制，避免温度成为混淆变量
+                # 配合5次重复取众数策略，固定温度能确保测量的是模型真实倾向而非随机性
+                temperature = 0.1
                 
                 # 从kwargs中移除temperature以避免重复参数
                 filtered_kwargs = {k: v for k, v in kwargs.items() if k != 'temperature'}
