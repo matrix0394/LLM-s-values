@@ -1,0 +1,250 @@
+{
+  "timestamp": "2025-10-16T14:14:58.283056",
+  "total_tasks": 56,
+  "successful_tasks": 48,
+  "success_rate": 0.8571428571428571,
+  "models_used": 7,
+  "countries_interviewed": 48,
+  "detailed_results": {
+    "openai/gpt-4o-mini_Egypt": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "openai/gpt-4o-mini_Brazil": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "openai/gpt-4o-mini_China": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "openai/gpt-4o-mini_Germany": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "openai/gpt-4o-mini_France": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "openai/gpt-4o-mini_United States": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "openai/gpt-4o-mini_Russian Federation": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "openai/gpt-4o-mini_India": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "google/gemini-2.0-flash-001_Egypt": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "google/gemini-2.0-flash-001_China": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "google/gemini-2.0-flash-001_Germany": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "google/gemini-2.0-flash-001_Brazil": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "google/gemini-2.0-flash-001_France": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "google/gemini-2.0-flash-001_United States": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "google/gemini-2.0-flash-001_Russian Federation": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "google/gemini-2.0-flash-001_India": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "anthropic/claude-3.7-sonnet_Egypt": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "anthropic/claude-3.7-sonnet_China": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "anthropic/claude-3.7-sonnet_Brazil": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "anthropic/claude-3.7-sonnet_France": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "anthropic/claude-3.7-sonnet_Germany": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "anthropic/claude-3.7-sonnet_United States": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "anthropic/claude-3.7-sonnet_India": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "anthropic/claude-3.7-sonnet_Russian Federation": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "meta-llama/llama-3.3-70b-instruct_Egypt": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "meta-llama/llama-3.3-70b-instruct_China": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "meta-llama/llama-3.3-70b-instruct_Brazil": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "meta-llama/llama-3.3-70b-instruct_France": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "meta-llama/llama-3.3-70b-instruct_Germany": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "meta-llama/llama-3.3-70b-instruct_United States": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "meta-llama/llama-3.3-70b-instruct_Russian Federation": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "meta-llama/llama-3.3-70b-instruct_India": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "deepseek/deepseek-chat-v3-0324_Egypt": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "deepseek/deepseek-chat-v3-0324_China": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "deepseek/deepseek-chat-v3-0324_Brazil": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "deepseek/deepseek-chat-v3-0324_Germany": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "deepseek/deepseek-chat-v3-0324_France": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "deepseek/deepseek-chat-v3-0324_United States": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "deepseek/deepseek-chat-v3-0324_Russian Federation": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "deepseek/deepseek-chat-v3-0324_India": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "mistralai/mistral-nemo_Egypt": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "mistralai/mistral-nemo_China": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "mistralai/mistral-nemo_Germany": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "mistralai/mistral-nemo_Brazil": {
+      "total_questions": 10,
+      "valid_responses": 9,
+      "success_rate": 0.9
+    },
+    "mistralai/mistral-nemo_France": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "mistralai/mistral-nemo_United States": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "mistralai/mistral-nemo_Russian Federation": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    },
+    "mistralai/mistral-nemo_India": {
+      "total_questions": 10,
+      "valid_responses": 10,
+      "success_rate": 1.0
+    }
+  }
+}

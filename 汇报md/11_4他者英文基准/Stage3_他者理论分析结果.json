@@ -1,0 +1,142 @@
+{
+  "regional_analysis": {
+    "old_version": {
+      "Near_East": {
+        "native_avg": 1.8970485888039432,
+        "english_avg": 1.9687838414917171,
+        "english_advantage": -3.781413565848715,
+        "n_native": 21,
+        "n_english": 21
+      },
+      "Middle_East_North_Africa": {
+        "native_avg": 2.0746304128795967,
+        "english_avg": 1.843390764539399,
+        "english_advantage": 11.146064711315788,
+        "n_native": 28,
+        "n_english": 28
+      },
+      "Central_Asia": {
+        "native_avg": 2.0255266420539146,
+        "english_avg": 1.6540825949342466,
+        "english_advantage": 18.338146702578946,
+        "n_native": 21,
+        "n_english": 21
+      },
+      "East_Slavic": {
+        "native_avg": 2.1988104594433504,
+        "english_avg": 1.9792588366180563,
+        "english_advantage": 9.985018121156092,
+        "n_native": 21,
+        "n_english": 21
+      },
+      "Southeast_Asia": {
+        "native_avg": 1.5213246941081522,
+        "english_avg": 1.0083987394750846,
+        "english_advantage": 33.7157450095662,
+        "n_native": 7,
+        "n_english": 7
+      },
+      "East_Asia": {
+        "native_avg": 2.517430591702452,
+        "english_avg": 1.8215272991677527,
+        "english_advantage": 27.643395405951736,
+        "n_native": 30,
+        "n_english": 28
+      },
+      "Latin_America": {
+        "native_avg": 2.4062459093228945,
+        "english_avg": 2.2744714376401665,
+        "english_advantage": 5.476350990236435,
+        "n_native": 49,
+        "n_english": 49
+      },
+      "Europe": {
+        "native_avg": 2.308306397888014,
+        "english_avg": 2.1491395455696503,
+        "english_advantage": 6.895395362764388,
+        "n_native": 7,
+        "n_english": 7
+      }
+    },
+    "new_version": {
+      "Near_East": {
+        "native_avg": 1.619628203926169,
+        "english_avg": 1.551226622737687,
+        "english_advantage": 4.223289087129285,
+        "n_native": 21,
+        "n_english": 21
+      },
+      "Middle_East_North_Africa": {
+        "native_avg": 1.8630936437436663,
+        "english_avg": 1.9584277926315357,
+        "english_advantage": -5.11698106039945,
+        "n_native": 28,
+        "n_english": 28
+      },
+      "Central_Asia": {
+        "native_avg": 1.9144704532692278,
+        "english_avg": 1.632443858743193,
+        "english_advantage": 14.731310898240013,
+        "n_native": 21,
+        "n_english": 21
+      },
+      "East_Slavic": {
+        "native_avg": 1.5894305289711697,
+        "english_avg": 1.3791467266586706,
+        "english_advantage": 13.230134848901812,
+        "n_native": 21,
+        "n_english": 21
+      },
+      "Southeast_Asia": {
+        "native_avg": 1.623173262147463,
+        "english_avg": 1.0452082796384006,
+        "english_advantage": 35.6071034428212,
+        "n_native": 7,
+        "n_english": 7
+      },
+      "East_Asia": {
+        "native_avg": 1.9423124331591395,
+        "english_avg": 1.5799526018619148,
+        "english_advantage": 18.6561041936931,
+        "n_native": 28,
+        "n_english": 28
+      },
+      "Latin_America": {
+        "native_avg": 2.4509538079541446,
+        "english_avg": 2.761020651313133,
+        "english_advantage": -12.650864424809653,
+        "n_native": 49,
+        "n_english": 49
+      },
+      "Europe": {
+        "native_avg": 1.648570751849998,
+        "english_avg": 2.340190031886543,
+        "english_advantage": -41.95265985766287,
+        "n_native": 7,
+        "n_english": 7
+      }
+    }
+  },
+  "chinese_variants": {
+    "简体中文": {
+      "native": 1.6490900534190585,
+      "english": 1.3740657880262324,
+      "advantage": 16.67733455929943
+    },
+    "繁体中文(香港)": {
+      "native": 1.7151782086143954,
+      "english": 0.578116159716169,
+      "advantage": 66.29410536977383
+    },
+    "繁体中文(澳门)": {
+      "native": 1.9424299785863617,
+      "english": 1.9396191439676833,
+      "advantage": 0.1447071271379371
+    },
+    "繁体中文(台湾)": {
+      "native": 2.4625514920167424,
+      "english": 2.4280093157375746,
+      "advantage": 1.402698639648707
+    }
+  }
+}

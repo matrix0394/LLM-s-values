@@ -1,0 +1,19 @@
+序号,模型,发布公司/机构,国家/地区,类型,模型类型（Thinking/Chat/Instruct）,模型大小（主要是开源模型）
+1,GPT-4o,OpenAI,美国,闭源,Chat,
+2,GPT-4o-mini,OpenAI,美国,闭源,Chat,
+3,GPT-5.1,OpenAI,美国,闭源,Chat,
+4,Claude 3.7 Sonnet,Anthropic,美国,闭源,Chat,
+5,Claude 4.5 Sonnet,Anthropic,美国,闭源,Chat,
+6,Gemini 2.5 Flash,Google,美国,闭源,Chat,
+7,Gemini 2.5 Pro,Google,美国,闭源,Chat,
+8,Gemini 3 Pro,Google,美国,闭源,Chat,
+9,Llama 3.3 70B Instruct,Meta,美国,开源,Instruct,70B
+10,Grok 4.1,xAI,美国,闭源,Chat,
+11,DeepSeek V3.1,深度求索,中国,开源,Chat/Thinking,671B(Active:37B)
+12,DeepSeek V3 0324,深度求索,中国,开源,Chat,671B(Active:37B)
+13,Qwen3-Max-Preview,阿里巴巴,中国,闭源,Chat,
+14,Qwen QwQ 32B,阿里巴巴,中国,开源,Thinking,32B
+15,Kimi-K2,Moonshot,中国,开源,Chat,1T(Active:32B)
+16,GLM-4.6,智谱AI,中国,开源,Chat,
+17,Mistral Nemo,Mistral AI,法国,闭源,Chat,
+18,Mistral-Medium-2508,Mistral AI,法国,闭源,Chat,

@@ -1,0 +1,237 @@
+{
+  "experiment_name": "Said东方主义视角下的LLM语言效应实验",
+  "theoretical_framework": {
+    "theory": "Said's Orientalism Theory",
+    "hypothesis": "LLM内蕴的价值构建以西方为核心，东方作为'他者'被建构。用本地语言询问相当于在他者中寻求主体，效果不如英语。英语优势从近东到远东递增。",
+    "predictions": [
+      "1. 英语优势（English advantage）= |英语得分 - 本地语言得分| 在远东最大",
+      "2. 英语优势梯度：远东（Confucian）> 中东欧（Orthodox）> 近东（Arab）",
+      "3. 拉丁美洲的英语优势小于东方地区，可能接近于0",
+      "4. 繁体中文（香港/台湾）与简体中文（大陆）的差异可能反映殖民历史影响"
+    ]
+  },
+  
+  "experiment_groups": {
+    "group_1_chinese_variants": {
+      "name": "中文变体对比组",
+      "purpose": "验证同一语言的不同书写系统和方言是否受'他者'建构影响不同",
+      "languages": {
+        "zh-cn-mainland": {
+          "name": "简体中文（大陆）",
+          "script": "Simplified Chinese",
+          "countries": ["China"],
+          "hypothesis": "作为'他者'核心，英语优势最明显"
+        },
+        "zh-tw-traditional": {
+          "name": "繁体中文（台湾）",
+          "script": "Traditional Chinese",
+          "countries": ["Taiwan (Province of China)"],
+          "hypothesis": "历史上更接近西方，英语优势可能较小"
+        },
+        "zh-hk-traditional": {
+          "name": "繁体中文（香港）",
+          "script": "Traditional Chinese",
+          "countries": ["Hong Kong"],
+          "hypothesis": "前英国殖民地，英语优势可能最小"
+        },
+        "yue-hk": {
+          "name": "粤语（香港）",
+          "script": "Cantonese",
+          "countries": ["Hong Kong"],
+          "hypothesis": "方言层面，可能强化或弱化'他者'效应"
+        },
+        "zh-cn-singapore": {
+          "name": "简体中文（新加坡）",
+          "script": "Simplified Chinese",
+          "countries": ["Singapore"],
+          "hypothesis": "多元文化国家，英语优势可能介于香港和大陆之间"
+        },
+        "en-comparison": {
+          "name": "英语（对比组）",
+          "script": "English",
+          "countries": ["China", "Taiwan (Province of China)", "Hong Kong", "Singapore"],
+          "hypothesis": "基准组，体现西方价值核心"
+        }
+      }
+    },
+    
+    "group_2_geographic_gradient": {
+      "name": "地理-文化梯度组",
+      "purpose": "验证从近东到远东的英语优势递增假设",
+      "cultural_zones": {
+        "far_east": {
+          "name": "远东（儒家文化圈）",
+          "cultural_region": "Confucian",
+          "languages": ["zh-cn"],
+          "countries": ["China", "Taiwan (Province of China)", "Hong Kong", "Singapore"],
+          "distance_from_west": "maximum",
+          "predicted_english_advantage": "最大"
+        },
+        "orthodox_europe": {
+          "name": "中东欧（东正教文化圈）",
+          "cultural_region": "Orthodox Europe",
+          "languages": ["ru"],
+          "countries": ["Russian Federation (the)", "Belarus", "Ukraine"],
+          "distance_from_west": "medium",
+          "predicted_english_advantage": "中等"
+        },
+        "near_east": {
+          "name": "近东（阿拉伯-伊斯兰文化圈）",
+          "cultural_region": "African-Islamic",
+          "languages": ["ar"],
+          "countries": ["Egypt", "Saudi Arabia", "Morocco", "Jordan", "Lebanon"],
+          "distance_from_west": "near",
+          "predicted_english_advantage": "较小"
+        },
+        "latin_america": {
+          "name": "拉丁美洲",
+          "cultural_region": "Latin America",
+          "languages": ["es"],
+          "countries": ["Mexico", "Argentina", "Colombia", "Peru", "Chile"],
+          "distance_from_west": "culturally_close",
+          "predicted_english_advantage": "最小或接近0",
+          "special_note": "可能脱离'他者'构建框架"
+        },
+        "iberian": {
+          "name": "伊比利亚（对照）",
+          "cultural_region": "Catholic Europe",
+          "languages": ["es"],
+          "countries": ["Spain"],
+          "distance_from_west": "western",
+          "predicted_english_advantage": "基线",
+          "special_note": "西方内部，不应有英语优势"
+        }
+      }
+    },
+    
+    "group_3_control": {
+      "name": "英语母语基准组",
+      "purpose": "提供西方价值核心的基准线",
+      "language": "en-native",
+      "countries": [
+        "United States of America (the)",
+        "United Kingdom of Great Britain and Northern Ireland (the)",
+        "Australia",
+        "Canada",
+        "New Zealand"
+      ],
+      "expected_behavior": "最接近LLM训练数据的价值分布"
+    }
+  },
+  
+  "measurement_metrics": {
+    "primary_metrics": {
+      "english_advantage_score": {
+        "formula": "sqrt((PC1_real - PC1_native)^2 + (PC2_real - PC2_native)^2) - sqrt((PC1_real - PC1_english)^2 + (PC2_real - PC2_english)^2)",
+        "interpretation": "EAS > 0 说明英语模仿真实国家更准确，本地语言在'他者'框架中失真；EAS越大，'他者'效应越强",
+        "data_source": "PC_real来自WVS/EVS真实人类调查数据；PC_native和PC_english来自LLM模仿"
+      },
+      "geographic_gradient": {
+        "formula": "correlation(distance_from_west, english_advantage_score)",
+        "interpretation": "正相关支持假设：越远离西方，英语优势越明显"
+      },
+      "latin_america_anomaly": {
+        "formula": "english_advantage_score(Latin America) vs english_advantage_score(Far East)",
+        "interpretation": "拉美分数显著低于远东支持'脱离他者构建'假设"
+      }
+    },
+    "secondary_metrics": {
+      "script_effect": {
+        "comparison": "zh-tw vs zh-cn",
+        "hypothesis": "繁简体差异可能反映历史政治因素"
+      },
+      "dialect_effect": {
+        "comparison": "yue-hk vs zh-hk",
+        "hypothesis": "方言与标准语言的差异"
+      },
+      "colonial_legacy": {
+        "comparison": "Hong Kong vs Singapore vs China",
+        "hypothesis": "殖民历史影响语言效应"
+      }
+    }
+  },
+  
+  "experimental_parameters": {
+    "models_to_test": [
+      "openai/gpt-4o-mini",
+      "anthropic/claude-3.7-sonnet",
+      "google/gemini-2.0-flash-001",
+      "meta-llama/llama-3.3-70b-instruct",
+      "deepseek/deepseek-chat-v3-0324",
+      "qwen/qwq-32b",
+      "mistralai/mistral-nemo"
+    ],
+    "repeat_count": 5,
+    "temperature": 0.1,
+    "ivs_questions": ["A008", "A165", "E018", "E025", "F063", "F118", "F120", "G006", "Y002", "Y003"]
+  },
+  
+  "phase_1_pilot": {
+    "description": "小规模试点：验证技术可行性",
+    "test_cases": [
+      {"language": "zh-cn-mainland", "country": "China", "model": "openai/gpt-4o-mini"},
+      {"language": "zh-tw-traditional", "country": "Taiwan (Province of China)", "model": "openai/gpt-4o-mini"},
+      {"language": "zh-hk-traditional", "country": "Hong Kong", "model": "openai/gpt-4o-mini"},
+      {"language": "en", "country": "China", "model": "openai/gpt-4o-mini"},
+      {"language": "es", "country": "Spain", "model": "openai/gpt-4o-mini"},
+      {"language": "es", "country": "Mexico", "model": "openai/gpt-4o-mini"}
+    ],
+    "estimated_api_calls": "6 cases × 10 questions × 5 repeats = 300 calls",
+    "estimated_cost": "~$3-5 USD"
+  },
+  
+  "phase_2_full_experiment": {
+    "description": "完整实验：覆盖所有语言变体和文化梯度",
+    "sample_size_calculation": {
+      "chinese_variants": "5 variants × 6 countries × 7 models × 10 questions × 5 repeats = 10,500",
+      "geographic_gradient": "4 zones × 15 countries × 7 models × 10 questions × 5 repeats = 21,000",
+      "total_api_calls": "31,500",
+      "estimated_cost": "~$315 USD (assuming $0.01 per call)",
+      "estimated_time": "15-20 hours with parallel execution"
+    }
+  },
+  
+  "data_analysis_plan": {
+    "step_1": "计算每个国家-语言-模型组合的PCA得分",
+    "step_2": "计算英语优势分数（English Advantage Score）",
+    "step_3": "按文化圈分组分析地理梯度",
+    "step_4": "统计检验：ANOVA + post-hoc tests",
+    "step_5": "可视化：梯度图、热力图、对比散点图",
+    "step_6": "撰写理论解释：结合Said理论和实证数据"
+  },
+  
+  "expected_outcomes": {
+    "if_hypothesis_supported": [
+      "远东地区英语优势最大（China, Taiwan, Hong Kong）",
+      "拉丁美洲英语优势接近0或为负（与西班牙差异小）",
+      "香港英语优势小于大陆（殖民历史影响）",
+      "梯度显著：Confucian > Orthodox > Arab > Latin America"
+    ],
+    "if_hypothesis_rejected": [
+      "无显著地理梯度",
+      "拉丁美洲与远东英语优势相似",
+      "繁简体中文无差异"
+    ],
+    "theoretical_implications": [
+      "支持假设：验证Said'他者'理论在LLM价值构建中的体现",
+      "拒绝假设：提出新的理论框架解释语言效应"
+    ]
+  },
+  
+  "implementation_notes": {
+    "new_language_codes_needed": [
+      "zh-tw: 繁体中文（台湾）",
+      "zh-hk: 繁体中文（香港）",
+      "yue-hk: 粤语（香港）"
+    ],
+    "question_translation_required": true,
+    "translation_sources": [
+      "台湾官方问卷翻译（如有）",
+      "香港官方问卷翻译（如有）",
+      "专业翻译服务"
+    ],
+    "cantonese_challenge": "粤语书面语较少使用，可能需要调整问卷形式"
+  }
+}
+
+

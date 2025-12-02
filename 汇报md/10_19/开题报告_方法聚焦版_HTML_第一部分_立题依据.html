@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大模型价值观的评价方法研究（方法聚焦版） - 立题依据</title>
+    <style>
+        /* 页面设置 */
+        body {
+            font-family: '仿宋_GB2312', '仿宋', FangSong, STFangSong, serif;
+            line-height: 1.5;
+            max-width: 21cm;
+            margin: 2cm auto;
+            padding: 20px;
+            background-color: white;
+        }
+        
+        /* 主标题：黑体二号，行距33磅 */
+        h1.main-title {
+            font-family: '黑体', SimHei, sans-serif;
+            font-size: 22pt; /* 二号 */
+            line-height: 33pt;
+            text-align: center;
+            margin: 20pt 0;
+            font-weight: bold;
+        }
+        
+        /* 元信息 */
+        .meta-info {
+            font-family: '仿宋_GB2312', '仿宋', FangSong, serif;
+            font-size: 14pt; /* 小三号 */
+            text-align: center;
+            margin: 10pt 0;
+            line-height: 1.5;
+        }
+        
+        /* 一级标题：黑体三号，段前段后0.5行，行距1.5倍 */
+        h2.level-1 {
+            font-family: '黑体', SimHei, sans-serif;
+            font-size: 16pt; /* 三号 */
+            line-height: 1.5;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        
+        /* 二级标题：黑体小三号，段前段后0.5行，行距1.5倍 */
+        h3.level-2 {
+            font-family: '黑体', SimHei, sans-serif;
+            font-size: 15pt; /* 小三号 */
+            line-height: 1.5;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        
+        /* 正文：小三号仿宋GB-2312，两端对齐，首行缩进两字符 */
+        p.content {
+            font-family: '仿宋_GB2312', '仿宋', FangSong, STFangSong, serif;
+            font-size: 15pt; /* 小三号 */
+            text-align: justify;
+            text-indent: 2em; /* 首行缩进两字符 */
+            line-height: 1.5;
+            margin: 0;
+            margin-bottom: 0.5em;
+        }
+        
+        /* 参考文献格式 */
+        .reference {
+            font-family: '仿宋_GB2312', '仿宋', FangSong, serif;
+            font-size: 15pt;
+            text-align: justify;
+            text-indent: -2em;
+            padding-left: 2em;
+            line-height: 1.5;
+            margin-bottom: 0.5em;
+        }
+    </style>
+    </head>
+<body>
+    <h1 class="main-title">大模型价值观的评价方法研究（方法聚焦版）</h1>
+    
+    <div class="meta-info">
+        <p>研究生姓名：[您的姓名]</p>
+        <p>导师姓名：[导师姓名]</p>
+        <p>学科专业：[专业名称]</p>
+        <p>研究方向：自然语言处理、人工智能评估</p>
+        <p>开题日期：2025年10月</p>
+    </div>
+    
+    <h2 class="level-1">一、立题依据</h2>
+    
+    <h3 class="level-2">（一）研究目的与意义</h3>
+    
+    <p class="content">大型语言模型正在全球落地。它们进入教育、医疗、法律咨询等场景。模型不可能完全中立。训练语料会带来价值倾向和文化偏见。评估面临三道难题。没有清晰的量化标准，很多研究依赖人工标注或小样本问卷。缺少跨文化的统一方法，不同文化对同一问题的理解不同，结果难以比较。语言影响机制也不清。用英语与母语测试常有差异，这些差异意味着什么还不明确。</p>
+    
+    <p class="content">本研究要建立一套可落地的评价方法。我们引入世界价值观调查，借助权威数据。我们把10个核心问题投影到二维文化空间，使用主成分分析。我们定义文化距离，让结果可计算、可比较、可解释。方法更重证据，少主观判断。它把讨论从经验描述带到量化测量。</p>
+    
+    <p class="content">我们提出一种评估范式。先做基线测量，再看能力边界，还要分析影响因素。这个范式也适用于推理、常识等能力。它让流程清晰，也方便复用。在治理语境下，这个方法能用作文化公平性检查工具。相关政策关注多样性，但缺少可操作做法。本研究提供可直接使用的办法。</p>
+    
+    <p class="content">方法有实际价值。开发者可以用它识别文化偏见，做模型选型。也能发现数据代表性问题，指导数据配比。还可以评估人类反馈强化学习在不同文化中的适配。企业做全球部署时，也能用它选择语言和市场，衡量投入产出。</p>
+    
+    <h3 class="level-2">（二）国内外研究现状和发展趋势</h3>
+    
+    <p class="content">偏见评估起步早，关注提醒风险。Bender（2021）指出大模型会放大训练语料中的偏见。Bommasani（2021）强调文化适配。Blodgett（2020）综述了偏见定义和测量难点。常见做法有三类。模板填充如CrowS‑Pairs、StereoSet，只测刻板印象，不触达价值观。问答评估如MMLU、BBH，题目缺少文化理论支撑。人工标注如Anthropic的HHH，主观强、成本高、规模小。最近开始系统研究文化偏差。Cao（2023）做文化场景测试。Naous（2024）扩展该方向。Huang（2023）讨论ChatGPT解释社会现象的能力与局限。</p>
+    
+    <p class="content">跨文化评估也在推进。XTREME（2020）覆盖多语言任务，但只看准确率，不看文化理解。Hershcovich（2022）提出文化感知框架，更多停在概念。自2023年起，价值观评估成为热点。Arora（2023）探测跨文化价值差异。Santurkar（2023）分析模型反映的观点倾向。Durmus（2023）测量模型对全球主观观点的表示。Dwivedi‑Yu（2023）显示训练数据的文化代表性会影响结果。Tao（2024）给出多国价值对齐基准。</p>
+    
+    <p class="content">社会科学已有成熟工具。Inglehart‑Welzel文化地图提供跨国比较框架。Hofstede与Schwartz维度也被广泛使用。人工智能领域开始借鉴这些工具。Park（2023）展示生成式代理。Shanahan（2023）讨论角色扮演与评估。Ziems（2024）综述计算社会科学机会，并指出价值观评估重要。对齐方面，Ouyang（2022）提出RLHF。Bai（2022）讨论有用且无害的助手。Myung（2024）强调要对齐共享人类价值，不能只看单一文化。主流机构在近年的技术报告中也把文化公平纳入评估维度。</p>
+    
+    <p class="content">在此基础上，本研究给出清晰定位。把世界价值观调查系统用于大型语言模型评估。提出文化距离这一量化指标。完成面向109个国家的系统测试。设计母语与英语的对比实验，揭示语言影响。</p>
+    
+    <p class="content">发展趋势已很清楚。评估走向标准化，文化公平将进入基准。学科交叉加深，NLP正在与社会学、心理学、人类学融合。治理需求上升，政策要求可操作评估。多语言模型快速发展，但跨语言的文化理解评估仍稀缺。本研究补上这块空白。</p>
+    
+    
+    
+    <h3 class="level-2">（三）主要参考文献目录</h3>
+    
+    <p class="reference">1. Bender, E. M., Gebru, T., McMillan‑Major, A., & Shmitchell, S. (2021). On the Dangers of Stochastic Parrots. FAccT.</p>
+    <p class="reference">2. Bommasani, R., et al. (2021). On the Opportunities and Risks of Foundation Models. arXiv:2108.07258.</p>
+    <p class="reference">3. Blodgett, S. L., Barocas, S., Daumé III, H., & Wallach, H. (2020). Language (Technology) is Power. ACL.</p>
+    <p class="reference">4. Nangia, N., et al. (2020). CrowS‑Pairs: A Challenge Dataset for Measuring Social Biases. EMNLP.</p>
+    <p class="reference">5. Nadeem, M., Bethke, A., & Reddy, S. (2021). StereoSet: Measuring Stereotype Bias. ACL.</p>
+    <p class="reference">6. Hendrycks, D., et al. (2021). Measuring Massive Multitask Language Understanding. ICLR.</p>
+    <p class="reference">7. Askell, A., et al. (2021). A General Language Assistant as a Laboratory for Alignment. arXiv.</p>
+    <p class="reference">8. Hu, J., et al. (2020). XTREME: A Massively Multilingual Multi‑task Benchmark. arXiv.</p>
+    <p class="reference">9. Hershcovich, D., et al. (2022). Challenges and Strategies in Cross‑Cultural NLP. ACL.</p>
+    <p class="reference">10. Arora, S., et al. (2023). Probing Cultural Values in Pretrained LMs. EMNLP.</p>
+    <p class="reference">11. Santurkar, S., et al. (2023). Whose Opinions Do Language Models Reflect? ICML.</p>
+    <p class="reference">12. Durmus, E., et al. (2023). Measuring Representational Harms in LLMs. arXiv.</p>
+    <p class="reference">13. Dwivedi‑Yu, J., et al. (2023). Language Resources and Cultural Fidelity. arXiv.</p>
+    <p class="reference">14. Tao, M., et al. (2024). A Multinational Values Alignment Benchmark. arXiv.</p>
+    <p class="reference">15. Inglehart, R., & Welzel, C. (2005). Modernization, Cultural Change, and Democracy. CUP.</p>
+    <p class="reference">16. Hofstede, G. (2011). Dimensionalizing Cultures. ORPC.</p>
+    <p class="reference">17. Schwartz, S. H. (1992). Universals in the Content and Structure of Values. Adv. Exp. Soc. Psychol.</p>
+    <p class="reference">18. Park, J. S., et al. (2023). Generative Agents. UIST.</p>
+    <p class="reference">19. Shanahan, M., et al. (2023). Role‑Play with Large Language Models. Nature.</p>
+    <p class="reference">20. Ziems, C., et al. (2024). LLMs for Computational Social Science. Computational Linguistics.</p>
+    <p class="reference">21. Ouyang, L., et al. (2022). Training Language Models with Human Feedback. arXiv.</p>
+    <p class="reference">22. Bai, Y., et al. (2022). Training a Helpful and Harmless Assistant. arXiv.</p>
+    <p class="reference">23. Myung, J., et al. (2024). Aligning AI with Shared Human Values. arXiv.</p>
+    
+</body>
+</html>
+

@@ -1,0 +1,4 @@
+﻿stage,failure_type,count,total,rate
+stage1,none,100,100,100.0
+stage2,none,180,180,100.0
+stage3,api_failure,6690,6690,100.0

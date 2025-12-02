@@ -1,0 +1,11 @@
+﻿model_name,api_failure,none,total,none_rate,api_failure_rate
+anthropic/claude-3.7-sonnet,660,40,700,5.71,94.29
+anthropic/claude-sonnet-4.5,660,10,670,1.49,98.51
+deepseek/deepseek-chat-v3-0324,690,40,730,5.48,94.52
+google/gemini-2.0-flash-001,690,40,730,5.48,94.52
+google/gemini-2.5-flash,660,10,670,1.49,98.51
+meta-llama/llama-3.3-70b-instruct,660,40,700,5.71,94.29
+mistralai/mistral-nemo,660,40,700,5.71,94.29
+openai/gpt-4o-mini,690,40,730,5.48,94.52
+qwen/qwq-32b,660,10,670,1.49,98.51
+x-ai/grok-code-fast-1,660,10,670,1.49,98.51

@@ -1,0 +1,25 @@
+Roleplay English Analysis Summary
+==================================================
+
+Total entities: 882
+
+Entities by Data Source:
+  Roleplay: 770
+  IVS: 112
+
+Roleplay Models:
+  anthropic/claude-3.7-sonnet: 109
+  deepseek/deepseek-chat-v3-0324: 109
+  google/gemini-2.0-flash-001: 109
+  mistralai/mistral-nemo: 109
+  meta-llama/llama-3.3-70b-instruct: 108
+  openai/gpt-4o-mini: 104
+  qwen/qwq-32b: 102
+  mistralai/mistral-nemo:free: 20
+
+Principal Component Statistics:
+PC1 range: [-4.13, 5.82]
+PC2 range: [-2.72, 5.00]
+
+Accuracy Analysis:
+{'total_entities': 882, 'roleplay_entities': 770, 'ivs_entities': 112, 'pc1_range': [-4.1290470535990424, 5.818282222182902], 'pc2_range': [-2.721297358856354, 4.9980647847940185]}

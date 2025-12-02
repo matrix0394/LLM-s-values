@@ -1,0 +1,789 @@
+{
+  "filtered_distance_analysis": {
+    "China": {
+      "english_distances": [
+        4.587176684235897,
+        4.667777147402359,
+        5.57808976777666,
+        5.039446738836036
+      ],
+      "native_distances": [
+        5.5910817023493795,
+        0.9204694935353984,
+        4.818500407249318,
+        7.537787686431591,
+        3.676846424655261
+      ],
+      "avg_english_distance": 4.968122584562738,
+      "avg_native_distance": 4.508937142844189,
+      "winner": "Native",
+      "difference": 0.4591854417185486,
+      "high_quality_models_count": 5
+    },
+    "Taiwan": {
+      "english_distances": [
+        8.954995536719204,
+        7.880757694472633,
+        6.269472078455601
+      ],
+      "native_distances": [
+        7.72827309738847,
+        6.351178665880551,
+        3.4797577108879194
+      ],
+      "avg_english_distance": 7.701741769882479,
+      "avg_native_distance": 5.85306982471898,
+      "winner": "Native",
+      "difference": 1.848671945163499,
+      "high_quality_models_count": 5
+    },
+    "Hong Kong": {
+      "english_distances": [
+        6.194543912652475,
+        2.492899761239979,
+        3.9687705913057236,
+        6.345801763451961
+      ],
+      "native_distances": [
+        7.111041734125448,
+        1.3665071655894139,
+        2.662035068512919,
+        1.4710936390131286
+      ],
+      "avg_english_distance": 4.750504007162535,
+      "avg_native_distance": 3.1526694018102273,
+      "winner": "Native",
+      "difference": 1.5978346053523076,
+      "high_quality_models_count": 5
+    },
+    "Macao": {
+      "english_distances": [
+        6.199197002548905,
+        2.7483880515123604,
+        5.055118696540225,
+        7.656413340884929
+      ],
+      "native_distances": [
+        8.51073132703746,
+        6.141275419294471,
+        5.449664479134036,
+        5.461820352538779
+      ],
+      "avg_english_distance": 5.414779272871605,
+      "avg_native_distance": 6.390872894501187,
+      "winner": "English",
+      "difference": 0.9760936216295821,
+      "high_quality_models_count": 5
+    },
+    "Russian Federation": {
+      "english_distances": [
+        5.384270171885534,
+        3.5848965950599787,
+        5.331290956840216,
+        7.9258839700575665,
+        0.9590789956688539
+      ],
+      "native_distances": [
+        4.850917458465173,
+        4.059704168552558,
+        6.106776658766461,
+        6.916037969702189,
+        0.6545016042527441
+      ],
+      "avg_english_distance": 4.63708413790243,
+      "avg_native_distance": 4.517587571947825,
+      "winner": "Native",
+      "difference": 0.11949656595460478,
+      "high_quality_models_count": 5
+    },
+    "Belarus": {
+      "english_distances": [
+        4.548135981601919,
+        3.0640468097955496,
+        3.9468537384876545,
+        9.095550570173883,
+        9.005551923419514
+      ],
+      "native_distances": [
+        5.163551031080356,
+        2.6462301477642685,
+        3.764572118627835,
+        8.463496252028408,
+        1.4684016099980626
+      ],
+      "avg_english_distance": 5.932027804695704,
+      "avg_native_distance": 4.301250231899786,
+      "winner": "Native",
+      "difference": 1.6307775727959175,
+      "high_quality_models_count": 5
+    },
+    "Kazakhstan": {
+      "english_distances": [
+        4.9101847858549,
+        3.870109346119127,
+        4.801859292600906,
+        8.045452124368685,
+        2.4166168629654075
+      ],
+      "native_distances": [
+        6.68073617128619,
+        1.3915953143414068,
+        5.0829718615827435,
+        7.389609403918452,
+        1.7877795583579243
+      ],
+      "avg_english_distance": 4.808844482381806,
+      "avg_native_distance": 4.466538461897343,
+      "winner": "Native",
+      "difference": 0.3423060204844628,
+      "high_quality_models_count": 5
+    },
+    "Ukraine": {
+      "english_distances": [
+        8.463416430287348,
+        7.323028186715101,
+        8.57033313739216,
+        10.15008116787805,
+        1.7860281865498273
+      ],
+      "native_distances": [
+        9.651488696178491,
+        2.118910102561517,
+        5.546498177674239,
+        6.909060399239363
+      ],
+      "avg_english_distance": 7.258577421764497,
+      "avg_native_distance": 6.056489343913402,
+      "winner": "Native",
+      "difference": 1.2020880778510952,
+      "high_quality_models_count": 5
+    },
+    "Kyrgyzstan": {
+      "english_distances": [
+        5.4283220782545945,
+        2.7031217612194802,
+        4.389573116800064,
+        7.556631996595716,
+        1.7356356478791382
+      ],
+      "native_distances": [
+        6.434735457629227,
+        1.870956701475178,
+        5.730610068245672,
+        5.08917278450697,
+        1.916075209344214
+      ],
+      "avg_english_distance": 4.3626569201497984,
+      "avg_native_distance": 4.208310044240252,
+      "winner": "Native",
+      "difference": 0.1543468759095461,
+      "high_quality_models_count": 5
+    },
+    "Spain": {
+      "english_distances": [
+        4.912748952752289,
+        1.0379961119220773
+      ],
+      "native_distances": [
+        4.9190736801818975,
+        3.7940662836088728
+      ],
+      "avg_english_distance": 2.9753725323371834,
+      "avg_native_distance": 4.356569981895385,
+      "winner": "English",
+      "difference": 1.3811974495582016,
+      "high_quality_models_count": 5
+    },
+    "Mexico": {
+      "english_distances": [
+        6.873973224545488,
+        4.8504098812604335,
+        5.017210951538876,
+        6.9380158688243245
+      ],
+      "native_distances": [
+        6.8114605903226035,
+        0.5431350086368052,
+        3.678686042245688,
+        4.859958127390898
+      ],
+      "avg_english_distance": 5.91990248154228,
+      "avg_native_distance": 3.9733099421489984,
+      "winner": "Native",
+      "difference": 1.946592539393282,
+      "high_quality_models_count": 5
+    },
+    "Argentina": {
+      "english_distances": [
+        7.239544084662421,
+        5.433029488327584
+      ],
+      "native_distances": [
+        0.7204467623065512,
+        7.518945330376183,
+        1.646134846744578
+      ],
+      "avg_english_distance": 6.336286786495002,
+      "avg_native_distance": 3.295175646475771,
+      "winner": "Native",
+      "difference": 3.0411111400192308,
+      "high_quality_models_count": 5
+    },
+    "Colombia": {
+      "english_distances": [
+        7.377527259655576,
+        5.372534446752517,
+        4.611809837922745,
+        7.97824511076391
+      ],
+      "native_distances": [
+        1.0263885280613363,
+        3.8447794013112184,
+        1.6128973866670389,
+        4.675897153623208
+      ],
+      "avg_english_distance": 6.3350291637736875,
+      "avg_native_distance": 2.7899906174157003,
+      "winner": "Native",
+      "difference": 3.545038546357987,
+      "high_quality_models_count": 5
+    },
+    "Peru": {
+      "english_distances": [
+        6.777849591810304,
+        5.863689182031259,
+        7.376141583927724,
+        6.787574411237318,
+        0.39354359796352545
+      ],
+      "native_distances": [
+        8.855684376122285,
+        6.2881869425239785,
+        5.008368710433303,
+        8.389780692212257
+      ],
+      "avg_english_distance": 5.439759673394026,
+      "avg_native_distance": 7.135505180322957,
+      "winner": "English",
+      "difference": 1.6957455069289304,
+      "high_quality_models_count": 5
+    },
+    "Egypt": {
+      "english_distances": [
+        8.238934473928802,
+        4.666314027715685,
+        5.538281035819826,
+        9.181721037410753,
+        4.462614040069157
+      ],
+      "native_distances": [
+        8.419300451669598,
+        4.52890234333578,
+        5.548981922944096,
+        9.599454571598482,
+        1.4617137561147382
+      ],
+      "avg_english_distance": 6.417572922988844,
+      "avg_native_distance": 5.911670609132538,
+      "winner": "Native",
+      "difference": 0.5059023138563061,
+      "high_quality_models_count": 5
+    },
+    "Iraq": {
+      "english_distances": [
+        7.115548312241329,
+        1.2547452238477672,
+        4.346801115289967,
+        8.431324658613702,
+        1.8386735044869658
+      ],
+      "native_distances": [
+        4.848864450778696,
+        3.901728136264519,
+        3.8055355824165833,
+        9.093475582830134,
+        1.578124951733297
+      ],
+      "avg_english_distance": 4.597418562895947,
+      "avg_native_distance": 4.645545740804646,
+      "winner": "English",
+      "difference": 0.04812717790869936,
+      "high_quality_models_count": 5
+    },
+    "Algeria": {
+      "english_distances": [
+        7.186103784523073,
+        5.745705022369277,
+        4.4921265878195245,
+        6.382090842136423
+      ],
+      "native_distances": [
+        8.14847664875436,
+        3.4906153227338086,
+        4.431332633676158,
+        7.803555004876456
+      ],
+      "avg_english_distance": 5.951506559212074,
+      "avg_native_distance": 5.968494902510196,
+      "winner": "English",
+      "difference": 0.016988343298121933,
+      "high_quality_models_count": 5
+    },
+    "Morocco": {
+      "english_distances": [
+        7.4430085599606395,
+        3.983975662839487,
+        4.986057735791186,
+        8.372238416795618,
+        6.5978743290539
+      ],
+      "native_distances": [
+        4.413400117180307,
+        4.875849178823922,
+        9.569858130032744,
+        7.727789162947517
+      ],
+      "avg_english_distance": 6.2766309408881655,
+      "avg_native_distance": 6.646724147246122,
+      "winner": "English",
+      "difference": 0.3700932063579563,
+      "high_quality_models_count": 5
+    }
+  },
+  "quality_weighted_analysis": {
+    "filtered_competition": {
+      "english_wins": 6,
+      "native_wins": 12,
+      "ties": 0,
+      "total_analyzed": 18,
+      "english_win_rate": 33.33333333333333,
+      "native_win_rate": 66.66666666666666
+    },
+    "filtered_distances": {
+      "english_avg": 5.575536638935757,
+      "native_avg": 4.898844014809108,
+      "english_std": 2.2131144251862276,
+      "native_std": 2.515622886740904
+    },
+    "quality_weighted_scores": {
+      "openai/gpt-4o-mini": {
+        "english_weighted_score": 0.15276108758266263,
+        "native_weighted_score": 0.13593135483571375,
+        "english_distance": 6.528988133475328,
+        "native_distance": 7.337345598367754,
+        "quality_rate": 0.9973684210526316
+      },
+      "google/gemini-2.0-flash-001": {
+        "english_weighted_score": 0.22265810761348995,
+        "native_weighted_score": 0.3083170552908859,
+        "english_distance": 4.467676513412936,
+        "native_distance": 3.226433247318204,
+        "quality_rate": 0.9947368421052631
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "english_weighted_score": 0.18403230525790987,
+        "native_weighted_score": 0.1956608586225582,
+        "english_distance": 5.267486889019316,
+        "native_distance": 4.954428606347114,
+        "quality_rate": 0.968421052631579
+      },
+      "deepseek/deepseek-chat-v3-0324": {
+        "english_weighted_score": 0.1493662121961966,
+        "native_weighted_score": 0.14161666260816702,
+        "english_distance": 6.642513639727554,
+        "native_distance": 7.006005391984559,
+        "quality_rate": 0.9921052631578947
+      },
+      "mistralai/mistral-nemo": {
+        "english_weighted_score": 0.12390958254070271,
+        "native_weighted_score": 0.14425346907861017,
+        "english_distance": 8.070400847904663,
+        "native_distance": 6.932242298138807,
+        "quality_rate": 1.0
+      }
+    },
+    "high_quality_models": [
+      "openai/gpt-4o-mini",
+      "google/gemini-2.0-flash-001",
+      "meta-llama/llama-3.3-70b-instruct",
+      "deepseek/deepseek-chat-v3-0324",
+      "mistralai/mistral-nemo"
+    ],
+    "filtered_models_count": 5
+  },
+  "filtered_country_analysis": {
+    "individual_countries": {
+      "China": {
+        "language_group": "Chinese",
+        "winner": "Native",
+        "english_distance": 4.968122584562738,
+        "native_distance": 4.508937142844189,
+        "distance_difference": 0.4591854417185486,
+        "high_quality_models_used": 5
+      },
+      "Taiwan": {
+        "language_group": "Chinese",
+        "winner": "Native",
+        "english_distance": 7.701741769882479,
+        "native_distance": 5.85306982471898,
+        "distance_difference": 1.848671945163499,
+        "high_quality_models_used": 5
+      },
+      "Hong Kong": {
+        "language_group": "Chinese",
+        "winner": "Native",
+        "english_distance": 4.750504007162535,
+        "native_distance": 3.1526694018102273,
+        "distance_difference": 1.5978346053523076,
+        "high_quality_models_used": 5
+      },
+      "Macao": {
+        "language_group": "Chinese",
+        "winner": "English",
+        "english_distance": 5.414779272871605,
+        "native_distance": 6.390872894501187,
+        "distance_difference": 0.9760936216295821,
+        "high_quality_models_used": 5
+      },
+      "Russian Federation": {
+        "language_group": "Russian",
+        "winner": "Native",
+        "english_distance": 4.63708413790243,
+        "native_distance": 4.517587571947825,
+        "distance_difference": 0.11949656595460478,
+        "high_quality_models_used": 5
+      },
+      "Belarus": {
+        "language_group": "Russian",
+        "winner": "Native",
+        "english_distance": 5.932027804695704,
+        "native_distance": 4.301250231899786,
+        "distance_difference": 1.6307775727959175,
+        "high_quality_models_used": 5
+      },
+      "Kazakhstan": {
+        "language_group": "Russian",
+        "winner": "Native",
+        "english_distance": 4.808844482381806,
+        "native_distance": 4.466538461897343,
+        "distance_difference": 0.3423060204844628,
+        "high_quality_models_used": 5
+      },
+      "Ukraine": {
+        "language_group": "Russian",
+        "winner": "Native",
+        "english_distance": 7.258577421764497,
+        "native_distance": 6.056489343913402,
+        "distance_difference": 1.2020880778510952,
+        "high_quality_models_used": 5
+      },
+      "Kyrgyzstan": {
+        "language_group": "Russian",
+        "winner": "Native",
+        "english_distance": 4.3626569201497984,
+        "native_distance": 4.208310044240252,
+        "distance_difference": 0.1543468759095461,
+        "high_quality_models_used": 5
+      },
+      "Spain": {
+        "language_group": "Spanish",
+        "winner": "English",
+        "english_distance": 2.9753725323371834,
+        "native_distance": 4.356569981895385,
+        "distance_difference": 1.3811974495582016,
+        "high_quality_models_used": 5
+      },
+      "Mexico": {
+        "language_group": "Spanish",
+        "winner": "Native",
+        "english_distance": 5.91990248154228,
+        "native_distance": 3.9733099421489984,
+        "distance_difference": 1.946592539393282,
+        "high_quality_models_used": 5
+      },
+      "Argentina": {
+        "language_group": "Spanish",
+        "winner": "Native",
+        "english_distance": 6.336286786495002,
+        "native_distance": 3.295175646475771,
+        "distance_difference": 3.0411111400192308,
+        "high_quality_models_used": 5
+      },
+      "Colombia": {
+        "language_group": "Spanish",
+        "winner": "Native",
+        "english_distance": 6.3350291637736875,
+        "native_distance": 2.7899906174157003,
+        "distance_difference": 3.545038546357987,
+        "high_quality_models_used": 5
+      },
+      "Peru": {
+        "language_group": "Spanish",
+        "winner": "English",
+        "english_distance": 5.439759673394026,
+        "native_distance": 7.135505180322957,
+        "distance_difference": 1.6957455069289304,
+        "high_quality_models_used": 5
+      },
+      "Egypt": {
+        "language_group": "Arabic",
+        "winner": "Native",
+        "english_distance": 6.417572922988844,
+        "native_distance": 5.911670609132538,
+        "distance_difference": 0.5059023138563061,
+        "high_quality_models_used": 5
+      },
+      "Iraq": {
+        "language_group": "Arabic",
+        "winner": "English",
+        "english_distance": 4.597418562895947,
+        "native_distance": 4.645545740804646,
+        "distance_difference": 0.04812717790869936,
+        "high_quality_models_used": 5
+      },
+      "Algeria": {
+        "language_group": "Arabic",
+        "winner": "English",
+        "english_distance": 5.951506559212074,
+        "native_distance": 5.968494902510196,
+        "distance_difference": 0.016988343298121933,
+        "high_quality_models_used": 5
+      },
+      "Morocco": {
+        "language_group": "Arabic",
+        "winner": "English",
+        "english_distance": 6.2766309408881655,
+        "native_distance": 6.646724147246122,
+        "distance_difference": 0.3700932063579563,
+        "high_quality_models_used": 5
+      }
+    },
+    "language_group_stats": {
+      "Chinese": {
+        "countries": [
+          "China",
+          "Taiwan",
+          "Hong Kong",
+          "Macao"
+        ],
+        "english_wins": 1,
+        "native_wins": 3,
+        "total_countries": 4,
+        "avg_english_distance": 5.708786908619839,
+        "avg_native_distance": 4.976387315968646,
+        "group_winner": "Native"
+      },
+      "Russian": {
+        "countries": [
+          "Russian Federation",
+          "Belarus",
+          "Kazakhstan",
+          "Ukraine",
+          "Kyrgyzstan"
+        ],
+        "english_wins": 0,
+        "native_wins": 5,
+        "total_countries": 5,
+        "avg_english_distance": 5.399838153378847,
+        "avg_native_distance": 4.710035130779722,
+        "group_winner": "Native"
+      },
+      "Spanish": {
+        "countries": [
+          "Spain",
+          "Mexico",
+          "Argentina",
+          "Colombia",
+          "Peru"
+        ],
+        "english_wins": 2,
+        "native_wins": 3,
+        "total_countries": 5,
+        "avg_english_distance": 5.401270127508435,
+        "avg_native_distance": 4.3101102736517625,
+        "group_winner": "Native"
+      },
+      "Arabic": {
+        "countries": [
+          "Egypt",
+          "Iraq",
+          "Algeria",
+          "Morocco"
+        ],
+        "english_wins": 3,
+        "native_wins": 1,
+        "total_countries": 4,
+        "avg_english_distance": 5.810782246496258,
+        "avg_native_distance": 5.793108849923375,
+        "group_winner": "Native"
+      }
+    }
+  },
+  "filtered_model_ranking": {
+    "model_scores": {
+      "openai/gpt-4o-mini": {
+        "english_distance": 6.528988133475328,
+        "native_distance": 7.337345598367754,
+        "quality_rate": 0.9973684210526316,
+        "english_score": 0.15276002968039404,
+        "native_score": 0.13593041348284093,
+        "combined_score": 0.1443452215816175,
+        "quality_grade": "A+"
+      },
+      "google/gemini-2.0-flash-001": {
+        "english_distance": 4.467676513412936,
+        "native_distance": 3.226433247318204,
+        "quality_rate": 0.9947368421052631,
+        "english_score": 0.22265193979887463,
+        "native_score": 0.3083085146522352,
+        "combined_score": 0.2654802272255549,
+        "quality_grade": "A+"
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "english_distance": 5.267486889019316,
+        "native_distance": 4.954428606347114,
+        "quality_rate": 0.968421052631579,
+        "english_score": 0.18384878273743108,
+        "native_score": 0.19546573976077394,
+        "combined_score": 0.1896572612491025,
+        "quality_grade": "A+"
+      },
+      "deepseek/deepseek-chat-v3-0324": {
+        "english_distance": 6.642513639727554,
+        "native_distance": 7.006005391984559,
+        "quality_rate": 0.9921052631578947,
+        "english_score": 0.14935690266773566,
+        "native_score": 0.14160783608487426,
+        "combined_score": 0.14548236937630496,
+        "quality_grade": "A+"
+      },
+      "mistralai/mistral-nemo": {
+        "english_distance": 8.070400847904663,
+        "native_distance": 6.932242298138807,
+        "quality_rate": 1.0,
+        "english_score": 0.12390958254070271,
+        "native_score": 0.14425346907861017,
+        "combined_score": 0.13408152580965643,
+        "quality_grade": "A+"
+      }
+    },
+    "english_ranking": [
+      "google/gemini-2.0-flash-001",
+      "meta-llama/llama-3.3-70b-instruct",
+      "openai/gpt-4o-mini",
+      "deepseek/deepseek-chat-v3-0324",
+      "mistralai/mistral-nemo"
+    ],
+    "native_ranking": [
+      "google/gemini-2.0-flash-001",
+      "meta-llama/llama-3.3-70b-instruct",
+      "mistralai/mistral-nemo",
+      "deepseek/deepseek-chat-v3-0324",
+      "openai/gpt-4o-mini"
+    ],
+    "combined_ranking": [
+      "google/gemini-2.0-flash-001",
+      "meta-llama/llama-3.3-70b-instruct",
+      "deepseek/deepseek-chat-v3-0324",
+      "openai/gpt-4o-mini",
+      "mistralai/mistral-nemo"
+    ]
+  },
+  "quality_comparison": {
+    "all_models": {
+      "openai/gpt-4o-mini": {
+        "quality_rate": 0.9973684210526316,
+        "english_distance": 6.528988133475328,
+        "native_distance": 7.337345598367754,
+        "is_high_quality": true,
+        "quality_category": "High"
+      },
+      "google/gemini-2.0-flash-001": {
+        "quality_rate": 0.9947368421052631,
+        "english_distance": 4.467676513412936,
+        "native_distance": 3.226433247318204,
+        "is_high_quality": true,
+        "quality_category": "High"
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "quality_rate": 0.968421052631579,
+        "english_distance": 5.267486889019316,
+        "native_distance": 4.954428606347114,
+        "is_high_quality": true,
+        "quality_category": "High"
+      },
+      "deepseek/deepseek-chat-v3-0324": {
+        "quality_rate": 0.9921052631578947,
+        "english_distance": 6.642513639727554,
+        "native_distance": 7.006005391984559,
+        "is_high_quality": true,
+        "quality_category": "High"
+      },
+      "qwen/qwq-32b": {
+        "quality_rate": 0.21842105263157896,
+        "english_distance": 3.4238654812353775,
+        "native_distance": 2.719591921994148,
+        "is_high_quality": false,
+        "quality_category": "Low"
+      },
+      "mistralai/mistral-nemo": {
+        "quality_rate": 1.0,
+        "english_distance": 8.070400847904663,
+        "native_distance": 6.932242298138807,
+        "is_high_quality": true,
+        "quality_category": "High"
+      }
+    },
+    "high_quality_models": {
+      "openai/gpt-4o-mini": {
+        "quality_rate": 0.9973684210526316,
+        "english_distance": 6.528988133475328,
+        "native_distance": 7.337345598367754,
+        "is_high_quality": true,
+        "quality_category": "High"
+      },
+      "google/gemini-2.0-flash-001": {
+        "quality_rate": 0.9947368421052631,
+        "english_distance": 4.467676513412936,
+        "native_distance": 3.226433247318204,
+        "is_high_quality": true,
+        "quality_category": "High"
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "quality_rate": 0.968421052631579,
+        "english_distance": 5.267486889019316,
+        "native_distance": 4.954428606347114,
+        "is_high_quality": true,
+        "quality_category": "High"
+      },
+      "deepseek/deepseek-chat-v3-0324": {
+        "quality_rate": 0.9921052631578947,
+        "english_distance": 6.642513639727554,
+        "native_distance": 7.006005391984559,
+        "is_high_quality": true,
+        "quality_category": "High"
+      },
+      "mistralai/mistral-nemo": {
+        "quality_rate": 1.0,
+        "english_distance": 8.070400847904663,
+        "native_distance": 6.932242298138807,
+        "is_high_quality": true,
+        "quality_category": "High"
+      }
+    },
+    "low_quality_models": {
+      "qwen/qwq-32b": {
+        "quality_rate": 0.21842105263157896,
+        "english_distance": 3.4238654812353775,
+        "native_distance": 2.719591921994148,
+        "is_high_quality": false,
+        "quality_category": "Low"
+      }
+    },
+    "correlation_analysis": {
+      "high_quality_count": 5,
+      "low_quality_count": 1,
+      "quality_threshold": 0.7
+    }
+  }
+}

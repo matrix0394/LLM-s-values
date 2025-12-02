@@ -1,0 +1,779 @@
+country_code,data_source,PC1_rescaled,PC2_rescaled,Cultural Region,model_name,language,country_code_clean,Country,Numeric,Islamic,Numeric_str,country_code_original
+Albania,IVS,-1.0196807910090924,-0.2870232764724841,African-Islamic,,,Albania,Albania,8.0,True,8,Albania
+Algeria,IVS,-1.1684919772694518,-0.8843775026590693,African-Islamic,,,Algeria,Algeria,12.0,True,12,Algeria
+Andorra,IVS,2.991814545576228,1.4738539429009634,Catholic Europe,,,Andorra,Andorra,20.0,False,20,Andorra
+Argentina,IVS,0.7588465683628217,-0.18839961155254006,Latin America,,,Argentina,Argentina,32.0,False,32,Argentina
+Armenia,IVS,-1.2443732651999506,-1.0226080226018668,Orthodox Europe,,,Armenia,Armenia,51.0,False,51,Armenia
+Australia,IVS,3.3731888573530355,0.7224185792325369,English-Speaking,,,Australia,Australia,36.0,False,36,Australia
+Austria,IVS,2.1619194749710022,1.1115751232312026,Catholic Europe,,,Austria,Austria,40.0,False,40,Austria
+Azerbaijan,IVS,-1.3553766709932165,-1.1106667997338815,African-Islamic,,,Azerbaijan,Azerbaijan,31.0,True,31,Azerbaijan
+Bangladesh,IVS,-1.0608793538407333,-1.8733499224489254,West & South Asia,,,Bangladesh,Bangladesh,50.0,False,50,Bangladesh
+Belarus,IVS,-0.37047845317933054,0.5164441929672998,Orthodox Europe,,,Belarus,Belarus,112.0,False,112,Belarus
+Belgium,IVS,2.404857425569012,0.9130014344111256,Catholic Europe,,,Belgium,Belgium,56.0,False,56,Belgium
+Bolivia (Plurinational State of),IVS,-0.5582961713593018,-1.4042892063938939,Latin America,,,Bolivia (Plurinational State of),Bolivia (Plurinational State of),68.0,False,68,Bolivia (Plurinational State of)
+Bosnia and Herzegovina,IVS,-0.6934560775472274,0.18817921668503496,Orthodox Europe,,,Bosnia and Herzegovina,Bosnia and Herzegovina,70.0,False,70,Bosnia and Herzegovina
+Brazil,IVS,-0.002466917339267943,-0.36373183260508996,Latin America,,,Brazil,Brazil,76.0,False,76,Brazil
+Bulgaria,IVS,-0.6310455690760195,1.088064110078313,Orthodox Europe,,,Bulgaria,Bulgaria,100.0,False,100,Bulgaria
+Burkina Faso,IVS,-0.9197270273329913,-1.2545214971095526,African-Islamic,,,Burkina Faso,Burkina Faso,854.0,True,854,Burkina Faso
+Canada,IVS,3.146362955902286,0.966201258462195,English-Speaking,,,Canada,Canada,124.0,False,124,Canada
+Chile,IVS,0.20612160867109586,-0.16580090911660458,Latin America,,,Chile,Chile,152.0,False,152,Chile
+China,IVS,0.009578243466834278,0.6999859967136189,Confucian,,,China,China,156.0,False,156,China
+Colombia,IVS,0.12743159040108035,-1.9615807644787275,Latin America,,,Colombia,Colombia,170.0,False,170,Colombia
+Croatia,IVS,0.4318617668435138,0.4582967358518535,Catholic Europe,,,Croatia,Croatia,191.0,False,191,Croatia
+Cyprus,IVS,-0.24708279834180744,-0.43712652845884603,Orthodox Europe,,,Cyprus,Cyprus,196.0,False,196,Cyprus
+Czechia,IVS,1.5230587123355912,1.8239812402770161,Catholic Europe,,,Czechia,Czechia,203.0,False,203,Czechia
+Denmark,IVS,4.289165264897317,1.8756004890356428,Protestant Europe,,,Denmark,Denmark,208.0,False,208,Denmark
+Ecuador,IVS,-0.18928827381362917,-2.0859676706962094,Latin America,,,Ecuador,Ecuador,218.0,False,218,Ecuador
+Egypt,IVS,-2.113984037760701,-0.9003414995309504,African-Islamic,,,Egypt,Egypt,818.0,True,818,Egypt
+Estonia,IVS,0.29961354239180926,1.3541784571850264,West & South Asia,,,Estonia,Estonia,233.0,False,233,Estonia
+Ethiopia,IVS,-1.1112824753056407,-1.283725551762104,African-Islamic,,,Ethiopia,Ethiopia,231.0,True,231,Ethiopia
+Finland,IVS,2.9275782979032066,1.357381101078991,Protestant Europe,,,Finland,Finland,246.0,False,246,Finland
+France,IVS,2.6696541380592955,1.2213394322065074,Catholic Europe,,,France,France,250.0,False,250,France
+Georgia,IVS,-1.540482467922933,-1.1227762295613364,Orthodox Europe,,,Georgia,Georgia,268.0,False,268,Georgia
+Germany,IVS,2.309389332825544,1.8394442817988996,Protestant Europe,,,Germany,Germany,276.0,False,276,Germany
+Ghana,IVS,-1.198265900090015,-2.3598125642220653,African-Islamic,,,Ghana,Ghana,288.0,True,288,Ghana
+Greece,IVS,-0.026281167866480236,0.245126883771947,Orthodox Europe,,,Greece,Greece,300.0,False,300,Greece
+Guatemala,IVS,0.33256855385360823,-1.092793700850252,Latin America,,,Guatemala,Guatemala,320.0,False,320,Guatemala
+Haiti,IVS,0.2766574901233601,-0.7086334401497004,Latin America,,,Haiti,Haiti,332.0,False,332,Haiti
+Hong Kong,IVS,0.6055869728751183,1.7811227717756704,Confucian,,,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hungary,IVS,0.18143155996127427,0.8472298974176273,Catholic Europe,,,Hungary,Hungary,348.0,False,348,Hungary
+Iceland,IVS,3.9872506610868115,1.16804254384702,Protestant Europe,,,Iceland,Iceland,352.0,False,352,Iceland
+India,IVS,-0.6481226397375877,-0.9340563633005776,West & South Asia,,,India,India,356.0,False,356,India
+Indonesia,IVS,-1.2524197564962225,-1.336422314268333,West & South Asia,,,Indonesia,Indonesia,360.0,False,360,Indonesia
+Iran (Islamic Republic of),IVS,-1.4007132119187988,-0.9830299173211438,West & South Asia,,,Iran (Islamic Republic of),Iran (Islamic Republic of),364.0,False,364,Iran (Islamic Republic of)
+Iraq,IVS,-1.5074303162590816,-0.8842849188183467,African-Islamic,,,Iraq,Iraq,368.0,True,368,Iraq
+Ireland,IVS,1.4740401147432378,-0.6696631303608473,Catholic Europe,,,Ireland,Ireland,372.0,False,372,Ireland
+Italy,IVS,1.1315698446375602,0.5367478892333681,Catholic Europe,,,Italy,Italy,380.0,False,380,Italy
+Japan,IVS,1.7081299495744457,2.115455635410611,Confucian,,,Japan,Japan,392.0,False,392,Japan
+Jordan,IVS,-1.7890822538500069,-2.013170349348855,African-Islamic,,,Jordan,Jordan,400.0,True,400,Jordan
+Kazakhstan,IVS,-0.693144164829562,-0.5600719861476137,African-Islamic,,,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kenya,IVS,-0.17419952667411304,-0.9417147684905796,African-Islamic,,,Kenya,Kenya,404.0,True,404,Kenya
+Korea (the Republic of),IVS,0.025654173539309343,1.3365360771252457,Confucian,,,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Kuwait,IVS,0.03252361566766113,-1.3371521973203635,African-Islamic,,,Kuwait,Kuwait,414.0,True,414,Kuwait
+Kyrgyzstan,IVS,-0.8910438198623833,-1.6031461177297344,West & South Asia,,,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Latvia,IVS,-0.06946952389069497,1.0226038215689934,Other,,,Latvia,Latvia,428.0,False,428,Latvia
+Lebanon,IVS,-1.1663309927131336,-0.5455871982622295,African-Islamic,,,Lebanon,Lebanon,422.0,True,422,Lebanon
+Libya,IVS,-1.3827949704298368,-2.022414139246762,African-Islamic,,,Libya,Libya,434.0,True,434,Libya
+Lithuania,IVS,-0.3328174238339931,1.1399902253552499,Other,,,Lithuania,Lithuania,440.0,False,440,Lithuania
+Luxembourg,IVS,2.2687181255228306,0.9644224956476846,Catholic Europe,,,Luxembourg,Luxembourg,442.0,False,442,Luxembourg
+Macao,IVS,0.8514375906606652,1.6752663290599865,Confucian,,,Macao,Macao,446.0,False,446,Macao
+Malaysia,IVS,-0.5702715033343455,-0.8476655255977595,West & South Asia,,,Malaysia,Malaysia,458.0,False,458,Malaysia
+Maldives,IVS,-0.8217664010914457,-1.4899679417911418,West & South Asia,,,Maldives,Maldives,462.0,False,462,Maldives
+Mali,IVS,-0.2423171969096826,-1.4349242925570702,African-Islamic,,,Mali,Mali,466.0,True,466,Mali
+Malta,IVS,-0.2855471165114161,-1.5010131946518428,Catholic Europe,,,Malta,Malta,470.0,False,470,Malta
+Mexico,IVS,0.5693651957434105,-1.6039253403698397,Latin America,,,Mexico,Mexico,484.0,False,484,Mexico
+Moldova (the Republic of),IVS,-1.9032398871227973,0.5049050497524281,Orthodox Europe,,,Moldova (the Republic of),Moldova (the Republic of),498.0,False,498,Moldova (the Republic of)
+Mongolia,IVS,0.6358859641280866,1.2458010403748672,Confucian,,,Mongolia,Mongolia,496.0,False,496,Mongolia
+Montenegro,IVS,-0.2642392689177251,0.034841765810532464,Orthodox Europe,,,Montenegro,Montenegro,499.0,False,499,Montenegro
+Morocco,IVS,-1.4532301150707416,-0.9775983646397365,African-Islamic,,,Morocco,Morocco,504.0,True,504,Morocco
+Myanmar,IVS,-1.2879290518023863,-1.4901696512903517,West & South Asia,,,Myanmar,Myanmar,104.0,False,104,Myanmar
+Netherlands (the),IVS,3.3998174675870914,1.5955905010063165,Protestant Europe,,,Netherlands (the),Netherlands (the),528.0,False,528,Netherlands (the)
+New Zealand,IVS,3.424667567349648,0.8088021656722041,English-Speaking,,,New Zealand,New Zealand,554.0,False,554,New Zealand
+Nicaragua,IVS,-0.5279322880676668,-1.9553806778227056,Latin America,,,Nicaragua,Nicaragua,558.0,False,558,Nicaragua
+Nigeria,IVS,-1.184774354690065,-1.603466672330597,African-Islamic,,,Nigeria,Nigeria,566.0,True,566,Nigeria
+Norway,IVS,4.1862074024652784,1.7851983450853746,Protestant Europe,,,Norway,Norway,578.0,False,578,Norway
+Pakistan,IVS,-0.7880396561792681,-1.5538655296328254,West & South Asia,,,Pakistan,Pakistan,586.0,False,586,Pakistan
+"Palestine, State of",IVS,-1.7365543249388524,-1.0580830895842748,African-Islamic,,,"Palestine, State of","Palestine, State of",275.0,True,275,"Palestine, State of"
+Peru,IVS,-0.5364804658709047,-1.0351332101916753,Latin America,,,Peru,Peru,604.0,False,604,Peru
+Philippines (the),IVS,-0.04765776720626138,-1.7236610465470241,Other,,,Philippines (the),Philippines (the),608.0,False,608,Philippines (the)
+Poland,IVS,0.17906726403982617,-0.3521612195110157,Catholic Europe,,,Poland,Poland,616.0,False,616,Poland
+Portugal,IVS,-0.08246107795035623,-0.2509780095759119,Catholic Europe,,,Portugal,Portugal,620.0,False,620,Portugal
+Puerto Rico,IVS,0.8778402301324625,-1.594403802517301,Latin America,,,Puerto Rico,Puerto Rico,630.0,False,630,Puerto Rico
+Qatar,IVS,-0.6728097041673362,-2.73054939757981,African-Islamic,,,Qatar,Qatar,634.0,True,634,Qatar
+Republic of North Macedonia,IVS,0.03661922454175359,0.2352505335232257,Other,,,Republic of North Macedonia,Republic of North Macedonia,807.0,False,807,Republic of North Macedonia
+Romania,IVS,-1.3157360399915938,-0.2723197693963407,Orthodox Europe,,,Romania,Romania,642.0,False,642,Romania
+Russian Federation (the),IVS,-0.7191721898677548,0.4629765409459224,Orthodox Europe,,,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Rwanda,IVS,-1.1874978154607918,-1.6161058825428818,African-Islamic,,,Rwanda,Rwanda,646.0,True,646,Rwanda
+Serbia,IVS,-0.26007210326518865,0.5986574946033797,Orthodox Europe,,,Serbia,Serbia,688.0,False,688,Serbia
+Singapore,IVS,0.35000020972335744,-0.049210479708225195,West & South Asia,,,Singapore,Singapore,702.0,False,702,Singapore
+Slovakia,IVS,0.4844995673266829,0.8737309073238463,Catholic Europe,,,Slovakia,Slovakia,703.0,False,703,Slovakia
+Slovenia,IVS,1.4871991464828802,1.102137356577354,Catholic Europe,,,Slovenia,Slovenia,705.0,False,705,Slovenia
+South Africa,IVS,-0.01417632017767289,-0.8475525149853884,African-Islamic,,,South Africa,South Africa,710.0,True,710,South Africa
+Spain,IVS,1.6660447573704011,0.7979620171345918,Catholic Europe,,,Spain,Spain,724.0,False,724,Spain
+Sweden,IVS,4.488916965309701,2.3478219645490466,Protestant Europe,,,Sweden,Sweden,752.0,False,752,Sweden
+Switzerland,IVS,3.215239678472672,1.2962936390266915,Protestant Europe,,,Switzerland,Switzerland,756.0,False,756,Switzerland
+Taiwan (Province of China),IVS,-0.15325795753495233,1.345112512767448,Confucian,,,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Tajikistan,IVS,-0.5495624992108268,-1.9250885374183568,West & South Asia,,,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Thailand,IVS,0.14300494131827213,-0.3746084996033846,West & South Asia,,,Thailand,Thailand,764.0,False,764,Thailand
+Trinidad and Tobago,IVS,-0.5662476026927277,-2.148347839505442,Latin America,,,Trinidad and Tobago,Trinidad and Tobago,780.0,False,780,Trinidad and Tobago
+Tunisia,IVS,-1.9244798793638966,-0.9506219929474804,African-Islamic,,,Tunisia,Tunisia,788.0,True,788,Tunisia
+Turkey,IVS,-1.1339108653674064,-1.1007156935076152,West & South Asia,,,Turkey,Turkey,792.0,False,792,Turkey
+Ukraine,IVS,-0.8657587125645108,0.509871543587399,Orthodox Europe,,,Ukraine,Ukraine,804.0,False,804,Ukraine
+United Kingdom of Great Britain and Northern Ireland (the),IVS,3.120808169859913,1.121087675978365,English-Speaking,,,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United States of America (the),IVS,2.0842016623970614,0.3230463500998523,English-Speaking,,,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+Uruguay,IVS,1.4391902528995135,-0.12496452433956903,Latin America,,,Uruguay,Uruguay,858.0,False,858,Uruguay
+Uzbekistan,IVS,-0.07400247490452663,-2.0207389371429834,West & South Asia,,,Uzbekistan,Uzbekistan,860.0,False,860,Uzbekistan
+Venezuela (Bolivarian Republic of),IVS,-0.2595325976569756,-1.173452526833604,Latin America,,,Venezuela (Bolivarian Republic of),Venezuela (Bolivarian Republic of),862.0,False,862,Venezuela (Bolivarian Republic of)
+Viet Nam,IVS,0.5014090749531911,-0.7071249455240773,West & South Asia,,,Viet Nam,Viet Nam,704.0,False,704,Viet Nam
+Yemen,IVS,-1.5876579678093632,-1.5095088646869226,African-Islamic,,,Yemen,Yemen,887.0,True,887,Yemen
+Zambia,IVS,-0.9859834549460473,-0.5160562288075348,African-Islamic,,,Zambia,Zambia,894.0,True,894,Zambia
+Zimbabwe,IVS,-1.7193090596370562,-1.3154814130050214,African-Islamic,,,Zimbabwe,Zimbabwe,716.0,True,716,Zimbabwe
+Algeria,Multilingual,-1.917399465590596,-2.1774359176352647,African-Islamic,anthropic/claude-3.7-sonnet,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-1.7960610757646465,-1.9711494371115452,African-Islamic,anthropic/claude-3.7-sonnet,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,0.036974837606546795,-2.275876030106217,African-Islamic,anthropic/claude-sonnet-4.5,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,0.055179921889004835,-0.7902668851755015,African-Islamic,anthropic/claude-sonnet-4.5,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-1.6786584935468398,-2.075045524924424,African-Islamic,deepseek/deepseek-chat-v3-0324,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-1.3469104016411726,-1.7017662217632308,African-Islamic,deepseek/deepseek-chat-v3-0324,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-1.7069897635108786,-2.01044309499779,African-Islamic,google/gemini-2.0-flash-001,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-2.3483450554316114,-0.9612099880528635,African-Islamic,google/gemini-2.0-flash-001,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,0.6827482440289908,-2.248406484382837,African-Islamic,google/gemini-2.5-flash,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,0.036974837606546795,-2.275876030106217,African-Islamic,google/gemini-2.5-flash,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-1.7069897635108786,-2.01044309499779,African-Islamic,meta-llama/llama-3.3-70b-instruct,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-1.7545646222337967,-2.4231575722415046,African-Islamic,meta-llama/llama-3.3-70b-instruct,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,0.675831064060573,-1.3388032049602607,African-Islamic,mistralai/mistral-nemo,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,1.023565447418751,-1.1413188602370083,African-Islamic,mistralai/mistral-nemo,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,0.9701191649048256,-1.50163127802379,African-Islamic,openai/gpt-4o-mini,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-0.4016559808852429,-1.5465975112886214,African-Islamic,openai/gpt-4o-mini,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-0.545624319800527,-2.1324696843704327,African-Islamic,qwen/qwq-32b,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,0.036974837606546795,-2.275876030106217,African-Islamic,qwen/qwq-32b,en,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,-1.7545646222337967,-2.4231575722415046,African-Islamic,x-ai/grok-code-fast-1,ar,Algeria,Algeria,12.0,True,12,Algeria
+Algeria,Multilingual,0.21801476524580404,-1.0359885397817417,African-Islamic,x-ai/grok-code-fast-1,en,Algeria,Algeria,12.0,True,12,Algeria
+Argentina,Multilingual,2.955047677334542,1.575406264919208,Latin America,anthropic/claude-3.7-sonnet,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,1.8884548667526628,1.213951073920879,Latin America,anthropic/claude-3.7-sonnet,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,1.453425509139476,1.8034432559550237,Latin America,anthropic/claude-sonnet-4.5,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,2.5200069969608854,1.597475149315573,Latin America,anthropic/claude-sonnet-4.5,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,2.8898895205431017,0.47339484021051226,Latin America,deepseek/deepseek-chat-v3-0324,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,2.8898895205431017,0.47339484021051226,Latin America,deepseek/deepseek-chat-v3-0324,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,1.7993835544988954,1.2532447318071245,Latin America,google/gemini-2.0-flash-001,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,0.27595484114276825,0.13545891469567564,Latin America,google/gemini-2.0-flash-001,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,3.5494628404504205,1.3053685715714494,Latin America,google/gemini-2.5-flash,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,3.65123461754842,1.151792537442549,Latin America,google/gemini-2.5-flash,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,2.532705840861459,1.6550183773355491,Latin America,meta-llama/llama-3.3-70b-instruct,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,2.8841228213000263,0.9180365111954503,Latin America,meta-llama/llama-3.3-70b-instruct,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,5.610259222570587,0.7938262459254337,Latin America,mistralai/mistral-nemo,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,0.8632455600040395,-1.5585724109192836,Latin America,mistralai/mistral-nemo,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,4.3474985815696225,1.6440285031031603,Latin America,openai/gpt-4o-mini,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,6.0363845456680325,-0.7449312233628835,Latin America,openai/gpt-4o-mini,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,4.288210729021353,2.995257746035816,Latin America,qwen/qwq-32b,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,4.255943651449173,2.7496776076258516,Latin America,qwen/qwq-32b,es,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,3.991470027080182,3.004736151707789,Latin America,x-ai/grok-code-fast-1,en,Argentina,Argentina,32.0,False,32,Argentina
+Argentina,Multilingual,3.5016106421175097,2.796783350011034,Latin America,x-ai/grok-code-fast-1,es,Argentina,Argentina,32.0,False,32,Argentina
+Australia,Multilingual,6.117175818324504,2.459395098868036,English-Speaking,anthropic/claude-3.7-sonnet,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,6.497609535613809,2.7373567652768163,English-Speaking,anthropic/claude-sonnet-4.5,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,6.548121408165519,1.243169169285635,English-Speaking,deepseek/deepseek-chat-v3-0324,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,5.171921397568573,2.304226388393427,English-Speaking,google/gemini-2.0-flash-001,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,4.148647238225169,2.7416105882474597,English-Speaking,google/gemini-2.5-flash,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,4.543222288712538,2.440199184372619,English-Speaking,meta-llama/llama-3.3-70b-instruct,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,8.011800292115133,0.033633815553264654,English-Speaking,mistralai/mistral-nemo,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,6.25156348240662,1.1283413092983585,English-Speaking,openai/gpt-4o-mini,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,7.475118090237792,2.7425079207862404,English-Speaking,qwen/qwq-32b,en-native,Australia,Australia,36.0,False,36,Australia
+Australia,Multilingual,7.044172500396775,3.958733850368642,English-Speaking,x-ai/grok-code-fast-1,en-native,Australia,Australia,36.0,False,36,Australia
+Belarus,Multilingual,-0.5438707437214316,0.7366880100135919,Orthodox Europe,anthropic/claude-3.7-sonnet,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.6245004227081811,0.4689711158383123,Orthodox Europe,anthropic/claude-3.7-sonnet,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.3942010839314435,0.8783720606106771,Orthodox Europe,anthropic/claude-sonnet-4.5,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,0.5059578495589812,0.42164877341647056,Orthodox Europe,anthropic/claude-sonnet-4.5,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-1.0860285377068157,0.19641588421492373,Orthodox Europe,deepseek/deepseek-chat-v3-0324,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,1.0888816532516246,-1.285242980475904,Orthodox Europe,deepseek/deepseek-chat-v3-0324,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.4832723961852118,0.9176657184969222,Orthodox Europe,google/gemini-2.0-flash-001,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-1.175099849960584,0.2357095421011687,Orthodox Europe,google/gemini-2.0-flash-001,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.7542804458011491,0.5696951873761176,Orthodox Europe,google/gemini-2.5-flash,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,1.2204482128155931,0.4405398680793851,Orthodox Europe,google/gemini-2.5-flash,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.685240464997911,0.4436623437979233,Orthodox Europe,meta-llama/llama-3.3-70b-instruct,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.9279172446498095,0.03108938275048439,Orthodox Europe,meta-llama/llama-3.3-70b-instruct,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.8530259933682577,0.20696919172949352,Orthodox Europe,mistralai/mistral-nemo,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,0.9279482707588412,0.9838438455971471,Orthodox Europe,mistralai/mistral-nemo,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,1.4697420008829378,0.49894122066520463,Orthodox Europe,openai/gpt-4o-mini,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,0.3570621825562257,0.5256501732854332,Orthodox Europe,openai/gpt-4o-mini,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.566500692810766,0.3571023174555,Orthodox Europe,qwen/qwq-32b,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-2.1079768298413524,0.08371284790163411,Orthodox Europe,qwen/qwq-32b,ru,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.49922622527408866,0.9854401646986305,Orthodox Europe,x-ai/grok-code-fast-1,en,Belarus,Belarus,112.0,False,112,Belarus
+Belarus,Multilingual,-0.06779832853950513,0.5357343194479375,Orthodox Europe,x-ai/grok-code-fast-1,ru,Belarus,Belarus,112.0,False,112,Belarus
+Canada,Multilingual,4.711149687186183,1.2377131939437085,English-Speaking,anthropic/claude-3.7-sonnet,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,6.497609535613809,2.7373567652768163,English-Speaking,anthropic/claude-sonnet-4.5,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,6.548121408165519,1.243169169285635,English-Speaking,deepseek/deepseek-chat-v3-0324,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,5.382331099648289,2.4712192110309013,English-Speaking,google/gemini-2.0-flash-001,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,5.488155306443056,2.540996683102327,English-Speaking,google/gemini-2.5-flash,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,6.254919812257781,1.929186110854228,English-Speaking,meta-llama/llama-3.3-70b-instruct,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,7.604780801440572,0.5041523559158725,English-Speaking,mistralai/mistral-nemo,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,5.067657305309034,2.2613822495722804,English-Speaking,openai/gpt-4o-mini,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,6.902479755151226,3.7831625766707027,English-Speaking,qwen/qwq-32b,en-native,Canada,Canada,124.0,False,124,Canada
+Canada,Multilingual,7.004251532249226,3.6295865425418024,English-Speaking,x-ai/grok-code-fast-1,en-native,Canada,Canada,124.0,False,124,Canada
+Chile,Multilingual,2.865976365080774,1.614699922805453,Latin America,anthropic/claude-3.7-sonnet,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,1.912715312648658,0.9182125898211367,Latin America,anthropic/claude-3.7-sonnet,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,2.09919891556192,1.830912801678403,Latin America,anthropic/claude-sonnet-4.5,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,2.070856322837412,1.3280919339672588,Latin America,anthropic/claude-sonnet-4.5,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,2.6511485484993456,0.3710044474996718,Latin America,deepseek/deepseek-chat-v3-0324,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,2.703405917629839,-0.4393053716467545,Latin America,deepseek/deepseek-chat-v3-0324,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,1.5845686816215943,0.40514694987649164,Latin America,google/gemini-2.0-flash-001,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,0.061139968265467526,-0.7126388672349567,Latin America,google/gemini-2.0-flash-001,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,3.100312166326947,1.035985356223135,Latin America,google/gemini-2.5-flash,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,3.230415213388985,0.8178068921676005,Latin America,google/gemini-2.5-flash,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,1.4112532857983457,-0.07908764300423982,Latin America,meta-llama/llama-3.3-70b-instruct,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,0.5089291139434491,0.6824909783914538,Latin America,meta-llama/llama-3.3-70b-instruct,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,5.826389939534302,-1.2704974655875998,Latin America,mistralai/mistral-nemo,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,1.4576546235849412,1.4209655861633317,Latin America,mistralai/mistral-nemo,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,3.706143289648889,2.6932616100480877,Latin America,openai/gpt-4o-mini,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,4.731139978744495,0.1818232363873169,Latin America,openai/gpt-4o-mini,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,3.0581612888687397,2.0832120121779933,Latin America,qwen/qwq-32b,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,1.1300183956395355,2.421451480423587,Latin America,qwen/qwq-32b,es,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,1.6951621230752303,2.181204131971687,Latin America,x-ai/grok-code-fast-1,en,Chile,Chile,152.0,False,152,Chile
+Chile,Multilingual,1.9410465826126964,0.8536101598945025,Latin America,x-ai/grok-code-fast-1,es,Chile,Chile,152.0,False,152,Chile
+China,Multilingual,0.08138902435691481,-0.08910171428668505,Confucian,anthropic/claude-3.7-sonnet,en,China,China,156.0,False,156,China
+China,Multilingual,0.27942128556147094,0.07471909207571509,Confucian,anthropic/claude-3.7-sonnet,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,0.5181622576052269,0.17710948478655522,Confucian,anthropic/claude-sonnet-4.5,en,China,China,156.0,False,156,China
+China,Multilingual,0.5181622576052269,0.17710948478655522,Confucian,anthropic/claude-sonnet-4.5,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,0.5181622576052269,0.17710948478655522,Confucian,deepseek/deepseek-chat-v3-0324,en,China,China,156.0,False,156,China
+China,Multilingual,-0.12761114881721702,0.14963993906317546,Confucian,deepseek/deepseek-chat-v3-0324,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,-0.787171525020408,-0.2867360989226134,Confucian,google/gemini-2.0-flash-001,en,China,China,156.0,False,156,China
+China,Multilingual,-0.9936454194919827,-0.14354635322348913,Confucian,google/gemini-2.0-flash-001,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,-0.08690243797801722,0.08820952541161549,Confucian,google/gemini-2.5-flash,en,China,China,156.0,False,156,China
+China,Multilingual,1.8997389427913065,0.2353495513506274,Confucian,google/gemini-2.5-flash,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,0.1987916065747213,-0.19299780209956438,Confucian,meta-llama/llama-3.3-70b-instruct,en,China,China,156.0,False,156,China
+China,Multilingual,0.8300207128138739,0.3079806658128587,Confucian,meta-llama/llama-3.3-70b-instruct,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,2.9887972915493553,0.8291110474596798,Confucian,mistralai/mistral-nemo,en,China,China,156.0,False,156,China
+China,Multilingual,2.5224046423856263,-2.4773369606817357,Confucian,mistralai/mistral-nemo,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,1.6472606237433962,-0.19049724299605206,Confucian,openai/gpt-4o-mini,en,China,China,156.0,False,156,China
+China,Multilingual,2.5441524430847573,-0.057465288286758114,Confucian,openai/gpt-4o-mini,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,0.9163517126753272,0.13150943750341196,Confucian,qwen/qwq-32b,en,China,China,156.0,False,156,China
+China,Multilingual,1.2724952669368899,0.13000374240137277,Confucian,qwen/qwq-32b,zh-cn,China,China,156.0,False,156,China
+China,Multilingual,1.2223671522557606,0.8622376774573829,Confucian,x-ai/grok-code-fast-1,en,China,China,156.0,False,156,China
+China,Multilingual,0.3661840437535991,0.6677753090965289,Confucian,x-ai/grok-code-fast-1,zh-cn,China,China,156.0,False,156,China
+Colombia,Multilingual,2.511618018095066,-0.9252934845796146,Latin America,anthropic/claude-3.7-sonnet,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,2.7503589901388215,-0.8229030918687742,Latin America,anthropic/claude-3.7-sonnet,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,1.580632874013451,0.09496438153989287,Latin America,anthropic/claude-sonnet-4.5,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,1.9734440321779183,0.3760980642237469,Latin America,anthropic/claude-sonnet-4.5,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,2.3433265557601337,-0.747982244881314,Latin America,deepseek/deepseek-chat-v3-0324,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,1.8941758816366607,-1.0173654602296287,Latin America,deepseek/deepseek-chat-v3-0324,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,1.3418919019696953,-0.0074260111709473385,Latin America,google/gemini-2.0-flash-001,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,-0.27060812364019937,-1.0859181703961505,Latin America,google/gemini-2.0-flash-001,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,2.647225684595331,0.45641957253822163,Latin America,google/gemini-2.5-flash,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,1.4719949490317332,-0.22560447522648144,Latin America,google/gemini-2.5-flash,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,0.4951292004585743,-0.12201320724610369,Latin America,meta-llama/llama-3.3-70b-instruct,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,0.29851941186373154,0.5154981557539794,Latin America,meta-llama/llama-3.3-70b-instruct,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,2.0388046591609243,-0.4333251883925886,Latin America,mistralai/mistral-nemo,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,2.030117894866465,0.8143165020082573,Latin America,mistralai/mistral-nemo,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,3.832838630497549,-0.356943194309312,Latin America,openai/gpt-4o-mini,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,5.915046155842083,-0.9512177038866049,Latin America,openai/gpt-4o-mini,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,1.7120974495209813,-1.2489607127937374,Latin America,qwen/qwq-32b,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,0.9089624043526094,0.2776643851619221,Latin America,qwen/qwq-32b,es,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,-0.09429174630073528,0.23436447307012548,Latin America,x-ai/grok-code-fast-1,en,Colombia,Colombia,170.0,False,170,Colombia
+Colombia,Multilingual,-0.37374142918369113,0.19340449401084536,Latin America,x-ai/grok-code-fast-1,es,Colombia,Colombia,170.0,False,170,Colombia
+Ecuador,Multilingual,2.179869926189399,-1.298572787740808,Latin America,anthropic/claude-3.7-sonnet,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.3236868176872374,-1.4930351561016626,Latin America,anthropic/claude-3.7-sonnet,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.580632874013451,0.09496438153989287,Latin America,anthropic/claude-sonnet-4.5,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.3702231719337337,-0.07202844109758147,Latin America,anthropic/claude-sonnet-4.5,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.870249782470205,-0.2716580710098363,Latin America,deepseek/deepseek-chat-v3-0324,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.8941758816366607,-1.0173654602296287,Latin America,deepseek/deepseek-chat-v3-0324,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.1031509299259392,-0.10981640388178736,Latin America,google/gemini-2.0-flash-001,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,-0.99076684737961,-1.7032719168652695,Latin America,google/gemini-2.0-flash-001,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.9694602241096817,-1.465565610378283,Latin America,google/gemini-2.5-flash,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.3236868176872374,-1.4930351561016626,Latin America,google/gemini-2.5-flash,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.4112532857983457,-0.07908764300423982,Latin America,meta-llama/llama-3.3-70b-instruct,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.890830445415098,-0.8227543632010644,Latin America,meta-llama/llama-3.3-70b-instruct,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,2.575646833764328,-0.033764261307292855,Latin America,mistralai/mistral-nemo,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,0.47225617041632667,-0.1608259666741606,Latin America,mistralai/mistral-nemo,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,3.5940976584537925,-0.4593335870201521,Latin America,openai/gpt-4o-mini,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,4.895406417769187,-1.6962706151069529,Latin America,openai/gpt-4o-mini,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,3.1941856736314906,1.6603206340697283,Latin America,qwen/qwq-32b,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,3.2841561117091866,0.5132099179659185,Latin America,qwen/qwq-32b,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,1.4109318827729336,-0.1334588547491415,Latin America,x-ai/grok-code-fast-1,en,Ecuador,Ecuador,218.0,False,218,Ecuador
+Ecuador,Multilingual,-0.870466962030083,-0.48869319858118365,Latin America,x-ai/grok-code-fast-1,es,Ecuador,Ecuador,218.0,False,218,Ecuador
+Egypt,Multilingual,-1.7069897635108786,-2.01044309499779,African-Islamic,anthropic/claude-3.7-sonnet,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.917399465590596,-2.1774359176352647,African-Islamic,anthropic/claude-3.7-sonnet,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,0.036974837606546795,-2.275876030106217,African-Islamic,anthropic/claude-sonnet-4.5,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.4682487914671216,-1.9080527022869496,African-Islamic,anthropic/claude-sonnet-4.5,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.6786584935468398,-2.075045524924424,African-Islamic,deepseek/deepseek-chat-v3-0324,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,0.6074639015559695,-1.8002063342341832,African-Islamic,deepseek/deepseek-chat-v3-0324,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.917399465590596,-2.1774359176352647,African-Islamic,google/gemini-2.0-flash-001,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.917399465590596,-2.1774359176352647,African-Islamic,google/gemini-2.0-flash-001,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-0.1734348644731709,-2.4428688527436915,African-Islamic,google/gemini-2.5-flash,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-0.1734348644731709,-2.4428688527436915,African-Islamic,google/gemini-2.5-flash,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.7069897635108786,-2.01044309499779,African-Islamic,meta-llama/llama-3.3-70b-instruct,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.7545646222337967,-2.4231575722415046,African-Islamic,meta-llama/llama-3.3-70b-instruct,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,0.7880407327891463,-1.7332265305878987,African-Islamic,mistralai/mistral-nemo,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-0.047011171231364335,-3.344437725837366,African-Islamic,mistralai/mistral-nemo,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,0.9701191649048256,-1.50163127802379,African-Islamic,openai/gpt-4o-mini,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-0.6120656829649601,-1.7135903339260958,African-Islamic,openai/gpt-4o-mini,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-0.545624319800527,-2.1324696843704327,African-Islamic,qwen/qwq-32b,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-0.545624319800527,-2.1324696843704327,African-Islamic,qwen/qwq-32b,en,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.5158236501900406,-2.320767179530664,African-Islamic,x-ai/grok-code-fast-1,ar,Egypt,Egypt,818.0,True,818,Egypt
+Egypt,Multilingual,-1.544154920154079,-2.2561647496040305,African-Islamic,x-ai/grok-code-fast-1,en,Egypt,Egypt,818.0,True,818,Egypt
+Guatemala,Multilingual,0.41525928375870985,-0.48159001194094214,Latin America,anthropic/claude-3.7-sonnet,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,1.084945845643481,-1.5954255488125029,Latin America,anthropic/claude-3.7-sonnet,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,0.8927412278462218,-0.27680922651926176,Latin America,anthropic/claude-sonnet-4.5,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,0.8927412278462218,-0.27680922651926176,Latin America,anthropic/claude-sonnet-4.5,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,1.4450252075131873,-1.2867486755779431,Latin America,deepseek/deepseek-chat-v3-0324,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,1.2528205897159275,0.03186764671529788,Latin America,deepseek/deepseek-chat-v3-0324,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-1.3003740473946763,-0.28075950675914946,Latin America,google/gemini-2.0-flash-001,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-1.4399175215030837,-1.9726551322135844,Latin America,google/gemini-2.0-flash-001,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-0.0055601204007251215,-0.8155756572158908,Latin America,google/gemini-2.5-flash,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,0.6968582377788077,-1.9569543846381576,Latin America,google/gemini-2.5-flash,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-0.9925520546554648,0.8382271856218367,Latin America,meta-llama/llama-3.3-70b-instruct,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-1.03977874058991,-0.1982987719803532,Latin America,meta-llama/llama-3.3-70b-instruct,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,2.955716487192346,-0.7809773456291236,Latin America,mistralai/mistral-nemo,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,1.1925565889092473,0.3008588433520175,Latin America,mistralai/mistral-nemo,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,2.7140013944893036,0.4875091272139341,Latin America,openai/gpt-4o-mini,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,4.53532705589948,-2.004947488341512,Latin America,openai/gpt-4o-mini,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-1.8864482321048288,0.9805657142183659,Latin America,qwen/qwq-32b,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-1.599855061728162,-0.40845867151037885,Latin America,qwen/qwq-32b,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-1.7088160106789507,-0.6115731357590243,Latin America,x-ai/grok-code-fast-1,en,Guatemala,Guatemala,320.0,False,320,Guatemala
+Guatemala,Multilingual,-2.1571789421107734,-1.2715340725857383,Latin America,x-ai/grok-code-fast-1,es,Guatemala,Guatemala,320.0,False,320,Guatemala
+Hong Kong,Multilingual,1.2712120605638968,1.6508945175544054,Confucian,anthropic/claude-3.7-sonnet,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,1.2708777138343565,1.2009256124343552,Confucian,anthropic/claude-3.7-sonnet,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,1.2412305997839044,4.1779495358046566,Confucian,anthropic/claude-3.7-sonnet,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,1.7283693663635566,2.4615963554124276,Confucian,anthropic/claude-sonnet-4.5,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,3.650476591988517,2.1175761045315107,Confucian,anthropic/claude-sonnet-4.5,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,2.462879738310229,1.9998033381295122,Confucian,anthropic/claude-sonnet-4.5,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.298095733033369,1.9312506279629897,Confucian,deepseek/deepseek-chat-v3-0324,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,2.486805837476684,1.2540959489097194,Confucian,deepseek/deepseek-chat-v3-0324,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,2.244493121686073,1.866697738592892,Confucian,deepseek/deepseek-chat-v3-0324,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.11554793772824984,1.328732984442322,Confucian,google/gemini-2.0-flash-001,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,-1.0723832626795784,0.7609913129202738,Confucian,google/gemini-2.0-flash-001,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,-0.005790452097699905,1.1224465039186025,Confucian,google/gemini-2.0-flash-001,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,-0.3476647296849472,2.2993787756147586,Confucian,google/gemini-2.5-flash,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,2.2285439370640563,2.57851790471183,Confucian,google/gemini-2.5-flash,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,2.3171048462361665,1.0256727126206853,Confucian,google/gemini-2.5-flash,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.9092935078219916,2.345489910183464,Confucian,meta-llama/llama-3.3-70b-instruct,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.933219606988447,1.5997825209636714,Confucian,meta-llama/llama-3.3-70b-instruct,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,1.8625545602541074,3.0419772431677803,Confucian,meta-llama/llama-3.3-70b-instruct,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.8220613864404236,1.3815113022060908,Confucian,mistralai/mistral-nemo,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,1.5674407542106028,-2.8868985315250963,Confucian,mistralai/mistral-nemo,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,4.681319672614461,-0.494018895576363,Confucian,mistralai/mistral-nemo,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.9394639686582298,1.2776152143932118,Confucian,openai/gpt-4o-mini,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,2.3276576622597553,0.9816836724956645,Confucian,openai/gpt-4o-mini,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,3.3783310053513658,2.630164875223493,Confucian,openai/gpt-4o-mini,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.12792537860341135,1.3319050007173963,Confucian,qwen/qwq-32b,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.7751083139314406,1.765109022428111,Confucian,qwen/qwq-32b,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,1.0058723714307582,1.9013866382398052,Confucian,qwen/qwq-32b,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,0.5952811370093425,3.086897360996427,Confucian,x-ai/grok-code-fast-1,en,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,3.05817098931271,4.096666325454634,Confucian,x-ai/grok-code-fast-1,zh-cn,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Hong Kong,Multilingual,2.6980916274430045,3.7879894522200743,Confucian,x-ai/grok-code-fast-1,zh-hk,Hong Kong,Hong Kong,344.0,False,344,Hong Kong
+Iraq,Multilingual,-3.101305642688183,-1.0443949773613428,African-Islamic,anthropic/claude-3.7-sonnet,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-3.5322512325291986,0.17183095222105843,African-Islamic,anthropic/claude-3.7-sonnet,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-0.393970752234469,-1.0596501005238161,African-Islamic,anthropic/claude-sonnet-4.5,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-3.5322512325291986,0.17183095222105843,African-Islamic,anthropic/claude-sonnet-4.5,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-1.6786584935468398,-2.075045524924424,African-Islamic,deepseek/deepseek-chat-v3-0324,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-1.3469104016411726,-1.7017662217632308,African-Islamic,deepseek/deepseek-chat-v3-0324,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-1.917399465590596,-2.1774359176352647,African-Islamic,google/gemini-2.0-flash-001,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-2.3483450554316114,-0.9612099880528635,African-Islamic,google/gemini-2.0-flash-001,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-1.2716260591681512,-2.149966371911885,African-Islamic,google/gemini-2.5-flash,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-3.7426609346089164,0.00483812958358355,African-Islamic,google/gemini-2.5-flash,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-1.7069897635108786,-2.01044309499779,African-Islamic,meta-llama/llama-3.3-70b-instruct,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-2.185510212074812,-1.2069316426591037,African-Islamic,meta-llama/llama-3.3-70b-instruct,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,0.49704239161489705,-1.0253071041523123,African-Islamic,mistralai/mistral-nemo,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-2.0347128321063037,-0.6829397863630144,African-Islamic,mistralai/mistral-nemo,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,0.9701191649048256,-1.50163127802379,African-Islamic,openai/gpt-4o-mini,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-1.043011272805976,-0.49736440434369505,African-Islamic,openai/gpt-4o-mini,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-3.5322512325291986,0.17183095222105843,African-Islamic,qwen/qwq-32b,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-4.819379930872376,1.193594513442605,African-Islamic,qwen/qwq-32b,en,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-3.5798260912521167,-0.2408835250226568,African-Islamic,x-ai/grok-code-fast-1,ar,Iraq,Iraq,368.0,True,368,Iraq
+Iraq,Multilingual,-3.369416389172399,-0.07389070238518228,African-Islamic,x-ai/grok-code-fast-1,en,Iraq,Iraq,368.0,True,368,Iraq
+Japan,Multilingual,0.297626369843929,1.5603282370064304,Confucian,anthropic/claude-3.7-sonnet,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,1.1985592961215856,1.3492904002782717,Confucian,anthropic/claude-3.7-sonnet,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,0.297626369843929,1.5603282370064304,Confucian,anthropic/claude-sonnet-4.5,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,2.038019227214498,2.0098874842920162,Confucian,anthropic/claude-sonnet-4.5,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,0.7569032296489828,0.2794998774973954,Confucian,deepseek/deepseek-chat-v3-0324,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,1.249071168673296,-0.14489719571290885,Confucian,deepseek/deepseek-chat-v3-0324,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,0.32595763980796727,1.4957258070797963,Confucian,google/gemini-2.0-flash-001,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,1.1962027415998522,0.4501591689198995,Confucian,google/gemini-2.0-flash-001,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,0.2046192499820177,1.2894393265560768,Confucian,google/gemini-2.5-flash,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,2.8959875429925144,-0.3371492498342361,Confucian,google/gemini-2.5-flash,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,2.217749687692819,0.2851724528759818,Confucian,meta-llama/llama-3.3-70b-instruct,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,-0.422209329926412,0.8255200980195823,Confucian,meta-llama/llama-3.3-70b-instruct,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,3.9707353998342434,-0.7779332675132409,Confucian,mistralai/mistral-nemo,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,1.6676149791629964,-0.22121244982183202,Confucian,mistralai/mistral-nemo,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,2.335152269910626,0.18127636506310268,Confucian,openai/gpt-4o-mini,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,2.9690129541804886,-0.06754943444926144,Confucian,openai/gpt-4o-mini,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,2.118552189757471,1.8746776856195773,Confucian,qwen/qwq-32b,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,1.9369384763643716,1.3699591040947976,Confucian,qwen/qwq-32b,ja,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,1.345597377880864,2.2407787183001453,Confucian,x-ai/grok-code-fast-1,en,Japan,Japan,392.0,False,392,Japan
+Japan,Multilingual,1.2951252160262245,0.509589434959465,Confucian,x-ai/grok-code-fast-1,ja,Japan,Japan,392.0,False,392,Japan
+Jordan,Multilingual,-1.5856513736849287,-1.804156614474071,African-Islamic,anthropic/claude-3.7-sonnet,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.7960610757646465,-1.9711494371115452,African-Islamic,anthropic/claude-3.7-sonnet,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,0.036974837606546795,-2.275876030106217,African-Islamic,anthropic/claude-sonnet-4.5,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.6786584935468398,-2.075045524924424,African-Islamic,anthropic/claude-sonnet-4.5,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.6786584935468398,-2.075045524924424,African-Islamic,deepseek/deepseek-chat-v3-0324,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.3469104016411726,-1.7017662217632308,African-Islamic,deepseek/deepseek-chat-v3-0324,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.917399465590596,-2.1774359176352647,African-Islamic,google/gemini-2.0-flash-001,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.6786584935468398,-2.075045524924424,African-Islamic,google/gemini-2.0-flash-001,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-0.1734348644731709,-2.4428688527436915,African-Islamic,google/gemini-2.5-flash,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-0.1734348644731709,-2.4428688527436915,African-Islamic,google/gemini-2.5-flash,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.7069897635108786,-2.01044309499779,African-Islamic,meta-llama/llama-3.3-70b-instruct,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.7545646222337967,-2.4231575722415046,African-Islamic,meta-llama/llama-3.3-70b-instruct,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,1.284055263719504,-3.238041078920975,African-Islamic,mistralai/mistral-nemo,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,0.08820340407743027,-1.3386447095918672,African-Islamic,mistralai/mistral-nemo,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,0.9701191649048256,-1.50163127802379,African-Islamic,openai/gpt-4o-mini,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,0.9701191649048256,-1.50163127802379,African-Islamic,openai/gpt-4o-mini,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-0.7560340218802447,-2.2994625070079073,African-Islamic,qwen/qwq-32b,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-2.3483450554316114,-0.9612099880528635,African-Islamic,qwen/qwq-32b,en,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.917399465590596,-2.1774359176352647,African-Islamic,x-ai/grok-code-fast-1,ar,Jordan,Jordan,400.0,True,400,Jordan
+Jordan,Multilingual,-1.7545646222337967,-2.4231575722415046,African-Islamic,x-ai/grok-code-fast-1,en,Jordan,Jordan,400.0,True,400,Jordan
+Kazakhstan,Multilingual,-0.7764213376917498,-1.226096525891197,African-Islamic,anthropic/claude-3.7-sonnet,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-0.9562485146138481,0.09569181267711867,African-Islamic,anthropic/claude-3.7-sonnet,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-0.3981368915395864,0.5681894922740781,African-Islamic,anthropic/claude-sonnet-4.5,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,1.4715868027804366,-0.8937420177243467,African-Islamic,anthropic/claude-sonnet-4.5,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-0.4446732457860826,-0.8528172227300028,African-Islamic,deepseek/deepseek-chat-v3-0324,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,1.1779529655053926,-1.3245366383621495,African-Islamic,deepseek/deepseek-chat-v3-0324,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-1.0860285377068157,0.19641588421492373,African-Islamic,google/gemini-2.0-flash-001,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-0.8654926499455177,-1.1868028680049516,African-Islamic,google/gemini-2.0-flash-001,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,0.9392119934616366,-1.4269270310729893,African-Islamic,google/gemini-2.5-flash,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,1.5300554128306594,-0.9819725420267352,African-Islamic,google/gemini-2.5-flash,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-0.496971654808794,-1.1851365468319166,African-Islamic,meta-llama/llama-3.3-70b-instruct,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-0.9279172446498095,0.03108938275048439,African-Islamic,meta-llama/llama-3.3-70b-instruct,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,1.7088828144233301,-2.205474450792549,African-Islamic,mistralai/mistral-nemo,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,0.09246223565464329,-1.1459165337729973,African-Islamic,mistralai/mistral-nemo,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,1.3301985267745309,-1.1929544047892302,African-Islamic,openai/gpt-4o-mini,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,1.921041946143554,-0.7479999157429765,African-Islamic,openai/gpt-4o-mini,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,0.19225718132777359,-0.796026877302306,African-Islamic,qwen/qwq-32b,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,0.6174946999889193,0.614661420640949,African-Islamic,qwen/qwq-32b,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-0.8349101247878984,0.301978293200838,African-Islamic,x-ai/grok-code-fast-1,en,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Kazakhstan,Multilingual,-1.0453198268676163,0.13498547056336374,African-Islamic,x-ai/grok-code-fast-1,ru,Kazakhstan,Kazakhstan,398.0,True,398,Kazakhstan
+Korea (the Republic of),Multilingual,-0.6329420559751996,0.7759816678998368,Confucian,anthropic/claude-3.7-sonnet,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,0.5793846067885244,0.9689383411586519,Confucian,anthropic/claude-3.7-sonnet,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,2.1306622832151216,1.2556016440117586,Confucian,anthropic/claude-sonnet-4.5,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,1.7749880921429995,1.6280297300703577,Confucian,anthropic/claude-sonnet-4.5,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,2.22985978115047,-0.33390358873183595,Confucian,deepseek/deepseek-chat-v3-0324,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,0.7999204945498226,-0.4142804110612234,Confucian,deepseek/deepseek-chat-v3-0324,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,1.4711019070119304,0.8192256060259698,Confucian,google/gemini-2.0-flash-001,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,2.430418321057584,-0.2656346900201719,Confucian,google/gemini-2.0-flash-001,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,2.5337589099856666,0.8704982286876995,Confucian,google/gemini-2.5-flash,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,1.1316685864554896,-0.04100110790002945,Confucian,google/gemini-2.5-flash,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,-0.011618095504996262,-0.35999062473703886,Confucian,meta-llama/llama-3.3-70b-instruct,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,1.676153328873792,-0.12529630903563774,Confucian,meta-llama/llama-3.3-70b-instruct,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,1.1723772972946895,-0.10243152155158952,Confucian,mistralai/mistral-nemo,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,1.3487266350260585,0.17520034762375597,Confucian,mistralai/mistral-nemo,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,1.1277327788473468,-0.3511836762366282,Confucian,openai/gpt-4o-mini,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,2.6903966983482603,1.287587728178628,Confucian,openai/gpt-4o-mini,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,0.7285719596849445,0.34410230742402964,Confucian,qwen/qwq-32b,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,1.1356043940636327,0.26918146043656943,Confucian,qwen/qwq-32b,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,-0.7743117772516789,0.4829560016841684,Confucian,x-ai/grok-code-fast-1,en,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Korea (the Republic of),Multilingual,0.7147849899041977,-0.06480418483837933,Confucian,x-ai/grok-code-fast-1,ko,Korea (the Republic of),Korea (the Republic of),410.0,False,410,Korea (the Republic of)
+Kyrgyzstan,Multilingual,-1.4461078995765209,-0.11226098901963576,West & South Asia,anthropic/claude-3.7-sonnet,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,0.7593848165395384,-0.1051386925046739,West & South Asia,anthropic/claude-3.7-sonnet,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-1.2073669275327652,-0.0098705963087958,West & South Asia,anthropic/claude-sonnet-4.5,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,0.9799207043008364,-1.4883574447245493,West & South Asia,anthropic/claude-sonnet-4.5,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,1.5097010574110596,-0.9512573352009552,West & South Asia,deepseek/deepseek-chat-v3-0324,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,1.1779529655053926,-1.3245366383621495,West & South Asia,deepseek/deepseek-chat-v3-0324,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-1.296438239786533,0.02942306157744936,West & South Asia,google/gemini-2.0-flash-001,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,1.0888816532516246,-1.285242980475904,West & South Asia,google/gemini-2.0-flash-001,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,0.05911572949714755,-0.48008431683890274,West & South Asia,google/gemini-2.5-flash,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,1.4760244509332927,-1.6025719495982544,West & South Asia,google/gemini-2.5-flash,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-1.4053991887373214,-0.17369140267119587,West & South Asia,meta-llama/llama-3.3-70b-instruct,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-1.644140160781078,-0.2760817953820362,West & South Asia,meta-llama/llama-3.3-70b-instruct,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,3.3837800283509916,-0.867445436727137,West & South Asia,mistralai/mistral-nemo,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-1.3000099835333887,0.7444152439714616,West & South Asia,mistralai/mistral-nemo,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,1.6619466186801977,-0.8196751016280365,West & South Asia,openai/gpt-4o-mini,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,1.921041946143554,-0.7479999157429765,West & South Asia,openai/gpt-4o-mini,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-0.0008465622934138439,1.6304065032084998,West & South Asia,qwen/qwq-32b,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-0.0008465622934138439,1.6304065032084998,West & South Asia,qwen/qwq-32b,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-1.3123920688754107,0.09719750777915771,West & South Asia,x-ai/grok-code-fast-1,en,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Kyrgyzstan,Multilingual,-1.8545498628607953,-0.4430746180195106,West & South Asia,x-ai/grok-code-fast-1,ru,Kyrgyzstan,Kyrgyzstan,417.0,False,417,Kyrgyzstan
+Lebanon,Multilingual,-2.961762168579776,0.647500648093092,African-Islamic,anthropic/claude-3.7-sonnet,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-1.7778559914821885,-0.4855402921808298,African-Islamic,anthropic/claude-3.7-sonnet,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-0.9099755747231392,1.5010544053656518,African-Islamic,anthropic/claude-sonnet-4.5,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,0.8644099578821833,-0.21220679659262753,African-Islamic,anthropic/claude-sonnet-4.5,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-1.108169429597417,-1.5993758290523907,African-Islamic,deepseek/deepseek-chat-v3-0324,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,0.7470073756643769,-0.10831070877974822,African-Islamic,deepseek/deepseek-chat-v3-0324,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-1.5869672177713428,1.108264878969595,African-Islamic,google/gemini-2.0-flash-001,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-1.5391150194384324,-0.3831498994699897,African-Islamic,google/gemini-2.0-flash-001,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-0.16940984116292923,-0.7420862409477217,African-Islamic,google/gemini-2.5-flash,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,0.1526051562526267,0.5573246779431583,African-Islamic,google/gemini-2.5-flash,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-0.5376803656479937,-1.1237061331803566,African-Islamic,meta-llama/llama-3.3-70b-instruct,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-0.8297172112986654,0.5925055310155967,African-Islamic,meta-llama/llama-3.3-70b-instruct,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,0.847277551879874,-0.4265021918264723,African-Islamic,mistralai/mistral-nemo,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,3.9551269022144635,-1.2889790289434366,African-Islamic,mistralai/mistral-nemo,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,1.9006875907239538,-0.7172847089171966,African-Islamic,openai/gpt-4o-mini,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,0.840818205445268,0.9834694977472147,African-Islamic,openai/gpt-4o-mini,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-0.049387295423393984,2.376621733019664,African-Islamic,qwen/qwq-32b,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-1.534548254971127,3.23456448787881,African-Islamic,qwen/qwq-32b,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-2.77087339486893,2.2413058192435176,African-Islamic,x-ai/grok-code-fast-1,ar,Lebanon,Lebanon,422.0,True,422,Lebanon
+Lebanon,Multilingual,-1.3869881556212107,1.6671960109005306,African-Islamic,x-ai/grok-code-fast-1,en,Lebanon,Lebanon,422.0,True,422,Lebanon
+Macao,Multilingual,-0.1554601118876877,0.9807624533215171,Confucian,anthropic/claude-3.7-sonnet,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.29369056223578577,1.2501456686698316,Confucian,anthropic/claude-3.7-sonnet,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.2897547546276429,0.939963100333233,Confucian,anthropic/claude-3.7-sonnet,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.3220218321998246,1.1855432387431977,Confucian,anthropic/claude-sonnet-4.5,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,3.1042350302309623,0.9505702311845855,Confucian,anthropic/claude-sonnet-4.5,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,2.205511448985065,0.8997978788218284,Confucian,anthropic/claude-sonnet-4.5,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.3220218321998246,1.1855432387431977,Confucian,deepseek/deepseek-chat-v3-0324,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,2.468600753194226,-0.23151319602099585,Confucian,deepseek/deepseek-chat-v3-0324,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,1.9163167735272615,0.7784262530376856,Confucian,deepseek/deepseek-chat-v3-0324,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,-0.24453142414145557,1.0200561112077622,Confucian,google/gemini-2.0-flash-001,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.3360838254895479,-0.05448576777755324,Confucian,google/gemini-2.0-flash-001,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.4251551377433158,-0.09377942566379847,Confucian,google/gemini-2.0-flash-001,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,1.7059070714475437,0.6114334304002113,Confucian,google/gemini-2.5-flash,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,1.7298202269098715,-0.5298716521947294,Confucian,google/gemini-2.5-flash,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,1.851158616735821,-0.32358517167100986,Confucian,google/gemini-2.5-flash,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.2231870689306168,-0.5677828003627974,Confucian,meta-llama/llama-3.3-70b-instruct,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.2697234231771129,0.8532239146412839,Confucian,meta-llama/llama-3.3-70b-instruct,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,2.0623179731266164,1.232175793181064,Confucian,meta-llama/llama-3.3-70b-instruct,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,4.259948533732638,1.055646408538279,Confucian,mistralai/mistral-nemo,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,2.943224046545061,-2.1433513154067865,Confucian,mistralai/mistral-nemo,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,4.705245771780916,-1.2397262847961557,Confucian,mistralai/mistral-nemo,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,2.499507924637415,-0.30621744297179676,Confucian,openai/gpt-4o-mini,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,2.2063192724338054,0.7753971919719448,Confucian,openai/gpt-4o-mini,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,3.1835064240323767,0.7261771357364685,Confucian,openai/gpt-4o-mini,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,1.3194483394458723,-0.2535939778206473,Confucian,qwen/qwq-32b,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,1.2724952669368899,0.13000374240137277,Confucian,qwen/qwq-32b,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,1.0802906491396302,1.4486200646946141,Confucian,qwen/qwq-32b,zh-hk,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,0.4251551377433158,-0.09377942566379847,Confucian,x-ai/grok-code-fast-1,en,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,-0.41865052988368434,-0.28506977774957837,Confucian,x-ai/grok-code-fast-1,zh-cn,Macao,Macao,446.0,False,446,Macao
+Macao,Multilingual,-0.9975812271001255,-0.45372892156008776,Confucian,x-ai/grok-code-fast-1,zh-hk,Macao,Macao,446.0,False,446,Macao
+Mexico,Multilingual,2.960768692218539,-0.6559102692312999,Latin America,anthropic/claude-3.7-sonnet,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,2.7503589901388215,-0.8229030918687742,Latin America,anthropic/claude-3.7-sonnet,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,0.8138554244945976,0.3111772604128435,Latin America,anthropic/claude-sonnet-4.5,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,1.9734440321779183,0.3760980642237469,Latin America,anthropic/claude-sonnet-4.5,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,2.3433265557601337,-0.747982244881314,Latin America,deepseek/deepseek-chat-v3-0324,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,2.3433265557601337,-0.747982244881314,Latin America,deepseek/deepseek-chat-v3-0324,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,1.4632302917956448,0.19886046935277227,Latin America,google/gemini-2.0-flash-001,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,-0.5132849032920986,-1.4984911314435896,Latin America,google/gemini-2.0-flash-001,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,1.8011687617747492,-1.2882543706799825,Latin America,google/gemini-2.5-flash,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,2.6573518702769108,-1.0937920023191279,Latin America,google/gemini-2.5-flash,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,2.3477317265577176,-0.06687728558815591,Latin America,meta-llama/llama-3.3-70b-instruct,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,0.05509077782250216,0.3222996753249336,Latin America,meta-llama/llama-3.3-70b-instruct,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,0.059778439819975326,0.4131077630431392,Latin America,mistralai/mistral-nemo,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,2.4690160607757643,0.7072860410735538,Latin America,mistralai/mistral-nemo,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,3.7849864321646374,1.1344715841302724,Latin America,openai/gpt-4o-mini,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,5.251549972030749,-1.6977763102089922,Latin America,openai/gpt-4o-mini,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,-0.060198421560481885,-0.9189253477586762,Latin America,qwen/qwq-32b,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,1.2637245258966758,0.6174556639457397,Latin America,qwen/qwq-32b,es,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,-0.33303271834449133,0.13197408035928535,Latin America,x-ai/grok-code-fast-1,en,Mexico,Mexico,484.0,False,484,Mexico
+Mexico,Multilingual,-0.37374142918369113,0.19340449401084536,Latin America,x-ai/grok-code-fast-1,es,Mexico,Mexico,484.0,False,484,Mexico
+Morocco,Multilingual,0.3687229295122138,-1.9025967269450232,African-Islamic,anthropic/claude-3.7-sonnet,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.5573201037208904,-1.8687590444007052,African-Islamic,anthropic/claude-3.7-sonnet,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,0.036974837606546795,-2.275876030106217,African-Islamic,anthropic/claude-sonnet-4.5,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,0.4861255117300204,-2.006492814757902,African-Islamic,anthropic/claude-sonnet-4.5,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.3185791316771338,-1.7663686516898651,African-Islamic,deepseek/deepseek-chat-v3-0324,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,0.6074639015559695,-1.8002063342341832,African-Islamic,deepseek/deepseek-chat-v3-0324,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.7069897635108786,-2.01044309499779,African-Islamic,google/gemini-2.0-flash-001,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.899194381308138,-0.6918267727045492,African-Islamic,google/gemini-2.0-flash-001,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,0.24738453968626428,-2.1088832074687422,African-Islamic,google/gemini-2.5-flash,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,0.036974837606546795,-2.275876030106217,African-Islamic,google/gemini-2.5-flash,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.4965800614311608,-1.8434502723603163,African-Islamic,meta-llama/llama-3.3-70b-instruct,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.5158236501900406,-2.320767179530664,African-Islamic,meta-llama/llama-3.3-70b-instruct,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,0.9417878949407872,-1.437028848097156,African-Islamic,mistralai/mistral-nemo,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,1.2721095811750178,-2.4716856498657886,African-Islamic,mistralai/mistral-nemo,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,0.9701191649048256,-1.50163127802379,African-Islamic,openai/gpt-4o-mini,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,1.2088601369485814,-1.39924088531295,African-Islamic,openai/gpt-4o-mini,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.4399175215030837,-1.9726551322135844,African-Islamic,qwen/qwq-32b,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,0.024864744148895446,-1.6567999884983993,African-Islamic,qwen/qwq-32b,en,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.6786584935468398,-2.075045524924424,African-Islamic,x-ai/grok-code-fast-1,ar,Morocco,Morocco,504.0,True,504,Morocco
+Morocco,Multilingual,-1.7545646222337967,-2.4231575722415046,African-Islamic,x-ai/grok-code-fast-1,en,Morocco,Morocco,504.0,True,504,Morocco
+New Zealand,Multilingual,4.929900367671626,2.3959935442109397,English-Speaking,anthropic/claude-3.7-sonnet,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,4.543235232416667,2.8357968777477685,English-Speaking,anthropic/claude-sonnet-4.5,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,6.875844476760944,-0.08433413934914055,English-Speaking,deepseek/deepseek-chat-v3-0324,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,5.171921397568573,2.304226388393427,English-Speaking,google/gemini-2.0-flash-001,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,6.1901089459000085,1.6727412846407315,English-Speaking,google/gemini-2.5-flash,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,4.543222288712538,2.440199184372619,English-Speaking,meta-llama/llama-3.3-70b-instruct,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,8.399741560759436,-0.09321413209537002,English-Speaking,mistralai/mistral-nemo,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,6.25156348240662,1.1283413092983585,English-Speaking,openai/gpt-4o-mini,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,6.484114076376939,3.0911258452031465,English-Speaking,qwen/qwq-32b,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+New Zealand,Multilingual,6.583311574312287,1.5016206124595526,English-Speaking,x-ai/grok-code-fast-1,en-native,New Zealand,New Zealand,554.0,False,554,New Zealand
+Peru,Multilingual,1.224489319751889,0.09647007664193215,Latin America,anthropic/claude-3.7-sonnet,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,1.4450252075131873,-1.2867486755779431,Latin America,anthropic/claude-3.7-sonnet,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,1.9123809659191182,0.46824368470108696,Latin America,anthropic/claude-sonnet-4.5,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,1.7630343300982005,0.20910524158627267,Latin America,anthropic/claude-sonnet-4.5,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,2.1329168536804164,-0.9149750675187884,Latin America,deepseek/deepseek-chat-v3-0324,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,2.1329168536804164,-0.9149750675187884,Latin America,deepseek/deepseek-chat-v3-0324,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,0.985748347708133,-0.005920316068908053,Latin America,google/gemini-2.0-flash-001,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,-0.8694284575536607,-1.4969854363415505,Latin America,google/gemini-2.0-flash-001,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,1.5385146342686662,-0.24933968079588173,Latin America,google/gemini-2.5-flash,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,1.384749883946037,-1.5851807765790022,Latin America,google/gemini-2.5-flash,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,0.9337713417108339,-0.28386842842592014,Latin America,meta-llama/llama-3.3-70b-instruct,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,0.5190552996250296,-0.867720596465896,Latin America,meta-llama/llama-3.3-70b-instruct,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,4.278468592958866,-0.756315966884836,Latin America,mistralai/mistral-nemo,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,0.935193814320547,0.517463740936563,Latin America,mistralai/mistral-nemo,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,3.5940976584537925,-0.4593335870201521,Latin America,openai/gpt-4o-mini,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,4.895406417769187,-1.6962706151069529,Latin America,openai/gpt-4o-mini,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,0.9480223350568029,-0.0647171124866731,Latin America,qwen/qwq-32b,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,1.9650353593028043,-0.3595421580056594,Latin America,qwen/qwq-32b,es,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,0.7230402366057042,-0.5052324628082959,Latin America,x-ai/grok-code-fast-1,en,Peru,Peru,604.0,False,604,Peru
+Peru,Multilingual,0.9538042941050215,-0.36895484699660175,Latin America,x-ai/grok-code-fast-1,es,Peru,Peru,604.0,False,604,Peru
+Russian Federation,Multilingual,-0.06423952849677755,-0.5748555563212233,Orthodox Europe,deepseek/deepseek-chat-v3-0324,en,Russian Federation,,,,,Russian Federation
+Russian Federation,Multilingual,1.440984100576891,-0.9426788841404902,Orthodox Europe,deepseek/deepseek-chat-v3-0324,ru,Russian Federation,,,,,Russian Federation
+Russian Federation,Multilingual,-0.4832723961852118,0.9176657184969222,Orthodox Europe,google/gemini-2.0-flash-001,en,Russian Federation,,,,,Russian Federation
+Russian Federation,Multilingual,-0.5254035796341248,0.1777639627859991,Orthodox Europe,google/gemini-2.0-flash-001,ru,Russian Federation,,,,,Russian Federation
+Russian Federation,Multilingual,0.3609979901643685,0.8358327416220319,Orthodox Europe,openai/gpt-4o-mini,en,Russian Federation,,,,,Russian Federation
+Russian Federation,Multilingual,0.9093461622231908,-0.4842892757732484,Orthodox Europe,openai/gpt-4o-mini,ru,Russian Federation,,,,,Russian Federation
+Russian Federation (the),Multilingual,-0.7542804458011491,0.5696951873761176,Orthodox Europe,anthropic/claude-3.7-sonnet,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.6245004227081811,0.4689711158383123,Orthodox Europe,anthropic/claude-3.7-sonnet,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.6368778635833424,0.4657990995632381,Orthodox Europe,anthropic/claude-sonnet-4.5,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.16128775529498418,-0.501674675334124,Orthodox Europe,anthropic/claude-sonnet-4.5,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.403964534946883,-0.9142476363815627,Orthodox Europe,deepseek/deepseek-chat-v3-0324,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,1.440984100576891,-0.9426788841404902,Orthodox Europe,deepseek/deepseek-chat-v3-0324,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.7259491758371105,0.5050927574494833,Orthodox Europe,google/gemini-2.0-flash-001,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.7441542601195684,-0.9805163874812323,Orthodox Europe,google/gemini-2.0-flash-001,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.4446732457860826,-0.8528172227300028,Orthodox Europe,google/gemini-2.5-flash,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,1.0525734687431476,-1.1867533274484152,Orthodox Europe,google/gemini-2.5-flash,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.2542948751568952,-0.7725635857844776,Orthodox Europe,meta-llama/llama-3.3-70b-instruct,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.8065788548238603,0.2373758632742037,Orthodox Europe,meta-llama/llama-3.3-70b-instruct,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,0.37741653797582553,0.4949349664596532,Orthodox Europe,mistralai/mistral-nemo,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-1.7208293876928238,0.4104295986965128,Orthodox Europe,mistralai/mistral-nemo,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,0.5696211557730853,-0.8236813558335879,Orthodox Europe,openai/gpt-4o-mini,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,0.31052582830972925,-0.8953565417186481,Orthodox Europe,openai/gpt-4o-mini,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-1.628668638585769,-1.110376325915452,Orthodox Europe,qwen/qwq-32b,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.6830911938607686,-1.072662007958572,Orthodox Europe,qwen/qwq-32b,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.5314933028462699,0.7398600262886662,Orthodox Europe,x-ai/grok-code-fast-1,en,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Russian Federation (the),Multilingual,-0.952312707005705,0.40587438101371737,Orthodox Europe,x-ai/grok-code-fast-1,ru,Russian Federation (the),Russian Federation (the),643.0,False,643,Russian Federation (the)
+Saudi Arabia,Multilingual,-1.917399465590596,-2.1774359176352647,Other,anthropic/claude-3.7-sonnet,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.917399465590596,-2.1774359176352647,Other,anthropic/claude-3.7-sonnet,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.9649743243135132,-2.5901503948789784,Other,anthropic/claude-sonnet-4.5,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.917399465590596,-2.1774359176352647,Other,anthropic/claude-sonnet-4.5,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.8000860990748873,-3.671932048907515,Other,deepseek/deepseek-chat-v3-0324,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.5896763969951704,-3.504939226270041,Other,deepseek/deepseek-chat-v3-0324,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-2.1278091676703133,-2.344428740272739,Other,google/gemini-2.0-flash-001,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-2.7735825740927575,-2.3718982859961186,Other,google/gemini-2.0-flash-001,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-2.1278091676703133,-2.344428740272739,Other,google/gemini-2.5-flash,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-2.8211574328156748,-2.7846127632398328,Other,google/gemini-2.5-flash,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-0.9439029905727264,-3.4774696805466605,Other,meta-llama/llama-3.3-70b-instruct,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.9649743243135132,-2.5901503948789784,Other,meta-llama/llama-3.3-70b-instruct,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,1.284055263719504,-3.238041078920975,Other,mistralai/mistral-nemo,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.1087912158113524,-2.395688026518125,Other,mistralai/mistral-nemo,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-0.21790125120510195,-3.4599729930052088,Other,openai/gpt-4o-mini,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.4018074283026887,-2.326932052731287,Other,openai/gpt-4o-mini,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.6122171303824064,-2.4939248753687617,Other,qwen/qwq-32b,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-1.6122171303824064,-2.4939248753687617,Other,qwen/qwq-32b,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-2.8211574328156748,-2.7846127632398328,Other,x-ai/grok-code-fast-1,ar,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Saudi Arabia,Multilingual,-2.8211574328156748,-2.7846127632398328,Other,x-ai/grok-code-fast-1,en,Saudi Arabia,Saudi Arabia,682.0,False,682,Saudi Arabia
+Singapore,Multilingual,0.032808698301429184,-0.6480364373083226,West & South Asia,anthropic/claude-3.7-sonnet,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.7207003444686585,-0.27626282924916806,West & South Asia,anthropic/claude-3.7-sonnet,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.9633771241205575,0.13631013179827098,West & South Asia,anthropic/claude-sonnet-4.5,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,4.125702636415588,0.12492757890353683,West & South Asia,anthropic/claude-sonnet-4.5,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.5142264499970839,-0.1330730835500436,West & South Asia,deepseek/deepseek-chat-v3-0324,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.8420387342946078,-0.06997634872544861,West & South Asia,deepseek/deepseek-chat-v3-0324,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.3928880601711345,-0.33935956407376305,West & South Asia,google/gemini-2.0-flash-001,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,-0.027931343988300383,-0.6733452093487118,West & South Asia,google/gemini-2.0-flash-001,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,2.1975927035782887,-0.5794837271418007,West & South Asia,google/gemini-2.5-flash,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,2.1975927035782887,-0.5794837271418007,West & South Asia,google/gemini-2.5-flash,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.2231870689306168,-0.5677828003627974,West & South Asia,meta-llama/llama-3.3-70b-instruct,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.6440064730900519,-0.23379715508784862,West & South Asia,meta-llama/llama-3.3-70b-instruct,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,2.4776218642182255,-1.0291859813017916,West & South Asia,mistralai/mistral-nemo,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,3.7280586201823445,-1.1905062285606798,West & South Asia,mistralai/mistral-nemo,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,2.7099176267171323,-0.1392246203343223,West & South Asia,openai/gpt-4o-mini,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,3.7357904036993426,-0.28376231332221274,West & South Asia,openai/gpt-4o-mini,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,1.2441639969728513,0.19460617232800714,West & South Asia,qwen/qwq-32b,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,2.6872547172358927,0.5238404613985164,West & South Asia,qwen/qwq-32b,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.7936761328800397,-0.09211310449076335,West & South Asia,x-ai/grok-code-fast-1,en,Singapore,Singapore,702.0,False,702,Singapore
+Singapore,Multilingual,0.8317862260804345,-0.4463900250084663,West & South Asia,x-ai/grok-code-fast-1,zh-cn,Singapore,Singapore,702.0,False,702,Singapore
+Spain,Multilingual,2.6696879795113437,2.306582497550438,Catholic Europe,anthropic/claude-3.7-sonnet,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,1.4817567791035149,1.7388408260283894,Catholic Europe,anthropic/claude-3.7-sonnet,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,2.9123647591632422,2.7191554585978763,Catholic Europe,anthropic/claude-sonnet-4.5,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,1.9959063270939308,2.226260989235963,Catholic Europe,anthropic/claude-sonnet-4.5,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,3.011227910369051,0.6796813207342315,Catholic Europe,deepseek/deepseek-chat-v3-0324,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,2.679479818463384,0.30640201757303764,Catholic Europe,deepseek/deepseek-chat-v3-0324,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,0.6259080173308932,1.994347362787585,Catholic Europe,google/gemini-2.0-flash-001,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,0.1076763225119639,0.7083678477691244,Catholic Europe,google/gemini-2.0-flash-001,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,3.646875131109914,2.257362441314961,Catholic Europe,google/gemini-2.5-flash,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,5.52005832015395,1.7614020707816802,Catholic Europe,google/gemini-2.5-flash,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,2.5566319400279145,0.9093109881157571,Catholic Europe,meta-llama/llama-3.3-70b-instruct,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,2.091113961813235,0.8944500342937599,Catholic Europe,meta-llama/llama-3.3-70b-instruct,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,6.524542715831455,-0.42187826378780635,Catholic Europe,mistralai/mistral-nemo,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,1.965369706032345,0.09042674711439051,Catholic Europe,mistralai/mistral-nemo,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,3.9063248219905873,1.340758064653992,Catholic Europe,openai/gpt-4o-mini,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,5.494226751682647,-1.2852033491615535,Catholic Europe,openai/gpt-4o-mini,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,4.259879459057315,3.05986017596245,Catholic Europe,qwen/qwq-32b,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,3.9759835654845586,1.1951660943616718,Catholic Europe,qwen/qwq-32b,es,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,6.902479755151226,3.7831625766707027,Catholic Europe,x-ai/grok-code-fast-1,en,Spain,Spain,724.0,False,724,Spain
+Spain,Multilingual,4.1040324369095735,3.0680642791729826,Catholic Europe,x-ai/grok-code-fast-1,es,Spain,Spain,724.0,False,724,Spain
+Taiwan (Province of China),Multilingual,2.341875695213819,2.2434857627258427,Confucian,anthropic/claude-3.7-sonnet,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,1.7200283879578304,1.47030882778267,Confucian,anthropic/claude-3.7-sonnet,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,1.67217618962492,2.9617236062222547,Confucian,anthropic/claude-3.7-sonnet,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,1.7283693663635566,2.4615963554124276,Confucian,anthropic/claude-sonnet-4.5,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,3.650476591988517,2.1175761045315107,Confucian,anthropic/claude-sonnet-4.5,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,3.4400668899087994,1.9505832818940356,Confucian,anthropic/claude-sonnet-4.5,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,0.7290413228743846,0.7150246983805888,Confucian,deepseek/deepseek-chat-v3-0324,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.6790104552739438,-0.0645203733835217,Confucian,deepseek/deepseek-chat-v3-0324,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,1.364354196885708,1.8427369138412686,Confucian,deepseek/deepseek-chat-v3-0324,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.15899355317916,1.1909992140851247,Confucian,google/gemini-2.0-flash-001,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,0.3360838254895479,-0.05448576777755324,Confucian,google/gemini-2.0-flash-001,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,0.6316290322148904,-0.23696917136292292,Confucian,google/gemini-2.0-flash-001,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,3.383697656818046,1.387127903619014,Confucian,google/gemini-2.5-flash,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.8247443074557883,-0.23301889112303503,Confucian,google/gemini-2.5-flash,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,3.075862720374706,-0.12745648213712055,Confucian,google/gemini-2.5-flash,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,0.6440064730900519,-0.23379715508784862,Confucian,meta-llama/llama-3.3-70b-instruct,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,0.21306088324903635,0.9824287744945526,Confucian,meta-llama/llama-3.3-70b-instruct,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,1.8864806594205632,2.2962698539479875,Confucian,meta-llama/llama-3.3-70b-instruct,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.5441524430847573,-0.057465288286758114,Confucian,mistralai/mistral-nemo,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.265183562550436,-2.416400999540131,Confucian,mistralai/mistral-nemo,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,4.462568992129017,-1.652299245843594,Confucian,mistralai/mistral-nemo,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.8595872865071206,0.0024594302627627147,Confucian,openai/gpt-4o-mini,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.3276576622597553,0.9816836724956645,Confucian,openai/gpt-4o-mini,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,3.543585785902083,1.0348540089710287,Confucian,openai/gpt-4o-mini,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.577829049562525,0.5938493261105418,Confucian,qwen/qwq-32b,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,3.0269797236859985,0.8632325414588563,Confucian,qwen/qwq-32b,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,2.9994818807726875,2.3239321130726607,Confucian,qwen/qwq-32b,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,4.866215715574598,0.7115661185468763,Confucian,x-ai/grok-code-fast-1,en,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,4.538913834358731,2.1620209179271805,Confucian,x-ai/grok-code-fast-1,zh-cn,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Taiwan (Province of China),Multilingual,4.822299324849831,2.5131634653230592,Confucian,x-ai/grok-code-fast-1,zh-tw,Taiwan (Province of China),Taiwan (Province of China),158.0,False,158,Taiwan (Province of China)
+Tajikistan,Multilingual,-1.3469104016411726,-1.7017662217632308,West & South Asia,anthropic/claude-3.7-sonnet,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-2.9210534577405762,0.5860702344415321,West & South Asia,anthropic/claude-3.7-sonnet,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.4682487914671216,-1.9080527022869496,West & South Asia,anthropic/claude-sonnet-4.5,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-0.4467514681507476,-2.158489508957437,West & South Asia,anthropic/claude-sonnet-4.5,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.2255720118152236,-1.4954797412395113,West & South Asia,deepseek/deepseek-chat-v3-0324,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,0.6074639015559695,-1.8002063342341832,West & South Asia,deepseek/deepseek-chat-v3-0324,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.6565176016562386,-0.2792538116571102,West & South Asia,google/gemini-2.0-flash-001,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.5856513736849287,-1.804156614474071,West & South Asia,google/gemini-2.0-flash-001,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,0.3687229295122138,-1.9025967269450232,West & South Asia,google/gemini-2.5-flash,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,1.265614748853575,-1.769564772235729,West & South Asia,google/gemini-2.5-flash,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.634013975099497,-1.8262933702393862,West & South Asia,meta-llama/llama-3.3-70b-instruct,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.644140160781078,-0.2760817953820362,West & South Asia,meta-llama/llama-3.3-70b-instruct,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,0.9625023811599512,-1.0491732397596683,West & South Asia,mistralai/mistral-nemo,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-0.8039062369009328,0.6302007390977563,West & South Asia,mistralai/mistral-nemo,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,0.47401541827236904,-1.3874167731500844,West & South Asia,openai/gpt-4o-mini,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,1.6823009740997974,-0.8503903084538165,West & South Asia,openai/gpt-4o-mini,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.0700593363970219,-1.9536527495700937,West & South Asia,qwen/qwq-32b,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.5900762384918052,-0.6981331621014472,West & South Asia,qwen/qwq-32b,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-1.975100509995095,-1.0399388200216295,West & South Asia,x-ai/grok-code-fast-1,en,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tajikistan,Multilingual,-2.1862979547664625,-0.8163539211807045,West & South Asia,x-ai/grok-code-fast-1,ru,Tajikistan,Tajikistan,762.0,False,762,Tajikistan
+Tunisia,Multilingual,0.6074639015559695,-1.8002063342341832,African-Islamic,anthropic/claude-3.7-sonnet,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,0.17651831171495397,-0.5839804046517821,African-Islamic,anthropic/claude-3.7-sonnet,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,-0.29655846157497445,-0.10765623078030431,African-Islamic,anthropic/claude-sonnet-4.5,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,0.6256689858384274,-0.3145971893034677,African-Islamic,anthropic/claude-sonnet-4.5,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,0.8462048735997256,-1.6978159415233431,African-Islamic,deepseek/deepseek-chat-v3-0324,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,0.9675432634256751,-1.4915294609996237,African-Islamic,deepseek/deepseek-chat-v3-0324,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,-1.1365006995614553,-1.5347733991257566,African-Islamic,google/gemini-2.0-flash-001,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,-1.7778559914821885,-0.4855402921808298,African-Islamic,google/gemini-2.0-flash-001,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,2.0665448463332456,-1.0401630680342713,African-Islamic,google/gemini-2.5-flash,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,0.7939604481733598,-0.491908429001768,African-Islamic,google/gemini-2.5-flash,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,-0.5699474432201752,-1.369286271590321,African-Islamic,meta-llama/llama-3.3-70b-instruct,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,-0.8762535655451617,-0.8285011839884845,African-Islamic,meta-llama/llama-3.3-70b-instruct,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,0.9178617957743319,-0.6913214588773633,African-Islamic,mistralai/mistral-nemo,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,1.1409680296365576,-1.2452149480498875,African-Islamic,mistralai/mistral-nemo,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,1.2088601369485814,-1.39924088531295,African-Islamic,openai/gpt-4o-mini,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,2.307385678373102,-1.2421744610247063,African-Islamic,openai/gpt-4o-mini,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,0.733998156382798,1.6185823910456343,African-Islamic,qwen/qwq-32b,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,2.0425990531574962,1.4926727328513023,African-Islamic,qwen/qwq-32b,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,-1.7366368775613306,0.9665808283725098,African-Islamic,x-ai/grok-code-fast-1,ar,Tunisia,Tunisia,788.0,True,788,Tunisia
+Tunisia,Multilingual,0.4284244673255213,-0.8689957171442672,African-Islamic,x-ai/grok-code-fast-1,en,Tunisia,Tunisia,788.0,True,788,Tunisia
+Ukraine,Multilingual,1.3829759994306525,1.523741623545883,Orthodox Europe,anthropic/claude-3.7-sonnet,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,0.2158524340058097,3.3410595393880373,Orthodox Europe,anthropic/claude-3.7-sonnet,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,1.364354196885708,1.8427369138412686,Orthodox Europe,anthropic/claude-sonnet-4.5,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,1.2550303379671828,1.2260803739884274,Orthodox Europe,anthropic/claude-sonnet-4.5,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,1.9393308031656606,0.7449382286603096,Orthodox Europe,deepseek/deepseek-chat-v3-0324,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,2.366717592963949,0.6393021748470694,Orthodox Europe,deepseek/deepseek-chat-v3-0324,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,-0.31892968516255016,0.034574217086874685,Orthodox Europe,google/gemini-2.0-flash-001,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,1.9393437468697887,1.140535922035458,Orthodox Europe,google/gemini-2.0-flash-001,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,3.2641855141601677,-0.2180285361434718,Orthodox Europe,google/gemini-2.5-flash,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,3.4754286432906136,1.3450614281811726,Orthodox Europe,google/gemini-2.5-flash,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,-0.5448238531417045,0.3062782316076679,Orthodox Europe,meta-llama/llama-3.3-70b-instruct,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,-0.9757694429827203,1.522504161190069,Orthodox Europe,meta-llama/llama-3.3-70b-instruct,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,4.338743916526015,-0.4578838658837767,Orthodox Europe,mistralai/mistral-nemo,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,1.192920652770535,1.3260335940826287,Orthodox Europe,mistralai/mistral-nemo,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,1.7173427256629017,0.7516189659071405,Orthodox Europe,openai/gpt-4o-mini,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,1.7651949239958125,-0.7397958125324439,Orthodox Europe,openai/gpt-4o-mini,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,1.7354328101732368,0.8780261573352677,Orthodox Europe,qwen/qwq-32b,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,-0.8686111141289871,1.943964108579043,Orthodox Europe,qwen/qwq-32b,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,3.2607327032471582,2.4627695353204735,Orthodox Europe,x-ai/grok-code-fast-1,en,Ukraine,Ukraine,804.0,False,804,Ukraine
+Ukraine,Multilingual,2.839913299087724,2.1287838900455247,Orthodox Europe,x-ai/grok-code-fast-1,ru,Ukraine,Ukraine,804.0,False,804,Ukraine
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,4.28413990495331,2.764121691862708,English-Speaking,anthropic/claude-3.7-sonnet,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,5.125834389823739,2.6923905320119834,English-Speaking,anthropic/claude-sonnet-4.5,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,3.6788078619525555,2.0529736746048766,English-Speaking,deepseek/deepseek-chat-v3-0324,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,2.3616983325988103,2.6581730376235755,English-Speaking,google/gemini-2.0-flash-001,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,3.9099062661814132,2.6392201955366197,English-Speaking,google/gemini-2.5-flash,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,4.112276698871523,3.6564251139550206,English-Speaking,meta-llama/llama-3.3-70b-instruct,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,8.035726391281587,-0.7120735736665275,English-Speaking,mistralai/mistral-nemo,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,5.067657305309034,2.2613822495722804,English-Speaking,openai/gpt-4o-mini,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,3.2724441210329482,3.0278323318324367,English-Speaking,qwen/qwq-32b,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United Kingdom of Great Britain and Northern Ireland (the),Multilingual,5.652042999187107,3.94448282392959,English-Speaking,x-ai/grok-code-fast-1,en-native,United Kingdom of Great Britain and Northern Ireland (the),United Kingdom of Great Britain and Northern Ireland (the),826.0,False,826,United Kingdom of Great Britain and Northern Ireland (the)
+United States of America,Multilingual,4.9420104611292786,1.7769175026031219,Unknown,deepseek/deepseek-chat-v3-0324,en-native,United States of America,,,,,United States of America
+United States of America,Multilingual,4.4800939437932,1.622270211997673,Unknown,google/gemini-2.0-flash-001,en-native,United States of America,,,,,United States of America
+United States of America,Multilingual,7.963261005951864,0.6173282357799669,Unknown,openai/gpt-4o-mini,en-native,United States of America,,,,,United States of America
+United States of America (the),Multilingual,6.091463182687048,1.3785955679947346,English-Speaking,anthropic/claude-3.7-sonnet,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,4.523078248302135,1.9711406977299857,English-Speaking,anthropic/claude-sonnet-4.5,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,3.964488962801166,1.3761686537185476,English-Speaking,deepseek/deepseek-chat-v3-0324,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,5.785427726418836,2.0861157957068426,English-Speaking,google/gemini-2.0-flash-001,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,4.523078248302135,1.9711406977299857,English-Speaking,google/gemini-2.5-flash,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,4.571750929981647,1.480225367602423,English-Speaking,meta-llama/llama-3.3-70b-instruct,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,7.220775340404411,0.9411828719011051,English-Speaking,mistralai/mistral-nemo,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,6.779354828854276,1.7503691760538898,English-Speaking,openai/gpt-4o-mini,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,6.66195224663647,1.8542652638667685,English-Speaking,qwen/qwq-32b,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)
+United States of America (the),Multilingual,4.737893121179436,2.8192384796606182,English-Speaking,x-ai/grok-code-fast-1,en-native,United States of America (the),United States of America (the),840.0,False,840,United States of America (the)

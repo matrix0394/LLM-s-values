@@ -1,0 +1,47 @@
+{
+  "common_countries": [
+    "Algeria",
+    "Argentina",
+    "Belarus",
+    "Chile",
+    "China",
+    "Colombia",
+    "Ecuador",
+    "Egypt",
+    "Guatemala",
+    "Hong Kong",
+    "Iraq",
+    "Jordan",
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Lebanon",
+    "Macao",
+    "Mexico",
+    "Morocco",
+    "Peru",
+    "Russian Federation",
+    "Singapore",
+    "Spain",
+    "Taiwan (Province of China)",
+    "Tajikistan",
+    "Tunisia",
+    "Ukraine"
+  ],
+  "summary": {
+    "旧版(10.23)": {
+      "母语": 2.2112779130914277,
+      "英语": 1.9440340931725602,
+      "总体": 2.0783861775033565
+    },
+    "新版(11.03)": {
+      "母语": 1.9623320206072077,
+      "英语": 1.944404464350359,
+      "总体": 1.9533682424787833
+    }
+  },
+  "english_advantage": {
+    "old": 12.085492209581803,
+    "new": 0.9135842491782432,
+    "change": -11.17190796040356
+  }
+}

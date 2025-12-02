@@ -1,0 +1,724 @@
+{
+  "model_rankings": [
+    {
+      "model_name": "google/gemini-2.0-flash-001",
+      "mean_distance": 1.8364573601782486,
+      "std_distance": 0.8652023536296553,
+      "min_distance": 0.19642034969546288,
+      "max_distance": 4.604841838694444,
+      "rank": 1,
+      "model_short": "gemini-2.0-flash-001",
+      "stage3_rank": 1,
+      "rank_diff": 0
+    },
+    {
+      "model_name": "google/gemini-2.5-flash",
+      "mean_distance": 2.5003637426194234,
+      "std_distance": 1.0293633204237471,
+      "min_distance": 0.2351641342164458,
+      "max_distance": 4.458376798810573,
+      "rank": 2,
+      "model_short": "gemini-2.5-flash",
+      "stage3_rank": 6,
+      "rank_diff": 4
+    },
+    {
+      "model_name": "deepseek/deepseek-chat-v3-0324",
+      "mean_distance": 3.230993800761847,
+      "std_distance": 1.2105373778663238,
+      "min_distance": 0.6593672620630373,
+      "max_distance": 5.262266515220536,
+      "rank": 3,
+      "model_short": "deepseek-chat-v3-0324",
+      "stage3_rank": 4,
+      "rank_diff": 1
+    },
+    {
+      "model_name": "meta-llama/llama-3.3-70b-instruct",
+      "mean_distance": 3.232750935681214,
+      "std_distance": 1.3795500599122132,
+      "min_distance": 0.19916408340786218,
+      "max_distance": 5.549828393638706,
+      "rank": 4,
+      "model_short": "llama-3.3-70b-instruct",
+      "stage3_rank": 2,
+      "rank_diff": -2
+    },
+    {
+      "model_name": "qwen/qwq-32b",
+      "mean_distance": 3.506345487753785,
+      "std_distance": 1.4834800676199962,
+      "min_distance": 0.2803295257733705,
+      "max_distance": 5.904979545502065,
+      "rank": 5,
+      "model_short": "qwq-32b",
+      "stage3_rank": 8,
+      "rank_diff": 3
+    },
+    {
+      "model_name": "anthropic/claude-sonnet-4.5",
+      "mean_distance": 3.8370243470654946,
+      "std_distance": 1.5973609512669695,
+      "min_distance": 0.6374789604402987,
+      "max_distance": 6.309553844340507,
+      "rank": 6,
+      "model_short": "claude-sonnet-4.5",
+      "stage3_rank": 5,
+      "rank_diff": -1
+    },
+    {
+      "model_name": "anthropic/claude-3.7-sonnet",
+      "mean_distance": 4.4080196716660405,
+      "std_distance": 1.3171583707666985,
+      "min_distance": 1.3522940014018228,
+      "max_distance": 6.504317193281264,
+      "rank": 7,
+      "model_short": "claude-3.7-sonnet",
+      "stage3_rank": 3,
+      "rank_diff": -4
+    },
+    {
+      "model_name": "x-ai/grok-code-fast-1",
+      "mean_distance": 5.394061909474113,
+      "std_distance": 1.8200796916793656,
+      "min_distance": 0.3221659650686355,
+      "max_distance": 7.963163069165371,
+      "rank": 8,
+      "model_short": "grok-code-fast-1",
+      "stage3_rank": 7,
+      "rank_diff": -1
+    },
+    {
+      "model_name": "mistralai/mistral-nemo",
+      "mean_distance": 6.022820136277462,
+      "std_distance": 1.3891103520663635,
+      "min_distance": 2.6220652689882717,
+      "max_distance": 8.17799414959095,
+      "rank": 9,
+      "model_short": "mistral-nemo",
+      "stage3_rank": 10,
+      "rank_diff": 1
+    },
+    {
+      "model_name": "openai/gpt-4o-mini",
+      "mean_distance": 6.727085591751072,
+      "std_distance": 1.2426402457181787,
+      "min_distance": 3.6961177241224483,
+      "max_distance": 8.774567276809234,
+      "rank": 10,
+      "model_short": "gpt-4o-mini",
+      "stage3_rank": 9,
+      "rank_diff": -1
+    }
+  ],
+  "model_positions": [
+    {
+      "model_name": "anthropic/claude-3.7-sonnet",
+      "PC1_rescaled": 4.353516487686828,
+      "PC2_rescaled": -0.21093750004493117,
+      "model_short": "claude-3.7-sonnet",
+      "quadrant": "Q4 (传统+自我表达)",
+      "extremeness": 4.358623686152116
+    },
+    {
+      "model_name": "anthropic/claude-sonnet-4.5",
+      "PC1_rescaled": 2.9890993735273503,
+      "PC2_rescaled": 2.1084672980797743,
+      "model_short": "claude-sonnet-4.5",
+      "quadrant": "Q1 (传统+世俗)",
+      "extremeness": 3.6579159930065948
+    },
+    {
+      "model_name": "deepseek/deepseek-chat-v3-0324",
+      "PC1_rescaled": 2.9934614756810407,
+      "PC2_rescaled": 0.1794577700922481,
+      "model_short": "deepseek-chat-v3-0324",
+      "quadrant": "Q1 (传统+世俗)",
+      "extremeness": 2.9988358904136443
+    },
+    {
+      "model_name": "google/gemini-2.0-flash-001",
+      "PC1_rescaled": 0.46521559274785135,
+      "PC2_rescaled": 0.11059445853748436,
+      "model_short": "gemini-2.0-flash-001",
+      "quadrant": "Q1 (传统+世俗)",
+      "extremeness": 0.47818059558595016
+    },
+    {
+      "model_name": "google/gemini-2.5-flash",
+      "PC1_rescaled": 0.5764133909340121,
+      "PC2_rescaled": 1.5505342233292312,
+      "model_short": "gemini-2.5-flash",
+      "quadrant": "Q1 (传统+世俗)",
+      "extremeness": 1.6542094108555991
+    },
+    {
+      "model_name": "meta-llama/llama-3.3-70b-instruct",
+      "PC1_rescaled": 2.1325448192039387,
+      "PC2_rescaled": 1.9154281572470437,
+      "model_short": "llama-3.3-70b-instruct",
+      "quadrant": "Q1 (传统+世俗)",
+      "extremeness": 2.866463401386518
+    },
+    {
+      "model_name": "mistralai/mistral-nemo",
+      "PC1_rescaled": 6.05228809602748,
+      "PC2_rescaled": -0.47043391994994443,
+      "model_short": "mistral-nemo",
+      "quadrant": "Q4 (传统+自我表达)",
+      "extremeness": 6.070543572889944
+    },
+    {
+      "model_name": "openai/gpt-4o-mini",
+      "PC1_rescaled": 6.644156470910657,
+      "PC2_rescaled": -1.4219971692433286,
+      "model_short": "gpt-4o-mini",
+      "quadrant": "Q4 (传统+自我表达)",
+      "extremeness": 6.794622223441123
+    },
+    {
+      "model_name": "qwen/qwq-32b",
+      "PC1_rescaled": 2.5073504944832763,
+      "PC2_rescaled": 2.0390566528017287,
+      "model_short": "qwq-32b",
+      "quadrant": "Q1 (传统+世俗)",
+      "extremeness": 3.231804222956663
+    },
+    {
+      "model_name": "x-ai/grok-code-fast-1",
+      "PC1_rescaled": 4.782672895853067,
+      "PC2_rescaled": 2.4839146882814336,
+      "model_short": "grok-code-fast-1",
+      "quadrant": "Q1 (传统+世俗)",
+      "extremeness": 5.389229277678564
+    }
+  ],
+  "closest_countries": {
+    "anthropic/claude-3.7-sonnet": [
+      {
+        "model_name": "anthropic/claude-3.7-sonnet",
+        "country": "Australia",
+        "country_code": 36.0,
+        "distance": 1.3522940014018228,
+        "llm_pc1": 4.353516487686828,
+        "llm_pc2": -0.21093750004493117,
+        "country_pc1": 3.372028587702655,
+        "country_pc2": 0.7193208341891734
+      },
+      {
+        "model_name": "anthropic/claude-3.7-sonnet",
+        "country": "New Zealand",
+        "country_code": 554.0,
+        "distance": 1.3783744963344344,
+        "llm_pc1": 4.353516487686828,
+        "llm_pc2": -0.21093750004493117,
+        "country_pc1": 3.4229873180498873,
+        "country_pc2": 0.8059360007406837
+      },
+      {
+        "model_name": "anthropic/claude-3.7-sonnet",
+        "country": "Iceland",
+        "country_code": 352.0,
+        "distance": 1.4133347378120462,
+        "llm_pc1": 4.353516487686828,
+        "llm_pc2": -0.21093750004493117,
+        "country_pc1": 3.9959339129408744,
+        "country_pc2": 1.156413875185408
+      },
+      {
+        "model_name": "anthropic/claude-3.7-sonnet",
+        "country": "Canada",
+        "country_code": 124.0,
+        "distance": 1.6845271585627326,
+        "llm_pc1": 4.353516487686828,
+        "llm_pc2": -0.21093750004493117,
+        "country_pc1": 3.145853642399667,
+        "country_pc2": 0.9634483820433852
+      },
+      {
+        "model_name": "anthropic/claude-3.7-sonnet",
+        "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+        "country_code": 826.0,
+        "distance": 1.806808628888764,
+        "llm_pc1": 4.353516487686828,
+        "llm_pc2": -0.21093750004493117,
+        "country_pc1": 3.1256094057037584,
+        "country_pc2": 1.1145064329234609
+      }
+    ],
+    "anthropic/claude-sonnet-4.5": [
+      {
+        "model_name": "anthropic/claude-sonnet-4.5",
+        "country": "Andorra",
+        "country_code": 20.0,
+        "distance": 0.6374789604402987,
+        "llm_pc1": 2.9890993735273503,
+        "llm_pc2": 2.1084672980797743,
+        "country_pc1": 2.9924491904601647,
+        "country_pc2": 1.470997138989515
+      },
+      {
+        "model_name": "anthropic/claude-sonnet-4.5",
+        "country": "Netherlands (the)",
+        "country_code": 528.0,
+        "distance": 0.6662009557728663,
+        "llm_pc1": 2.9890993735273503,
+        "llm_pc2": 2.1084672980797743,
+        "country_pc1": 3.405407282248531,
+        "country_pc2": 1.5883601566090215
+      },
+      {
+        "model_name": "anthropic/claude-sonnet-4.5",
+        "country": "Germany",
+        "country_code": 276.0,
+        "distance": 0.7274874670499801,
+        "llm_pc1": 2.9890993735273503,
+        "llm_pc2": 2.1084672980797743,
+        "country_pc1": 2.314861891225522,
+        "country_pc2": 1.8352607239017587
+      },
+      {
+        "model_name": "anthropic/claude-sonnet-4.5",
+        "country": "Finland",
+        "country_code": 246.0,
+        "distance": 0.7600570323565579,
+        "llm_pc1": 2.9890993735273503,
+        "llm_pc2": 2.1084672980797743,
+        "country_pc1": 2.933668644041088,
+        "country_pc2": 1.3504342337195985
+      },
+      {
+        "model_name": "anthropic/claude-sonnet-4.5",
+        "country": "Switzerland",
+        "country_code": 756.0,
+        "distance": 0.8528665387233675,
+        "llm_pc1": 2.9890993735273503,
+        "llm_pc2": 2.1084672980797743,
+        "country_pc1": 3.222272481907627,
+        "country_pc2": 1.2880944350459846
+      }
+    ],
+    "deepseek/deepseek-chat-v3-0324": [
+      {
+        "model_name": "deepseek/deepseek-chat-v3-0324",
+        "country": "Australia",
+        "country_code": 36.0,
+        "distance": 0.6593672620630373,
+        "llm_pc1": 2.9934614756810407,
+        "llm_pc2": 0.1794577700922481,
+        "country_pc1": 3.372028587702655,
+        "country_pc2": 0.7193208341891734
+      },
+      {
+        "model_name": "deepseek/deepseek-chat-v3-0324",
+        "country": "New Zealand",
+        "country_code": 554.0,
+        "distance": 0.7595837167416517,
+        "llm_pc1": 2.9934614756810407,
+        "llm_pc2": 0.1794577700922481,
+        "country_pc1": 3.4229873180498873,
+        "country_pc2": 0.8059360007406837
+      },
+      {
+        "model_name": "deepseek/deepseek-chat-v3-0324",
+        "country": "Canada",
+        "country_code": 124.0,
+        "distance": 0.7986642924938588,
+        "llm_pc1": 2.9934614756810407,
+        "llm_pc2": 0.1794577700922481,
+        "country_pc1": 3.145853642399667,
+        "country_pc2": 0.9634483820433852
+      },
+      {
+        "model_name": "deepseek/deepseek-chat-v3-0324",
+        "country": "United States of America (the)",
+        "country_code": 840.0,
+        "distance": 0.9212980743074548,
+        "llm_pc1": 2.9934614756810407,
+        "llm_pc2": 0.1794577700922481,
+        "country_pc1": 2.0832576646230128,
+        "country_pc2": 0.32200307537469575
+      },
+      {
+        "model_name": "deepseek/deepseek-chat-v3-0324",
+        "country": "Belgium",
+        "country_code": 56.0,
+        "distance": 0.9272833239421853,
+        "llm_pc1": 2.9934614756810407,
+        "llm_pc2": 0.1794577700922481,
+        "country_pc1": 2.4145863058635277,
+        "country_pc2": 0.9038595237000187
+      }
+    ],
+    "google/gemini-2.0-flash-001": [
+      {
+        "model_name": "google/gemini-2.0-flash-001",
+        "country": "Singapore",
+        "country_code": 702.0,
+        "distance": 0.19642034969546288,
+        "llm_pc1": 0.46521559274785135,
+        "llm_pc2": 0.11059445853748436,
+        "country_pc1": 0.3463358667374935,
+        "country_pc2": -0.045765908941586796
+      },
+      {
+        "model_name": "google/gemini-2.0-flash-001",
+        "country": "Croatia",
+        "country_code": 191.0,
+        "distance": 0.34381014369249213,
+        "llm_pc1": 0.46521559274785135,
+        "llm_pc2": 0.11059445853748436,
+        "country_pc1": 0.44053249122648186,
+        "country_pc2": 0.4535174227803852
+      },
+      {
+        "model_name": "google/gemini-2.0-flash-001",
+        "country": "Chile",
+        "country_code": 152.0,
+        "distance": 0.3783355714383697,
+        "llm_pc1": 0.46521559274785135,
+        "llm_pc2": 0.11059445853748436,
+        "country_pc1": 0.20443585316467594,
+        "country_pc2": -0.16350722339556936
+      },
+      {
+        "model_name": "google/gemini-2.0-flash-001",
+        "country": "Argentina",
+        "country_code": 32.0,
+        "distance": 0.4166705280145575,
+        "llm_pc1": 0.46521559274785135,
+        "llm_pc2": 0.11059445853748436,
+        "country_pc1": 0.7567686509401705,
+        "country_pc2": -0.1870817803104228
+      },
+      {
+        "model_name": "google/gemini-2.0-flash-001",
+        "country": "Republic of North Macedonia",
+        "country_code": 807.0,
+        "distance": 0.4379031293858806,
+        "llm_pc1": 0.46521559274785135,
+        "llm_pc2": 0.11059445853748436,
+        "country_pc1": 0.0443509590907495,
+        "country_pc2": 0.23155772098778674
+      }
+    ],
+    "google/gemini-2.5-flash": [
+      {
+        "model_name": "google/gemini-2.5-flash",
+        "country": "Hong Kong",
+        "country_code": 344.0,
+        "distance": 0.2351641342164458,
+        "llm_pc1": 0.5764133909340121,
+        "llm_pc2": 1.5505342233292312,
+        "country_pc1": 0.6063283942228325,
+        "country_pc2": 1.7837878676737524
+      },
+      {
+        "model_name": "google/gemini-2.5-flash",
+        "country": "Macao",
+        "country_code": 446.0,
+        "distance": 0.30288383473519054,
+        "llm_pc1": 0.5764133909340121,
+        "llm_pc2": 1.5505342233292312,
+        "country_pc1": 0.8511525738077562,
+        "country_pc2": 1.6780371595219385
+      },
+      {
+        "model_name": "google/gemini-2.5-flash",
+        "country": "Mongolia",
+        "country_code": 496.0,
+        "distance": 0.30842662246484454,
+        "llm_pc1": 0.5764133909340121,
+        "llm_pc2": 1.5505342233292312,
+        "country_pc1": 0.6363644984740725,
+        "country_pc2": 1.2479902659448672
+      },
+      {
+        "model_name": "google/gemini-2.5-flash",
+        "country": "Estonia",
+        "country_code": 233.0,
+        "distance": 0.3350004469468675,
+        "llm_pc1": 0.5764133909340121,
+        "llm_pc2": 1.5505342233292312,
+        "country_pc1": 0.30668875308767435,
+        "country_pc2": 1.3518537784101026
+      },
+      {
+        "model_name": "google/gemini-2.5-flash",
+        "country": "Korea (the Republic of)",
+        "country_code": 410.0,
+        "distance": 0.5906353594663939,
+        "llm_pc1": 0.5764133909340121,
+        "llm_pc2": 1.5505342233292312,
+        "country_pc1": 0.023971845685856173,
+        "country_pc2": 1.3415881371351461
+      }
+    ],
+    "meta-llama/llama-3.3-70b-instruct": [
+      {
+        "model_name": "meta-llama/llama-3.3-70b-instruct",
+        "country": "Germany",
+        "country_code": 276.0,
+        "distance": 0.19916408340786218,
+        "llm_pc1": 2.1325448192039387,
+        "llm_pc2": 1.9154281572470437,
+        "country_pc1": 2.314861891225522,
+        "country_pc2": 1.8352607239017587
+      },
+      {
+        "model_name": "meta-llama/llama-3.3-70b-instruct",
+        "country": "Japan",
+        "country_code": 392.0,
+        "distance": 0.47272636323248457,
+        "llm_pc1": 2.1325448192039387,
+        "llm_pc2": 1.9154281572470437,
+        "country_pc1": 1.7056610523155893,
+        "country_pc2": 2.1185056401500586
+      },
+      {
+        "model_name": "meta-llama/llama-3.3-70b-instruct",
+        "country": "Czechia",
+        "country_code": 203.0,
+        "distance": 0.6086345841963524,
+        "llm_pc1": 2.1325448192039387,
+        "llm_pc2": 1.9154281572470437,
+        "country_pc1": 1.531690563539997,
+        "country_pc2": 1.818421866057258
+      },
+      {
+        "model_name": "meta-llama/llama-3.3-70b-instruct",
+        "country": "Austria",
+        "country_code": 40.0,
+        "distance": 0.812602664316343,
+        "llm_pc1": 2.1325448192039387,
+        "llm_pc2": 1.9154281572470437,
+        "country_pc1": 2.170809384214305,
+        "country_pc2": 1.1037269110248966
+      },
+      {
+        "model_name": "meta-llama/llama-3.3-70b-instruct",
+        "country": "France",
+        "country_code": 250.0,
+        "distance": 0.8892387773186453,
+        "llm_pc1": 2.1325448192039387,
+        "llm_pc2": 1.9154281572470437,
+        "country_pc1": 2.6778108984715474,
+        "country_pc2": 1.2129820697162716
+      }
+    ],
+    "mistralai/mistral-nemo": [
+      {
+        "model_name": "mistralai/mistral-nemo",
+        "country": "Iceland",
+        "country_code": 352.0,
+        "distance": 2.6220652689882717,
+        "llm_pc1": 6.05228809602748,
+        "llm_pc2": -0.47043391994994443,
+        "country_pc1": 3.9959339129408744,
+        "country_pc2": 1.156413875185408
+      },
+      {
+        "model_name": "mistralai/mistral-nemo",
+        "country": "Norway",
+        "country_code": 578.0,
+        "distance": 2.916411906802177,
+        "llm_pc1": 6.05228809602748,
+        "llm_pc2": -0.47043391994994443,
+        "country_pc1": 4.192594913990472,
+        "country_pc2": 1.7761189235911503
+      },
+      {
+        "model_name": "mistralai/mistral-nemo",
+        "country": "Denmark",
+        "country_code": 208.0,
+        "distance": 2.91777320236457,
+        "llm_pc1": 6.05228809602748,
+        "llm_pc2": -0.47043391994994443,
+        "country_pc1": 4.300130845298718,
+        "country_pc2": 1.8626638982213006
+      },
+      {
+        "model_name": "mistralai/mistral-nemo",
+        "country": "New Zealand",
+        "country_code": 554.0,
+        "distance": 2.9227286489712614,
+        "llm_pc1": 6.05228809602748,
+        "llm_pc2": -0.47043391994994443,
+        "country_pc1": 3.4229873180498873,
+        "country_pc2": 0.8059360007406837
+      },
+      {
+        "model_name": "mistralai/mistral-nemo",
+        "country": "Australia",
+        "country_code": 36.0,
+        "distance": 2.932457571212628,
+        "llm_pc1": 6.05228809602748,
+        "llm_pc2": -0.47043391994994443,
+        "country_pc1": 3.372028587702655,
+        "country_pc2": 0.7193208341891734
+      }
+    ],
+    "openai/gpt-4o-mini": [
+      {
+        "model_name": "openai/gpt-4o-mini",
+        "country": "Iceland",
+        "country_code": 352.0,
+        "distance": 3.6961177241224483,
+        "llm_pc1": 6.644156470910657,
+        "llm_pc2": -1.4219971692433286,
+        "country_pc1": 3.9959339129408744,
+        "country_pc2": 1.156413875185408
+      },
+      {
+        "model_name": "openai/gpt-4o-mini",
+        "country": "Australia",
+        "country_code": 36.0,
+        "distance": 3.9105068310759203,
+        "llm_pc1": 6.644156470910657,
+        "llm_pc2": -1.4219971692433286,
+        "country_pc1": 3.372028587702655,
+        "country_pc2": 0.7193208341891734
+      },
+      {
+        "model_name": "openai/gpt-4o-mini",
+        "country": "New Zealand",
+        "country_code": 554.0,
+        "distance": 3.916582301095788,
+        "llm_pc1": 6.644156470910657,
+        "llm_pc2": -1.4219971692433286,
+        "country_pc1": 3.4229873180498873,
+        "country_pc2": 0.8059360007406837
+      },
+      {
+        "model_name": "openai/gpt-4o-mini",
+        "country": "Norway",
+        "country_code": 578.0,
+        "distance": 4.029652666250008,
+        "llm_pc1": 6.644156470910657,
+        "llm_pc2": -1.4219971692433286,
+        "country_pc1": 4.192594913990472,
+        "country_pc2": 1.7761189235911503
+      },
+      {
+        "model_name": "openai/gpt-4o-mini",
+        "country": "Denmark",
+        "country_code": 208.0,
+        "distance": 4.035276255926392,
+        "llm_pc1": 6.644156470910657,
+        "llm_pc2": -1.4219971692433286,
+        "country_pc1": 4.300130845298718,
+        "country_pc2": 1.8626638982213006
+      }
+    ],
+    "qwen/qwq-32b": [
+      {
+        "model_name": "qwen/qwq-32b",
+        "country": "Germany",
+        "country_code": 276.0,
+        "distance": 0.2803295257733705,
+        "llm_pc1": 2.5073504944832763,
+        "llm_pc2": 2.0390566528017287,
+        "country_pc1": 2.314861891225522,
+        "country_pc2": 1.8352607239017587
+      },
+      {
+        "model_name": "qwen/qwq-32b",
+        "country": "Andorra",
+        "country_code": 20.0,
+        "distance": 0.7470022463627846,
+        "llm_pc1": 2.5073504944832763,
+        "llm_pc2": 2.0390566528017287,
+        "country_pc1": 2.9924491904601647,
+        "country_pc2": 1.470997138989515
+      },
+      {
+        "model_name": "qwen/qwq-32b",
+        "country": "Japan",
+        "country_code": 392.0,
+        "distance": 0.8056165981866388,
+        "llm_pc1": 2.5073504944832763,
+        "llm_pc2": 2.0390566528017287,
+        "country_pc1": 1.7056610523155893,
+        "country_pc2": 2.1185056401500586
+      },
+      {
+        "model_name": "qwen/qwq-32b",
+        "country": "Finland",
+        "country_code": 246.0,
+        "distance": 0.8099061678397823,
+        "llm_pc1": 2.5073504944832763,
+        "llm_pc2": 2.0390566528017287,
+        "country_pc1": 2.933668644041088,
+        "country_pc2": 1.3504342337195985
+      },
+      {
+        "model_name": "qwen/qwq-32b",
+        "country": "France",
+        "country_code": 250.0,
+        "distance": 0.8434784918109389,
+        "llm_pc1": 2.5073504944832763,
+        "llm_pc2": 2.0390566528017287,
+        "country_pc1": 2.6778108984715474,
+        "country_pc2": 1.2129820697162716
+      }
+    ],
+    "x-ai/grok-code-fast-1": [
+      {
+        "model_name": "x-ai/grok-code-fast-1",
+        "country": "Sweden",
+        "country_code": 752.0,
+        "distance": 0.3221659650686355,
+        "llm_pc1": 4.782672895853067,
+        "llm_pc2": 2.4839146882814336,
+        "country_pc1": 4.494809029442279,
+        "country_pc2": 2.339258877946566
+      },
+      {
+        "model_name": "x-ai/grok-code-fast-1",
+        "country": "Denmark",
+        "country_code": 208.0,
+        "distance": 0.7866380201233188,
+        "llm_pc1": 4.782672895853067,
+        "llm_pc2": 2.4839146882814336,
+        "country_pc1": 4.300130845298718,
+        "country_pc2": 1.8626638982213006
+      },
+      {
+        "model_name": "x-ai/grok-code-fast-1",
+        "country": "Norway",
+        "country_code": 578.0,
+        "distance": 0.9215025063408865,
+        "llm_pc1": 4.782672895853067,
+        "llm_pc2": 2.4839146882814336,
+        "country_pc1": 4.192594913990472,
+        "country_pc2": 1.7761189235911503
+      },
+      {
+        "model_name": "x-ai/grok-code-fast-1",
+        "country": "Iceland",
+        "country_code": 352.0,
+        "distance": 1.543119125668631,
+        "llm_pc1": 4.782672895853067,
+        "llm_pc2": 2.4839146882814336,
+        "country_pc1": 3.9959339129408744,
+        "country_pc2": 1.156413875185408
+      },
+      {
+        "model_name": "x-ai/grok-code-fast-1",
+        "country": "Netherlands (the)",
+        "country_code": 528.0,
+        "distance": 1.6428263723280292,
+        "llm_pc1": 4.782672895853067,
+        "llm_pc2": 2.4839146882814336,
+        "country_pc1": 3.405407282248531,
+        "country_pc2": 1.5883601566090215
+      }
+    ]
+  },
+  "metadata": {
+    "n_models": 10,
+    "n_countries": 112,
+    "n_distances": 1120,
+    "generation_time": "2025-11-18T15:42:41.460412"
+  }
+}

@@ -1,0 +1,698 @@
+﻿stage,model_name,entity_id,country,language,failure_type,count,total,rate
+stage1,anthropic/claude-3.7-sonnet,llm_anthropic-claude-3.7-sonnet,,,none,10,10,1.0
+stage1,anthropic/claude-sonnet-4.5,llm_anthropic-claude-sonnet-4.5,,,none,10,10,1.0
+stage1,deepseek/deepseek-chat-v3-0324,llm_deepseek-deepseek-chat-v3-0324,,,none,10,10,1.0
+stage1,google/gemini-2.0-flash-001,llm_google-gemini-2.0-flash-001,,,none,10,10,1.0
+stage1,google/gemini-2.5-flash,llm_google-gemini-2.5-flash,,,none,10,10,1.0
+stage1,meta-llama/llama-3.3-70b-instruct,llm_meta-llama-llama-3.3-70b-instruct,,,none,10,10,1.0
+stage1,mistralai/mistral-nemo,llm_mistralai-mistral-nemo,,,none,10,10,1.0
+stage1,openai/gpt-4o-mini,llm_openai-gpt-4o-mini,,,none,10,10,1.0
+stage1,qwen/qwq-32b,llm_qwen-qwq-32b,,,none,10,10,1.0
+stage1,x-ai/grok-code-fast-1,llm_x-ai-grok-code-fast-1,,,none,10,10,1.0
+stage2,anthropic/claude-3.7-sonnet,,China,,none,10,10,1.0
+stage2,anthropic/claude-3.7-sonnet,,Spain,,none,10,10,1.0
+stage2,anthropic/claude-3.7-sonnet,,United States,,none,10,10,1.0
+stage2,deepseek/deepseek-chat-v3-0324,,China,,none,10,10,1.0
+stage2,deepseek/deepseek-chat-v3-0324,,Spain,,none,10,10,1.0
+stage2,deepseek/deepseek-chat-v3-0324,,United States,,none,10,10,1.0
+stage2,google/gemini-2.0-flash-001,,China,,none,10,10,1.0
+stage2,google/gemini-2.0-flash-001,,Spain,,none,10,10,1.0
+stage2,google/gemini-2.0-flash-001,,United States,,none,10,10,1.0
+stage2,meta-llama/llama-3.3-70b-instruct,,China,,none,10,10,1.0
+stage2,meta-llama/llama-3.3-70b-instruct,,Spain,,none,10,10,1.0
+stage2,meta-llama/llama-3.3-70b-instruct,,United States,,none,10,10,1.0
+stage2,mistralai/mistral-nemo,,China,,none,10,10,1.0
+stage2,mistralai/mistral-nemo,,Spain,,none,10,10,1.0
+stage2,mistralai/mistral-nemo,,United States,,none,10,10,1.0
+stage2,openai/gpt-4o-mini,,China,,none,10,10,1.0
+stage2,openai/gpt-4o-mini,,Spain,,none,10,10,1.0
+stage2,openai/gpt-4o-mini,,United States,,none,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Algeria,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Algeria,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Argentina,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Argentina,es,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Australia,en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Belarus,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Belarus,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Canada,en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Chile,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Chile,es,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,China,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,China,zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Colombia,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Colombia,es,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Ecuador,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Ecuador,es,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Egypt,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Egypt,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Guatemala,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Guatemala,es,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Hong Kong,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Iraq,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Iraq,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Japan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Japan,ja,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Jordan,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Jordan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Lebanon,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Lebanon,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Macao,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Mexico,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Mexico,es,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Morocco,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Morocco,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Peru,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Peru,es,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Singapore,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Spain,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Spain,es,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Tajikistan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Tunisia,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Tunisia,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Ukraine,en,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,Ukraine,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-3.7-sonnet,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Algeria,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Algeria,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Argentina,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Argentina,es,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Australia,en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Belarus,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Belarus,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Canada,en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Chile,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Chile,es,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,China,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,China,zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Colombia,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Colombia,es,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Ecuador,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Ecuador,es,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Egypt,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Egypt,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Guatemala,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Guatemala,es,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Hong Kong,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Iraq,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Iraq,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Japan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Japan,ja,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Jordan,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Jordan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Lebanon,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Lebanon,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Macao,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Mexico,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Mexico,es,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Morocco,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Morocco,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Peru,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Peru,es,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Singapore,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Spain,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Spain,es,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Tajikistan,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Tunisia,ar,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Tunisia,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Ukraine,en,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,Ukraine,ru,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,anthropic/claude-sonnet-4.5,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Algeria,ar,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Algeria,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Argentina,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Argentina,es,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Australia,en-native,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Belarus,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Belarus,ru,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Canada,en-native,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Chile,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Chile,es,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,China,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,China,zh-cn,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Colombia,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Colombia,es,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Ecuador,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Ecuador,es,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Egypt,ar,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Egypt,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Guatemala,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Guatemala,es,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Hong Kong,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Iraq,ar,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Iraq,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Japan,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Japan,ja,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Jordan,ar,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Jordan,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Lebanon,ar,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Lebanon,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Macao,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Mexico,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Mexico,es,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Morocco,ar,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Morocco,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Peru,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Peru,es,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Russian Federation,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Russian Federation,ru,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Singapore,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Spain,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Spain,es,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Tajikistan,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Tunisia,ar,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Tunisia,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Ukraine,en,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,Ukraine,ru,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,United States of America,en-native,api_failure,10,10,1.0
+stage3,deepseek/deepseek-chat-v3-0324,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Algeria,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Algeria,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Argentina,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Argentina,es,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Australia,en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Belarus,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Belarus,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Canada,en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Chile,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Chile,es,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,China,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,China,zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Colombia,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Colombia,es,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Ecuador,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Ecuador,es,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Egypt,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Egypt,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Guatemala,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Guatemala,es,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Hong Kong,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Iraq,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Iraq,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Japan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Japan,ja,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Jordan,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Jordan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Lebanon,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Lebanon,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Macao,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Mexico,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Mexico,es,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Morocco,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Morocco,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Peru,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Peru,es,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Russian Federation,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Russian Federation,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Singapore,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Spain,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Spain,es,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Tajikistan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Tunisia,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Tunisia,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Ukraine,en,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,Ukraine,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,United States of America,en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.0-flash-001,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Algeria,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Algeria,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Argentina,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Argentina,es,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Australia,en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Belarus,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Belarus,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Canada,en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Chile,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Chile,es,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,China,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,China,zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Colombia,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Colombia,es,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Ecuador,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Ecuador,es,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Egypt,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Egypt,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Guatemala,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Guatemala,es,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Hong Kong,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Iraq,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Iraq,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Japan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Japan,ja,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Jordan,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Jordan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Lebanon,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Lebanon,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Macao,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Mexico,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Mexico,es,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Morocco,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Morocco,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Peru,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Peru,es,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Singapore,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Spain,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Spain,es,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Tajikistan,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Tunisia,ar,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Tunisia,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Ukraine,en,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,Ukraine,ru,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,google/gemini-2.5-flash,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Algeria,ar,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Algeria,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Argentina,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Argentina,es,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Australia,en-native,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Belarus,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Belarus,ru,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Canada,en-native,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Chile,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Chile,es,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,China,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,China,zh-cn,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Colombia,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Colombia,es,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Ecuador,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Ecuador,es,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Egypt,ar,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Egypt,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Guatemala,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Guatemala,es,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Hong Kong,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Iraq,ar,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Iraq,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Japan,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Japan,ja,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Jordan,ar,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Jordan,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Lebanon,ar,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Lebanon,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Macao,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Mexico,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Mexico,es,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Morocco,ar,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Morocco,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Peru,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Peru,es,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Singapore,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Spain,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Spain,es,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Tajikistan,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Tunisia,ar,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Tunisia,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Ukraine,en,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,Ukraine,ru,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,meta-llama/llama-3.3-70b-instruct,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Algeria,ar,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Algeria,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Argentina,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Argentina,es,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Australia,en-native,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Belarus,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Belarus,ru,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Canada,en-native,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Chile,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Chile,es,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,China,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,China,zh-cn,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Colombia,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Colombia,es,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Ecuador,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Ecuador,es,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Egypt,ar,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Egypt,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Guatemala,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Guatemala,es,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Hong Kong,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Iraq,ar,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Iraq,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Japan,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Japan,ja,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Jordan,ar,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Jordan,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Lebanon,ar,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Lebanon,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Macao,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Mexico,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Mexico,es,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Morocco,ar,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Morocco,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Peru,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Peru,es,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Singapore,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Spain,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Spain,es,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Tajikistan,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Tunisia,ar,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Tunisia,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Ukraine,en,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,Ukraine,ru,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,mistralai/mistral-nemo,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Algeria,ar,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Algeria,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Argentina,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Argentina,es,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Australia,en-native,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Belarus,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Belarus,ru,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Canada,en-native,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Chile,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Chile,es,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,China,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,China,zh-cn,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Colombia,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Colombia,es,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Ecuador,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Ecuador,es,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Egypt,ar,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Egypt,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Guatemala,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Guatemala,es,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Hong Kong,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Iraq,ar,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Iraq,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Japan,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Japan,ja,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Jordan,ar,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Jordan,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Lebanon,ar,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Lebanon,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Macao,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Mexico,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Mexico,es,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Morocco,ar,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Morocco,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Peru,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Peru,es,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Russian Federation,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Russian Federation,ru,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Singapore,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Spain,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Spain,es,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Tajikistan,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Tunisia,ar,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Tunisia,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Ukraine,en,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,Ukraine,ru,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,United States of America,en-native,api_failure,10,10,1.0
+stage3,openai/gpt-4o-mini,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Algeria,ar,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Algeria,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Argentina,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Argentina,es,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Australia,en-native,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Belarus,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Belarus,ru,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Canada,en-native,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Chile,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Chile,es,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,China,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,China,zh-cn,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Colombia,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Colombia,es,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Ecuador,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Ecuador,es,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Egypt,ar,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Egypt,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Guatemala,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Guatemala,es,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Hong Kong,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Iraq,ar,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Iraq,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Japan,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Japan,ja,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Jordan,ar,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Jordan,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Lebanon,ar,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Lebanon,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Macao,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Mexico,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Mexico,es,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Morocco,ar,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Morocco,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Peru,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Peru,es,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Singapore,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Spain,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Spain,es,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Tajikistan,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Tunisia,ar,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Tunisia,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Ukraine,en,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,Ukraine,ru,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,qwen/qwq-32b,,United States of America (the),en-native,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Algeria,ar,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Algeria,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Argentina,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Argentina,es,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Australia,en-native,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Belarus,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Belarus,ru,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Canada,en-native,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Chile,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Chile,es,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,China,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,China,zh-cn,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Colombia,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Colombia,es,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Ecuador,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Ecuador,es,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Egypt,ar,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Egypt,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Guatemala,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Guatemala,es,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Hong Kong,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Hong Kong,zh-cn,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Hong Kong,zh-hk,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Iraq,ar,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Iraq,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Japan,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Japan,ja,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Jordan,ar,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Jordan,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Kazakhstan,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Kazakhstan,ru,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Korea (the Republic of),en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Korea (the Republic of),ko,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Kyrgyzstan,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Kyrgyzstan,ru,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Lebanon,ar,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Lebanon,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Macao,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Macao,zh-cn,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Macao,zh-hk,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Mexico,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Mexico,es,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Morocco,ar,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Morocco,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,New Zealand,en-native,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Peru,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Peru,es,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Russian Federation (the),en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Russian Federation (the),ru,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Saudi Arabia,ar,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Saudi Arabia,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Singapore,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Singapore,zh-cn,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Spain,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Spain,es,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Taiwan (Province of China),en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Taiwan (Province of China),zh-cn,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Taiwan (Province of China),zh-tw,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Tajikistan,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Tajikistan,ru,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Tunisia,ar,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Tunisia,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Ukraine,en,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,Ukraine,ru,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,United Kingdom of Great Britain and Northern Ireland (the),en-native,api_failure,10,10,1.0
+stage3,x-ai/grok-code-fast-1,,United States of America (the),en-native,api_failure,10,10,1.0

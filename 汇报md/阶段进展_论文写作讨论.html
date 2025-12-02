@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>大模型跨语言价值观研究 - 阶段进展与论文写作讨论</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css'>
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --accent-color: #E74C3C;
+            --secondary-color: #3498DB;
+            --success-color: #27AE60;
+            --warning-color: #F39C12;
+        }
+        .reveal {
+            font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            font-size: 24px;
+        }
+        .reveal h1 {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        .reveal h2 {
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+        .reveal h3 {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+            margin-bottom: 12px;
+        }
+        .reveal .slides section {
+            text-align: left;
+            padding: 20px;
+        }
+        .reveal .title-slide {
+            text-align: center;
+        }
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        .highlight-green {
+            color: var(--success-color);
+            font-weight: bold;
+        }
+        .box {
+            background-color: #f8f9fa;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 5px;
+        }
+        .stat-number {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        ul {
+            margin: 8px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+        .small-text {
+            font-size: 0.8em;
+        }
+        .framework-box {
+            background-color: #e8f4f8;
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class='reveal'>
+        <div class='slides'>
+
+            <!-- 封面 -->
+            <section class='title-slide'>
+                <h1>大模型跨语言文化价值观研究</h1>
+                <h3 style='color: #666; margin-top: 30px;'>阶段进展与论文写作讨论</h3>
+                <p style='margin-top: 50px; font-size: 0.9em;'>课题组阶段性汇报</p>
+                <p style='font-size: 0.8em; color: #888;'>2025年12月</p>
+            </section>
+
+            <!-- 目录 -->
+            <section>
+                <h2>汇报内容</h2>
+                <div style='margin-top: 40px;'>
+                    <ol style='font-size: 1.05em; line-height: 2;'>
+                        <li><span class='highlight'>研究内容与整体框架（四阶段设计 + Stage1–3 阶段结果）</span></li>
+                        <li><span class='highlight'>数据方法框架</span></li>
+                        <li><span class='highlight'>论文写作主线结构</span></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section>
+                <section>
+                    <h2>一、研究内容与整体框架</h2>
+                    <h3>1.2 研究设计</h3>
+                    <div style="font-size: 0.75em;">
+                        <!-- 四阶段流程图 -->
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin: 20px 0;">
+                            <div class="framework-box" style="flex: 1; margin: 0 5px; padding: 12px; text-align: center;">
+                                <h4 style="color: var(--accent-color); margin: 0 0 8px 0; font-size: 1em;">Stage 0</h4>
+                                <p style="font-weight: bold; margin: 0 0 5px 0; font-size: 0.95em;">文化坐标系基准</p>
+                                <p style="font-size: 0.85em; margin: 0;">基于WVS数据，使用PPCA获得<span class="highlight"></span>109个国家/地区</span>的文化坐标</p>
+                            </div>
+                            <div style="font-size: 2em; color: var(--secondary-color); font-weight: bold;">→</div>
+                            <div class="framework-box" style="flex: 1; margin: 0 5px; padding: 12px; text-align: center;">
+                                <h4 style="color: var(--accent-color); margin: 0 0 8px 0; font-size: 1em;">Stage 1</h4>
+                                <p style="font-weight: bold; margin: 0 0 5px 0; font-size: 0.95em;">模型价值观基线</p>
+                                <p style="font-size: 0.85em; margin: 0;">测试<span class="highlight">多个LLM</span>的原生价值倾向（无角色扮演）</p>
+                            </div>
+                            <div style="font-size: 2em; color: var(--secondary-color); font-weight: bold;">→</div>
+                            <div class="framework-box" style="flex: 1; margin: 0 5px; padding: 12px; text-align: center;">
+                                <h4 style="color: var(--accent-color); margin: 0 0 8px 0; font-size: 1em;">Stage 2</h4>
+                                <p style="font-weight: bold; margin: 0 0 5px 0; font-size: 0.95em;">全球文化模仿能力</p>
+                                <p style="font-size: 0.85em; margin: 0;"><span class="highlight">109国家/地区</span>角色扮演，统一使用英语</p>
+                            </div>
+                            <div style="font-size: 2em; color: var(--secondary-color); font-weight: bold;">→</div>
+                            <div class="framework-box" style="flex: 1; margin: 0 5px; padding: 12px; text-align: center;">
+                                <h4 style="color: var(--accent-color); margin: 0 0 8px 0; font-size: 1em;">Stage 3</h4>
+                                <p style="font-weight: bold; margin: 0 0 5px 0; font-size: 0.95em;">多语言对比实验</p>
+                                <p style="font-size: 0.85em; margin: 0;"><span class="highlight">多个国家/地区 × 多种语言</span>配对对照</p>
+                            </div>
+                        </div>
+
+                        <!-- 当前研究规模表格 -->
+                        <div class="box" style="margin-top: 20px; padding: 12px;">
+                            <p style="font-weight: bold; margin: 0 0 12px 0; font-size: 1.05em;">📈 当前研究规模</p>
+                            <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+                                <thead>
+                                    <tr style="background-color: var(--primary-color); color: white;">
+                                        <th style="padding: 8px; border: 1px solid #ddd; width: 20%;">研究阶段</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; width: 20%;">测试模型</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; width: 20%;">国家/地区</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; width: 20%;">语言</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; width: 20%;">数据规模</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center; background-color: #e8f4f8;"><strong>Stage 0</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">-</td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>109</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">-</td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">WVS Wave 7</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center; background-color: #fff3cd;"><strong>Stage 1</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>10</strong><br><span style="font-size: 0.85em;">(扩展至15-20)</span></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">-</td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">英语</td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">50条<br><span style="font-size: 0.85em;">(10模型×5次)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center; background-color: #d4edda;"><strong>Stage 2</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>10</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>109</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">英语</td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">~1090条<br><span style="font-size: 0.85em;">(109国×10模型)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center; background-color: #f8d7da;"><strong>Stage 3</strong></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>10</strong><br><span style="font-size: 0.85em;">(扩展至15-20)</span></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>34</strong><br><span style="font-size: 0.85em;">(扩展至50+)</span></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>10</strong><br><span style="font-size: 0.85em;">(扩展至15+)</span></td>
+                                        <td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><strong>669条</strong><br><span style="font-size: 0.85em;">(配对数据)</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="margin: 10px 0 0 0; font-size: 0.85em; color: #666; font-style: italic;">
+                                注：Stage 1和Stage 3的模型数、国家数、语言数均为当前规模，后续将持续扩展
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>一、研究内容与整体框架</h2>
+                    <h3>1.3 内在价值定位的系统性偏差（Stage1）</h3>
+                    <div class='small-text'>
+                        <div class='two-column' style='gap: 20px;'>
+                            <div style='display: flex; align-items: center; justify-content: center;'>
+                                <img src='../results/llm_values/llm_dashboard/cultural_map_with_llm.png' alt='LLM文化坐标图' style='width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>
+                            </div>
+                            <div style='max-width: 450px;'>
+                                <div class='box' style='padding: 10px; margin-bottom: 8px;'>
+                                    <p style='margin: 0 0 5px 0;'><strong>目标</strong></p>
+                                    <p style='font-size: 0.85em; margin: 0;'>识别大模型的内在价值定位，揭示其系统性偏差</p>
+                                </div>
+                                <div class='box' style='padding: 10px; margin-bottom: 8px;'>
+                                    <p style='margin: 0 0 5px 0;'><strong>方法</strong></p>
+                                    <ul style='font-size: 0.8em; line-height: 1.4; margin: 5px 0; padding-left: 18px;'>
+                                        <li>Stage 1：测试10个模型的原生价值倾向</li>
+                                        <li>映射到Inglehart-Welzel文化坐标</li>
+                                        <li>与109个国家/地区真实位置对比</li>
+                                    </ul>
+                                </div>
+                                <div class='box' style='border-left-color: var(--success-color); padding: 10px;'>
+                                    <p style='margin: 0 0 5px 0;'><strong>初步发现</strong></p>
+                                    <p style='font-size: 0.8em; line-height: 1.4; margin: 5px 0;'>
+                                        初步发现：在统一文化坐标系下，十个主流大模型的原生价值观几乎全部落在<span class='highlight'>“世俗理性”与“自我表达”</span>得分较高的右上象限，与西欧、北美国家的群体位置高度接近。
+                                        整体上，这些模型在传统/世俗理性与生存/自我表达两条维度上都表现出明显的自由主义、个人主义取向，呈现出系统性的<span class='highlight'>“西方中心化”</span>偏移趋势。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>一、研究内容与整体框架</h2>
+                    <h3>1.4 全球跨文化理解能力验证（Stage2）</h3>
+                    <div class='small-text'>
+                        <div class='two-column' style='gap: 20px;'>
+                            <div style='display: flex; align-items: center; justify-content: center;'>
+                                <img src="../results/analysis/visualization/Inglehart-Welzel Cutural Map with LLM Country Roleplay.png" alt='全球文化模仿能力' style='width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>
+                            </div>
+                            <div style='max-width: 450px;'>
+                                <div class='box' style='padding: 10px; margin-bottom: 8px;'>
+                                    <p style='margin: 0 0 5px 0;'><strong>目标</strong></p>
+                                    <p style='font-size: 0.85em; margin: 0;'>验证大模型在全球范围内的跨文化理解能力，识别文化表征的"盲区"和"强区"</p>
+                                </div>
+                                <div class='box' style='padding: 10px; margin-bottom: 8px;'>
+                                    <p style='margin: 0 0 5px 0;'><strong>方法</strong></p>
+                                    <ul style='font-size: 0.8em; line-height: 1.4; margin: 5px 0; padding-left: 18px;'>
+                                        <li>Stage 2：109个国家/地区角色扮演</li>
+                                        <li>统一使用英语，控制语言变量</li>
+                                        <li>覆盖八大文化区域</li>
+                                    </ul>
+                                </div>
+                                <div class='box' style='border-left-color: var(--success-color); padding: 10px;'>
+                                    <p style='margin: 0 0 5px 0;'><strong>初步发现</strong></p>
+                                    <p style='font-size: 0.8em; line-height: 1.4; margin: 5px 0;'>
+                                        初步发现：在 109 个国家/地区的角色扮演任务中，各模型的平均文化距离约为<span class='highlight'>2.3</span>，整体上能够在一定程度上迁移到目标国家的价值观位置。
+                                        不同模型之间存在明显差异，其中 Claude 与 Gemini 的文化距离大约在 2.1–2.2 之间，表现相对更好，印证了当前大模型已经具备<span class='highlight'>一定文化迁移能力</span>，但仍留有改进空间。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>一、研究内容与整体框架</h2>
+                    <h3>1.5 多语言对照实验与语言效应分析（Stage3）</h3>
+                    <div class='small-text'>
+                        <div style='display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 12px; max-width: 90%; margin-left: auto; margin-right: auto;'>
+                            <div class='box' style='padding: 8px;'>
+                                <p style='margin: 0 0 4px 0; font-size: 0.8em;'><strong>目标</strong></p>
+                                <p style='margin: 0; font-size: 0.7em; line-height: 1.3;'>揭示语言因素对模型文化表征的影响及其"他者叙事"机制</p>
+                            </div>
+                            <div class='box' style='padding: 8px;'>
+                                <p style='margin: 0 0 4px 0; font-size: 0.8em;'><strong>方法</strong></p>
+                                <p style='margin: 0; font-size: 0.7em; line-height: 1.3;'>Stage 3多语言对照实验：34国家/地区 × 10模型 × 10语言 = 669条配对数据</p>
+                            </div>
+                            <div class='box' style='padding: 8px; border-left-color: var(--success-color);'>
+                                <p style='margin: 0 0 4px 0; font-size: 0.8em;'><strong>初步发现</strong></p>
+                                <p style='margin: 0; font-size: 0.7em; line-height: 1.3;'>
+                                    初步发现：在多语言对照条件下，语言效应沿着从近东到远东的方向呈现出清晰的<span class='highlight'>地理梯度模式</span>：西亚、南亚等近东地区整体表现为轻微英语优势（约 +9.1%），
+                                    而俄罗斯、中国等位于中间地带的国家则接近零点，英语叙事与本土叙事相对均衡。
+                                    进一步看东亚地区，可以观察到显著的“殖民地–本土”分化：香港、新加坡等前殖民地呈现强烈的英语优势，日本、韩国等文化核心国家则更依赖本国语言，整体母语优势明显，提示地理位置与“他者化”程度之间具有正相关关系。
+                                </p>
+                            </div>
+                        </div>
+                        <h4 style='color: var(--secondary-color); margin: 10px 0;'>"他者效应"的地理梯度：从近东到远东</h4>
+                        <div class='two-column' style='gap: 20px;'>
+                            <div style='display: flex; flex-direction: column; align-items: center;'>
+                                <img src='../results/analysis/orientalism_analysis/geographic_gradient_trend.png' alt='从近东到远东的地理梯度' style='width: 100%; max-width: 480px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>
+                                <p style='font-size: 0.75em; margin-top: 8px; font-style: italic;'>图：从近到远的英语效应文化梯度</p>
+                            </div>
+                            <div style='max-width: 400px;'>
+                                <div class='box' style='padding: 8px; margin-bottom: 8px;'>
+                                    <p style='margin: 0 0 5px 0; font-size: 0.8em;'><strong>近东地区（西亚南亚）</strong></p>
+                                    <p style='margin: 0; font-size: 0.7em; line-height: 1.3;'>轻微英语优势（+9.1%）。地理和文化上相对接近西方，但语言训练数据稀缺，英语叙事仍占优势</p>
+                                </div>
+                                <div class='box' style='padding: 8px; margin-bottom: 8px;'>
+                                    <p style='margin: 0 0 5px 0; font-size: 0.8em;'><strong>中间地带（东正教/儒家文化圈）</strong></p>
+                                    <p style='margin: 0; font-size: 0.7em; line-height: 1.3;'>接近零点（-3%左右）。俄罗斯、中国等大国拥有丰富本土语料，英语叙事和本土叙事相对均衡</p>
+                                </div>
+                                <div class='box' style='padding: 8px; margin-bottom: 8px; border-left-color: var(--accent-color);'>
+                                    <p style='margin: 0 0 5px 0; font-size: 0.8em;'><strong>远东核心（东亚地区）</strong></p>
+                                    <p style='margin: 0; font-size: 0.7em; line-height: 1.3;'>显著的"殖民地-本土"分化。前殖民地（香港+48%、新加坡+25%）英语优势强烈，文化核心国家（日本-24%、韩国-0.1%）母语优势明显</p>
+                                </div>
+                                <div class='box' style='border-left-color: var(--success-color); padding: 7px;'>
+                                    <p style='margin: 0; font-size: 0.7em; line-height: 1.3;'><strong>💡 理论意义</strong>：地理距离与"他者化"程度正相关，但强大的本土文化输出能力可以抵抗"他者化"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- 第二部分：数据流程与计算方法 -->
+            <section>
+                <section>
+                    <h2>二、数据方法框架</h2>
+                    <h3>2.1 数据来源与处理流程</h3>
+                    <div class="small-text">
+                        <div class="two-column" style="gap: 20px;">
+                            <!-- 左侧：数据来源与处理流程图（脚本生成） -->
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="../results/analysis/visualization/fig2_data_pipeline_ppt.png" alt="数据来源与处理流程图" style="width: 100%; max-width: 520px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.12);">
+                                <p style="font-size: 0.8em; margin-top: 8px; font-style: italic;">数据来源与处理流程图</p>
+                            </div>
+                            <!-- 右侧：说明 -->
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="box" style="padding: 10px; margin-bottom: 10px; max-width: 450px;">
+                                    <p style="margin: 0 0 6px 0; font-size: 0.85em;"><strong>数据来源</strong></p>
+                                    <p style="margin: 0; font-size: 0.73em; line-height: 1.4;">本研究的数据主要来自两个部分：一是WVS第七波覆盖109个国家/地区的标准化问卷数据，作为人类价值观的参照坐标；二是各阶段（Stage1基线、Stage2全球文化模仿、Stage3多语言对照）的大语言模型回答。所有人类数据和模型输出最终都被映射到相同的10个核心价值观题目上，并按照WVS的原有编码体系（如1-4/1-10量表）进行统一数值化处理。目前实验结果基于约10个主流模型与10种语言，后续计划扩展到约19个模型与11种语言，以提高结论的稳健性与代表性。</p>
+                                </div>
+                                <div class="box" style="padding: 10px; border-left-color: var(--success-color); max-width: 450px;">
+                                    <p style="margin: 0 0 6px 0; font-size: 0.85em;"><strong>合并数据</strong></p>
+                                    <p style="margin: 0; font-size: 0.73em; line-height: 1.4;">在完成文本到数值的转换后，将WVS基准数据与各阶段LLM测试数据合并到同一个数据矩阵中：行对应国家/地区或具体模型测试实例，列对应10个价值观题目的数值答案。仅保留至少回答了6/10题的记录，剔除超出合理范围的异常值，并在数据清洗完成后再次检查这一门槛，从而确保不同模型和语言条件下的结果具有可比性。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>二、数据方法框架</h2>
+                    <h3>2.2 价值观计算方法</h3>
+                    <div class="small-text">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+                            <!-- 上方：价值观计算方法图 -->
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="../results/analysis/visualization/fig3_ppca_ppt.png" alt="价值观计算方法图" style="width: 100%; max-width: 520px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.12);">
+                                <p style="font-size: 0.8em; margin-top: 8px; font-style: italic;">图9. 价值观计算方法示意图</p>
+                            </div>
+                            <!-- 下方：与图对应的三个文字框 -->
+                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%; max-width: 880px;">
+                                <div class="box" style="padding: 10px;">
+                                    <p style="margin: 0 0 6px 0; font-size: 0.85em;"><strong>统一文化坐标系</strong></p>
+                                    <p style="margin: 0; font-size: 0.73em; line-height: 1.4;">沿用 Inglehart-Welzel 的两条维度：横轴“生存—自我表达”、纵轴“传统—世俗理性”，先在 WVS 人类数据上学习各国稳定位置，作为后续比较模型的理论基准。</p>
+                                </div>
+                                <div class="box" style="padding: 10px; border-left-color: var(--secondary-color);">
+                                    <p style="margin: 0 0 6px 0; font-size: 0.85em;"><strong>PPCA 模型与缺失处理</strong></p>
+                                    <p style="margin: 0 0 4px 0; font-size: 0.73em; line-height: 1.4;">在“10 题回答矩阵 X（人类+模型）”上拟合 PPCA，在概率框架下自然处理拒答等缺失，同时提取二维潜在因子 (PC1, PC2)。</p>
+                                    <p style="margin: 2px 0 0 0; font-size: 0.73em; font-family: 'Times New Roman', serif; text-align: left;">X = CZ + μ + ε，&nbsp;Z ~ N(0, I)，&nbsp;ε ~ N(0, σ²I)</p>
+                                </div>
+                                <div class="box" style="padding: 10px; border-left-color: var(--accent-color);">
+                                    <p style="margin: 0 0 6px 0; font-size: 0.85em;"><strong>对齐人类与模型坐标</strong></p>
+                                    <p style="margin: 0; font-size: 0.73em; line-height: 1.4;">先只用 WVS 拟合并确定缩放参数，再将 Stage1/2/3 模型样本投射到同一二维坐标，使人类国家点与不同模型、不同语言条件下的输出点在同一文化地图上直接比较。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>二、数据方法框架</h2>
+                    <h3>2.3 核心指标与分析策略</h3>
+                    <div class="small-text">
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <!-- 上半部分：左图 + 右侧两个指标框 -->
+                            <div class="two-column" style="gap: 20px; align-items: flex-start;">
+                                <!-- 左上：图 -->
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <img src="../results/analysis/visualization/fig4_metrics_ppt.png" alt="文化距离与英语优势示意图" style="width: 100%; max-width: 520px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.12);">
+                                    <p style="font-size: 0.8em; margin-top: 8px; font-style: italic;">图10. 文化距离与英语优势示例图</p>
+                                </div>
+                                <!-- 右上：文化距离 + 英语优势（上下排列） -->
+                                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                                    <!-- 文化距离 -->
+                                    <div class="box" style="padding: 10px; max-width: 450px;">
+                                        <p style="margin: 0 0 6px 0; font-size: 0.85em;"><strong>文化距离</strong></p>
+                                        <p style="margin: 0; font-size: 0.73em; line-height: 1.4;">在统一的二维文化坐标系中，用<strong>文化距离</strong>衡量模型在某一国家/地区场景下的模拟回答，与该国真实位置之间的偏差大小。</p>
+                                        <p style="margin: 4px 0 0 0; font-size: 0.73em; font-family: 'Times New Roman', serif; text-align: center; white-space: nowrap;">d(A,B) = √[(PC1<sub>A</sub> − PC1<sub>B</sub>)² + (PC2<sub>A</sub> − PC2<sub>B</sub>)²]</p>
+                                    </div>
+                                    <!-- 英语优势 -->
+                                    <div class="box" style="padding: 10px; border-left-color: var(--secondary-color); max-width: 450px;">
+                                        <p style="margin: 0 0 6px 0; font-size: 0.85em;"><strong>英语优势</strong></p>
+                                        <p style="margin: 0; font-size: 0.73em; line-height: 1.4;"><strong>英语优势</strong>（English Advantage）比较同一模型在英语与母语两种条件下的文化距离变化，用相对缩短或拉长的幅度来刻画语言效应。</p>
+                                        <p style="margin: 4px 0 0 0; font-size: 0.73em; font-family: 'Times New Roman', serif; text-align: center; white-space: nowrap;">Adv = (d<sub>native</sub> − d<sub>english</sub>) / d<sub>native</sub></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 下半部分：多模型与多语言对比策略（单独一行） -->
+                            <div style="display: flex; justify-content: center;">
+                                <div class="box" style="padding: 10px; border-left-color: var(--accent-color); max-width: 900px; width: 100%;">
+                                    <p style="margin: 0 0 6px 0; font-size: 0.85em;"><strong>🔁 多模型与多语言对比策略</strong></p>
+                                    <p style="margin: 0; font-size: 0.73em; line-height: 1.4;">在统一坐标系和统一指标下，横向比较不同大模型在同一国家/地区上的表现差异，纵向比较同一模型在英语与多种母语条件下的文化距离和英语优势分布。通过对比不同模型家族、不同语言组合和不同题目子集上的结果，检验有关模型的跨文化、跨语言模仿能力。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- 第三部分：论文写作主线结构 -->
+            <section>
+                <section>
+                    <h2>三、论文写作主线结构</h2>
+                    <div class='small-text'>
+                        <div class='box' style='margin-bottom: 12px;'>
+                            <p style='margin: 0 0 4px 0;'><strong>整体研究路径（Stage0–Stage3）：</strong></p>
+                            <ul style='margin: 0; padding-left: 20px; font-size: 0.85em; line-height: 1.5;'>
+                                <li>Stage0：复现 WVS 价值观文化地图，构建统一的二维文化坐标系。</li>
+                                <li>Stage1：在该坐标系中评价各大模型的原生价值观位置，刻画“价值观原点”。</li>
+                                <li>Stage2：让模型用英语扮演 100+ 国家居民，测试英语单语条件下的全球文化模仿能力。</li>
+                                <li>Stage3：在英语 vs 母语等多语言条件下扮演各国居民，一方面对比 Stage0 看“英语优势”，另一方面对比 Stage1 看“跨文化模仿能力”。</li>
+                            </ul>
+                        </div>
+                        <div class='two-column' style='gap: 18px;'>
+                            <div>
+                                <div class='box'>
+                                    <p style='margin: 0 0 6px 0;'><strong>方向一：</strong>Cross-lingual Cultural Value Expression & Global English Advantage</p>
+                                    <ul>
+                                        <li>核心：Stage0 + Stage2 + Stage3。</li>
+                                        <li>聚焦：全球英语优势格局与跨语言文化表达，突出语言维度的系统性效应。</li>
+                                        <li>问题侧重点：在<strong>固定模型</strong>的前提下，比对不同语言条件下对同一国家的文化表征差异。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class='box' style='border-left-color: var(--secondary-color);'>
+                                    <p style='margin: 0 0 6px 0;'><strong>方向二：</strong>From Native Bias to Cross-cultural Mobility of LLMs</p>
+                                    <ul>
+                                        <li>核心：Stage1 + Stage3（可辅以 Stage2 全局基线）。</li>
+                                        <li>聚焦：原生价值偏差与跨文化移动能力，突出模型维度的差异。</li>
+                                        <li>问题侧重点：在<strong>固定国家/语言</strong>的前提下，比对不同模型在原生位置与跨文化迁移上的差异。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='box' style='margin-top: 12px;'>
+                            <p style='margin: 0 0 4px 0;'><strong>Methods 概要：</strong></p>
+                            <ul style='margin: 0; padding-left: 20px; font-size: 0.8em; line-height: 1.4;'>
+                                <li>WVS 与二维文化坐标系；PPCA + Varimax + Rescale。</li>
+                                <li>数据：109 国/地区真实坐标（Stage0）；当前：10 模型 × 109 国/地区 × 英语角色扮演 + 10 模型 × 34 国/地区 × 10 语言对照（Stage2/3）；规划：扩展至约 19 个模型和 11 种语言。</li>
+                                <li>核心指标：文化距离与英语优势。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>三、论文写作主线结构：两个论文方向的章节结构</h2>
+                    <div class='small-text'>
+                        <div class='two-column' style='gap: 20px;'>
+                            <!-- 左侧：方向一章节结构 -->
+                            <div>
+                                <div class='box'>
+                                    <p style='margin: 0 0 6px 0;'><strong>方向一：英语优势与跨语言表达</strong></p>
+                                    <ul>
+                                        <li><strong>Introduction：</strong>
+                                            <ul>
+                                                <li>问题：在<strong>固定模型</strong>的前提下，不同语言条件下对同一国家的价值观表征是否一致？</li>
+                                                <li>缺口：现有工作多基于英语单语或局部样本，缺乏在全球尺度上系统比较英语与多种母语的研究。</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Results：</strong>
+                                            <ul>
+                                                <li>基于 Stage2/3 的全球英语优势总体结果，作为后续区域分析的整体背景。</li>
+                                                <li>以东亚为核心分析区域：前殖民地/深受英语影响地区（如香港、新加坡等）与本土文化核心国家（如日本、韩国、中国大陆）在英语 vs 母语条件下的强对比，呈现清晰的“殖民地–本土”分化。</li>
+                                                <li>其他区域（俄语区、阿拉伯、西班牙语区等）的对照与稳健性检验，补充全球范围内语言效应的空间分布图景。</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Discussion：</strong>语言效应机制，对模型设计与部署的启示与局限。</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 右侧：方向二章节结构 -->
+                            <div>
+                                <div class='box' style='border-left-color: var(--secondary-color);'>
+                                    <p style='margin: 0 0 6px 0;'><strong>方向二：原生偏差与跨文化移动能力</strong></p>
+                                    <ul>
+                                        <li><strong>Introduction：</strong>
+                                            <ul>
+                                                <li>问题：在<strong>固定国家/语言</strong>的前提下，不同大模型的原生位置与跨文化模仿能力有何差异？</li>
+                                                <li>动机：仅看原生价值观不足以评估模型在跨文化场景中的可靠性，需要同时刻画“价值观原点”和“可移动性”。</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Results：</strong>
+                                            <ul>
+                                                <li>基于 Stage1 的十模型原生位置分布与典型偏差模式。</li>
+                                                <li>基于 Stage3 的跨文化能力排名与三种策略类型（如“保守型”“激进迁移型”等）。</li>
+                                                <li>原生位置与跨文化能力之间的不等价关系，以及与 Stage2 英语单语基线的对照。</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Discussion：</strong>对模型评估指标体系、模型选择与应用场景匹配的启示。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js'></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: false,
+            progress: false,
+            center: false,
+            width: 1280,
+            height: 720,
+            margin: 0.04
+        });
+    </script>
+</body>
+</html>

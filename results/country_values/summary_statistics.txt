@@ -1,0 +1,29 @@
+Country Values Analysis Summary
+==================================================
+
+Total countries: 109
+
+Countries by Cultural Region:
+  African-Islamic: 25
+  West & South Asia: 17
+  Catholic Europe: 16
+  Orthodox Europe: 16
+  Latin America: 15
+  Protestant Europe: 8
+  Confucian: 7
+  English-Speaking: 5
+
+Principal Component Statistics:
+PC1 range: [-2.11, 4.50]
+PC2 range: [-2.73, 2.34]
+
+Detailed Statistics:
+       country_code  PC1_rescaled  PC2_rescaled     Numeric
+count    109.000000    109.000000    109.000000  109.000000
+mean     440.899083      0.205466     -0.245080  440.899083
+std      255.711388      1.572447      1.239368  255.711388
+min        8.000000     -2.114762     -2.727320    8.000000
+25%      233.000000     -0.921957     -1.278253  233.000000
+50%      428.000000     -0.154908     -0.370532  428.000000
+75%      643.000000      0.756755      0.870571  643.000000
+max      894.000000      4.495348      2.338695  894.000000

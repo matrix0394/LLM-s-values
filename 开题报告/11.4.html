@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Author" content="寻曦">
+  <meta name="LastAuthor" content="Microsoft Office User">
+  <meta name="CreationTime" content="2025-11-04T22:32:00Z">
+  <meta name="ModificationTime" content="2025-11-04T22:32:00Z">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px Times; color: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; min-height: 14.0px}
+    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><b>开题报告：大模型价值观的评价方法</b></p>
+<p class="p2"><b>一、 立题依据</b></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/01_liti_cultural_map.png" alt="国家文化地图基准" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图1 国家文化地图（WVS 基准）</i></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/02_liti_llm_vs_countries.png" alt="LLM 与各国对齐程度" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图2 LLM 与各国对齐程度对比</i></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/03_liti_multilingual_cultural_map.png" alt="多语言文化图" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图3 多语言条件下的文化分布概览</i></p>
+<ul class="ul1">
+  <li class="li2"><b>研究目的与意义</b></li>
+</ul>
+<p class="p2">近年来，大型语言模型（LLM）持续迭代，从ChatGPT、Claude到文心一言、Deepseek，这些模型已广泛应用于教育、医疗、法律咨询等关键领域。然而，大型语言模型并非价值中立的工具 [8]，它们在训练过程中从海量文本数据中习得了隐含的价值观和文化偏见 [3，11]。如果缺乏有效评估，这些价值立场可能在实际应用中带来潜在风险 [1]。</p>
+<p class="p2">目前，大模型价值观评估面临三重挑战：一是缺乏系统化的量化指标体系 [21]，难以比较不同模型间的价值倾向；二是跨文化评估方法不足 [16]，现有研究多基于单一文化视角；三是语言因素与对齐策略的交互机制尚不明确 [27]，制约了针对性改进措施的制定。</p>
+<p class="p2">为此，本研究旨在建立一套系统化的“大模型价值观评价方法”。该方法以世界价值观调查（World Value Survey）为基准 [12，13]，设计大模型访谈问卷和评价流程，构建从概念界定、测量实施到分析报告的全流程评估体系。我们计划引入WVS成熟量表 [12]，在可解释的文化维度空间中，采用连续型“文化距离”指标，量化模型与人类价值图谱的契合程度 [20]。评估流程采用基线测量、跨文化一致性和语言效应检验的递进范式，确保方法在多模型、多语言环境下的稳健性与可扩展性 [23]。</p>
+<p class="p2">在应用层面，本评估框架可为大模型在真实场景中的价值对齐提供实践指导 [4，8]。通过将模型响应与文化语境要求对照，形成可供核查的量化证据。评估过程将完整记录模型版本、提示模板等关键参数，有助于开发团队精准调整训练数据，削弱文化偏见。这套可比较的指标体系，不仅能为跨国产品的本地化部署提供决策依据，也可为高敏感行业的风险管控提供技术支持 [5]，从而推动人工智能发展生态的形成。</p>
+<ul class="ul1">
+  <li class="li2"><b>国内外研究现状和发展趋势</b></li>
+</ul>
+<p class="p2">随着大语言模型能力不断提升，其社会影响评估已成为全球学术界关注的焦点 [3]。国际研究正从初期的风险警示 [1]，逐步转向系统化评估框架的构建 [2]。</p>
+<p class="p2">在基础性研究方面，Bender等人（2021）在《Stochastic Parrots》中指出 [1]，大规模训练会系统性放大语料中的社会偏见，凸显了数据治理的紧迫性。斯坦福大学CRFM团队发布的基础模型风险评估报告[3] 则系统阐述了模型能力的外溢效应，强调评估体系需超越传统的准确率指标 [22]，全面涵盖公平性、鲁棒性等社会影响维度 [10]。</p>
+<p class="p2">在价值观测量领域，Blodgett等（2020）对自然语言处理中的偏见研究进行了批判性回顾 [9]，指出当前以刻板印象检测为主的度量方法难以支撑深层的价值判断分析。尽管CrowS-Pairs [17] 和StereoSet [18] 等基准数据集在群体偏见探测方面取得了一定进展，但对价值立场的强度测量仍显不足。学界也开发了如BBQ [19] 等更复杂的基准来衡量模型在歧义情境下的偏见。近年来，文化视角的评估研究逐渐兴起 [16]，例如Tao等（2024）对大模型文化对齐度的评估 [14]，以及Dwivedi-Yu等（2023）对语言资源与文化保真度关联的探讨 [15]，共同揭示了模型在不同文化语境中的系统性差异。</p>
+<p class="p2">值得注意的是，评测方法正呈现标准化与跨学科融合的趋势。世界价值观调查（WVS） [13] 等长期人类价值观研究为模型评估提供了宝贵的基准数据，使模型输出与人类价值图谱的跨文化比较成为可能 [31]。在方法学层面，验证性因子分析、项目反应理论 [24，29] 等心理测量方法被引入，与自然语言处理技术形成互补；测量等值性检验 [25] 等统计方法则确保了跨语言比较的有效性。在工程实践中，自动化评估流水线和版本化管理成为保证结果可复现、过程可审计的重要支撑 [22]。</p>
+<p class="p2">在此背景下，本研究拟将人类价值观调查数据作为统一参照系，通过构建多维指标体系，将模型在不同语言和文化语境中的表现映射到可比较的度量空间，从而连接文化理论与统计检验，实现评估过程的体系化，为全球人工智能治理提供方法论支持 [30]。</p>
+<ul class="ul1">
+  <li class="li2"><b>主要参考文献目录</b></li>
+</ul>
+<p class="p2">[1] Bender E M, Gebru T, McMillan-Major A, et al. On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?[C]. Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21), 2021: 610–623.</p>
+<p class="p2">[2] Bommasani R, Hudson D A, Adeli E, et al. On the Opportunities and Risks of Foundation Models[C/OL]. arXiv:2108.07258, 2021.</p>
+<p class="p2">[3] Weidinger L, Mellor J, Rauh M, et al. Ethical and social risks of harm from Language Models[C/OL]. arXiv:2112.04359, 2021.</p>
+<p class="p2">[4] Bai Y, Kadavath S, Woodside S, et al. Constitutional AI: Harmlessness from AI Feedback[C/OL]. arXiv:2212.08073, 2022.</p>
+<p class="p2">[5] Perez E, Ringer N, Lukoianov P, et al. Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned[C/OL]. arXiv:2209.07858, 2022.</p>
+<p class="p2">[6] Lin S, Hilton J, Evans O. TruthfulQA: Measuring How Models Mimic Human Falsehoods[C]. Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL 2022), 2022: 4843–4857.</p>
+<p class="p2">[7] Madaan A, Tandon A, Ladhak F, et al. Self-Correction in Large Language Models[C/OL]. arXiv:2305.13169, 2023.</p>
+<p class="p2">[8] Gabriel I. Artificial Intelligence, Values, and Alignment[J]. Minds and Machines, 2020, 30(3): 411-437.</p>
+<p class="p2">[9] Blodgett S L, Barocas S, Daumé III H, et al. Language (Technology) is Power: A Critical Survey of “Bias” in NLP[C]. Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020), 2020: 5454–5476.</p>
+<p class="p2">[10] Gallegos J, Tello J, Muneera K, et al. Bias and Fairness in Large Language Models: A Survey[J]. ACM Computing Surveys, 2024, 56(6): 1-38.</p>
+<p class="p2">[11] Schramowski P, Turan C, Rashedi Y, et al. Large pre-trained language models contain human-like biases[C]. Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency (FAccT '22), 2022: 624–637.</p>
+<p class="p2">[12] Inglehart R, Welzel C. Modernization, Cultural Change, and Democracy: The Human Development Sequence[M]. Cambridge University Press, 2005.</p>
+<p class="p2">[13] Haerpfer C, Inglehart R, Moreno A, et al. World Values Survey Wave 7 (2017-2022) Cross-National Data-Set[DB/OL]. Madrid &amp; Vienna: JD Systems Institute, 2022.</p>
+<p class="p2">[14] Tao S, Zhang Y, Zhang S, et al. Cultural Bias and Cultural Alignment of Large Language Models[C/OL]. arXiv:2403.01026, 2024.</p>
+<p class="p2">[15] Dwivedi-Yu J, Chen Y, Wang Z, et al. Cultural Fidelity in Large-Language Models: An Evaluation of Online Language Resources as a Driver of Model Performance in Value Representation[C/OL]. arXiv:2312.06208, 2023.</p>
+<p class="p2">[16] Cao P, Zhang B, Shi Z, et al. A Survey of Cultural Awareness in Language Models[C/OL]. arXiv:2407.12461, 2024.</p>
+<p class="p2">[17] Nangia N, Vania C, Bhalerao R, et al. CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models[C]. Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020), 2020: 1953–1967.</p>
+<p class="p2">[18] Nadeem M, Bethke A, Reddy S. StereoSet: Measuring stereotypical bias in pretrained language models[C]. Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics (ACL-IJCNLP 2021), 2021: 5356–5371.</p>
+<p class="p2">[19] Parrish A, Chen M, Waseem Z, et al. BBQ: A Hand-Built Bias Benchmark for Question Answering[C]. Findings of the Association for Computational Linguistics: ACL 2022, 2022: 1636–1651.</p>
+<p class="p2">[20] Zhao M, Li R, Liu D, et al. WorldValuesBench: A Large-Scale Benchmark Dataset for Multi-Cultural Value Awareness of Language Models[C]. Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), 2024.</p>
+<p class="p2">[21] Chang Y, Wang X, Wang J, et al. A Survey on Evaluation of Large Language Models[C/OL]. arXiv:2307.03109, 2023.</p>
+<p class="p2">[22] Ribeiro M T, Wu T, Guestrin C, et al. Beyond Accuracy: Behavioral Testing of NLP Models with CheckList[C]. Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020), 2020: 4902–4912.</p>
+<p class="p2">[23] Talat Z, Zhao J, Sikka K, et al. You reap what you sow: On the challenges of bias evaluation under multilingual settings[C]. Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency (FAccT '22), 2022: 1980–1990.</p>
+<p class="p2">[24] Lalor J P, Yu H. Item Response Theory for Natural Language Processing[C]. Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: Tutorial Abstracts (EACL 2024), 2024.</p>
+<p class="p2">[25] Measurement Invariance in Cross-Lingual NLP[C]. Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP 2022), 2022.</p>
+<p class="p2">[26] Li Y, Zhang K, Du Y, et al. Role-Playing with Large Language Models[C/OL]. arXiv:2305.16367, 2023.</p>
+<p class="p2">[27] Understanding Cross-Lingual Alignment—A Survey[C/OL]. arXiv:2404.06228, 2024.</p>
+<p class="p2">[28] Leveraging Large Language Models for NLG Evaluation: A Survey[C/OL]. arXiv:2401.07103, 2024.</p>
+<p class="p2">[29] Psychometric Evaluation of Large Language Model Embeddings for Personality Trait Prediction[J]. Journal of Medical Internet Research, 2024.</p>
+<p class="p2">[30] Hendrycks D, Burns C, Kadavath S, et al. Aligning AI with Shared Human Values[C/OL]. arXiv:2008.02275, 2020.<span class="Apple-converted-space"> </span></p>
+<p class="p2">[31]<span class="Apple-converted-space">  </span>Mi Z, Zhang Z, Meng F, et al. Benchmarking Multi-National Value Alignment for Large Language Models[C/OL]. arXiv:2404.09506, 2024.</p>
+<p class="p2"><b>二、 内容目标</b></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/11_mubiao_stage_distance.png" alt="阶段距离分析" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图4 核心指标：阶段对比的文化距离分析</i></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/12_mubiao_language_distance.png" alt="语言距离比较" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图5 语言因素：母语 vs 英语 的距离比较</i></p>
+<ul class="ul1">
+  <li class="li2"><b>研究内容</b></li>
+</ul>
+<p class="p2">本研究主要关注大模型价值观的评价方法，尝试建立一套兼具科学性和操作性的评估体系。我们从实际应用出发，结合已有的跨语言评测经验，将抽象的价值观概念转化为具体可测的指标。</p>
+<p class="p2">评估内容选自世界价值观调查（WVS）的十个核心问题 [13]，覆盖社会规范、制度认同、个人与集体关系、风险偏好等多个价值维度。这些问题涉及幸福感、社会信任、政治参与等多个层面，能够较全面地反映模型的价值倾向。</p>
+<p class="p2">问卷设计上，我们尽量保持与原始题目在语义上的一致。每个问题都配有具体情境描述，引导模型在接近真实场景中表达立场，而非仅作抽象讨论 [6]。为了测试模型对提问方式的敏感程度，每个问题还设计了多种表达形式。对于文化特定概念，我们采用“注释+定义”的方式帮助模型理解，减少因概念模糊带来的偏差。</p>
+<p class="p2">在进行多语言测试时，我们只对四种语言进行必要的语境适配，确保各语言版本在核心含义上保持一致。所有题目、注释和示例均纳入版本管理，每次修改都有记录，保证评估过程的可追溯性。</p>
+<p class="p2">我们为每次评估设定了一个质量门槛：只有当模型在十个问题中至少回答六个，该次评估才被视为有效。这样既考虑到模型可能在部分问题上选择回避，也保证了不同模型间结果的可比性。</p>
+<p class="p2">评估流程主要包括数据采集、结果分析和报告生成三个阶段。数据采集时会记录提问模板、随机种子等参数，在保证可重复的前提下 [22]，也保留对模型表现稳定性观察的空间。分析阶段会对模型的直接答案和解释理由分别处理：标准化答案转为数值，自由文本则结合自动化分析与人工抽检进行分类整理。报告生成时，除展示各题得分和总体评价外，也会说明模型在不同语言环境中的差异 [23]，并将模型的回避行为单独分析，避免将策略性选择误判为能力问题。</p>
+<p class="p2">在分析方法上，我们借鉴世界价值观调查的成熟框架 [12]，将模型回答映射到“传统-现代”与“生存-自我表达”两个基础维度构成的坐标空间中。该空间基于长期人类价值观数据建立 [13]，无需重新构建，即可将模型表现与已有参照系直接对比 [20]。所选十个问题覆盖多个价值维度，为理解模型价值取向提供了较充分的信息基础。</p>
+<p class="p2">整个评估过程中，四种语言环境在问题表述、测试条件和参数设置上保持一致，以确保观察到的差异确实源于语言因素 [23]。对回答率较低的问题或模型会做专门分析，区分能力不足与策略选择。最终报告会明确标注不宜直接比较的项目，并说明数据排除原因，避免结果被误解。通过这样系统而可控的设计，我们将价值观这一复杂主题的评估变得可重复、可检验。</p>
+<ul class="ul1">
+  <li class="li2"><b>研究目标与效果</b></li>
+</ul>
+<p class="p2">本研究的核心目标已通过递进式实验基本实现，取得以下实证发现：</p>
+<p class="p2"><b>2.1内在价值定位的系统性偏差</b></p>
+<p class="p2">在研究的第一阶段，我们基于世界价值观调查（WVS）的核心问题，对七个主流大语言模型进行了价值定位分析。通过将模型回答映射至Inglehart-Welzel文化坐标图中，发现这些模型普遍表现出较强的“世俗理性”与“自我表达”倾向，整体分布集中在坐标系的右上象限，与西欧、北美等地区的人类价值观特征较为接近。该结果反映出当前主流大模型在价值基础上存在一定程度的“西方中心化”偏移，提示其训练数据与价值生成机制可能带有结构性文化偏向。</p>
+<p class="p2"><b>2.2全球范围的跨文化理解能力验证</b></p>
+<p class="p2">第二阶段设计了覆盖全球范围的模拟实验，要求模型以英语模拟109个国家公民的价值观回答，涉及八个主要文化区域，共约770个角色实例。实验发现，模型总体上具有一定跨文化理解能力，平均文化距离约为2.3。其中表现较好的模型如Claude 3.7与Gemini 2.0，在模拟不同国家时的平均距离为2.1至2.2，能够较好地复现不同文化背景下的价值观特征。这说明尽管模型整体价值倾向偏西方，但其训练语料中仍包含较丰富的全球文化知识，具备一定的文化迁移能力。</p>
+<p class="p2"><b>2.3多语言对照实验与主要发现</b></p>
+<p class="p2">第三阶段的研究聚焦于语言因素的影响机制。我们针对32个国家（7种语言）与7个模型（共434个测试实体）进行了多语言对照实验。通过引入中性提示词的设计（如“请扮演该国的一位典型公民”），模型在母语环境下的文化模拟准确度显著提升，成功将“英语悖论”偏差从12%降低至约3%，改善幅度达75%。</p>
+<p class="p2">进一步分析发现，当提示词中加入“文化标签化”描述（例如“该国强调集体主义”）时，模型的文化拟合表现反而下降，而中性提示词的效果更佳。这表明模型内部已经学习到较为复杂的文化表征结构，外部人为标签可能干扰其原有认知机制。</p>
+<p class="p2">语言效应还表现出文化依赖性。例如，在天主教欧洲地区，模型在母语测试中表现更好，文化距离缩小42%；而在儒家文化圈（特别是港台澳地区），则出现英语优势，文化距离增加28.5%。这说明“英语悖论”并非普遍存在，其表现与语言资源分布及文化结构密切相关。</p>
+<p class="p2">本研究还识别出一种“自指偏差”现象：模型在模拟英语国家时的文化距离（平均3.21）明显高于非英语国家（平均1.94），其中美国偏差最大（4.01）。这暗示模型在处理与自身文化背景相近的内容时，可能产生理想化倾向，将英语文化表征为高度世俗和自我表达的理想型态，而忽略现实多样性。</p>
+<p class="p2">对港澳台地区对专项分析也呼应了这一发现，理梯度分析显示，从地理与文化上更接近西方的地区到东亚地区，模型的“英语优势”呈明显递增趋势。这一模式与爱德华·萨义德（Edward Said）提出的“他者理论”有所契合，进一步揭示出模型的文化表征机制实际上受到训练数据地理分布与语料质量的系统性影响。</p>
+<ul class="ul1">
+  <li class="li2"><b>拟解决的关键科学问题</b></li>
+</ul>
+<p class="p2">本研究需解决以下几个关键科学问题：</p>
+<p class="p2">首先是如何将抽象的价值概念转化为可测量的具体指标 [8]。价值观本身具有多维度和复杂性 [6]，传统的对错判断[7]难以充分反映其内涵。我们尝试借助WVS的十个核心题目，结合模型的回答与推理过程[7]，在保持评估效率的同时尽可能保留完整信息。后续还将通过统计分析，识别哪些问题更能反映核心价值维度，哪些容易受到具体情境干扰，从而在把握整体趋势的基础上理解具体差异。</p>
+<p class="p2">跨文化比较中的等值性也是需要克服的难点 [23]。由于同一问题在不同文化中可能被赋予不同含义，我们采用专业翻译流程配合统计检验的方法进行处理：在文本层面确保术语准确和概念一致，在数据分析阶段则使用测量等值性检验[25] 来确定不同语言版本的可比性范围。当某些问题确实难以直接对比时，我们会明确标注其局限性，避免结果被误读。</p>
+<p class="p2">另一个关键点在于如何区分模型的真实能力与策略性选择。测试中模型可能回避某些问题，这既可能是能力局限，也可能是安全机制触发的策略行为 [4]。为了厘清具体原因，我们设计了一系列测试方法，包括调整提问方式、补充背景信息等，通过观察模型的回应模式来判断其动机。策略性回避将被视为一个独立分析维度，以确保对模型核心能力的评估不受干扰。</p>
+<p class="p2">语言因素对模型表现的影响也值得深入探讨。同一模型在不同语言环境下常出现表现差异，但其成因尚不明确。我们计划通过严格控制实验条件，将语言变量独立出来进行系统观察。结合训练数据来源等信息，不仅能够确认差异是否存在，还可以进一步探究其背后原因，例如训练数据的质量[15]、语言结构特性，或是安全策略在不同语言中的实施不一致等。</p>
+<p class="p2"><b>三、 方案设计</b></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/23_fangfa_method_flowchart.png" alt="方法流程图" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图6 方法与系统流程图（数据→访谈→筛选→建模→评估→报告）</i></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/21_fangfa_quality_filter_comparison.png" alt="质量过滤比较" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图7 质量过滤策略对比</i></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/22_fangfa_quality_distance_scatter.png" alt="质量与距离散点" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图8 质量与文化距离关系</i></p>
+<ul class="ul1">
+  <li class="li2"><b>研究方法</b></li>
+</ul>
+<p class="p2">本研究采用系统化的研究方法，主要包括问卷调查法、实验法、比较分析法与统计分析法，构建完整的大模型价值观评估体系。</p>
+<p class="p2"><b>1.1问卷调查法</b></p>
+<p class="p2">本研究以世界价值观调查（World Values Survey, WVS）的标准化问卷为基础 [13]，选取十个能够反映核心价值取向的问题，设计为结构化的评估工具。问卷设计严格遵循原版题目的语义与逻辑，确保测量的信度与效度。实施过程中，我们将问卷翻译为四种语言版本，每个版本均经过专业翻译、语境校验，以保证跨语言比较的可比性。测试阶段通过模型API进行多次重复采样，以减少随机性对结果的影响，提高数据的稳定性。</p>
+<p class="p2"><b>1.2实验法</b></p>
+<p class="p2">为了分析不同因素对模型价值观表达的影响，我们设计了对照实验。在语言效应实验中，保持题目内容与提示模板一致，仅改变提问语言，观察模型在母语与英语环境下的表现差异 [23]。在文化敏感性实验中，采用角色扮演范式 [26]，测试模型在不同文化情境下的适应能力。实验过程中均记录了所有参数设置和版本信息，保证实验结果具有可重复性 。</p>
+<p class="p2"><b>1.3比较分析法</b></p>
+<p class="p2">本研究构建了多层次的比较分析框架。在横向层面，对比不同大模型在相同题目下的回答差异；在纵向层面，分析同一模型在不同语言与情境下表现的稳定性；在参照层面，将模型的整体表现与WVS 109个国家的人类价值观数据进行对照 [13]，定位模型在文化地图中的相对位置 [20]。这种比较方式有助于从多角度理解模型的文化一致性与偏向性。</p>
+<p class="p2"><b>1.4统计分析法</b></p>
+<p class="p2">在数据分析阶段，研究使用概率主成分分析（PPCA）处理缺失值，并通过降维构建可解释的文化空间[12]。具体流程包括：将合并后的“国家数据+模型数据”标准化后分解协方差矩阵，提取前两个主成分作为文化空间的基础轴；应用Varimax旋转增强载荷可解释性，从而获得稳定的投影坐标。我们尽量让坐标轴语义贴合Inglehart-Welzel框架中的“传统—世俗理性”与“生存—自我表达”维度。</p>
+<p class="p2">基于投影坐标，我们采用欧氏距离计算文化距离，并围绕“绝对距离”“相对排名”和“区域准确率”构建三层评估指标。语言效应通过比较“母语—英语”成对样本进行量化，以指数形式呈现语言切换对评估结果的影响。配合描述性统计与可视化分析，系统刻画模型在不同语言与国家中的表现模式。</p>
+<p class="p2">本研究的方法体系相互配合。问卷调查提供标准化数据，实验设计帮助识别影响因素，比较分析揭示文化层面的差异，统计建模确保结果的可靠性。通过多种方法的结合，研究能够较为全面地刻画大模型的价值观特征 [21]。</p>
+<ul class="ul1">
+  <li class="li2"><b>技术路线</b></li>
+</ul>
+<p class="p2">本研究的技术路线分阶段推进：</p>
+<p class="p2">第一阶段：基准构建</p>
+<p class="p2">用 WVS 的 109 个国家数据做预处理和主成分分析，构建“传统—世俗理性”和“生存—自我表达”两维文化坐标系，作为后续模型比较的参照基准。</p>
+<p class="p2">第二阶段：模型测试</p>
+<p class="p2">先做基线测量，让若干主流大模型直接回答十个价值题，得到模型的内在倾向。然后做角色扮演测试，让模型模拟不同国家的典型回答，检验其文化模仿能力。</p>
+<p class="p2">第三阶段：跨语言分析</p>
+<p class="p2">为探究语言对模型表现的影响，我们将问卷翻译为多种语言（经语境校验），选取代表性国家，分别以母语和英语两种版本进行测试，保持其他条件一致。通过比较同一模型在两种语言下的文化距离差异，量化语言切换对评估结果的影响程度。</p>
+<p class="p2">第四阶段：成果整合</p>
+<p class="p2">把所有测试数据汇总，采用 PPCA等方法整理结果，生成图表与分析报告，给出对模型价值观特征的定量结论与讨论。</p>
+<ul class="ul1">
+  <li class="li2"><b>理论分析与计算方法</b></li>
+</ul>
+<p class="p2">在理论层面，我们参考世界价值观调查的已有框架 [12]，将模型回答与人类价值观置于同一维度下进行对照。这一做法能够借助该框架积累的理论基础，帮助我们理解模型价值观在现实社会中的对应意义。</p>
+<p class="p2">具体计算过程中，我们区分了结构化数值答案（WVS提供）与自由文本回答，并采取不同处理方式。为保证结果可重现，所有分析均使用固定版本的软件与随机种子。</p>
+<ul class="ul1">
+  <li class="li2"><b>可行性分析</b></li>
+</ul>
+<p class="p2">本研究方案在多个方面具备可行性：</p>
+<p class="p2">数据来源上，WVS第七波的权威数据与标准化处理流提供了研究的数据基础 [13]，而各类模型的调用接口也相对成熟，我们在此类数据的处理上已有一定经验，能够保障数据质量。</p>
+<p class="p2">技术路线方面，前期测试表明，我们搭建的自动化采集与分析系统运行可靠 [22]，配合完整的日志记录机制，能够实现全流程可追溯。</p>
+<p class="p2">针对数据处理，我们设置了多层质量保障机制，以应对可能出现的异常情况。目前也已积累了一定规模的代码与文档，为后续工作奠定了基础。</p>
+<p class="p2">当然，研究也可能遇到一些挑战，例如模型版本迭代带来的变化、翻译过程中的语义偏差，以及模型对特定问题的回避行为。对此我们已制定相应策略：通过多时间点复采样与版本标注跟踪模型表现，采用语境核验机制控制翻译质量，并对缺失数据进行专门分析（将拒答与规避单列为独立维度）而非直接剔除。</p>
+<p class="p2"><b>四、 课题特色</b></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/31_tesedian_muying_paradox.png" alt="母语 vs 英语 悖论验证" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图9 多语言悖论：母语 vs 英语</i></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/32_tesedian_movement_vectors.png" alt="阶段变化向量" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图10 阶段变动向量：呈现动态趋势</i></p>
+<ul class="ul1">
+  <li class="li2"><b>构建“人类社会—模型表现”可对齐的价值坐标系</b></li>
+</ul>
+<p class="p2">现有关于大模型价值观的研究，大多停留在道德偏见、政治倾向或语料偏差的定性分析上 [9，11]，缺乏与人类社会数据相对应的量化标准。本研究引入世界价值观调查（WVS）的经典两维结构——“传统—世俗理性”和“生存—自我表达” [12]，将模型的回答结果映射到这一文化坐标系中，使其能够与全球不同国家和文化群体进行直接比较 [20，31]。这种方法让模型的价值取向与社会科学中的长期研究成果产生对应关系，为后续开展跨文化和跨时间的模型价值研究提供了统一的参照框架。</p>
+<ul class="ul1">
+  <li class="li2"><b>建立多语言评估体系</b></li>
+</ul>
+<p class="p2">为了克服现有研究过度依赖英语语境的问题 [23]，本研究设计了一个包含中文、英文、俄语和阿拉伯语等的多语言测评体系。所有测试题目均来源于WVS [13]，并经过翻译、回译和语义核验，确保不同语言版本在文化含义上保持一致 [25]。这一体系能更准确地观察模型在不同语言环境下的表现差异，帮助分析训练语料分布、语言结构等因素对模型价值观表达的影响，为多语言模型的文化适配性研究提供了新的思路。</p>
+<ul class="ul1">
+  <li class="li2"><b>提出"基线定位—全球验证—机制分解"的递进式评估框架</b></li>
+</ul>
+<p class="p2">针对现有评估往往集中在单一场景、缺乏系统设计的问题，本研究构建了一个递进式三阶段评估框架。第一阶段为"基线定位"，在无角色扮演的中性条件下测量模型的内在价值倾向，确立评估基准点，回答"模型本身是什么"的问题；第二阶段为"全球验证"，通过大规模跨文化角色扮演（109个国家）验证模型对全球多元文化的理解广度，回答"模型能做什么"的问题；第三阶段为"机制分析"，通过多语言对照实验（7种语言）剥离语言、提示词、训练数据等混淆因素的影响，回答"效果受什么影响、为什么"的问题。这种设计从整体上保证了评估过程的层次性与逻辑连贯性，既能识别模型的总体偏向，也能进一步分析形成偏差的原因。相比单次测试的结果，这一体系更能呈现模型价值表达的内部结构和动态特征，为理解大模型的文化与伦理特性提供了系统的研究路径。</p>
+<p class="p2"><b>五、 基础条件</b></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/41_jichutiaojian_country_language_model.png" alt="覆盖度横向概览" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图11 覆盖度：国家 × 语言 × 模型 概览</i></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/42_jichutiaojian_decision_boundary.png" alt="决策边界示意" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图12 决策/分类边界示意</i></p>
+<p class="p2" style="text-align: center"><img src="/Users/yxy/code/LLM's values/开题报告/figures/43_jichutiaojian_sample_heatmap.png" alt="样本分布热力图（模型×语言）" style="max-width:100%"></p>
+<p class="p2" style="text-align: center"><i>图13 样本分布热力图（模型 × 语言）</i></p>
+<p class="p2"><b>研究基础</b></p>
+<p class="p2">在前期准备阶段，我已经完成了一系列初步实验，累计收集了约1100个模型测试样本，积累了一定的实证研究经验。我编写了完整的程序代码，搭建了从数据收集到结果分析的基础工具链 [22]。这些工作验证了技术路线的可行性，也让我对研究方向有了更清晰的认识。</p>
+<p class="p2">在实验过程中，我注意到模型在英语和其他语言环境下的表现存在明显差异 [23]，尤其是在价值取向和回答稳定性方面。这一发现成为我后续研究“英语悖论”问题的重要启发，为深入分析语言因素对模型价值表达的影响提供了依据。</p>
+<ul class="ul1">
+  <li class="li2"><b>实验条件</b></li>
+</ul>
+<p class="p2">目前，我已经具备开展本研究的主要实验条件。硬件方面，个人电脑配置能够满足日常数据处理与分析的需要，网络稳定，存储空间充足。软件方面，已完成 Python 开发环境的配置，安装了常用的数据分析与可视化库，并使用 Git 进行代码管理，以保证研究过程的规范性和可复现性。</p>
+<p class="p2">数据方面，已成功获取世界价值观调查（World Values Survey, WVS）的完整跨国数据集，并整理了多个主流大模型的测试应答数据。这些数据经过初步清洗和标准化处理，构成了后续实验的核心数据资源。</p>
+<p class="p2">在工具开发上，我编写了统一的模型测试接口、自动化分析模块和基础可视化程序，能够支持中等规模的自动化测试与结果统计。目前已能通过主流平台的API接口对多种模型进行测试，并在实际使用中积累了一定经验。</p>
+<ul class="ul1">
+  <li class="li2"><b>待完善条件及解决方案</b></li>
+</ul>
+<p class="p2">虽然研究已具备基本条件，但仍存在一些需要改进的地方。例如，个人电脑在处理大规模数据时内存可能不足，缺乏高性能计算资源。针对这一问题，我计划优化程序的算法结构，采用分批处理策略；如仍有性能瓶颈，将申请使用实验室的高性能服务器。</p>
+<p class="p2">在语言与数据方面，部分非英语测试数据仍需语言专家进一步校对，以确保语义一致性。理论分析部分还需要导师的指导，帮助我在统计分析和价值观测量理论上加深理解。</p>
+<p class="p2">此外，代码的可维护性和实验系统的工程化程度仍有提升空间。接下来，我会逐步完善工具链结构，提高代码的模块化和自动化水平。在专业能力方面，我将继续加强大模型价值观研究、跨文化测量和高级统计方法的学习，积极向导师和师兄师姐请教，不断提升科研能力。</p>
+<p class="p3"><br></p>
+</body>
+</html>
