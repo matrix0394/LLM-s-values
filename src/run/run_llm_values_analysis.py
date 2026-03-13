@@ -34,7 +34,7 @@ class LLMValuesAnalysisRunner:
         
         # 使用标准路径（与Stage0一致）
         self.data_path = self.project_root / "data"
-        self.results_path = self.project_root / "results" / "llm_values"
+        self.results_path = self.project_root / "results"  # 让可视化器自己创建llm_dashboard子目录
         
         # 确保目录存在
         self.data_path.mkdir(parents=True, exist_ok=True)
@@ -146,12 +146,9 @@ class LLMValuesAnalysisRunner:
             print("❌ 访谈失败，没有获得有效结果")
             return None
         
-        # 保存结果（使用统一格式）
+        # 保存结果（统一格式）
         print(f"\n💾 保存访谈结果...")
-        output_file = interviewer.save_results(
-            results, 
-            use_unified_format=True
-        )
+        output_file = interviewer.save_results(results)
         
         print(f"\n✅ 访谈完成！")
         print(f"📊 统计:")
@@ -198,12 +195,15 @@ class LLMValuesAnalysisRunner:
             print("❌ 数据处理失败")
             return None
     
-    def step3_pca_analysis(self):
+    def step3_pca_analysis(self, use_fixed_pca: bool = True):
         """
         步骤3: PCA分析
         
         使用llm_pca_analysis.py进行PCA计算
         自动加载IVS数据和LLM数据
+        
+        Args:
+            use_fixed_pca: 是否使用固定的PCA模型（Stage0的模型），默认True
         
         Returns:
             PCA结果DataFrame
@@ -217,16 +217,23 @@ class LLMValuesAnalysisRunner:
         # 创建分析器（使用标准路径）
         analyzer = LLMPCAAnalyzer(data_path=str(self.data_path))
         
-        print("🔄 运行完整PCA分析...")
-        print("   1. 加载IVS数据（Stage0）")
-        print("   2. 加载LLM数据（Stage1）")
-        print("   3. 合并数据")
-        print("   4. 执行PCA计算")
-        print("   5. 计算实体分数")
-        print("   6. 保存结果")
-        
-        # 运行完整分析
-        entity_scores = analyzer.run_full_analysis()
+        if use_fixed_pca:
+            print("🔄 使用固定PCA模型运行分析（与Stage0坐标系一致）...")
+            print("   1. 加载固定PCA模型（Stage0）")
+            print("   2. 加载IVS数据（Stage0）")
+            print("   3. 加载LLM数据（Stage1）")
+            print("   4. 应用固定PCA转换")
+            print("   5. 计算实体分数")
+            print("   6. 保存结果")
+            
+            # 使用固定PCA模型运行分析
+            entity_scores = analyzer.run_llm_analysis_for_runner(use_fixed_pca=True)
+        else:
+            print("🔄 运行完整PCA分析（重新拟合，不推荐）...")
+            print("   ⚠️ 警告：坐标系可能与Stage0不一致")
+            
+            # 运行完整分析（重新拟合PCA）
+            entity_scores = analyzer.run_full_analysis()
         
         if entity_scores is None or entity_scores.empty:
             print("❌ PCA分析失败")
@@ -491,7 +498,7 @@ def main():
             
             # 从config动态加载模型列表
             import json
-            config_path = runner.project_root / 'config' / 'llm_models.json'
+            config_path = runner.project_root / 'config' / 'models' / 'llm_models.json'
             try:
                 with open(config_path, 'r', encoding='utf-8') as f:
                     config = json.load(f)
@@ -560,7 +567,7 @@ def main():
             
             # 从config动态加载模型列表
             import json
-            config_path = runner.project_root / 'config' / 'llm_models.json'
+            config_path = runner.project_root / 'config' / 'models' / 'llm_models.json'
             try:
                 with open(config_path, 'r', encoding='utf-8') as f:
                     config = json.load(f)

@@ -4,12 +4,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.012518865,
     "PC2_rescaled":-0.2886973274,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"8",
     "Country":"Albania",
     "Numeric":8.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"8",
     "country_code_original":8.0
   },
   {
@@ -17,12 +16,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.1706383546,
     "PC2_rescaled":-0.8798837916,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"12",
     "Country":"Algeria",
     "Numeric":12.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"12",
     "country_code_original":12.0
   },
   {
@@ -30,12 +28,11 @@
     "data_source":"IVS",
     "PC1_rescaled":2.9927413682,
     "PC2_rescaled":1.4706593372,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"20",
     "Country":"Andorra",
     "Numeric":20.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"20",
     "country_code_original":20.0
   },
   {
@@ -43,12 +40,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.3545418046,
     "PC2_rescaled":-1.1084297656,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"31",
     "Country":"Azerbaijan",
     "Numeric":31.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"31",
     "country_code_original":31.0
   },
   {
@@ -56,12 +52,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.7567549099,
     "PC2_rescaled":-0.1870992258,
+    "Cultural Region":"Latin America",
     "country_code_clean":"32",
     "Country":"Argentina",
     "Numeric":32.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"32",
     "country_code_original":32.0
   },
   {
@@ -69,12 +64,11 @@
     "data_source":"IVS",
     "PC1_rescaled":3.3721445203,
     "PC2_rescaled":0.7189674986,
+    "Cultural Region":"English-Speaking",
     "country_code_clean":"36",
     "Country":"Australia",
     "Numeric":36.0,
-    "Cultural Region":"English-Speaking",
     "Islamic":false,
-    "Numeric_str":"36",
     "country_code_original":36.0
   },
   {
@@ -82,12 +76,11 @@
     "data_source":"IVS",
     "PC1_rescaled":2.1712347371,
     "PC2_rescaled":1.1034899963,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"40",
     "Country":"Austria",
     "Numeric":40.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"40",
     "country_code_original":40.0
   },
   {
@@ -95,12 +88,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.0645857403,
     "PC2_rescaled":-1.8692159595,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"50",
     "Country":"Bangladesh",
     "Numeric":50.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"50",
+    "Islamic":true,
     "country_code_original":50.0
   },
   {
@@ -108,12 +100,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.2431707222,
     "PC2_rescaled":-1.0205075125,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"51",
     "Country":"Armenia",
     "Numeric":51.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"51",
     "country_code_original":51.0
   },
   {
@@ -121,12 +112,11 @@
     "data_source":"IVS",
     "PC1_rescaled":2.414948385,
     "PC2_rescaled":0.9036150402,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"56",
     "Country":"Belgium",
     "Numeric":56.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"56",
     "country_code_original":56.0
   },
   {
@@ -134,12 +124,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.5603481911,
     "PC2_rescaled":-1.4017052601,
-    "country_code_clean":"68",
-    "Country":"Bolivia (Plurinational State of)",
-    "Numeric":68.0,
     "Cultural Region":"Latin America",
+    "country_code_clean":"68",
+    "Country":"Bolivia",
+    "Numeric":68.0,
     "Islamic":false,
-    "Numeric_str":"68",
     "country_code_original":68.0
   },
   {
@@ -147,12 +136,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.6853722179,
     "PC2_rescaled":0.1861079498,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"70",
     "Country":"Bosnia and Herzegovina",
     "Numeric":70.0,
-    "Cultural Region":"Orthodox Europe",
-    "Islamic":false,
-    "Numeric_str":"70",
+    "Islamic":true,
     "country_code_original":70.0
   },
   {
@@ -160,12 +148,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.0028654771,
     "PC2_rescaled":-0.3617932902,
+    "Cultural Region":"Latin America",
     "country_code_clean":"76",
     "Country":"Brazil",
     "Numeric":76.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"76",
     "country_code_original":76.0
   },
   {
@@ -173,12 +160,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.6235502425,
     "PC2_rescaled":1.0870023424,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"100",
     "Country":"Bulgaria",
     "Numeric":100.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"100",
     "country_code_original":100.0
   },
   {
@@ -186,12 +172,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.2928946349,
     "PC2_rescaled":-1.4839004997,
+    "Cultural Region":"West & South Asia",
     "country_code_clean":"104",
     "Country":"Myanmar",
     "Numeric":104.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"104",
+    "Islamic":true,
     "country_code_original":104.0
   },
   {
@@ -199,12 +184,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.3650420875,
     "PC2_rescaled":0.5155900749,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"112",
     "Country":"Belarus",
     "Numeric":112.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"112",
     "country_code_original":112.0
   },
   {
@@ -212,12 +196,11 @@
     "data_source":"IVS",
     "PC1_rescaled":3.146022511,
     "PC2_rescaled":0.9631136815,
+    "Cultural Region":"English-Speaking",
     "country_code_clean":"124",
     "Country":"Canada",
     "Numeric":124.0,
-    "Cultural Region":"English-Speaking",
     "Islamic":false,
-    "Numeric_str":"124",
     "country_code_original":124.0
   },
   {
@@ -225,12 +208,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.2044324753,
     "PC2_rescaled":-0.1634628064,
+    "Cultural Region":"Latin America",
     "country_code_clean":"152",
     "Country":"Chile",
     "Numeric":152.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"152",
     "country_code_original":152.0
   },
   {
@@ -238,12 +220,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.0073786687,
     "PC2_rescaled":0.704761271,
+    "Cultural Region":"Confucian",
     "country_code_clean":"156",
     "Country":"China",
     "Numeric":156.0,
-    "Cultural Region":"Confucian",
     "Islamic":false,
-    "Numeric_str":"156",
     "country_code_original":156.0
   },
   {
@@ -251,12 +232,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.1549079216,
     "PC2_rescaled":1.3506481773,
-    "country_code_clean":"158",
-    "Country":"Taiwan (Province of China)",
-    "Numeric":158.0,
     "Cultural Region":"Confucian",
+    "country_code_clean":"158",
+    "Country":"Taiwan, Province of China",
+    "Numeric":158.0,
     "Islamic":false,
-    "Numeric_str":"158",
     "country_code_original":158.0
   },
   {
@@ -264,12 +244,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.1236542844,
     "PC2_rescaled":-1.9600009252,
+    "Cultural Region":"Latin America",
     "country_code_clean":"170",
     "Country":"Colombia",
     "Numeric":170.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"170",
     "country_code_original":170.0
   },
   {
@@ -277,12 +256,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.4408285572,
     "PC2_rescaled":0.4535276813,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"191",
     "Country":"Croatia",
     "Numeric":191.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"191",
     "country_code_original":191.0
   },
   {
@@ -290,12 +268,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.2469960128,
     "PC2_rescaled":-0.4354450399,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"196",
     "Country":"Cyprus",
     "Numeric":196.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"196",
     "country_code_original":196.0
   },
   {
@@ -303,12 +280,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.7278513384,
     "PC2_rescaled":-0.2067607284,
+    "Cultural Region":null,
     "country_code_clean":"197",
     "Country":null,
     "Numeric":null,
-    "Cultural Region":null,
     "Islamic":null,
-    "Numeric_str":null,
     "country_code_original":197.0
   },
   {
@@ -316,12 +292,11 @@
     "data_source":"IVS",
     "PC1_rescaled":1.5321689432,
     "PC2_rescaled":1.8182749787,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"203",
     "Country":"Czechia",
     "Numeric":203.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"203",
     "country_code_original":203.0
   },
   {
@@ -329,12 +304,11 @@
     "data_source":"IVS",
     "PC1_rescaled":4.3006510099,
     "PC2_rescaled":1.862168621,
+    "Cultural Region":"Protestant Europe",
     "country_code_clean":"208",
     "Country":"Denmark",
     "Numeric":208.0,
-    "Cultural Region":"Protestant Europe",
     "Islamic":false,
-    "Numeric_str":"208",
     "country_code_original":208.0
   },
   {
@@ -342,12 +316,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.1937492473,
     "PC2_rescaled":-2.083660053,
+    "Cultural Region":"Latin America",
     "country_code_clean":"218",
     "Country":"Ecuador",
     "Numeric":218.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"218",
     "country_code_original":218.0
   },
   {
@@ -355,12 +328,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.1153868617,
     "PC2_rescaled":-1.2782529892,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"231",
     "Country":"Ethiopia",
     "Numeric":231.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"231",
     "country_code_original":231.0
   },
   {
@@ -368,12 +340,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.3070516938,
     "PC2_rescaled":1.3518616037,
+    "Cultural Region":"Protestant Europe",
     "country_code_clean":"233",
     "Country":"Estonia",
     "Numeric":233.0,
-    "Cultural Region":"West & South Asia",
     "Islamic":false,
-    "Numeric_str":"233",
     "country_code_original":233.0
   },
   {
@@ -381,12 +352,11 @@
     "data_source":"IVS",
     "PC1_rescaled":2.9340563393,
     "PC2_rescaled":1.3501035556,
+    "Cultural Region":"Protestant Europe",
     "country_code_clean":"246",
     "Country":"Finland",
     "Numeric":246.0,
-    "Cultural Region":"Protestant Europe",
     "Islamic":false,
-    "Numeric_str":"246",
     "country_code_original":246.0
   },
   {
@@ -394,12 +364,11 @@
     "data_source":"IVS",
     "PC1_rescaled":2.6781764891,
     "PC2_rescaled":1.2127103654,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"250",
     "Country":"France",
     "Numeric":250.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"250",
     "country_code_original":250.0
   },
   {
@@ -407,12 +376,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.5389290679,
     "PC2_rescaled":-1.1203911792,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"268",
     "Country":"Georgia",
     "Numeric":268.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"268",
     "country_code_original":268.0
   },
   {
@@ -420,12 +388,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.7382456192,
     "PC2_rescaled":-1.0527858063,
-    "country_code_clean":"275",
-    "Country":"Palestine, State of",
-    "Numeric":275.0,
     "Cultural Region":"African-Islamic",
-    "Islamic":true,
-    "Numeric_str":"275",
+    "country_code_clean":"275",
+    "Country":"Palestine",
+    "Numeric":275.0,
+    "Islamic":false,
     "country_code_original":275.0
   },
   {
@@ -433,12 +400,11 @@
     "data_source":"IVS",
     "PC1_rescaled":2.3152653359,
     "PC2_rescaled":1.8350159795,
+    "Cultural Region":"Protestant Europe",
     "country_code_clean":"276",
     "Country":"Germany",
     "Numeric":276.0,
-    "Cultural Region":"Protestant Europe",
     "Islamic":false,
-    "Numeric_str":"276",
     "country_code_original":276.0
   },
   {
@@ -446,12 +412,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.2028386135,
     "PC2_rescaled":-2.3556774584,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"288",
     "Country":"Ghana",
     "Numeric":288.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"288",
     "country_code_original":288.0
   },
   {
@@ -459,12 +424,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.02340169,
     "PC2_rescaled":0.245039092,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"300",
     "Country":"Greece",
     "Numeric":300.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"300",
     "country_code_original":300.0
   },
   {
@@ -472,12 +436,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.3299346758,
     "PC2_rescaled":-1.0912415515,
+    "Cultural Region":"Latin America",
     "country_code_clean":"320",
     "Country":"Guatemala",
     "Numeric":320.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"320",
     "country_code_original":320.0
   },
   {
@@ -485,12 +448,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.2765572373,
     "PC2_rescaled":-0.7082437845,
+    "Cultural Region":"Latin America",
     "country_code_clean":"332",
     "Country":"Haiti",
     "Numeric":332.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"332",
     "country_code_original":332.0
   },
   {
@@ -498,12 +460,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.6066381532,
     "PC2_rescaled":1.7837595498,
+    "Cultural Region":"Confucian",
     "country_code_clean":"344",
     "Country":"Hong Kong",
     "Numeric":344.0,
-    "Cultural Region":"Confucian",
     "Islamic":false,
-    "Numeric_str":"344",
     "country_code_original":344.0
   },
   {
@@ -511,12 +472,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.1882998953,
     "PC2_rescaled":0.8446196822,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"348",
     "Country":"Hungary",
     "Numeric":348.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"348",
     "country_code_original":348.0
   },
   {
@@ -524,12 +484,11 @@
     "data_source":"IVS",
     "PC1_rescaled":3.996356355,
     "PC2_rescaled":1.1559530068,
+    "Cultural Region":"Protestant Europe",
     "country_code_clean":"352",
     "Country":"Iceland",
     "Numeric":352.0,
-    "Cultural Region":"Protestant Europe",
     "Islamic":false,
-    "Numeric_str":"352",
     "country_code_original":352.0
   },
   {
@@ -537,12 +496,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.652901384,
     "PC2_rescaled":-0.9288538735,
+    "Cultural Region":"West & South Asia",
     "country_code_clean":"356",
     "Country":"India",
     "Numeric":356.0,
-    "Cultural Region":"West & South Asia",
     "Islamic":false,
-    "Numeric_str":"356",
     "country_code_original":356.0
   },
   {
@@ -550,12 +508,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.2573122237,
     "PC2_rescaled":-1.3300418106,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"360",
     "Country":"Indonesia",
     "Numeric":360.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"360",
+    "Islamic":true,
     "country_code_original":360.0
   },
   {
@@ -563,12 +520,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.4042955746,
     "PC2_rescaled":-0.9773218021,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"364",
-    "Country":"Iran (Islamic Republic of)",
+    "Country":"Iran",
     "Numeric":364.0,
-    "Cultural Region":"West & South Asia",
     "Islamic":false,
-    "Numeric_str":"364",
     "country_code_original":364.0
   },
   {
@@ -576,12 +532,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.5066854982,
     "PC2_rescaled":-0.8808517505,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"368",
     "Country":"Iraq",
     "Numeric":368.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"368",
     "country_code_original":368.0
   },
   {
@@ -589,12 +544,11 @@
     "data_source":"IVS",
     "PC1_rescaled":1.478989121,
     "PC2_rescaled":-0.6756696734,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"372",
     "Country":"Ireland",
     "Numeric":372.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"372",
     "country_code_original":372.0
   },
   {
@@ -602,12 +556,11 @@
     "data_source":"IVS",
     "PC1_rescaled":1.1389265243,
     "PC2_rescaled":0.5317781781,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"380",
     "Country":"Italy",
     "Numeric":380.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"380",
     "country_code_original":380.0
   },
   {
@@ -615,12 +568,11 @@
     "data_source":"IVS",
     "PC1_rescaled":1.7060465449,
     "PC2_rescaled":2.1182738603,
+    "Cultural Region":"Confucian",
     "country_code_clean":"392",
     "Country":"Japan",
     "Numeric":392.0,
-    "Cultural Region":"Confucian",
     "Islamic":false,
-    "Numeric_str":"392",
     "country_code_original":392.0
   },
   {
@@ -628,12 +580,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.6976147645,
     "PC2_rescaled":-0.5545094835,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"398",
     "Country":"Kazakhstan",
     "Numeric":398.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"398",
     "country_code_original":398.0
   },
   {
@@ -641,12 +592,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.7928725246,
     "PC2_rescaled":-2.0077689074,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"400",
     "Country":"Jordan",
     "Numeric":400.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"400",
     "country_code_original":400.0
   },
   {
@@ -654,12 +604,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.1760740085,
     "PC2_rescaled":-0.9395733394,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"404",
     "Country":"Kenya",
     "Numeric":404.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"404",
     "country_code_original":404.0
   },
   {
@@ -667,12 +616,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.0242018019,
     "PC2_rescaled":1.3416346456,
-    "country_code_clean":"410",
-    "Country":"Korea (the Republic of)",
-    "Numeric":410.0,
     "Cultural Region":"Confucian",
+    "country_code_clean":"410",
+    "Country":"Korea, Republic of",
+    "Numeric":410.0,
     "Islamic":false,
-    "Numeric_str":"410",
     "country_code_original":410.0
   },
   {
@@ -680,12 +628,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.029266015,
     "PC2_rescaled":-1.3354592578,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"414",
     "Country":"Kuwait",
     "Numeric":414.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"414",
     "country_code_original":414.0
   },
   {
@@ -693,12 +640,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.89783939,
     "PC2_rescaled":-1.5967565053,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"417",
     "Country":"Kyrgyzstan",
     "Numeric":417.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"417",
+    "Islamic":true,
     "country_code_original":417.0
   },
   {
@@ -706,12 +652,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.1688407269,
     "PC2_rescaled":-0.5401306507,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"422",
     "Country":"Lebanon",
     "Numeric":422.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"422",
     "country_code_original":422.0
   },
   {
@@ -719,12 +664,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.0592407836,
     "PC2_rescaled":1.0185810712,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"428",
     "Country":"Latvia",
     "Numeric":428.0,
-    "Cultural Region":"Other",
     "Islamic":false,
-    "Numeric_str":"428",
     "country_code_original":428.0
   },
   {
@@ -732,12 +676,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.3865170222,
     "PC2_rescaled":-2.0179208254,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"434",
     "Country":"Libya",
     "Numeric":434.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"434",
     "country_code_original":434.0
   },
   {
@@ -745,12 +688,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.3223190709,
     "PC2_rescaled":1.1365701537,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"440",
     "Country":"Lithuania",
     "Numeric":440.0,
-    "Cultural Region":"Other",
     "Islamic":false,
-    "Numeric_str":"440",
     "country_code_original":440.0
   },
   {
@@ -758,12 +700,11 @@
     "data_source":"IVS",
     "PC1_rescaled":2.2777526542,
     "PC2_rescaled":0.9558079614,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"442",
     "Country":"Luxembourg",
     "Numeric":442.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"442",
     "country_code_original":442.0
   },
   {
@@ -771,12 +712,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.8514381356,
     "PC2_rescaled":1.6779654488,
+    "Cultural Region":"Confucian",
     "country_code_clean":"446",
     "Country":"Macao",
     "Numeric":446.0,
-    "Cultural Region":"Confucian",
     "Islamic":false,
-    "Numeric_str":"446",
     "country_code_original":446.0
   },
   {
@@ -784,12 +724,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.5742040464,
     "PC2_rescaled":-0.8429698737,
+    "Cultural Region":"West & South Asia",
     "country_code_clean":"458",
     "Country":"Malaysia",
     "Numeric":458.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"458",
+    "Islamic":true,
     "country_code_original":458.0
   },
   {
@@ -797,12 +736,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.823663431,
     "PC2_rescaled":-1.486909382,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"462",
     "Country":"Maldives",
     "Numeric":462.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"462",
+    "Islamic":true,
     "country_code_original":462.0
   },
   {
@@ -810,12 +748,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.2462644319,
     "PC2_rescaled":-1.4322312582,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"466",
     "Country":"Mali",
     "Numeric":466.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"466",
     "country_code_original":466.0
   },
   {
@@ -823,12 +760,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.2817419412,
     "PC2_rescaled":-1.503431732,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"470",
     "Country":"Malta",
     "Numeric":470.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"470",
     "country_code_original":470.0
   },
   {
@@ -836,12 +772,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.5651309924,
     "PC2_rescaled":-1.602643636,
+    "Cultural Region":"Latin America",
     "country_code_clean":"484",
     "Country":"Mexico",
     "Numeric":484.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"484",
     "country_code_original":484.0
   },
   {
@@ -849,12 +784,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.6365935011,
     "PC2_rescaled":1.2479719578,
+    "Cultural Region":"Confucian",
     "country_code_clean":"496",
     "Country":"Mongolia",
     "Numeric":496.0,
-    "Cultural Region":"Confucian",
     "Islamic":false,
-    "Numeric_str":"496",
     "country_code_original":496.0
   },
   {
@@ -862,12 +796,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.8976899832,
     "PC2_rescaled":0.5077045175,
-    "country_code_clean":"498",
-    "Country":"Moldova (the Republic of)",
-    "Numeric":498.0,
     "Cultural Region":"Orthodox Europe",
+    "country_code_clean":"498",
+    "Country":"Moldova",
+    "Numeric":498.0,
     "Islamic":false,
-    "Numeric_str":"498",
     "country_code_original":498.0
   },
   {
@@ -875,12 +808,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.2564887604,
     "PC2_rescaled":0.0318188705,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"499",
     "Country":"Montenegro",
     "Numeric":499.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"499",
     "country_code_original":499.0
   },
   {
@@ -888,12 +820,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.4556488904,
     "PC2_rescaled":-0.9724022239,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"504",
     "Country":"Morocco",
     "Numeric":504.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"504",
     "country_code_original":504.0
   },
   {
@@ -901,12 +832,11 @@
     "data_source":"IVS",
     "PC1_rescaled":3.4057485976,
     "PC2_rescaled":1.5880062317,
-    "country_code_clean":"528",
-    "Country":"Netherlands (the)",
-    "Numeric":528.0,
     "Cultural Region":"Protestant Europe",
+    "country_code_clean":"528",
+    "Country":"Netherlands",
+    "Numeric":528.0,
     "Islamic":false,
-    "Numeric_str":"528",
     "country_code_original":528.0
   },
   {
@@ -914,12 +844,11 @@
     "data_source":"IVS",
     "PC1_rescaled":3.4231011101,
     "PC2_rescaled":0.805576675,
+    "Cultural Region":"English-Speaking",
     "country_code_clean":"554",
     "Country":"New Zealand",
     "Numeric":554.0,
-    "Cultural Region":"English-Speaking",
     "Islamic":false,
-    "Numeric_str":"554",
     "country_code_original":554.0
   },
   {
@@ -927,12 +856,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.5311941554,
     "PC2_rescaled":-1.9529320217,
+    "Cultural Region":"Latin America",
     "country_code_clean":"558",
     "Country":"Nicaragua",
     "Numeric":558.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"558",
     "country_code_original":558.0
   },
   {
@@ -940,12 +868,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.1874510192,
     "PC2_rescaled":-1.5994031142,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"566",
     "Country":"Nigeria",
     "Numeric":566.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"566",
     "country_code_original":566.0
   },
   {
@@ -953,12 +880,11 @@
     "data_source":"IVS",
     "PC1_rescaled":4.1930682871,
     "PC2_rescaled":1.775606219,
+    "Cultural Region":"Protestant Europe",
     "country_code_clean":"578",
     "Country":"Norway",
     "Numeric":578.0,
-    "Cultural Region":"Protestant Europe",
     "Islamic":false,
-    "Numeric_str":"578",
     "country_code_original":578.0
   },
   {
@@ -966,12 +892,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.7922105393,
     "PC2_rescaled":-1.5493253496,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"586",
     "Country":"Pakistan",
     "Numeric":586.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"586",
+    "Islamic":true,
     "country_code_original":586.0
   },
   {
@@ -979,12 +904,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.5384933701,
     "PC2_rescaled":-1.0322475217,
+    "Cultural Region":"Latin America",
     "country_code_clean":"604",
     "Country":"Peru",
     "Numeric":604.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"604",
     "country_code_original":604.0
   },
   {
@@ -992,12 +916,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.052852598,
     "PC2_rescaled":-1.7208171896,
+    "Cultural Region":"Latin America",
     "country_code_clean":"608",
-    "Country":"Philippines (the)",
+    "Country":"Philippines",
     "Numeric":608.0,
-    "Cultural Region":"Other",
     "Islamic":false,
-    "Numeric_str":"608",
     "country_code_original":608.0
   },
   {
@@ -1005,12 +928,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.1820736696,
     "PC2_rescaled":-0.3533633457,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"616",
     "Country":"Poland",
     "Numeric":616.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"616",
     "country_code_original":616.0
   },
   {
@@ -1018,12 +940,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.0753804747,
     "PC2_rescaled":-0.2549489797,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"620",
     "Country":"Portugal",
     "Numeric":620.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"620",
     "country_code_original":620.0
   },
   {
@@ -1031,12 +952,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.873943067,
     "PC2_rescaled":-1.5939890585,
+    "Cultural Region":"Latin America",
     "country_code_clean":"630",
     "Country":"Puerto Rico",
     "Numeric":630.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"630",
     "country_code_original":630.0
   },
   {
@@ -1044,12 +964,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.6791841757,
     "PC2_rescaled":-2.727320394,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"634",
     "Country":"Qatar",
     "Numeric":634.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"634",
     "country_code_original":634.0
   },
   {
@@ -1057,12 +976,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.3132408496,
     "PC2_rescaled":-0.2698772382,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"642",
     "Country":"Romania",
     "Numeric":642.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"642",
     "country_code_original":642.0
   },
   {
@@ -1070,12 +988,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.717286871,
     "PC2_rescaled":0.4653476341,
-    "country_code_clean":"643",
-    "Country":"Russian Federation (the)",
-    "Numeric":643.0,
     "Cultural Region":"Orthodox Europe",
+    "country_code_clean":"643",
+    "Country":"Russian Federation",
+    "Numeric":643.0,
     "Islamic":false,
-    "Numeric_str":"643",
     "country_code_original":643.0
   },
   {
@@ -1083,12 +1000,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.1913142687,
     "PC2_rescaled":-1.6113103613,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"646",
     "Country":"Rwanda",
     "Numeric":646.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"646",
     "country_code_original":646.0
   },
   {
@@ -1096,12 +1012,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.2553004214,
     "PC2_rescaled":0.5983803517,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"688",
     "Country":"Serbia",
     "Numeric":688.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"688",
     "country_code_original":688.0
   },
   {
@@ -1109,12 +1024,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.3463254582,
     "PC2_rescaled":-0.0457447138,
+    "Cultural Region":"West & South Asia",
     "country_code_clean":"702",
     "Country":"Singapore",
     "Numeric":702.0,
-    "Cultural Region":"West & South Asia",
     "Islamic":false,
-    "Numeric_str":"702",
     "country_code_original":702.0
   },
   {
@@ -1122,12 +1036,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.4914323518,
     "PC2_rescaled":0.870571205,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"703",
     "Country":"Slovakia",
     "Numeric":703.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"703",
     "country_code_original":703.0
   },
   {
@@ -1135,12 +1048,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.4974109083,
     "PC2_rescaled":-0.704544027,
+    "Cultural Region":"West & South Asia",
     "country_code_clean":"704",
     "Country":"Viet Nam",
     "Numeric":704.0,
-    "Cultural Region":"West & South Asia",
     "Islamic":false,
-    "Numeric_str":"704",
     "country_code_original":704.0
   },
   {
@@ -1148,12 +1060,11 @@
     "data_source":"IVS",
     "PC1_rescaled":1.4919978683,
     "PC2_rescaled":1.0985165469,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"705",
     "Country":"Slovenia",
     "Numeric":705.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"705",
     "country_code_original":705.0
   },
   {
@@ -1161,12 +1072,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.0176905444,
     "PC2_rescaled":-0.8445139031,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"710",
     "Country":"South Africa",
     "Numeric":710.0,
-    "Cultural Region":"African-Islamic",
-    "Islamic":true,
-    "Numeric_str":"710",
+    "Islamic":false,
     "country_code_original":710.0
   },
   {
@@ -1174,12 +1084,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.7217417889,
     "PC2_rescaled":-1.3100210716,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"716",
     "Country":"Zimbabwe",
     "Numeric":716.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"716",
     "country_code_original":716.0
   },
   {
@@ -1187,12 +1096,11 @@
     "data_source":"IVS",
     "PC1_rescaled":1.6710847877,
     "PC2_rescaled":0.7933110579,
+    "Cultural Region":"Catholic Europe",
     "country_code_clean":"724",
     "Country":"Spain",
     "Numeric":724.0,
-    "Cultural Region":"Catholic Europe",
     "Islamic":false,
-    "Numeric_str":"724",
     "country_code_original":724.0
   },
   {
@@ -1200,12 +1108,11 @@
     "data_source":"IVS",
     "PC1_rescaled":4.4953476887,
     "PC2_rescaled":2.3386952686,
+    "Cultural Region":"Protestant Europe",
     "country_code_clean":"752",
     "Country":"Sweden",
     "Numeric":752.0,
-    "Cultural Region":"Protestant Europe",
     "Islamic":false,
-    "Numeric_str":"752",
     "country_code_original":752.0
   },
   {
@@ -1213,12 +1120,11 @@
     "data_source":"IVS",
     "PC1_rescaled":3.2226643402,
     "PC2_rescaled":1.2877405884,
+    "Cultural Region":"Protestant Europe",
     "country_code_clean":"756",
     "Country":"Switzerland",
     "Numeric":756.0,
-    "Cultural Region":"Protestant Europe",
     "Islamic":false,
-    "Numeric_str":"756",
     "country_code_original":756.0
   },
   {
@@ -1226,12 +1132,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.5566170542,
     "PC2_rescaled":-1.9204305106,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"762",
     "Country":"Tajikistan",
     "Numeric":762.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"762",
+    "Islamic":true,
     "country_code_original":762.0
   },
   {
@@ -1239,12 +1144,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.1389229734,
     "PC2_rescaled":-0.3705315846,
+    "Cultural Region":"West & South Asia",
     "country_code_clean":"764",
     "Country":"Thailand",
     "Numeric":764.0,
-    "Cultural Region":"West & South Asia",
     "Islamic":false,
-    "Numeric_str":"764",
     "country_code_original":764.0
   },
   {
@@ -1252,12 +1156,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.5709646656,
     "PC2_rescaled":-2.1450367793,
+    "Cultural Region":"Latin America",
     "country_code_clean":"780",
     "Country":"Trinidad and Tobago",
     "Numeric":780.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"780",
     "country_code_original":780.0
   },
   {
@@ -1265,12 +1168,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.9271277084,
     "PC2_rescaled":-0.9442858035,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"788",
     "Country":"Tunisia",
     "Numeric":788.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"788",
     "country_code_original":788.0
   },
   {
@@ -1278,12 +1180,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.1349684147,
     "PC2_rescaled":-1.0971784742,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"792",
     "Country":"Turkey",
     "Numeric":792.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"792",
+    "Islamic":true,
     "country_code_original":792.0
   },
   {
@@ -1291,12 +1192,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.8620481365,
     "PC2_rescaled":0.5115406548,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"804",
     "Country":"Ukraine",
     "Numeric":804.0,
-    "Cultural Region":"Orthodox Europe",
     "Islamic":false,
-    "Numeric_str":"804",
     "country_code_original":804.0
   },
   {
@@ -1304,12 +1204,11 @@
     "data_source":"IVS",
     "PC1_rescaled":0.0446151206,
     "PC2_rescaled":0.2316014058,
+    "Cultural Region":"Orthodox Europe",
     "country_code_clean":"807",
-    "Country":"Republic of North Macedonia",
+    "Country":"North Macedonia",
     "Numeric":807.0,
-    "Cultural Region":"Other",
     "Islamic":false,
-    "Numeric_str":"807",
     "country_code_original":807.0
   },
   {
@@ -1317,12 +1216,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-2.1147617881,
     "PC2_rescaled":-0.8955747726,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"818",
     "Country":"Egypt",
     "Numeric":818.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"818",
     "country_code_original":818.0
   },
   {
@@ -1330,12 +1228,11 @@
     "data_source":"IVS",
     "PC1_rescaled":3.1259015109,
     "PC2_rescaled":1.1141712012,
-    "country_code_clean":"826",
-    "Country":"United Kingdom of Great Britain and Northern Ireland (the)",
-    "Numeric":826.0,
     "Cultural Region":"English-Speaking",
+    "country_code_clean":"826",
+    "Country":"United Kingdom",
+    "Numeric":826.0,
     "Islamic":false,
-    "Numeric_str":"826",
     "country_code_original":826.0
   },
   {
@@ -1343,12 +1240,11 @@
     "data_source":"IVS",
     "PC1_rescaled":2.0833316426,
     "PC2_rescaled":0.3218169518,
-    "country_code_clean":"840",
-    "Country":"United States of America (the)",
-    "Numeric":840.0,
     "Cultural Region":"English-Speaking",
+    "country_code_clean":"840",
+    "Country":"United States of America",
+    "Numeric":840.0,
     "Islamic":false,
-    "Numeric_str":"840",
     "country_code_original":840.0
   },
   {
@@ -1356,12 +1252,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.9219569761,
     "PC2_rescaled":-1.251041676,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"854",
     "Country":"Burkina Faso",
     "Numeric":854.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"854",
     "country_code_original":854.0
   },
   {
@@ -1369,12 +1264,11 @@
     "data_source":"IVS",
     "PC1_rescaled":1.4373250896,
     "PC2_rescaled":-0.1251758843,
+    "Cultural Region":"Latin America",
     "country_code_clean":"858",
     "Country":"Uruguay",
     "Numeric":858.0,
-    "Cultural Region":"Latin America",
     "Islamic":false,
-    "Numeric_str":"858",
     "country_code_original":858.0
   },
   {
@@ -1382,12 +1276,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.0830885419,
     "PC2_rescaled":-2.0159501751,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"860",
     "Country":"Uzbekistan",
     "Numeric":860.0,
-    "Cultural Region":"West & South Asia",
-    "Islamic":false,
-    "Numeric_str":"860",
+    "Islamic":true,
     "country_code_original":860.0
   },
   {
@@ -1395,12 +1288,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.2621954236,
     "PC2_rescaled":-1.170963311,
-    "country_code_clean":"862",
-    "Country":"Venezuela (Bolivarian Republic of)",
-    "Numeric":862.0,
     "Cultural Region":"Latin America",
+    "country_code_clean":"862",
+    "Country":"Venezuela",
+    "Numeric":862.0,
     "Islamic":false,
-    "Numeric_str":"862",
     "country_code_original":862.0
   },
   {
@@ -1408,12 +1300,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-1.5902777922,
     "PC2_rescaled":-1.5050021996,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"887",
     "Country":"Yemen",
     "Numeric":887.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"887",
     "country_code_original":887.0
   },
   {
@@ -1421,12 +1312,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.9866468608,
     "PC2_rescaled":-0.512282623,
+    "Cultural Region":"African-Islamic",
     "country_code_clean":"894",
     "Country":"Zambia",
     "Numeric":894.0,
-    "Cultural Region":"African-Islamic",
     "Islamic":true,
-    "Numeric_str":"894",
     "country_code_original":894.0
   },
   {
@@ -1434,12 +1324,11 @@
     "data_source":"IVS",
     "PC1_rescaled":1.7110694372,
     "PC2_rescaled":0.1234742276,
+    "Cultural Region":null,
     "country_code_clean":"909",
     "Country":null,
     "Numeric":null,
-    "Cultural Region":null,
     "Islamic":null,
-    "Numeric_str":null,
     "country_code_original":909.0
   },
   {
@@ -1447,12 +1336,11 @@
     "data_source":"IVS",
     "PC1_rescaled":-0.7410415869,
     "PC2_rescaled":-1.3806582686,
+    "Cultural Region":null,
     "country_code_clean":"915",
     "Country":null,
     "Numeric":null,
-    "Cultural Region":null,
     "Islamic":null,
-    "Numeric_str":null,
     "country_code_original":915.0
   }
 ]

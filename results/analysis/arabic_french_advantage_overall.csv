@@ -1,0 +1,2 @@
+scope,n_ar_obs,n_fr_obs,n_en_obs,n_paired_ar_fr,n_paired_ar_en,d_ar_mean,d_fr_mean,d_en_mean,fr_advantage_pct,en_advantage_pct,fr_t,fr_p,fr_n_positive,en_t,en_p,en_n_positive
+12_arabic_countries_combined,70,0,70,0,70,1.8055880142865501,,1.8081697514348412,,-0.1429859485033828,,,0,-0.025391727436990013,0.9798158022965024,32

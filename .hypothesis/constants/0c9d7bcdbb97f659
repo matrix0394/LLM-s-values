@@ -1,0 +1,4 @@
+# file: C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\factor_analyzer\confirmatory_factor_analyzer.py
+# hypothesis_version: 6.148.8
+
+[0.0, 0.05, 0.5, 1.0, 200, 'F', 'L-BFGS-B', 'allow-nan', 'disp', 'error_vars', 'error_vars_', 'error_vars_free', 'factor_covs', 'factor_covs_free', 'factor_names', 'factor_varcovs_', 'ignore', 'loadings', 'loadings_', 'loadings_free', 'maxiter', 'median', 'n_factors', 'n_lower_diag', 'n_obs', 'n_variables', 'variable_names']

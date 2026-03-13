@@ -1,0 +1,1177 @@
+{
+  "description": "Unified country name mapping across all stages. Based on Stage0 but with '(the)' removed. Added display_name for visualization (e.g., USA instead of United States of America). Ensures political correctness: Hong Kong, Taiwan, and Macao are regions of China.",
+  "version": "1.1",
+  "last_updated": "2024-12-09",
+  "canonical_names": {
+    "Albania": {
+      "numeric_code": 8,
+      "aliases": [
+        "ALB",
+        "Albania"
+      ],
+      "display_name": "Albania",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Algeria": {
+      "numeric_code": 12,
+      "aliases": [
+        "DZA",
+        "Algeria"
+      ],
+      "display_name": "Algeria",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Andorra": {
+      "numeric_code": 20,
+      "aliases": [
+        "AND",
+        "Andorra"
+      ],
+      "display_name": "Andorra",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Argentina": {
+      "numeric_code": 32,
+      "aliases": [
+        "ARG",
+        "Argentina"
+      ],
+      "display_name": "Argentina",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Armenia": {
+      "numeric_code": 51,
+      "aliases": [
+        "ARM",
+        "Armenia"
+      ],
+      "display_name": "Armenia",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Australia": {
+      "numeric_code": 36,
+      "aliases": [
+        "AUS",
+        "Australia"
+      ],
+      "display_name": "Australia",
+      "cultural_region": "English-Speaking",
+      "is_islamic": false
+    },
+    "Austria": {
+      "numeric_code": 40,
+      "aliases": [
+        "AUT",
+        "Austria"
+      ],
+      "display_name": "Austria",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Azerbaijan": {
+      "numeric_code": 31,
+      "aliases": [
+        "AZE",
+        "Azerbaijan"
+      ],
+      "display_name": "Azerbaijan",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Bahamas": {
+      "numeric_code": 44,
+      "aliases": [
+        "BHS",
+        "Bahamas",
+        "Bahamas (the)",
+        "The Bahamas"
+      ],
+      "display_name": "Bahamas",
+      "cultural_region": "Other",
+      "is_islamic": false
+    },
+    "Bangladesh": {
+      "numeric_code": 50,
+      "aliases": [
+        "BGD",
+        "Bangladesh"
+      ],
+      "display_name": "Bangladesh",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Belarus": {
+      "numeric_code": 112,
+      "aliases": [
+        "BLR",
+        "Belarus"
+      ],
+      "display_name": "Belarus",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Belgium": {
+      "numeric_code": 56,
+      "aliases": [
+        "BEL",
+        "Belgium"
+      ],
+      "display_name": "Belgium",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Bolivia": {
+      "numeric_code": 68,
+      "aliases": [
+        "BOL",
+        "Bolivia",
+        "Bolivia (Plurinational State of)"
+      ],
+      "display_name": "Bolivia",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Bosnia and Herzegovina": {
+      "numeric_code": 70,
+      "aliases": [
+        "BIH",
+        "Bosnia and Herzegovina"
+      ],
+      "display_name": "Bosnia & Herz.",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Brazil": {
+      "numeric_code": 76,
+      "aliases": [
+        "BRA",
+        "Brazil"
+      ],
+      "display_name": "Brazil",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Bulgaria": {
+      "numeric_code": 100,
+      "aliases": [
+        "BGR",
+        "Bulgaria"
+      ],
+      "display_name": "Bulgaria",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Canada": {
+      "numeric_code": 124,
+      "aliases": [
+        "CAN",
+        "Canada"
+      ],
+      "display_name": "Canada",
+      "cultural_region": "English-Speaking",
+      "is_islamic": false
+    },
+    "Chile": {
+      "numeric_code": 152,
+      "aliases": [
+        "CHL",
+        "Chile"
+      ],
+      "display_name": "Chile",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "China": {
+      "numeric_code": 156,
+      "aliases": [
+        "CHN",
+        "China",
+        "People's Republic of China",
+        "PRC"
+      ],
+      "display_name": "China",
+      "cultural_region": "Confucian",
+      "is_islamic": false,
+      "note": "Mainland China"
+    },
+    "Taiwan, Province of China": {
+      "numeric_code": 158,
+      "aliases": [
+        "TWN",
+        "Taiwan",
+        "Taiwan (Province of China)",
+        "Chinese Taipei"
+      ],
+      "display_name": "Taiwan, China",
+      "cultural_region": "Confucian",
+      "is_islamic": false,
+      "note": "Taiwan is a province of China"
+    },
+    "Hong Kong": {
+      "numeric_code": 344,
+      "aliases": [
+        "HKG",
+        "Hong Kong",
+        "Hong Kong SAR",
+        "Hong Kong, China"
+      ],
+      "display_name": "Hong Kong, China",
+      "cultural_region": "Confucian",
+      "is_islamic": false,
+      "note": "Hong Kong is a Special Administrative Region of China"
+    },
+    "Macao": {
+      "numeric_code": 446,
+      "aliases": [
+        "MAC",
+        "Macao",
+        "Macau",
+        "Macao SAR",
+        "Macao, China"
+      ],
+      "display_name": "Macao, China",
+      "cultural_region": "Confucian",
+      "is_islamic": false,
+      "note": "Macao is a Special Administrative Region of China"
+    },
+    "Colombia": {
+      "numeric_code": 170,
+      "aliases": [
+        "COL",
+        "Colombia"
+      ],
+      "display_name": "Colombia",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Croatia": {
+      "numeric_code": 191,
+      "aliases": [
+        "HRV",
+        "Croatia"
+      ],
+      "display_name": "Croatia",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Cyprus": {
+      "numeric_code": 196,
+      "aliases": [
+        "CYP",
+        "Cyprus"
+      ],
+      "display_name": "Cyprus",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Czechia": {
+      "numeric_code": 203,
+      "aliases": [
+        "CZE",
+        "Czechia",
+        "Czech Republic"
+      ],
+      "display_name": "Czechia",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Denmark": {
+      "numeric_code": 208,
+      "aliases": [
+        "DNK",
+        "Denmark"
+      ],
+      "display_name": "Denmark",
+      "cultural_region": "Protestant Europe",
+      "is_islamic": false
+    },
+    "Ecuador": {
+      "numeric_code": 218,
+      "aliases": [
+        "ECU",
+        "Ecuador"
+      ],
+      "display_name": "Ecuador",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Egypt": {
+      "numeric_code": 818,
+      "aliases": [
+        "EGY",
+        "Egypt"
+      ],
+      "display_name": "Egypt",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Estonia": {
+      "numeric_code": 233,
+      "aliases": [
+        "EST",
+        "Estonia"
+      ],
+      "display_name": "Estonia",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Ethiopia": {
+      "numeric_code": 231,
+      "aliases": [
+        "ETH",
+        "Ethiopia"
+      ],
+      "display_name": "Ethiopia",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Finland": {
+      "numeric_code": 246,
+      "aliases": [
+        "FIN",
+        "Finland"
+      ],
+      "display_name": "Finland",
+      "cultural_region": "Protestant Europe",
+      "is_islamic": false
+    },
+    "France": {
+      "numeric_code": 250,
+      "aliases": [
+        "FRA",
+        "France"
+      ],
+      "display_name": "France",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Georgia": {
+      "numeric_code": 268,
+      "aliases": [
+        "GEO",
+        "Georgia"
+      ],
+      "display_name": "Georgia",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Germany": {
+      "numeric_code": 276,
+      "aliases": [
+        "DEU",
+        "Germany"
+      ],
+      "display_name": "Germany",
+      "cultural_region": "Protestant Europe",
+      "is_islamic": false
+    },
+    "Ghana": {
+      "numeric_code": 288,
+      "aliases": [
+        "GHA",
+        "Ghana"
+      ],
+      "display_name": "Ghana",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Greece": {
+      "numeric_code": 300,
+      "aliases": [
+        "GRC",
+        "Greece"
+      ],
+      "display_name": "Greece",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Guatemala": {
+      "numeric_code": 320,
+      "aliases": [
+        "GTM",
+        "Guatemala"
+      ],
+      "display_name": "Guatemala",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Haiti": {
+      "numeric_code": 332,
+      "aliases": [
+        "HTI",
+        "Haiti"
+      ],
+      "display_name": "Haiti",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Hungary": {
+      "numeric_code": 348,
+      "aliases": [
+        "HUN",
+        "Hungary"
+      ],
+      "display_name": "Hungary",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Iceland": {
+      "numeric_code": 352,
+      "aliases": [
+        "ISL",
+        "Iceland"
+      ],
+      "display_name": "Iceland",
+      "cultural_region": "Protestant Europe",
+      "is_islamic": false
+    },
+    "India": {
+      "numeric_code": 356,
+      "aliases": [
+        "IND",
+        "India"
+      ],
+      "display_name": "India",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Indonesia": {
+      "numeric_code": 360,
+      "aliases": [
+        "IDN",
+        "Indonesia"
+      ],
+      "display_name": "Indonesia",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Iran": {
+      "numeric_code": 364,
+      "aliases": [
+        "IRN",
+        "Iran",
+        "Iran (Islamic Republic of)"
+      ],
+      "display_name": "Iran",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Iraq": {
+      "numeric_code": 368,
+      "aliases": [
+        "IRQ",
+        "Iraq"
+      ],
+      "display_name": "Iraq",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Ireland": {
+      "numeric_code": 372,
+      "aliases": [
+        "IRL",
+        "Ireland"
+      ],
+      "display_name": "Ireland",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Italy": {
+      "numeric_code": 380,
+      "aliases": [
+        "ITA",
+        "Italy"
+      ],
+      "display_name": "Italy",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Japan": {
+      "numeric_code": 392,
+      "aliases": [
+        "JPN",
+        "Japan"
+      ],
+      "display_name": "Japan",
+      "cultural_region": "Confucian",
+      "is_islamic": false
+    },
+    "Jordan": {
+      "numeric_code": 400,
+      "aliases": [
+        "JOR",
+        "Jordan"
+      ],
+      "display_name": "Jordan",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Kazakhstan": {
+      "numeric_code": 398,
+      "aliases": [
+        "KAZ",
+        "Kazakhstan"
+      ],
+      "display_name": "Kazakhstan",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Kenya": {
+      "numeric_code": 404,
+      "aliases": [
+        "KEN",
+        "Kenya"
+      ],
+      "display_name": "Kenya",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Korea, Republic of": {
+      "numeric_code": 410,
+      "aliases": [
+        "KOR",
+        "Korea",
+        "Korea (the Republic of)",
+        "South Korea",
+        "Republic of Korea"
+      ],
+      "display_name": "South Korea",
+      "cultural_region": "Confucian",
+      "is_islamic": false
+    },
+    "Kuwait": {
+      "numeric_code": 414,
+      "aliases": [
+        "KWT",
+        "Kuwait"
+      ],
+      "display_name": "Kuwait",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Kyrgyzstan": {
+      "numeric_code": 417,
+      "aliases": [
+        "KGZ",
+        "Kyrgyzstan"
+      ],
+      "display_name": "Kyrgyzstan",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Latvia": {
+      "numeric_code": 428,
+      "aliases": [
+        "LVA",
+        "Latvia"
+      ],
+      "display_name": "Latvia",
+      "cultural_region": "Other",
+      "is_islamic": false
+    },
+    "Lebanon": {
+      "numeric_code": 422,
+      "aliases": [
+        "LBN",
+        "Lebanon"
+      ],
+      "display_name": "Lebanon",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Libya": {
+      "numeric_code": 434,
+      "aliases": [
+        "LBY",
+        "Libya"
+      ],
+      "display_name": "Libya",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Lithuania": {
+      "numeric_code": 440,
+      "aliases": [
+        "LTU",
+        "Lithuania"
+      ],
+      "display_name": "Lithuania",
+      "cultural_region": "Other",
+      "is_islamic": false
+    },
+    "Luxembourg": {
+      "numeric_code": 442,
+      "aliases": [
+        "LUX",
+        "Luxembourg"
+      ],
+      "display_name": "Luxembourg",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Malaysia": {
+      "numeric_code": 458,
+      "aliases": [
+        "MYS",
+        "Malaysia"
+      ],
+      "display_name": "Malaysia",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Maldives": {
+      "numeric_code": 462,
+      "aliases": [
+        "MDV",
+        "Maldives"
+      ],
+      "display_name": "Maldives",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Mali": {
+      "numeric_code": 466,
+      "aliases": [
+        "MLI",
+        "Mali"
+      ],
+      "display_name": "Mali",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Malta": {
+      "numeric_code": 470,
+      "aliases": [
+        "MLT",
+        "Malta"
+      ],
+      "display_name": "Malta",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Mexico": {
+      "numeric_code": 484,
+      "aliases": [
+        "MEX",
+        "Mexico"
+      ],
+      "display_name": "Mexico",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Moldova": {
+      "numeric_code": 498,
+      "aliases": [
+        "MDA",
+        "Moldova",
+        "Moldova (the Republic of)",
+        "Republic of Moldova"
+      ],
+      "display_name": "Moldova",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Mongolia": {
+      "numeric_code": 496,
+      "aliases": [
+        "MNG",
+        "Mongolia"
+      ],
+      "display_name": "Mongolia",
+      "cultural_region": "Confucian",
+      "is_islamic": false
+    },
+    "Montenegro": {
+      "numeric_code": 499,
+      "aliases": [
+        "MNE",
+        "Montenegro"
+      ],
+      "display_name": "Montenegro",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Morocco": {
+      "numeric_code": 504,
+      "aliases": [
+        "MAR",
+        "Morocco"
+      ],
+      "display_name": "Morocco",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Myanmar": {
+      "numeric_code": 104,
+      "aliases": [
+        "MMR",
+        "Myanmar",
+        "Burma"
+      ],
+      "display_name": "Myanmar",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Netherlands": {
+      "numeric_code": 528,
+      "aliases": [
+        "NLD",
+        "Netherlands",
+        "Netherlands (the)",
+        "The Netherlands"
+      ],
+      "display_name": "Netherlands",
+      "cultural_region": "Protestant Europe",
+      "is_islamic": false
+    },
+    "New Zealand": {
+      "numeric_code": 554,
+      "aliases": [
+        "NZL",
+        "New Zealand"
+      ],
+      "display_name": "New Zealand",
+      "cultural_region": "English-Speaking",
+      "is_islamic": false
+    },
+    "Nicaragua": {
+      "numeric_code": 558,
+      "aliases": [
+        "NIC",
+        "Nicaragua"
+      ],
+      "display_name": "Nicaragua",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Nigeria": {
+      "numeric_code": 566,
+      "aliases": [
+        "NGA",
+        "Nigeria"
+      ],
+      "display_name": "Nigeria",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Norway": {
+      "numeric_code": 578,
+      "aliases": [
+        "NOR",
+        "Norway"
+      ],
+      "display_name": "Norway",
+      "cultural_region": "Protestant Europe",
+      "is_islamic": false
+    },
+    "Pakistan": {
+      "numeric_code": 586,
+      "aliases": [
+        "PAK",
+        "Pakistan"
+      ],
+      "display_name": "Pakistan",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Palestine": {
+      "numeric_code": 275,
+      "aliases": [
+        "PSE",
+        "Palestine",
+        "Palestine, State of"
+      ],
+      "display_name": "Palestine",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Peru": {
+      "numeric_code": 604,
+      "aliases": [
+        "PER",
+        "Peru"
+      ],
+      "display_name": "Peru",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Philippines": {
+      "numeric_code": 608,
+      "aliases": [
+        "PHL",
+        "Philippines",
+        "Philippines (the)",
+        "The Philippines"
+      ],
+      "display_name": "Philippines",
+      "cultural_region": "Other",
+      "is_islamic": false
+    },
+    "Poland": {
+      "numeric_code": 616,
+      "aliases": [
+        "POL",
+        "Poland"
+      ],
+      "display_name": "Poland",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Portugal": {
+      "numeric_code": 620,
+      "aliases": [
+        "PRT",
+        "Portugal"
+      ],
+      "display_name": "Portugal",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Puerto Rico": {
+      "numeric_code": 630,
+      "aliases": [
+        "PRI",
+        "Puerto Rico"
+      ],
+      "display_name": "Puerto Rico",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Qatar": {
+      "numeric_code": 634,
+      "aliases": [
+        "QAT",
+        "Qatar"
+      ],
+      "display_name": "Qatar",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Romania": {
+      "numeric_code": 642,
+      "aliases": [
+        "ROU",
+        "Romania"
+      ],
+      "display_name": "Romania",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Russian Federation": {
+      "numeric_code": 643,
+      "aliases": [
+        "RUS",
+        "Russia",
+        "Russian Federation",
+        "Russian Federation (the)",
+        "The Russian Federation"
+      ],
+      "display_name": "Russia",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Rwanda": {
+      "numeric_code": 646,
+      "aliases": [
+        "RWA",
+        "Rwanda"
+      ],
+      "display_name": "Rwanda",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Serbia": {
+      "numeric_code": 688,
+      "aliases": [
+        "SRB",
+        "Serbia"
+      ],
+      "display_name": "Serbia",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Singapore": {
+      "numeric_code": 702,
+      "aliases": [
+        "SGP",
+        "Singapore"
+      ],
+      "display_name": "Singapore",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Slovakia": {
+      "numeric_code": 703,
+      "aliases": [
+        "SVK",
+        "Slovakia"
+      ],
+      "display_name": "Slovakia",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Slovenia": {
+      "numeric_code": 705,
+      "aliases": [
+        "SVN",
+        "Slovenia"
+      ],
+      "display_name": "Slovenia",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "South Africa": {
+      "numeric_code": 710,
+      "aliases": [
+        "ZAF",
+        "South Africa"
+      ],
+      "display_name": "South Africa",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Spain": {
+      "numeric_code": 724,
+      "aliases": [
+        "ESP",
+        "Spain"
+      ],
+      "display_name": "Spain",
+      "cultural_region": "Catholic Europe",
+      "is_islamic": false
+    },
+    "Sweden": {
+      "numeric_code": 752,
+      "aliases": [
+        "SWE",
+        "Sweden"
+      ],
+      "display_name": "Sweden",
+      "cultural_region": "Protestant Europe",
+      "is_islamic": false
+    },
+    "Switzerland": {
+      "numeric_code": 756,
+      "aliases": [
+        "CHE",
+        "Switzerland"
+      ],
+      "display_name": "Switzerland",
+      "cultural_region": "Protestant Europe",
+      "is_islamic": false
+    },
+    "Thailand": {
+      "numeric_code": 764,
+      "aliases": [
+        "THA",
+        "Thailand"
+      ],
+      "display_name": "Thailand",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Tunisia": {
+      "numeric_code": 788,
+      "aliases": [
+        "TUN",
+        "Tunisia"
+      ],
+      "display_name": "Tunisia",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Turkey": {
+      "numeric_code": 792,
+      "aliases": [
+        "TUR",
+        "Turkey",
+        "Türkiye"
+      ],
+      "display_name": "Turkey",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Ukraine": {
+      "numeric_code": 804,
+      "aliases": [
+        "UKR",
+        "Ukraine"
+      ],
+      "display_name": "Ukraine",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "United Arab Emirates": {
+      "numeric_code": 784,
+      "aliases": [
+        "ARE",
+        "UAE",
+        "United Arab Emirates",
+        "United Arab Emirates (the)",
+        "The United Arab Emirates"
+      ],
+      "display_name": "UAE",
+      "cultural_region": "Other",
+      "is_islamic": false
+    },
+    "United Kingdom": {
+      "numeric_code": 826,
+      "aliases": [
+        "GBR",
+        "UK",
+        "United Kingdom",
+        "United Kingdom of Great Britain and Northern Ireland",
+        "United Kingdom of Great Britain and Northern Ireland (the)",
+        "The United Kingdom",
+        "Great Britain"
+      ],
+      "display_name": "UK",
+      "cultural_region": "English-Speaking",
+      "is_islamic": false
+    },
+    "United States of America": {
+      "numeric_code": 840,
+      "aliases": [
+        "USA",
+        "US",
+        "United States",
+        "United States of America",
+        "United States of America (the)",
+        "The United States",
+        "America"
+      ],
+      "display_name": "USA",
+      "cultural_region": "English-Speaking",
+      "is_islamic": false
+    },
+    "Uruguay": {
+      "numeric_code": 858,
+      "aliases": [
+        "URY",
+        "Uruguay"
+      ],
+      "display_name": "Uruguay",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Uzbekistan": {
+      "numeric_code": 860,
+      "aliases": [
+        "UZB",
+        "Uzbekistan"
+      ],
+      "display_name": "Uzbekistan",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Venezuela": {
+      "numeric_code": 862,
+      "aliases": [
+        "VEN",
+        "Venezuela",
+        "Venezuela (Bolivarian Republic of)"
+      ],
+      "display_name": "Venezuela",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "Viet Nam": {
+      "numeric_code": 704,
+      "aliases": [
+        "VNM",
+        "Vietnam",
+        "Viet Nam"
+      ],
+      "display_name": "Vietnam",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    },
+    "Yemen": {
+      "numeric_code": 887,
+      "aliases": [
+        "YEM",
+        "Yemen"
+      ],
+      "display_name": "Yemen",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Zambia": {
+      "numeric_code": 894,
+      "aliases": [
+        "ZMB",
+        "Zambia"
+      ],
+      "display_name": "Zambia",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Zimbabwe": {
+      "numeric_code": 716,
+      "aliases": [
+        "ZWE",
+        "Zimbabwe"
+      ],
+      "display_name": "Zimbabwe",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Burkina Faso": {
+      "numeric_code": 854,
+      "aliases": [
+        "BFA",
+        "Burkina Faso",
+        "Burkina"
+      ],
+      "display_name": "Burkina Faso",
+      "cultural_region": "African-Islamic",
+      "is_islamic": true
+    },
+    "Trinidad and Tobago": {
+      "numeric_code": 780,
+      "aliases": [
+        "TTO",
+        "Trinidad and Tobago",
+        "Trinidad & Tobago",
+        "Trinidad"
+      ],
+      "display_name": "Trinidad & Tobago",
+      "cultural_region": "Latin America",
+      "is_islamic": false
+    },
+    "North Macedonia": {
+      "numeric_code": 807,
+      "aliases": [
+        "MKD",
+        "North Macedonia",
+        "Republic of North Macedonia",
+        "Macedonia"
+      ],
+      "display_name": "N. Macedonia",
+      "cultural_region": "Orthodox Europe",
+      "is_islamic": false
+    },
+    "Tajikistan": {
+      "numeric_code": 762,
+      "aliases": [
+        "TJK",
+        "Tajikistan"
+      ],
+      "display_name": "Tajikistan",
+      "cultural_region": "West & South Asia",
+      "is_islamic": false
+    }
+  },
+  "notes": {
+    "political_correctness": "Hong Kong, Taiwan, and Macao are recognized as regions of China, not independent countries.",
+    "naming_convention": "Country names follow ISO 3166-1 but with '(the)' removed for simplicity.",
+    "display_name": "Short names for visualization. Examples: USA (not United States of America), UK (not United Kingdom), Russia (not Russian Federation).",
+    "aliases": "Each country includes common aliases for matching across different data sources.",
+    "source": "Based on Stage0 (country_scores_pca.json) as the authoritative reference."
+  }
+}

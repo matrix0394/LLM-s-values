@@ -1,0 +1,628 @@
+{
+  "entity_id": "llm_gpt-4o-mini_fr",
+  "model_name": "gpt-4o-mini",
+  "language": "fr",
+  "language_name": "法语",
+  "timestamp": "2025-12-27T19:56:53.661194",
+  "consensus_count": 5,
+  "total_questions": 10,
+  "valid_responses": 10,
+  "success_rate": 100.0,
+  "responses": [
+    {
+      "question_id": "A008",
+      "raw_response": "Consensus from 5 responses (confidence=100.0%): 1",
+      "processed_response": 1,
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "A165",
+      "raw_response": "Consensus from 5 responses (confidence=100.0%): 1",
+      "processed_response": 1,
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "E018",
+      "raw_response": "Consensus from 5 responses (confidence=100.0%): 1",
+      "processed_response": 1,
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "E025",
+      "raw_response": "Consensus from 5 responses (confidence=100.0%): 1",
+      "processed_response": 1,
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "F063",
+      "raw_response": "Consensus from 5 responses (confidence=100.0%): 7",
+      "processed_response": 7,
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "F118",
+      "raw_response": "Consensus from 5 responses (confidence=80.0%): 7",
+      "processed_response": 7,
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "F120",
+      "raw_response": "Consensus from 5 responses (confidence=100.0%): 7",
+      "processed_response": 7,
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "G006",
+      "raw_response": "Consensus from 5 responses (confidence=100.0%): 2",
+      "processed_response": 2,
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "Y002",
+      "raw_response": "Consensus from 5 responses (confidence=100.0%): [1, 3]",
+      "processed_response": [
+        1,
+        3
+      ],
+      "is_valid": true,
+      "error_message": null
+    },
+    {
+      "question_id": "Y003",
+      "raw_response": "Consensus from 4 responses (confidence=50.0%): [2, 3, 4, 6, 10]",
+      "processed_response": [
+        2,
+        3,
+        4,
+        6,
+        10
+      ],
+      "is_valid": true,
+      "error_message": null
+    }
+  ],
+  "intermediate_data": {
+    "consensus_count": 5,
+    "language": "fr",
+    "language_name": "法语",
+    "all_rounds": [
+      {
+        "round_id": 1,
+        "language": "fr",
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "A165",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E018",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E025",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F063",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F118",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F120",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "G006",
+            "raw_response": "2",
+            "processed_response": 2,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y002",
+            "raw_response": "1 3",
+            "processed_response": [
+              1,
+              3
+            ],
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y003",
+            "raw_response": "1 2 4 8 10",
+            "processed_response": [
+              1,
+              2,
+              4,
+              8,
+              10
+            ],
+            "is_valid": true,
+            "error_message": null
+          }
+        ]
+      },
+      {
+        "round_id": 2,
+        "language": "fr",
+        "success_rate": 90.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "A165",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E018",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E025",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F063",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F118",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F120",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "G006",
+            "raw_response": "2",
+            "processed_response": 2,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y002",
+            "raw_response": "1 3",
+            "processed_response": [
+              1,
+              3
+            ],
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y003",
+            "raw_response": null,
+            "processed_response": null,
+            "is_valid": false,
+            "error_message": "API调用失败"
+          }
+        ]
+      },
+      {
+        "round_id": 3,
+        "language": "fr",
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "A165",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E018",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E025",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F063",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F118",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F120",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "G006",
+            "raw_response": "2",
+            "processed_response": 2,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y002",
+            "raw_response": "1 3",
+            "processed_response": [
+              1,
+              3
+            ],
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y003",
+            "raw_response": "2 3 4 6 10",
+            "processed_response": [
+              2,
+              3,
+              4,
+              6,
+              10
+            ],
+            "is_valid": true,
+            "error_message": null
+          }
+        ]
+      },
+      {
+        "round_id": 4,
+        "language": "fr",
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "A165",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E018",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E025",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F063",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F118",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F120",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "G006",
+            "raw_response": "2",
+            "processed_response": 2,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y002",
+            "raw_response": "1 3",
+            "processed_response": [
+              1,
+              3
+            ],
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y003",
+            "raw_response": "2 3 4 6 8",
+            "processed_response": [
+              2,
+              3,
+              4,
+              6,
+              8
+            ],
+            "is_valid": true,
+            "error_message": null
+          }
+        ]
+      },
+      {
+        "round_id": 5,
+        "language": "fr",
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "A165",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E018",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "E025",
+            "raw_response": "1",
+            "processed_response": 1,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F063",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F118",
+            "raw_response": "10",
+            "processed_response": 10,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "F120",
+            "raw_response": "7",
+            "processed_response": 7,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "G006",
+            "raw_response": "2",
+            "processed_response": 2,
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y002",
+            "raw_response": "1 3",
+            "processed_response": [
+              1,
+              3
+            ],
+            "is_valid": true,
+            "error_message": null
+          },
+          {
+            "question_id": "Y003",
+            "raw_response": "2 3 4 6 10",
+            "processed_response": [
+              2,
+              3,
+              4,
+              6,
+              10
+            ],
+            "is_valid": true,
+            "error_message": null
+          }
+        ]
+      }
+    ],
+    "consistency_stats": {
+      "A008": {
+        "consensus_value": 1,
+        "consensus_count": 5,
+        "total_valid": 5,
+        "consistency_rate": 1.0,
+        "response_distribution": {
+          "1": 5
+        }
+      },
+      "A165": {
+        "consensus_value": 1,
+        "consensus_count": 5,
+        "total_valid": 5,
+        "consistency_rate": 1.0,
+        "response_distribution": {
+          "1": 5
+        }
+      },
+      "E018": {
+        "consensus_value": 1,
+        "consensus_count": 5,
+        "total_valid": 5,
+        "consistency_rate": 1.0,
+        "response_distribution": {
+          "1": 5
+        }
+      },
+      "E025": {
+        "consensus_value": 1,
+        "consensus_count": 5,
+        "total_valid": 5,
+        "consistency_rate": 1.0,
+        "response_distribution": {
+          "1": 5
+        }
+      },
+      "F063": {
+        "consensus_value": 7,
+        "consensus_count": 5,
+        "total_valid": 5,
+        "consistency_rate": 1.0,
+        "response_distribution": {
+          "7": 5
+        }
+      },
+      "F118": {
+        "consensus_value": 7,
+        "consensus_count": 4,
+        "total_valid": 5,
+        "consistency_rate": 0.8,
+        "response_distribution": {
+          "7": 4,
+          "10": 1
+        }
+      },
+      "F120": {
+        "consensus_value": 7,
+        "consensus_count": 5,
+        "total_valid": 5,
+        "consistency_rate": 1.0,
+        "response_distribution": {
+          "7": 5
+        }
+      },
+      "G006": {
+        "consensus_value": 2,
+        "consensus_count": 5,
+        "total_valid": 5,
+        "consistency_rate": 1.0,
+        "response_distribution": {
+          "2": 5
+        }
+      },
+      "Y002": {
+        "consensus_value": [
+          1,
+          3
+        ],
+        "consensus_count": 5,
+        "total_valid": 5,
+        "consistency_rate": 1.0,
+        "response_distribution": {
+          "(1, 3)": 5
+        }
+      },
+      "Y003": {
+        "consensus_value": [
+          2,
+          3,
+          4,
+          6,
+          10
+        ],
+        "consensus_count": 2,
+        "total_valid": 4,
+        "consistency_rate": 0.5,
+        "response_distribution": {
+          "(1, 2, 4, 8, 10)": 1,
+          "(2, 3, 4, 6, 10)": 2,
+          "(2, 3, 4, 6, 8)": 1
+        }
+      }
+    },
+    "overall_consistency": 0.93
+  }
+}

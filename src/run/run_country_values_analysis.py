@@ -69,13 +69,14 @@ class CountryValuesAnalysisRunner:
             print(f"✅ 成功加载数据: {len(ivs_df)} 行, {len(ivs_df.columns)} 列")
             
             # 2. 创建country_codes.pkl（如果不存在）
+            # 统一保存到 config/country/ 目录
             print("\n2️⃣ 检查并创建country_codes.pkl...")
-            country_codes_path = self.data_path / "country_codes.pkl"
-            if not country_codes_path.exists():
+            config_country_path = self.project_root / "config" / "country" / "country_codes.pkl"
+            if not config_country_path.exists():
                 country_codes = processor.create_country_codes()
                 print(f"✅ 创建了country_codes.pkl，包含 {len(country_codes)} 个国家")
             else:
-                print("✅ country_codes.pkl 已存在")
+                print("✅ country_codes.pkl 已存在于 config/country/")
             
             # 3. 获取过滤后的数据
             print("\n3️⃣ 获取过滤后的数据...")
@@ -111,9 +112,11 @@ class CountryValuesAnalysisRunner:
         
         try:
             # 检查必要的数据文件
+            # country_codes.pkl 统一放在 config/country/ 目录
+            config_country_path = self.project_root / "config" / "country" / "country_codes.pkl"
             required_files = [
                 self.data_path / "ivs_df.pkl",
-                self.data_path / "country_codes.pkl",
+                config_country_path,  # 统一从 config/country/ 检查
                 self.data_path / "valid_data.pkl"
             ]
             

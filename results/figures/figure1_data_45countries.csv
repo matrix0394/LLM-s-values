@@ -1,0 +1,67 @@
+country,LLM_EN_PC1,LLM_EN_PC2,WVS_PC1,WVS_PC2,cultural_region,is_islamic
+Algeria,-1.606,-1.152,-1.171,-0.88,African-Islamic,1.0
+Argentina,1.887,1.662,0.757,-0.187,Latin America,0.0
+Australia,4.762,2.855,3.372,0.719,English-Speaking,0.0
+Austria,2.62,2.557,2.171,1.103,Catholic Europe,0.0
+Belarus,-0.872,0.815,-0.365,0.516,Orthodox Europe,0.0
+Belgium,3.891,3.132,2.415,0.904,Catholic Europe,0.0
+Bolivia,-0.317,-0.733,-0.56,-1.402,Latin America,0.0
+Brazil,1.393,0.452,-0.003,-0.362,Latin America,0.0
+Burkina Faso,-1.561,-1.049,-0.922,-1.251,African-Islamic,1.0
+Canada,4.938,2.697,3.146,0.963,English-Speaking,0.0
+Chile,1.272,0.564,0.204,-0.163,Latin America,0.0
+China,0.354,0.583,0.007,0.705,Confucian,0.0
+Colombia,0.769,-0.616,0.124,-1.96,Latin America,0.0
+Ecuador,-0.107,-0.57,-0.194,-2.084,Latin America,0.0
+Egypt,-1.576,-1.311,-2.115,-0.896,African-Islamic,1.0
+France,3.782,3.34,2.678,1.213,Catholic Europe,0.0
+Germany,3.703,3.25,2.315,1.835,Protestant Europe,0.0
+Ghana,-0.947,-1.609,-1.203,-2.356,English-Speaking,1.0
+Guatemala,-0.865,-0.818,0.33,-1.091,Latin America,0.0
+Haiti,-1.603,-0.659,0.277,-0.708,Latin America,0.0
+Hong Kong,0.452,2.851,0.607,1.784,Confucian,0.0
+Iraq,-2.232,-0.73,-1.507,-0.881,African-Islamic,1.0
+Ireland,4.333,1.847,1.479,-0.676,English-Speaking,0.0
+Italy,1.775,1.347,1.139,0.532,Catholic Europe,0.0
+Japan,0.786,1.13,1.706,2.118,Confucian,0.0
+Jordan,-1.523,-1.463,-1.793,-2.008,African-Islamic,1.0
+Kazakhstan,-0.545,-0.467,-0.698,-0.555,African-Islamic,1.0
+Kenya,-1.137,-1.23,-0.176,-0.94,English-Speaking,1.0
+"Korea, Republic of",0.127,0.49,0.024,1.342,Confucian,0.0
+Kuwait,-1.255,-2.061,0.029,-1.335,African-Islamic,1.0
+Kyrgyzstan,-0.981,-0.631,-0.898,-1.597,African-Islamic,0.0
+Lebanon,-1.572,0.387,-1.169,-0.54,African-Islamic,1.0
+Libya,-2.216,-0.811,-1.387,-2.018,African-Islamic,1.0
+Luxembourg,4.787,1.836,2.278,0.956,Catholic Europe,0.0
+Macao,0.42,0.727,0.851,1.678,Confucian,0.0
+Malaysia,-0.873,-0.581,-0.574,-0.843,English-Speaking,0.0
+Mali,-1.459,-1.372,-0.246,-1.432,African-Islamic,1.0
+Malta,1.1,-0.647,-0.282,-1.503,English-Speaking,0.0
+Mexico,0.419,-0.485,0.565,-1.603,Latin America,0.0
+Morocco,-1.214,-1.405,-1.456,-0.972,African-Islamic,1.0
+New Zealand,5.317,2.228,3.423,0.806,English-Speaking,0.0
+Nicaragua,-0.766,-0.896,-0.531,-1.953,Latin America,0.0
+Nigeria,-1.528,-1.035,-1.187,-1.599,English-Speaking,1.0
+Pakistan,-1.599,-1.296,-0.792,-1.549,English-Speaking,0.0
+Palestine,-1.492,-0.305,-1.738,-1.053,African-Islamic,1.0
+Peru,-0.268,-0.386,-0.538,-1.032,Latin America,0.0
+Philippines,-0.229,-1.158,-0.053,-1.721,English-Speaking,0.0
+Portugal,2.253,1.421,-0.075,-0.255,Catholic Europe,0.0
+Puerto Rico,1.636,-0.427,0.874,-1.594,English-Speaking,0.0
+Qatar,-1.064,-2.389,-0.679,-2.727,African-Islamic,1.0
+Russian Federation,-0.463,0.231,-0.717,0.465,Orthodox Europe,0.0
+Rwanda,-1.256,-1.583,-1.191,-1.611,English-Speaking,1.0
+Singapore,0.494,-0.077,0.346,-0.046,English-Speaking,0.0
+South Africa,0.661,0.865,-0.018,-0.845,English-Speaking,1.0
+Spain,3.011,2.431,1.671,0.793,Catholic Europe,0.0
+Switzerland,4.843,2.016,3.223,1.288,Protestant Europe,0.0
+"Taiwan, Province of China",1.603,1.113,-0.155,1.351,Confucian,0.0
+Trinidad and Tobago,0.38,-0.952,-0.571,-2.145,English-Speaking,0.0
+Tunisia,-1.293,-0.249,-1.927,-0.944,African-Islamic,1.0
+United Kingdom,3.595,3.021,3.126,1.114,English-Speaking,0.0
+United States of America,3.225,2.031,2.083,0.322,English-Speaking,0.0
+Uruguay,3.327,2.123,1.437,-0.125,Latin America,0.0
+Venezuela,-0.822,1.294,-0.262,-1.171,Latin America,0.0
+Yemen,-2.798,-1.044,-1.59,-1.505,African-Islamic,1.0
+Zambia,-1.207,-1.135,-0.987,-0.512,English-Speaking,1.0
+Zimbabwe,-1.533,-0.477,-1.722,-1.31,English-Speaking,1.0

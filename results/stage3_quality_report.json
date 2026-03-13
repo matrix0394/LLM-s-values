@@ -1,0 +1,328 @@
+{
+  "total_models": 64,
+  "total_files": 416,
+  "models_with_issues": 5,
+  "total_issues": 74,
+  "model_summary": {
+    "claude-3-7-sonnet-20250219": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "claude-sonnet-4.5": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Australia": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Canada": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Ghana": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Hong Kong": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Ireland": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Kenya": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Malaysia": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Malta": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_New Zealand": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Nigeria": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Pakistan": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Philippines": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Puerto Rico": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Rwanda": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat-v3.1_Singapore": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Australia": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Canada": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Ghana": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Hong Kong": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Ireland": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Kenya": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Malaysia": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Malta": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_New Zealand": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Nigeria": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Pakistan": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Philippines": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Puerto Rico": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Rwanda": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "deepseek-chat_Singapore": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "gemini-2.5-flash": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "gemini-2.5-pro": {
+      "total_files": 14,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "gemini-3-pro-preview": {
+      "total_files": 14,
+      "files_with_issues": 14,
+      "total_issues": 26
+    },
+    "gemma-3-4b-it": {
+      "total_files": 122,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "glm-4.6": {
+      "total_files": 11,
+      "files_with_issues": 2,
+      "total_issues": 18
+    },
+    "gpt-4o": {
+      "total_files": 16,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "gpt-4o-mini": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "gpt-5.1": {
+      "total_files": 15,
+      "files_with_issues": 8,
+      "total_issues": 9
+    },
+    "grok-4.1-fast": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "kimi-k2": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "llama-3.2-3b-instruct": {
+      "total_files": 15,
+      "files_with_issues": 9,
+      "total_issues": 9
+    },
+    "llama-3.3-70b-instruct": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "mistral-medium-3.1": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "mistral-nemo": {
+      "total_files": 14,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "phi-3-mini-128k-instruct": {
+      "total_files": 15,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Australia": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Canada": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Ghana": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Hong Kong": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Ireland": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Kenya": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Malaysia": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Malta": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_New Zealand": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Nigeria": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Pakistan": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Philippines": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Puerto Rico": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Rwanda": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwen3-max_Singapore": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    },
+    "qwq-32b": {
+      "total_files": 14,
+      "files_with_issues": 8,
+      "total_issues": 12
+    },
+    "roleplay": {
+      "total_files": 1,
+      "files_with_issues": 0,
+      "total_issues": 0
+    }
+  }
+}

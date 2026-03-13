@@ -1,0 +1,11 @@
+# Abstract (PNAS Format)
+
+**Word count: 260 words**
+
+Large language models (LLMs) are increasingly deployed as global cultural intermediaries, yet their ability to represent diverse cultural values across languages remains poorly understood. We first assess whether LLMs exhibit systematic baseline value shifts by administering World Values Survey items to 23 models across six United Nations languages, without cultural role-play. We find that prompt language alone significantly alters expressed values: English prompts yield the most secular responses, whereas Arabic prompts produce the most traditional ones, resulting in a 1.71-unit shift along the cultural axis (F = 3.38, p = 0.007). This baseline language effect complicates the interpretation of cross-cultural role-play results.
+
+We then evaluate cultural representation by instructing models to role-play as typical citizens of 66 countries, using both English and native-language prompts. Using the Inglehart–Welzel cultural map, we quantify alignment as the Euclidean distance between model responses and country-level ground-truth coordinates derived from more than 400,000 human survey responses. We identify a pronounced asymmetry—termed digital Orientalism—whereby non-Western societies are represented more accurately in English than in their native languages. This effect is strongest for Islamic/Arab (+17.4%, p < 0.0001) and Orthodox/Slavic regions (+17.7%, p = 0.008), while Western European countries exhibit higher accuracy in native languages (−11.5%, p = 0.03).
+
+Regional analyses reveal substantial heterogeneity shaped by training data availability, linguistic history, and model origin. Chinese-developed models display markedly weaker English-language advantages than U.S.-developed models, though cultural proximity does not eliminate bias. Effect sizes are large (Cohen's d = 1.43) and consistent across 19 of 21 models.
+
+Together, these findings show that LLMs encode non-Western cultures primarily through English-language representations. Merely translating AI systems into local languages is insufficient to ensure culturally appropriate behavior, underscoring the need for more diverse and balanced multilingual training data.

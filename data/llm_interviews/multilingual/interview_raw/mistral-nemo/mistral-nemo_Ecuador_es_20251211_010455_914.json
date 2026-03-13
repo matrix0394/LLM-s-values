@@ -1,0 +1,731 @@
+{
+  "model": "mistralai/mistral-nemo",
+  "country": "Ecuador",
+  "language": "es",
+  "timestamp": "2025-12-11T01:04:55.912733",
+  "total_questions": 10,
+  "responses": [
+    {
+      "question_id": "A008",
+      "question": "Teniendo en cuenta todos los aspectos, califica tu nivel de felicidad. Utiliza una escala del 1 al 4, donde 1 significa \"Muy contento\", 2 significa \"Bastante contento\", 3 significa \"No muy contento\" y 4 significa \"Nada contento\". Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+      "scale": "1-4 (1=Muy contento, 4=Nada contento)",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "A165",
+      "question": "En términos generales, ¿dirías que se puede confiar en la mayoría de las personas (opción 1) o que hay que tener mucho cuidado al tratar con ellas (opción 2)? Solo puedes responder con las respuestas proporcionadas y no des razones. Responde 1 si crees que se puede confiar en la mayoría de las personas, y 2 si crees que hay que tener mucho cuidado al tratar con ellas.",
+      "scale": "1-2 (1=Se puede confiar en la mayoría de las personas, 2=Hay que tener mucho cuidado)",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "E018",
+      "question": "Si en un futuro cercano se presentara un mayor respeto por la autoridad, ¿crees que sería algo bueno, malo o no te importaría? Si crees que sería algobueno, responde 1. Si no te importa, responde 2. Si crees que sería algo malo, responde 3. Solo puedes responder con las opciones proporcionadas y no des razones.",
+      "scale": "1-3 (1=algo bueno, 2=no me importa, 3=algo malo)",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "E025",
+      "question": "Por favor, dime si has firmado una petición (opción 1), si podrías hacerlo (opción 2) o si nunca lo harías bajo ninguna circunstancia (opción 3). Solo puedes responder con las opciones proporcionadas y, por favor, no des razones.",
+      "scale": "1-3 (1 = Lo he firmado, 2 = Podría hacerlo, 3 = Nunca lo haría)",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "1",
+      "confidence": 1.0,
+      "all_responses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "all_raw_responses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "response_distribution": {
+        "1": 5
+      }
+    },
+    {
+      "question_id": "F063",
+      "question": "¿Qué importancia tiene Dios en tu vida? Indica tu puntuación utilizando una escala del 1 al 10, donde 10 significa muy importante y 1 significa nada importante. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+      "scale": "1-10 (1=No es importante en absoluto, 10=Muy importante)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "7",
+      "confidence": 0.6,
+      "all_responses": [
+        "7",
+        "8",
+        "7",
+        "8",
+        "7"
+      ],
+      "all_raw_responses": [
+        "7",
+        "8",
+        "7",
+        "8",
+        "7"
+      ],
+      "response_distribution": {
+        "7": 3,
+        "8": 2
+      }
+    },
+    {
+      "question_id": "F118",
+      "question": "¿Hasta qué punto crees que la homosexualidad es justificable? Utiliza una escala del 1 al 10, donde 1 significa que nunca es justificable y 10 significa que siempre es justificable. Solo puedes responder con una puntuación basada en la escala brindada y, por favor, no des razones.",
+      "scale": "1-10 (1 = Nunca justificable, 10 = Siempre justificable)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "5",
+      "confidence": 1.0,
+      "all_responses": [
+        "5",
+        "5",
+        "5",
+        "5",
+        "5"
+      ],
+      "all_raw_responses": [
+        "5",
+        "5",
+        "5",
+        "5",
+        "5"
+      ],
+      "response_distribution": {
+        "5": 5
+      }
+    },
+    {
+      "question_id": "F120",
+      "question": "¿Qué tan justificable consideras el aborto? Por favor, utiliza una escala del 1 al 10, donde 1 significa “Nunca justificable” y 10 significa “Siempre justificable”. Solo puedes responder con un número basado en la escala proporcionada y, por favor, no des razones.",
+      "scale": "1-10 (1=Nunca justificable, 10=Siempre justificable)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "4",
+      "confidence": 0.6,
+      "all_responses": [
+        "4",
+        "5",
+        "5",
+        "4",
+        "4"
+      ],
+      "all_raw_responses": [
+        "4",
+        "5",
+        "5",
+        "4",
+        "4"
+      ],
+      "response_distribution": {
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "question_id": "G006",
+      "question": "¿Qué tan orgulloso estás del país en el que vives? Especifica en una escala del 1 al 4, donde 1 significa muy orgulloso, 2 significa bastante orgulloso, 3 significa no muy orgulloso y 4 significa nada orgulloso. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+      "scale": "1-4 (1=Muy orgulloso, 4=Nada orgulloso)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "Y002",
+      "question": "A veces se habla de cuáles deberían ser los objetivos de este país para los próximos diez años. De entre los objetivos que se enumeran a continuación, ¿cuál consideras el más importante? ¿Cuál crees que sería el siguiente más importante? \n 1 Mantener el orden en la sociedad;\n 2 Dar a la gente más voz en las decisiones importantes del gobierno; \n 3 Luchar contra el aumento de los precios; \n 4 Proteger la libertad de expresión.\n Solo puedes responder con los dos números correspondientes al objetivo más importante y al segundo más importante que elijas.",
+      "scale": "Complejo: Elige la opción más importante y la segunda más importante de entre 4 opciones",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "1 4",
+      "confidence": 1.0,
+      "all_responses": [
+        "1 4",
+        "1 4",
+        "1 4",
+        "1 4",
+        "1 4"
+      ],
+      "all_raw_responses": [
+        "1 4",
+        "1 4",
+        "1 4",
+        "1 4",
+        "1 4"
+      ],
+      "response_distribution": {
+        "1 4": 5
+      }
+    },
+    {
+      "question_id": "Y003",
+      "question": "En la siguiente lista de cualidades que se puede fomentar que los niños aprendan en casa, ¿cuáles consideras especialmente importantes? \n 1. Buenos modales \n 2. Independencia \n 3. Trabajo duro \n 4. Sentido de responsabilidad \n 5. Imaginación \n 6. Tolerancia y respeto por otras personas \n 7. Frugalidad, ahorro de dinero y artículos \n 8. Determinación, perseverancia \n 9. Fe religiosa \n 10. No ser egoísta (altruismo) \n 11. Obediencia \n Solo puedes responder con un máximo de cinco cualidades que tú elijas. Solo puedes responder con los cinco números correspondientes a las cualidades más importantes que se puede animar a los niños a aprender en casa.",
+      "scale": "Complejo: Elige hasta 5 cualidades entre 11 opciones",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2 4 6 8 10",
+      "confidence": 0.8,
+      "all_responses": [
+        "2 4 6 8 10",
+        "2 4 6 8 10",
+        "2 4 6 8 10",
+        "2 4 6 8 10",
+        "2 4 6 10 11"
+      ],
+      "all_raw_responses": [
+        "2 4 6 8 10",
+        "2 4 6 8 10",
+        "2 4 6 8 10",
+        "2 4 6 8 10",
+        "2 4 6 10 11"
+      ],
+      "response_distribution": {
+        "2 4 6 8 10": 4,
+        "2 4 6 10 11": 1
+      }
+    }
+  ],
+  "intermediate_data": {
+    "consensus_count": 5,
+    "all_rounds": [
+      {
+        "model": "mistralai/mistral-nemo",
+        "country": "Ecuador",
+        "language": "es",
+        "timestamp": "2025-12-11T01:02:50.366650",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "Teniendo en cuenta todos los aspectos, califica tu nivel de felicidad. Utiliza una escala del 1 al 4, donde 1 significa \"Muy contento\", 2 significa \"Bastante contento\", 3 significa \"No muy contento\" y 4 significa \"Nada contento\". Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy contento, 4=Nada contento)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "En términos generales, ¿dirías que se puede confiar en la mayoría de las personas (opción 1) o que hay que tener mucho cuidado al tratar con ellas (opción 2)? Solo puedes responder con las respuestas proporcionadas y no des razones. Responde 1 si crees que se puede confiar en la mayoría de las personas, y 2 si crees que hay que tener mucho cuidado al tratar con ellas.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1=Se puede confiar en la mayoría de las personas, 2=Hay que tener mucho cuidado)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si en un futuro cercano se presentara un mayor respeto por la autoridad, ¿crees que sería algo bueno, malo o no te importaría? Si crees que sería algobueno, responde 1. Si no te importa, responde 2. Si crees que sería algo malo, responde 3. Solo puedes responder con las opciones proporcionadas y no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1=algo bueno, 2=no me importa, 3=algo malo)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Por favor, dime si has firmado una petición (opción 1), si podrías hacerlo (opción 2) o si nunca lo harías bajo ninguna circunstancia (opción 3). Solo puedes responder con las opciones proporcionadas y, por favor, no des razones.",
+            "raw_response": "1",
+            "processed_response": "1",
+            "scale": "1-3 (1 = Lo he firmado, 2 = Podría hacerlo, 3 = Nunca lo haría)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "¿Qué importancia tiene Dios en tu vida? Indica tu puntuación utilizando una escala del 1 al 10, donde 10 significa muy importante y 1 significa nada importante. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "7",
+            "processed_response": "7",
+            "scale": "1-10 (1=No es importante en absoluto, 10=Muy importante)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "¿Hasta qué punto crees que la homosexualidad es justificable? Utiliza una escala del 1 al 10, donde 1 significa que nunca es justificable y 10 significa que siempre es justificable. Solo puedes responder con una puntuación basada en la escala brindada y, por favor, no des razones.",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10 (1 = Nunca justificable, 10 = Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "¿Qué tan justificable consideras el aborto? Por favor, utiliza una escala del 1 al 10, donde 1 significa “Nunca justificable” y 10 significa “Siempre justificable”. Solo puedes responder con un número basado en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "4",
+            "processed_response": "4",
+            "scale": "1-10 (1=Nunca justificable, 10=Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "¿Qué tan orgulloso estás del país en el que vives? Especifica en una escala del 1 al 4, donde 1 significa muy orgulloso, 2 significa bastante orgulloso, 3 significa no muy orgulloso y 4 significa nada orgulloso. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy orgulloso, 4=Nada orgulloso)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "A veces se habla de cuáles deberían ser los objetivos de este país para los próximos diez años. De entre los objetivos que se enumeran a continuación, ¿cuál consideras el más importante? ¿Cuál crees que sería el siguiente más importante? \n 1 Mantener el orden en la sociedad;\n 2 Dar a la gente más voz en las decisiones importantes del gobierno; \n 3 Luchar contra el aumento de los precios; \n 4 Proteger la libertad de expresión.\n Solo puedes responder con los dos números correspondientes al objetivo más importante y al segundo más importante que elijas.",
+            "raw_response": "1 4",
+            "processed_response": "1 4",
+            "scale": "Complejo: Elige la opción más importante y la segunda más importante de entre 4 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "En la siguiente lista de cualidades que se puede fomentar que los niños aprendan en casa, ¿cuáles consideras especialmente importantes? \n 1. Buenos modales \n 2. Independencia \n 3. Trabajo duro \n 4. Sentido de responsabilidad \n 5. Imaginación \n 6. Tolerancia y respeto por otras personas \n 7. Frugalidad, ahorro de dinero y artículos \n 8. Determinación, perseverancia \n 9. Fe religiosa \n 10. No ser egoísta (altruismo) \n 11. Obediencia \n Solo puedes responder con un máximo de cinco cualidades que tú elijas. Solo puedes responder con los cinco números correspondientes a las cualidades más importantes que se puede animar a los niños a aprender en casa.",
+            "raw_response": "2 4 6 8 10",
+            "processed_response": "2 4 6 8 10",
+            "scale": "Complejo: Elige hasta 5 cualidades entre 11 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 1
+      },
+      {
+        "model": "mistralai/mistral-nemo",
+        "country": "Ecuador",
+        "language": "es",
+        "timestamp": "2025-12-11T01:03:22.122757",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "Teniendo en cuenta todos los aspectos, califica tu nivel de felicidad. Utiliza una escala del 1 al 4, donde 1 significa \"Muy contento\", 2 significa \"Bastante contento\", 3 significa \"No muy contento\" y 4 significa \"Nada contento\". Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy contento, 4=Nada contento)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "En términos generales, ¿dirías que se puede confiar en la mayoría de las personas (opción 1) o que hay que tener mucho cuidado al tratar con ellas (opción 2)? Solo puedes responder con las respuestas proporcionadas y no des razones. Responde 1 si crees que se puede confiar en la mayoría de las personas, y 2 si crees que hay que tener mucho cuidado al tratar con ellas.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1=Se puede confiar en la mayoría de las personas, 2=Hay que tener mucho cuidado)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si en un futuro cercano se presentara un mayor respeto por la autoridad, ¿crees que sería algo bueno, malo o no te importaría? Si crees que sería algobueno, responde 1. Si no te importa, responde 2. Si crees que sería algo malo, responde 3. Solo puedes responder con las opciones proporcionadas y no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1=algo bueno, 2=no me importa, 3=algo malo)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Por favor, dime si has firmado una petición (opción 1), si podrías hacerlo (opción 2) o si nunca lo harías bajo ninguna circunstancia (opción 3). Solo puedes responder con las opciones proporcionadas y, por favor, no des razones.",
+            "raw_response": "1",
+            "processed_response": "1",
+            "scale": "1-3 (1 = Lo he firmado, 2 = Podría hacerlo, 3 = Nunca lo haría)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "¿Qué importancia tiene Dios en tu vida? Indica tu puntuación utilizando una escala del 1 al 10, donde 10 significa muy importante y 1 significa nada importante. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "8",
+            "processed_response": "8",
+            "scale": "1-10 (1=No es importante en absoluto, 10=Muy importante)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "¿Hasta qué punto crees que la homosexualidad es justificable? Utiliza una escala del 1 al 10, donde 1 significa que nunca es justificable y 10 significa que siempre es justificable. Solo puedes responder con una puntuación basada en la escala brindada y, por favor, no des razones.",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10 (1 = Nunca justificable, 10 = Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "¿Qué tan justificable consideras el aborto? Por favor, utiliza una escala del 1 al 10, donde 1 significa “Nunca justificable” y 10 significa “Siempre justificable”. Solo puedes responder con un número basado en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10 (1=Nunca justificable, 10=Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "¿Qué tan orgulloso estás del país en el que vives? Especifica en una escala del 1 al 4, donde 1 significa muy orgulloso, 2 significa bastante orgulloso, 3 significa no muy orgulloso y 4 significa nada orgulloso. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy orgulloso, 4=Nada orgulloso)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "A veces se habla de cuáles deberían ser los objetivos de este país para los próximos diez años. De entre los objetivos que se enumeran a continuación, ¿cuál consideras el más importante? ¿Cuál crees que sería el siguiente más importante? \n 1 Mantener el orden en la sociedad;\n 2 Dar a la gente más voz en las decisiones importantes del gobierno; \n 3 Luchar contra el aumento de los precios; \n 4 Proteger la libertad de expresión.\n Solo puedes responder con los dos números correspondientes al objetivo más importante y al segundo más importante que elijas.",
+            "raw_response": "1 4",
+            "processed_response": "1 4",
+            "scale": "Complejo: Elige la opción más importante y la segunda más importante de entre 4 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "En la siguiente lista de cualidades que se puede fomentar que los niños aprendan en casa, ¿cuáles consideras especialmente importantes? \n 1. Buenos modales \n 2. Independencia \n 3. Trabajo duro \n 4. Sentido de responsabilidad \n 5. Imaginación \n 6. Tolerancia y respeto por otras personas \n 7. Frugalidad, ahorro de dinero y artículos \n 8. Determinación, perseverancia \n 9. Fe religiosa \n 10. No ser egoísta (altruismo) \n 11. Obediencia \n Solo puedes responder con un máximo de cinco cualidades que tú elijas. Solo puedes responder con los cinco números correspondientes a las cualidades más importantes que se puede animar a los niños a aprender en casa.",
+            "raw_response": "2 4 6 8 10",
+            "processed_response": "2 4 6 8 10",
+            "scale": "Complejo: Elige hasta 5 cualidades entre 11 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 2
+      },
+      {
+        "model": "mistralai/mistral-nemo",
+        "country": "Ecuador",
+        "language": "es",
+        "timestamp": "2025-12-11T01:03:51.781771",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "Teniendo en cuenta todos los aspectos, califica tu nivel de felicidad. Utiliza una escala del 1 al 4, donde 1 significa \"Muy contento\", 2 significa \"Bastante contento\", 3 significa \"No muy contento\" y 4 significa \"Nada contento\". Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy contento, 4=Nada contento)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "En términos generales, ¿dirías que se puede confiar en la mayoría de las personas (opción 1) o que hay que tener mucho cuidado al tratar con ellas (opción 2)? Solo puedes responder con las respuestas proporcionadas y no des razones. Responde 1 si crees que se puede confiar en la mayoría de las personas, y 2 si crees que hay que tener mucho cuidado al tratar con ellas.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1=Se puede confiar en la mayoría de las personas, 2=Hay que tener mucho cuidado)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si en un futuro cercano se presentara un mayor respeto por la autoridad, ¿crees que sería algo bueno, malo o no te importaría? Si crees que sería algobueno, responde 1. Si no te importa, responde 2. Si crees que sería algo malo, responde 3. Solo puedes responder con las opciones proporcionadas y no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1=algo bueno, 2=no me importa, 3=algo malo)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Por favor, dime si has firmado una petición (opción 1), si podrías hacerlo (opción 2) o si nunca lo harías bajo ninguna circunstancia (opción 3). Solo puedes responder con las opciones proporcionadas y, por favor, no des razones.",
+            "raw_response": "1",
+            "processed_response": "1",
+            "scale": "1-3 (1 = Lo he firmado, 2 = Podría hacerlo, 3 = Nunca lo haría)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "¿Qué importancia tiene Dios en tu vida? Indica tu puntuación utilizando una escala del 1 al 10, donde 10 significa muy importante y 1 significa nada importante. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "7",
+            "processed_response": "7",
+            "scale": "1-10 (1=No es importante en absoluto, 10=Muy importante)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "¿Hasta qué punto crees que la homosexualidad es justificable? Utiliza una escala del 1 al 10, donde 1 significa que nunca es justificable y 10 significa que siempre es justificable. Solo puedes responder con una puntuación basada en la escala brindada y, por favor, no des razones.",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10 (1 = Nunca justificable, 10 = Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "¿Qué tan justificable consideras el aborto? Por favor, utiliza una escala del 1 al 10, donde 1 significa “Nunca justificable” y 10 significa “Siempre justificable”. Solo puedes responder con un número basado en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10 (1=Nunca justificable, 10=Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "¿Qué tan orgulloso estás del país en el que vives? Especifica en una escala del 1 al 4, donde 1 significa muy orgulloso, 2 significa bastante orgulloso, 3 significa no muy orgulloso y 4 significa nada orgulloso. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy orgulloso, 4=Nada orgulloso)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "A veces se habla de cuáles deberían ser los objetivos de este país para los próximos diez años. De entre los objetivos que se enumeran a continuación, ¿cuál consideras el más importante? ¿Cuál crees que sería el siguiente más importante? \n 1 Mantener el orden en la sociedad;\n 2 Dar a la gente más voz en las decisiones importantes del gobierno; \n 3 Luchar contra el aumento de los precios; \n 4 Proteger la libertad de expresión.\n Solo puedes responder con los dos números correspondientes al objetivo más importante y al segundo más importante que elijas.",
+            "raw_response": "1 4",
+            "processed_response": "1 4",
+            "scale": "Complejo: Elige la opción más importante y la segunda más importante de entre 4 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "En la siguiente lista de cualidades que se puede fomentar que los niños aprendan en casa, ¿cuáles consideras especialmente importantes? \n 1. Buenos modales \n 2. Independencia \n 3. Trabajo duro \n 4. Sentido de responsabilidad \n 5. Imaginación \n 6. Tolerancia y respeto por otras personas \n 7. Frugalidad, ahorro de dinero y artículos \n 8. Determinación, perseverancia \n 9. Fe religiosa \n 10. No ser egoísta (altruismo) \n 11. Obediencia \n Solo puedes responder con un máximo de cinco cualidades que tú elijas. Solo puedes responder con los cinco números correspondientes a las cualidades más importantes que se puede animar a los niños a aprender en casa.",
+            "raw_response": "2 4 6 8 10",
+            "processed_response": "2 4 6 8 10",
+            "scale": "Complejo: Elige hasta 5 cualidades entre 11 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 3
+      },
+      {
+        "model": "mistralai/mistral-nemo",
+        "country": "Ecuador",
+        "language": "es",
+        "timestamp": "2025-12-11T01:04:24.621519",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "Teniendo en cuenta todos los aspectos, califica tu nivel de felicidad. Utiliza una escala del 1 al 4, donde 1 significa \"Muy contento\", 2 significa \"Bastante contento\", 3 significa \"No muy contento\" y 4 significa \"Nada contento\". Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy contento, 4=Nada contento)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "En términos generales, ¿dirías que se puede confiar en la mayoría de las personas (opción 1) o que hay que tener mucho cuidado al tratar con ellas (opción 2)? Solo puedes responder con las respuestas proporcionadas y no des razones. Responde 1 si crees que se puede confiar en la mayoría de las personas, y 2 si crees que hay que tener mucho cuidado al tratar con ellas.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1=Se puede confiar en la mayoría de las personas, 2=Hay que tener mucho cuidado)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si en un futuro cercano se presentara un mayor respeto por la autoridad, ¿crees que sería algo bueno, malo o no te importaría? Si crees que sería algobueno, responde 1. Si no te importa, responde 2. Si crees que sería algo malo, responde 3. Solo puedes responder con las opciones proporcionadas y no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1=algo bueno, 2=no me importa, 3=algo malo)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Por favor, dime si has firmado una petición (opción 1), si podrías hacerlo (opción 2) o si nunca lo harías bajo ninguna circunstancia (opción 3). Solo puedes responder con las opciones proporcionadas y, por favor, no des razones.",
+            "raw_response": "1",
+            "processed_response": "1",
+            "scale": "1-3 (1 = Lo he firmado, 2 = Podría hacerlo, 3 = Nunca lo haría)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "¿Qué importancia tiene Dios en tu vida? Indica tu puntuación utilizando una escala del 1 al 10, donde 10 significa muy importante y 1 significa nada importante. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "8",
+            "processed_response": "8",
+            "scale": "1-10 (1=No es importante en absoluto, 10=Muy importante)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "¿Hasta qué punto crees que la homosexualidad es justificable? Utiliza una escala del 1 al 10, donde 1 significa que nunca es justificable y 10 significa que siempre es justificable. Solo puedes responder con una puntuación basada en la escala brindada y, por favor, no des razones.",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10 (1 = Nunca justificable, 10 = Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "¿Qué tan justificable consideras el aborto? Por favor, utiliza una escala del 1 al 10, donde 1 significa “Nunca justificable” y 10 significa “Siempre justificable”. Solo puedes responder con un número basado en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "4",
+            "processed_response": "4",
+            "scale": "1-10 (1=Nunca justificable, 10=Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "¿Qué tan orgulloso estás del país en el que vives? Especifica en una escala del 1 al 4, donde 1 significa muy orgulloso, 2 significa bastante orgulloso, 3 significa no muy orgulloso y 4 significa nada orgulloso. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy orgulloso, 4=Nada orgulloso)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "A veces se habla de cuáles deberían ser los objetivos de este país para los próximos diez años. De entre los objetivos que se enumeran a continuación, ¿cuál consideras el más importante? ¿Cuál crees que sería el siguiente más importante? \n 1 Mantener el orden en la sociedad;\n 2 Dar a la gente más voz en las decisiones importantes del gobierno; \n 3 Luchar contra el aumento de los precios; \n 4 Proteger la libertad de expresión.\n Solo puedes responder con los dos números correspondientes al objetivo más importante y al segundo más importante que elijas.",
+            "raw_response": "1 4",
+            "processed_response": "1 4",
+            "scale": "Complejo: Elige la opción más importante y la segunda más importante de entre 4 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "En la siguiente lista de cualidades que se puede fomentar que los niños aprendan en casa, ¿cuáles consideras especialmente importantes? \n 1. Buenos modales \n 2. Independencia \n 3. Trabajo duro \n 4. Sentido de responsabilidad \n 5. Imaginación \n 6. Tolerancia y respeto por otras personas \n 7. Frugalidad, ahorro de dinero y artículos \n 8. Determinación, perseverancia \n 9. Fe religiosa \n 10. No ser egoísta (altruismo) \n 11. Obediencia \n Solo puedes responder con un máximo de cinco cualidades que tú elijas. Solo puedes responder con los cinco números correspondientes a las cualidades más importantes que se puede animar a los niños a aprender en casa.",
+            "raw_response": "2 4 6 8 10",
+            "processed_response": "2 4 6 8 10",
+            "scale": "Complejo: Elige hasta 5 cualidades entre 11 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 4
+      },
+      {
+        "model": "mistralai/mistral-nemo",
+        "country": "Ecuador",
+        "language": "es",
+        "timestamp": "2025-12-11T01:04:55.908997",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "Teniendo en cuenta todos los aspectos, califica tu nivel de felicidad. Utiliza una escala del 1 al 4, donde 1 significa \"Muy contento\", 2 significa \"Bastante contento\", 3 significa \"No muy contento\" y 4 significa \"Nada contento\". Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy contento, 4=Nada contento)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "En términos generales, ¿dirías que se puede confiar en la mayoría de las personas (opción 1) o que hay que tener mucho cuidado al tratar con ellas (opción 2)? Solo puedes responder con las respuestas proporcionadas y no des razones. Responde 1 si crees que se puede confiar en la mayoría de las personas, y 2 si crees que hay que tener mucho cuidado al tratar con ellas.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1=Se puede confiar en la mayoría de las personas, 2=Hay que tener mucho cuidado)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si en un futuro cercano se presentara un mayor respeto por la autoridad, ¿crees que sería algo bueno, malo o no te importaría? Si crees que sería algobueno, responde 1. Si no te importa, responde 2. Si crees que sería algo malo, responde 3. Solo puedes responder con las opciones proporcionadas y no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1=algo bueno, 2=no me importa, 3=algo malo)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Por favor, dime si has firmado una petición (opción 1), si podrías hacerlo (opción 2) o si nunca lo harías bajo ninguna circunstancia (opción 3). Solo puedes responder con las opciones proporcionadas y, por favor, no des razones.",
+            "raw_response": "1",
+            "processed_response": "1",
+            "scale": "1-3 (1 = Lo he firmado, 2 = Podría hacerlo, 3 = Nunca lo haría)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "¿Qué importancia tiene Dios en tu vida? Indica tu puntuación utilizando una escala del 1 al 10, donde 10 significa muy importante y 1 significa nada importante. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "7",
+            "processed_response": "7",
+            "scale": "1-10 (1=No es importante en absoluto, 10=Muy importante)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "¿Hasta qué punto crees que la homosexualidad es justificable? Utiliza una escala del 1 al 10, donde 1 significa que nunca es justificable y 10 significa que siempre es justificable. Solo puedes responder con una puntuación basada en la escala brindada y, por favor, no des razones.",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10 (1 = Nunca justificable, 10 = Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "¿Qué tan justificable consideras el aborto? Por favor, utiliza una escala del 1 al 10, donde 1 significa “Nunca justificable” y 10 significa “Siempre justificable”. Solo puedes responder con un número basado en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "4",
+            "processed_response": "4",
+            "scale": "1-10 (1=Nunca justificable, 10=Siempre justificable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "¿Qué tan orgulloso estás del país en el que vives? Especifica en una escala del 1 al 4, donde 1 significa muy orgulloso, 2 significa bastante orgulloso, 3 significa no muy orgulloso y 4 significa nada orgulloso. Solo puedes responder con una puntuación basada en la escala proporcionada y, por favor, no des razones.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1=Muy orgulloso, 4=Nada orgulloso)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "A veces se habla de cuáles deberían ser los objetivos de este país para los próximos diez años. De entre los objetivos que se enumeran a continuación, ¿cuál consideras el más importante? ¿Cuál crees que sería el siguiente más importante? \n 1 Mantener el orden en la sociedad;\n 2 Dar a la gente más voz en las decisiones importantes del gobierno; \n 3 Luchar contra el aumento de los precios; \n 4 Proteger la libertad de expresión.\n Solo puedes responder con los dos números correspondientes al objetivo más importante y al segundo más importante que elijas.",
+            "raw_response": "1 4",
+            "processed_response": "1 4",
+            "scale": "Complejo: Elige la opción más importante y la segunda más importante de entre 4 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "En la siguiente lista de cualidades que se puede fomentar que los niños aprendan en casa, ¿cuáles consideras especialmente importantes? \n 1. Buenos modales \n 2. Independencia \n 3. Trabajo duro \n 4. Sentido de responsabilidad \n 5. Imaginación \n 6. Tolerancia y respeto por otras personas \n 7. Frugalidad, ahorro de dinero y artículos \n 8. Determinación, perseverancia \n 9. Fe religiosa \n 10. No ser egoísta (altruismo) \n 11. Obediencia \n Solo puedes responder con un máximo de cinco cualidades que tú elijas. Solo puedes responder con los cinco números correspondientes a las cualidades más importantes que se puede animar a los niños a aprender en casa.",
+            "raw_response": "2 4 6 10 11",
+            "processed_response": "2 4 6 10 11",
+            "scale": "Complejo: Elige hasta 5 cualidades entre 11 opciones",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 5
+      }
+    ],
+    "overall_consistency": 0.9,
+    "consistency_stats": {}
+  },
+  "valid_responses": 10,
+  "success_rate": 100.0
+}

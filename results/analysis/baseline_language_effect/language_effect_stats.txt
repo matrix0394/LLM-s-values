@@ -1,0 +1,74 @@
+================================================================================
+BASELINE LANGUAGE EFFECT ANALYSIS
+================================================================================
+
+1. LANGUAGE EFFECT ON VALUE DISTRIBUTION
+--------------------------------------------------------------------------------
+
+Languages ranked by PC1 (Traditional → Secular):
+
+  en    : PC1= +2.69 (±1.85), PC2= +1.19 (±1.73) - Very Secular, Self-expression
+  fr    : PC1= +2.67 (±1.52), PC2= +1.68 (±1.38) - Very Secular, Self-expression
+  es    : PC1= +2.53 (±1.55), PC2= +1.77 (±1.34) - Very Secular, Self-expression
+  zh-cn : PC1= +2.35 (±1.84), PC2= +1.53 (±1.88) - Very Secular, Self-expression
+  ru    : PC1= +2.10 (±1.82), PC2= +1.47 (±1.84) - Very Secular, Self-expression
+  ar    : PC1= +0.98 (±1.49), PC2= +0.89 (±2.04) - Secular, Self-expression
+
+PC1 range across languages: 1.71 units
+PC2 range across languages: 0.89 units
+
+Most Secular: en (PC1=+2.69)
+Most Traditional: ar (PC1=+0.98)
+
+2. MODEL LANGUAGE STABILITY
+--------------------------------------------------------------------------------
+
+Models ranked by stability (PC1 range across languages):
+
+  google/gemini-2.5-pro                   : Range=1.69, Std=0.59 - Stable
+  z-ai/glm-4.6                            : Range=1.98, Std=0.75 - Stable
+  meta-llama/llama-3.3-70b-instruct       : Range=2.31, Std=0.90 - Moderate
+  claude-3-7-sonnet-20250219              : Range=2.33, Std=0.91 - Moderate
+  qwen/qwq-32b                            : Range=2.44, Std=1.19 - Moderate
+  mistralai/mistral-medium-3.1            : Range=2.47, Std=1.08 - Moderate
+  microsoft/phi-3-mini-128k-instruct      : Range=3.12, Std=1.18 - Unstable
+  deepseek-chat                           : Range=3.52, Std=1.33 - Unstable
+  meta-llama/llama-3.2-3b-instruct        : Range=3.54, Std=1.49 - Unstable
+  kimi-k2                                 : Range=3.62, Std=1.31 - Unstable
+
+Most unstable models:
+
+  qwen/qwen3-max                          : Range=5.31, Std=2.06 - Very Unstable
+  qwen3-1.7b                              : Range=5.36, Std=2.34 - Very Unstable
+  doubao-1-5-pro-32k-250115               : Range=5.42, Std=2.06 - Very Unstable
+  google/gemini-2.5-flash                 : Range=5.47, Std=1.92 - Very Unstable
+  mistralai/mistral-nemo                  : Range=5.85, Std=2.23 - Very Unstable
+
+3. LANGUAGE PAIRWISE DISTANCES
+--------------------------------------------------------------------------------
+
+Top 10 most distant language pairs:
+
+  ar     ↔ fr    : 1.87 units
+  ar     ↔ es    : 1.79 units
+  ar     ↔ en    : 1.73 units
+  ar     ↔ zh-cn : 1.52 units
+  ar     ↔ ru    : 1.26 units
+  en     ↔ ru    : 0.65 units
+  fr     ↔ ru    : 0.61 units
+  en     ↔ es    : 0.60 units
+  es     ↔ ru    : 0.53 units
+  en     ↔ fr    : 0.49 units
+
+4. STATISTICAL TESTS
+--------------------------------------------------------------------------------
+
+  ANOVA on PC1 (Traditional-Secular)      : F=3.380     , p=0.006618   - Significant
+  ANOVA on PC2 (Survival-Self-expression) : F=0.852     , p=0.515449   - Not significant
+  Arabic vs EN on PC1                     : t=-3.447    , p=0.001258   - Significant
+  Arabic vs FR on PC1                     : t=-3.815    , p=0.000421   - Significant
+  Arabic vs ES on PC1                     : t=-3.471    , p=0.001175   - Significant
+  Arabic vs RU on PC1                     : t=-2.289    , p=0.026957   - Significant
+  Arabic vs ZH-CN on PC1                  : t=-2.781    , p=0.007942   - Significant
+
+================================================================================

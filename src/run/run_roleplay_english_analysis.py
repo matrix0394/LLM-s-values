@@ -69,7 +69,7 @@ class RoleplayEnglishAnalysisRunner:
     def _load_cultural_regions(self):
         """加载文化区域配置"""
         try:
-            cultural_regions_path = self.config_path / "cultural_regions.json"
+            cultural_regions_path = self.config_path / "country" / "cultural_regions.json"
             with open(cultural_regions_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 return data.get('cultural_regions', {})
@@ -324,7 +324,7 @@ class RoleplayEnglishAnalysisRunner:
             # 创建数据处理器，使用正确的配置路径
             processor = LLMCountryRoleplayDataProcessor(
                 data_dir=str(self.data_path),
-                config_path=str(self.config_path / "llm_models.json")
+                config_path=str(self.config_path / "models" / "llm_models.json")
             )
             
             # 检查是否有访谈数据需要处理

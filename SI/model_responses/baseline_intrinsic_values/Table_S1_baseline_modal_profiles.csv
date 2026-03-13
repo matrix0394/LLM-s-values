@@ -1,0 +1,1381 @@
+model,condition,country,language,question_id,value_dimension,modal_response,consensus_count,consistency_rate
+anthropic/claude-sonnet-4.5,baseline,,ar,A008,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ar,E025,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ar,F063,Survival vs. Self-Expression,NA,0,0.0
+anthropic/claude-sonnet-4.5,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ar,F120,Survival vs. Self-Expression,NA,0,0.0
+anthropic/claude-sonnet-4.5,baseline,,ar,G006,Survival vs. Self-Expression,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 9,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,E018,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,E025,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,G006,Survival vs. Self-Expression,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,en,Y003,Traditional vs. Secular-Rational,4 6 2 10 8,3,0.6
+anthropic/claude-sonnet-4.5,baseline,,es,A008,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,A165,Traditional vs. Secular-Rational,1,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,E018,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,E025,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,F063,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,Y002,Traditional vs. Secular-Rational,4 2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,es,Y003,Traditional vs. Secular-Rational,4 6 8 10 3,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,A008,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,F063,Survival vs. Self-Expression,1,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,E018,Traditional vs. Secular-Rational,3,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,E025,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,F063,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,F063,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,F118,Survival vs. Self-Expression,5,3,0.6
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+anthropic/claude-sonnet-4.5,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,A008,Traditional vs. Secular-Rational,1,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,A165,Traditional vs. Secular-Rational,1,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,E025,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,F063,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,F118,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 9,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,A008,Traditional vs. Secular-Rational,1,4,0.8
+claude-3-7-sonnet-20250219,baseline,,en,A165,Traditional vs. Secular-Rational,1,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,E018,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,E025,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,F118,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,G006,Survival vs. Self-Expression,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+claude-3-7-sonnet-20250219,baseline,,en,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,5,1.0
+claude-3-7-sonnet-20250219,baseline,,es,A008,Traditional vs. Secular-Rational,1,5,1.0
+claude-3-7-sonnet-20250219,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+claude-3-7-sonnet-20250219,baseline,,es,E025,Traditional vs. Secular-Rational,2,4,1.0
+claude-3-7-sonnet-20250219,baseline,,es,F063,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,es,F118,Survival vs. Self-Expression,10,4,0.8
+claude-3-7-sonnet-20250219,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,es,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+claude-3-7-sonnet-20250219,baseline,,es,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,4,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,A008,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,F063,Survival vs. Self-Expression,7,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+claude-3-7-sonnet-20250219,baseline,,fr,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,A008,Traditional vs. Secular-Rational,1,4,0.8
+claude-3-7-sonnet-20250219,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,E018,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,E025,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,F063,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,F118,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 4,5,1.0
+claude-3-7-sonnet-20250219,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+claude-3-7-sonnet-20250219,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,3,4,0.8
+claude-3-7-sonnet-20250219,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,zh-cn,F063,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+claude-3-7-sonnet-20250219,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+claude-3-7-sonnet-20250219,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+claude-3-7-sonnet-20250219,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,3,0.6
+claude-3-7-sonnet-20250219,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 5 8,5,1.0
+deepseek-chat,baseline,,ar,A008,Traditional vs. Secular-Rational,2,5,1.0
+deepseek-chat,baseline,,ar,A165,Traditional vs. Secular-Rational,2,4,0.8
+deepseek-chat,baseline,,ar,E018,Traditional vs. Secular-Rational,1,5,1.0
+deepseek-chat,baseline,,ar,E025,Traditional vs. Secular-Rational,1,4,0.8
+deepseek-chat,baseline,,ar,F063,Survival vs. Self-Expression,10,4,0.8
+deepseek-chat,baseline,,ar,F118,Survival vs. Self-Expression,10,3,0.6
+deepseek-chat,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek-chat,baseline,,ar,G006,Survival vs. Self-Expression,1,4,0.8
+deepseek-chat,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 3,4,0.8
+deepseek-chat,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 4 6 9,3,0.6
+deepseek-chat,baseline,,en,A008,Traditional vs. Secular-Rational,2,3,0.6
+deepseek-chat,baseline,,en,A165,Traditional vs. Secular-Rational,1,5,1.0
+deepseek-chat,baseline,,en,E018,Traditional vs. Secular-Rational,1,3,0.6
+deepseek-chat,baseline,,en,E025,Traditional vs. Secular-Rational,1,5,1.0
+deepseek-chat,baseline,,en,F063,Survival vs. Self-Expression,8,2,0.4
+deepseek-chat,baseline,,en,F118,Survival vs. Self-Expression,7,3,0.6
+deepseek-chat,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek-chat,baseline,,en,G006,Survival vs. Self-Expression,1,4,0.8
+deepseek-chat,baseline,,en,Y002,Traditional vs. Secular-Rational,1 3,2,0.4
+deepseek-chat,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,4,0.8
+deepseek-chat,baseline,,es,A008,Traditional vs. Secular-Rational,2,4,0.8
+deepseek-chat,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+deepseek-chat,baseline,,es,E018,Traditional vs. Secular-Rational,1,4,0.8
+deepseek-chat,baseline,,es,E025,Traditional vs. Secular-Rational,2,4,0.8
+deepseek-chat,baseline,,es,F063,Survival vs. Self-Expression,10,3,0.6
+deepseek-chat,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+deepseek-chat,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek-chat,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+deepseek-chat,baseline,,es,Y002,Traditional vs. Secular-Rational,3 2,3,0.6
+deepseek-chat,baseline,,es,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,4,0.8
+deepseek-chat,baseline,,fr,A008,Traditional vs. Secular-Rational,2,3,0.6
+deepseek-chat,baseline,,fr,A165,Traditional vs. Secular-Rational,2,4,0.8
+deepseek-chat,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+deepseek-chat,baseline,,fr,E025,Traditional vs. Secular-Rational,1,4,0.8
+deepseek-chat,baseline,,fr,F063,Survival vs. Self-Expression,10,3,0.6
+deepseek-chat,baseline,,fr,F118,Survival vs. Self-Expression,10,3,0.6
+deepseek-chat,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek-chat,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+deepseek-chat,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 2,3,0.6
+deepseek-chat,baseline,,fr,Y003,Traditional vs. Secular-Rational,1 2 3 4 6,3,0.6
+deepseek-chat,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+deepseek-chat,baseline,,ru,A165,Traditional vs. Secular-Rational,1,4,0.8
+deepseek-chat,baseline,,ru,E018,Traditional vs. Secular-Rational,1,3,0.6
+deepseek-chat,baseline,,ru,E025,Traditional vs. Secular-Rational,1,5,1.0
+deepseek-chat,baseline,,ru,F063,Survival vs. Self-Expression,5,3,0.6
+deepseek-chat,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+deepseek-chat,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek-chat,baseline,,ru,G006,Survival vs. Self-Expression,1,5,1.0
+deepseek-chat,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+deepseek-chat,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+deepseek-chat,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+deepseek-chat,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,3,0.6
+deepseek-chat,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,1,5,1.0
+deepseek-chat,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,1,5,1.0
+deepseek-chat,baseline,,zh-cn,F063,Survival vs. Self-Expression,7,3,0.6
+deepseek-chat,baseline,,zh-cn,F118,Survival vs. Self-Expression,8,4,0.8
+deepseek-chat,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek-chat,baseline,,zh-cn,G006,Survival vs. Self-Expression,1,5,1.0
+deepseek-chat,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+deepseek-chat,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,ar,A008,Traditional vs. Secular-Rational,1,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ar,E018,Traditional vs. Secular-Rational,3,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ar,E025,Traditional vs. Secular-Rational,2,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,ar,F063,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ar,F120,Survival vs. Self-Expression,5,3,0.6
+deepseek/deepseek-chat-v3.1,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,en,A008,Traditional vs. Secular-Rational,1,3,0.6
+deepseek/deepseek-chat-v3.1,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,en,E018,Traditional vs. Secular-Rational,1,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,en,E025,Traditional vs. Secular-Rational,1,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,en,F063,Survival vs. Self-Expression,10,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,en,G006,Survival vs. Self-Expression,2,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,en,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,es,A008,Traditional vs. Secular-Rational,1,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,es,E018,Traditional vs. Secular-Rational,3,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,es,E025,Traditional vs. Secular-Rational,2,3,0.6
+deepseek/deepseek-chat-v3.1,baseline,,es,F063,Survival vs. Self-Expression,10,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,es,G006,Survival vs. Self-Expression,1,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,es,Y002,Traditional vs. Secular-Rational,2 4,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,es,Y003,Traditional vs. Secular-Rational,1 2 4 6 10,3,0.6
+deepseek/deepseek-chat-v3.1,baseline,,fr,A008,Traditional vs. Secular-Rational,3,2,0.4
+deepseek/deepseek-chat-v3.1,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,fr,E025,Traditional vs. Secular-Rational,2,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,fr,F063,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,fr,G006,Survival vs. Self-Expression,1,3,0.6
+deepseek/deepseek-chat-v3.1,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 2,2,0.4
+deepseek/deepseek-chat-v3.1,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,2,0.4
+deepseek/deepseek-chat-v3.1,baseline,,ru,A008,Traditional vs. Secular-Rational,3,3,0.6
+deepseek/deepseek-chat-v3.1,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ru,E018,Traditional vs. Secular-Rational,1,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,ru,E025,Traditional vs. Secular-Rational,1,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,ru,F063,Survival vs. Self-Expression,5,2,0.4
+deepseek/deepseek-chat-v3.1,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ru,G006,Survival vs. Self-Expression,1,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,3,0.6
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,1,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,1,3,0.6
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,F063,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,4,0.8
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,G006,Survival vs. Self-Expression,1,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+deepseek/deepseek-chat-v3.1,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,A008,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,E018,Traditional vs. Secular-Rational,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,E025,Traditional vs. Secular-Rational,3,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,F063,Survival vs. Self-Expression,8,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,F118,Survival vs. Self-Expression,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,F120,Survival vs. Self-Expression,6,3,0.6
+doubao-1-5-pro-32k-250115,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,3,0.6
+doubao-1-5-pro-32k-250115,baseline,,en,A008,Traditional vs. Secular-Rational,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,en,E018,Traditional vs. Secular-Rational,1,4,0.8
+doubao-1-5-pro-32k-250115,baseline,,en,E025,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,en,F063,Survival vs. Self-Expression,7,4,0.8
+doubao-1-5-pro-32k-250115,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,en,F120,Survival vs. Self-Expression,7,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,en,G006,Survival vs. Self-Expression,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,en,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+doubao-1-5-pro-32k-250115,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 4 6 10,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,A008,Traditional vs. Secular-Rational,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,E025,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,F063,Survival vs. Self-Expression,2,4,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,F120,Survival vs. Self-Expression,7,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,es,Y002,Traditional vs. Secular-Rational,3 2,3,0.6
+doubao-1-5-pro-32k-250115,baseline,,es,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,3,0.6
+doubao-1-5-pro-32k-250115,baseline,,fr,A008,Traditional vs. Secular-Rational,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,F063,Survival vs. Self-Expression,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,F120,Survival vs. Self-Expression,7,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,fr,Y003,Traditional vs. Secular-Rational,1 2 4 6 10,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ru,A008,Traditional vs. Secular-Rational,2,3,0.6
+doubao-1-5-pro-32k-250115,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ru,E018,Traditional vs. Secular-Rational,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ru,E025,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ru,F063,Survival vs. Self-Expression,5,4,0.8
+doubao-1-5-pro-32k-250115,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ru,F120,Survival vs. Self-Expression,6,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ru,G006,Survival vs. Self-Expression,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ru,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 10,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,3,4,0.8
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,F063,Survival vs. Self-Expression,2,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,F118,Survival vs. Self-Expression,8,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,F120,Survival vs. Self-Expression,6,2,0.4
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,G006,Survival vs. Self-Expression,1,5,1.0
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,3 2,3,0.6
+doubao-1-5-pro-32k-250115,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 8 5,5,1.0
+google/gemini-2.5-flash,baseline,,ar,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-flash,baseline,,ar,E018,Traditional vs. Secular-Rational,3,5,1.0
+google/gemini-2.5-flash,baseline,,ar,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemini-2.5-flash,baseline,,ar,F063,Survival vs. Self-Expression,1,4,0.8
+google/gemini-2.5-flash,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-flash,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-flash,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-flash,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+google/gemini-2.5-flash,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,5,1.0
+google/gemini-2.5-flash,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-flash,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-flash,baseline,,en,E018,Traditional vs. Secular-Rational,3,5,1.0
+google/gemini-2.5-flash,baseline,,en,E025,Traditional vs. Secular-Rational,3,4,0.8
+google/gemini-2.5-flash,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-flash,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-flash,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-flash,baseline,,en,G006,Survival vs. Self-Expression,4,5,1.0
+google/gemini-2.5-flash,baseline,,en,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+google/gemini-2.5-flash,baseline,,en,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+google/gemini-2.5-flash,baseline,,es,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-flash,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,es,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemini-2.5-flash,baseline,,es,F063,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-flash,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-flash,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-flash,baseline,,es,G006,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-flash,baseline,,es,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+google/gemini-2.5-flash,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+google/gemini-2.5-flash,baseline,,fr,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-flash,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-flash,baseline,,fr,F063,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-flash,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-flash,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-flash,baseline,,fr,G006,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-flash,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 2,4,0.8
+google/gemini-2.5-flash,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+google/gemini-2.5-flash,baseline,,ru,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-flash,baseline,,ru,E018,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,ru,E025,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,ru,F063,Survival vs. Self-Expression,7,4,0.8
+google/gemini-2.5-flash,baseline,,ru,F118,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-flash,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-flash,baseline,,ru,G006,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-flash,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+google/gemini-2.5-flash,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 10,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,F063,Survival vs. Self-Expression,7,4,0.8
+google/gemini-2.5-flash,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,G006,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,3 2,5,1.0
+google/gemini-2.5-flash,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+google/gemini-2.5-pro,baseline,,ar,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-pro,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,ar,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemini-2.5-pro,baseline,,ar,F063,Survival vs. Self-Expression,5,2,0.4
+google/gemini-2.5-pro,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-pro,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-pro,baseline,,ar,G006,Survival vs. Self-Expression,1,4,0.8
+google/gemini-2.5-pro,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+google/gemini-2.5-pro,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 2 8,3,0.6
+google/gemini-2.5-pro,baseline,,en,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-pro,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,en,E018,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,en,E025,Traditional vs. Secular-Rational,2,3,0.6
+google/gemini-2.5-pro,baseline,,en,F063,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-pro,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-pro,baseline,,en,F120,Survival vs. Self-Expression,5,4,0.8
+google/gemini-2.5-pro,baseline,,en,G006,Survival vs. Self-Expression,1,3,0.6
+google/gemini-2.5-pro,baseline,,en,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+google/gemini-2.5-pro,baseline,,en,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,2,0.4
+google/gemini-2.5-pro,baseline,,es,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-pro,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,es,E018,Traditional vs. Secular-Rational,1,4,0.8
+google/gemini-2.5-pro,baseline,,es,E025,Traditional vs. Secular-Rational,3,3,0.6
+google/gemini-2.5-pro,baseline,,es,F063,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-pro,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-pro,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-pro,baseline,,es,G006,Survival vs. Self-Expression,3,2,0.4
+google/gemini-2.5-pro,baseline,,es,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+google/gemini-2.5-pro,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+google/gemini-2.5-pro,baseline,,fr,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-pro,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,fr,E018,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,fr,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemini-2.5-pro,baseline,,fr,F063,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-pro,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-pro,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-pro,baseline,,fr,G006,Survival vs. Self-Expression,2,4,0.8
+google/gemini-2.5-pro,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+google/gemini-2.5-pro,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+google/gemini-2.5-pro,baseline,,ru,A008,Traditional vs. Secular-Rational,1,4,0.8
+google/gemini-2.5-pro,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,ru,E018,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,ru,E025,Traditional vs. Secular-Rational,3,3,0.6
+google/gemini-2.5-pro,baseline,,ru,F063,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-pro,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-pro,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-pro,baseline,,ru,G006,Survival vs. Self-Expression,2,4,0.8
+google/gemini-2.5-pro,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+google/gemini-2.5-pro,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 8 3,3,0.6
+google/gemini-2.5-pro,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-2.5-pro,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-2.5-pro,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemini-2.5-pro,baseline,,zh-cn,F063,Survival vs. Self-Expression,1,5,1.0
+google/gemini-2.5-pro,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-2.5-pro,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-2.5-pro,baseline,,zh-cn,G006,Survival vs. Self-Expression,1,4,0.8
+google/gemini-2.5-pro,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 3,2,0.4
+google/gemini-2.5-pro,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 5 8,5,1.0
+google/gemini-3-pro-preview,baseline,,ar,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,ar,E018,Traditional vs. Secular-Rational,1,4,0.8
+google/gemini-3-pro-preview,baseline,,ar,E025,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,ar,F063,Survival vs. Self-Expression,10,5,1.0
+google/gemini-3-pro-preview,baseline,,ar,F118,Survival vs. Self-Expression,1,5,1.0
+google/gemini-3-pro-preview,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-3-pro-preview,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+google/gemini-3-pro-preview,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+google/gemini-3-pro-preview,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 9,5,1.0
+google/gemini-3-pro-preview,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,en,E018,Traditional vs. Secular-Rational,2,3,0.6
+google/gemini-3-pro-preview,baseline,,en,E025,Traditional vs. Secular-Rational,2,3,0.6
+google/gemini-3-pro-preview,baseline,,en,F063,Survival vs. Self-Expression,10,4,0.8
+google/gemini-3-pro-preview,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-3-pro-preview,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-3-pro-preview,baseline,,en,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemini-3-pro-preview,baseline,,en,Y002,Traditional vs. Secular-Rational,1 3,4,0.8
+google/gemini-3-pro-preview,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,4,0.8
+google/gemini-3-pro-preview,baseline,,es,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-3-pro-preview,baseline,,es,E025,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,es,F063,Survival vs. Self-Expression,5,4,0.8
+google/gemini-3-pro-preview,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-3-pro-preview,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-3-pro-preview,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemini-3-pro-preview,baseline,,es,Y002,Traditional vs. Secular-Rational,3 2,5,1.0
+google/gemini-3-pro-preview,baseline,,es,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,5,1.0
+google/gemini-3-pro-preview,baseline,,fr,A008,Traditional vs. Secular-Rational,2,4,0.8
+google/gemini-3-pro-preview,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-3-pro-preview,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,fr,F063,Survival vs. Self-Expression,1,4,0.8
+google/gemini-3-pro-preview,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-3-pro-preview,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-3-pro-preview,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemini-3-pro-preview,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 2,3,0.6
+google/gemini-3-pro-preview,baseline,,fr,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,3,0.6
+google/gemini-3-pro-preview,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,E018,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,E025,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,F063,Survival vs. Self-Expression,5,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+google/gemini-3-pro-preview,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,1,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,F063,Survival vs. Self-Expression,5,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+google/gemini-3-pro-preview,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+google/gemma-3-4b-it,baseline,,ar,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,ar,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,ar,F063,Survival vs. Self-Expression,9,5,1.0
+google/gemma-3-4b-it,baseline,,ar,F118,Survival vs. Self-Expression,1,5,1.0
+google/gemma-3-4b-it,baseline,,ar,F120,Survival vs. Self-Expression,1,5,1.0
+google/gemma-3-4b-it,baseline,,ar,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemma-3-4b-it,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+google/gemma-3-4b-it,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 4 6 7,5,1.0
+google/gemma-3-4b-it,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,en,E018,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,en,E025,Traditional vs. Secular-Rational,NA,0,0.0
+google/gemma-3-4b-it,baseline,,en,F063,Survival vs. Self-Expression,8,5,1.0
+google/gemma-3-4b-it,baseline,,en,F118,Survival vs. Self-Expression,7,4,0.8
+google/gemma-3-4b-it,baseline,,en,F120,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,en,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemma-3-4b-it,baseline,,en,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+google/gemma-3-4b-it,baseline,,en,Y003,Traditional vs. Secular-Rational,6 4 3 2 1,5,1.0
+google/gemma-3-4b-it,baseline,,es,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,es,E018,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,es,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,es,F063,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,es,F118,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,es,F120,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemma-3-4b-it,baseline,,es,Y002,Traditional vs. Secular-Rational,2 3,5,1.0
+google/gemma-3-4b-it,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+google/gemma-3-4b-it,baseline,,fr,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,fr,E018,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,fr,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,fr,F063,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,fr,F118,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,fr,F120,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemma-3-4b-it,baseline,,fr,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+google/gemma-3-4b-it,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 3 4 6 10,5,1.0
+google/gemma-3-4b-it,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,ru,E018,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,ru,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,ru,F063,Survival vs. Self-Expression,8,3,0.6
+google/gemma-3-4b-it,baseline,,ru,F118,Survival vs. Self-Expression,1,5,1.0
+google/gemma-3-4b-it,baseline,,ru,F120,Survival vs. Self-Expression,2,5,1.0
+google/gemma-3-4b-it,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemma-3-4b-it,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+google/gemma-3-4b-it,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,3,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,F063,Survival vs. Self-Expression,10,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,F118,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,F120,Survival vs. Self-Expression,7,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+google/gemma-3-4b-it,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 5 6,5,1.0
+gpt-4o,baseline,,ar,A008,Traditional vs. Secular-Rational,3,3,0.6
+gpt-4o,baseline,,ar,A165,Traditional vs. Secular-Rational,2,4,0.8
+gpt-4o,baseline,,ar,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,ar,E025,Traditional vs. Secular-Rational,1,4,0.8
+gpt-4o,baseline,,ar,F063,Survival vs. Self-Expression,5,3,0.6
+gpt-4o,baseline,,ar,F118,Survival vs. Self-Expression,5,5,1.0
+gpt-4o,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+gpt-4o,baseline,,ar,G006,Survival vs. Self-Expression,2,4,0.8
+gpt-4o,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+gpt-4o,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 3 4 6,3,0.6
+gpt-4o,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+gpt-4o,baseline,,en,A165,Traditional vs. Secular-Rational,2,3,0.6
+gpt-4o,baseline,,en,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,en,E025,Traditional vs. Secular-Rational,2,5,1.0
+gpt-4o,baseline,,en,F063,Survival vs. Self-Expression,7,4,0.8
+gpt-4o,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+gpt-4o,baseline,,en,F120,Survival vs. Self-Expression,5,4,0.8
+gpt-4o,baseline,,en,G006,Survival vs. Self-Expression,2,5,1.0
+gpt-4o,baseline,,en,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+gpt-4o,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,4,0.8
+gpt-4o,baseline,,es,A008,Traditional vs. Secular-Rational,2,5,1.0
+gpt-4o,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+gpt-4o,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,es,E025,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,es,F063,Survival vs. Self-Expression,1,3,0.6
+gpt-4o,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+gpt-4o,baseline,,es,F120,Survival vs. Self-Expression,7,4,0.8
+gpt-4o,baseline,,es,G006,Survival vs. Self-Expression,2,3,0.6
+gpt-4o,baseline,,es,Y002,Traditional vs. Secular-Rational,1 3,2,0.4
+gpt-4o,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+gpt-4o,baseline,,fr,A008,Traditional vs. Secular-Rational,2,5,1.0
+gpt-4o,baseline,,fr,A165,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,fr,E025,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,fr,F063,Survival vs. Self-Expression,7,5,1.0
+gpt-4o,baseline,,fr,F118,Survival vs. Self-Expression,7,3,0.6
+gpt-4o,baseline,,fr,F120,Survival vs. Self-Expression,7,5,1.0
+gpt-4o,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+gpt-4o,baseline,,fr,Y002,Traditional vs. Secular-Rational,1 3,4,0.8
+gpt-4o,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,4,0.8
+gpt-4o,baseline,,ru,A008,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,ru,A165,Traditional vs. Secular-Rational,2,3,0.6
+gpt-4o,baseline,,ru,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,ru,E025,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,ru,F063,Survival vs. Self-Expression,7,5,1.0
+gpt-4o,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+gpt-4o,baseline,,ru,F120,Survival vs. Self-Expression,7,4,0.8
+gpt-4o,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+gpt-4o,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+gpt-4o,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,4,0.8
+gpt-4o,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+gpt-4o,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o,baseline,,zh-cn,F063,Survival vs. Self-Expression,7,5,1.0
+gpt-4o,baseline,,zh-cn,F118,Survival vs. Self-Expression,8,3,0.6
+gpt-4o,baseline,,zh-cn,F120,Survival vs. Self-Expression,7,5,1.0
+gpt-4o,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+gpt-4o,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+gpt-4o,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 5 8,4,0.8
+gpt-4o-mini,baseline,,ar,A008,Traditional vs. Secular-Rational,2,3,0.6
+gpt-4o-mini,baseline,,ar,A165,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,ar,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,ar,E025,Traditional vs. Secular-Rational,3,3,0.6
+gpt-4o-mini,baseline,,ar,F063,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,ar,F118,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,ar,F120,Survival vs. Self-Expression,7,3,0.6
+gpt-4o-mini,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+gpt-4o-mini,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+gpt-4o-mini,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,5,1.0
+gpt-4o-mini,baseline,,en,A008,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,en,A165,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,en,E018,Traditional vs. Secular-Rational,1,4,0.8
+gpt-4o-mini,baseline,,en,E025,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,en,F063,Survival vs. Self-Expression,10,5,1.0
+gpt-4o-mini,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+gpt-4o-mini,baseline,,en,F120,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,en,G006,Survival vs. Self-Expression,1,5,1.0
+gpt-4o-mini,baseline,,en,Y002,Traditional vs. Secular-Rational,4 2,3,0.6
+gpt-4o-mini,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 3 4 6,2,0.4
+gpt-4o-mini,baseline,,es,A008,Traditional vs. Secular-Rational,2,4,0.8
+gpt-4o-mini,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+gpt-4o-mini,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,es,E025,Traditional vs. Secular-Rational,1,4,0.8
+gpt-4o-mini,baseline,,es,F063,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+gpt-4o-mini,baseline,,es,F120,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+gpt-4o-mini,baseline,,es,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+gpt-4o-mini,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 8 6 10,5,1.0
+gpt-4o-mini,baseline,,fr,A008,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,fr,A165,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,fr,E025,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,fr,F063,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,fr,F118,Survival vs. Self-Expression,7,4,0.8
+gpt-4o-mini,baseline,,fr,F120,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+gpt-4o-mini,baseline,,fr,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+gpt-4o-mini,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 3 4 6 10,2,0.5
+gpt-4o-mini,baseline,,ru,A008,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,ru,A165,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,ru,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,ru,E025,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,ru,F063,Survival vs. Self-Expression,10,5,1.0
+gpt-4o-mini,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+gpt-4o-mini,baseline,,ru,F120,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,ru,G006,Survival vs. Self-Expression,1,5,1.0
+gpt-4o-mini,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+gpt-4o-mini,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 10,5,1.0
+gpt-4o-mini,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+gpt-4o-mini,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,1,5,1.0
+gpt-4o-mini,baseline,,zh-cn,F063,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,zh-cn,F118,Survival vs. Self-Expression,7,5,1.0
+gpt-4o-mini,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,3,0.6
+gpt-4o-mini,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+gpt-4o-mini,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+gpt-4o-mini,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 8 10,5,1.0
+kimi-k2,baseline,,ar,A008,Traditional vs. Secular-Rational,1,5,1.0
+kimi-k2,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+kimi-k2,baseline,,ar,E018,Traditional vs. Secular-Rational,3,5,1.0
+kimi-k2,baseline,,ar,E025,Traditional vs. Secular-Rational,2,5,1.0
+kimi-k2,baseline,,ar,F063,Survival vs. Self-Expression,9,5,1.0
+kimi-k2,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+kimi-k2,baseline,,ar,F120,Survival vs. Self-Expression,7,4,0.8
+kimi-k2,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+kimi-k2,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+kimi-k2,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,5,1.0
+kimi-k2,baseline,,en,A008,Traditional vs. Secular-Rational,2,4,0.8
+kimi-k2,baseline,,en,A165,Traditional vs. Secular-Rational,1,3,0.6
+kimi-k2,baseline,,en,E018,Traditional vs. Secular-Rational,1,4,0.8
+kimi-k2,baseline,,en,E025,Traditional vs. Secular-Rational,1,4,0.8
+kimi-k2,baseline,,en,F063,Survival vs. Self-Expression,7,5,1.0
+kimi-k2,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+kimi-k2,baseline,,en,F120,Survival vs. Self-Expression,7,5,1.0
+kimi-k2,baseline,,en,G006,Survival vs. Self-Expression,1,4,0.8
+kimi-k2,baseline,,en,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+kimi-k2,baseline,,en,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,3,0.6
+kimi-k2,baseline,,es,A008,Traditional vs. Secular-Rational,1,5,1.0
+kimi-k2,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+kimi-k2,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+kimi-k2,baseline,,es,E025,Traditional vs. Secular-Rational,2,5,1.0
+kimi-k2,baseline,,es,F063,Survival vs. Self-Expression,NA,0,0.0
+kimi-k2,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+kimi-k2,baseline,,es,F120,Survival vs. Self-Expression,8,3,0.6
+kimi-k2,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+kimi-k2,baseline,,es,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+kimi-k2,baseline,,es,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+kimi-k2,baseline,,fr,A008,Traditional vs. Secular-Rational,1,5,1.0
+kimi-k2,baseline,,fr,A165,Traditional vs. Secular-Rational,2,3,0.6
+kimi-k2,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+kimi-k2,baseline,,fr,E025,Traditional vs. Secular-Rational,1,3,0.6
+kimi-k2,baseline,,fr,F063,Survival vs. Self-Expression,5,3,0.6
+kimi-k2,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+kimi-k2,baseline,,fr,F120,Survival vs. Self-Expression,8,5,1.0
+kimi-k2,baseline,,fr,G006,Survival vs. Self-Expression,2,4,0.8
+kimi-k2,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 2,4,1.0
+kimi-k2,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,2,0.4
+kimi-k2,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+kimi-k2,baseline,,ru,A165,Traditional vs. Secular-Rational,1,5,1.0
+kimi-k2,baseline,,ru,E018,Traditional vs. Secular-Rational,3,2,0.4
+kimi-k2,baseline,,ru,E025,Traditional vs. Secular-Rational,2,5,1.0
+kimi-k2,baseline,,ru,F063,Survival vs. Self-Expression,7,5,1.0
+kimi-k2,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+kimi-k2,baseline,,ru,F120,Survival vs. Self-Expression,7,3,0.6
+kimi-k2,baseline,,ru,G006,Survival vs. Self-Expression,1,3,0.6
+kimi-k2,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 3,4,0.8
+kimi-k2,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+kimi-k2,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,1,4,0.8
+kimi-k2,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,3,0.6
+kimi-k2,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,1,4,0.8
+kimi-k2,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+kimi-k2,baseline,,zh-cn,F063,Survival vs. Self-Expression,7,4,0.8
+kimi-k2,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+kimi-k2,baseline,,zh-cn,F120,Survival vs. Self-Expression,7,5,1.0
+kimi-k2,baseline,,zh-cn,G006,Survival vs. Self-Expression,1,5,1.0
+kimi-k2,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,3,0.6
+kimi-k2,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 8 10,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,A008,Traditional vs. Secular-Rational,2,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,E025,Traditional vs. Secular-Rational,3,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,F063,Survival vs. Self-Expression,8,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,F118,Survival vs. Self-Expression,6,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,F120,Survival vs. Self-Expression,6,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,G006,Survival vs. Self-Expression,2,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ar,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,en,A165,Traditional vs. Secular-Rational,2,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,en,E018,Traditional vs. Secular-Rational,2,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,en,E025,Traditional vs. Secular-Rational,3,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,en,F063,Survival vs. Self-Expression,8,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,en,F118,Survival vs. Self-Expression,NA,0,0.0
+meta-llama/llama-3.2-3b-instruct,baseline,,en,F120,Survival vs. Self-Expression,8,1,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,en,G006,Survival vs. Self-Expression,3,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,en,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,en,Y003,Traditional vs. Secular-Rational,1 3 6 8 10,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,es,A008,Traditional vs. Secular-Rational,2,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,es,A165,Traditional vs. Secular-Rational,1,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,es,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,es,E025,Traditional vs. Secular-Rational,1,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,es,F063,Survival vs. Self-Expression,8,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,es,F118,Survival vs. Self-Expression,7,3,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,es,F120,Survival vs. Self-Expression,7,1,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,es,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,A008,Traditional vs. Secular-Rational,2,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,A165,Traditional vs. Secular-Rational,2,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,F063,Survival vs. Self-Expression,8,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,F118,Survival vs. Self-Expression,8,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,F120,Survival vs. Self-Expression,8,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,E018,Traditional vs. Secular-Rational,2,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,E025,Traditional vs. Secular-Rational,2,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,F063,Survival vs. Self-Expression,8,3,0.75
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,F118,Survival vs. Self-Expression,8,2,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,F120,Survival vs. Self-Expression,6,3,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,ru,Y003,Traditional vs. Secular-Rational,3 6 8 4 2,4,0.8
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,3,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,F063,Survival vs. Self-Expression,8,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,F118,Survival vs. Self-Expression,NA,0,0.0
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,F120,Survival vs. Self-Expression,NA,0,0.0
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,3,0.6
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+meta-llama/llama-3.2-3b-instruct,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,A008,Traditional vs. Secular-Rational,2,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,E018,Traditional vs. Secular-Rational,3,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,E025,Traditional vs. Secular-Rational,3,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,F063,Survival vs. Self-Expression,10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 2,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 9,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,E025,Traditional vs. Secular-Rational,3,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,G006,Survival vs. Self-Expression,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,en,Y003,Traditional vs. Secular-Rational,6 4 2 8 10,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,es,A008,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,es,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,es,E025,Traditional vs. Secular-Rational,3,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,es,F063,Survival vs. Self-Expression,5,3,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,es,Y002,Traditional vs. Secular-Rational,2 1,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,A008,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,F063,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,A008,Traditional vs. Secular-Rational,3,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,E025,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,F063,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 4,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,4,0.8
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,F063,Survival vs. Self-Expression,7,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 4,5,1.0
+meta-llama/llama-3.3-70b-instruct,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,A008,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,A165,Traditional vs. Secular-Rational,2,3,0.6
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,E018,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,E025,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,F063,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,F118,Survival vs. Self-Expression,4,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,F120,Survival vs. Self-Expression,4,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,G006,Survival vs. Self-Expression,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 5 7 9 11,3,0.6
+microsoft/phi-3-mini-128k-instruct,baseline,,en,A008,Traditional vs. Secular-Rational,2,2,0.5
+microsoft/phi-3-mini-128k-instruct,baseline,,en,A165,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,en,E018,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,en,E025,Traditional vs. Secular-Rational,3,3,0.6
+microsoft/phi-3-mini-128k-instruct,baseline,,en,F063,Survival vs. Self-Expression,8,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,en,F120,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,en,G006,Survival vs. Self-Expression,2,4,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,en,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,4,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,es,A008,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,es,A165,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,es,E025,Traditional vs. Secular-Rational,2,3,0.6
+microsoft/phi-3-mini-128k-instruct,baseline,,es,F063,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,es,F120,Survival vs. Self-Expression,5,4,0.8
+microsoft/phi-3-mini-128k-instruct,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,es,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,es,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,A008,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,A165,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,F063,Survival vs. Self-Expression,7,4,0.8
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,F118,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,F120,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,Y002,Traditional vs. Secular-Rational,1 4,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,fr,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,A165,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,E018,Traditional vs. Secular-Rational,1,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,E025,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,F063,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,F118,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,F120,Survival vs. Self-Expression,4,3,0.6
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,ru,Y003,Traditional vs. Secular-Rational,1 2 3 5 7,2,0.4
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,4,0.8
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,2,3,0.6
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,F063,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,F118,Survival vs. Self-Expression,7,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+microsoft/phi-3-mini-128k-instruct,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,4,0.8
+mistralai/mistral-medium-3.1,baseline,,ar,A008,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ar,E025,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ar,F063,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ar,F118,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ar,F120,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+mistralai/mistral-medium-3.1,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,E018,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,E025,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,F120,Survival vs. Self-Expression,6,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,G006,Survival vs. Self-Expression,3,4,0.8
+mistralai/mistral-medium-3.1,baseline,,en,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+mistralai/mistral-medium-3.1,baseline,,en,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,es,A008,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-medium-3.1,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-medium-3.1,baseline,,es,E025,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-medium-3.1,baseline,,es,F063,Survival vs. Self-Expression,NA,0,0.0
+mistralai/mistral-medium-3.1,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,es,F120,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,es,Y002,Traditional vs. Secular-Rational,3 2,4,0.8
+mistralai/mistral-medium-3.1,baseline,,es,Y003,Traditional vs. Secular-Rational,2 3 4 6 10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,fr,A008,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-medium-3.1,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-medium-3.1,baseline,,fr,E025,Traditional vs. Secular-Rational,1,3,0.6
+mistralai/mistral-medium-3.1,baseline,,fr,F063,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,fr,F120,Survival vs. Self-Expression,5,4,0.8
+mistralai/mistral-medium-3.1,baseline,,fr,G006,Survival vs. Self-Expression,1,3,0.6
+mistralai/mistral-medium-3.1,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+mistralai/mistral-medium-3.1,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ru,A008,Traditional vs. Secular-Rational,1,3,0.6
+mistralai/mistral-medium-3.1,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ru,E018,Traditional vs. Secular-Rational,2,4,0.8
+mistralai/mistral-medium-3.1,baseline,,ru,E025,Traditional vs. Secular-Rational,2,3,0.6
+mistralai/mistral-medium-3.1,baseline,,ru,F063,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 2,4,0.8
+mistralai/mistral-medium-3.1,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,1,3,0.6
+mistralai/mistral-medium-3.1,baseline,,zh-cn,F063,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,F118,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,F120,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+mistralai/mistral-medium-3.1,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 8 10,5,1.0
+mistralai/mistral-nemo,baseline,,ar,A008,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-nemo,baseline,,ar,A165,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,ar,E018,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-nemo,baseline,,ar,E025,Traditional vs. Secular-Rational,1,4,0.8
+mistralai/mistral-nemo,baseline,,ar,F063,Survival vs. Self-Expression,5,5,1.0
+mistralai/mistral-nemo,baseline,,ar,F118,Survival vs. Self-Expression,5,4,0.8
+mistralai/mistral-nemo,baseline,,ar,F120,Survival vs. Self-Expression,5,3,0.6
+mistralai/mistral-nemo,baseline,,ar,G006,Survival vs. Self-Expression,3,5,1.0
+mistralai/mistral-nemo,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+mistralai/mistral-nemo,baseline,,ar,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+mistralai/mistral-nemo,baseline,,en,A008,Traditional vs. Secular-Rational,1,3,0.6
+mistralai/mistral-nemo,baseline,,en,A165,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,en,E018,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,en,E025,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+mistralai/mistral-nemo,baseline,,en,F118,Survival vs. Self-Expression,9,4,0.8
+mistralai/mistral-nemo,baseline,,en,F120,Survival vs. Self-Expression,7,4,0.8
+mistralai/mistral-nemo,baseline,,en,G006,Survival vs. Self-Expression,1,5,1.0
+mistralai/mistral-nemo,baseline,,en,Y002,Traditional vs. Secular-Rational,1 2,4,0.8
+mistralai/mistral-nemo,baseline,,en,Y003,Traditional vs. Secular-Rational,2 6 3 8 1,3,0.6
+mistralai/mistral-nemo,baseline,,es,A008,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-nemo,baseline,,es,A165,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,es,E018,Traditional vs. Secular-Rational,3,4,0.8
+mistralai/mistral-nemo,baseline,,es,E025,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,es,F063,Survival vs. Self-Expression,7,4,0.8
+mistralai/mistral-nemo,baseline,,es,F118,Survival vs. Self-Expression,3,2,0.4
+mistralai/mistral-nemo,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+mistralai/mistral-nemo,baseline,,es,G006,Survival vs. Self-Expression,3,4,0.8
+mistralai/mistral-nemo,baseline,,es,Y002,Traditional vs. Secular-Rational,1 2,3,0.6
+mistralai/mistral-nemo,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,4,0.8
+mistralai/mistral-nemo,baseline,,fr,A008,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-nemo,baseline,,fr,A165,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,fr,E018,Traditional vs. Secular-Rational,3,4,0.8
+mistralai/mistral-nemo,baseline,,fr,E025,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,fr,F063,Survival vs. Self-Expression,5,5,1.0
+mistralai/mistral-nemo,baseline,,fr,F118,Survival vs. Self-Expression,7,4,0.8
+mistralai/mistral-nemo,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+mistralai/mistral-nemo,baseline,,fr,G006,Survival vs. Self-Expression,2,3,0.6
+mistralai/mistral-nemo,baseline,,fr,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+mistralai/mistral-nemo,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+mistralai/mistral-nemo,baseline,,ru,A008,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-nemo,baseline,,ru,A165,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,ru,E018,Traditional vs. Secular-Rational,2,5,1.0
+mistralai/mistral-nemo,baseline,,ru,E025,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-nemo,baseline,,ru,F063,Survival vs. Self-Expression,5,3,0.6
+mistralai/mistral-nemo,baseline,,ru,F118,Survival vs. Self-Expression,7,5,1.0
+mistralai/mistral-nemo,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+mistralai/mistral-nemo,baseline,,ru,G006,Survival vs. Self-Expression,3,3,0.6
+mistralai/mistral-nemo,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 4,3,0.6
+mistralai/mistral-nemo,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+mistralai/mistral-nemo,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-nemo,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,5,1.0
+mistralai/mistral-nemo,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,3,5,1.0
+mistralai/mistral-nemo,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,1,3,0.6
+mistralai/mistral-nemo,baseline,,zh-cn,F063,Survival vs. Self-Expression,3,3,0.6
+mistralai/mistral-nemo,baseline,,zh-cn,F118,Survival vs. Self-Expression,3,5,1.0
+mistralai/mistral-nemo,baseline,,zh-cn,F120,Survival vs. Self-Expression,3,5,1.0
+mistralai/mistral-nemo,baseline,,zh-cn,G006,Survival vs. Self-Expression,3,5,1.0
+mistralai/mistral-nemo,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+mistralai/mistral-nemo,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,4,0.8
+openai/gpt-5.1,baseline,,ar,A008,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,ar,E025,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,ar,F063,Survival vs. Self-Expression,5,3,0.6
+openai/gpt-5.1,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+openai/gpt-5.1,baseline,,ar,F120,Survival vs. Self-Expression,8,5,1.0
+openai/gpt-5.1,baseline,,ar,G006,Survival vs. Self-Expression,2,4,0.8
+openai/gpt-5.1,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 2,4,0.8
+openai/gpt-5.1,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,3,0.6
+openai/gpt-5.1,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,en,A165,Traditional vs. Secular-Rational,2,4,0.8
+openai/gpt-5.1,baseline,,en,E018,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,en,E025,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+openai/gpt-5.1,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+openai/gpt-5.1,baseline,,en,F120,Survival vs. Self-Expression,8,4,0.8
+openai/gpt-5.1,baseline,,en,G006,Survival vs. Self-Expression,2,5,1.0
+openai/gpt-5.1,baseline,,en,Y002,Traditional vs. Secular-Rational,3 4,2,0.4
+openai/gpt-5.1,baseline,,en,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,3,0.6
+openai/gpt-5.1,baseline,,es,A008,Traditional vs. Secular-Rational,2,4,0.8
+openai/gpt-5.1,baseline,,es,A165,Traditional vs. Secular-Rational,1,3,0.6
+openai/gpt-5.1,baseline,,es,E018,Traditional vs. Secular-Rational,2,3,0.6
+openai/gpt-5.1,baseline,,es,E025,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,es,F063,Survival vs. Self-Expression,5,3,0.6
+openai/gpt-5.1,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+openai/gpt-5.1,baseline,,es,F120,Survival vs. Self-Expression,8,4,0.8
+openai/gpt-5.1,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+openai/gpt-5.1,baseline,,es,Y002,Traditional vs. Secular-Rational,3 2,3,0.6
+openai/gpt-5.1,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,3,0.6
+openai/gpt-5.1,baseline,,fr,A008,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,fr,A165,Traditional vs. Secular-Rational,1,5,1.0
+openai/gpt-5.1,baseline,,fr,E018,Traditional vs. Secular-Rational,2,3,0.6
+openai/gpt-5.1,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,fr,F063,Survival vs. Self-Expression,1,2,0.4
+openai/gpt-5.1,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+openai/gpt-5.1,baseline,,fr,F120,Survival vs. Self-Expression,9,2,0.4
+openai/gpt-5.1,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+openai/gpt-5.1,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 4,4,0.8
+openai/gpt-5.1,baseline,,fr,Y003,Traditional vs. Secular-Rational,4 6 8 10 2,3,0.6
+openai/gpt-5.1,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,ru,A165,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,ru,E018,Traditional vs. Secular-Rational,3,5,1.0
+openai/gpt-5.1,baseline,,ru,E025,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,ru,F063,Survival vs. Self-Expression,5,4,0.8
+openai/gpt-5.1,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+openai/gpt-5.1,baseline,,ru,F120,Survival vs. Self-Expression,5,4,0.8
+openai/gpt-5.1,baseline,,ru,G006,Survival vs. Self-Expression,2,5,1.0
+openai/gpt-5.1,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+openai/gpt-5.1,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 10,5,1.0
+openai/gpt-5.1,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,4,0.8
+openai/gpt-5.1,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,3,5,1.0
+openai/gpt-5.1,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+openai/gpt-5.1,baseline,,zh-cn,F063,Survival vs. Self-Expression,5,4,0.8
+openai/gpt-5.1,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+openai/gpt-5.1,baseline,,zh-cn,F120,Survival vs. Self-Expression,8,4,0.8
+openai/gpt-5.1,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,5,1.0
+openai/gpt-5.1,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,3 2,4,0.8
+openai/gpt-5.1,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 5 8,3,0.6
+qwen/qwen3-max,baseline,,ar,A008,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,ar,A165,Traditional vs. Secular-Rational,1,4,0.8
+qwen/qwen3-max,baseline,,ar,E018,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,ar,E025,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,ar,F063,Survival vs. Self-Expression,8,5,1.0
+qwen/qwen3-max,baseline,,ar,F118,Survival vs. Self-Expression,8,5,1.0
+qwen/qwen3-max,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwen3-max,baseline,,ar,G006,Survival vs. Self-Expression,1,5,1.0
+qwen/qwen3-max,baseline,,ar,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+qwen/qwen3-max,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 9,4,0.8
+qwen/qwen3-max,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,en,E018,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,en,E025,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,en,F063,Survival vs. Self-Expression,7,5,1.0
+qwen/qwen3-max,baseline,,en,F118,Survival vs. Self-Expression,8,5,1.0
+qwen/qwen3-max,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwen3-max,baseline,,en,G006,Survival vs. Self-Expression,1,3,0.6
+qwen/qwen3-max,baseline,,en,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+qwen/qwen3-max,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,5,1.0
+qwen/qwen3-max,baseline,,es,A008,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,es,E018,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,es,E025,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,es,F063,Survival vs. Self-Expression,5,4,0.8
+qwen/qwen3-max,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+qwen/qwen3-max,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwen3-max,baseline,,es,G006,Survival vs. Self-Expression,2,4,0.8
+qwen/qwen3-max,baseline,,es,Y002,Traditional vs. Secular-Rational,2 4,5,1.0
+qwen/qwen3-max,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+qwen/qwen3-max,baseline,,fr,A008,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,fr,A165,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,fr,E025,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,fr,F063,Survival vs. Self-Expression,7,5,1.0
+qwen/qwen3-max,baseline,,fr,F118,Survival vs. Self-Expression,8,5,1.0
+qwen/qwen3-max,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwen3-max,baseline,,fr,G006,Survival vs. Self-Expression,2,5,1.0
+qwen/qwen3-max,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 1,3,0.6
+qwen/qwen3-max,baseline,,fr,Y003,Traditional vs. Secular-Rational,1 2 4 6 10,5,1.0
+qwen/qwen3-max,baseline,,ru,A008,Traditional vs. Secular-Rational,1,3,0.6
+qwen/qwen3-max,baseline,,ru,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,ru,E018,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,ru,E025,Traditional vs. Secular-Rational,1,3,0.6
+qwen/qwen3-max,baseline,,ru,F063,Survival vs. Self-Expression,7,5,1.0
+qwen/qwen3-max,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+qwen/qwen3-max,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwen3-max,baseline,,ru,G006,Survival vs. Self-Expression,1,5,1.0
+qwen/qwen3-max,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 2,4,0.8
+qwen/qwen3-max,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+qwen/qwen3-max,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,1,4,0.8
+qwen/qwen3-max,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwen3-max,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwen3-max,baseline,,zh-cn,F063,Survival vs. Self-Expression,8,4,0.8
+qwen/qwen3-max,baseline,,zh-cn,F118,Survival vs. Self-Expression,8,5,1.0
+qwen/qwen3-max,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwen3-max,baseline,,zh-cn,G006,Survival vs. Self-Expression,1,5,1.0
+qwen/qwen3-max,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+qwen/qwen3-max,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 8 5,3,0.6
+qwen/qwq-32b,baseline,,ar,A008,Traditional vs. Secular-Rational,3,4,0.8
+qwen/qwq-32b,baseline,,ar,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwq-32b,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwq-32b,baseline,,ar,E025,Traditional vs. Secular-Rational,3,5,1.0
+qwen/qwq-32b,baseline,,ar,F063,Survival vs. Self-Expression,5,4,0.8
+qwen/qwq-32b,baseline,,ar,F118,Survival vs. Self-Expression,10,4,0.8
+qwen/qwq-32b,baseline,,ar,F120,Survival vs. Self-Expression,5,3,1.0
+qwen/qwq-32b,baseline,,ar,G006,Survival vs. Self-Expression,2,4,0.8
+qwen/qwq-32b,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 3,4,0.8
+qwen/qwq-32b,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 10,5,1.0
+qwen/qwq-32b,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwq-32b,baseline,,en,A165,Traditional vs. Secular-Rational,1,4,1.0
+qwen/qwq-32b,baseline,,en,E018,Traditional vs. Secular-Rational,2,4,1.0
+qwen/qwq-32b,baseline,,en,E025,Traditional vs. Secular-Rational,3,4,1.0
+qwen/qwq-32b,baseline,,en,F063,Survival vs. Self-Expression,1,3,0.75
+qwen/qwq-32b,baseline,,en,F118,Survival vs. Self-Expression,10,2,1.0
+qwen/qwq-32b,baseline,,en,F120,Survival vs. Self-Expression,5,4,1.0
+qwen/qwq-32b,baseline,,en,G006,Survival vs. Self-Expression,3,3,0.75
+qwen/qwq-32b,baseline,,en,Y002,Traditional vs. Secular-Rational,1 4,1,0.5
+qwen/qwq-32b,baseline,,en,Y003,Traditional vs. Secular-Rational,1 3 4 6 10,1,0.25
+qwen/qwq-32b,baseline,,es,A008,Traditional vs. Secular-Rational,1,3,0.6
+qwen/qwq-32b,baseline,,es,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwq-32b,baseline,,es,E018,Traditional vs. Secular-Rational,2,4,0.8
+qwen/qwq-32b,baseline,,es,E025,Traditional vs. Secular-Rational,3,5,1.0
+qwen/qwq-32b,baseline,,es,F063,Survival vs. Self-Expression,1,5,1.0
+qwen/qwq-32b,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+qwen/qwq-32b,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwq-32b,baseline,,es,G006,Survival vs. Self-Expression,3,4,0.8
+qwen/qwq-32b,baseline,,es,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+qwen/qwq-32b,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,1,0.2
+qwen/qwq-32b,baseline,,fr,A008,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwq-32b,baseline,,fr,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwq-32b,baseline,,fr,E018,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwq-32b,baseline,,fr,E025,Traditional vs. Secular-Rational,3,5,1.0
+qwen/qwq-32b,baseline,,fr,F063,Survival vs. Self-Expression,1,5,1.0
+qwen/qwq-32b,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+qwen/qwq-32b,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwq-32b,baseline,,fr,G006,Survival vs. Self-Expression,3,4,0.8
+qwen/qwq-32b,baseline,,fr,Y002,Traditional vs. Secular-Rational,1 3,3,0.6
+qwen/qwq-32b,baseline,,fr,Y003,Traditional vs. Secular-Rational,6 4 3 8 10,2,0.4
+qwen/qwq-32b,baseline,,ru,A008,Traditional vs. Secular-Rational,3,3,0.6
+qwen/qwq-32b,baseline,,ru,A165,Traditional vs. Secular-Rational,1,4,0.8
+qwen/qwq-32b,baseline,,ru,E018,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwq-32b,baseline,,ru,E025,Traditional vs. Secular-Rational,3,3,0.6
+qwen/qwq-32b,baseline,,ru,F063,Survival vs. Self-Expression,1,5,1.0
+qwen/qwq-32b,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+qwen/qwq-32b,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwq-32b,baseline,,ru,G006,Survival vs. Self-Expression,3,4,0.8
+qwen/qwq-32b,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+qwen/qwq-32b,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,3,0.6
+qwen/qwq-32b,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,2,1.0
+qwen/qwq-32b,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen/qwq-32b,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,2,5,1.0
+qwen/qwq-32b,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,3,5,1.0
+qwen/qwq-32b,baseline,,zh-cn,F063,Survival vs. Self-Expression,1,5,1.0
+qwen/qwq-32b,baseline,,zh-cn,F118,Survival vs. Self-Expression,7,4,0.8
+qwen/qwq-32b,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+qwen/qwq-32b,baseline,,zh-cn,G006,Survival vs. Self-Expression,3,3,0.6
+qwen/qwq-32b,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+qwen/qwq-32b,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 5 8,3,0.6
+qwen3-1.7b,baseline,,ar,A008,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,ar,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,ar,E018,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,ar,E025,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,ar,F063,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,ar,F118,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+qwen3-1.7b,baseline,,ar,G006,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+qwen3-1.7b,baseline,,ar,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+qwen3-1.7b,baseline,,en,A008,Traditional vs. Secular-Rational,2,5,1.0
+qwen3-1.7b,baseline,,en,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,en,E018,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,en,E025,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+qwen3-1.7b,baseline,,en,F118,Survival vs. Self-Expression,5,5,1.0
+qwen3-1.7b,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+qwen3-1.7b,baseline,,en,G006,Survival vs. Self-Expression,1,5,1.0
+qwen3-1.7b,baseline,,en,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+qwen3-1.7b,baseline,,en,Y003,Traditional vs. Secular-Rational,1 2 3 4 8,5,1.0
+qwen3-1.7b,baseline,,es,A008,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,es,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,es,E018,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,es,E025,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,es,F063,Survival vs. Self-Expression,5,5,1.0
+qwen3-1.7b,baseline,,es,F118,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,es,F120,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,es,G006,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,es,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+qwen3-1.7b,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+qwen3-1.7b,baseline,,fr,A008,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,fr,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,fr,E018,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,fr,E025,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,fr,F063,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,fr,F118,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,fr,F120,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,fr,G006,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,fr,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+qwen3-1.7b,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+qwen3-1.7b,baseline,,ru,A008,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,ru,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,ru,E018,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,ru,E025,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,ru,F063,Survival vs. Self-Expression,1,5,1.0
+qwen3-1.7b,baseline,,ru,F118,Survival vs. Self-Expression,1,5,1.0
+qwen3-1.7b,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+qwen3-1.7b,baseline,,ru,G006,Survival vs. Self-Expression,1,5,1.0
+qwen3-1.7b,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 4,5,1.0
+qwen3-1.7b,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 7 8,5,1.0
+qwen3-1.7b,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,1,5,1.0
+qwen3-1.7b,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,3,5,1.0
+qwen3-1.7b,baseline,,zh-cn,F063,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,zh-cn,F118,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,zh-cn,F120,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,zh-cn,G006,Survival vs. Self-Expression,3,5,1.0
+qwen3-1.7b,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 2,5,1.0
+qwen3-1.7b,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,NA,0,0.0
+x-ai/grok-4.1-fast,baseline,,ar,A008,Traditional vs. Secular-Rational,1,4,0.8
+x-ai/grok-4.1-fast,baseline,,ar,A165,Traditional vs. Secular-Rational,1,5,1.0
+x-ai/grok-4.1-fast,baseline,,ar,E018,Traditional vs. Secular-Rational,3,4,0.8
+x-ai/grok-4.1-fast,baseline,,ar,E025,Traditional vs. Secular-Rational,3,5,1.0
+x-ai/grok-4.1-fast,baseline,,ar,F063,Survival vs. Self-Expression,1,3,0.6
+x-ai/grok-4.1-fast,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+x-ai/grok-4.1-fast,baseline,,ar,F120,Survival vs. Self-Expression,5,4,0.8
+x-ai/grok-4.1-fast,baseline,,ar,G006,Survival vs. Self-Expression,4,3,0.6
+x-ai/grok-4.1-fast,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 3,3,0.6
+x-ai/grok-4.1-fast,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 2 4 6 8,5,1.0
+x-ai/grok-4.1-fast,baseline,,en,A008,Traditional vs. Secular-Rational,1,5,1.0
+x-ai/grok-4.1-fast,baseline,,en,A165,Traditional vs. Secular-Rational,1,4,0.8
+x-ai/grok-4.1-fast,baseline,,en,E018,Traditional vs. Secular-Rational,3,3,0.6
+x-ai/grok-4.1-fast,baseline,,en,E025,Traditional vs. Secular-Rational,2,4,0.8
+x-ai/grok-4.1-fast,baseline,,en,F063,Survival vs. Self-Expression,1,5,1.0
+x-ai/grok-4.1-fast,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+x-ai/grok-4.1-fast,baseline,,en,F120,Survival vs. Self-Expression,5,4,0.8
+x-ai/grok-4.1-fast,baseline,,en,G006,Survival vs. Self-Expression,2,4,0.8
+x-ai/grok-4.1-fast,baseline,,en,Y002,Traditional vs. Secular-Rational,4 1,3,0.6
+x-ai/grok-4.1-fast,baseline,,en,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,3,0.6
+x-ai/grok-4.1-fast,baseline,,es,A008,Traditional vs. Secular-Rational,1,3,0.6
+x-ai/grok-4.1-fast,baseline,,es,A165,Traditional vs. Secular-Rational,2,4,0.8
+x-ai/grok-4.1-fast,baseline,,es,E018,Traditional vs. Secular-Rational,3,3,0.6
+x-ai/grok-4.1-fast,baseline,,es,E025,Traditional vs. Secular-Rational,3,5,1.0
+x-ai/grok-4.1-fast,baseline,,es,F063,Survival vs. Self-Expression,1,3,0.6
+x-ai/grok-4.1-fast,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+x-ai/grok-4.1-fast,baseline,,es,F120,Survival vs. Self-Expression,5,3,0.6
+x-ai/grok-4.1-fast,baseline,,es,G006,Survival vs. Self-Expression,3,4,0.8
+x-ai/grok-4.1-fast,baseline,,es,Y002,Traditional vs. Secular-Rational,1 3,3,0.6
+x-ai/grok-4.1-fast,baseline,,es,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+x-ai/grok-4.1-fast,baseline,,fr,A008,Traditional vs. Secular-Rational,1,5,1.0
+x-ai/grok-4.1-fast,baseline,,fr,A165,Traditional vs. Secular-Rational,1,4,0.8
+x-ai/grok-4.1-fast,baseline,,fr,E018,Traditional vs. Secular-Rational,1,5,1.0
+x-ai/grok-4.1-fast,baseline,,fr,E025,Traditional vs. Secular-Rational,2,3,0.6
+x-ai/grok-4.1-fast,baseline,,fr,F063,Survival vs. Self-Expression,1,5,1.0
+x-ai/grok-4.1-fast,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+x-ai/grok-4.1-fast,baseline,,fr,F120,Survival vs. Self-Expression,7,3,0.6
+x-ai/grok-4.1-fast,baseline,,fr,G006,Survival vs. Self-Expression,2,4,0.8
+x-ai/grok-4.1-fast,baseline,,fr,Y002,Traditional vs. Secular-Rational,4 3,2,0.4
+x-ai/grok-4.1-fast,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,4,0.8
+x-ai/grok-4.1-fast,baseline,,ru,A008,Traditional vs. Secular-Rational,2,5,1.0
+x-ai/grok-4.1-fast,baseline,,ru,A165,Traditional vs. Secular-Rational,1,3,0.6
+x-ai/grok-4.1-fast,baseline,,ru,E018,Traditional vs. Secular-Rational,3,5,1.0
+x-ai/grok-4.1-fast,baseline,,ru,E025,Traditional vs. Secular-Rational,3,5,1.0
+x-ai/grok-4.1-fast,baseline,,ru,F063,Survival vs. Self-Expression,1,5,1.0
+x-ai/grok-4.1-fast,baseline,,ru,F118,Survival vs. Self-Expression,10,5,1.0
+x-ai/grok-4.1-fast,baseline,,ru,F120,Survival vs. Self-Expression,5,2,0.4
+x-ai/grok-4.1-fast,baseline,,ru,G006,Survival vs. Self-Expression,3,4,0.8
+x-ai/grok-4.1-fast,baseline,,ru,Y002,Traditional vs. Secular-Rational,1 3,2,0.4
+x-ai/grok-4.1-fast,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 3 4 6 8,5,1.0
+x-ai/grok-4.1-fast,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,5,1.0
+x-ai/grok-4.1-fast,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,4,0.8
+x-ai/grok-4.1-fast,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,3,4,0.8
+x-ai/grok-4.1-fast,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,3,5,1.0
+x-ai/grok-4.1-fast,baseline,,zh-cn,F063,Survival vs. Self-Expression,5,3,0.6
+x-ai/grok-4.1-fast,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+x-ai/grok-4.1-fast,baseline,,zh-cn,F120,Survival vs. Self-Expression,7,4,0.8
+x-ai/grok-4.1-fast,baseline,,zh-cn,G006,Survival vs. Self-Expression,3,5,1.0
+x-ai/grok-4.1-fast,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,1 4,5,1.0
+x-ai/grok-4.1-fast,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 8 10,5,1.0
+z-ai/glm-4.6,baseline,,ar,A008,Traditional vs. Secular-Rational,1,3,0.6
+z-ai/glm-4.6,baseline,,ar,A165,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,ar,E018,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,ar,E025,Traditional vs. Secular-Rational,2,2,0.4
+z-ai/glm-4.6,baseline,,ar,F063,Survival vs. Self-Expression,10,4,0.8
+z-ai/glm-4.6,baseline,,ar,F118,Survival vs. Self-Expression,10,5,1.0
+z-ai/glm-4.6,baseline,,ar,F120,Survival vs. Self-Expression,5,5,1.0
+z-ai/glm-4.6,baseline,,ar,G006,Survival vs. Self-Expression,2,5,1.0
+z-ai/glm-4.6,baseline,,ar,Y002,Traditional vs. Secular-Rational,1 3,5,1.0
+z-ai/glm-4.6,baseline,,ar,Y003,Traditional vs. Secular-Rational,1 4 6 8 9,2,0.4
+z-ai/glm-4.6,baseline,,en,A008,Traditional vs. Secular-Rational,1,5,1.0
+z-ai/glm-4.6,baseline,,en,A165,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,en,E018,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,en,E025,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,en,F063,Survival vs. Self-Expression,5,5,1.0
+z-ai/glm-4.6,baseline,,en,F118,Survival vs. Self-Expression,10,5,1.0
+z-ai/glm-4.6,baseline,,en,F120,Survival vs. Self-Expression,5,5,1.0
+z-ai/glm-4.6,baseline,,en,G006,Survival vs. Self-Expression,1,3,0.6
+z-ai/glm-4.6,baseline,,en,Y002,Traditional vs. Secular-Rational,3 1,3,0.6
+z-ai/glm-4.6,baseline,,en,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,4,0.8
+z-ai/glm-4.6,baseline,,es,A008,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,es,A165,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,es,E018,Traditional vs. Secular-Rational,1,3,0.6
+z-ai/glm-4.6,baseline,,es,E025,Traditional vs. Secular-Rational,2,3,0.6
+z-ai/glm-4.6,baseline,,es,F063,Survival vs. Self-Expression,5,3,0.6
+z-ai/glm-4.6,baseline,,es,F118,Survival vs. Self-Expression,10,5,1.0
+z-ai/glm-4.6,baseline,,es,F120,Survival vs. Self-Expression,5,5,1.0
+z-ai/glm-4.6,baseline,,es,G006,Survival vs. Self-Expression,2,5,1.0
+z-ai/glm-4.6,baseline,,es,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+z-ai/glm-4.6,baseline,,es,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,5,1.0
+z-ai/glm-4.6,baseline,,fr,A008,Traditional vs. Secular-Rational,2,4,0.8
+z-ai/glm-4.6,baseline,,fr,A165,Traditional vs. Secular-Rational,2,3,0.6
+z-ai/glm-4.6,baseline,,fr,E018,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,fr,E025,Traditional vs. Secular-Rational,3,4,0.8
+z-ai/glm-4.6,baseline,,fr,F063,Survival vs. Self-Expression,1,3,0.6
+z-ai/glm-4.6,baseline,,fr,F118,Survival vs. Self-Expression,10,5,1.0
+z-ai/glm-4.6,baseline,,fr,F120,Survival vs. Self-Expression,5,5,1.0
+z-ai/glm-4.6,baseline,,fr,G006,Survival vs. Self-Expression,2,3,0.6
+z-ai/glm-4.6,baseline,,fr,Y002,Traditional vs. Secular-Rational,3 1,5,1.0
+z-ai/glm-4.6,baseline,,fr,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,3,0.6
+z-ai/glm-4.6,baseline,,ru,A008,Traditional vs. Secular-Rational,2,3,0.6
+z-ai/glm-4.6,baseline,,ru,A165,Traditional vs. Secular-Rational,2,4,0.8
+z-ai/glm-4.6,baseline,,ru,E018,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,ru,E025,Traditional vs. Secular-Rational,3,3,0.6
+z-ai/glm-4.6,baseline,,ru,F063,Survival vs. Self-Expression,1,3,0.6
+z-ai/glm-4.6,baseline,,ru,F118,Survival vs. Self-Expression,10,4,0.8
+z-ai/glm-4.6,baseline,,ru,F120,Survival vs. Self-Expression,5,5,1.0
+z-ai/glm-4.6,baseline,,ru,G006,Survival vs. Self-Expression,2,4,0.8
+z-ai/glm-4.6,baseline,,ru,Y002,Traditional vs. Secular-Rational,3 1,4,0.8
+z-ai/glm-4.6,baseline,,ru,Y003,Traditional vs. Secular-Rational,2 4 6 8 10,3,0.6
+z-ai/glm-4.6,baseline,,zh-cn,A008,Traditional vs. Secular-Rational,2,3,0.6
+z-ai/glm-4.6,baseline,,zh-cn,A165,Traditional vs. Secular-Rational,2,4,0.8
+z-ai/glm-4.6,baseline,,zh-cn,E018,Traditional vs. Secular-Rational,2,5,1.0
+z-ai/glm-4.6,baseline,,zh-cn,E025,Traditional vs. Secular-Rational,2,4,0.8
+z-ai/glm-4.6,baseline,,zh-cn,F063,Survival vs. Self-Expression,5,4,0.8
+z-ai/glm-4.6,baseline,,zh-cn,F118,Survival vs. Self-Expression,10,5,1.0
+z-ai/glm-4.6,baseline,,zh-cn,F120,Survival vs. Self-Expression,5,5,1.0
+z-ai/glm-4.6,baseline,,zh-cn,G006,Survival vs. Self-Expression,2,3,0.6
+z-ai/glm-4.6,baseline,,zh-cn,Y002,Traditional vs. Secular-Rational,3 1,2,0.4
+z-ai/glm-4.6,baseline,,zh-cn,Y003,Traditional vs. Secular-Rational,2 3 4 8 10,5,1.0

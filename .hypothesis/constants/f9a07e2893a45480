@@ -1,0 +1,4 @@
+# file: C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\factor_analyzer\factor_analyzer.py
+# hypothesis_version: 6.148.8
+
+[0.005, 0.5, 100, 1000, 1234567890, 'L-BFGS-B', 'allow-nan', 'corr_', 'drop', 'lapack', 'loadings_', 'maxiter', 'mean', 'median', 'method', 'minres', 'ml', 'mle', 'principal', 'promax', 'randomized', 'uls']

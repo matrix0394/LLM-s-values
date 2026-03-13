@@ -1,0 +1,4 @@
+# file: E:\Code\value of LLM\LLM's values\src\llm_values\llm_multilingual_interview.py
+# hypothesis_version: 6.148.8
+
+[0.0, 1.0, 100, '\n✅ 初始化测试完成！', '%Y%m%d_%H%M%S', '*.pkl', '/', ':', 'API调用失败', 'English', 'Español', 'Français', '\\', '_', '__main__', 'all_rounds', 'ar', 'config', 'consensus_count', 'consensus_value', 'consistency_rate', 'consistency_stats', 'data', 'en', 'entity_id', 'error_message', 'es', 'fr', 'intermediate_data', 'interview_raw', 'is_valid', 'language', 'language_name', 'languages', 'llm_interview_raw_', 'llm_values', 'model', 'model_name', 'overall_consistency', 'processed_response', 'question', 'question_id', 'questions', 'r', 'raw_response', 'rb', 'responses', 'results', 'round_id', 'ru', 'success_rate', 'successful_tasks', 'timestamp', 'total_questions', 'total_tasks', 'total_valid', 'utf-8', 'valid_responses', 'w', 'wb', 'zh-cn', 'Русский', 'العربية', '│', '俄语', '法语', '简体中文', '英语', '西班牙语', '阿拉伯语']

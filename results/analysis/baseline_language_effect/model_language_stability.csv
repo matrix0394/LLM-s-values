@@ -1,0 +1,24 @@
+model_name,n_languages,PC1_mean,PC1_std,PC1_range,PC2_mean,PC2_std,PC2_range,mean_distance_from_centroid,max_distance_from_centroid,stability_rating
+google/gemini-2.5-pro,6,2.049,0.589,1.687,1.074,0.948,2.51,0.966,1.431,Stable
+z-ai/glm-4.6,6,1.268,0.749,1.976,1.556,1.321,2.982,1.239,2.178,Stable
+meta-llama/llama-3.3-70b-instruct,6,1.696,0.898,2.308,1.942,0.884,2.769,1.006,1.619,Moderate
+claude-3-7-sonnet-20250219,6,3.166,0.906,2.334,0.766,1.141,3.402,1.241,2.099,Moderate
+qwen/qwq-32b,6,1.628,1.193,2.437,3.722,0.871,2.269,1.297,1.934,Moderate
+mistralai/mistral-medium-3.1,6,2.232,1.084,2.47,1.289,1.957,4.7,1.944,2.708,Moderate
+microsoft/phi-3-mini-128k-instruct,6,2.314,1.178,3.121,0.91,0.396,1.08,0.928,2.31,Unstable
+deepseek-chat,6,2.778,1.332,3.523,0.045,0.503,1.136,1.185,2.188,Unstable
+meta-llama/llama-3.2-3b-instruct,6,1.391,1.488,3.535,1.518,0.664,1.937,1.332,2.206,Unstable
+kimi-k2,6,4.142,1.308,3.623,0.408,0.913,2.733,1.222,2.485,Unstable
+openai/gpt-5.1,6,3.165,1.348,3.724,3.025,0.447,1.033,1.162,2.177,Unstable
+gpt-4o,6,2.024,1.508,3.749,1.56,0.863,2.37,1.469,2.615,Unstable
+deepseek/deepseek-chat-v3.1,6,2.651,1.582,3.769,-0.057,0.876,2.269,1.571,2.213,Unstable
+google/gemini-3-pro-preview,6,0.959,1.344,3.834,1.026,1.353,3.877,1.346,3.502,Unstable
+anthropic/claude-sonnet-4.5,6,2.68,1.358,3.86,2.092,0.46,1.256,1.146,2.244,Unstable
+google/gemma-3-4b-it,6,-0.785,1.624,4.172,1.405,1.278,2.821,1.718,2.609,Very Unstable
+x-ai/grok-4.1-fast,6,2.825,1.934,4.371,3.639,1.356,3.454,2.036,3.435,Very Unstable
+gpt-4o-mini,6,4.17,1.664,5.186,-0.077,1.166,2.898,1.632,2.816,Very Unstable
+qwen/qwen3-max,6,2.644,2.059,5.31,-0.615,1.042,2.586,1.99,3.023,Very Unstable
+qwen3-1.7b,6,0.945,2.344,5.358,3.151,2.232,4.937,2.805,4.114,Very Unstable
+doubao-1-5-pro-32k-250115,6,2.64,2.065,5.424,0.151,1.051,2.468,1.687,4.302,Very Unstable
+google/gemini-2.5-flash,6,2.462,1.917,5.474,0.535,2.499,6.785,2.352,5.639,Very Unstable
+mistralai/mistral-nemo,6,2.069,2.232,5.85,3.62,2.048,5.456,2.297,5.71,Very Unstable

@@ -177,7 +177,7 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
             
             # 找到配置文件路径 - 需要到项目根目录
             # data_path = .../data/roleplay_English, parent = .../data, parent.parent = 项目根
-            config_path = self.data_path.parent.parent / 'config' / 'cultural_regions.json'
+            config_path = self.data_path.parent.parent / 'config' / 'country' / 'cultural_regions.json'
             
             with open(config_path, 'r', encoding='utf-8') as f:
                 config = json.load(f)

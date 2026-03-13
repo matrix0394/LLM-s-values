@@ -74,14 +74,10 @@ class LLMDataProcessor:
         if data_dir is None:
             data_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
         if config_path is None:
-            config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'llm_models.json')
+            config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'models', 'llm_models.json')
             
         self.data_dir = Path(data_dir)
         self.config_path = Path(config_path)
-        # 正确路径：data/llm_values/interview_raw/
-        self.llm_responses_dir = self.data_dir / 'llm_values' / 'interview_raw'
-        
-        # 不自动创建目录，只在需要时检查
         
         # 加载模型配置
         self.models_config = self._load_models_config()
@@ -108,102 +104,64 @@ class LLMDataProcessor:
             return models[model_id].get("region", "Unknown")
         return "Unknown"
     
-    def load_model_responses(self, model_id: str) -> Optional[pd.DataFrame]:
-        """加载指定模型的回答数据
-        
-        Args:
-            model_id: 模型ID
-            
-        Returns:
-            DataFrame或None
-        """
-        # 尝试多种文件格式
-        possible_files = [
-            self.llm_responses_dir / f"{model_id}_responses.pkl",
-            self.llm_responses_dir / f"{model_id}_responses.csv",
-            self.llm_responses_dir / f"{model_id}.pkl",
-            self.llm_responses_dir / f"{model_id}.csv"
-        ]
-        
-        for file_path in possible_files:
-            if file_path.exists():
-                try:
-                    if file_path.suffix == '.pkl':
-                        return pd.read_pickle(file_path)
-                    elif file_path.suffix == '.csv':
-                        return pd.read_csv(file_path)
-                except Exception as e:
-                    print(f"加载文件失败 {file_path}: {e}")
-                    continue
-        
-        print(f"未找到模型 {model_id} 的回答文件")
-        return None
-    
     def load_all_responses(self) -> List[pd.DataFrame]:
-        """加载所有模型的回答数据（只加载最新的统一格式数据）"""
+        """加载所有模型的回答数据（从独立文件加载）"""
         all_dataframes = []
         
-        # 1. 尝试从interview_raw目录加载新格式数据（统一格式）
+        # 从interview_raw目录加载所有独立模型文件
         interview_raw_dir = self.data_dir / "llm_values" / "interview_raw"
         if interview_raw_dir.exists():
-            raw_files = list(interview_raw_dir.glob("*.pkl"))
+            # 只加载独立模型文件（排除合并文件）
+            individual_files = [f for f in interview_raw_dir.glob("*.pkl") 
+                               if not f.name.startswith("llm_interview_raw_")]
             
-            # 只加载最新的文件（按修改时间排序）
-            if raw_files:
-                latest_file = max(raw_files, key=lambda x: x.stat().st_mtime)
-                print(f"🔍 找到{len(raw_files)}个访谈文件，加载最新的: {latest_file.name}")
-                raw_files = [latest_file]
+            if not individual_files:
+                print(f"⚠️ 未找到独立模型文件")
+                return all_dataframes
             
-            for file_path in raw_files:
+            print(f"🔍 找到 {len(individual_files)} 个独立模型文件")
+            
+            for file_path in individual_files:
                 try:
                     with open(file_path, 'rb') as f:
                         data = pickle.load(f)
                     
-                    # 新格式：{'metadata': {...}, 'results': [...]}
-                    if isinstance(data, dict) and 'results' in data:
-                        for result in data['results']:
-                            # 转换为DataFrame格式
-                            rows = []
-                            for response in result.get('responses', []):
+                    # 独立文件格式：直接是单个模型的数据
+                    if isinstance(data, dict):
+                        model_name = data.get('model_name', data.get('model', ''))
+                        if not model_name:
+                            print(f"⚠️ {file_path.name}: 无法识别模型名称")
+                            continue
+                        
+                        # 转换为DataFrame格式
+                        rows = []
+                        for response in data.get('responses', []):
+                            if isinstance(response, dict):
                                 rows.append({
-                                    'model_name': result['model_name'],
-                                    'question_id': response['question_id'],
-                                    'response': response.get('processed_response', response.get('response')),
+                                    'model_name': model_name,
+                                    'question_id': response.get('question_id'),
+                                    'response': (response.get('final_response') or 
+                                               response.get('processed_response') or 
+                                               response.get('response')),
                                     'is_valid': response.get('is_valid', True),
                                     'source_file': file_path.name
                                 })
-                            if rows:
-                                df = pd.DataFrame(rows)
-                                all_dataframes.append(df)
-                                print(f"✅ 加载新格式数据: {file_path.name} ({len(rows)} 条回答)")
+                        
+                        if rows:
+                            df = pd.DataFrame(rows)
+                            all_dataframes.append(df)
+                            print(f"   ✅ {model_name}: {len(rows)} 条回答")
+                        else:
+                            print(f"   ⚠️ {model_name}: 无有效回答")
+                            
                 except Exception as e:
-                    print(f"加载新格式文件失败 {file_path}: {e}")
+                    print(f"   ❌ {file_path.name}: 加载失败 - {e}")
                     continue
         
-        # 2. 兼容旧格式：从llm_responses目录加载
-        if self.llm_responses_dir.exists():
-            pkl_files = list(self.llm_responses_dir.glob("*.pkl"))
-            csv_files = list(self.llm_responses_dir.glob("*.csv"))
-            
-            all_files = pkl_files + csv_files
-            
-            for file_path in all_files:
-                try:
-                    if file_path.suffix == '.pkl':
-                        df = pd.read_pickle(file_path)
-                    elif file_path.suffix == '.csv':
-                        df = pd.read_csv(file_path)
-                    else:
-                        continue
-                        
-                    # 添加文件来源信息
-                    df['source_file'] = file_path.name
-                    all_dataframes.append(df)
-                    print(f"✅ 加载旧格式数据: {file_path.name}")
-                    
-                except Exception as e:
-                    print(f"加载旧格式文件失败 {file_path}: {e}")
-                    continue
+        if all_dataframes:
+            print(f"\n📊 总计加载: {len(all_dataframes)} 个模型")
+        else:
+            print(f"\n⚠️ 未加载到任何数据")
         
         return all_dataframes
     
@@ -214,7 +172,7 @@ class LLMDataProcessor:
             df: 包含模型回答的DataFrame
             
         Returns:
-            ProcessedResponse或None
+            ProcessedResponse或None（如果有效回答数<6则返回None）
         """
         if df.empty:
             return None
@@ -229,6 +187,9 @@ class LLMDataProcessor:
             model_region=model_region
         )
         
+        # 统计有效回答数
+        valid_count = 0
+        
         # 处理每个问题的回答
         for _, row in df.iterrows():
             if not row.get('is_valid', False):
@@ -239,31 +200,47 @@ class LLMDataProcessor:
             
             if question_id == 'A008':
                 result.A008 = response
+                valid_count += 1
             elif question_id == 'A165':
                 result.A165 = response
+                valid_count += 1
             elif question_id == 'E018':
                 result.E018 = response
+                valid_count += 1
             elif question_id == 'E025':
                 result.E025 = response
+                valid_count += 1
             elif question_id == 'F063':
                 result.F063 = response
+                valid_count += 1
             elif question_id == 'F118':
                 result.F118 = response
+                valid_count += 1
             elif question_id == 'F120':
                 result.F120 = response
+                valid_count += 1
             elif question_id == 'G006':
                 result.G006 = response
+                valid_count += 1
             elif question_id == 'Y002':
                 if isinstance(response, (tuple, list)) and len(response) == 2:
                     result.Y002_first = response[0]
                     result.Y002_second = response[1]
                     # 计算物质主义倾向
                     result.Y002_materialist = IVSQuestionProcessor.process_y002(response[0], response[1])
+                    valid_count += 1
             elif question_id == 'Y003':
                 if isinstance(response, (tuple, list)):
                     result.Y003_values = list(response)
+                    valid_count += 1
                 elif isinstance(response, int):
                     result.Y003_values = [response]
+                    valid_count += 1
+        
+        # 🔧 筛选：只保留有效回答数≥6的模型
+        if valid_count < 6:
+            print(f"⚠️ {model_name}: 有效回答数不足 ({valid_count}/10)，已过滤")
+            return None
         
         return result
     
@@ -348,19 +325,15 @@ class LLMDataProcessor:
         
         return ivs_compatible
     
-    def save_processed_data(self, output_path: str = None):
+    def save_processed_data(self, output_path: str = None) -> Optional[str]:
         """
-        保存处理后的数据为标准IVS格式（Stage1专用目录，带时间戳）
+        保存处理后的数据为标准IVS格式
         
         Args:
-            output_path: 输出文件路径，默认为 data/llm_values/llm_processed_responses_ivs_format_YYYYMMDD_HHMMSS.pkl
-        
-        保存格式与Stage0的valid_data.pkl完全一致：
-        - 每行一个模型
-        - 列：country_code, year, weight, model_region, A008-G006, Y002, Y003
+            output_path: 输出文件路径（可选）
         
         Returns:
-            保存的文件路径（字符串），如果保存失败则返回None
+            保存的文件路径，如果保存失败则返回None
         """
         if output_path is None:
             # Stage1专用路径：data/llm_values/，带时间戳

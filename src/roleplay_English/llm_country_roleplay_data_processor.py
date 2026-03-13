@@ -92,7 +92,7 @@ class LLMCountryRoleplayDataProcessor:
             current_path = Path(__file__).parent
             while current_path.name != "LLM's values" and current_path.parent != current_path:
                 current_path = current_path.parent
-            config_path = current_path / 'config' / 'llm_models.json'
+            config_path = current_path / 'config' / 'models' / 'llm_models.json'
             
         self.data_dir = Path(data_dir)
         self.config_path = Path(config_path)
@@ -128,7 +128,7 @@ class LLMCountryRoleplayDataProcessor:
         while current_path.name != "LLM's values" and current_path.parent != current_path:
             current_path = current_path.parent
         
-        cultural_config_path = current_path / 'config' / 'cultural_regions.json'
+        cultural_config_path = current_path / 'config' / 'country' / 'cultural_regions.json'
         try:
             with open(cultural_config_path, 'r', encoding='utf-8') as f:
                 config = json.load(f)

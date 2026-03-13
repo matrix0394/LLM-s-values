@@ -1,0 +1,2563 @@
+model_name,country,country_code,language,condition,PC1,PC2,data_source
+claude-3-7-sonnet-20250219,Algeria,12,ar,imitation,-1.6475,-1.7093,LLM
+claude-3-7-sonnet-20250219,Algeria,12,en,imitation,-1.6019,-1.8024,LLM
+claude-3-7-sonnet-20250219,Argentina,32,en,imitation,0.997,1.529,LLM
+claude-3-7-sonnet-20250219,Argentina,32,es,imitation,0.8992,0.576,LLM
+claude-3-7-sonnet-20250219,Australia,36,en-native,imitation,5.2422,3.4541,LLM
+claude-3-7-sonnet-20250219,Austria,40,de,imitation,3.2906,2.3893,LLM
+claude-3-7-sonnet-20250219,Austria,40,en,imitation,4.3041,2.7309,LLM
+claude-3-7-sonnet-20250219,Belarus,112,en,imitation,-1.6394,2.1396,LLM
+claude-3-7-sonnet-20250219,Belarus,112,ru,imitation,-0.6858,0.5646,LLM
+claude-3-7-sonnet-20250219,Belgium,56,de,imitation,4.4097,2.5142,LLM
+claude-3-7-sonnet-20250219,Belgium,56,en,imitation,5.2663,2.7071,LLM
+claude-3-7-sonnet-20250219,Belgium,56,fr,imitation,4.2878,2.3082,LLM
+claude-3-7-sonnet-20250219,Bolivia,68,en,imitation,-1.2187,-0.0098,LLM
+claude-3-7-sonnet-20250219,Bolivia,68,es,imitation,-1.2187,-0.0098,LLM
+claude-3-7-sonnet-20250219,Brazil,76,en,imitation,2.7355,0.7165,LLM
+claude-3-7-sonnet-20250219,Brazil,76,pt,imitation,-0.2913,0.4621,LLM
+claude-3-7-sonnet-20250219,Burkina Faso,854,en,imitation,-1.6019,-1.8024,LLM
+claude-3-7-sonnet-20250219,Burkina Faso,854,fr,imitation,-2.7992,-0.6394,LLM
+claude-3-7-sonnet-20250219,Canada,124,en-native,imitation,5.1444,2.5012,LLM
+claude-3-7-sonnet-20250219,Canada,124,fr,imitation,4.8039,1.0521,LLM
+claude-3-7-sonnet-20250219,Chile,152,en,imitation,0.7822,0.6801,LLM
+claude-3-7-sonnet-20250219,Chile,152,es,imitation,0.0413,0.8344,LLM
+claude-3-7-sonnet-20250219,China,156,en,imitation,0.3331,0.4065,LLM
+claude-3-7-sonnet-20250219,China,156,zh-cn,imitation,0.9348,0.5133,LLM
+claude-3-7-sonnet-20250219,Colombia,170,en,imitation,-0.3419,-0.9582,LLM
+claude-3-7-sonnet-20250219,Colombia,170,es,imitation,-0.769,0.2584,LLM
+claude-3-7-sonnet-20250219,Ecuador,218,en,imitation,-1.2187,-0.0098,LLM
+claude-3-7-sonnet-20250219,Ecuador,218,es,imitation,-1.2187,-0.0098,LLM
+claude-3-7-sonnet-20250219,Egypt,818,ar,imitation,-1.6475,-1.7093,LLM
+claude-3-7-sonnet-20250219,Egypt,818,en,imitation,-1.6019,-1.8024,LLM
+claude-3-7-sonnet-20250219,France,250,en,imitation,3.8703,3.4116,LLM
+claude-3-7-sonnet-20250219,France,250,fr,imitation,3.0377,2.4716,LLM
+claude-3-7-sonnet-20250219,Germany,276,de,imitation,4.4097,2.5142,LLM
+claude-3-7-sonnet-20250219,Germany,276,en,imitation,5.3816,3.6314,LLM
+claude-3-7-sonnet-20250219,Ghana,288,en-native,imitation,-1.3911,-1.6361,LLM
+claude-3-7-sonnet-20250219,Guatemala,320,en,imitation,-1.5794,-0.3177,LLM
+claude-3-7-sonnet-20250219,Guatemala,320,es,imitation,-1.7902,-0.484,LLM
+claude-3-7-sonnet-20250219,Haiti,332,en,imitation,-1.8182,-0.4195,LLM
+claude-3-7-sonnet-20250219,Haiti,332,fr,imitation,-3.636,1.765,LLM
+claude-3-7-sonnet-20250219,Hong Kong,344,en-native,imitation,-0.1303,2.7801,LLM
+claude-3-7-sonnet-20250219,Hong Kong,344,zh-cn,imitation,2.653,2.9108,LLM
+claude-3-7-sonnet-20250219,Hong Kong,344,zh-hk,imitation,1.0285,5.2904,LLM
+claude-3-7-sonnet-20250219,Iraq,368,ar,imitation,-3.038,-0.7413,LLM
+claude-3-7-sonnet-20250219,Iraq,368,en,imitation,-2.2854,-0.6591,LLM
+claude-3-7-sonnet-20250219,Ireland,372,en-native,imitation,5.1204,3.2482,LLM
+claude-3-7-sonnet-20250219,Italy,380,en,imitation,3.4117,2.1508,LLM
+claude-3-7-sonnet-20250219,Italy,380,it,imitation,2.5551,1.9578,LLM
+claude-3-7-sonnet-20250219,Japan,392,en,imitation,0.2618,1.6208,LLM
+claude-3-7-sonnet-20250219,Japan,392,ja,imitation,0.086,1.3972,LLM
+claude-3-7-sonnet-20250219,Jordan,400,ar,imitation,-1.6475,-1.7093,LLM
+claude-3-7-sonnet-20250219,Jordan,400,en,imitation,-1.6019,-1.8024,LLM
+claude-3-7-sonnet-20250219,Kazakhstan,398,en,imitation,-1.3638,0.1587,LLM
+claude-3-7-sonnet-20250219,Kazakhstan,398,ru,imitation,-1.2467,0.0546,LLM
+claude-3-7-sonnet-20250219,Kenya,404,en-native,imitation,-1.3911,-1.6361,LLM
+claude-3-7-sonnet-20250219,"Korea, Republic of",410,en,imitation,-0.5311,1.0161,LLM
+claude-3-7-sonnet-20250219,"Korea, Republic of",410,ko,imitation,-0.1577,0.9853,LLM
+claude-3-7-sonnet-20250219,Kuwait,414,ar,imitation,-1.9801,-2.0816,LLM
+claude-3-7-sonnet-20250219,Kuwait,414,en,imitation,-1.6194,-1.7738,LLM
+claude-3-7-sonnet-20250219,Kyrgyzstan,417,en,imitation,-1.6964,-0.2136,LLM
+claude-3-7-sonnet-20250219,Kyrgyzstan,417,ru,imitation,-1.6964,-0.2136,LLM
+claude-3-7-sonnet-20250219,Lebanon,422,ar,imitation,-2.8047,0.9098,LLM
+claude-3-7-sonnet-20250219,Lebanon,422,en,imitation,-1.6964,-0.2136,LLM
+claude-3-7-sonnet-20250219,Libya,434,ar,imitation,-1.9801,-2.0816,LLM
+claude-3-7-sonnet-20250219,Libya,434,en,imitation,-2.6973,-2.0973,LLM
+claude-3-7-sonnet-20250219,Luxembourg,442,de,imitation,4.8368,1.2976,LLM
+claude-3-7-sonnet-20250219,Luxembourg,442,en,imitation,5.2663,2.7071,LLM
+claude-3-7-sonnet-20250219,Luxembourg,442,fr,imitation,4.715,1.0917,LLM
+claude-3-7-sonnet-20250219,Macao,446,en,imitation,-0.1927,1.0426,LLM
+claude-3-7-sonnet-20250219,Macao,446,pt,imitation,-0.1927,1.0426,LLM
+claude-3-7-sonnet-20250219,Macao,446,zh-cn,imitation,0.2591,1.0079,LLM
+claude-3-7-sonnet-20250219,Malaysia,458,en-native,imitation,-1.2467,0.0546,LLM
+claude-3-7-sonnet-20250219,Mali,466,en,imitation,-1.6019,-1.8024,LLM
+claude-3-7-sonnet-20250219,Mali,466,fr,imitation,-3.1599,-0.9472,LLM
+claude-3-7-sonnet-20250219,Malta,470,en-native,imitation,-0.103,-0.8563,LLM
+claude-3-7-sonnet-20250219,Mexico,484,en,imitation,-0.3419,-0.9582,LLM
+claude-3-7-sonnet-20250219,Mexico,484,es,imitation,-0.769,0.2584,LLM
+claude-3-7-sonnet-20250219,Morocco,504,ar,imitation,-1.4086,-1.6074,LLM
+claude-3-7-sonnet-20250219,Morocco,504,en,imitation,-1.6019,-1.8024,LLM
+claude-3-7-sonnet-20250219,New Zealand,554,en-native,imitation,5.2422,3.4541,LLM
+claude-3-7-sonnet-20250219,Nicaragua,558,en,imitation,-1.5794,-0.3177,LLM
+claude-3-7-sonnet-20250219,Nicaragua,558,es,imitation,-1.7902,-0.484,LLM
+claude-3-7-sonnet-20250219,Nigeria,566,en-native,imitation,-1.6194,-1.7738,LLM
+claude-3-7-sonnet-20250219,Pakistan,586,en-native,imitation,-1.6194,-1.7738,LLM
+claude-3-7-sonnet-20250219,Palestine,275,ar,imitation,-0.7521,-0.3326,LLM
+claude-3-7-sonnet-20250219,Palestine,275,en,imitation,-2.7992,-0.6394,LLM
+claude-3-7-sonnet-20250219,Peru,604,en,imitation,-1.0079,0.1565,LLM
+claude-3-7-sonnet-20250219,Peru,604,es,imitation,-1.0079,0.1565,LLM
+claude-3-7-sonnet-20250219,Philippines,608,en-native,imitation,-0.6745,-1.3305,LLM
+claude-3-7-sonnet-20250219,Portugal,620,en,imitation,3.2878,2.2477,LLM
+claude-3-7-sonnet-20250219,Portugal,620,pt,imitation,0.8587,1.4176,LLM
+claude-3-7-sonnet-20250219,Puerto Rico,630,en-native,imitation,0.9644,-0.497,LLM
+claude-3-7-sonnet-20250219,Puerto Rico,630,es,imitation,0.8992,0.576,LLM
+claude-3-7-sonnet-20250219,Qatar,634,ar,imitation,-1.6569,-3.4089,LLM
+claude-3-7-sonnet-20250219,Qatar,634,en,imitation,-2.8192,-2.3032,LLM
+claude-3-7-sonnet-20250219,Russian Federation,643,en,imitation,-1.5175,2.3455,LLM
+claude-3-7-sonnet-20250219,Russian Federation,643,ru,imitation,-0.6858,0.5646,LLM
+claude-3-7-sonnet-20250219,Rwanda,646,en-native,imitation,-1.6019,-1.8024,LLM
+claude-3-7-sonnet-20250219,Rwanda,646,fr,imitation,-1.6019,-1.8024,LLM
+claude-3-7-sonnet-20250219,Singapore,702,en-native,imitation,-0.0912,-0.5391,LLM
+claude-3-7-sonnet-20250219,Singapore,702,zh-cn,imitation,0.0764,0.7771,LLM
+claude-3-7-sonnet-20250219,South Africa,710,en-native,imitation,2.2577,0.5128,LLM
+claude-3-7-sonnet-20250219,Spain,724,en,imitation,3.7724,2.4586,LLM
+claude-3-7-sonnet-20250219,Spain,724,es,imitation,2.9159,2.2657,LLM
+claude-3-7-sonnet-20250219,Switzerland,756,de,imitation,4.2878,2.3082,LLM
+claude-3-7-sonnet-20250219,Switzerland,756,en,imitation,5.2838,2.6785,LLM
+claude-3-7-sonnet-20250219,Switzerland,756,fr,imitation,4.6094,1.3084,LLM
+claude-3-7-sonnet-20250219,Switzerland,756,it,imitation,5.5716,1.2846,LLM
+claude-3-7-sonnet-20250219,"Taiwan, Province of China",158,en,imitation,0.0531,1.1516,LLM
+claude-3-7-sonnet-20250219,"Taiwan, Province of China",158,zh-tw,imitation,2.8918,3.0127,LLM
+claude-3-7-sonnet-20250219,Trinidad and Tobago,780,en-native,imitation,0.2759,-0.8671,LLM
+claude-3-7-sonnet-20250219,Tunisia,788,ar,imitation,-0.4289,-1.6599,LLM
+claude-3-7-sonnet-20250219,Tunisia,788,en,imitation,-1.8182,-0.4195,LLM
+claude-3-7-sonnet-20250219,United Kingdom,826,en-native,imitation,5.2663,2.7071,LLM
+claude-3-7-sonnet-20250219,United States of America,840,en-native,imitation,3.4573,2.0576,LLM
+claude-3-7-sonnet-20250219,Uruguay,858,en,imitation,1.6798,2.2449,LLM
+claude-3-7-sonnet-20250219,Uruguay,858,es,imitation,2.9399,1.5187,LLM
+claude-3-7-sonnet-20250219,Venezuela,862,en,imitation,-0.2165,1.4225,LLM
+claude-3-7-sonnet-20250219,Venezuela,862,es,imitation,-0.769,0.2584,LLM
+claude-3-7-sonnet-20250219,Yemen,887,ar,imitation,-3.1599,-0.9472,LLM
+claude-3-7-sonnet-20250219,Yemen,887,en,imitation,-4.0165,-1.1402,LLM
+claude-3-7-sonnet-20250219,Zambia,894,en-native,imitation,-1.3911,-1.6361,LLM
+claude-3-7-sonnet-20250219,Zimbabwe,716,en-native,imitation,-1.8182,-0.4195,LLM
+claude-sonnet-4.5,Algeria,12,ar,imitation,-1.9801,-2.0816,LLM
+claude-sonnet-4.5,Algeria,12,en,imitation,-1.7412,-1.9797,LLM
+claude-sonnet-4.5,Argentina,32,en,imitation,3.0791,1.7785,LLM
+claude-sonnet-4.5,Argentina,32,es,imitation,1.2428,1.638,LLM
+claude-sonnet-4.5,Australia,36,en-native,imitation,5.5226,2.7803,LLM
+claude-sonnet-4.5,Austria,40,de,imitation,3.4159,2.7508,LLM
+claude-sonnet-4.5,Austria,40,en,imitation,3.8943,2.6646,LLM
+claude-sonnet-4.5,Belarus,112,en,imitation,-0.6354,0.7815,LLM
+claude-sonnet-4.5,Belarus,112,ru,imitation,-1.492,0.5886,LLM
+claude-sonnet-4.5,Belgium,56,de,imitation,3.4159,2.7508,LLM
+claude-sonnet-4.5,Belgium,56,en,imitation,3.9118,2.6359,LLM
+claude-sonnet-4.5,Belgium,56,fr,imitation,4.6805,2.4429,LLM
+claude-sonnet-4.5,Bolivia,68,en,imitation,-0.122,-0.1664,LLM
+claude-sonnet-4.5,Bolivia,68,es,imitation,0.0349,-0.0178,LLM
+claude-sonnet-4.5,Brazil,76,en,imitation,1.8899,1.2132,LLM
+claude-sonnet-4.5,Brazil,76,pt,imitation,1.6791,1.0469,LLM
+claude-sonnet-4.5,Burkina Faso,854,en,imitation,-1.7412,-1.9797,LLM
+claude-sonnet-4.5,Burkina Faso,854,fr,imitation,-1.5993,-2.1281,LLM
+claude-sonnet-4.5,Canada,124,en-native,imitation,5.5226,2.7803,LLM
+claude-sonnet-4.5,Canada,124,fr,imitation,5.5252,2.4547,LLM
+claude-sonnet-4.5,Chile,152,en,imitation,2.8683,1.6121,LLM
+claude-sonnet-4.5,Chile,152,es,imitation,2.1336,1.6251,LLM
+claude-sonnet-4.5,China,156,en,imitation,-0.1501,0.1827,LLM
+claude-sonnet-4.5,China,156,zh-cn,imitation,0.5132,0.1806,LLM
+claude-sonnet-4.5,Colombia,170,en,imitation,0.9937,-1.0128,LLM
+claude-sonnet-4.5,Colombia,170,es,imitation,0.6016,0.1464,LLM
+claude-sonnet-4.5,Ecuador,218,en,imitation,-0.8909,0.0524,LLM
+claude-sonnet-4.5,Ecuador,218,es,imitation,-1.0666,-0.1712,LLM
+claude-sonnet-4.5,Egypt,818,ar,imitation,-1.9801,-2.0816,LLM
+claude-sonnet-4.5,Egypt,818,en,imitation,-1.7412,-1.9797,LLM
+claude-sonnet-4.5,France,250,en,imitation,4.0161,2.8705,LLM
+claude-sonnet-4.5,France,250,fr,imitation,4.8065,1.7828,LLM
+claude-sonnet-4.5,Germany,276,de,imitation,4.7879,2.7933,LLM
+claude-sonnet-4.5,Germany,276,en,imitation,5.2838,2.6785,LLM
+claude-sonnet-4.5,Ghana,288,en-native,imitation,-1.5304,-1.8134,LLM
+claude-sonnet-4.5,Guatemala,320,en,imitation,-1.358,-0.1871,LLM
+claude-sonnet-4.5,Guatemala,320,es,imitation,-1.3125,-0.2803,LLM
+claude-sonnet-4.5,Haiti,332,en,imitation,-1.7187,-0.4949,LLM
+claude-sonnet-4.5,Haiti,332,fr,imitation,-1.8051,-0.781,LLM
+claude-sonnet-4.5,Hong Kong,344,en-native,imitation,0.5117,2.4124,LLM
+claude-sonnet-4.5,Hong Kong,344,zh-cn,imitation,2.7988,2.3697,LLM
+claude-sonnet-4.5,Hong Kong,344,zh-hk,imitation,0.9613,2.6806,LLM
+claude-sonnet-4.5,Iraq,368,ar,imitation,-2.6181,-1.0314,LLM
+claude-sonnet-4.5,Iraq,368,en,imitation,-2.1684,-0.7632,LLM
+claude-sonnet-4.5,Ireland,372,en-native,imitation,3.7724,2.4586,LLM
+claude-sonnet-4.5,Italy,380,en,imitation,3.2009,1.9844,LLM
+claude-sonnet-4.5,Italy,380,it,imitation,2.3443,1.7915,LLM
+claude-sonnet-4.5,Japan,392,en,imitation,0.2793,1.5922,LLM
+claude-sonnet-4.5,Japan,392,ja,imitation,0.1035,1.3685,LLM
+claude-sonnet-4.5,Jordan,400,ar,imitation,-1.9801,-2.0816,LLM
+claude-sonnet-4.5,Jordan,400,en,imitation,-1.7412,-1.9797,LLM
+claude-sonnet-4.5,Kazakhstan,398,en,imitation,-1.0899,0.2033,LLM
+claude-sonnet-4.5,Kazakhstan,398,ru,imitation,-0.5913,-1.0242,LLM
+claude-sonnet-4.5,Kenya,404,en-native,imitation,-1.1697,-1.5056,LLM
+claude-sonnet-4.5,"Korea, Republic of",410,en,imitation,-0.0533,1.2199,LLM
+claude-sonnet-4.5,"Korea, Republic of",410,ko,imitation,-0.0598,1.9382,LLM
+claude-sonnet-4.5,Kuwait,414,ar,imitation,-2.1909,-2.248,LLM
+claude-sonnet-4.5,Kuwait,414,en,imitation,-1.7412,-1.9797,LLM
+claude-sonnet-4.5,Kyrgyzstan,417,en,imitation,-1.6789,-0.2422,LLM
+claude-sonnet-4.5,Kyrgyzstan,417,ru,imitation,-1.2692,-1.4301,LLM
+claude-sonnet-4.5,Lebanon,422,ar,imitation,-2.0356,0.1325,LLM
+claude-sonnet-4.5,Lebanon,422,en,imitation,-1.3686,-0.1513,LLM
+claude-sonnet-4.5,Libya,434,ar,imitation,-2.1909,-2.248,LLM
+claude-sonnet-4.5,Libya,434,en,imitation,-3.025,-0.9561,LLM
+claude-sonnet-4.5,Luxembourg,442,de,imitation,5.5051,2.809,LLM
+claude-sonnet-4.5,Luxembourg,442,en,imitation,5.5226,2.7803,LLM
+claude-sonnet-4.5,Luxembourg,442,fr,imitation,4.7905,2.4677,LLM
+claude-sonnet-4.5,Macao,446,en,imitation,0.0812,1.0871,LLM
+claude-sonnet-4.5,Macao,446,pt,imitation,0.0812,1.0871,LLM
+claude-sonnet-4.5,Macao,446,zh-cn,imitation,0.5309,1.3554,LLM
+claude-sonnet-4.5,Malaysia,458,en-native,imitation,-0.5982,-1.0314,LLM
+claude-sonnet-4.5,Mali,466,en,imitation,-1.7412,-1.9797,LLM
+claude-sonnet-4.5,Mali,466,fr,imitation,-0.5615,-3.1141,LLM
+claude-sonnet-4.5,Malta,470,en-native,imitation,0.014,-0.9604,LLM
+claude-sonnet-4.5,Mexico,484,en,imitation,0.9937,-1.0128,LLM
+claude-sonnet-4.5,Mexico,484,es,imitation,0.8124,0.3127,LLM
+claude-sonnet-4.5,Morocco,504,ar,imitation,-1.9801,-2.0816,LLM
+claude-sonnet-4.5,Morocco,504,en,imitation,-1.7412,-1.9797,LLM
+claude-sonnet-4.5,New Zealand,554,en-native,imitation,5.5226,2.7803,LLM
+claude-sonnet-4.5,Nicaragua,558,en,imitation,-0.692,-1.3018,LLM
+claude-sonnet-4.5,Nicaragua,558,es,imitation,-1.3125,-0.2803,LLM
+claude-sonnet-4.5,Nigeria,566,en-native,imitation,-1.5304,-1.8134,LLM
+claude-sonnet-4.5,Pakistan,586,en-native,imitation,-1.7412,-1.9797,LLM
+claude-sonnet-4.5,Palestine,275,ar,imitation,-2.1692,-0.31,LLM
+claude-sonnet-4.5,Palestine,275,en,imitation,-0.9617,-0.9503,LLM
+claude-sonnet-4.5,Peru,604,en,imitation,-0.734,0.2011,LLM
+claude-sonnet-4.5,Peru,604,es,imitation,0.0349,-0.0178,LLM
+claude-sonnet-4.5,Philippines,608,en-native,imitation,-0.692,-1.3018,LLM
+claude-sonnet-4.5,Portugal,620,en,imitation,3.6506,2.2527,LLM
+claude-sonnet-4.5,Portugal,620,pt,imitation,2.9159,2.2657,LLM
+claude-sonnet-4.5,Puerto Rico,630,en-native,imitation,1.757,0.3176,LLM
+claude-sonnet-4.5,Puerto Rico,630,es,imitation,0.8124,0.3127,LLM
+claude-sonnet-4.5,Qatar,634,ar,imitation,-2.1909,-2.248,LLM
+claude-sonnet-4.5,Qatar,634,en,imitation,-0.8003,-3.216,LLM
+claude-sonnet-4.5,Russian Federation,643,en,imitation,-0.7747,0.6042,LLM
+claude-sonnet-4.5,Russian Federation,643,ru,imitation,-1.0473,-0.6567,LLM
+claude-sonnet-4.5,Rwanda,646,en-native,imitation,-1.5669,-1.8598,LLM
+claude-sonnet-4.5,Rwanda,646,fr,imitation,-1.4599,-1.9508,LLM
+claude-sonnet-4.5,Singapore,702,en-native,imitation,0.2695,-0.2313,LLM
+claude-sonnet-4.5,Singapore,702,zh-cn,imitation,1.1688,0.3051,LLM
+claude-sonnet-4.5,South Africa,710,en-native,imitation,1.9139,0.4662,LLM
+claude-sonnet-4.5,Spain,724,en,imitation,3.8943,2.6646,LLM
+claude-sonnet-4.5,Spain,724,es,imitation,3.0377,2.4716,LLM
+claude-sonnet-4.5,Switzerland,756,de,imitation,4.6485,2.616,LLM
+claude-sonnet-4.5,Switzerland,756,en,imitation,6.7024,1.646,LLM
+claude-sonnet-4.5,Switzerland,756,fr,imitation,4.5586,2.237,LLM
+claude-sonnet-4.5,Switzerland,756,it,imitation,5.5226,2.7803,LLM
+claude-sonnet-4.5,"Taiwan, Province of China",158,en,imitation,2.588,2.2034,LLM
+claude-sonnet-4.5,"Taiwan, Province of China",158,zh-tw,imitation,2.4662,1.9974,LLM
+claude-sonnet-4.5,Trinidad and Tobago,780,en-native,imitation,0.516,-1.2166,LLM
+claude-sonnet-4.5,Tunisia,788,ar,imitation,-1.8473,-1.186,LLM
+claude-sonnet-4.5,Tunisia,788,en,imitation,-1.8358,-0.3909,LLM
+claude-sonnet-4.5,United Kingdom,826,en-native,imitation,3.8943,2.6646,LLM
+claude-sonnet-4.5,United States of America,840,en-native,imitation,3.5463,2.018,LLM
+claude-sonnet-4.5,Uruguay,858,en,imitation,3.8943,2.6646,LLM
+claude-sonnet-4.5,Uruguay,858,es,imitation,3.0377,2.4716,LLM
+claude-sonnet-4.5,Venezuela,862,en,imitation,0.9342,0.5187,LLM
+claude-sonnet-4.5,Venezuela,862,es,imitation,-0.1815,1.3652,LLM
+claude-sonnet-4.5,Yemen,887,ar,imitation,-4.2273,-1.3065,LLM
+claude-sonnet-4.5,Yemen,887,en,imitation,-4.0165,-1.1402,LLM
+claude-sonnet-4.5,Zambia,894,en-native,imitation,-1.4086,-1.6074,LLM
+claude-sonnet-4.5,Zimbabwe,716,en-native,imitation,-1.3561,-1.6934,LLM
+deepseek-chat,Algeria,12,ar,imitation,-2.1909,-2.248,LLM
+deepseek-chat,Algeria,12,en,imitation,-1.8583,-1.8757,LLM
+deepseek-chat,Argentina,32,en,imitation,0.4795,0.3075,LLM
+deepseek-chat,Argentina,32,es,imitation,1.0038,1.2491,LLM
+deepseek-chat,Australia,36,en-native,imitation,5.9724,1.2357,LLM
+deepseek-chat,Austria,40,de,imitation,0.7872,1.4286,LLM
+deepseek-chat,Austria,40,en,imitation,0.7632,2.1756,LLM
+deepseek-chat,Belarus,112,en,imitation,-1.0899,0.2033,LLM
+deepseek-chat,Belarus,112,ru,imitation,-2.0883,0.012,LLM
+deepseek-chat,Belgium,56,de,imitation,2.4314,2.4932,LLM
+deepseek-chat,Belgium,56,en,imitation,3.0312,3.19,LLM
+deepseek-chat,Belgium,56,fr,imitation,2.4554,1.7462,LLM
+deepseek-chat,Bolivia,68,en,imitation,-1.0023,-1.3928,LLM
+deepseek-chat,Bolivia,68,es,imitation,-0.7459,-1.3195,LLM
+deepseek-chat,Brazil,76,en,imitation,1.5305,-1.0399,LLM
+deepseek-chat,Brazil,76,pt,imitation,1.125,2.1146,LLM
+deepseek-chat,Burkina Faso,854,en,imitation,-1.3911,-1.6361,LLM
+deepseek-chat,Burkina Faso,854,fr,imitation,-1.6019,-1.8024,LLM
+deepseek-chat,Canada,124,en-native,imitation,5.8593,3.8352,LLM
+deepseek-chat,Canada,124,fr,imitation,4.9522,2.2219,LLM
+deepseek-chat,Chile,152,en,imitation,0.0819,-0.7722,LLM
+deepseek-chat,Chile,152,es,imitation,0.2912,1.626,LLM
+deepseek-chat,China,156,en,imitation,0.018,0.0055,LLM
+deepseek-chat,China,156,zh-cn,imitation,-0.3434,-0.0123,LLM
+deepseek-chat,Colombia,170,en,imitation,-0.2143,-1.0981,LLM
+deepseek-chat,Colombia,170,es,imitation,-0.2913,0.4621,LLM
+deepseek-chat,Ecuador,218,en,imitation,-0.5527,-1.1245,LLM
+deepseek-chat,Ecuador,218,es,imitation,-0.7515,0.2297,LLM
+deepseek-chat,Egypt,818,ar,imitation,-1.9801,-2.0816,LLM
+deepseek-chat,Egypt,818,en,imitation,-1.6475,-1.7093,LLM
+deepseek-chat,France,250,en,imitation,3.1189,3.6017,LLM
+deepseek-chat,France,250,fr,imitation,2.1734,3.4484,LLM
+deepseek-chat,Germany,276,de,imitation,0.7632,2.1756,LLM
+deepseek-chat,Germany,276,en,imitation,4.0096,3.5889,LLM
+deepseek-chat,Ghana,288,en-native,imitation,-1.2741,-1.7402,LLM
+deepseek-chat,Guatemala,320,en,imitation,-1.1242,-1.5987,LLM
+deepseek-chat,Guatemala,320,es,imitation,-0.9973,0.1207,LLM
+deepseek-chat,Haiti,332,en,imitation,-1.2741,-1.7402,LLM
+deepseek-chat,Haiti,332,fr,imitation,-3.3026,0.2781,LLM
+deepseek-chat,Hong Kong,344,en-native,imitation,0.0812,1.0871,LLM
+deepseek-chat,Hong Kong,344,zh-cn,imitation,0.5243,2.0737,LLM
+deepseek-chat,Hong Kong,344,zh-hk,imitation,0.1212,2.5433,LLM
+deepseek-chat,Iraq,368,ar,imitation,-3.3707,-1.1136,LLM
+deepseek-chat,Iraq,368,en,imitation,-1.9801,-2.0816,LLM
+deepseek-chat,Ireland,372,en-native,imitation,4.1931,1.9604,LLM
+deepseek-chat,Italy,380,en,imitation,0.438,1.0832,LLM
+deepseek-chat,Italy,380,it,imitation,0.4371,1.0849,LLM
+deepseek-chat,Japan,392,en,imitation,0.5132,0.1806,LLM
+deepseek-chat,Japan,392,ja,imitation,0.7472,-0.0276,LLM
+deepseek-chat,Jordan,400,ar,imitation,-1.952,-2.1461,LLM
+deepseek-chat,Jordan,400,en,imitation,-1.9801,-2.0816,LLM
+deepseek-chat,Kazakhstan,398,en,imitation,-0.9954,-1.3856,LLM
+deepseek-chat,Kazakhstan,398,ru,imitation,-1.0304,-1.3283,LLM
+deepseek-chat,Kenya,404,en-native,imitation,-1.3911,-1.6361,LLM
+deepseek-chat,"Korea, Republic of",410,en,imitation,-0.1802,-0.4995,LLM
+deepseek-chat,"Korea, Republic of",410,ko,imitation,-0.2915,-0.7413,LLM
+deepseek-chat,Kuwait,414,ar,imitation,-2.1909,-2.248,LLM
+deepseek-chat,Kuwait,414,en,imitation,-0.8003,-3.216,LLM
+deepseek-chat,Kyrgyzstan,417,en,imitation,-1.2692,-1.4301,LLM
+deepseek-chat,Kyrgyzstan,417,ru,imitation,-0.8196,-1.1619,LLM
+deepseek-chat,Lebanon,422,ar,imitation,-2.4713,-0.5772,LLM
+deepseek-chat,Lebanon,422,en,imitation,-1.0479,-1.2996,LLM
+deepseek-chat,Libya,434,ar,imitation,-4.2273,-1.3065,LLM
+deepseek-chat,Libya,434,en,imitation,-1.9801,-2.0816,LLM
+deepseek-chat,Luxembourg,442,de,imitation,5.3125,-0.7681,LLM
+deepseek-chat,Luxembourg,442,en,imitation,3.7995,0.0404,LLM
+deepseek-chat,Luxembourg,442,fr,imitation,3.7768,0.3685,LLM
+deepseek-chat,Macao,446,en,imitation,0.5084,-0.1294,LLM
+deepseek-chat,Macao,446,pt,imitation,1.4601,1.086,LLM
+deepseek-chat,Macao,446,zh-cn,imitation,0.6429,-0.2622,LLM
+deepseek-chat,Malaysia,458,en-native,imitation,-1.1697,-1.5056,LLM
+deepseek-chat,Mali,466,en,imitation,-1.6019,-1.8024,LLM
+deepseek-chat,Mali,466,fr,imitation,-3.3532,-1.1423,LLM
+deepseek-chat,Malta,470,en-native,imitation,0.866,-2.157,LLM
+deepseek-chat,Mexico,484,en,imitation,0.1078,-0.69,LLM
+deepseek-chat,Mexico,484,es,imitation,0.4098,-0.7099,LLM
+deepseek-chat,Morocco,504,ar,imitation,-1.5304,-1.8134,LLM
+deepseek-chat,Morocco,504,en,imitation,-1.6194,-1.7738,LLM
+deepseek-chat,New Zealand,554,en-native,imitation,4.9988,1.1468,LLM
+deepseek-chat,Nicaragua,558,en,imitation,-1.1242,-1.5987,LLM
+deepseek-chat,Nicaragua,558,es,imitation,-1.0304,-1.3283,LLM
+deepseek-chat,Nigeria,566,en-native,imitation,-1.5129,-1.842,LLM
+deepseek-chat,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+deepseek-chat,Palestine,275,ar,imitation,-2.5621,0.5734,LLM
+deepseek-chat,Palestine,275,en,imitation,-2.3033,-0.7543,LLM
+deepseek-chat,Peru,604,en,imitation,-0.5527,-1.1245,LLM
+deepseek-chat,Peru,604,es,imitation,-0.2963,-1.0513,LLM
+deepseek-chat,Philippines,608,en-native,imitation,0.2945,-2.6312,LLM
+deepseek-chat,Portugal,620,en,imitation,0.6944,1.1564,LLM
+deepseek-chat,Portugal,620,pt,imitation,1.734,1.1306,LLM
+deepseek-chat,Puerto Rico,630,en-native,imitation,1.3631,-1.1527,LLM
+deepseek-chat,Puerto Rico,630,es,imitation,1.5652,-0.5387,LLM
+deepseek-chat,Qatar,634,ar,imitation,-1.8677,-3.5753,LLM
+deepseek-chat,Qatar,634,en,imitation,-1.0111,-3.3823,LLM
+deepseek-chat,Russian Federation,643,en,imitation,-0.3126,-0.6697,LLM
+deepseek-chat,Russian Federation,643,ru,imitation,-0.5409,-0.8073,LLM
+deepseek-chat,Rwanda,646,en-native,imitation,-1.9626,-2.1103,LLM
+deepseek-chat,Rwanda,646,fr,imitation,-1.7518,-1.9439,LLM
+deepseek-chat,Singapore,702,en-native,imitation,0.1477,-0.4373,LLM
+deepseek-chat,Singapore,702,zh-cn,imitation,0.9755,0.1101,LLM
+deepseek-chat,South Africa,710,en-native,imitation,-0.2843,0.4693,LLM
+deepseek-chat,Spain,724,en,imitation,1.0685,0.7531,LLM
+deepseek-chat,Spain,724,es,imitation,1.9122,3.0651,LLM
+deepseek-chat,Switzerland,756,de,imitation,1.0309,1.8405,LLM
+deepseek-chat,Switzerland,756,en,imitation,5.7002,0.2136,LLM
+deepseek-chat,Switzerland,756,fr,imitation,4.5457,0.1496,LLM
+deepseek-chat,Switzerland,756,it,imitation,2.0338,1.4135,LLM
+deepseek-chat,"Taiwan, Province of China",158,en,imitation,0.7472,-0.0276,LLM
+deepseek-chat,"Taiwan, Province of China",158,zh-tw,imitation,1.7669,1.3761,LLM
+deepseek-chat,Trinidad and Tobago,780,en-native,imitation,0.8379,-2.0925,LLM
+deepseek-chat,Tunisia,788,ar,imitation,-1.2916,-1.7115,LLM
+deepseek-chat,Tunisia,788,en,imitation,-1.4086,-1.6074,LLM
+deepseek-chat,United Kingdom,826,en-native,imitation,1.0959,2.5479,LLM
+deepseek-chat,United States of America,840,en-native,imitation,3.3365,1.7674,LLM
+deepseek-chat,Uruguay,858,en,imitation,3.0646,0.1359,LLM
+deepseek-chat,Uruguay,858,es,imitation,1.1729,0.9877,LLM
+deepseek-chat,Venezuela,862,en,imitation,-2.1596,1.2264,LLM
+deepseek-chat,Venezuela,862,es,imitation,-2.6198,0.994,LLM
+deepseek-chat,Yemen,887,ar,imitation,-4.2273,-1.3065,LLM
+deepseek-chat,Yemen,887,en,imitation,-3.0475,-2.4409,LLM
+deepseek-chat,Zambia,894,en-native,imitation,-1.3911,-1.6361,LLM
+deepseek-chat,Zimbabwe,716,en-native,imitation,-1.6019,-1.8024,LLM
+deepseek-chat-v3.1,Algeria,12,ar,imitation,-2.1909,-2.248,LLM
+deepseek-chat-v3.1,Algeria,12,en,imitation,-1.9801,-2.0816,LLM
+deepseek-chat-v3.1,Argentina,32,en,imitation,0.9532,-0.1712,LLM
+deepseek-chat-v3.1,Argentina,32,es,imitation,1.1665,2.9094,LLM
+deepseek-chat-v3.1,Australia,36,en-native,imitation,5.1159,1.0428,LLM
+deepseek-chat-v3.1,Austria,40,de,imitation,1.7194,2.2106,LLM
+deepseek-chat-v3.1,Austria,40,en,imitation,2.5292,3.4462,LLM
+deepseek-chat-v3.1,Belarus,112,en,imitation,-0.6977,-0.956,LLM
+deepseek-chat-v3.1,Belarus,112,ru,imitation,-1.3512,-1.3834,LLM
+deepseek-chat-v3.1,Belgium,56,de,imitation,2.6991,2.1581,LLM
+deepseek-chat-v3.1,Belgium,56,en,imitation,4.3655,3.5866,LLM
+deepseek-chat-v3.1,Belgium,56,fr,imitation,2.6336,3.6808,LLM
+deepseek-chat-v3.1,Bolivia,68,en,imitation,-0.1968,-1.1267,LLM
+deepseek-chat-v3.1,Bolivia,68,es,imitation,-0.1337,-1.2485,LLM
+deepseek-chat-v3.1,Brazil,76,en,imitation,2.254,-0.7272,LLM
+deepseek-chat-v3.1,Brazil,76,pt,imitation,1.4984,2.0837,LLM
+deepseek-chat-v3.1,Burkina Faso,854,en,imitation,-1.6019,-1.8024,LLM
+deepseek-chat-v3.1,Burkina Faso,854,fr,imitation,-3.3532,-1.1423,LLM
+deepseek-chat-v3.1,Canada,124,en-native,imitation,6.1646,2.4126,LLM
+deepseek-chat-v3.1,Canada,124,fr,imitation,3.289,2.6019,LLM
+deepseek-chat-v3.1,Chile,152,en,imitation,1.1774,-0.4773,LLM
+deepseek-chat-v3.1,Chile,152,es,imitation,0.3714,0.75,LLM
+deepseek-chat-v3.1,China,156,en,imitation,0.724,0.3469,LLM
+deepseek-chat-v3.1,China,156,zh-cn,imitation,-0.3995,0.1166,LLM
+deepseek-chat-v3.1,Colombia,170,en,imitation,1.2219,-2.1592,LLM
+deepseek-chat-v3.1,Colombia,170,es,imitation,0.199,-0.8762,LLM
+deepseek-chat-v3.1,Ecuador,218,en,imitation,-0.1968,-1.1267,LLM
+deepseek-chat-v3.1,Ecuador,218,es,imitation,-0.5889,0.0325,LLM
+deepseek-chat-v3.1,Egypt,818,ar,imitation,-2.1909,-2.248,LLM
+deepseek-chat-v3.1,Egypt,818,en,imitation,-1.9801,-2.0816,LLM
+deepseek-chat-v3.1,France,250,en,imitation,2.8619,3.8185,LLM
+deepseek-chat-v3.1,France,250,fr,imitation,3.289,2.6019,LLM
+deepseek-chat-v3.1,Germany,276,de,imitation,1.6714,3.7046,LLM
+deepseek-chat-v3.1,Germany,276,en,imitation,3.5077,3.8451,LLM
+deepseek-chat-v3.1,Ghana,288,en-native,imitation,-0.3331,-2.9764,LLM
+deepseek-chat-v3.1,Guatemala,320,en,imitation,-0.8853,-1.4968,LLM
+deepseek-chat-v3.1,Guatemala,320,es,imitation,0.0807,-1.1252,LLM
+deepseek-chat-v3.1,Haiti,332,en,imitation,-1.2741,-1.7402,LLM
+deepseek-chat-v3.1,Haiti,332,fr,imitation,-4.5329,-0.0079,LLM
+deepseek-chat-v3.1,Hong Kong,344,en-native,imitation,0.7745,1.7673,LLM
+deepseek-chat-v3.1,Hong Kong,344,zh-cn,imitation,1.7388,1.4406,LLM
+deepseek-chat-v3.1,Hong Kong,344,zh-hk,imitation,0.7697,1.4572,LLM
+deepseek-chat-v3.1,Iraq,368,ar,imitation,-3.3707,-1.1136,LLM
+deepseek-chat-v3.1,Iraq,368,en,imitation,-1.9801,-2.0816,LLM
+deepseek-chat-v3.1,Ireland,372,en-native,imitation,6.2441,0.6734,LLM
+deepseek-chat-v3.1,Italy,380,en,imitation,0.7249,-0.3089,LLM
+deepseek-chat-v3.1,Italy,380,it,imitation,1.6496,1.2757,LLM
+deepseek-chat-v3.1,Japan,392,en,imitation,0.9909,0.3843,LLM
+deepseek-chat-v3.1,Japan,392,ja,imitation,0.0306,-0.3332,LLM
+deepseek-chat-v3.1,Jordan,400,ar,imitation,-2.1909,-2.248,LLM
+deepseek-chat-v3.1,Jordan,400,en,imitation,-1.9801,-2.0816,LLM
+deepseek-chat-v3.1,Kazakhstan,398,en,imitation,-0.6627,-1.0133,LLM
+deepseek-chat-v3.1,Kazakhstan,398,ru,imitation,-1.3512,-1.3834,LLM
+deepseek-chat-v3.1,Kenya,404,en-native,imitation,-1.5129,-1.842,LLM
+deepseek-chat-v3.1,"Korea, Republic of",410,en,imitation,-0.419,-0.6014,LLM
+deepseek-chat-v3.1,"Korea, Republic of",410,ko,imitation,0.0887,-1.2034,LLM
+deepseek-chat-v3.1,Kuwait,414,ar,imitation,-1.0111,-3.3823,LLM
+deepseek-chat-v3.1,Kuwait,414,en,imitation,-0.8003,-3.216,LLM
+deepseek-chat-v3.1,Kyrgyzstan,417,en,imitation,-1.2692,-1.4301,LLM
+deepseek-chat-v3.1,Kyrgyzstan,417,ru,imitation,-1.2342,-1.4875,LLM
+deepseek-chat-v3.1,Lebanon,422,ar,imitation,-3.3707,-1.1136,LLM
+deepseek-chat-v3.1,Lebanon,422,en,imitation,-1.5304,-1.8134,LLM
+deepseek-chat-v3.1,Libya,434,ar,imitation,-3.3707,-1.1136,LLM
+deepseek-chat-v3.1,Libya,434,en,imitation,-2.1909,-2.248,LLM
+deepseek-chat-v3.1,Luxembourg,442,de,imitation,1.7194,2.2106,LLM
+deepseek-chat-v3.1,Luxembourg,442,en,imitation,6.0606,2.3019,LLM
+deepseek-chat-v3.1,Luxembourg,442,fr,imitation,3.2152,0.9019,LLM
+deepseek-chat-v3.1,Macao,446,en,imitation,0.6254,-0.2335,LLM
+deepseek-chat-v3.1,Macao,446,pt,imitation,1.5057,0.9929,LLM
+deepseek-chat-v3.1,Macao,446,zh-cn,imitation,0.7543,1.183,LLM
+deepseek-chat-v3.1,Malaysia,458,en-native,imitation,-1.1697,-1.5056,LLM
+deepseek-chat-v3.1,Mali,466,en,imitation,-1.9626,-2.1103,LLM
+deepseek-chat-v3.1,Mali,466,fr,imitation,-3.3532,-1.1423,LLM
+deepseek-chat-v3.1,Malta,470,en-native,imitation,1.2219,-2.1592,LLM
+deepseek-chat-v3.1,Mexico,484,en,imitation,0.0421,-1.0249,LLM
+deepseek-chat-v3.1,Mexico,484,es,imitation,0.6767,-0.6725,LLM
+deepseek-chat-v3.1,Morocco,504,ar,imitation,-2.1909,-2.248,LLM
+deepseek-chat-v3.1,Morocco,504,en,imitation,-1.9801,-2.0816,LLM
+deepseek-chat-v3.1,New Zealand,554,en-native,imitation,6.4878,1.0853,LLM
+deepseek-chat-v3.1,Nicaragua,558,en,imitation,-0.8853,-1.4968,LLM
+deepseek-chat-v3.1,Nicaragua,558,es,imitation,-1.363,-1.7006,LLM
+deepseek-chat-v3.1,Nigeria,566,en-native,imitation,-1.9626,-2.1103,LLM
+deepseek-chat-v3.1,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+deepseek-chat-v3.1,Palestine,275,ar,imitation,-3.3532,-1.1423,LLM
+deepseek-chat-v3.1,Palestine,275,en,imitation,-2.1802,-0.9997,LLM
+deepseek-chat-v3.1,Peru,604,en,imitation,-0.1793,-1.1554,LLM
+deepseek-chat-v3.1,Peru,604,es,imitation,0.199,-0.8762,LLM
+deepseek-chat-v3.1,Philippines,608,en-native,imitation,-0.7577,-1.6367,LLM
+deepseek-chat-v3.1,Portugal,620,en,imitation,1.1921,-0.0694,LLM
+deepseek-chat-v3.1,Portugal,620,pt,imitation,2.1637,2.8283,LLM
+deepseek-chat-v3.1,Puerto Rico,630,en-native,imitation,2.6231,-1.879,LLM
+deepseek-chat-v3.1,Puerto Rico,630,es,imitation,1.4995,-0.8736,LLM
+deepseek-chat-v3.1,Qatar,634,ar,imitation,-2.1909,-2.248,LLM
+deepseek-chat-v3.1,Qatar,634,en,imitation,-1.0111,-3.3823,LLM
+deepseek-chat-v3.1,Russian Federation,643,en,imitation,-0.4344,-0.8756,LLM
+deepseek-chat-v3.1,Russian Federation,643,ru,imitation,-0.9121,-1.0794,LLM
+deepseek-chat-v3.1,Rwanda,646,en-native,imitation,-0.7478,-3.302,LLM
+deepseek-chat-v3.1,Rwanda,646,fr,imitation,-2.1734,-2.2766,LLM
+deepseek-chat-v3.1,Singapore,702,en-native,imitation,0.0258,-0.6432,LLM
+deepseek-chat-v3.1,Singapore,702,zh-cn,imitation,1.3034,0.1724,LLM
+deepseek-chat-v3.1,South Africa,710,en-native,imitation,-0.0455,0.5712,LLM
+deepseek-chat-v3.1,Spain,724,en,imitation,1.7395,1.1518,LLM
+deepseek-chat-v3.1,Spain,724,es,imitation,2.4139,2.5219,LLM
+deepseek-chat-v3.1,Switzerland,756,de,imitation,1.7194,2.2106,LLM
+deepseek-chat-v3.1,Switzerland,756,en,imitation,4.7578,3.6817,LLM
+deepseek-chat-v3.1,Switzerland,756,fr,imitation,4.106,0.8891,LLM
+deepseek-chat-v3.1,Switzerland,756,it,imitation,5.0508,2.1482,LLM
+deepseek-chat-v3.1,"Taiwan, Province of China",158,en,imitation,0.958,0.1388,LLM
+deepseek-chat-v3.1,"Taiwan, Province of China",158,zh-tw,imitation,1.2858,0.2011,LLM
+deepseek-chat-v3.1,Trinidad and Tobago,780,en-native,imitation,0.2384,-2.5022,LLM
+deepseek-chat-v3.1,Tunisia,788,ar,imitation,-3.3707,-1.1136,LLM
+deepseek-chat-v3.1,Tunisia,788,en,imitation,-1.4086,-1.6074,LLM
+deepseek-chat-v3.1,United Kingdom,826,en-native,imitation,2.5357,2.7278,LLM
+deepseek-chat-v3.1,United States of America,840,en-native,imitation,3.3597,1.3929,LLM
+deepseek-chat-v3.1,Uruguay,858,en,imitation,1.5937,1.6929,LLM
+deepseek-chat-v3.1,Uruguay,858,es,imitation,1.7395,1.1518,LLM
+deepseek-chat-v3.1,Venezuela,862,en,imitation,-1.7687,1.1669,LLM
+deepseek-chat-v3.1,Venezuela,862,es,imitation,-1.5298,1.2687,LLM
+deepseek-chat-v3.1,Yemen,887,ar,imitation,-3.3707,-1.1136,LLM
+deepseek-chat-v3.1,Yemen,887,en,imitation,-2.1909,-2.248,LLM
+deepseek-chat-v3.1,Zambia,894,en-native,imitation,-1.7237,-2.0084,LLM
+deepseek-chat-v3.1,Zimbabwe,716,en-native,imitation,-1.3911,-1.6361,LLM
+doubao-1-5-pro-32k-250115,Algeria,12,ar,imitation,-2.7148,-2.0686,LLM
+doubao-1-5-pro-32k-250115,Algeria,12,en,imitation,-2.1734,-2.2766,LLM
+doubao-1-5-pro-32k-250115,Argentina,32,en,imitation,1.116,1.4891,LLM
+doubao-1-5-pro-32k-250115,Argentina,32,es,imitation,1.164,-0.0049,LLM
+doubao-1-5-pro-32k-250115,Australia,36,en-native,imitation,3.2066,1.9232,LLM
+doubao-1-5-pro-32k-250115,Austria,40,de,imitation,1.4406,0.6526,LLM
+doubao-1-5-pro-32k-250115,Austria,40,en,imitation,1.8662,1.6678,LLM
+doubao-1-5-pro-32k-250115,Belarus,112,en,imitation,-1.9865,-1.4458,LLM
+doubao-1-5-pro-32k-250115,Belarus,112,ru,imitation,-1.1299,-1.2529,LLM
+doubao-1-5-pro-32k-250115,Belgium,56,de,imitation,3.8147,2.1275,LLM
+doubao-1-5-pro-32k-250115,Belgium,56,en,imitation,3.9699,3.2536,LLM
+doubao-1-5-pro-32k-250115,Belgium,56,fr,imitation,2.5646,2.2908,LLM
+doubao-1-5-pro-32k-250115,Bolivia,68,en,imitation,-1.5563,-1.8956,LLM
+doubao-1-5-pro-32k-250115,Bolivia,68,es,imitation,-1.2237,-1.5233,LLM
+doubao-1-5-pro-32k-250115,Brazil,76,en,imitation,2.3169,-1.2874,LLM
+doubao-1-5-pro-32k-250115,Brazil,76,pt,imitation,1.1786,-0.9287,LLM
+doubao-1-5-pro-32k-250115,Burkina Faso,854,en,imitation,-2.9081,-2.2636,LLM
+doubao-1-5-pro-32k-250115,Burkina Faso,854,fr,imitation,-2.034,-2.0993,LLM
+doubao-1-5-pro-32k-250115,Canada,124,en-native,imitation,5.7865,2.0509,LLM
+doubao-1-5-pro-32k-250115,Canada,124,fr,imitation,5.5998,1.1376,LLM
+doubao-1-5-pro-32k-250115,Chile,152,en,imitation,-0.1464,-0.9098,LLM
+doubao-1-5-pro-32k-250115,Chile,152,es,imitation,0.0819,-0.7722,LLM
+doubao-1-5-pro-32k-250115,China,156,en,imitation,-0.3,0.1974,LLM
+doubao-1-5-pro-32k-250115,China,156,zh-cn,imitation,0.9313,0.5765,LLM
+doubao-1-5-pro-32k-250115,Colombia,170,en,imitation,-0.2507,-1.1445,LLM
+doubao-1-5-pro-32k-250115,Colombia,170,es,imitation,-0.0399,-0.9781,LLM
+doubao-1-5-pro-32k-250115,Ecuador,218,en,imitation,-1.4169,-1.7183,LLM
+doubao-1-5-pro-32k-250115,Ecuador,218,es,imitation,-0.9673,-1.4501,LLM
+doubao-1-5-pro-32k-250115,Egypt,818,ar,imitation,-2.8017,-2.3319,LLM
+doubao-1-5-pro-32k-250115,Egypt,818,en,imitation,-2.1909,-2.248,LLM
+doubao-1-5-pro-32k-250115,France,250,en,imitation,4.373,2.784,LLM
+doubao-1-5-pro-32k-250115,France,250,fr,imitation,3.7551,2.4047,LLM
+doubao-1-5-pro-32k-250115,Germany,276,de,imitation,1.3916,2.1483,LLM
+doubao-1-5-pro-32k-250115,Germany,276,en,imitation,2.7729,3.8581,LLM
+doubao-1-5-pro-32k-250115,Ghana,288,en-native,imitation,-1.9626,-2.1103,LLM
+doubao-1-5-pro-32k-250115,Guatemala,320,en,imitation,-1.7952,-1.9975,LLM
+doubao-1-5-pro-32k-250115,Guatemala,320,es,imitation,-1.8127,-1.9688,LLM
+doubao-1-5-pro-32k-250115,Haiti,332,en,imitation,-2.1559,-2.3053,LLM
+doubao-1-5-pro-32k-250115,Haiti,332,fr,imitation,-3.3532,-1.1423,LLM
+doubao-1-5-pro-32k-250115,Hong Kong,344,en-native,imitation,0.0038,1.0067,LLM
+doubao-1-5-pro-32k-250115,Hong Kong,344,zh-cn,imitation,0.5448,1.3757,LLM
+doubao-1-5-pro-32k-250115,Hong Kong,344,zh-hk,imitation,-0.4348,1.4281,LLM
+doubao-1-5-pro-32k-250115,Iraq,368,ar,imitation,-3.0125,-2.4982,LLM
+doubao-1-5-pro-32k-250115,Iraq,368,en,imitation,-3.03,-2.4696,LLM
+doubao-1-5-pro-32k-250115,Ireland,372,en-native,imitation,4.949,0.8835,LLM
+doubao-1-5-pro-32k-250115,Italy,380,en,imitation,0.0819,-0.7722,LLM
+doubao-1-5-pro-32k-250115,Italy,380,it,imitation,0.9532,-0.1712,LLM
+doubao-1-5-pro-32k-250115,Japan,392,en,imitation,-0.4218,-0.0086,LLM
+doubao-1-5-pro-32k-250115,Japan,392,ja,imitation,0.4348,0.1844,LLM
+doubao-1-5-pro-32k-250115,Jordan,400,ar,imitation,-2.8017,-2.3319,LLM
+doubao-1-5-pro-32k-250115,Jordan,400,en,imitation,-2.1909,-2.248,LLM
+doubao-1-5-pro-32k-250115,Kazakhstan,398,en,imitation,-1.1124,-1.2815,LLM
+doubao-1-5-pro-32k-250115,Kazakhstan,398,ru,imitation,0.2421,-1.2103,LLM
+doubao-1-5-pro-32k-250115,Kenya,404,en-native,imitation,-1.8232,-1.933,LLM
+doubao-1-5-pro-32k-250115,"Korea, Republic of",410,en,imitation,-0.4926,-0.2876,LLM
+doubao-1-5-pro-32k-250115,"Korea, Republic of",410,ko,imitation,-0.6144,-0.4935,LLM
+doubao-1-5-pro-32k-250115,Kuwait,414,ar,imitation,-0.4607,-3.59,LLM
+doubao-1-5-pro-32k-250115,Kuwait,414,en,imitation,-1.8677,-3.5753,LLM
+doubao-1-5-pro-32k-250115,Kyrgyzstan,417,en,imitation,-1.7189,-1.6984,LLM
+doubao-1-5-pro-32k-250115,Kyrgyzstan,417,ru,imitation,-0.3294,-1.6845,LLM
+doubao-1-5-pro-32k-250115,Lebanon,422,ar,imitation,-2.3191,-1.8181,LLM
+doubao-1-5-pro-32k-250115,Lebanon,422,en,imitation,-1.6019,-1.8024,LLM
+doubao-1-5-pro-32k-250115,Libya,434,ar,imitation,-3.0125,-2.4982,LLM
+doubao-1-5-pro-32k-250115,Libya,434,en,imitation,-3.03,-2.4696,LLM
+doubao-1-5-pro-32k-250115,Luxembourg,442,de,imitation,4.2419,0.9109,LLM
+doubao-1-5-pro-32k-250115,Luxembourg,442,en,imitation,5.6365,0.6254,LLM
+doubao-1-5-pro-32k-250115,Luxembourg,442,fr,imitation,4.2419,0.9109,LLM
+doubao-1-5-pro-32k-250115,Macao,446,en,imitation,-0.6151,-0.2036,LLM
+doubao-1-5-pro-32k-250115,Macao,446,pt,imitation,0.6912,0.2576,LLM
+doubao-1-5-pro-32k-250115,Macao,446,zh-cn,imitation,-0.1479,0.036,LLM
+doubao-1-5-pro-32k-250115,Malaysia,458,en-native,imitation,-1.5844,-1.8311,LLM
+doubao-1-5-pro-32k-250115,Mali,466,en,imitation,-3.0475,-2.4409,LLM
+doubao-1-5-pro-32k-250115,Mali,466,fr,imitation,-0.8014,-2.2341,LLM
+doubao-1-5-pro-32k-250115,Malta,470,en-native,imitation,-0.3795,-1.3576,LLM
+doubao-1-5-pro-32k-250115,Mexico,484,en,imitation,-0.3725,-1.3504,LLM
+doubao-1-5-pro-32k-250115,Mexico,484,es,imitation,-0.0399,-0.9781,LLM
+doubao-1-5-pro-32k-250115,Morocco,504,ar,imitation,-2.8017,-2.3319,LLM
+doubao-1-5-pro-32k-250115,Morocco,504,en,imitation,-2.1909,-2.248,LLM
+doubao-1-5-pro-32k-250115,New Zealand,554,en-native,imitation,5.7865,2.0509,LLM
+doubao-1-5-pro-32k-250115,Nicaragua,558,en,imitation,-1.7777,-2.0261,LLM
+doubao-1-5-pro-32k-250115,Nicaragua,558,es,imitation,-0.4232,-1.9549,LLM
+doubao-1-5-pro-32k-250115,Nigeria,566,en-native,imitation,-2.1734,-2.2766,LLM
+doubao-1-5-pro-32k-250115,Pakistan,586,en-native,imitation,-2.1734,-2.2766,LLM
+doubao-1-5-pro-32k-250115,Palestine,275,ar,imitation,-1.6298,-1.2074,LLM
+doubao-1-5-pro-32k-250115,Palestine,275,en,imitation,-0.3745,0.6061,LLM
+doubao-1-5-pro-32k-250115,Peru,604,en,imitation,-1.328,-1.7579,LLM
+doubao-1-5-pro-32k-250115,Peru,604,es,imitation,-1.2062,-1.5519,LLM
+doubao-1-5-pro-32k-250115,Philippines,608,en-native,imitation,-0.9616,-1.7959,LLM
+doubao-1-5-pro-32k-250115,Portugal,620,en,imitation,1.164,-0.0049,LLM
+doubao-1-5-pro-32k-250115,Portugal,620,pt,imitation,2.6311,0.7665,LLM
+doubao-1-5-pro-32k-250115,Puerto Rico,630,en-native,imitation,2.1301,-2.2007,LLM
+doubao-1-5-pro-32k-250115,Puerto Rico,630,es,imitation,0.9398,-1.0306,LLM
+doubao-1-5-pro-32k-250115,Qatar,634,ar,imitation,-0.4607,-3.59,LLM
+doubao-1-5-pro-32k-250115,Qatar,634,en,imitation,-1.8677,-3.5753,LLM
+doubao-1-5-pro-32k-250115,Russian Federation,643,en,imitation,-0.4975,-0.7538,LLM
+doubao-1-5-pro-32k-250115,Russian Federation,643,ru,imitation,-1.1299,-1.2529,LLM
+doubao-1-5-pro-32k-250115,Rwanda,646,en-native,imitation,-2.0165,-2.128,LLM
+doubao-1-5-pro-32k-250115,Rwanda,646,fr,imitation,-0.6621,-2.0568,LLM
+doubao-1-5-pro-32k-250115,Singapore,702,en-native,imitation,-1.2602,-0.5201,LLM
+doubao-1-5-pro-32k-250115,Singapore,702,zh-cn,imitation,-0.9864,-0.4756,LLM
+doubao-1-5-pro-32k-250115,South Africa,710,en-native,imitation,1.811,-0.4297,LLM
+doubao-1-5-pro-32k-250115,Spain,724,en,imitation,2.4804,0.9975,LLM
+doubao-1-5-pro-32k-250115,Spain,724,es,imitation,2.4203,0.6001,LLM
+doubao-1-5-pro-32k-250115,Switzerland,756,de,imitation,3.0408,0.8328,LLM
+doubao-1-5-pro-32k-250115,Switzerland,756,en,imitation,4.4742,1.7311,LLM
+doubao-1-5-pro-32k-250115,Switzerland,756,fr,imitation,3.7922,0.6427,LLM
+doubao-1-5-pro-32k-250115,Switzerland,756,it,imitation,3.8283,-0.3966,LLM
+doubao-1-5-pro-32k-250115,"Taiwan, Province of China",158,en,imitation,2.0179,2.1742,LLM
+doubao-1-5-pro-32k-250115,"Taiwan, Province of China",158,zh-tw,imitation,1.7762,0.7202,LLM
+doubao-1-5-pro-32k-250115,Trinidad and Tobago,780,en-native,imitation,-0.0264,-2.6863,LLM
+doubao-1-5-pro-32k-250115,Tunisia,788,ar,imitation,-2.3191,-1.8181,LLM
+doubao-1-5-pro-32k-250115,Tunisia,788,en,imitation,-1.8407,-1.9043,LLM
+doubao-1-5-pro-32k-250115,United Kingdom,826,en-native,imitation,2.7794,3.1397,LLM
+doubao-1-5-pro-32k-250115,United States of America,840,en-native,imitation,1.9504,-0.2524,LLM
+doubao-1-5-pro-32k-250115,Uruguay,858,en,imitation,3.0848,1.7172,LLM
+doubao-1-5-pro-32k-250115,Uruguay,858,es,imitation,5.3434,1.0644,LLM
+doubao-1-5-pro-32k-250115,Venezuela,862,en,imitation,-1.328,-1.7579,LLM
+doubao-1-5-pro-32k-250115,Venezuela,862,es,imitation,-2.3859,-0.4176,LLM
+doubao-1-5-pro-32k-250115,Yemen,887,ar,imitation,-4.1922,-1.3639,LLM
+doubao-1-5-pro-32k-250115,Yemen,887,en,imitation,-3.0475,-2.4409,LLM
+doubao-1-5-pro-32k-250115,Zambia,894,en-native,imitation,-1.8407,-1.9043,LLM
+doubao-1-5-pro-32k-250115,Zimbabwe,716,en-native,imitation,-1.8232,-1.933,LLM
+gemini-2.5-flash,Algeria,12,ar,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-flash,Algeria,12,en,imitation,-2.1909,-2.248,LLM
+gemini-2.5-flash,Argentina,32,en,imitation,2.5381,1.4095,LLM
+gemini-2.5-flash,Argentina,32,es,imitation,1.5934,1.4046,LLM
+gemini-2.5-flash,Australia,36,en-native,imitation,5.0729,4.0826,LLM
+gemini-2.5-flash,Austria,40,de,imitation,4.6159,0.5901,LLM
+gemini-2.5-flash,Austria,40,en,imitation,1.959,2.0225,LLM
+gemini-2.5-flash,Belarus,112,en,imitation,-0.6095,0.8637,LLM
+gemini-2.5-flash,Belarus,112,ru,imitation,-0.5121,-1.1618,LLM
+gemini-2.5-flash,Belgium,56,de,imitation,3.4199,2.0254,LLM
+gemini-2.5-flash,Belgium,56,en,imitation,3.4861,3.1912,LLM
+gemini-2.5-flash,Belgium,56,fr,imitation,1.3083,1.6858,LLM
+gemini-2.5-flash,Bolivia,68,en,imitation,-0.5239,-1.479,LLM
+gemini-2.5-flash,Bolivia,68,es,imitation,-1.363,-1.7006,LLM
+gemini-2.5-flash,Brazil,76,en,imitation,0.2327,0.2828,LLM
+gemini-2.5-flash,Brazil,76,pt,imitation,1.573,0.5381,LLM
+gemini-2.5-flash,Burkina Faso,854,en,imitation,-1.9626,-2.1103,LLM
+gemini-2.5-flash,Burkina Faso,854,fr,imitation,-1.8583,-1.8757,LLM
+gemini-2.5-flash,Canada,124,en-native,imitation,5.8504,2.8426,LLM
+gemini-2.5-flash,Canada,124,fr,imitation,3.9164,1.7492,LLM
+gemini-2.5-flash,Chile,152,en,imitation,0.4939,0.666,LLM
+gemini-2.5-flash,Chile,152,es,imitation,1.1718,1.0719,LLM
+gemini-2.5-flash,China,156,en,imitation,-0.3127,0.3799,LLM
+gemini-2.5-flash,China,156,zh-cn,imitation,0.018,0.0055,LLM
+gemini-2.5-flash,Colombia,170,en,imitation,-0.8628,-0.012,LLM
+gemini-2.5-flash,Colombia,170,es,imitation,-0.6239,0.0898,LLM
+gemini-2.5-flash,Ecuador,218,en,imitation,-1.7902,-0.484,LLM
+gemini-2.5-flash,Ecuador,218,es,imitation,-0.8853,-1.4968,LLM
+gemini-2.5-flash,Egypt,818,ar,imitation,-2.1909,-2.248,LLM
+gemini-2.5-flash,Egypt,818,en,imitation,-2.1909,-2.248,LLM
+gemini-2.5-flash,France,250,en,imitation,4.6526,4.0521,LLM
+gemini-2.5-flash,France,250,fr,imitation,4.1611,1.1791,LLM
+gemini-2.5-flash,Germany,276,de,imitation,2.3384,1.8503,LLM
+gemini-2.5-flash,Germany,276,en,imitation,3.5698,2.1669,LLM
+gemini-2.5-flash,Ghana,288,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-flash,Guatemala,320,en,imitation,-1.8302,-1.9401,LLM
+gemini-2.5-flash,Guatemala,320,es,imitation,-1.5913,-1.8383,LLM
+gemini-2.5-flash,Haiti,332,en,imitation,-2.1909,-2.248,LLM
+gemini-2.5-flash,Haiti,332,fr,imitation,-2.6181,-1.0314,LLM
+gemini-2.5-flash,Hong Kong,344,en-native,imitation,-0.8387,5.0429,LLM
+gemini-2.5-flash,Hong Kong,344,zh-cn,imitation,0.3293,3.672,LLM
+gemini-2.5-flash,Hong Kong,344,zh-hk,imitation,-0.3765,3.769,LLM
+gemini-2.5-flash,Iraq,368,ar,imitation,-3.3707,-1.1136,LLM
+gemini-2.5-flash,Iraq,368,en,imitation,-3.0475,-2.4409,LLM
+gemini-2.5-flash,Ireland,372,en-native,imitation,2.9098,2.407,LLM
+gemini-2.5-flash,Italy,380,en,imitation,1.3195,1.3601,LLM
+gemini-2.5-flash,Italy,380,it,imitation,1.129,0.0524,LLM
+gemini-2.5-flash,Japan,392,en,imitation,0.4117,1.7623,LLM
+gemini-2.5-flash,Japan,392,ja,imitation,2.0351,1.1182,LLM
+gemini-2.5-flash,Jordan,400,ar,imitation,-2.1909,-2.248,LLM
+gemini-2.5-flash,Jordan,400,en,imitation,-2.1909,-2.248,LLM
+gemini-2.5-flash,Kazakhstan,398,en,imitation,-0.7258,-0.8915,LLM
+gemini-2.5-flash,Kazakhstan,398,ru,imitation,-1.4906,-1.5607,LLM
+gemini-2.5-flash,Kenya,404,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-flash,"Korea, Republic of",410,en,imitation,0.2093,-0.5461,LLM
+gemini-2.5-flash,"Korea, Republic of",410,ko,imitation,1.1086,-0.0097,LLM
+gemini-2.5-flash,Kuwait,414,ar,imitation,-2.1909,-2.248,LLM
+gemini-2.5-flash,Kuwait,414,en,imitation,-1.8677,-3.5753,LLM
+gemini-2.5-flash,Kyrgyzstan,417,en,imitation,-1.0865,-1.1993,LLM
+gemini-2.5-flash,Kyrgyzstan,417,ru,imitation,-1.6475,-1.7093,LLM
+gemini-2.5-flash,Lebanon,422,ar,imitation,-3.5132,1.9693,LLM
+gemini-2.5-flash,Lebanon,422,en,imitation,-4.6522,2.5361,LLM
+gemini-2.5-flash,Libya,434,ar,imitation,-3.3707,-1.1136,LLM
+gemini-2.5-flash,Libya,434,en,imitation,-2.6181,-1.0314,LLM
+gemini-2.5-flash,Luxembourg,442,de,imitation,4.8267,0.7564,LLM
+gemini-2.5-flash,Luxembourg,442,en,imitation,3.3271,1.6708,LLM
+gemini-2.5-flash,Luxembourg,442,fr,imitation,3.2574,0.6533,LLM
+gemini-2.5-flash,Macao,446,en,imitation,0.0462,1.1445,LLM
+gemini-2.5-flash,Macao,446,pt,imitation,0.0741,-0.1234,LLM
+gemini-2.5-flash,Macao,446,zh-cn,imitation,-0.1577,0.9853,LLM
+gemini-2.5-flash,Malaysia,458,en-native,imitation,-1.0017,-1.6827,LLM
+gemini-2.5-flash,Mali,466,en,imitation,-0.8189,-2.2054,LLM
+gemini-2.5-flash,Mali,466,fr,imitation,-0.8189,-2.2054,LLM
+gemini-2.5-flash,Malta,470,en-native,imitation,0.0324,0.0806,LLM
+gemini-2.5-flash,Mexico,484,en,imitation,-0.0462,-1.2752,LLM
+gemini-2.5-flash,Mexico,484,es,imitation,-0.1968,-1.1267,LLM
+gemini-2.5-flash,Morocco,504,ar,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-flash,Morocco,504,en,imitation,-2.1909,-2.248,LLM
+gemini-2.5-flash,New Zealand,554,en-native,imitation,5.4023,1.9131,LLM
+gemini-2.5-flash,Nicaragua,558,en,imitation,-2.2574,-0.7236,LLM
+gemini-2.5-flash,Nicaragua,558,es,imitation,-1.8302,-1.9401,LLM
+gemini-2.5-flash,Nigeria,566,en-native,imitation,-2.6181,-1.0314,LLM
+gemini-2.5-flash,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-flash,Palestine,275,ar,imitation,-2.4966,-0.9493,LLM
+gemini-2.5-flash,Palestine,275,en,imitation,-2.4966,-0.9493,LLM
+gemini-2.5-flash,Peru,604,en,imitation,-1.363,-1.7006,LLM
+gemini-2.5-flash,Peru,604,es,imitation,-0.0287,-1.3039,LLM
+gemini-2.5-flash,Philippines,608,en-native,imitation,-1.2179,-1.8691,LLM
+gemini-2.5-flash,Portugal,620,en,imitation,1.8042,1.571,LLM
+gemini-2.5-flash,Portugal,620,pt,imitation,2.0206,0.1881,LLM
+gemini-2.5-flash,Puerto Rico,630,en-native,imitation,-1.1192,-0.0853,LLM
+gemini-2.5-flash,Puerto Rico,630,es,imitation,0.6598,-0.9338,LLM
+gemini-2.5-flash,Qatar,634,ar,imitation,-1.8677,-3.5753,LLM
+gemini-2.5-flash,Qatar,634,en,imitation,-1.8677,-3.5753,LLM
+gemini-2.5-flash,Russian Federation,643,en,imitation,-0.9647,-0.9934,LLM
+gemini-2.5-flash,Russian Federation,643,ru,imitation,-1.3687,-1.3547,LLM
+gemini-2.5-flash,Rwanda,646,en-native,imitation,-1.9626,-2.1103,LLM
+gemini-2.5-flash,Rwanda,646,fr,imitation,-1.8407,-1.9043,LLM
+gemini-2.5-flash,Singapore,702,en-native,imitation,0.3304,-0.2064,LLM
+gemini-2.5-flash,Singapore,702,zh-cn,imitation,-0.2481,-0.6878,LLM
+gemini-2.5-flash,South Africa,710,en-native,imitation,0.2193,0.7552,LLM
+gemini-2.5-flash,Spain,724,en,imitation,1.9061,3.2065,LLM
+gemini-2.5-flash,Spain,724,es,imitation,2.9338,1.66,LLM
+gemini-2.5-flash,Switzerland,756,de,imitation,6.1283,-0.172,LLM
+gemini-2.5-flash,Switzerland,756,en,imitation,6.7754,-0.5968,LLM
+gemini-2.5-flash,Switzerland,756,fr,imitation,4.2265,0.6367,LLM
+gemini-2.5-flash,Switzerland,756,it,imitation,4.1034,0.8821,LLM
+gemini-2.5-flash,"Taiwan, Province of China",158,en,imitation,1.3727,0.4643,LLM
+gemini-2.5-flash,"Taiwan, Province of China",158,zh-tw,imitation,2.3568,1.8199,LLM
+gemini-2.5-flash,Trinidad and Tobago,780,en-native,imitation,-0.3131,-1.3126,LLM
+gemini-2.5-flash,Tunisia,788,ar,imitation,-0.8043,-1.0439,LLM
+gemini-2.5-flash,Tunisia,788,en,imitation,-1.0206,0.339,LLM
+gemini-2.5-flash,United Kingdom,826,en-native,imitation,2.9146,2.717,LLM
+gemini-2.5-flash,United States of America,840,en-native,imitation,2.5906,1.3235,LLM
+gemini-2.5-flash,Uruguay,858,en,imitation,2.3292,1.3074,LLM
+gemini-2.5-flash,Uruguay,858,es,imitation,3.3926,0.2306,LLM
+gemini-2.5-flash,Venezuela,862,en,imitation,-3.4627,3.3896,LLM
+gemini-2.5-flash,Venezuela,862,es,imitation,-2.97,0.6504,LLM
+gemini-2.5-flash,Yemen,887,ar,imitation,-4.5505,0.0208,LLM
+gemini-2.5-flash,Yemen,887,en,imitation,-3.3707,-1.1136,LLM
+gemini-2.5-flash,Zambia,894,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-flash,Zimbabwe,716,en-native,imitation,-2.3897,-0.8937,LLM
+gemini-2.5-pro,Algeria,12,ar,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,Algeria,12,en,imitation,-3.1599,-0.9472,LLM
+gemini-2.5-pro,Argentina,32,en,imitation,2.9747,3.1144,LLM
+gemini-2.5-pro,Argentina,32,es,imitation,1.9448,4.3902,LLM
+gemini-2.5-pro,Australia,36,en-native,imitation,5.0904,4.054,LLM
+gemini-2.5-pro,Austria,40,de,imitation,2.4086,2.2907,LLM
+gemini-2.5-pro,Austria,40,en,imitation,1.504,3.5918,LLM
+gemini-2.5-pro,Belarus,112,en,imitation,-1.561,2.1358,LLM
+gemini-2.5-pro,Belarus,112,ru,imitation,-1.5504,2.1,LLM
+gemini-2.5-pro,Belgium,56,de,imitation,3.749,2.5461,LLM
+gemini-2.5-pro,Belgium,56,en,imitation,3.701,4.0401,LLM
+gemini-2.5-pro,Belgium,56,fr,imitation,3.749,2.5461,LLM
+gemini-2.5-pro,Bolivia,68,en,imitation,-0.0743,-1.2107,LLM
+gemini-2.5-pro,Bolivia,68,es,imitation,-0.3784,-0.2396,LLM
+gemini-2.5-pro,Brazil,76,en,imitation,0.4715,0.3847,LLM
+gemini-2.5-pro,Brazil,76,pt,imitation,-0.212,1.528,LLM
+gemini-2.5-pro,Burkina Faso,854,en,imitation,-3.3762,0.4357,LLM
+gemini-2.5-pro,Burkina Faso,854,fr,imitation,-4.645,1.6096,LLM
+gemini-2.5-pro,Canada,124,en-native,imitation,4.9751,3.1297,LLM
+gemini-2.5-pro,Canada,124,fr,imitation,5.2099,2.549,LLM
+gemini-2.5-pro,Chile,152,en,imitation,0.961,0.9056,LLM
+gemini-2.5-pro,Chile,152,es,imitation,0.961,0.9056,LLM
+gemini-2.5-pro,China,156,en,imitation,0.2763,0.8254,LLM
+gemini-2.5-pro,China,156,zh-cn,imitation,1.1329,1.0183,LLM
+gemini-2.5-pro,Colombia,170,en,imitation,2.0329,-1.8731,LLM
+gemini-2.5-pro,Colombia,170,es,imitation,0.2073,-0.7654,LLM
+gemini-2.5-pro,Ecuador,218,en,imitation,-0.0743,-1.2107,LLM
+gemini-2.5-pro,Ecuador,218,es,imitation,-0.8803,0.0166,LLM
+gemini-2.5-pro,Egypt,818,ar,imitation,-3.1599,-0.9472,LLM
+gemini-2.5-pro,Egypt,818,en,imitation,-3.1599,-0.9472,LLM
+gemini-2.5-pro,France,250,en,imitation,3.9118,4.2064,LLM
+gemini-2.5-pro,France,250,fr,imitation,1.8003,3.8992,LLM
+gemini-2.5-pro,Germany,276,de,imitation,2.7868,2.5699,LLM
+gemini-2.5-pro,Germany,276,en,imitation,2.7388,4.0639,LLM
+gemini-2.5-pro,Ghana,288,en-native,imitation,-1.7693,-1.9153,LLM
+gemini-2.5-pro,Guatemala,320,en,imitation,-1.9295,-0.6613,LLM
+gemini-2.5-pro,Guatemala,320,es,imitation,-2.0185,-0.6217,LLM
+gemini-2.5-pro,Haiti,332,en,imitation,-3.5415,0.1762,LLM
+gemini-2.5-pro,Haiti,332,fr,imitation,-5.1659,2.5558,LLM
+gemini-2.5-pro,Hong Kong,344,en-native,imitation,0.1694,6.0002,LLM
+gemini-2.5-pro,Hong Kong,344,zh-cn,imitation,-0.6521,5.7499,LLM
+gemini-2.5-pro,Hong Kong,344,zh-hk,imitation,-0.6521,5.7499,LLM
+gemini-2.5-pro,Iraq,368,ar,imitation,-3.1599,-0.9472,LLM
+gemini-2.5-pro,Iraq,368,en,imitation,-3.1599,-0.9472,LLM
+gemini-2.5-pro,Ireland,372,en-native,imitation,4.9511,3.8767,LLM
+gemini-2.5-pro,Italy,380,en,imitation,1.2996,2.7896,LLM
+gemini-2.5-pro,Italy,380,it,imitation,2.695,1.5581,LLM
+gemini-2.5-pro,Japan,392,en,imitation,2.4616,2.2108,LLM
+gemini-2.5-pro,Japan,392,ja,imitation,0.9853,1.9336,LLM
+gemini-2.5-pro,Jordan,400,ar,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,Jordan,400,en,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,Kazakhstan,398,en,imitation,-0.3042,-0.5588,LLM
+gemini-2.5-pro,Kazakhstan,398,ru,imitation,-0.2761,-0.6233,LLM
+gemini-2.5-pro,Kenya,404,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,"Korea, Republic of",410,en,imitation,0.3552,1.7674,LLM
+gemini-2.5-pro,"Korea, Republic of",410,ko,imitation,-0.0719,2.984,LLM
+gemini-2.5-pro,Kuwait,414,ar,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,Kuwait,414,en,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,Kyrgyzstan,417,en,imitation,-0.6824,-0.838,LLM
+gemini-2.5-pro,Kyrgyzstan,417,ru,imitation,-1.0759,-1.2351,LLM
+gemini-2.5-pro,Lebanon,422,ar,imitation,-2.3778,3.7202,LLM
+gemini-2.5-pro,Lebanon,422,en,imitation,-2.6342,3.647,LLM
+gemini-2.5-pro,Libya,434,ar,imitation,-3.587,0.2693,LLM
+gemini-2.5-pro,Libya,434,en,imitation,-4.225,1.3195,LLM
+gemini-2.5-pro,Luxembourg,442,de,imitation,5.1992,1.3008,LLM
+gemini-2.5-pro,Luxembourg,442,en,imitation,5.0729,4.0826,LLM
+gemini-2.5-pro,Luxembourg,442,fr,imitation,5.1992,1.3008,LLM
+gemini-2.5-pro,Macao,446,en,imitation,0.3179,1.4919,LLM
+gemini-2.5-pro,Macao,446,pt,imitation,0.3179,1.4919,LLM
+gemini-2.5-pro,Macao,446,zh-cn,imitation,0.7451,0.2753,LLM
+gemini-2.5-pro,Malaysia,458,en-native,imitation,-1.8358,-0.3909,LLM
+gemini-2.5-pro,Mali,466,en,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,Mali,466,fr,imitation,-3.7978,0.103,LLM
+gemini-2.5-pro,Malta,470,en-native,imitation,0.7159,-1.0627,LLM
+gemini-2.5-pro,Mexico,484,en,imitation,-0.2423,-1.0336,LLM
+gemini-2.5-pro,Mexico,484,es,imitation,-0.0035,-0.9317,LLM
+gemini-2.5-pro,Morocco,504,ar,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,Morocco,504,en,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,New Zealand,554,en-native,imitation,5.0729,4.0826,LLM
+gemini-2.5-pro,Nicaragua,558,en,imitation,-1.5913,-1.8383,LLM
+gemini-2.5-pro,Nicaragua,558,es,imitation,-3.2463,2.0067,LLM
+gemini-2.5-pro,Nigeria,566,en-native,imitation,-2.4073,-0.865,LLM
+gemini-2.5-pro,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-2.5-pro,Palestine,275,ar,imitation,-4.3702,1.6525,LLM
+gemini-2.5-pro,Palestine,275,en,imitation,-2.2858,-0.783,LLM
+gemini-2.5-pro,Peru,604,en,imitation,-0.9309,-1.4037,LLM
+gemini-2.5-pro,Peru,604,es,imitation,-0.7585,0.2226,LLM
+gemini-2.5-pro,Philippines,608,en-native,imitation,-1.0246,-1.6741,LLM
+gemini-2.5-pro,Portugal,620,en,imitation,2.7945,1.4827,LLM
+gemini-2.5-pro,Portugal,620,pt,imitation,3.1727,1.7619,LLM
+gemini-2.5-pro,Puerto Rico,630,en-native,imitation,1.8328,-0.7912,LLM
+gemini-2.5-pro,Puerto Rico,630,es,imitation,1.8328,-0.7912,LLM
+gemini-2.5-pro,Qatar,634,ar,imitation,-0.8003,-3.216,LLM
+gemini-2.5-pro,Qatar,634,en,imitation,-0.8003,-3.216,LLM
+gemini-2.5-pro,Russian Federation,643,en,imitation,-1.3446,0.7529,LLM
+gemini-2.5-pro,Russian Federation,643,ru,imitation,0.074,-0.2796,LLM
+gemini-2.5-pro,Rwanda,646,en-native,imitation,-1.5304,-1.8134,LLM
+gemini-2.5-pro,Rwanda,646,fr,imitation,-1.5129,-1.842,LLM
+gemini-2.5-pro,Singapore,702,en-native,imitation,1.1408,0.3696,LLM
+gemini-2.5-pro,Singapore,702,zh-cn,imitation,2.3734,0.2349,LLM
+gemini-2.5-pro,South Africa,710,en-native,imitation,-0.3603,2.0093,LLM
+gemini-2.5-pro,Spain,724,en,imitation,3.5791,3.8341,LLM
+gemini-2.5-pro,Spain,724,es,imitation,3.6272,2.3401,LLM
+gemini-2.5-pro,Switzerland,756,de,imitation,4.9991,2.3827,LLM
+gemini-2.5-pro,Switzerland,756,en,imitation,5.0729,4.0826,LLM
+gemini-2.5-pro,Switzerland,756,fr,imitation,5.121,2.5886,LLM
+gemini-2.5-pro,Switzerland,756,it,imitation,4.0194,2.4351,LLM
+gemini-2.5-pro,"Taiwan, Province of China",158,en,imitation,2.3511,0.8632,LLM
+gemini-2.5-pro,"Taiwan, Province of China",158,zh-tw,imitation,2.1208,3.5344,LLM
+gemini-2.5-pro,Trinidad and Tobago,780,en-native,imitation,-1.358,-0.1871,LLM
+gemini-2.5-pro,Tunisia,788,ar,imitation,-2.4592,2.801,LLM
+gemini-2.5-pro,Tunisia,788,en,imitation,-2.4112,1.307,LLM
+gemini-2.5-pro,United Kingdom,826,en-native,imitation,3.701,4.0401,LLM
+gemini-2.5-pro,United States of America,840,en-native,imitation,2.8095,2.8549,LLM
+gemini-2.5-pro,Uruguay,858,en,imitation,2.7213,4.0925,LLM
+gemini-2.5-pro,Uruguay,858,es,imitation,2.7388,4.0639,LLM
+gemini-2.5-pro,Venezuela,862,en,imitation,-2.5859,2.4412,LLM
+gemini-2.5-pro,Venezuela,862,es,imitation,-2.2441,3.439,LLM
+gemini-2.5-pro,Yemen,887,ar,imitation,-3.3707,-1.1136,LLM
+gemini-2.5-pro,Yemen,887,en,imitation,-4.2273,-1.3065,LLM
+gemini-2.5-pro,Zambia,894,en-native,imitation,-1.7693,-1.9153,LLM
+gemini-2.5-pro,Zimbabwe,716,en-native,imitation,-3.587,0.2693,LLM
+gemini-3-pro-preview,Algeria,12,ar,imitation,-2.1909,-2.248,LLM
+gemini-3-pro-preview,Algeria,12,en,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Argentina,32,en,imitation,1.9268,-0.0824,LLM
+gemini-3-pro-preview,Argentina,32,es,imitation,2.2875,0.2255,LLM
+gemini-3-pro-preview,Australia,36,en-native,imitation,5.8312,3.8996,LLM
+gemini-3-pro-preview,Austria,40,de,imitation,3.4479,1.961,LLM
+gemini-3-pro-preview,Austria,40,en,imitation,3.5217,3.6609,LLM
+gemini-3-pro-preview,Belarus,112,en,imitation,-1.8432,1.9804,LLM
+gemini-3-pro-preview,Belarus,112,ru,imitation,-0.5815,0.7992,LLM
+gemini-3-pro-preview,Belgium,56,de,imitation,4.7603,2.2808,LLM
+gemini-3-pro-preview,Belgium,56,en,imitation,5.0729,4.0826,LLM
+gemini-3-pro-preview,Belgium,56,fr,imitation,4.7297,3.7462,LLM
+gemini-3-pro-preview,Bolivia,68,en,imitation,-1.363,-1.7006,LLM
+gemini-3-pro-preview,Bolivia,68,es,imitation,-1.363,-1.7006,LLM
+gemini-3-pro-preview,Brazil,76,en,imitation,0.8987,-0.8319,LLM
+gemini-3-pro-preview,Brazil,76,pt,imitation,-0.0062,0.1809,LLM
+gemini-3-pro-preview,Burkina Faso,854,en,imitation,-3.3707,-1.1136,LLM
+gemini-3-pro-preview,Burkina Faso,854,fr,imitation,-3.1599,-0.9472,LLM
+gemini-3-pro-preview,Canada,124,en-native,imitation,6.0147,2.2712,LLM
+gemini-3-pro-preview,Canada,124,fr,imitation,5.035,2.3236,LLM
+gemini-3-pro-preview,Chile,152,en,imitation,2.3329,-0.3061,LLM
+gemini-3-pro-preview,Chile,152,es,imitation,1.1543,1.1006,LLM
+gemini-3-pro-preview,China,156,en,imitation,1.4375,0.7016,LLM
+gemini-3-pro-preview,China,156,zh-cn,imitation,1.0286,0.7837,LLM
+gemini-3-pro-preview,Colombia,170,en,imitation,0.9549,-2.1966,LLM
+gemini-3-pro-preview,Colombia,170,es,imitation,-0.014,-0.8959,LLM
+gemini-3-pro-preview,Ecuador,218,en,imitation,-0.6745,-1.3305,LLM
+gemini-3-pro-preview,Ecuador,218,es,imitation,-0.6745,-1.3305,LLM
+gemini-3-pro-preview,Egypt,818,ar,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Egypt,818,en,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,France,250,en,imitation,4.6526,4.0521,LLM
+gemini-3-pro-preview,France,250,fr,imitation,3.7209,2.6105,LLM
+gemini-3-pro-preview,Germany,276,de,imitation,3.7606,3.7628,LLM
+gemini-3-pro-preview,Germany,276,en,imitation,3.7781,3.7341,LLM
+gemini-3-pro-preview,Ghana,288,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Guatemala,320,en,imitation,-1.7132,-2.0442,LLM
+gemini-3-pro-preview,Guatemala,320,es,imitation,-1.5024,-1.8779,LLM
+gemini-3-pro-preview,Haiti,332,en,imitation,-3.3707,-1.1136,LLM
+gemini-3-pro-preview,Haiti,332,fr,imitation,-4.3397,0.1871,LLM
+gemini-3-pro-preview,Hong Kong,344,en-native,imitation,0.7952,4.363,LLM
+gemini-3-pro-preview,Hong Kong,344,zh-cn,imitation,3.2218,4.4976,LLM
+gemini-3-pro-preview,Hong Kong,344,zh-hk,imitation,3.1153,4.5659,LLM
+gemini-3-pro-preview,Iraq,368,ar,imitation,-2.1909,-2.248,LLM
+gemini-3-pro-preview,Iraq,368,en,imitation,-3.3707,-1.1136,LLM
+gemini-3-pro-preview,Ireland,372,en-native,imitation,5.0281,2.3165,LLM
+gemini-3-pro-preview,Italy,380,en,imitation,1.487,1.4729,LLM
+gemini-3-pro-preview,Italy,380,it,imitation,1.6978,1.6392,LLM
+gemini-3-pro-preview,Japan,392,en,imitation,1.9076,1.708,LLM
+gemini-3-pro-preview,Japan,392,ja,imitation,0.7745,1.7673,LLM
+gemini-3-pro-preview,Jordan,400,ar,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Jordan,400,en,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Kazakhstan,398,en,imitation,-1.0584,-1.2638,LLM
+gemini-3-pro-preview,Kazakhstan,398,ru,imitation,-1.0584,-1.2638,LLM
+gemini-3-pro-preview,Kenya,404,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,"Korea, Republic of",410,en,imitation,0.7927,1.4486,LLM
+gemini-3-pro-preview,"Korea, Republic of",410,ko,imitation,0.7752,1.4773,LLM
+gemini-3-pro-preview,Kuwait,414,ar,imitation,-2.1909,-2.248,LLM
+gemini-3-pro-preview,Kuwait,414,en,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Kyrgyzstan,417,en,imitation,-1.6299,-1.738,LLM
+gemini-3-pro-preview,Kyrgyzstan,417,ru,imitation,-1.6299,-1.738,LLM
+gemini-3-pro-preview,Lebanon,422,ar,imitation,-1.9251,-0.4751,LLM
+gemini-3-pro-preview,Lebanon,422,en,imitation,-3.2263,0.5771,LLM
+gemini-3-pro-preview,Libya,434,ar,imitation,-2.1909,-2.248,LLM
+gemini-3-pro-preview,Libya,434,en,imitation,-3.3707,-1.1136,LLM
+gemini-3-pro-preview,Luxembourg,442,de,imitation,4.4641,1.1899,LLM
+gemini-3-pro-preview,Luxembourg,442,en,imitation,5.3958,2.6315,LLM
+gemini-3-pro-preview,Luxembourg,442,fr,imitation,4.7537,2.9991,LLM
+gemini-3-pro-preview,Macao,446,en,imitation,-0.5968,0.6812,LLM
+gemini-3-pro-preview,Macao,446,pt,imitation,-0.5968,0.6812,LLM
+gemini-3-pro-preview,Macao,446,zh-cn,imitation,-0.3579,0.7831,LLM
+gemini-3-pro-preview,Malaysia,458,en-native,imitation,-2.4073,-0.865,LLM
+gemini-3-pro-preview,Mali,466,en,imitation,-2.1909,-2.248,LLM
+gemini-3-pro-preview,Mali,466,fr,imitation,-3.1599,-0.9472,LLM
+gemini-3-pro-preview,Malta,470,en-native,imitation,0.5989,-0.9587,LLM
+gemini-3-pro-preview,Mexico,484,en,imitation,-0.4356,-1.2286,LLM
+gemini-3-pro-preview,Mexico,484,es,imitation,-0.2248,-1.0623,LLM
+gemini-3-pro-preview,Morocco,504,ar,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Morocco,504,en,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,New Zealand,554,en-native,imitation,6.4973,2.7849,LLM
+gemini-3-pro-preview,Nicaragua,558,en,imitation,-1.7132,-2.0442,LLM
+gemini-3-pro-preview,Nicaragua,558,es,imitation,-1.7132,-2.0442,LLM
+gemini-3-pro-preview,Nigeria,566,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Palestine,275,ar,imitation,-2.5141,-0.9206,LLM
+gemini-3-pro-preview,Palestine,275,en,imitation,-3.1599,-0.9472,LLM
+gemini-3-pro-preview,Peru,604,en,imitation,-1.1242,-1.5987,LLM
+gemini-3-pro-preview,Peru,604,es,imitation,-0.9134,-1.4324,LLM
+gemini-3-pro-preview,Philippines,608,en-native,imitation,-1.4743,-1.9423,LLM
+gemini-3-pro-preview,Portugal,620,en,imitation,2.1424,0.394,LLM
+gemini-3-pro-preview,Portugal,620,pt,imitation,1.7433,1.5461,LLM
+gemini-3-pro-preview,Puerto Rico,630,en-native,imitation,1.8115,-2.0037,LLM
+gemini-3-pro-preview,Puerto Rico,630,es,imitation,1.8115,-2.0037,LLM
+gemini-3-pro-preview,Qatar,634,ar,imitation,-1.0111,-3.3823,LLM
+gemini-3-pro-preview,Qatar,634,en,imitation,-2.8367,-2.2746,LLM
+gemini-3-pro-preview,Russian Federation,643,en,imitation,-0.3581,-0.5765,LLM
+gemini-3-pro-preview,Russian Federation,643,ru,imitation,-0.8028,0.6687,LLM
+gemini-3-pro-preview,Rwanda,646,en-native,imitation,-3.1599,-0.9472,LLM
+gemini-3-pro-preview,Rwanda,646,fr,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Singapore,702,en-native,imitation,0.3585,-0.2709,LLM
+gemini-3-pro-preview,Singapore,702,zh-cn,imitation,0.3409,-0.2422,LLM
+gemini-3-pro-preview,South Africa,710,en-native,imitation,-0.2704,-0.9691,LLM
+gemini-3-pro-preview,Spain,724,en,imitation,3.6272,2.3401,LLM
+gemini-3-pro-preview,Spain,724,es,imitation,4.9991,2.3827,LLM
+gemini-3-pro-preview,Switzerland,756,de,imitation,5.5466,2.0333,LLM
+gemini-3-pro-preview,Switzerland,756,en,imitation,4.7297,3.7462,LLM
+gemini-3-pro-preview,Switzerland,756,fr,imitation,5.5466,2.0333,LLM
+gemini-3-pro-preview,Switzerland,756,it,imitation,6.1366,2.4771,LLM
+gemini-3-pro-preview,"Taiwan, Province of China",158,en,imitation,2.9808,1.7214,LLM
+gemini-3-pro-preview,"Taiwan, Province of China",158,zh-tw,imitation,4.1407,3.3006,LLM
+gemini-3-pro-preview,Trinidad and Tobago,780,en-native,imitation,-1.0527,-1.6096,LLM
+gemini-3-pro-preview,Tunisia,788,ar,imitation,-1.7518,-1.9439,LLM
+gemini-3-pro-preview,Tunisia,788,en,imitation,-2.7383,-0.6145,LLM
+gemini-3-pro-preview,United Kingdom,826,en-native,imitation,5.8378,3.1813,LLM
+gemini-3-pro-preview,United States of America,840,en-native,imitation,5.2324,1.6307,LLM
+gemini-3-pro-preview,Uruguay,858,en,imitation,4.7471,2.4632,LLM
+gemini-3-pro-preview,Uruguay,858,es,imitation,2.6475,2.3926,LLM
+gemini-3-pro-preview,Venezuela,862,en,imitation,-0.1505,-1.5098,LLM
+gemini-3-pro-preview,Venezuela,862,es,imitation,-0.8853,-1.4968,LLM
+gemini-3-pro-preview,Yemen,887,ar,imitation,-3.3707,-1.1136,LLM
+gemini-3-pro-preview,Yemen,887,en,imitation,-3.3707,-1.1136,LLM
+gemini-3-pro-preview,Zambia,894,en-native,imitation,-1.9801,-2.0816,LLM
+gemini-3-pro-preview,Zimbabwe,716,en-native,imitation,-3.1599,-0.9472,LLM
+gemma-3-4b-it,Algeria,12,ar,imitation,1.2008,-0.5648,LLM
+gemma-3-4b-it,Algeria,12,en,imitation,-0.9,1.4945,LLM
+gemma-3-4b-it,Argentina,32,en,imitation,-0.4242,2.4395,LLM
+gemma-3-4b-it,Argentina,32,es,imitation,0.3272,2.2494,LLM
+gemma-3-4b-it,Australia,36,en-native,imitation,1.0507,2.5621,LLM
+gemma-3-4b-it,Austria,40,de,imitation,0.235,1.9937,LLM
+gemma-3-4b-it,Austria,40,en,imitation,0.5555,2.3871,LLM
+gemma-3-4b-it,Belarus,112,en,imitation,0.2991,2.3139,LLM
+gemma-3-4b-it,Belarus,112,ru,imitation,-2.1948,1.3022,LLM
+gemma-3-4b-it,Belgium,56,de,imitation,2.5251,2.8462,LLM
+gemma-3-4b-it,Belgium,56,en,imitation,1.1726,2.7681,LLM
+gemma-3-4b-it,Belgium,56,fr,imitation,6.1958,1.8792,LLM
+gemma-3-4b-it,Bolivia,68,en,imitation,-0.2184,1.0924,LLM
+gemma-3-4b-it,Bolivia,68,es,imitation,-0.1313,0.9886,LLM
+gemma-3-4b-it,Brazil,76,en,imitation,-0.4242,2.4395,LLM
+gemma-3-4b-it,Brazil,76,pt,imitation,1.2322,1.9126,LLM
+gemma-3-4b-it,Burkina Faso,854,en,imitation,-0.1941,0.6325,LLM
+gemma-3-4b-it,Burkina Faso,854,fr,imitation,2.5896,0.3114,LLM
+gemma-3-4b-it,Canada,124,en-native,imitation,2.4227,2.6047,LLM
+gemma-3-4b-it,Canada,124,fr,imitation,5.3157,1.8562,LLM
+gemma-3-4b-it,Chile,152,en,imitation,-0.4242,2.4395,LLM
+gemma-3-4b-it,Chile,152,es,imitation,0.3687,1.4737,LLM
+gemma-3-4b-it,China,156,en,imitation,0.3341,2.2565,LLM
+gemma-3-4b-it,China,156,zh-cn,imitation,-0.6718,-0.0692,LLM
+gemma-3-4b-it,Colombia,170,en,imitation,0.003,1.223,LLM
+gemma-3-4b-it,Colombia,170,es,imitation,0.125,1.0618,LLM
+gemma-3-4b-it,Ecuador,218,en,imitation,-0.2359,1.1211,LLM
+gemma-3-4b-it,Ecuador,218,es,imitation,-0.1313,0.9886,LLM
+gemma-3-4b-it,Egypt,818,ar,imitation,1.5931,-0.4698,LLM
+gemma-3-4b-it,Egypt,818,en,imitation,-0.4553,0.2492,LLM
+gemma-3-4b-it,France,250,en,imitation,0.9337,2.6662,LLM
+gemma-3-4b-it,France,250,fr,imitation,5.1986,1.9603,LLM
+gemma-3-4b-it,Germany,276,de,imitation,3.8795,2.9174,LLM
+gemma-3-4b-it,Germany,276,en,imitation,0.7944,2.4889,LLM
+gemma-3-4b-it,Ghana,288,en-native,imitation,-0.316,0.4265,LLM
+gemma-3-4b-it,Guatemala,320,en,imitation,-1.8447,1.4896,LLM
+gemma-3-4b-it,Guatemala,320,es,imitation,-2.8085,2.8088,LLM
+gemma-3-4b-it,Haiti,332,en,imitation,-0.4378,0.2206,LLM
+gemma-3-4b-it,Haiti,332,fr,imitation,0.9498,0.3169,LLM
+gemma-3-4b-it,Hong Kong,344,en-native,imitation,0.3166,2.2852,LLM
+gemma-3-4b-it,Hong Kong,344,zh-cn,imitation,0.5905,2.3297,LLM
+gemma-3-4b-it,Hong Kong,344,zh-hk,imitation,-1.658,0.7016,LLM
+gemma-3-4b-it,Iraq,368,ar,imitation,1.2828,-0.6115,LLM
+gemma-3-4b-it,Iraq,368,en,imitation,-0.865,1.4371,LLM
+gemma-3-4b-it,Ireland,372,en-native,imitation,1.2215,1.2724,LLM
+gemma-3-4b-it,Italy,380,en,imitation,-0.4242,2.4395,LLM
+gemma-3-4b-it,Italy,380,it,imitation,1.2322,1.9126,LLM
+gemma-3-4b-it,Japan,392,en,imitation,-0.7374,1.4534,LLM
+gemma-3-4b-it,Japan,392,ja,imitation,-0.0579,-0.3724,LLM
+gemma-3-4b-it,Jordan,400,ar,imitation,2.5378,-0.4649,LLM
+gemma-3-4b-it,Jordan,400,en,imitation,-0.8825,1.4658,LLM
+gemma-3-4b-it,Kazakhstan,398,en,imitation,0.3166,2.2852,LLM
+gemma-3-4b-it,Kazakhstan,398,ru,imitation,0.3034,0.4624,LLM
+gemma-3-4b-it,Kenya,404,en-native,imitation,-0.1941,0.6325,LLM
+gemma-3-4b-it,"Korea, Republic of",410,en,imitation,-0.7374,1.4534,LLM
+gemma-3-4b-it,"Korea, Republic of",410,ko,imitation,0.7395,0.9149,LLM
+gemma-3-4b-it,Kuwait,414,ar,imitation,0.7378,-1.1141,LLM
+gemma-3-4b-it,Kuwait,414,en,imitation,-0.7117,0.176,LLM
+gemma-3-4b-it,Kyrgyzstan,417,en,imitation,-0.2116,0.6611,LLM
+gemma-3-4b-it,Kyrgyzstan,417,ru,imitation,-0.8734,-0.0756,LLM
+gemma-3-4b-it,Lebanon,422,ar,imitation,1.1658,-0.5075,LLM
+gemma-3-4b-it,Lebanon,422,en,imitation,0.073,1.8733,LLM
+gemma-3-4b-it,Libya,434,ar,imitation,-1.6247,-1.5068,LLM
+gemma-3-4b-it,Libya,434,en,imitation,-1.1564,1.4212,LLM
+gemma-3-4b-it,Luxembourg,442,de,imitation,3.6582,2.7869,LLM
+gemma-3-4b-it,Luxembourg,442,en,imitation,1.0507,2.5621,LLM
+gemma-3-4b-it,Luxembourg,442,fr,imitation,5.0768,1.7544,LLM
+gemma-3-4b-it,Macao,446,en,imitation,0.5555,2.3871,LLM
+gemma-3-4b-it,Macao,446,pt,imitation,0.9933,1.8107,LLM
+gemma-3-4b-it,Macao,446,zh-cn,imitation,0.3949,0.4238,LLM
+gemma-3-4b-it,Malaysia,458,en-native,imitation,0.3166,2.2852,LLM
+gemma-3-4b-it,Mali,466,en,imitation,-0.4378,0.2206,LLM
+gemma-3-4b-it,Mali,466,fr,imitation,2.3459,-0.1005,LLM
+gemma-3-4b-it,Malta,470,en-native,imitation,0.8608,0.9645,LLM
+gemma-3-4b-it,Mexico,484,en,imitation,-0.4067,2.4109,LLM
+gemma-3-4b-it,Mexico,484,es,imitation,0.008,1.1659,LLM
+gemma-3-4b-it,Morocco,504,ar,imitation,2.6898,-0.6263,LLM
+gemma-3-4b-it,Morocco,504,en,imitation,-0.4728,0.2779,LLM
+gemma-3-4b-it,New Zealand,554,en-native,imitation,2.8674,1.3595,LLM
+gemma-3-4b-it,Nicaragua,558,en,imitation,-0.3402,0.8865,LLM
+gemma-3-4b-it,Nicaragua,558,es,imitation,-0.957,0.2945,LLM
+gemma-3-4b-it,Nigeria,566,en-native,imitation,-0.4378,0.2206,LLM
+gemma-3-4b-it,Pakistan,586,en-native,imitation,-0.9,1.4945,LLM
+gemma-3-4b-it,Palestine,275,ar,imitation,2.4762,0.3975,LLM
+gemma-3-4b-it,Palestine,275,en,imitation,-0.865,1.4371,LLM
+gemma-3-4b-it,Peru,604,en,imitation,-0.2359,1.1211,LLM
+gemma-3-4b-it,Peru,604,es,imitation,-0.0095,1.1945,LLM
+gemma-3-4b-it,Philippines,608,en-native,imitation,0.622,0.8627,LLM
+gemma-3-4b-it,Portugal,620,en,imitation,0.5555,2.3871,LLM
+gemma-3-4b-it,Portugal,620,pt,imitation,1.7673,4.3596,LLM
+gemma-3-4b-it,Puerto Rico,630,en-native,imitation,-0.1189,1.017,LLM
+gemma-3-4b-it,Puerto Rico,630,es,imitation,-0.536,3.6899,LLM
+gemma-3-4b-it,Qatar,634,ar,imitation,0.9766,-1.0122,LLM
+gemma-3-4b-it,Qatar,634,en,imitation,-0.7117,0.176,LLM
+gemma-3-4b-it,Russian Federation,643,en,imitation,-0.6388,1.8777,LLM
+gemma-3-4b-it,Russian Federation,643,ru,imitation,0.0029,2.0388,LLM
+gemma-3-4b-it,Rwanda,646,en-native,imitation,-1.4918,-0.6112,LLM
+gemma-3-4b-it,Rwanda,646,fr,imitation,0.6328,-0.4864,LLM
+gemma-3-4b-it,Singapore,702,en-native,imitation,0.7678,0.3216,LLM
+gemma-3-4b-it,Singapore,702,zh-cn,imitation,-0.4635,1.498,LLM
+gemma-3-4b-it,South Africa,710,en-native,imitation,0.3166,2.2852,LLM
+gemma-3-4b-it,Spain,724,en,imitation,-0.4242,2.4395,LLM
+gemma-3-4b-it,Spain,724,es,imitation,-0.4745,0.8083,LLM
+gemma-3-4b-it,Switzerland,756,de,imitation,4.0014,3.1234,LLM
+gemma-3-4b-it,Switzerland,756,en,imitation,1.1726,2.7681,LLM
+gemma-3-4b-it,Switzerland,756,fr,imitation,4.9598,1.8585,LLM
+gemma-3-4b-it,Switzerland,756,it,imitation,3.2037,2.3648,LLM
+gemma-3-4b-it,"Taiwan, Province of China",158,en,imitation,0.3166,2.2852,LLM
+gemma-3-4b-it,"Taiwan, Province of China",158,zh-tw,imitation,-0.5759,1.4688,LLM
+gemma-3-4b-it,Trinidad and Tobago,780,en-native,imitation,-0.3577,0.9151,LLM
+gemma-3-4b-it,Tunisia,788,ar,imitation,2.5553,-0.4936,LLM
+gemma-3-4b-it,Tunisia,788,en,imitation,0.073,1.8733,LLM
+gemma-3-4b-it,United Kingdom,826,en-native,imitation,1.0507,2.5621,LLM
+gemma-3-4b-it,United States of America,840,en-native,imitation,0.8294,2.4316,LLM
+gemma-3-4b-it,Uruguay,858,en,imitation,-0.4242,2.4395,LLM
+gemma-3-4b-it,Uruguay,858,es,imitation,0.597,1.6114,LLM
+gemma-3-4b-it,Venezuela,862,en,imitation,-0.6455,2.309,LLM
+gemma-3-4b-it,Venezuela,862,es,imitation,-0.1313,0.9886,LLM
+gemma-3-4b-it,Yemen,887,ar,imitation,1.2588,0.1355,LLM
+gemma-3-4b-it,Yemen,887,en,imitation,-1.2607,1.1866,LLM
+gemma-3-4b-it,Zambia,894,en-native,imitation,0.7613,1.04,LLM
+gemma-3-4b-it,Zimbabwe,716,en-native,imitation,-1.7228,1.6955,LLM
+gpt-4o,Algeria,12,ar,imitation,-0.8525,-1.4075,LLM
+gpt-4o,Algeria,12,en,imitation,-1.5304,-1.8134,LLM
+gpt-4o,Argentina,32,en,imitation,1.6417,0.1989,LLM
+gpt-4o,Argentina,32,es,imitation,2.1942,1.363,LLM
+gpt-4o,Australia,36,en-native,imitation,5.2979,1.6785,LLM
+gpt-4o,Austria,40,de,imitation,1.8854,0.6108,LLM
+gpt-4o,Austria,40,en,imitation,3.2509,1.3717,LLM
+gpt-4o,Belarus,112,en,imitation,-0.8791,0.3696,LLM
+gpt-4o,Belarus,112,ru,imitation,-0.1577,0.9853,LLM
+gpt-4o,Belgium,56,de,imitation,4.0382,1.9551,LLM
+gpt-4o,Belgium,56,en,imitation,3.0345,2.7546,LLM
+gpt-4o,Belgium,56,fr,imitation,2.8409,3.1181,LLM
+gpt-4o,Bolivia,68,en,imitation,-0.2529,-0.9978,LLM
+gpt-4o,Bolivia,68,es,imitation,0.3467,-0.5881,LLM
+gpt-4o,Brazil,76,en,imitation,0.6206,-0.5435,LLM
+gpt-4o,Brazil,76,pt,imitation,1.0325,0.8946,LLM
+gpt-4o,Burkina Faso,854,en,imitation,-1.5129,-1.842,LLM
+gpt-4o,Burkina Faso,854,fr,imitation,-2.4713,-0.5772,LLM
+gpt-4o,Canada,124,en-native,imitation,4.4413,1.4856,LLM
+gpt-4o,Canada,124,fr,imitation,4.2653,1.8205,LLM
+gpt-4o,Chile,152,en,imitation,0.3642,-0.6167,LLM
+gpt-4o,Chile,152,es,imitation,0.3152,0.879,LLM
+gpt-4o,China,156,en,imitation,-0.1172,0.4282,LLM
+gpt-4o,China,156,zh-cn,imitation,-0.0822,0.3709,LLM
+gpt-4o,Colombia,170,en,imitation,0.2423,-0.8227,LLM
+gpt-4o,Colombia,170,es,imitation,0.4987,-0.7495,LLM
+gpt-4o,Ecuador,218,en,imitation,0.9269,-2.1321,LLM
+gpt-4o,Ecuador,218,es,imitation,0.2599,-0.8514,LLM
+gpt-4o,Egypt,818,ar,imitation,-0.7306,-1.2015,LLM
+gpt-4o,Egypt,818,en,imitation,-1.5304,-1.8134,LLM
+gpt-4o,France,250,en,imitation,2.4776,3.6806,LLM
+gpt-4o,France,250,fr,imitation,1.4209,4.5696,LLM
+gpt-4o,Germany,276,de,imitation,2.4379,1.7749,LLM
+gpt-4o,Germany,276,en,imitation,3.9151,2.2005,LLM
+gpt-4o,Ghana,288,en-native,imitation,-0.1118,-2.8459,LLM
+gpt-4o,Guatemala,320,en,imitation,-0.7963,-1.5364,LLM
+gpt-4o,Guatemala,320,es,imitation,-0.3186,-1.3327,LLM
+gpt-4o,Haiti,332,en,imitation,-1.2916,-1.7115,LLM
+gpt-4o,Haiti,332,fr,imitation,-1.4917,-0.6296,LLM
+gpt-4o,Hong Kong,344,en-native,imitation,0.5637,1.6009,LLM
+gpt-4o,Hong Kong,344,zh-cn,imitation,-0.2857,2.6185,LLM
+gpt-4o,Hong Kong,344,zh-hk,imitation,0.1414,1.402,LLM
+gpt-4o,Iraq,368,ar,imitation,-1.3302,-1.6112,LLM
+gpt-4o,Iraq,368,en,imitation,-1.7412,-1.9797,LLM
+gpt-4o,Ireland,372,en-native,imitation,3.2333,1.4003,LLM
+gpt-4o,Italy,380,en,imitation,1.164,-0.0049,LLM
+gpt-4o,Italy,380,it,imitation,1.2146,1.4154,LLM
+gpt-4o,Japan,392,en,imitation,0.9734,0.413,LLM
+gpt-4o,Japan,392,ja,imitation,0.3025,1.2177,LLM
+gpt-4o,Jordan,400,ar,imitation,-1.2741,-1.7402,LLM
+gpt-4o,Jordan,400,en,imitation,-1.5304,-1.8134,LLM
+gpt-4o,Kazakhstan,398,en,imitation,-0.5913,-1.0242,LLM
+gpt-4o,Kazakhstan,398,ru,imitation,-0.5738,-1.0529,LLM
+gpt-4o,Kenya,404,en-native,imitation,-1.2916,-1.7115,LLM
+gpt-4o,"Korea, Republic of",410,en,imitation,0.252,-0.2026,LLM
+gpt-4o,"Korea, Republic of",410,ko,imitation,0.6814,1.2069,LLM
+gpt-4o,Kuwait,414,ar,imitation,-1.7518,-1.9439,LLM
+gpt-4o,Kuwait,414,en,imitation,-0.8003,-3.216,LLM
+gpt-4o,Kyrgyzstan,417,en,imitation,-0.7481,-1.1729,LLM
+gpt-4o,Kyrgyzstan,417,ru,imitation,-0.6088,-0.9956,LLM
+gpt-4o,Lebanon,422,ar,imitation,-0.0805,0.6285,LLM
+gpt-4o,Lebanon,422,en,imitation,-1.2796,-0.1909,LLM
+gpt-4o,Libya,434,ar,imitation,-1.7518,-1.9439,LLM
+gpt-4o,Libya,434,en,imitation,-1.9801,-2.0816,LLM
+gpt-4o,Luxembourg,442,de,imitation,4.4371,-0.481,LLM
+gpt-4o,Luxembourg,442,en,imitation,4.6414,0.4037,LLM
+gpt-4o,Luxembourg,442,fr,imitation,5.6276,-0.3672,LLM
+gpt-4o,Macao,446,en,imitation,0.7297,0.0011,LLM
+gpt-4o,Macao,446,pt,imitation,1.6038,0.1654,LLM
+gpt-4o,Macao,446,zh-cn,imitation,0.7592,1.493,LLM
+gpt-4o,Malaysia,458,en-native,imitation,-1.0304,-1.3283,LLM
+gpt-4o,Mali,466,en,imitation,-1.2916,-1.7115,LLM
+gpt-4o,Mali,466,fr,imitation,-2.6927,-0.7077,LLM
+gpt-4o,Malta,470,en-native,imitation,1.1329,-2.1196,LLM
+gpt-4o,Mexico,484,en,imitation,1.5265,-1.7224,LLM
+gpt-4o,Mexico,484,es,imitation,0.3769,-0.9554,LLM
+gpt-4o,Morocco,504,ar,imitation,-0.8525,-1.4075,LLM
+gpt-4o,Morocco,504,en,imitation,-1.2916,-1.7115,LLM
+gpt-4o,New Zealand,554,en-native,imitation,5.6211,0.3512,LLM
+gpt-4o,Nicaragua,558,en,imitation,-0.7963,-1.5364,LLM
+gpt-4o,Nicaragua,558,es,imitation,-0.8138,-1.5078,LLM
+gpt-4o,Nigeria,566,en-native,imitation,-1.5304,-1.8134,LLM
+gpt-4o,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+gpt-4o,Palestine,275,ar,imitation,-1.2741,-1.7402,LLM
+gpt-4o,Palestine,275,en,imitation,-1.5304,-1.8134,LLM
+gpt-4o,Peru,604,en,imitation,0.3642,-0.6167,LLM
+gpt-4o,Peru,604,es,imitation,0.2248,-0.794,LLM
+gpt-4o,Philippines,608,en-native,imitation,-0.3186,-1.3327,LLM
+gpt-4o,Portugal,620,en,imitation,1.6417,0.1989,LLM
+gpt-4o,Portugal,620,pt,imitation,1.6417,0.1989,LLM
+gpt-4o,Puerto Rico,630,en-native,imitation,1.6435,-1.8265,LLM
+gpt-4o,Puerto Rico,630,es,imitation,0.8371,-0.723,LLM
+gpt-4o,Qatar,634,ar,imitation,-1.6394,-3.4376,LLM
+gpt-4o,Qatar,634,en,imitation,-1.6569,-3.4089,LLM
+gpt-4o,Russian Federation,643,en,imitation,-0.2257,-0.4064,LLM
+gpt-4o,Russian Federation,643,ru,imitation,0.2695,-0.2313,LLM
+gpt-4o,Rwanda,646,en-native,imitation,-1.2741,-1.7402,LLM
+gpt-4o,Rwanda,646,fr,imitation,-2.0147,-0.3018,LLM
+gpt-4o,Singapore,702,en-native,imitation,0.7297,0.0011,LLM
+gpt-4o,Singapore,702,zh-cn,imitation,1.4252,0.3784,LLM
+gpt-4o,South Africa,710,en-native,imitation,-0.063,0.5998,LLM
+gpt-4o,Spain,724,en,imitation,2.6247,2.6882,LLM
+gpt-4o,Spain,724,es,imitation,1.4582,1.8273,LLM
+gpt-4o,Switzerland,756,de,imitation,5.4168,-0.5335,LLM
+gpt-4o,Switzerland,756,en,imitation,5.498,0.5966,LLM
+gpt-4o,Switzerland,756,fr,imitation,3.2856,1.8729,LLM
+gpt-4o,Switzerland,756,it,imitation,3.4857,0.791,LLM
+gpt-4o,"Taiwan, Province of China",158,en,imitation,1.6514,0.8189,LLM
+gpt-4o,"Taiwan, Province of China",158,zh-tw,imitation,1.7194,2.2106,LLM
+gpt-4o,Trinidad and Tobago,780,en-native,imitation,0.805,-2.3381,LLM
+gpt-4o,Tunisia,788,ar,imitation,-0.1311,-0.7918,LLM
+gpt-4o,Tunisia,788,en,imitation,-1.2916,-1.7115,LLM
+gpt-4o,United Kingdom,826,en-native,imitation,4.8533,2.9237,LLM
+gpt-4o,United States of America,840,en-native,imitation,2.8346,2.0236,LLM
+gpt-4o,Uruguay,858,en,imitation,1.8614,1.3578,LLM
+gpt-4o,Uruguay,858,es,imitation,2.1137,0.7484,LLM
+gpt-4o,Venezuela,862,en,imitation,-0.063,0.5998,LLM
+gpt-4o,Venezuela,862,es,imitation,-0.0455,0.5712,LLM
+gpt-4o,Yemen,887,ar,imitation,-1.9801,-2.0816,LLM
+gpt-4o,Yemen,887,en,imitation,-1.9801,-2.0816,LLM
+gpt-4o,Zambia,894,en-native,imitation,-1.2741,-1.7402,LLM
+gpt-4o,Zimbabwe,716,en-native,imitation,-1.0808,-1.5452,LLM
+gpt-4o-mini,Algeria,12,ar,imitation,-0.3928,-0.4647,LLM
+gpt-4o-mini,Algeria,12,en,imitation,-2.4073,-0.865,LLM
+gpt-4o-mini,Argentina,32,en,imitation,4.1359,2.9906,LLM
+gpt-4o-mini,Argentina,32,es,imitation,3.0508,1.5559,LLM
+gpt-4o-mini,Australia,36,en-native,imitation,5.7375,3.6292,LLM
+gpt-4o-mini,Austria,40,de,imitation,4.3106,2.0126,LLM
+gpt-4o-mini,Austria,40,en,imitation,3.1136,2.617,LLM
+gpt-4o-mini,Belarus,112,en,imitation,-1.9465,0.0103,LLM
+gpt-4o-mini,Belarus,112,ru,imitation,-0.2613,0.4607,LLM
+gpt-4o-mini,Belgium,56,de,imitation,4.7883,2.2163,LLM
+gpt-4o-mini,Belgium,56,en,imitation,5.744,2.9109,LLM
+gpt-4o-mini,Belgium,56,fr,imitation,4.8058,2.1877,LLM
+gpt-4o-mini,Bolivia,68,en,imitation,2.2949,-1.2493,LLM
+gpt-4o-mini,Bolivia,68,es,imitation,2.5407,-1.1403,LLM
+gpt-4o-mini,Brazil,76,en,imitation,4.3573,1.5506,LLM
+gpt-4o-mini,Brazil,76,pt,imitation,2.3611,2.1353,LLM
+gpt-4o-mini,Burkina Faso,854,en,imitation,-0.5906,-2.0677,LLM
+gpt-4o-mini,Burkina Faso,854,fr,imitation,0.4241,-2.1775,LLM
+gpt-4o-mini,Canada,124,en-native,imitation,5.7615,2.8822,LLM
+gpt-4o-mini,Canada,124,fr,imitation,6.0908,0.7127,LLM
+gpt-4o-mini,Chile,152,en,imitation,3.2846,0.9602,LLM
+gpt-4o-mini,Chile,152,es,imitation,3.5528,1.2997,LLM
+gpt-4o-mini,China,156,en,imitation,-0.389,0.0808,LLM
+gpt-4o-mini,China,156,zh-cn,imitation,0.7191,0.8527,LLM
+gpt-4o-mini,Colombia,170,en,imitation,3.0409,0.5483,LLM
+gpt-4o-mini,Colombia,170,es,imitation,4.4422,0.8285,LLM
+gpt-4o-mini,Ecuador,218,en,imitation,1.8819,-1.0327,LLM
+gpt-4o-mini,Ecuador,218,es,imitation,2.9904,-0.8721,LLM
+gpt-4o-mini,Egypt,818,ar,imitation,-1.7518,-1.9439,LLM
+gpt-4o-mini,Egypt,818,en,imitation,-3.2639,-1.058,LLM
+gpt-4o-mini,France,250,en,imitation,6.3754,2.579,LLM
+gpt-4o-mini,France,250,fr,imitation,6.2225,2.7421,LLM
+gpt-4o-mini,Germany,276,de,imitation,3.5382,2.3797,LLM
+gpt-4o-mini,Germany,276,en,imitation,4.7818,2.9347,LLM
+gpt-4o-mini,Ghana,288,en-native,imitation,0.5892,-3.2021,LLM
+gpt-4o-mini,Guatemala,320,en,imitation,0.5729,-0.3812,LLM
+gpt-4o-mini,Guatemala,320,es,imitation,0.6197,-0.1722,LLM
+gpt-4o-mini,Haiti,332,en,imitation,-1.7237,-2.0084,LLM
+gpt-4o-mini,Haiti,332,fr,imitation,-1.1537,-0.873,LLM
+gpt-4o-mini,Hong Kong,344,en-native,imitation,1.3634,2.2953,LLM
+gpt-4o-mini,Hong Kong,344,zh-cn,imitation,3.4978,2.8374,LLM
+gpt-4o-mini,Hong Kong,344,zh-hk,imitation,1.3569,3.0137,LLM
+gpt-4o-mini,Iraq,368,ar,imitation,-2.3897,-0.8937,LLM
+gpt-4o-mini,Iraq,368,en,imitation,-3.2639,-1.058,LLM
+gpt-4o-mini,Ireland,372,en-native,imitation,4.8823,1.287,LLM
+gpt-4o-mini,Italy,380,en,imitation,3.9026,1.3395,LLM
+gpt-4o-mini,Italy,380,it,imitation,3.244,0.5475,LLM
+gpt-4o-mini,Japan,392,en,imitation,1.8628,-0.0582,LLM
+gpt-4o-mini,Japan,392,ja,imitation,2.7321,-0.2039,LLM
+gpt-4o-mini,Jordan,400,ar,imitation,-0.3518,-1.9658,LLM
+gpt-4o-mini,Jordan,400,en,imitation,-1.4647,-2.232,LLM
+gpt-4o-mini,Kazakhstan,398,en,imitation,0.5874,-1.1767,LLM
+gpt-4o-mini,Kazakhstan,398,ru,imitation,1.4159,-0.9193,LLM
+gpt-4o-mini,Kenya,404,en-native,imitation,-0.3623,-1.93,LLM
+gpt-4o-mini,"Korea, Republic of",410,en,imitation,0.4152,-0.6898,LLM
+gpt-4o-mini,"Korea, Republic of",410,ko,imitation,1.0605,1.4843,LLM
+gpt-4o-mini,Kuwait,414,ar,imitation,-0.3518,-1.9658,LLM
+gpt-4o-mini,Kuwait,414,en,imitation,-1.4647,-2.232,LLM
+gpt-4o-mini,Kyrgyzstan,417,en,imitation,0.2267,-1.4845,LLM
+gpt-4o-mini,Kyrgyzstan,417,ru,imitation,1.0833,-1.2916,LLM
+gpt-4o-mini,Lebanon,422,ar,imitation,-0.4032,1.6843,LLM
+gpt-4o-mini,Lebanon,422,en,imitation,-1.7493,0.9704,LLM
+gpt-4o-mini,Libya,434,ar,imitation,-1.0178,-0.8511,LLM
+gpt-4o-mini,Libya,434,en,imitation,-3.2639,-1.058,LLM
+gpt-4o-mini,Luxembourg,442,de,imitation,5.2155,0.9998,LLM
+gpt-4o-mini,Luxembourg,442,en,imitation,7.2291,0.354,LLM
+gpt-4o-mini,Luxembourg,442,fr,imitation,5.1112,0.7652,LLM
+gpt-4o-mini,Macao,446,en,imitation,1.1744,0.7751,LLM
+gpt-4o-mini,Macao,446,pt,imitation,1.4483,0.8197,LLM
+gpt-4o-mini,Macao,446,zh-cn,imitation,1.8447,0.7802,LLM
+gpt-4o-mini,Malaysia,458,en-native,imitation,-0.1185,-0.3147,LLM
+gpt-4o-mini,Mali,466,en,imitation,-1.4472,-2.2607,LLM
+gpt-4o-mini,Mali,466,fr,imitation,0.1783,-2.2865,LLM
+gpt-4o-mini,Malta,470,en-native,imitation,3.1507,-2.0505,LLM
+gpt-4o-mini,Mexico,484,en,imitation,2.1207,-0.9308,LLM
+gpt-4o-mini,Mexico,484,es,imitation,5.0732,-0.2289,LLM
+gpt-4o-mini,Morocco,504,ar,imitation,-0.141,-1.7995,LLM
+gpt-4o-mini,Morocco,504,en,imitation,-0.3693,-1.9372,LLM
+gpt-4o-mini,New Zealand,554,en-native,imitation,7.2466,0.3253,LLM
+gpt-4o-mini,Nicaragua,558,en,imitation,0.6772,-0.1466,LLM
+gpt-4o-mini,Nicaragua,558,es,imitation,2.4189,-1.3462,LLM
+gpt-4o-mini,Nigeria,566,en-native,imitation,-2.3897,-0.8937,LLM
+gpt-4o-mini,Pakistan,586,en-native,imitation,-2.3897,-0.8937,LLM
+gpt-4o-mini,Palestine,275,ar,imitation,0.2753,-0.2076,LLM
+gpt-4o-mini,Palestine,275,en,imitation,-0.392,0.6348,LLM
+gpt-4o-mini,Peru,604,en,imitation,1.3552,0.2593,LLM
+gpt-4o-mini,Peru,604,es,imitation,1.6465,-0.9791,LLM
+gpt-4o-mini,Philippines,608,en-native,imitation,1.7835,-2.6927,LLM
+gpt-4o-mini,Portugal,620,en,imitation,3.9266,0.5925,LLM
+gpt-4o-mini,Portugal,620,pt,imitation,6.0253,2.2354,LLM
+gpt-4o-mini,Puerto Rico,630,en-native,imitation,5.4507,-0.5742,LLM
+gpt-4o-mini,Puerto Rico,630,es,imitation,5.2301,-0.0802,LLM
+gpt-4o-mini,Qatar,634,ar,imitation,1.5688,-3.2545,LLM
+gpt-4o-mini,Qatar,634,en,imitation,-0.2849,-3.3664,LLM
+gpt-4o-mini,Russian Federation,643,en,imitation,-1.6313,0.4113,LLM
+gpt-4o-mini,Russian Federation,643,ru,imitation,0.2212,0.9745,LLM
+gpt-4o-mini,Rwanda,646,en-native,imitation,-0.5731,-2.0964,LLM
+gpt-4o-mini,Rwanda,646,fr,imitation,-0.7839,-2.2627,LLM
+gpt-4o-mini,Singapore,702,en-native,imitation,1.3978,-0.6006,LLM
+gpt-4o-mini,Singapore,702,zh-cn,imitation,1.2318,0.9992,LLM
+gpt-4o-mini,South Africa,710,en-native,imitation,2.9573,1.5725,LLM
+gpt-4o-mini,Spain,724,en,imitation,6.7954,2.2889,LLM
+gpt-4o-mini,Spain,724,es,imitation,5.6462,1.9579,LLM
+gpt-4o-mini,Switzerland,756,de,imitation,4.8058,2.1877,LLM
+gpt-4o-mini,Switzerland,756,en,imitation,6.028,0.2759,LLM
+gpt-4o-mini,Switzerland,756,fr,imitation,5.233,0.9711,LLM
+gpt-4o-mini,Switzerland,756,it,imitation,5.4331,-0.1108,LLM
+gpt-4o-mini,"Taiwan, Province of China",158,en,imitation,4.0269,0.1446,LLM
+gpt-4o-mini,"Taiwan, Province of China",158,zh-tw,imitation,4.7403,2.1398,LLM
+gpt-4o-mini,Trinidad and Tobago,780,en-native,imitation,4.5543,-1.786,LLM
+gpt-4o-mini,Tunisia,788,ar,imitation,0.0568,-0.1964,LLM
+gpt-4o-mini,Tunisia,788,en,imitation,-1.9857,-0.5323,LLM
+gpt-4o-mini,United Kingdom,826,en-native,imitation,5.7375,3.6292,LLM
+gpt-4o-mini,United States of America,840,en-native,imitation,5.1379,3.2195,LLM
+gpt-4o-mini,Uruguay,858,en,imitation,6.1646,2.4126,LLM
+gpt-4o-mini,Uruguay,858,es,imitation,6.3995,1.832,LLM
+gpt-4o-mini,Venezuela,862,en,imitation,-0.0473,1.6821,LLM
+gpt-4o-mini,Venezuela,862,es,imitation,1.0694,0.096,LLM
+gpt-4o-mini,Yemen,887,ar,imitation,-2.8192,-2.3032,LLM
+gpt-4o-mini,Yemen,887,en,imitation,-3.4747,-1.2243,LLM
+gpt-4o-mini,Zambia,894,en-native,imitation,-0.5731,-2.0964,LLM
+gpt-4o-mini,Zimbabwe,716,en-native,imitation,-0.5787,-0.5471,LLM
+gpt-5.1,Algeria,12,ar,imitation,-1.7412,-1.9797,LLM
+gpt-5.1,Algeria,12,en,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Argentina,32,en,imitation,2.7639,2.948,LLM
+gpt-5.1,Argentina,32,es,imitation,1.8498,1.4778,LLM
+gpt-5.1,Australia,36,en-native,imitation,5.0729,4.0826,LLM
+gpt-5.1,Austria,40,de,imitation,2.9978,3.8403,LLM
+gpt-5.1,Austria,40,en,imitation,3.3578,3.7036,LLM
+gpt-5.1,Belarus,112,en,imitation,-0.6095,0.8637,LLM
+gpt-5.1,Belarus,112,ru,imitation,-0.4246,0.9479,LLM
+gpt-5.1,Belgium,56,de,imitation,5.121,2.5886,LLM
+gpt-5.1,Belgium,56,en,imitation,5.2837,4.249,LLM
+gpt-5.1,Belgium,56,fr,imitation,3.0727,3.9848,LLM
+gpt-5.1,Bolivia,68,en,imitation,-0.19,-1.558,LLM
+gpt-5.1,Bolivia,68,es,imitation,-0.692,-1.3018,LLM
+gpt-5.1,Brazil,76,en,imitation,1.4231,0.3967,LLM
+gpt-5.1,Brazil,76,pt,imitation,0.8392,0.6996,LLM
+gpt-5.1,Burkina Faso,854,en,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Burkina Faso,854,fr,imitation,-1.7693,-1.9153,LLM
+gpt-5.1,Canada,124,en-native,imitation,4.9511,3.8767,LLM
+gpt-5.1,Canada,124,fr,imitation,6.2071,2.4679,LLM
+gpt-5.1,Chile,152,en,imitation,1.7428,2.2057,LLM
+gpt-5.1,Chile,152,es,imitation,1.1718,1.0719,LLM
+gpt-5.1,China,156,en,imitation,1.0391,0.7479,LLM
+gpt-5.1,China,156,zh-cn,imitation,1.2674,0.8856,LLM
+gpt-5.1,Colombia,170,en,imitation,1.8396,-2.0681,LLM
+gpt-5.1,Colombia,170,es,imitation,0.014,-0.9604,LLM
+gpt-5.1,Ecuador,218,en,imitation,-0.0743,-1.2107,LLM
+gpt-5.1,Ecuador,218,es,imitation,-0.4531,-1.1999,LLM
+gpt-5.1,Egypt,818,ar,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Egypt,818,en,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,France,250,en,imitation,3.9118,4.2064,LLM
+gpt-5.1,France,250,fr,imitation,3.9118,4.2064,LLM
+gpt-5.1,Germany,276,de,imitation,4.8516,3.9521,LLM
+gpt-5.1,Germany,276,en,imitation,3.7185,4.0114,LLM
+gpt-5.1,Ghana,288,en-native,imitation,-1.7693,-1.9153,LLM
+gpt-5.1,Guatemala,320,en,imitation,-0.3226,-3.0122,LLM
+gpt-5.1,Guatemala,320,es,imitation,-1.2635,-1.776,LLM
+gpt-5.1,Haiti,332,en,imitation,-1.7412,-1.9797,LLM
+gpt-5.1,Haiti,332,fr,imitation,-1.5304,-1.8134,LLM
+gpt-5.1,Hong Kong,344,en-native,imitation,0.4363,2.9442,LLM
+gpt-5.1,Hong Kong,344,zh-cn,imitation,1.3855,4.3571,LLM
+gpt-5.1,Hong Kong,344,zh-hk,imitation,0.4538,2.9156,LLM
+gpt-5.1,Iraq,368,ar,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Iraq,368,en,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Ireland,372,en-native,imitation,6.4362,1.3198,LLM
+gpt-5.1,Italy,380,en,imitation,1.6672,3.1046,LLM
+gpt-5.1,Italy,380,it,imitation,1.7153,1.6106,LLM
+gpt-5.1,Japan,392,en,imitation,1.1072,2.1396,LLM
+gpt-5.1,Japan,392,ja,imitation,0.9678,1.9623,LLM
+gpt-5.1,Jordan,400,ar,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Jordan,400,en,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Kazakhstan,398,en,imitation,-1.1803,-1.4697,LLM
+gpt-5.1,Kazakhstan,398,ru,imitation,-0.8196,-1.1619,LLM
+gpt-5.1,Kenya,404,en-native,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,"Korea, Republic of",410,en,imitation,-0.1857,1.0497,LLM
+gpt-5.1,"Korea, Republic of",410,ko,imitation,1.103,1.5396,LLM
+gpt-5.1,Kuwait,414,ar,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Kuwait,414,en,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Kyrgyzstan,417,en,imitation,-1.3196,-1.647,LLM
+gpt-5.1,Kyrgyzstan,417,ru,imitation,-1.9576,-0.5968,LLM
+gpt-5.1,Lebanon,422,ar,imitation,-1.5794,-0.3177,LLM
+gpt-5.1,Lebanon,422,en,imitation,-3.0155,0.7435,LLM
+gpt-5.1,Libya,434,ar,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Libya,434,en,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Luxembourg,442,de,imitation,4.4466,1.2186,LLM
+gpt-5.1,Luxembourg,442,en,imitation,5.7002,1.7842,LLM
+gpt-5.1,Luxembourg,442,fr,imitation,4.7805,1.1395,LLM
+gpt-5.1,Macao,446,en,imitation,-0.0428,1.1841,LLM
+gpt-5.1,Macao,446,pt,imitation,-0.0406,0.8812,LLM
+gpt-5.1,Macao,446,zh-cn,imitation,0.4265,1.1207,LLM
+gpt-5.1,Malaysia,458,en-native,imitation,-1.8358,-0.3909,LLM
+gpt-5.1,Mali,466,en,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Mali,466,fr,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Malta,470,en-native,imitation,0.9267,-0.8964,LLM
+gpt-5.1,Mexico,484,en,imitation,0.6318,-0.8693,LLM
+gpt-5.1,Mexico,484,es,imitation,0.014,-0.9604,LLM
+gpt-5.1,Morocco,504,ar,imitation,-1.7237,-2.0084,LLM
+gpt-5.1,Morocco,504,en,imitation,-1.7412,-1.9797,LLM
+gpt-5.1,New Zealand,554,en-native,imitation,5.0729,4.0826,LLM
+gpt-5.1,Nicaragua,558,en,imitation,-0.6458,-1.6849,LLM
+gpt-5.1,Nicaragua,558,es,imitation,-1.2635,-1.776,LLM
+gpt-5.1,Nigeria,566,en-native,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Palestine,275,ar,imitation,-2.9491,-0.7809,LLM
+gpt-5.1,Palestine,275,en,imitation,-0.1438,-1.9411,LLM
+gpt-5.1,Peru,604,en,imitation,-0.9134,-1.4324,LLM
+gpt-5.1,Peru,604,es,imitation,-0.4356,-1.2286,LLM
+gpt-5.1,Philippines,608,en-native,imitation,-1.2635,-1.776,LLM
+gpt-5.1,Portugal,620,en,imitation,2.8683,3.1827,LLM
+gpt-5.1,Portugal,620,pt,imitation,2.1234,2.6545,LLM
+gpt-5.1,Puerto Rico,630,en-native,imitation,1.8503,-0.8199,LLM
+gpt-5.1,Puerto Rico,630,es,imitation,0.2529,-0.8585,LLM
+gpt-5.1,Qatar,634,ar,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Qatar,634,en,imitation,-0.8003,-3.216,LLM
+gpt-5.1,Russian Federation,643,en,imitation,-0.1368,-0.446,LLM
+gpt-5.1,Russian Federation,643,ru,imitation,1.1585,1.7006,LLM
+gpt-5.1,Rwanda,646,en-native,imitation,-1.7412,-1.9797,LLM
+gpt-5.1,Rwanda,646,fr,imitation,-1.5304,-1.8134,LLM
+gpt-5.1,Singapore,702,en-native,imitation,0.4474,-0.3105,LLM
+gpt-5.1,Singapore,702,zh-cn,imitation,0.9426,-0.1354,LLM
+gpt-5.1,South Africa,710,en-native,imitation,-0.4237,0.292,LLM
+gpt-5.1,Spain,724,en,imitation,3.5791,3.8341,LLM
+gpt-5.1,Spain,724,es,imitation,3.5791,3.8341,LLM
+gpt-5.1,Switzerland,756,de,imitation,4.9991,2.3827,LLM
+gpt-5.1,Switzerland,756,en,imitation,6.1484,2.7137,LLM
+gpt-5.1,Switzerland,756,fr,imitation,4.5392,2.4385,LLM
+gpt-5.1,Switzerland,756,it,imitation,6.1484,2.7137,LLM
+gpt-5.1,"Taiwan, Province of China",158,en,imitation,2.9386,1.97,LLM
+gpt-5.1,"Taiwan, Province of China",158,zh-tw,imitation,2.034,3.2711,LLM
+gpt-5.1,Trinidad and Tobago,780,en-native,imitation,-0.9134,-1.4324,LLM
+gpt-5.1,Tunisia,788,ar,imitation,-1.064,0.2855,LLM
+gpt-5.1,Tunisia,788,en,imitation,-1.4142,-0.0582,LLM
+gpt-5.1,United Kingdom,826,en-native,imitation,3.701,4.0401,LLM
+gpt-5.1,United States of America,840,en-native,imitation,2.9978,1.5365,LLM
+gpt-5.1,Uruguay,858,en,imitation,3.4621,3.9382,LLM
+gpt-5.1,Uruguay,858,es,imitation,3.2715,2.6306,LLM
+gpt-5.1,Venezuela,862,en,imitation,-0.0542,1.6749,LLM
+gpt-5.1,Venezuela,862,es,imitation,0.014,-0.9604,LLM
+gpt-5.1,Yemen,887,ar,imitation,-3.1599,-0.9472,LLM
+gpt-5.1,Yemen,887,en,imitation,-3.1599,-0.9472,LLM
+gpt-5.1,Zambia,894,en-native,imitation,-1.9801,-2.0816,LLM
+gpt-5.1,Zimbabwe,716,en-native,imitation,-1.9801,-2.0816,LLM
+grok-4.1-fast,Algeria,12,ar,imitation,-3.3707,-1.1136,LLM
+grok-4.1-fast,Algeria,12,en,imitation,-4.2273,-1.3065,LLM
+grok-4.1-fast,Argentina,32,en,imitation,1.2127,2.5263,LLM
+grok-4.1-fast,Argentina,32,es,imitation,-0.0655,2.0007,LLM
+grok-4.1-fast,Australia,36,en-native,imitation,4.3096,2.7522,LLM
+grok-4.1-fast,Austria,40,de,imitation,1.6844,2.2679,LLM
+grok-4.1-fast,Austria,40,en,imitation,1.0824,3.2591,LLM
+grok-4.1-fast,Belarus,112,en,imitation,-3.4668,1.4211,LLM
+grok-4.1-fast,Belarus,112,ru,imitation,-3.8323,0.8032,LLM
+grok-4.1-fast,Belgium,56,de,imitation,1.8647,3.8996,LLM
+grok-4.1-fast,Belgium,56,en,imitation,2.7213,4.0925,LLM
+grok-4.1-fast,Belgium,56,fr,imitation,1.9865,4.1055,LLM
+grok-4.1-fast,Bolivia,68,en,imitation,-3.3482,0.3712,LLM
+grok-4.1-fast,Bolivia,68,es,imitation,-2.3792,-0.9295,LLM
+grok-4.1-fast,Brazil,76,en,imitation,-0.1,-0.0895,LLM
+grok-4.1-fast,Brazil,76,pt,imitation,-0.8347,-0.0765,LLM
+grok-4.1-fast,Burkina Faso,854,en,imitation,-3.7978,0.103,LLM
+grok-4.1-fast,Burkina Faso,854,fr,imitation,-3.7978,0.103,LLM
+grok-4.1-fast,Canada,124,en-native,imitation,4.5204,2.9185,LLM
+grok-4.1-fast,Canada,124,fr,imitation,4.8436,1.5912,LLM
+grok-4.1-fast,Chile,152,en,imitation,0.3895,0.4314,LLM
+grok-4.1-fast,Chile,152,es,imitation,-0.5151,1.7325,LLM
+grok-4.1-fast,China,156,en,imitation,-0.4122,0.4553,LLM
+grok-4.1-fast,China,156,zh-cn,imitation,0.048,0.6877,LLM
+grok-4.1-fast,Colombia,170,en,imitation,-1.0352,-1.6383,LLM
+grok-4.1-fast,Colombia,170,es,imitation,-1.9295,-0.6613,LLM
+grok-4.1-fast,Ecuador,218,en,imitation,-1.912,-0.69,LLM
+grok-4.1-fast,Ecuador,218,es,imitation,-1.9295,-0.6613,LLM
+grok-4.1-fast,Egypt,818,ar,imitation,-3.0475,-2.4409,LLM
+grok-4.1-fast,Egypt,818,en,imitation,-3.3707,-1.1136,LLM
+grok-4.1-fast,France,250,en,imitation,2.7213,4.0925,LLM
+grok-4.1-fast,France,250,fr,imitation,2.2148,4.2432,LLM
+grok-4.1-fast,Germany,276,de,imitation,1.8822,3.8709,LLM
+grok-4.1-fast,Germany,276,en,imitation,2.2227,5.32,LLM
+grok-4.1-fast,Ghana,288,en-native,imitation,-2.1909,-2.248,LLM
+grok-4.1-fast,Guatemala,320,en,imitation,-2.6181,-1.0314,LLM
+grok-4.1-fast,Guatemala,320,es,imitation,-2.6181,-1.0314,LLM
+grok-4.1-fast,Haiti,332,en,imitation,-3.7803,0.0743,LLM
+grok-4.1-fast,Haiti,332,fr,imitation,-3.7803,0.0743,LLM
+grok-4.1-fast,Hong Kong,344,en-native,imitation,-1.8487,3.6858,LLM
+grok-4.1-fast,Hong Kong,344,zh-cn,imitation,-0.4179,4.4622,LLM
+grok-4.1-fast,Hong Kong,344,zh-hk,imitation,-0.5828,6.0418,LLM
+grok-4.1-fast,Iraq,368,ar,imitation,-4.6544,-0.09,LLM
+grok-4.1-fast,Iraq,368,en,imitation,-4.6544,-0.09,LLM
+grok-4.1-fast,Ireland,372,en-native,imitation,3.1723,1.458,LLM
+grok-4.1-fast,Italy,380,en,imitation,0.372,0.4601,LLM
+grok-4.1-fast,Italy,380,it,imitation,1.1543,1.1006,LLM
+grok-4.1-fast,Japan,392,en,imitation,-2.3952,2.3804,LLM
+grok-4.1-fast,Japan,392,ja,imitation,0.729,1.8604,LLM
+grok-4.1-fast,Jordan,400,ar,imitation,-2.1909,-2.248,LLM
+grok-4.1-fast,Jordan,400,en,imitation,-3.0475,-2.4409,LLM
+grok-4.1-fast,Kazakhstan,398,en,imitation,-3.527,-0.6193,LLM
+grok-4.1-fast,Kazakhstan,398,ru,imitation,-2.593,-1.8627,LLM
+grok-4.1-fast,Kenya,404,en-native,imitation,-3.3707,-1.1136,LLM
+grok-4.1-fast,"Korea, Republic of",410,en,imitation,-1.7004,0.9113,LLM
+grok-4.1-fast,"Korea, Republic of",410,ko,imitation,-1.105,0.721,LLM
+grok-4.1-fast,Kuwait,414,ar,imitation,-1.8677,-3.5753,LLM
+grok-4.1-fast,Kuwait,414,en,imitation,-3.0475,-2.4409,LLM
+grok-4.1-fast,Kyrgyzstan,417,en,imitation,-3.1599,-0.9472,LLM
+grok-4.1-fast,Kyrgyzstan,417,ru,imitation,-2.4073,-0.865,LLM
+grok-4.1-fast,Lebanon,422,ar,imitation,-4.0622,2.9799,LLM
+grok-4.1-fast,Lebanon,422,en,imitation,-3.7978,0.103,LLM
+grok-4.1-fast,Libya,434,ar,imitation,-4.2273,-1.3065,LLM
+grok-4.1-fast,Libya,434,en,imitation,-4.6544,-0.09,LLM
+grok-4.1-fast,Luxembourg,442,de,imitation,4.7698,-0.1087,LLM
+grok-4.1-fast,Luxembourg,442,en,imitation,5.4894,1.6178,LLM
+grok-4.1-fast,Luxembourg,442,fr,imitation,4.8916,0.0972,LLM
+grok-4.1-fast,Macao,446,en,imitation,-1.7764,0.736,LLM
+grok-4.1-fast,Macao,446,pt,imitation,-1.8044,0.8005,LLM
+grok-4.1-fast,Macao,446,zh-cn,imitation,-1.0878,1.1061,LLM
+grok-4.1-fast,Malaysia,458,en-native,imitation,-2.1909,-2.248,LLM
+grok-4.1-fast,Mali,466,en,imitation,-3.7978,0.103,LLM
+grok-4.1-fast,Mali,466,fr,imitation,-4.6544,-0.09,LLM
+grok-4.1-fast,Malta,470,en-native,imitation,0.1164,-1.4724,LLM
+grok-4.1-fast,Mexico,484,en,imitation,-1.2635,-1.776,LLM
+grok-4.1-fast,Mexico,484,es,imitation,-1.2916,-1.7115,LLM
+grok-4.1-fast,Morocco,504,ar,imitation,-2.1909,-2.248,LLM
+grok-4.1-fast,Morocco,504,en,imitation,-2.1909,-2.248,LLM
+grok-4.1-fast,New Zealand,554,en-native,imitation,5.6219,3.072,LLM
+grok-4.1-fast,Nicaragua,558,en,imitation,-2.6181,-1.0314,LLM
+grok-4.1-fast,Nicaragua,558,es,imitation,-2.6181,-1.0314,LLM
+grok-4.1-fast,Nigeria,566,en-native,imitation,-3.7978,0.103,LLM
+grok-4.1-fast,Pakistan,586,en-native,imitation,-3.3707,-1.1136,LLM
+grok-4.1-fast,Palestine,275,ar,imitation,-2.5446,0.5447,LLM
+grok-4.1-fast,Palestine,275,en,imitation,-2.4966,-0.9493,LLM
+grok-4.1-fast,Peru,604,en,imitation,-2.3617,-0.9582,LLM
+grok-4.1-fast,Peru,604,es,imitation,-1.9295,-0.6613,LLM
+grok-4.1-fast,Philippines,608,en-native,imitation,-1.7132,-2.0442,LLM
+grok-4.1-fast,Portugal,620,en,imitation,0.7474,1.1759,LLM
+grok-4.1-fast,Portugal,620,pt,imitation,1.0038,1.2491,LLM
+grok-4.1-fast,Puerto Rico,630,en-native,imitation,-1.4849,-1.9065,LLM
+grok-4.1-fast,Puerto Rico,630,es,imitation,-0.2663,-1.8571,LLM
+grok-4.1-fast,Qatar,634,ar,imitation,-1.8677,-3.5753,LLM
+grok-4.1-fast,Qatar,634,en,imitation,-1.8677,-3.5753,LLM
+grok-4.1-fast,Russian Federation,643,en,imitation,-2.8288,0.3709,LLM
+grok-4.1-fast,Russian Federation,643,ru,imitation,-3.3701,-0.4706,LLM
+grok-4.1-fast,Rwanda,646,en-native,imitation,-3.03,-2.4696,LLM
+grok-4.1-fast,Rwanda,646,fr,imitation,-3.0475,-2.4409,LLM
+grok-4.1-fast,Singapore,702,en-native,imitation,-2.004,-1.4171,LLM
+grok-4.1-fast,Singapore,702,zh-cn,imitation,-0.5717,-0.15,LLM
+grok-4.1-fast,South Africa,710,en-native,imitation,-2.3963,0.8216,LLM
+grok-4.1-fast,Spain,724,en,imitation,3.3508,3.6964,LLM
+grok-4.1-fast,Spain,724,es,imitation,2.2834,3.3371,LLM
+grok-4.1-fast,Switzerland,756,de,imitation,4.2886,-0.1642,LLM
+grok-4.1-fast,Switzerland,756,en,imitation,5.2786,1.4515,LLM
+grok-4.1-fast,Switzerland,756,fr,imitation,5.6125,1.3724,LLM
+grok-4.1-fast,Switzerland,756,it,imitation,5.4894,1.6178,LLM
+grok-4.1-fast,"Taiwan, Province of China",158,en,imitation,1.2123,0.5149,LLM
+grok-4.1-fast,"Taiwan, Province of China",158,zh-tw,imitation,3.1005,3.4819,LLM
+grok-4.1-fast,Trinidad and Tobago,780,en-native,imitation,-1.9626,-2.1103,LLM
+grok-4.1-fast,Tunisia,788,ar,imitation,-3.1599,-0.9472,LLM
+grok-4.1-fast,Tunisia,788,en,imitation,-3.587,0.2693,LLM
+grok-4.1-fast,United Kingdom,826,en-native,imitation,2.5105,3.9262,LLM
+grok-4.1-fast,United States of America,840,en-native,imitation,3.317,1.0494,LLM
+grok-4.1-fast,Uruguay,858,en,imitation,3.8893,2.7216,LLM
+grok-4.1-fast,Uruguay,858,es,imitation,3.0782,2.4355,LLM
+grok-4.1-fast,Venezuela,862,en,imitation,-3.7578,1.5591,LLM
+grok-4.1-fast,Venezuela,862,es,imitation,-3.7884,3.0244,LLM
+grok-4.1-fast,Yemen,887,ar,imitation,-5.407,-0.1722,LLM
+grok-4.1-fast,Yemen,887,en,imitation,-4.6544,-0.09,LLM
+grok-4.1-fast,Zambia,894,en-native,imitation,-3.7978,0.103,LLM
+grok-4.1-fast,Zimbabwe,716,en-native,imitation,-3.7978,0.103,LLM
+kimi-k2,Algeria,12,ar,imitation,-1.3911,-1.6361,LLM
+kimi-k2,Algeria,12,en,imitation,-0.7628,-1.5808,LLM
+kimi-k2,Argentina,32,en,imitation,2.8304,1.4237,LLM
+kimi-k2,Argentina,32,es,imitation,3.0203,3.0213,LLM
+kimi-k2,Australia,36,en-native,imitation,6.0476,2.5167,LLM
+kimi-k2,Austria,40,de,imitation,2.6185,1.6261,LLM
+kimi-k2,Austria,40,en,imitation,4.3081,3.4135,LLM
+kimi-k2,Belarus,112,en,imitation,-1.1249,0.2606,LLM
+kimi-k2,Belarus,112,ru,imitation,-0.6683,0.536,LLM
+kimi-k2,Belgium,56,de,imitation,4.9037,3.1406,LLM
+kimi-k2,Belgium,56,en,imitation,5.8312,3.8996,LLM
+kimi-k2,Belgium,56,fr,imitation,4.2579,3.114,LLM
+kimi-k2,Bolivia,68,en,imitation,-0.0462,-1.2752,LLM
+kimi-k2,Bolivia,68,es,imitation,1.4287,-1.1526,LLM
+kimi-k2,Brazil,76,en,imitation,0.8506,0.6621,LLM
+kimi-k2,Brazil,76,pt,imitation,1.688,-0.1842,LLM
+kimi-k2,Burkina Faso,854,en,imitation,-1.7237,-2.0084,LLM
+kimi-k2,Burkina Faso,854,fr,imitation,-1.7237,-2.0084,LLM
+kimi-k2,Canada,124,en-native,imitation,6.0701,4.0015,LLM
+kimi-k2,Canada,124,fr,imitation,6.7321,2.2043,LLM
+kimi-k2,Chile,152,en,imitation,1.7964,-0.8376,LLM
+kimi-k2,Chile,152,es,imitation,3.1368,-0.5823,LLM
+kimi-k2,China,156,en,imitation,-0.7343,0.0472,LLM
+kimi-k2,China,156,zh-cn,imitation,0.2,0.5263,LLM
+kimi-k2,Colombia,170,en,imitation,1.8571,-2.0968,LLM
+kimi-k2,Colombia,170,es,imitation,1.0556,-0.6833,LLM
+kimi-k2,Ecuador,218,en,imitation,0.2102,-1.202,LLM
+kimi-k2,Ecuador,218,es,imitation,0.4315,-1.0715,LLM
+kimi-k2,Egypt,818,ar,imitation,-1.3911,-1.6361,LLM
+kimi-k2,Egypt,818,en,imitation,-1.7412,-1.9797,LLM
+kimi-k2,France,250,en,imitation,4.4593,3.8571,LLM
+kimi-k2,France,250,fr,imitation,3.9293,4.1778,LLM
+kimi-k2,Germany,276,de,imitation,3.2688,3.7432,LLM
+kimi-k2,Germany,276,en,imitation,5.8593,3.8352,LLM
+kimi-k2,Ghana,288,en-native,imitation,-0.8846,-1.7868,LLM
+kimi-k2,Guatemala,320,en,imitation,-0.6458,-1.6849,LLM
+kimi-k2,Guatemala,320,es,imitation,-0.8853,-1.4968,LLM
+kimi-k2,Haiti,332,en,imitation,-0.8846,-1.7868,LLM
+kimi-k2,Haiti,332,fr,imitation,-2.9035,-0.874,LLM
+kimi-k2,Hong Kong,344,en-native,imitation,0.3249,1.499,LLM
+kimi-k2,Hong Kong,344,zh-cn,imitation,1.1937,3.5008,LLM
+kimi-k2,Hong Kong,344,zh-hk,imitation,0.9788,2.6519,LLM
+kimi-k2,Iraq,368,ar,imitation,-1.7412,-1.9797,LLM
+kimi-k2,Iraq,368,en,imitation,-1.9801,-2.0816,LLM
+kimi-k2,Ireland,372,en-native,imitation,5.5427,1.7216,LLM
+kimi-k2,Italy,380,en,imitation,2.7414,1.4633,LLM
+kimi-k2,Italy,380,it,imitation,3.0003,0.1356,LLM
+kimi-k2,Japan,392,en,imitation,0.2849,0.0429,LLM
+kimi-k2,Japan,392,ja,imitation,0.9734,0.413,LLM
+kimi-k2,Jordan,400,ar,imitation,-1.6019,-1.8024,LLM
+kimi-k2,Jordan,400,en,imitation,-1.7412,-1.9797,LLM
+kimi-k2,Kazakhstan,398,en,imitation,-1.1474,-1.2242,LLM
+kimi-k2,Kazakhstan,398,ru,imitation,-0.8476,-1.0974,LLM
+kimi-k2,Kenya,404,en-native,imitation,-0.8671,-1.8154,LLM
+kimi-k2,"Korea, Republic of",410,en,imitation,-0.4212,-0.2985,LLM
+kimi-k2,"Korea, Republic of",410,ko,imitation,-0.3531,1.0931,LLM
+kimi-k2,Kuwait,414,ar,imitation,-1.9801,-2.0816,LLM
+kimi-k2,Kuwait,414,en,imitation,-0.8003,-3.216,LLM
+kimi-k2,Kyrgyzstan,417,en,imitation,-1.6019,-1.8024,LLM
+kimi-k2,Kyrgyzstan,417,ru,imitation,-1.3911,-1.6361,LLM
+kimi-k2,Lebanon,422,ar,imitation,-1.6274,1.1763,LLM
+kimi-k2,Lebanon,422,en,imitation,-0.7628,-1.5808,LLM
+kimi-k2,Libya,434,ar,imitation,-2.0281,-0.5876,LLM
+kimi-k2,Libya,434,en,imitation,-1.9801,-2.0816,LLM
+kimi-k2,Luxembourg,442,de,imitation,6.0057,-0.0054,LLM
+kimi-k2,Luxembourg,442,en,imitation,5.72,3.6579,LLM
+kimi-k2,Luxembourg,442,fr,imitation,6.6236,0.0031,LLM
+kimi-k2,Macao,446,en,imitation,0.7297,0.0011,LLM
+kimi-k2,Macao,446,pt,imitation,2.7321,-0.2039,LLM
+kimi-k2,Macao,446,zh-cn,imitation,0.7318,-0.3018,LLM
+kimi-k2,Malaysia,458,en-native,imitation,-1.3911,-1.6361,LLM
+kimi-k2,Mali,466,en,imitation,-0.6081,-2.039,LLM
+kimi-k2,Mali,466,fr,imitation,-0.5906,-2.0677,LLM
+kimi-k2,Malta,470,en-native,imitation,1.821,-1.0576,LLM
+kimi-k2,Mexico,484,en,imitation,0.6598,-0.9338,LLM
+kimi-k2,Mexico,484,es,imitation,-0.1687,-1.1912,LLM
+kimi-k2,Morocco,504,ar,imitation,-1.4086,-1.6074,LLM
+kimi-k2,Morocco,504,en,imitation,-1.7412,-1.9797,LLM
+kimi-k2,New Zealand,554,en-native,imitation,6.4973,2.7849,LLM
+kimi-k2,Nicaragua,558,en,imitation,-0.5064,-1.5076,LLM
+kimi-k2,Nicaragua,558,es,imitation,-1.0961,-1.6632,LLM
+kimi-k2,Nigeria,566,en-native,imitation,-0.8846,-1.7868,LLM
+kimi-k2,Pakistan,586,en-native,imitation,-1.7412,-1.9797,LLM
+kimi-k2,Palestine,275,ar,imitation,-1.7998,-0.4499,LLM
+kimi-k2,Palestine,275,en,imitation,-0.1051,-0.7573,LLM
+kimi-k2,Peru,604,en,imitation,0.421,-1.0357,LLM
+kimi-k2,Peru,604,es,imitation,-0.2507,-1.1445,LLM
+kimi-k2,Philippines,608,en-native,imitation,0.3272,-1.3061,LLM
+kimi-k2,Portugal,620,en,imitation,2.9522,1.6296,LLM
+kimi-k2,Portugal,620,pt,imitation,5.5908,0.2276,LLM
+kimi-k2,Puerto Rico,630,en-native,imitation,2.0892,-0.718,LLM
+kimi-k2,Puerto Rico,630,es,imitation,2.0014,-1.1298,LLM
+kimi-k2,Qatar,634,ar,imitation,0.5716,-3.1734,LLM
+kimi-k2,Qatar,634,en,imitation,0.3608,-3.3398,LLM
+kimi-k2,Russian Federation,643,en,imitation,-0.0864,-0.2291,LLM
+kimi-k2,Russian Federation,643,ru,imitation,-0.4519,-0.8469,LLM
+kimi-k2,Rwanda,646,en-native,imitation,-1.7237,-2.0084,LLM
+kimi-k2,Rwanda,646,fr,imitation,-1.6019,-1.8024,LLM
+kimi-k2,Singapore,702,en-native,imitation,0.2472,-0.5127,LLM
+kimi-k2,Singapore,702,zh-cn,imitation,2.5583,0.319,LLM
+kimi-k2,South Africa,710,en-native,imitation,1.2383,-0.4525,LLM
+kimi-k2,Spain,724,en,imitation,3.5566,2.3493,LLM
+kimi-k2,Spain,724,es,imitation,3.9173,2.6572,LLM
+kimi-k2,Switzerland,756,de,imitation,7.1296,0.4294,LLM
+kimi-k2,Switzerland,756,en,imitation,5.6445,2.9863,LLM
+kimi-k2,Switzerland,756,fr,imitation,7.7251,0.1566,LLM
+kimi-k2,Switzerland,756,it,imitation,7.5143,-0.0098,LLM
+kimi-k2,"Taiwan, Province of China",158,en,imitation,1.1842,0.5794,LLM
+kimi-k2,"Taiwan, Province of China",158,zh-tw,imitation,3.1168,0.6085,LLM
+kimi-k2,Trinidad and Tobago,780,en-native,imitation,1.3619,-2.2719,LLM
+kimi-k2,Tunisia,788,ar,imitation,-1.8838,1.1031,LLM
+kimi-k2,Tunisia,788,en,imitation,-0.7628,-1.5808,LLM
+kimi-k2,United Kingdom,826,en-native,imitation,5.6029,3.762,LLM
+kimi-k2,United States of America,840,en-native,imitation,4.1883,1.6504,LLM
+kimi-k2,Uruguay,858,en,imitation,4.6849,1.98,LLM
+kimi-k2,Uruguay,858,es,imitation,6.1646,2.4126,LLM
+kimi-k2,Venezuela,862,en,imitation,0.6598,-0.9338,LLM
+kimi-k2,Venezuela,862,es,imitation,-1.6468,1.3728,LLM
+kimi-k2,Yemen,887,ar,imitation,-1.9801,-2.0816,LLM
+kimi-k2,Yemen,887,en,imitation,-2.1909,-2.248,LLM
+kimi-k2,Zambia,894,en-native,imitation,-0.8671,-1.8154,LLM
+kimi-k2,Zimbabwe,716,en-native,imitation,-0.8671,-1.8154,LLM
+llama-3.2-3b-instruct,Algeria,12,ar,imitation,1.9058,3.4164,LLM
+llama-3.2-3b-instruct,Algeria,12,en,imitation,1.3212,1.6342,LLM
+llama-3.2-3b-instruct,Argentina,32,en,imitation,2.333,2.1998,LLM
+llama-3.2-3b-instruct,Argentina,32,es,imitation,1.8553,1.9961,LLM
+llama-3.2-3b-instruct,Australia,36,en-native,imitation,4.1331,1.8567,LLM
+llama-3.2-3b-instruct,Austria,40,de,imitation,3.7355,0.777,LLM
+llama-3.2-3b-instruct,Austria,40,en,imitation,2.357,1.4528,LLM
+llama-3.2-3b-instruct,Belarus,112,en,imitation,1.3037,1.6629,LLM
+llama-3.2-3b-instruct,Belarus,112,ru,imitation,2.7436,1.8428,LLM
+llama-3.2-3b-instruct,Belgium,56,de,imitation,3.9792,1.1889,LLM
+llama-3.2-3b-instruct,Belgium,56,en,imitation,2.9953,1.4904,LLM
+llama-3.2-3b-instruct,Belgium,56,fr,imitation,1.8959,1.7956,LLM
+llama-3.2-3b-instruct,Bolivia,68,en,imitation,0.8996,1.3015,LLM
+llama-3.2-3b-instruct,Bolivia,68,es,imitation,0.1444,4.2362,LLM
+llama-3.2-3b-instruct,Brazil,76,en,imitation,2.357,1.4528,LLM
+llama-3.2-3b-instruct,Brazil,76,pt,imitation,1.8793,1.249,LLM
+llama-3.2-3b-instruct,Burkina Faso,854,en,imitation,1.3212,1.6342,LLM
+llama-3.2-3b-instruct,Burkina Faso,854,fr,imitation,3.0241,0.172,LLM
+llama-3.2-3b-instruct,Canada,124,en-native,imitation,3.2744,1.1366,LLM
+llama-3.2-3b-instruct,Canada,124,fr,imitation,1.621,1.9172,LLM
+llama-3.2-3b-instruct,Chile,152,en,imitation,1.8793,1.249,LLM
+llama-3.2-3b-instruct,Chile,152,es,imitation,0.8152,3.4316,LLM
+llama-3.2-3b-instruct,China,156,en,imitation,1.7814,1.8666,LLM
+llama-3.2-3b-instruct,China,156,zh-cn,imitation,1.3543,3.0832,LLM
+llama-3.2-3b-instruct,Colombia,170,en,imitation,1.8793,1.249,LLM
+llama-3.2-3b-instruct,Colombia,170,es,imitation,1.9033,0.502,LLM
+llama-3.2-3b-instruct,Ecuador,218,en,imitation,1.8793,1.249,LLM
+llama-3.2-3b-instruct,Ecuador,218,es,imitation,1.8793,1.249,LLM
+llama-3.2-3b-instruct,Egypt,818,ar,imitation,0.9262,3.4688,LLM
+llama-3.2-3b-instruct,Egypt,818,en,imitation,2.638,2.0596,LLM
+llama-3.2-3b-instruct,France,250,en,imitation,4.1506,1.8281,LLM
+llama-3.2-3b-instruct,France,250,fr,imitation,2.3231,0.579,LLM
+llama-3.2-3b-instruct,Germany,276,de,imitation,3.3083,1.9936,LLM
+llama-3.2-3b-instruct,Germany,276,en,imitation,3.9727,1.9073,LLM
+llama-3.2-3b-instruct,Ghana,288,en-native,imitation,1.3037,1.6629,LLM
+llama-3.2-3b-instruct,Guatemala,320,en,imitation,1.3774,1.5053,LLM
+llama-3.2-3b-instruct,Guatemala,320,es,imitation,0.9987,1.8031,LLM
+llama-3.2-3b-instruct,Haiti,332,en,imitation,1.7814,1.8666,LLM
+llama-3.2-3b-instruct,Haiti,332,fr,imitation,3.0591,0.1147,LLM
+llama-3.2-3b-instruct,Hong Kong,344,en-native,imitation,1.7814,1.8666,LLM
+llama-3.2-3b-instruct,Hong Kong,344,zh-cn,imitation,1.4346,2.4943,LLM
+llama-3.2-3b-instruct,Hong Kong,344,zh-hk,imitation,1.6783,2.9062,LLM
+llama-3.2-3b-instruct,Iraq,368,ar,imitation,1.3303,3.8302,LLM
+llama-3.2-3b-instruct,Iraq,368,en,imitation,0.78,2.1968,LLM
+llama-3.2-3b-instruct,Ireland,372,en-native,imitation,4.1506,1.8281,LLM
+llama-3.2-3b-instruct,Italy,380,en,imitation,4.1506,1.8281,LLM
+llama-3.2-3b-instruct,Italy,380,it,imitation,2.7253,2.2948,LLM
+llama-3.2-3b-instruct,Japan,392,en,imitation,1.799,1.838,LLM
+llama-3.2-3b-instruct,Japan,392,ja,imitation,4.604,2.4906,LLM
+llama-3.2-3b-instruct,Jordan,400,ar,imitation,0.9262,3.4688,LLM
+llama-3.2-3b-instruct,Jordan,400,en,imitation,1.799,1.838,LLM
+llama-3.2-3b-instruct,Kazakhstan,398,en,imitation,0.8216,1.4211,LLM
+llama-3.2-3b-instruct,Kazakhstan,398,ru,imitation,1.8948,2.7267,LLM
+llama-3.2-3b-instruct,Kenya,404,en-native,imitation,1.799,1.838,LLM
+llama-3.2-3b-instruct,"Korea, Republic of",410,en,imitation,2.638,2.0596,LLM
+llama-3.2-3b-instruct,"Korea, Republic of",410,ko,imitation,2.7851,1.0671,LLM
+llama-3.2-3b-instruct,Kuwait,414,ar,imitation,1.54,4.9785,LLM
+llama-3.2-3b-instruct,Kuwait,414,en,imitation,1.7814,1.8666,LLM
+llama-3.2-3b-instruct,Kyrgyzstan,417,en,imitation,0.4669,4.0673,LLM
+llama-3.2-3b-instruct,Kyrgyzstan,417,ru,imitation,1.8443,1.3064,LLM
+llama-3.2-3b-instruct,Lebanon,422,ar,imitation,0.1736,3.3866,LLM
+llama-3.2-3b-instruct,Lebanon,422,en,imitation,1.7814,1.8666,LLM
+llama-3.2-3b-instruct,Libya,434,ar,imitation,-0.2711,4.6318,LLM
+llama-3.2-3b-instruct,Libya,434,en,imitation,1.7399,2.6423,LLM
+llama-3.2-3b-instruct,Luxembourg,442,de,imitation,3.7355,0.777,LLM
+llama-3.2-3b-instruct,Luxembourg,442,en,imitation,3.729,1.4954,LLM
+llama-3.2-3b-instruct,Luxembourg,442,fr,imitation,2.5571,0.3709,LLM
+llama-3.2-3b-instruct,Macao,446,en,imitation,1.621,1.9172,LLM
+llama-3.2-3b-instruct,Macao,446,pt,imitation,2.123,1.661,LLM
+llama-3.2-3b-instruct,Macao,446,zh-cn,imitation,1.4346,2.4943,LLM
+llama-3.2-3b-instruct,Malaysia,458,en-native,imitation,1.799,1.838,LLM
+llama-3.2-3b-instruct,Mali,466,en,imitation,1.7749,2.585,LLM
+llama-3.2-3b-instruct,Mali,466,fr,imitation,0.6645,2.4407,LLM
+llama-3.2-3b-instruct,Malta,470,en-native,imitation,3.2963,4.2612,LLM
+llama-3.2-3b-instruct,Mexico,484,en,imitation,1.7749,2.585,LLM
+llama-3.2-3b-instruct,Mexico,484,es,imitation,3.2753,0.5446,LLM
+llama-3.2-3b-instruct,Morocco,504,ar,imitation,0.168,4.9359,LLM
+llama-3.2-3b-instruct,Morocco,504,en,imitation,1.799,1.838,LLM
+llama-3.2-3b-instruct,New Zealand,554,en-native,imitation,3.5181,1.5485,LLM
+llama-3.2-3b-instruct,Nicaragua,558,en,imitation,1.8793,1.249,LLM
+llama-3.2-3b-instruct,Nicaragua,558,es,imitation,1.3556,1.783,LLM
+llama-3.2-3b-instruct,Nigeria,566,en-native,imitation,1.7814,1.8666,LLM
+llama-3.2-3b-instruct,Pakistan,586,en-native,imitation,1.7574,2.6136,LLM
+llama-3.2-3b-instruct,Palestine,275,ar,imitation,0.9087,3.4975,LLM
+llama-3.2-3b-instruct,Palestine,275,en,imitation,1.2972,2.3812,LLM
+llama-3.2-3b-instruct,Peru,604,en,imitation,1.799,1.838,LLM
+llama-3.2-3b-instruct,Peru,604,es,imitation,0.5956,2.2727,LLM
+llama-3.2-3b-instruct,Philippines,608,en-native,imitation,2.7611,1.8142,LLM
+llama-3.2-3b-instruct,Portugal,620,en,imitation,3.729,1.4954,LLM
+llama-3.2-3b-instruct,Portugal,620,pt,imitation,1.6958,2.8775,LLM
+llama-3.2-3b-instruct,Puerto Rico,630,en-native,imitation,2.7786,1.7855,LLM
+llama-3.2-3b-instruct,Puerto Rico,630,es,imitation,3.2753,0.5446,LLM
+llama-3.2-3b-instruct,Qatar,634,ar,imitation,2.7197,3.8441,LLM
+llama-3.2-3b-instruct,Qatar,634,en,imitation,1.7902,3.7744,LLM
+llama-3.2-3b-instruct,Russian Federation,643,en,imitation,1.2797,2.4099,LLM
+llama-3.2-3b-instruct,Russian Federation,643,ru,imitation,1.4654,1.3172,LLM
+llama-3.2-3b-instruct,Rwanda,646,en-native,imitation,1.7639,1.8953,LLM
+llama-3.2-3b-instruct,Rwanda,646,fr,imitation,1.8443,1.3064,LLM
+llama-3.2-3b-instruct,Singapore,702,en-native,imitation,3.1534,1.9092,LLM
+llama-3.2-3b-instruct,Singapore,702,zh-cn,imitation,0.455,2.5467,LLM
+llama-3.2-3b-instruct,South Africa,710,en-native,imitation,1.8793,1.249,LLM
+llama-3.2-3b-instruct,Spain,724,en,imitation,3.729,1.4954,LLM
+llama-3.2-3b-instruct,Spain,724,es,imitation,2.8481,1.7612,LLM
+llama-3.2-3b-instruct,Switzerland,756,de,imitation,3.2578,0.5733,LLM
+llama-3.2-3b-instruct,Switzerland,756,en,imitation,3.694,1.5527,LLM
+llama-3.2-3b-instruct,Switzerland,756,fr,imitation,2.1736,3.0813,LLM
+llama-3.2-3b-instruct,Switzerland,756,it,imitation,4.1746,1.0811,LLM
+llama-3.2-3b-instruct,"Taiwan, Province of China",158,en,imitation,0.9053,1.1752,LLM
+llama-3.2-3b-instruct,"Taiwan, Province of China",158,zh-tw,imitation,1.4346,2.4943,LLM
+llama-3.2-3b-instruct,Trinidad and Tobago,780,en-native,imitation,2.3009,1.5817,LLM
+llama-3.2-3b-instruct,Tunisia,788,ar,imitation,2.098,4.5933,LLM
+llama-3.2-3b-instruct,Tunisia,788,en,imitation,1.3797,1.0359,LLM
+llama-3.2-3b-instruct,United Kingdom,826,en-native,imitation,3.2843,2.7406,LLM
+llama-3.2-3b-instruct,United States of America,840,en-native,imitation,3.705,2.2424,LLM
+llama-3.2-3b-instruct,Uruguay,858,en,imitation,3.495,1.7035,LLM
+llama-3.2-3b-instruct,Uruguay,858,es,imitation,3.495,1.7035,LLM
+llama-3.2-3b-instruct,Venezuela,862,en,imitation,0.8216,1.4211,LLM
+llama-3.2-3b-instruct,Venezuela,862,es,imitation,1.9033,0.502,LLM
+llama-3.2-3b-instruct,Yemen,887,ar,imitation,1.3478,3.8015,LLM
+llama-3.2-3b-instruct,Yemen,887,en,imitation,1.7574,2.6136,LLM
+llama-3.2-3b-instruct,Zambia,894,en-native,imitation,1.3212,1.6342,LLM
+llama-3.2-3b-instruct,Zimbabwe,716,en-native,imitation,0.7976,2.1681,LLM
+llama-3.3-70b-instruct,Algeria,12,ar,imitation,-1.9801,-2.0816,LLM
+llama-3.3-70b-instruct,Algeria,12,en,imitation,-2.4073,-0.865,LLM
+llama-3.3-70b-instruct,Argentina,32,en,imitation,0.9292,0.5758,LLM
+llama-3.3-70b-instruct,Argentina,32,es,imitation,0.8258,1.1721,LLM
+llama-3.3-70b-instruct,Australia,36,en-native,imitation,5.5188,2.386,LLM
+llama-3.3-70b-instruct,Austria,40,de,imitation,3.5835,1.744,LLM
+llama-3.3-70b-instruct,Austria,40,en,imitation,3.8747,1.3214,LLM
+llama-3.3-70b-instruct,Belarus,112,en,imitation,-1.2244,0.336,LLM
+llama-3.3-70b-instruct,Belarus,112,ru,imitation,-0.6014,2.2288,LLM
+llama-3.3-70b-instruct,Belgium,56,de,imitation,5.1157,2.8556,LLM
+llama-3.3-70b-instruct,Belgium,56,en,imitation,5.0742,3.6313,LLM
+llama-3.3-70b-instruct,Belgium,56,fr,imitation,5.1157,2.8556,LLM
+llama-3.3-70b-instruct,Bolivia,68,en,imitation,-1.0198,-1.3641,LLM
+llama-3.3-70b-instruct,Bolivia,68,es,imitation,-1.412,-0.2048,LLM
+llama-3.3-70b-instruct,Brazil,76,en,imitation,0.8073,0.3698,LLM
+llama-3.3-70b-instruct,Brazil,76,pt,imitation,2.2405,0.9799,LLM
+llama-3.3-70b-instruct,Burkina Faso,854,en,imitation,-1.7364,-1.6697,LLM
+llama-3.3-70b-instruct,Burkina Faso,854,fr,imitation,-2.1286,-0.5105,LLM
+llama-3.3-70b-instruct,Canada,124,en-native,imitation,5.5188,2.386,LLM
+llama-3.3-70b-instruct,Canada,124,fr,imitation,5.421,1.4331,LLM
+llama-3.3-70b-instruct,Chile,152,en,imitation,0.3682,0.0658,LLM
+llama-3.3-70b-instruct,Chile,152,es,imitation,1.3664,0.8156,LLM
+llama-3.3-70b-instruct,China,156,en,imitation,0.3458,0.0678,LLM
+llama-3.3-70b-instruct,China,156,zh-cn,imitation,0.7674,0.4005,LLM
+llama-3.3-70b-instruct,Colombia,170,en,imitation,-0.1205,-0.8276,LLM
+llama-3.3-70b-instruct,Colombia,170,es,imitation,-0.0349,0.5353,LLM
+llama-3.3-70b-instruct,Ecuador,218,en,imitation,-0.1205,-0.8276,LLM
+llama-3.3-70b-instruct,Ecuador,218,es,imitation,-0.5126,0.3316,LLM
+llama-3.3-70b-instruct,Egypt,818,ar,imitation,-1.9801,-2.0816,LLM
+llama-3.3-70b-instruct,Egypt,818,en,imitation,-1.9801,-2.0816,LLM
+llama-3.3-70b-instruct,France,250,en,imitation,4.1294,2.3721,LLM
+llama-3.3-70b-instruct,France,250,fr,imitation,3.7437,2.813,LLM
+llama-3.3-70b-instruct,Germany,276,de,imitation,5.0917,3.6026,LLM
+llama-3.3-70b-instruct,Germany,276,en,imitation,4.112,3.6551,LLM
+llama-3.3-70b-instruct,Ghana,288,en-native,imitation,-1.9801,-2.0816,LLM
+llama-3.3-70b-instruct,Guatemala,320,en,imitation,-1.0198,-1.3641,LLM
+llama-3.3-70b-instruct,Guatemala,320,es,imitation,-1.447,-0.1475,LLM
+llama-3.3-70b-instruct,Haiti,332,en,imitation,-2.0466,-0.5572,LLM
+llama-3.3-70b-instruct,Haiti,332,fr,imitation,-3.3132,0.3139,LLM
+llama-3.3-70b-instruct,Hong Kong,344,en-native,imitation,0.3723,2.2351,LLM
+llama-3.3-70b-instruct,Hong Kong,344,zh-cn,imitation,2.0515,3.2424,LLM
+llama-3.3-70b-instruct,Hong Kong,344,zh-hk,imitation,3.207,3.4136,LLM
+llama-3.3-70b-instruct,Iraq,368,ar,imitation,-3.1599,-0.9472,LLM
+llama-3.3-70b-instruct,Iraq,368,en,imitation,-2.4073,-0.865,LLM
+llama-3.3-70b-instruct,Ireland,372,en-native,imitation,4.2605,0.5134,LLM
+llama-3.3-70b-instruct,Italy,380,en,imitation,0.9292,0.5758,LLM
+llama-3.3-70b-instruct,Italy,380,it,imitation,1.7153,1.6106,LLM
+llama-3.3-70b-instruct,Japan,392,en,imitation,0.841,0.2429,LLM
+llama-3.3-70b-instruct,Japan,392,ja,imitation,0.0098,1.0981,LLM
+llama-3.3-70b-instruct,Jordan,400,ar,imitation,-1.7412,-1.9797,LLM
+llama-3.3-70b-instruct,Jordan,400,en,imitation,-1.9801,-2.0816,LLM
+llama-3.3-70b-instruct,Kazakhstan,398,en,imitation,-0.8147,-0.8519,LLM
+llama-3.3-70b-instruct,Kazakhstan,398,ru,imitation,-0.5864,-0.7142,LLM
+llama-3.3-70b-instruct,Kenya,404,en-native,imitation,-1.4975,-1.5678,LLM
+llama-3.3-70b-instruct,"Korea, Republic of",410,en,imitation,-0.3195,-0.6768,LLM
+llama-3.3-70b-instruct,"Korea, Republic of",410,ko,imitation,-0.302,-0.7055,LLM
+llama-3.3-70b-instruct,Kuwait,414,ar,imitation,-1.0111,-3.3823,LLM
+llama-3.3-70b-instruct,Kuwait,414,en,imitation,-2.1909,-2.248,LLM
+llama-3.3-70b-instruct,Kyrgyzstan,417,en,imitation,-1.7189,-1.6984,LLM
+llama-3.3-70b-instruct,Kyrgyzstan,417,ru,imitation,-1.742,-0.1204,LLM
+llama-3.3-70b-instruct,Lebanon,422,ar,imitation,-1.778,0.103,LLM
+llama-3.3-70b-instruct,Lebanon,422,en,imitation,-1.9247,-0.3513,LLM
+llama-3.3-70b-instruct,Libya,434,ar,imitation,-3.3707,-1.1136,LLM
+llama-3.3-70b-instruct,Libya,434,en,imitation,-2.6181,-1.0314,LLM
+llama-3.3-70b-instruct,Luxembourg,442,de,imitation,6.7226,0.5047,LLM
+llama-3.3-70b-instruct,Luxembourg,442,en,imitation,4.5632,1.6915,LLM
+llama-3.3-70b-instruct,Luxembourg,442,fr,imitation,5.5429,1.639,LLM
+llama-3.3-70b-instruct,Macao,446,en,imitation,0.1582,-0.4731,LLM
+llama-3.3-70b-instruct,Macao,446,pt,imitation,0.6534,-0.298,LLM
+llama-3.3-70b-instruct,Macao,446,zh-cn,imitation,1.0575,0.0634,LLM
+llama-3.3-70b-instruct,Malaysia,458,en-native,imitation,-1.4975,-1.5678,LLM
+llama-3.3-70b-instruct,Mali,466,en,imitation,-1.9801,-2.0816,LLM
+llama-3.3-70b-instruct,Mali,466,fr,imitation,-2.4073,-0.865,LLM
+llama-3.3-70b-instruct,Malta,470,en-native,imitation,1.2836,-0.167,LLM
+llama-3.3-70b-instruct,Mexico,484,en,imitation,-0.1205,-0.8276,LLM
+llama-3.3-70b-instruct,Mexico,484,es,imitation,-0.5477,0.3889,LLM
+llama-3.3-70b-instruct,Morocco,504,ar,imitation,-1.5304,-1.8134,LLM
+llama-3.3-70b-instruct,Morocco,504,en,imitation,-1.9801,-2.0816,LLM
+llama-3.3-70b-instruct,New Zealand,554,en-native,imitation,5.5188,2.386,LLM
+llama-3.3-70b-instruct,Nicaragua,558,en,imitation,-1.0198,-1.3641,LLM
+llama-3.3-70b-instruct,Nicaragua,558,es,imitation,-1.447,-0.1475,LLM
+llama-3.3-70b-instruct,Nigeria,566,en-native,imitation,-2.4073,-0.865,LLM
+llama-3.3-70b-instruct,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+llama-3.3-70b-instruct,Palestine,275,ar,imitation,-3.1599,-0.9472,LLM
+llama-3.3-70b-instruct,Palestine,275,en,imitation,-3.1839,-0.2002,LLM
+llama-3.3-70b-instruct,Peru,604,en,imitation,-0.1205,-0.8276,LLM
+llama-3.3-70b-instruct,Peru,604,es,imitation,-0.5477,0.3889,LLM
+llama-3.3-70b-instruct,Philippines,608,en-native,imitation,-1.1417,-1.57,LLM
+llama-3.3-70b-instruct,Portugal,620,en,imitation,1.4486,1.8614,LLM
+llama-3.3-70b-instruct,Portugal,620,pt,imitation,5.7351,1.9183,LLM
+llama-3.3-70b-instruct,Puerto Rico,630,en-native,imitation,1.3129,0.0706,LLM
+llama-3.3-70b-instruct,Puerto Rico,630,es,imitation,1.5827,-0.5673,LLM
+llama-3.3-70b-instruct,Qatar,634,ar,imitation,-1.0111,-3.3823,LLM
+llama-3.3-70b-instruct,Qatar,634,en,imitation,-2.1909,-2.248,LLM
+llama-3.3-70b-instruct,Russian Federation,643,en,imitation,-0.7972,-0.8806,LLM
+llama-3.3-70b-instruct,Russian Federation,643,ru,imitation,-1.0136,0.5024,LLM
+llama-3.3-70b-instruct,Rwanda,646,en-native,imitation,-1.7364,-1.6697,LLM
+llama-3.3-70b-instruct,Rwanda,646,fr,imitation,-1.7014,-1.727,LLM
+llama-3.3-70b-instruct,Singapore,702,en-native,imitation,-0.3195,-0.6768,LLM
+llama-3.3-70b-instruct,Singapore,702,zh-cn,imitation,-0.3195,-0.6768,LLM
+llama-3.3-70b-instruct,South Africa,710,en-native,imitation,-0.0976,1.3826,LLM
+llama-3.3-70b-instruct,Spain,724,en,imitation,3.8857,1.9602,LLM
+llama-3.3-70b-instruct,Spain,724,es,imitation,3.0288,1.4791,LLM
+llama-3.3-70b-instruct,Switzerland,756,de,imitation,5.5429,1.639,LLM
+llama-3.3-70b-instruct,Switzerland,756,en,imitation,4.5632,1.6915,LLM
+llama-3.3-70b-instruct,Switzerland,756,fr,imitation,5.5429,1.639,LLM
+llama-3.3-70b-instruct,Switzerland,756,it,imitation,5.4438,1.1375,LLM
+llama-3.3-70b-instruct,"Taiwan, Province of China",158,en,imitation,0.5798,-0.1404,LLM
+llama-3.3-70b-instruct,"Taiwan, Province of China",158,zh-tw,imitation,2.8509,1.5583,LLM
+llama-3.3-70b-instruct,Trinidad and Tobago,780,en-native,imitation,-0.5872,-0.3417,LLM
+llama-3.3-70b-instruct,Tunisia,788,ar,imitation,-0.8651,-1.0688,LLM
+llama-3.3-70b-instruct,Tunisia,788,en,imitation,-1.9247,-0.3513,LLM
+llama-3.3-70b-instruct,United Kingdom,826,en-native,imitation,3.9252,2.7417,LLM
+llama-3.3-70b-instruct,United States of America,840,en-native,imitation,2.882,1.1892,LLM
+llama-3.3-70b-instruct,Uruguay,858,en,imitation,5.0411,2.1823,LLM
+llama-3.3-70b-instruct,Uruguay,858,es,imitation,5.1157,2.8556,LLM
+llama-3.3-70b-instruct,Venezuela,862,en,imitation,-2.6454,3.9728,LLM
+llama-3.3-70b-instruct,Venezuela,862,es,imitation,-1.9088,2.8489,LLM
+llama-3.3-70b-instruct,Yemen,887,ar,imitation,-3.3707,-1.1136,LLM
+llama-3.3-70b-instruct,Yemen,887,en,imitation,-3.0475,-2.4409,LLM
+llama-3.3-70b-instruct,Zambia,894,en-native,imitation,-1.7364,-1.6697,LLM
+llama-3.3-70b-instruct,Zimbabwe,716,en-native,imitation,-2.1461,-0.4818,LLM
+mistral-medium-3.1,Algeria,12,ar,imitation,-1.7693,-1.9153,LLM
+mistral-medium-3.1,Algeria,12,en,imitation,-1.8583,-1.8757,LLM
+mistral-medium-3.1,Argentina,32,en,imitation,3.3844,1.9265,LLM
+mistral-medium-3.1,Argentina,32,es,imitation,2.0117,2.9897,LLM
+mistral-medium-3.1,Australia,36,en-native,imitation,4.7297,3.7462,LLM
+mistral-medium-3.1,Austria,40,de,imitation,2.1803,2.153,LLM
+mistral-medium-3.1,Austria,40,en,imitation,2.1978,2.1244,LLM
+mistral-medium-3.1,Belarus,112,en,imitation,-1.9815,0.0676,LLM
+mistral-medium-3.1,Belarus,112,ru,imitation,-0.7642,0.5684,LLM
+mistral-medium-3.1,Belgium,56,de,imitation,4.7187,3.0565,LLM
+mistral-medium-3.1,Belgium,56,en,imitation,3.3468,3.0139,LLM
+mistral-medium-3.1,Belgium,56,fr,imitation,4.101,2.9654,LLM
+mistral-medium-3.1,Bolivia,68,en,imitation,-0.7201,-1.2373,LLM
+mistral-medium-3.1,Bolivia,68,es,imitation,-1.1417,-1.57,LLM
+mistral-medium-3.1,Brazil,76,en,imitation,1.9628,0.541,LLM
+mistral-medium-3.1,Brazil,76,pt,imitation,1.9881,1.5892,LLM
+mistral-medium-3.1,Burkina Faso,854,en,imitation,-1.9801,-2.0816,LLM
+mistral-medium-3.1,Burkina Faso,854,fr,imitation,-3.1599,-0.9472,LLM
+mistral-medium-3.1,Canada,124,en-native,imitation,4.6079,3.5402,LLM
+mistral-medium-3.1,Canada,124,fr,imitation,5.2743,2.5494,LLM
+mistral-medium-3.1,Chile,152,en,imitation,2.3158,0.448,LLM
+mistral-medium-3.1,Chile,152,es,imitation,0.0589,0.8058,LLM
+mistral-medium-3.1,China,156,en,imitation,-0.7931,-0.2806,LLM
+mistral-medium-3.1,China,156,zh-cn,imitation,-0.6173,-0.0569,LLM
+mistral-medium-3.1,Colombia,170,en,imitation,1.0639,-0.5724,LLM
+mistral-medium-3.1,Colombia,170,es,imitation,-0.0035,-0.9317,LLM
+mistral-medium-3.1,Ecuador,218,en,imitation,-0.2423,-1.0336,LLM
+mistral-medium-3.1,Ecuador,218,es,imitation,-0.4531,-1.1999,LLM
+mistral-medium-3.1,Egypt,818,ar,imitation,-1.9801,-2.0816,LLM
+mistral-medium-3.1,Egypt,818,en,imitation,-1.9801,-2.0816,LLM
+mistral-medium-3.1,France,250,en,imitation,3.5511,3.8986,LLM
+mistral-medium-3.1,France,250,fr,imitation,1.7711,4.9132,LLM
+mistral-medium-3.1,Germany,276,de,imitation,3.5791,3.8341,LLM
+mistral-medium-3.1,Germany,276,en,imitation,2.4021,3.009,LLM
+mistral-medium-3.1,Ghana,288,en-native,imitation,-1.7693,-1.9153,LLM
+mistral-medium-3.1,Guatemala,320,en,imitation,-0.9309,-1.4037,LLM
+mistral-medium-3.1,Guatemala,320,es,imitation,-1.3525,-1.7364,LLM
+mistral-medium-3.1,Haiti,332,en,imitation,-2.7102,-0.679,LLM
+mistral-medium-3.1,Haiti,332,fr,imitation,-2.921,-0.8454,LLM
+mistral-medium-3.1,Hong Kong,344,en-native,imitation,-0.1263,3.4626,LLM
+mistral-medium-3.1,Hong Kong,344,zh-cn,imitation,-0.5671,2.4614,LLM
+mistral-medium-3.1,Hong Kong,344,zh-hk,imitation,1.6018,2.9742,LLM
+mistral-medium-3.1,Iraq,368,ar,imitation,-4.0165,-1.1402,LLM
+mistral-medium-3.1,Iraq,368,en,imitation,-4.0165,-1.1402,LLM
+mistral-medium-3.1,Ireland,372,en-native,imitation,4.5969,2.8505,LLM
+mistral-medium-3.1,Italy,380,en,imitation,2.6709,2.3051,LLM
+mistral-medium-3.1,Italy,380,it,imitation,0.8412,1.4463,LLM
+mistral-medium-3.1,Japan,392,en,imitation,0.1141,1.3327,LLM
+mistral-medium-3.1,Japan,392,ja,imitation,-0.0478,-0.3294,LLM
+mistral-medium-3.1,Jordan,400,ar,imitation,-1.9801,-2.0816,LLM
+mistral-medium-3.1,Jordan,400,en,imitation,-2.8367,-2.2746,LLM
+mistral-medium-3.1,Kazakhstan,398,en,imitation,-0.6627,-1.0133,LLM
+mistral-medium-3.1,Kazakhstan,398,ru,imitation,-0.4589,-0.8541,LLM
+mistral-medium-3.1,Kenya,404,en-native,imitation,-1.4086,-1.6074,LLM
+mistral-medium-3.1,"Korea, Republic of",410,en,imitation,-0.1802,-0.4995,LLM
+mistral-medium-3.1,"Korea, Republic of",410,ko,imitation,0.6541,-0.5879,LLM
+mistral-medium-3.1,Kuwait,414,ar,imitation,-3.0475,-2.4409,LLM
+mistral-medium-3.1,Kuwait,414,en,imitation,-2.8367,-2.2746,LLM
+mistral-medium-3.1,Kyrgyzstan,417,en,imitation,-1.0759,-1.2351,LLM
+mistral-medium-3.1,Kyrgyzstan,417,ru,imitation,-1.0759,-1.2351,LLM
+mistral-medium-3.1,Lebanon,422,ar,imitation,-2.4921,2.7117,LLM
+mistral-medium-3.1,Lebanon,422,en,imitation,-2.8047,0.9098,LLM
+mistral-medium-3.1,Libya,434,ar,imitation,-4.2273,-1.3065,LLM
+mistral-medium-3.1,Libya,434,en,imitation,-3.0475,-2.4409,LLM
+mistral-medium-3.1,Luxembourg,442,de,imitation,5.4023,1.9131,LLM
+mistral-medium-3.1,Luxembourg,442,en,imitation,4.6319,2.7932,LLM
+mistral-medium-3.1,Luxembourg,442,fr,imitation,4.535,0.4719,LLM
+mistral-medium-3.1,Macao,446,en,imitation,0.0637,1.1158,LLM
+mistral-medium-3.1,Macao,446,pt,imitation,0.5084,-0.1294,LLM
+mistral-medium-3.1,Macao,446,zh-cn,imitation,0.5068,2.1024,LLM
+mistral-medium-3.1,Malaysia,458,en-native,imitation,-1.0479,-1.2996,LLM
+mistral-medium-3.1,Mali,466,en,imitation,-2.8367,-2.2746,LLM
+mistral-medium-3.1,Mali,466,fr,imitation,-1.0111,-3.3823,LLM
+mistral-medium-3.1,Malta,470,en-native,imitation,0.8531,-0.7388,LLM
+mistral-medium-3.1,Mexico,484,en,imitation,0.2073,-0.7654,LLM
+mistral-medium-3.1,Mexico,484,es,imitation,0.1184,-0.7258,LLM
+mistral-medium-3.1,Morocco,504,ar,imitation,-1.7412,-1.9797,LLM
+mistral-medium-3.1,Morocco,504,en,imitation,-1.5304,-1.8134,LLM
+mistral-medium-3.1,New Zealand,554,en-native,imitation,4.7297,3.7462,LLM
+mistral-medium-3.1,Nicaragua,558,en,imitation,-0.9309,-1.4037,LLM
+mistral-medium-3.1,Nicaragua,558,es,imitation,-1.1417,-1.57,LLM
+mistral-medium-3.1,Nigeria,566,en-native,imitation,-1.7693,-1.9153,LLM
+mistral-medium-3.1,Pakistan,586,en-native,imitation,-1.9801,-2.0816,LLM
+mistral-medium-3.1,Palestine,275,ar,imitation,-2.3513,0.7397,LLM
+mistral-medium-3.1,Palestine,275,en,imitation,-3.1599,-0.9472,LLM
+mistral-medium-3.1,Peru,604,en,imitation,-0.3594,-0.9295,LLM
+mistral-medium-3.1,Peru,604,es,imitation,-0.9973,0.1207,LLM
+mistral-medium-3.1,Philippines,608,en-native,imitation,-0.4531,-1.1999,LLM
+mistral-medium-3.1,Portugal,620,en,imitation,2.9098,2.407,LLM
+mistral-medium-3.1,Portugal,620,pt,imitation,3.9938,2.5891,LLM
+mistral-medium-3.1,Puerto Rico,630,en-native,imitation,2.3697,0.4658,LLM
+mistral-medium-3.1,Puerto Rico,630,es,imitation,1.5477,-0.51,LLM
+mistral-medium-3.1,Qatar,634,ar,imitation,-1.8677,-3.5753,LLM
+mistral-medium-3.1,Qatar,634,en,imitation,-3.0475,-2.4409,LLM
+mistral-medium-3.1,Russian Federation,643,en,imitation,-0.5409,-0.8073,LLM
+mistral-medium-3.1,Russian Federation,643,ru,imitation,-1.0031,0.4665,LLM
+mistral-medium-3.1,Rwanda,646,en-native,imitation,-1.3736,-1.6648,LLM
+mistral-medium-3.1,Rwanda,646,fr,imitation,-0.661,-3.0387,LLM
+mistral-medium-3.1,Singapore,702,en-native,imitation,0.2695,-0.2313,LLM
+mistral-medium-3.1,Singapore,702,zh-cn,imitation,0.5259,-0.1581,LLM
+mistral-medium-3.1,South Africa,710,en-native,imitation,1.1977,1.1541,LLM
+mistral-medium-3.1,Spain,724,en,imitation,3.2249,2.808,LLM
+mistral-medium-3.1,Spain,724,es,imitation,2.1815,1.7017,LLM
+mistral-medium-3.1,Switzerland,756,de,imitation,3.9954,3.1821,LLM
+mistral-medium-3.1,Switzerland,756,en,imitation,3.7741,3.0516,LLM
+mistral-medium-3.1,Switzerland,756,fr,imitation,4.1078,1.6885,LLM
+mistral-medium-3.1,Switzerland,756,it,imitation,3.5873,2.1383,LLM
+mistral-medium-3.1,"Taiwan, Province of China",158,en,imitation,0.3201,1.189,LLM
+mistral-medium-3.1,"Taiwan, Province of China",158,zh-tw,imitation,3.319,1.7961,LLM
+mistral-medium-3.1,Trinidad and Tobago,780,en-native,imitation,0.1078,-0.69,LLM
+mistral-medium-3.1,Tunisia,788,ar,imitation,-1.1978,-1.4411,LLM
+mistral-medium-3.1,Tunisia,788,en,imitation,-1.1978,-1.4411,LLM
+mistral-medium-3.1,United Kingdom,826,en-native,imitation,3.1535,2.8189,LLM
+mistral-medium-3.1,United States of America,840,en-native,imitation,3.883,3.0729,LLM
+mistral-medium-3.1,Uruguay,858,en,imitation,5.035,2.3236,LLM
+mistral-medium-3.1,Uruguay,858,es,imitation,2.175,2.42,LLM
+mistral-medium-3.1,Venezuela,862,en,imitation,-1.4742,0.9122,LLM
+mistral-medium-3.1,Venezuela,862,es,imitation,-1.8493,1.3173,LLM
+mistral-medium-3.1,Yemen,887,ar,imitation,-4.2273,-1.3065,LLM
+mistral-medium-3.1,Yemen,887,en,imitation,-4.2273,-1.3065,LLM
+mistral-medium-3.1,Zambia,894,en-native,imitation,-1.5304,-1.8134,LLM
+mistral-medium-3.1,Zimbabwe,716,en-native,imitation,-1.5304,-1.8134,LLM
+mistral-nemo,Algeria,12,ar,imitation,2.3998,0.9142,LLM
+mistral-nemo,Algeria,12,en,imitation,-0.6771,1.0662,LLM
+mistral-nemo,Argentina,32,en,imitation,0.9412,3.6192,LLM
+mistral-nemo,Argentina,32,es,imitation,3.1295,1.9954,LLM
+mistral-nemo,Australia,36,en-native,imitation,4.4211,2.6268,LLM
+mistral-nemo,Austria,40,de,imitation,3.7754,4.1231,LLM
+mistral-nemo,Austria,40,en,imitation,2.7957,4.1755,LLM
+mistral-nemo,Belarus,112,en,imitation,1.6481,2.5911,LLM
+mistral-nemo,Belarus,112,ru,imitation,-0.5188,1.2544,LLM
+mistral-nemo,Belgium,56,de,imitation,3.7994,3.3761,LLM
+mistral-nemo,Belgium,56,en,imitation,4.3971,3.3739,LLM
+mistral-nemo,Belgium,56,fr,imitation,5.9434,2.1177,LLM
+mistral-nemo,Bolivia,68,en,imitation,1.1198,0.3129,LLM
+mistral-nemo,Bolivia,68,es,imitation,0.909,0.1465,LLM
+mistral-nemo,Brazil,76,en,imitation,0.9892,2.1252,LLM
+mistral-nemo,Brazil,76,pt,imitation,0.2486,2.5666,LLM
+mistral-nemo,Burkina Faso,854,en,imitation,-0.7076,2.5316,LLM
+mistral-nemo,Burkina Faso,854,fr,imitation,2.1601,-2.2022,LLM
+mistral-nemo,Canada,124,en-native,imitation,3.6445,3.2917,LLM
+mistral-nemo,Canada,124,fr,imitation,5.77,1.2311,LLM
+mistral-nemo,Chile,152,en,imitation,2.145,1.7378,LLM
+mistral-nemo,Chile,152,es,imitation,1.9061,1.6359,LLM
+mistral-nemo,China,156,en,imitation,1.6961,1.0971,LLM
+mistral-nemo,China,156,zh-cn,imitation,2.2674,2.5515,LLM
+mistral-nemo,Colombia,170,en,imitation,0.6285,1.8173,LLM
+mistral-nemo,Colombia,170,es,imitation,1.1826,1.3232,LLM
+mistral-nemo,Ecuador,218,en,imitation,0.1508,1.6136,LLM
+mistral-nemo,Ecuador,218,es,imitation,1.2176,1.2658,LLM
+mistral-nemo,Egypt,818,ar,imitation,1.5607,0.6926,LLM
+mistral-nemo,Egypt,818,en,imitation,-0.8704,0.8712,LLM
+mistral-nemo,France,250,en,imitation,4.6408,3.7858,LLM
+mistral-nemo,France,250,fr,imitation,4.9637,2.1702,LLM
+mistral-nemo,Germany,276,de,imitation,3.0346,4.2774,LLM
+mistral-nemo,Germany,276,en,imitation,3.9755,3.0412,LLM
+mistral-nemo,Ghana,288,en-native,imitation,0.3094,-0.2632,LLM
+mistral-nemo,Guatemala,320,en,imitation,0.7391,1.4346,LLM
+mistral-nemo,Guatemala,320,es,imitation,0.7696,-0.0308,LLM
+mistral-nemo,Haiti,332,en,imitation,-0.8294,2.3256,LLM
+mistral-nemo,Haiti,332,fr,imitation,0.0067,0.8337,LLM
+mistral-nemo,Hong Kong,344,en-native,imitation,0.4683,3.7255,LLM
+mistral-nemo,Hong Kong,344,zh-cn,imitation,2.5015,2.3433,LLM
+mistral-nemo,Hong Kong,344,zh-hk,imitation,0.6048,3.5859,LLM
+mistral-nemo,Iraq,368,ar,imitation,-0.1169,1.9487,LLM
+mistral-nemo,Iraq,368,en,imitation,-1.4849,3.4045,LLM
+mistral-nemo,Ireland,372,en-native,imitation,5.3823,1.7721,LLM
+mistral-nemo,Italy,380,en,imitation,3.7606,2.1923,LLM
+mistral-nemo,Italy,380,it,imitation,3.5218,2.0904,LLM
+mistral-nemo,Japan,392,en,imitation,3.0681,1.1397,LLM
+mistral-nemo,Japan,392,ja,imitation,2.6409,2.3562,LLM
+mistral-nemo,Jordan,400,ar,imitation,2.4173,0.8856,LLM
+mistral-nemo,Jordan,400,en,imitation,-0.6596,1.0376,LLM
+mistral-nemo,Kazakhstan,398,en,imitation,1.6961,1.0971,LLM
+mistral-nemo,Kazakhstan,398,ru,imitation,-0.9908,0.7049,LLM
+mistral-nemo,Kenya,404,en-native,imitation,-0.4488,1.2039,LLM
+mistral-nemo,"Korea, Republic of",410,en,imitation,0.5163,2.2315,LLM
+mistral-nemo,"Korea, Republic of",410,ko,imitation,1.4371,4.2376,LLM
+mistral-nemo,Kuwait,414,ar,imitation,2.3998,0.9142,LLM
+mistral-nemo,Kuwait,414,en,imitation,0.7191,-1.4511,LLM
+mistral-nemo,Kyrgyzstan,417,en,imitation,-0.2291,2.3628,LLM
+mistral-nemo,Kyrgyzstan,417,ru,imitation,0.2952,2.3073,LLM
+mistral-nemo,Lebanon,422,ar,imitation,1.6651,0.9272,LLM
+mistral-nemo,Lebanon,422,en,imitation,0.1268,2.3606,LLM
+mistral-nemo,Libya,434,ar,imitation,-0.0851,0.6055,LLM
+mistral-nemo,Libya,434,en,imitation,-1.6652,1.7728,LLM
+mistral-nemo,Luxembourg,442,de,imitation,4.0383,3.4779,LLM
+mistral-nemo,Luxembourg,442,en,imitation,4.9461,2.3632,LLM
+mistral-nemo,Luxembourg,442,fr,imitation,4.4941,3.3315,LLM
+mistral-nemo,Macao,446,en,imitation,2.1738,1.3008,LLM
+mistral-nemo,Macao,446,pt,imitation,1.6721,1.8441,LLM
+mistral-nemo,Macao,446,zh-cn,imitation,2.7451,2.7552,LLM
+mistral-nemo,Malaysia,458,en-native,imitation,0.1508,1.6136,LLM
+mistral-nemo,Mali,466,en,imitation,-1.2661,0.6207,LLM
+mistral-nemo,Mali,466,fr,imitation,1.0445,-0.1523,LLM
+mistral-nemo,Malta,470,en-native,imitation,3.6878,0.4906,LLM
+mistral-nemo,Mexico,484,en,imitation,1.2825,1.9732,LLM
+mistral-nemo,Mexico,484,es,imitation,1.2066,0.5762,LLM
+mistral-nemo,Morocco,504,ar,imitation,2.3823,0.9429,LLM
+mistral-nemo,Morocco,504,en,imitation,0.676,1.5564,LLM
+mistral-nemo,New Zealand,554,en-native,imitation,5.3648,1.8008,LLM
+mistral-nemo,Nicaragua,558,en,imitation,-0.3926,1.0749,LLM
+mistral-nemo,Nicaragua,558,es,imitation,0.7631,0.6876,LLM
+mistral-nemo,Nigeria,566,en-native,imitation,-0.9922,0.6653,LLM
+mistral-nemo,Pakistan,586,en-native,imitation,-0.9054,0.9285,LLM
+mistral-nemo,Palestine,275,ar,imitation,2.3823,0.9429,LLM
+mistral-nemo,Palestine,275,en,imitation,0.2546,2.5078,LLM
+mistral-nemo,Peru,604,en,imitation,0.2486,2.5666,LLM
+mistral-nemo,Peru,604,es,imitation,1.0308,0.3525,LLM
+mistral-nemo,Philippines,608,en-native,imitation,0.029,1.4076,LLM
+mistral-nemo,Portugal,620,en,imitation,3.7366,2.9393,LLM
+mistral-nemo,Portugal,620,pt,imitation,2.1498,2.0478,LLM
+mistral-nemo,Puerto Rico,630,en-native,imitation,1.0077,2.0948,LLM
+mistral-nemo,Puerto Rico,630,es,imitation,1.3627,1.0973,LLM
+mistral-nemo,Qatar,634,ar,imitation,2.3998,0.9142,LLM
+mistral-nemo,Qatar,634,en,imitation,0.5083,-1.6174,LLM
+mistral-nemo,Russian Federation,643,en,imitation,0.5163,2.2315,LLM
+mistral-nemo,Russian Federation,643,ru,imitation,-2.3541,3.4677,LLM
+mistral-nemo,Rwanda,646,en-native,imitation,0.7366,-1.4797,LLM
+mistral-nemo,Rwanda,646,fr,imitation,1.9164,-2.6141,LLM
+mistral-nemo,Singapore,702,en-native,imitation,1.6721,1.8441,LLM
+mistral-nemo,Singapore,702,zh-cn,imitation,2.2914,1.8045,LLM
+mistral-nemo,South Africa,710,en-native,imitation,0.7023,3.5173,LLM
+mistral-nemo,Spain,724,en,imitation,2.5568,4.0736,LLM
+mistral-nemo,Spain,724,es,imitation,4.2432,2.7061,LLM
+mistral-nemo,Switzerland,756,de,imitation,3.0586,3.5304,LLM
+mistral-nemo,Switzerland,756,en,imitation,3.9755,3.0412,LLM
+mistral-nemo,Switzerland,756,fr,imitation,5.3724,0.1514,LLM
+mistral-nemo,Switzerland,756,it,imitation,3.8873,2.7083,LLM
+mistral-nemo,"Taiwan, Province of China",158,en,imitation,2.1258,2.7948,LLM
+mistral-nemo,"Taiwan, Province of China",158,zh-tw,imitation,1.6689,1.4034,LLM
+mistral-nemo,Trinidad and Tobago,780,en-native,imitation,0.5299,1.891,LLM
+mistral-nemo,Tunisia,788,ar,imitation,2.4348,0.8569,LLM
+mistral-nemo,Tunisia,788,en,imitation,-0.4687,2.6334,LLM
+mistral-nemo,United Kingdom,826,en-native,imitation,4.3971,3.3739,LLM
+mistral-nemo,United States of America,840,en-native,imitation,2.3685,5.3921,LLM
+mistral-nemo,Uruguay,858,en,imitation,4.7163,2.8868,LLM
+mistral-nemo,Uruguay,858,es,imitation,4.6233,2.2439,LLM
+mistral-nemo,Venezuela,862,en,imitation,0.7023,3.5173,LLM
+mistral-nemo,Venezuela,862,es,imitation,1.2176,1.2658,LLM
+mistral-nemo,Yemen,887,ar,imitation,-1.9681,0.9618,LLM
+mistral-nemo,Yemen,887,en,imitation,-1.4944,0.483,LLM
+mistral-nemo,Zambia,894,en-native,imitation,-1.0867,2.2541,LLM
+mistral-nemo,Zimbabwe,716,en-native,imitation,-0.8959,3.85,LLM
+phi-3-mini-128k-instruct,Algeria,12,ar,imitation,-2.3212,3.7132,LLM
+phi-3-mini-128k-instruct,Algeria,12,en,imitation,1.8284,0.3575,LLM
+phi-3-mini-128k-instruct,Argentina,32,en,imitation,3.4444,1.1996,LLM
+phi-3-mini-128k-instruct,Argentina,32,es,imitation,3.9463,0.9434,LLM
+phi-3-mini-128k-instruct,Australia,36,en-native,imitation,4.1449,3.9006,LLM
+phi-3-mini-128k-instruct,Austria,40,de,imitation,3.2699,3.4535,LLM
+phi-3-mini-128k-instruct,Austria,40,en,imitation,3.1446,1.0728,LLM
+phi-3-mini-128k-instruct,Belarus,112,en,imitation,1.8284,0.3575,LLM
+phi-3-mini-128k-instruct,Belarus,112,ru,imitation,2.6974,3.7177,LLM
+phi-3-mini-128k-instruct,Belgium,56,de,imitation,4.5459,1.3531,LLM
+phi-3-mini-128k-instruct,Belgium,56,en,imitation,3.5662,1.4055,LLM
+phi-3-mini-128k-instruct,Belgium,56,fr,imitation,3.3273,1.3037,LLM
+phi-3-mini-128k-instruct,Bolivia,68,en,imitation,2.1843,0.3553,LLM
+phi-3-mini-128k-instruct,Bolivia,68,es,imitation,3.075,0.3424,LLM
+phi-3-mini-128k-instruct,Brazil,76,en,imitation,2.9666,0.9958,LLM
+phi-3-mini-128k-instruct,Brazil,76,pt,imitation,2.5275,0.6918,LLM
+phi-3-mini-128k-instruct,Burkina Faso,854,en,imitation,1.4677,0.0497,LLM
+phi-3-mini-128k-instruct,Burkina Faso,854,fr,imitation,0.7792,-0.3204,LLM
+phi-3-mini-128k-instruct,Canada,124,en-native,imitation,3.5662,1.4055,LLM
+phi-3-mini-128k-instruct,Canada,124,fr,imitation,3.5662,1.4055,LLM
+phi-3-mini-128k-instruct,Chile,152,en,imitation,2.9666,0.9958,LLM
+phi-3-mini-128k-instruct,Chile,152,es,imitation,3.5247,0.6107,LLM
+phi-3-mini-128k-instruct,China,156,en,imitation,2.5595,1.5932,LLM
+phi-3-mini-128k-instruct,China,156,zh-cn,imitation,0.5718,1.2392,LLM
+phi-3-mini-128k-instruct,Colombia,170,en,imitation,2.9666,0.9958,LLM
+phi-3-mini-128k-instruct,Colombia,170,es,imitation,3.5247,0.6107,LLM
+phi-3-mini-128k-instruct,Ecuador,218,en,imitation,2.9666,0.9958,LLM
+phi-3-mini-128k-instruct,Ecuador,218,es,imitation,3.5247,0.6107,LLM
+phi-3-mini-128k-instruct,Egypt,818,ar,imitation,-2.3212,3.7132,LLM
+phi-3-mini-128k-instruct,Egypt,818,en,imitation,1.374,-0.2207,LLM
+phi-3-mini-128k-instruct,France,250,en,imitation,3.5662,1.4055,LLM
+phi-3-mini-128k-instruct,France,250,fr,imitation,3.3273,1.3037,LLM
+phi-3-mini-128k-instruct,Germany,276,de,imitation,3.5662,1.4055,LLM
+phi-3-mini-128k-instruct,Germany,276,en,imitation,3.5662,1.4055,LLM
+phi-3-mini-128k-instruct,Ghana,288,en-native,imitation,1.7066,0.1516,LLM
+phi-3-mini-128k-instruct,Guatemala,320,en,imitation,2.1843,0.3553,LLM
+phi-3-mini-128k-instruct,Guatemala,320,es,imitation,1.5344,-0.1151,LLM
+phi-3-mini-128k-instruct,Haiti,332,en,imitation,2.1843,0.3553,LLM
+phi-3-mini-128k-instruct,Haiti,332,fr,imitation,1.7195,1.6704,LLM
+phi-3-mini-128k-instruct,Hong Kong,344,en-native,imitation,3.6496,3.7255,LLM
+phi-3-mini-128k-instruct,Hong Kong,344,zh-cn,imitation,2.4508,1.7232,LLM
+phi-3-mini-128k-instruct,Hong Kong,344,zh-hk,imitation,4.7034,1.2117,LLM
+phi-3-mini-128k-instruct,Iraq,368,ar,imitation,-2.3212,3.7132,LLM
+phi-3-mini-128k-instruct,Iraq,368,en,imitation,1.5848,-0.0544,LLM
+phi-3-mini-128k-instruct,Ireland,372,en-native,imitation,2.9666,0.9958,LLM
+phi-3-mini-128k-instruct,Italy,380,en,imitation,2.545,0.6631,LLM
+phi-3-mini-128k-instruct,Italy,380,it,imitation,1.8125,3.3022,LLM
+phi-3-mini-128k-instruct,Japan,392,en,imitation,2.428,0.7672,LLM
+phi-3-mini-128k-instruct,Japan,392,ja,imitation,2.3062,0.5613,LLM
+phi-3-mini-128k-instruct,Jordan,400,ar,imitation,-2.3452,4.4602,LLM
+phi-3-mini-128k-instruct,Jordan,400,en,imitation,1.374,-0.2207,LLM
+phi-3-mini-128k-instruct,Kazakhstan,398,en,imitation,1.8284,0.3575,LLM
+phi-3-mini-128k-instruct,Kazakhstan,398,ru,imitation,2.4777,2.5588,LLM
+phi-3-mini-128k-instruct,Kenya,404,en-native,imitation,1.7066,0.1516,LLM
+phi-3-mini-128k-instruct,"Korea, Republic of",410,en,imitation,2.428,0.7672,LLM
+phi-3-mini-128k-instruct,"Korea, Republic of",410,ko,imitation,1.3549,0.7538,LLM
+phi-3-mini-128k-instruct,Kuwait,414,ar,imitation,-2.3452,4.4602,LLM
+phi-3-mini-128k-instruct,Kuwait,414,en,imitation,1.0742,-0.3475,LLM
+phi-3-mini-128k-instruct,Kyrgyzstan,417,en,imitation,1.8284,0.3575,LLM
+phi-3-mini-128k-instruct,Kyrgyzstan,417,ru,imitation,1.7612,2.2532,LLM
+phi-3-mini-128k-instruct,Lebanon,422,ar,imitation,-2.3212,3.7132,LLM
+phi-3-mini-128k-instruct,Lebanon,422,en,imitation,1.7066,0.1516,LLM
+phi-3-mini-128k-instruct,Libya,434,ar,imitation,-2.3452,4.4602,LLM
+phi-3-mini-128k-instruct,Libya,434,en,imitation,1.7066,0.1516,LLM
+phi-3-mini-128k-instruct,Luxembourg,442,de,imitation,3.0311,3.3516,LLM
+phi-3-mini-128k-instruct,Luxembourg,442,en,imitation,3.1446,1.0728,LLM
+phi-3-mini-128k-instruct,Luxembourg,442,fr,imitation,3.3273,1.3037,LLM
+phi-3-mini-128k-instruct,Macao,446,en,imitation,2.428,0.7672,LLM
+phi-3-mini-128k-instruct,Macao,446,pt,imitation,2.5275,0.6918,LLM
+phi-3-mini-128k-instruct,Macao,446,zh-cn,imitation,2.2107,1.3192,LLM
+phi-3-mini-128k-instruct,Malaysia,458,en-native,imitation,2.3062,0.5613,LLM
+phi-3-mini-128k-instruct,Mali,466,en,imitation,1.4677,0.0497,LLM
+phi-3-mini-128k-instruct,Mali,466,fr,imitation,0.7792,-0.3204,LLM
+phi-3-mini-128k-instruct,Malta,470,en-native,imitation,2.4232,0.4572,LLM
+phi-3-mini-128k-instruct,Mexico,484,en,imitation,2.6059,0.688,LLM
+phi-3-mini-128k-instruct,Mexico,484,es,imitation,3.0575,0.3711,LLM
+phi-3-mini-128k-instruct,Morocco,504,ar,imitation,-2.3212,3.7132,LLM
+phi-3-mini-128k-instruct,Morocco,504,en,imitation,1.7066,0.1516,LLM
+phi-3-mini-128k-instruct,New Zealand,554,en-native,imitation,3.9317,2.0234,LLM
+phi-3-mini-128k-instruct,Nicaragua,558,en,imitation,2.6059,0.688,LLM
+phi-3-mini-128k-instruct,Nicaragua,558,es,imitation,3.0575,0.3711,LLM
+phi-3-mini-128k-instruct,Nigeria,566,en-native,imitation,1.7066,0.1516,LLM
+phi-3-mini-128k-instruct,Pakistan,586,en-native,imitation,0.7792,-0.3204,LLM
+phi-3-mini-128k-instruct,Palestine,275,ar,imitation,-2.3452,4.4602,LLM
+phi-3-mini-128k-instruct,Palestine,275,en,imitation,0.2128,-0.097,LLM
+phi-3-mini-128k-instruct,Peru,604,en,imitation,2.1843,0.3553,LLM
+phi-3-mini-128k-instruct,Peru,604,es,imitation,3.075,0.3424,LLM
+phi-3-mini-128k-instruct,Philippines,608,en-native,imitation,2.1843,0.3553,LLM
+phi-3-mini-128k-instruct,Portugal,620,en,imitation,2.545,0.6631,LLM
+phi-3-mini-128k-instruct,Portugal,620,pt,imitation,2.5275,0.6918,LLM
+phi-3-mini-128k-instruct,Puerto Rico,630,en-native,imitation,3.4444,1.1996,LLM
+phi-3-mini-128k-instruct,Puerto Rico,630,es,imitation,2.4057,0.4858,LLM
+phi-3-mini-128k-instruct,Qatar,634,ar,imitation,-2.3212,3.7132,LLM
+phi-3-mini-128k-instruct,Qatar,634,en,imitation,1.4958,-0.0148,LLM
+phi-3-mini-128k-instruct,Russian Federation,643,en,imitation,2.8496,1.0999,LLM
+phi-3-mini-128k-instruct,Russian Federation,643,ru,imitation,4.0029,-0.679,LLM
+phi-3-mini-128k-instruct,Rwanda,646,en-native,imitation,1.7066,0.1516,LLM
+phi-3-mini-128k-instruct,Rwanda,646,fr,imitation,0.7792,-0.3204,LLM
+phi-3-mini-128k-instruct,Singapore,702,en-native,imitation,2.428,0.7672,LLM
+phi-3-mini-128k-instruct,Singapore,702,zh-cn,imitation,2.8431,1.8182,LLM
+phi-3-mini-128k-instruct,South Africa,710,en-native,imitation,2.9666,0.9958,LLM
+phi-3-mini-128k-instruct,Spain,724,en,imitation,3.4444,1.1996,LLM
+phi-3-mini-128k-instruct,Spain,724,es,imitation,3.6466,0.8166,LLM
+phi-3-mini-128k-instruct,Switzerland,756,de,imitation,3.2699,3.4535,LLM
+phi-3-mini-128k-instruct,Switzerland,756,en,imitation,3.5101,1.6907,LLM
+phi-3-mini-128k-instruct,Switzerland,756,fr,imitation,3.3273,1.3037,LLM
+phi-3-mini-128k-instruct,Switzerland,756,it,imitation,0.8716,4.5384,LLM
+phi-3-mini-128k-instruct,"Taiwan, Province of China",158,en,imitation,2.6669,0.8691,LLM
+phi-3-mini-128k-instruct,"Taiwan, Province of China",158,zh-tw,imitation,2.9098,0.8365,LLM
+phi-3-mini-128k-instruct,Trinidad and Tobago,780,en-native,imitation,2.9666,0.9958,LLM
+phi-3-mini-128k-instruct,Tunisia,788,ar,imitation,-2.3212,3.7132,LLM
+phi-3-mini-128k-instruct,Tunisia,788,en,imitation,1.8284,0.3575,LLM
+phi-3-mini-128k-instruct,United Kingdom,826,en-native,imitation,3.5662,1.4055,LLM
+phi-3-mini-128k-instruct,United States of America,840,en-native,imitation,3.5837,1.3769,LLM
+phi-3-mini-128k-instruct,Uruguay,858,en,imitation,3.5662,1.4055,LLM
+phi-3-mini-128k-instruct,Uruguay,858,es,imitation,4.0682,1.1493,LLM
+phi-3-mini-128k-instruct,Venezuela,862,en,imitation,2.7278,0.894,LLM
+phi-3-mini-128k-instruct,Venezuela,862,es,imitation,2.1843,0.3553,LLM
+phi-3-mini-128k-instruct,Yemen,887,ar,imitation,-2.3212,3.7132,LLM
+phi-3-mini-128k-instruct,Yemen,887,en,imitation,-0.7146,-0.5689,LLM
+phi-3-mini-128k-instruct,Zambia,894,en-native,imitation,1.7066,0.1516,LLM
+phi-3-mini-128k-instruct,Zimbabwe,716,en-native,imitation,2.3062,0.5613,LLM
+qwen3-1.7b,Algeria,12,ar,imitation,0.1271,3.3821,LLM
+qwen3-1.7b,Algeria,12,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Argentina,32,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Argentina,32,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Australia,36,en-native,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,Austria,40,de,imitation,4.1998,1.4993,LLM
+qwen3-1.7b,Austria,40,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Belarus,112,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Belarus,112,ru,imitation,1.7188,3.6859,LLM
+qwen3-1.7b,Belgium,56,de,imitation,4.1998,1.4993,LLM
+qwen3-1.7b,Belgium,56,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Belgium,56,fr,imitation,2.1075,0.836,LLM
+qwen3-1.7b,Bolivia,68,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Bolivia,68,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Brazil,76,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Brazil,76,pt,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Burkina Faso,854,en,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,Burkina Faso,854,fr,imitation,2.1075,0.836,LLM
+qwen3-1.7b,Canada,124,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Canada,124,fr,imitation,2.5949,1.6598,LLM
+qwen3-1.7b,Chile,152,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Chile,152,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,China,156,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,China,156,zh-cn,imitation,0.1271,3.3821,LLM
+qwen3-1.7b,Colombia,170,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Colombia,170,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Ecuador,218,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Ecuador,218,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Egypt,818,ar,imitation,0.1271,3.3821,LLM
+qwen3-1.7b,Egypt,818,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,France,250,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,France,250,fr,imitation,2.5347,-0.3806,LLM
+qwen3-1.7b,Germany,276,de,imitation,4.1998,1.4993,LLM
+qwen3-1.7b,Germany,276,en,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,Ghana,288,en-native,imitation,-0.3176,4.6274,LLM
+qwen3-1.7b,Guatemala,320,en,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,Guatemala,320,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Haiti,332,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Haiti,332,fr,imitation,2.0595,2.33,LLM
+qwen3-1.7b,Hong Kong,344,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Hong Kong,344,zh-cn,imitation,0.6796,4.5462,LLM
+qwen3-1.7b,Hong Kong,344,zh-hk,imitation,0.5805,4.0446,LLM
+qwen3-1.7b,Iraq,368,ar,imitation,0.1271,3.3821,LLM
+qwen3-1.7b,Iraq,368,en,imitation,-1.6721,4.5561,LLM
+qwen3-1.7b,Ireland,372,en-native,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,Italy,380,en,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,Italy,380,it,imitation,0.1511,2.6351,LLM
+qwen3-1.7b,Japan,392,en,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,Japan,392,ja,imitation,3.02,2.6337,LLM
+qwen3-1.7b,Jordan,400,ar,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Jordan,400,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Kazakhstan,398,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Kazakhstan,398,ru,imitation,1.7188,3.6859,LLM
+qwen3-1.7b,Kenya,404,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,"Korea, Republic of",410,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,"Korea, Republic of",410,ko,imitation,0.3097,2.3289,LLM
+qwen3-1.7b,Kuwait,414,ar,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Kuwait,414,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Kyrgyzstan,417,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Kyrgyzstan,417,ru,imitation,2.1459,2.4694,LLM
+qwen3-1.7b,Lebanon,422,ar,imitation,0.1271,3.3821,LLM
+qwen3-1.7b,Lebanon,422,en,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,Libya,434,ar,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Libya,434,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Luxembourg,442,de,imitation,4.1998,1.4993,LLM
+qwen3-1.7b,Luxembourg,442,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Luxembourg,442,fr,imitation,2.1075,0.836,LLM
+qwen3-1.7b,Macao,446,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Macao,446,pt,imitation,1.3309,1.5008,LLM
+qwen3-1.7b,Macao,446,zh-cn,imitation,0.1271,3.3821,LLM
+qwen3-1.7b,Malaysia,458,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Mali,466,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Mali,466,fr,imitation,2.5347,-0.3806,LLM
+qwen3-1.7b,Malta,470,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Mexico,484,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Mexico,484,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Morocco,504,ar,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Morocco,504,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,New Zealand,554,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Nicaragua,558,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Nicaragua,558,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Nigeria,566,en-native,imitation,-0.3176,4.6274,LLM
+qwen3-1.7b,Pakistan,586,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Palestine,275,ar,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Palestine,275,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Peru,604,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Peru,604,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Philippines,608,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Portugal,620,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Portugal,620,pt,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Puerto Rico,630,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Puerto Rico,630,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Qatar,634,ar,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Qatar,634,en,imitation,-0.5438,4.1868,LLM
+qwen3-1.7b,Russian Federation,643,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Russian Federation,643,ru,imitation,1.7188,3.6859,LLM
+qwen3-1.7b,Rwanda,646,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Rwanda,646,fr,imitation,2.5347,-0.3806,LLM
+qwen3-1.7b,Singapore,702,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Singapore,702,zh-cn,imitation,0.1271,3.3821,LLM
+qwen3-1.7b,South Africa,710,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Spain,724,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Spain,724,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Switzerland,756,de,imitation,4.1998,1.4993,LLM
+qwen3-1.7b,Switzerland,756,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Switzerland,756,fr,imitation,2.5949,1.6598,LLM
+qwen3-1.7b,Switzerland,756,it,imitation,0.1511,2.6351,LLM
+qwen3-1.7b,"Taiwan, Province of China",158,en,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,"Taiwan, Province of China",158,zh-tw,imitation,-0.3269,3.9348,LLM
+qwen3-1.7b,Trinidad and Tobago,780,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Tunisia,788,ar,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Tunisia,788,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,United Kingdom,826,en-native,imitation,0.8797,3.4643,LLM
+qwen3-1.7b,United States of America,840,en-native,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Uruguay,858,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Uruguay,858,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Venezuela,862,en,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Venezuela,862,es,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Yemen,887,ar,imitation,1.3068,2.2478,LLM
+qwen3-1.7b,Yemen,887,en,imitation,-0.5438,4.1868,LLM
+qwen3-1.7b,Zambia,894,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-1.7b,Zimbabwe,716,en-native,imitation,-0.3001,4.5987,LLM
+qwen3-max,Algeria,12,ar,imitation,-1.8583,-1.8757,LLM
+qwen3-max,Algeria,12,en,imitation,-1.8407,-1.9043,LLM
+qwen3-max,Argentina,32,en,imitation,0.4845,1.821,LLM
+qwen3-max,Argentina,32,es,imitation,1.5211,1.2671,LLM
+qwen3-max,Australia,36,en-native,imitation,3.7192,2.8854,LLM
+qwen3-max,Austria,40,de,imitation,3.447,1.8125,LLM
+qwen3-max,Austria,40,en,imitation,2.0287,2.2864,LLM
+qwen3-max,Belarus,112,en,imitation,-1.2244,0.336,LLM
+qwen3-max,Belarus,112,ru,imitation,-2.0985,0.1717,LLM
+qwen3-max,Belgium,56,de,imitation,3.6688,2.6685,LLM
+qwen3-max,Belgium,56,en,imitation,1.8472,2.3577,LLM
+qwen3-max,Belgium,56,fr,imitation,3.8775,3.1377,LLM
+qwen3-max,Bolivia,68,en,imitation,-0.9848,-1.4214,LLM
+qwen3-max,Bolivia,68,es,imitation,0.2337,-1.372,LLM
+qwen3-max,Brazil,76,en,imitation,-0.2738,0.4335,LLM
+qwen3-max,Brazil,76,pt,imitation,0.7234,0.3523,LLM
+qwen3-max,Burkina Faso,854,en,imitation,-1.8407,-1.9043,LLM
+qwen3-max,Burkina Faso,854,fr,imitation,-2.2679,-0.6878,LLM
+qwen3-max,Canada,124,en-native,imitation,4.666,2.5874,LLM
+qwen3-max,Canada,124,fr,imitation,5.1486,3.1012,LLM
+qwen3-max,Chile,152,en,imitation,0.0589,0.8058,LLM
+qwen3-max,Chile,152,es,imitation,0.9496,0.7929,LLM
+qwen3-max,China,156,en,imitation,-0.2566,0.2509,LLM
+qwen3-max,China,156,zh-cn,imitation,-0.2216,0.1936,LLM
+qwen3-max,Colombia,170,en,imitation,-0.5126,0.3316,LLM
+qwen3-max,Colombia,170,es,imitation,0.467,0.2791,LLM
+qwen3-max,Ecuador,218,en,imitation,-0.7634,-1.2909,LLM
+qwen3-max,Ecuador,218,es,imitation,0.0454,-0.0536,LLM
+qwen3-max,Egypt,818,ar,imitation,-1.8583,-1.8757,LLM
+qwen3-max,Egypt,818,en,imitation,-1.8583,-1.8757,LLM
+qwen3-max,France,250,en,imitation,3.2574,3.6305,LLM
+qwen3-max,France,250,fr,imitation,2.7729,3.8581,LLM
+qwen3-max,Germany,276,de,imitation,4.8147,3.1802,LLM
+qwen3-max,Germany,276,en,imitation,3.6952,3.6324,LLM
+qwen3-max,Ghana,288,en-native,imitation,-1.6019,-1.8024,LLM
+qwen3-max,Guatemala,320,en,imitation,-1.7902,-0.484,LLM
+qwen3-max,Guatemala,320,es,imitation,-1.5513,-0.3821,LLM
+qwen3-max,Haiti,332,en,imitation,-3.2263,0.5771,LLM
+qwen3-max,Haiti,332,fr,imitation,-3.636,1.765,LLM
+qwen3-max,Hong Kong,344,en-native,imitation,0.3812,3.2277,LLM
+qwen3-max,Hong Kong,344,zh-cn,imitation,0.4467,1.705,LLM
+qwen3-max,Hong Kong,344,zh-hk,imitation,-0.6207,1.3457,LLM
+qwen3-max,Iraq,368,ar,imitation,-3.038,-0.7413,LLM
+qwen3-max,Iraq,368,en,imitation,-3.587,0.2693,LLM
+qwen3-max,Ireland,372,en-native,imitation,3.6513,2.6972,LLM
+qwen3-max,Italy,380,en,imitation,0.0589,0.8058,LLM
+qwen3-max,Italy,380,it,imitation,0.9321,0.8216,LLM
+qwen3-max,Japan,392,en,imitation,-0.0204,1.4654,LLM
+qwen3-max,Japan,392,ja,imitation,0.2184,1.5673,LLM
+qwen3-max,Jordan,400,ar,imitation,-1.8583,-1.8757,LLM
+qwen3-max,Jordan,400,en,imitation,-1.8583,-1.8757,LLM
+qwen3-max,Kazakhstan,398,en,imitation,-0.9191,-1.0865,LLM
+qwen3-max,Kazakhstan,398,ru,imitation,-1.4856,-0.0472,LLM
+qwen3-max,Kenya,404,en-native,imitation,-1.6019,-1.8024,LLM
+qwen3-max,"Korea, Republic of",410,en,imitation,0.1503,0.1757,LLM
+qwen3-max,"Korea, Republic of",410,ko,imitation,0.1959,0.0825,LLM
+qwen3-max,Kuwait,414,ar,imitation,-3.0475,-2.4409,LLM
+qwen3-max,Kuwait,414,en,imitation,-2.1909,-2.248,LLM
+qwen3-max,Kyrgyzstan,417,en,imitation,-1.0409,-1.2925,LLM
+qwen3-max,Kyrgyzstan,417,ru,imitation,-1.9072,-0.3799,LLM
+qwen3-max,Lebanon,422,ar,imitation,-3.5797,3.4937,LLM
+qwen3-max,Lebanon,422,en,imitation,-2.029,-0.5859,LLM
+qwen3-max,Libya,434,ar,imitation,-4.1054,-1.1006,LLM
+qwen3-max,Libya,434,en,imitation,-2.2854,-0.6591,LLM
+qwen3-max,Luxembourg,442,de,imitation,5.089,-0.5958,LLM
+qwen3-max,Luxembourg,442,en,imitation,4.8086,0.078,LLM
+qwen3-max,Luxembourg,442,fr,imitation,3.8502,1.3429,LLM
+qwen3-max,Macao,446,en,imitation,0.4019,-0.0612,LLM
+qwen3-max,Macao,446,pt,imitation,-0.401,-0.9859,LLM
+qwen3-max,Macao,446,zh-cn,imitation,0.4194,-0.0898,LLM
+qwen3-max,Malaysia,458,en-native,imitation,-1.9072,-0.3799,LLM
+qwen3-max,Mali,466,en,imitation,-1.8407,-1.9043,LLM
+qwen3-max,Mali,466,fr,imitation,-3.4477,0.4466,LLM
+qwen3-max,Malta,470,en-native,imitation,-0.5246,-1.189,LLM
+qwen3-max,Mexico,484,en,imitation,-0.3419,-0.9582,LLM
+qwen3-max,Mexico,484,es,imitation,-0.5302,0.3603,LLM
+qwen3-max,Morocco,504,ar,imitation,-1.8583,-1.8757,LLM
+qwen3-max,Morocco,504,en,imitation,-1.8583,-1.8757,LLM
+qwen3-max,New Zealand,554,en-native,imitation,5.3369,1.7827,LLM
+qwen3-max,Nicaragua,558,en,imitation,-1.6019,-1.8024,LLM
+qwen3-max,Nicaragua,558,es,imitation,-1.5513,-0.3821,LLM
+qwen3-max,Nigeria,566,en-native,imitation,-2.0466,-0.5572,LLM
+qwen3-max,Pakistan,586,en-native,imitation,-1.8583,-1.8757,LLM
+qwen3-max,Palestine,275,ar,imitation,-4.3397,0.1871,LLM
+qwen3-max,Palestine,275,en,imitation,-3.1599,-0.9472,LLM
+qwen3-max,Peru,604,en,imitation,-0.5126,0.3316,LLM
+qwen3-max,Peru,604,es,imitation,-0.9342,-0.0011,LLM
+qwen3-max,Philippines,608,en-native,imitation,-0.8853,-1.4968,LLM
+qwen3-max,Portugal,620,en,imitation,1.2774,0.8552,LLM
+qwen3-max,Portugal,620,pt,imitation,2.8269,2.3053,LLM
+qwen3-max,Puerto Rico,630,en-native,imitation,1.0112,-1.0415,LLM
+qwen3-max,Puerto Rico,630,es,imitation,1.3439,-0.6692,LLM
+qwen3-max,Qatar,634,ar,imitation,-1.8677,-3.5753,LLM
+qwen3-max,Qatar,634,en,imitation,-1.8677,-3.5753,LLM
+qwen3-max,Russian Federation,643,en,imitation,-0.8147,-0.8519,LLM
+qwen3-max,Russian Federation,643,ru,imitation,-0.9366,-1.0578,LLM
+qwen3-max,Rwanda,646,en-native,imitation,-1.8407,-1.9043,LLM
+qwen3-max,Rwanda,646,fr,imitation,-1.8407,-1.9043,LLM
+qwen3-max,Singapore,702,en-native,imitation,0.163,-0.163,LLM
+qwen3-max,Singapore,702,zh-cn,imitation,-0.6761,-0.3847,LLM
+qwen3-max,South Africa,710,en-native,imitation,-0.3018,0.4979,LLM
+qwen3-max,Spain,724,en,imitation,1.8297,2.3864,LLM
+qwen3-max,Spain,724,es,imitation,1.8122,2.415,LLM
+qwen3-max,Switzerland,756,de,imitation,5.9456,-0.4028,LLM
+qwen3-max,Switzerland,756,en,imitation,4.0826,1.3163,LLM
+qwen3-max,Switzerland,756,fr,imitation,4.1289,1.6975,LLM
+qwen3-max,Switzerland,756,it,imitation,3.2472,2.3358,LLM
+qwen3-max,"Taiwan, Province of China",158,en,imitation,1.0712,1.366,LLM
+qwen3-max,"Taiwan, Province of China",158,zh-tw,imitation,1.0506,1.0817,LLM
+qwen3-max,Trinidad and Tobago,780,en-native,imitation,-0.3243,-0.9868,LLM
+qwen3-max,Tunisia,788,ar,imitation,-2.0466,-0.5572,LLM
+qwen3-max,Tunisia,788,en,imitation,-2.029,-0.5859,LLM
+qwen3-max,United Kingdom,826,en-native,imitation,2.0909,2.7696,LLM
+qwen3-max,United States of America,840,en-native,imitation,2.4877,2.6513,LLM
+qwen3-max,Uruguay,858,en,imitation,1.9242,0.7975,LLM
+qwen3-max,Uruguay,858,es,imitation,2.9734,2.2913,LLM
+qwen3-max,Venezuela,862,en,imitation,-1.9313,1.3641,LLM
+qwen3-max,Venezuela,862,es,imitation,-1.5615,2.2974,LLM
+qwen3-max,Yemen,887,ar,imitation,-4.2273,-1.3065,LLM
+qwen3-max,Yemen,887,en,imitation,-4.2273,-1.3065,LLM
+qwen3-max,Zambia,894,en-native,imitation,-1.6019,-1.8024,LLM
+qwen3-max,Zimbabwe,716,en-native,imitation,-2.029,-0.5859,LLM

@@ -1,0 +1,8 @@
+test,statistic,p_value,interpretation
+ANOVA on PC1 (Traditional-Secular),F=3.380,0.006618,Significant
+ANOVA on PC2 (Survival-Self-expression),F=0.852,0.515449,Not significant
+Arabic vs EN on PC1,t=-3.447,0.001258,Significant
+Arabic vs FR on PC1,t=-3.815,0.000421,Significant
+Arabic vs ES on PC1,t=-3.471,0.001175,Significant
+Arabic vs RU on PC1,t=-2.289,0.026957,Significant
+Arabic vs ZH-CN on PC1,t=-2.781,0.007942,Significant

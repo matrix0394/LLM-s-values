@@ -19,14 +19,15 @@ from src.base.ivs_questionnaire import LLMResponse
 class LLMInterview(BaseInterview):
     """LLM访谈类 - 继承基类，专注于基础LLM访谈"""
     
-    def __init__(self, consensus_count: int = 5, data_path: str = "data"):
+    def __init__(self, max_retry: int = 3, consensus_count: int = 5, data_path: str = "data"):
         """
         Args:
-            consensus_count: 每个完整问卷的重复次数（用于取众数），默认5次
+            max_retry: 单个问题失败后的最大重试次数（默认3）
+            consensus_count: 完整问卷的访谈轮数（默认5轮取众数）
             data_path: 数据路径
         """
-        super().__init__(repeat_count=1, data_path=data_path, 
-                        consensus_count=consensus_count)  # 传递到base
+        super().__init__(max_retry=max_retry, data_path=data_path, 
+                        consensus_count=consensus_count)
         
         # IVS问题列表
         self.iv_qns = ["A008", "A165", "E018", "E025", "F063", "F118", "F120", "G006", "Y002", "Y003"]
@@ -226,37 +227,15 @@ REMEMBER: Numbers ONLY. Any other output = FAILURE."""
             print(f"采用多轮访谈模式：{self.consensus_count} 轮完整问卷，每个问题取众数")
             return self._multi_round_interview(model_name)
         else:
-            # 单轮访谈模式
+            # 单轮访谈模式 - 直接调用_single_round_interview
             print(f"采用单轮访谈模式")
-            results = []
-            question_ids = list(self.questions.get_all_questions().keys())
-            
-            for i, question_id in enumerate(question_ids, 1):
-                print(f"  问题 {i}/{len(question_ids)}: {question_id}")
-                
-                # 使用基类的统一方法，传入LLM专用的系统提示词
-                response = self.ask_question_with_retry(model_name, question_id, self.system_prompt)
-                
-                if response.raw_response is None:
-                    print(f"  跳过模型 {model_name}（API调用失败）")
-                    return []
-                
-                if response.is_valid:
-                    print(f"    最终回答: {response.raw_response} -> {response.response}")
-                else:
-                    print(f"    无效回答: {response.raw_response} ({response.error_message})")
-                
-                results.append(response)
-                
-                # 使用基类的动态延迟
-                import time
-                time.sleep(self._get_dynamic_delay(model_name))
-            
-            return results, {}
+            round_result = self._single_round_interview(model_name)
+            return round_result['responses'], {}
     
     def _load_existing_interview_data(self, data_dir: Path) -> Dict:
         """
         加载已有的访谈数据（用于增量访谈）
+        只从独立模型文件加载（每个模型一个文件）
         
         Args:
             data_dir: 数据目录
@@ -270,54 +249,48 @@ REMEMBER: Numbers ONLY. Any other output = FAILURE."""
             print(f"📝 数据目录不存在，将进行全新访谈")
             return existing_data
         
-        # 查找所有访谈结果文件
-        pkl_files = list(data_dir.glob("llm_interview_raw_*.pkl"))
-        json_files = list(data_dir.glob("llm_interview_raw_*.json"))
+        import pickle
         
-        if not pkl_files and not json_files:
+        # 查找所有独立模型文件（排除合并文件）
+        individual_files = [f for f in data_dir.glob("*.pkl") 
+                           if not f.name.startswith("llm_interview_raw_")]
+        
+        if not individual_files:
             print(f"📝 未发现已有数据，将进行全新访谈")
             return existing_data
         
-        # 优先使用最新的pkl文件
-        if pkl_files:
-            latest_file = max(pkl_files, key=lambda x: x.stat().st_mtime)
-            print(f"✅ 发现已有访谈数据: {latest_file.name}")
-            
+        print(f"📂 发现 {len(individual_files)} 个独立模型文件")
+        
+        # 加载每个独立文件
+        for file_path in individual_files:
             try:
-                import pickle
-                with open(latest_file, 'rb') as f:
-                    data = pickle.load(f)
+                with open(file_path, 'rb') as f:
+                    model_data = pickle.load(f)
                 
-                # 处理统一格式: {metadata: {...}, results: [...]}
-                if isinstance(data, dict) and 'results' in data:
-                    for result in data.get('results', []):
-                        model_name = result.get('model_name', '')
-                        if model_name and result.get('valid_responses', 0) > 0:
-                            existing_data[model_name] = result
-                    
-                    print(f"✅ 加载了 {len(existing_data)} 个模型的已有数据")
-                    print(f"   - 数据格式: 统一格式（Stage1）")
-                    print(f"   - 模型列表: {list(existing_data.keys())}")
+                # 获取模型名称
+                model_name = model_data.get('model_name', model_data.get('model', ''))
+                
+                if model_name:
+                    # 检查是否有有效回答
+                    valid_responses = model_data.get('valid_responses', 0)
+                    if valid_responses > 0:
+                        existing_data[model_name] = model_data
+                        print(f"   ✅ {model_name}: {valid_responses}/10 有效回答")
+                    else:
+                        print(f"   ⚠️ {model_name}: 无有效回答，将重新访谈")
                 else:
-                    print(f"⚠️ 数据格式不符合预期，将重新访谈")
+                    print(f"   ⚠️ {file_path.name}: 无法识别模型名称")
                     
             except Exception as e:
-                print(f"⚠️ 加载已有数据失败: {e}")
-                print(f"   将进行全新访谈")
+                print(f"   ❌ {file_path.name}: 加载失败 - {e}")
+        
+        if existing_data:
+            print(f"\n📊 总计加载: {len(existing_data)} 个模型")
+        else:
+            print(f"\n📝 未发现有效数据，将进行全新访谈")
         
         return existing_data
     
-    def _get_completed_models(self, existing_data: Dict) -> set:
-        """
-        从已有数据中提取已完成的模型列表
-        
-        Args:
-            existing_data: _load_existing_interview_data返回的字典
-        
-        Returns:
-            set: 已完成模型名称的集合
-        """
-        return set(existing_data.keys())
     
     def _merge_interview_results(self, existing_data: Dict, new_results: Dict) -> Dict:
         """
@@ -340,31 +313,8 @@ REMEMBER: Numbers ONLY. Any other output = FAILURE."""
         # 添加新数据（新数据会覆盖旧数据）
         if 'results' in new_results:
             for model_name, model_data in new_results['results'].items():
-                # 检查是否有有效数据
-                if isinstance(model_data, dict) and 'responses' in model_data:
-                    responses = model_data['responses']
-                    valid_count = sum(1 for r in responses if r.is_valid)
-                    if valid_count > 0:
-                        # 构建标准result格式
-                        unique_results[model_name] = {
-                            'model_name': model_name,
-                            'responses': responses,
-                            'valid_responses': valid_count,
-                            'total_questions': len(responses),
-                            'success_rate': valid_count / len(responses) * 100 if responses else 0,
-                            'timestamp': datetime.now().isoformat()
-                        }
-                elif isinstance(model_data, list):  # 直接是responses列表
-                    valid_count = sum(1 for r in model_data if r.is_valid)
-                    if valid_count > 0:
-                        unique_results[model_name] = {
-                            'model_name': model_name,
-                            'responses': model_data,
-                            'valid_responses': valid_count,
-                            'total_questions': len(model_data),
-                            'success_rate': valid_count / len(model_data) * 100 if model_data else 0,
-                            'timestamp': datetime.now().isoformat()
-                        }
+                # 直接使用新数据（不在这里转换，留给保存时统一转换）
+                unique_results[model_name] = model_data
         
         print(f"\n📊 合并结果统计:")
         print(f"   - 总模型数: {len(unique_results)}")
@@ -403,7 +353,7 @@ REMEMBER: Numbers ONLY. Any other output = FAILURE."""
             print(f"\n📂 检查已有访谈数据...")
             data_dir = self.data_path / "llm_values" / "interview_raw"
             existing_data = self._load_existing_interview_data(data_dir)
-            completed_models = self._get_completed_models(existing_data)
+            completed_models = set(existing_data.keys())
             
             if completed_models:
                 print(f"✅ 发现 {len(completed_models)} 个已完成的模型，将跳过这些模型")
@@ -452,25 +402,74 @@ REMEMBER: Numbers ONLY. Any other output = FAILURE."""
     
     # _batch_interview_sequential 和 _batch_interview_concurrent 已移至 BaseInterview ✅
     
-    def save_results(self, results: Dict[str, Any], output_dir: str = None, use_unified_format: bool = True) -> str:
+    def _on_task_completed(self, model_name: str, entity_id: str, 
+                          responses: List, intermediate_data: Dict = None):
         """
-        保存LLM访谈结果
-        
-        Args:
-            results: 访谈结果字典
-            output_dir: 输出目录
-            use_unified_format: 是否使用统一格式（默认True）
-            
-        Returns:
-            保存文件路径
+        任务完成钩子方法：每个模型访谈完成后立即保存
+        防止长时间访谈任务崩溃丢失数据
         """
-        if use_unified_format:
-            return self._save_unified_format(results, output_dir)
-        else:
-            return self._save_legacy_format(results, output_dir)
+        if responses:
+            self._save_individual_result(model_name, responses, intermediate_data)
     
-    def _save_unified_format(self, results: Dict[str, Any], output_dir: str = None) -> str:
-        """使用统一数据格式保存"""
+    def _save_individual_result(self, model_name: str, responses: List, 
+                                intermediate_data: Dict = None):
+        """保存单个模型的访谈结果到独立文件"""
+        try:
+            import pickle
+            import json
+            from datetime import datetime
+            
+            # 确保输出目录存在
+            output_dir = self.data_path / "llm_values" / "interview_raw"
+            output_dir.mkdir(parents=True, exist_ok=True)
+            
+            # 创建安全的文件名
+            safe_model_name = model_name.replace('/', '_').replace('\\', '_')
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:19]  # 精确到毫秒
+            
+            # 构建保存数据
+            save_data = {
+                'model_name': model_name,
+                'timestamp': datetime.now().isoformat(),
+                'total_questions': len(responses),
+                'valid_responses': sum(1 for r in responses if r.is_valid),
+                'responses': []
+            }
+            
+            # 转换responses
+            for resp in responses:
+                save_data['responses'].append({
+                    'model_name': resp.model_name,
+                    'question_id': resp.question_id,
+                    'response': resp.response,
+                    'raw_response': resp.raw_response,
+                    'is_valid': resp.is_valid,
+                    'error_message': resp.error_message
+                })
+            
+            # 如果有中间数据（多轮访谈），也保存
+            if intermediate_data:
+                save_data['intermediate_data'] = intermediate_data
+                save_data['consensus_count'] = intermediate_data.get('consensus_count', 1)
+                save_data['overall_consistency'] = intermediate_data.get('overall_consistency', 1.0)
+            
+            # 保存JSON
+            json_file = output_dir / f"{safe_model_name}_{timestamp}.json"
+            with open(json_file, 'w', encoding='utf-8') as f:
+                json.dump(save_data, f, ensure_ascii=False, indent=2)
+            
+            # 保存PKL
+            pkl_file = output_dir / f"{safe_model_name}_{timestamp}.pkl"
+            with open(pkl_file, 'wb') as f:
+                pickle.dump(save_data, f)
+            
+            print(f"💾 已保存: {safe_model_name}_{timestamp}.json")
+            
+        except Exception as e:
+            print(f"⚠️ 保存单个结果失败: {e}")
+    
+    def save_results(self, results: Dict[str, Any], output_dir: str = None) -> str:
+        """保存LLM访谈结果（统一格式）"""
         import pickle
         import json
         
@@ -540,20 +539,30 @@ REMEMBER: Numbers ONLY. Any other output = FAILURE."""
                     "model_region": model_region,
                     "timestamp": datetime.now().isoformat(),
                     "total_questions": len(model_responses),
-                    "valid_responses": sum(1 for r in model_responses if r.is_valid),
-                    "success_rate": sum(1 for r in model_responses if r.is_valid) / len(model_responses) * 100 if model_responses else 0,
+                    "valid_responses": 0,  # 先初始化为0，后面计算
+                    "success_rate": 0,  # 先初始化为0，后面计算
                     "responses": []
                 }
                 
-                # 转换responses
+                # 转换responses为字典格式
                 for response in model_responses:
-                    entity_result["responses"].append({
-                        "question_id": response.question_id,
-                        "raw_response": response.raw_response,
-                        "processed_response": response.response,
-                        "is_valid": response.is_valid,
-                        "error_message": response.error_message
-                    })
+                    if isinstance(response, dict):
+                        # 已经是字典格式
+                        entity_result["responses"].append(response)
+                    else:
+                        # 是对象格式，转换为字典
+                        entity_result["responses"].append({
+                            "question_id": response.question_id,
+                            "raw_response": response.raw_response,
+                            "processed_response": response.response,
+                            "is_valid": response.is_valid,
+                            "error_message": response.error_message
+                        })
+                
+                # 统计（现在都是字典了）
+                valid_count = sum(1 for r in entity_result["responses"] if r.get("is_valid", False))
+                entity_result["valid_responses"] = valid_count
+                entity_result["success_rate"] = valid_count / len(model_responses) * 100 if model_responses else 0
                 
                 # 添加中间数据（如果有）- 转换为可序列化格式
                 if intermediate_data:
@@ -582,76 +591,14 @@ REMEMBER: Numbers ONLY. Any other output = FAILURE."""
             "results": unified_results
         }
     
-    def _save_legacy_format(self, results: Dict[str, Any], output_dir: str = None) -> str:
-        """保存LLM访谈结果 - 旧格式（向后兼容）"""
-        if output_dir is None:
-            output_dir = self.data_path / "llm_values" / "llm_responses"  # 使用独立目录
-        
-        output_path = Path(output_dir)
-        output_path.mkdir(parents=True, exist_ok=True)
-        
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        
-        # 转换结果为DataFrame格式
-        if 'results' in results:
-            all_responses = []
-            
-            for model_name, model_results in results['results'].items():
-                for response in model_results:
-                    # 将LLMResponse对象转换为字典
-                    if hasattr(response, '__dict__'):
-                        response_dict = response.__dict__.copy()
-                    else:
-                        response_dict = response
-                    
-                    # 确保有model_name
-                    response_dict['model_name'] = model_name
-                    all_responses.append(response_dict)
-            
-            if all_responses:
-                # 转换为DataFrame（长格式）
-                df_long = pd.DataFrame(all_responses)
-                
-                # 保存长格式数据（原始格式）
-                long_file = output_path / f"llm_interview_responses_long_{timestamp}.pkl"
-                df_long.to_pickle(long_file)
-                
-                # 转换为宽格式：每行一个模型，每列一个问题
-                if 'question_id' in df_long.columns and 'response' in df_long.columns:
-                    pivot_df = df_long.pivot_table(
-                        index='model_name', 
-                        columns='question_id', 
-                        values='response', 
-                        aggfunc='first'
-                    ).reset_index()
-                    
-                    # 添加必要的元数据列
-                    pivot_df['data_source'] = 'LLM'
-                    pivot_df['entity_id'] = pivot_df['model_name']
-                    
-                    # 保存宽格式数据（用于后续PCA分析）
-                    wide_file = output_path / f"llm_interview_responses_wide_{timestamp}.pkl"
-                    pivot_df.to_pickle(wide_file)
-                    
-                    print(f"✅ LLM访谈结果已保存（旧格式）:")
-                    print(f"   📊 长格式数据: {long_file}")
-                    print(f"   📊 宽格式数据: {wide_file}")
-                    print(f"   📈 数据形状: {pivot_df.shape}")
-                    print(f"   🤖 包含模型: {list(pivot_df['model_name'])}")
-                    print(f"   ❓ 包含问题: {[col for col in pivot_df.columns if col in self.iv_qns]}")
-                    
-                    return str(wide_file)  # 返回宽格式文件路径
-        
-        # 如果转换失败，使用基类方法
-        return super().save_results(results, output_dir)
 
 
 def main():
     """主函数 - 测试新架构"""
     print("🔄 使用新架构运行LLM访谈...")
     
-    # 创建访谈对象 - 默认5次重复取众数
-    interview = LLMInterview(repeat_count=5)
+    # 创建访谈对象 - 默认5轮取众数
+    interview = LLMInterview(consensus_count=5)
     
     # 显示可用模型
     available_models = [name for name in interview.model_configs.keys() if name in interview.api_keys]

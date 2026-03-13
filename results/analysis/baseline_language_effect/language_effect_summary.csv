@@ -1,0 +1,7 @@
+language,PC1_mean,PC1_std,PC1_min,PC1_max,PC1_count,PC2_mean,PC2_std,PC2_min,PC2_max,PC1_interpretation,PC2_interpretation,PC1_range,PC2_range
+en,2.687,1.851,-0.705,6.644,23,1.189,1.731,-1.423,5.2,Very Secular,Self-expression,7.349,6.623
+fr,2.675,1.525,-0.407,5.494,23,1.682,1.384,-1.104,4.86,Very Secular,Self-expression,5.901,5.964
+es,2.534,1.549,-1.199,4.559,23,1.774,1.342,-0.497,4.369,Very Secular,Self-expression,5.758,4.866
+zh-cn,2.353,1.84,-1.006,6.17,23,1.532,1.879,-1.707,4.86,Very Secular,Self-expression,7.176,6.567
+ru,2.103,1.822,-2.974,5.626,23,1.466,1.837,-1.585,5.237,Very Secular,Self-expression,8.600000000000001,6.822
+ar,0.981,1.485,-2.345,3.155,23,0.885,2.038,-1.64,4.985,Secular,Self-expression,5.5,6.625

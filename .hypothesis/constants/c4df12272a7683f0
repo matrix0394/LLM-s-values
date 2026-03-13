@@ -1,0 +1,4 @@
+# file: E:\Code\value of LLM\LLM's values\src\utils\country_name_standardizer.py
+# hypothesis_version: 6.148.8
+
+['-', '=', 'CHN', 'China', 'China Regions Check:', 'Country', 'Hong Kong', 'Korea', 'Macao', 'Macau', 'Netherlands', 'Netherlands (the)', 'Philippines', 'Russia', 'South Korea', 'Taiwan', 'UK', 'US', 'USA', 'United Kingdom', 'United States', '__main__', 'aliases', 'canonical_name', 'canonical_names', 'config', 'cultural_region', 'display_name', 'is_islamic', 'note', 'numeric_code', 'r', 'utf-8']

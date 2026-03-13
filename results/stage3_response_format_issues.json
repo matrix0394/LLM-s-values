@@ -1,0 +1,7157 @@
+{
+  "total_files": 324,
+  "files_with_problems": 324,
+  "total_problems": 697,
+  "models_with_issues": 1,
+  "details": {
+    "Unknown": [
+      {
+        "file": "claude-3-7-sonnet-20250219_Australia_en-native_20251209_185823_017.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 8",
+            "issues": [
+              "包含文本: 1 2 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Canada_en-native_20251209_190632_051.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Ghana_en-native_20251209_191739_699.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Hong Kong_en-native_20251209_192807_361.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 7 8",
+            "issues": [
+              "包含文本: 1 3 4 7 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Ireland_en-native_20251209_193932_333.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Kenya_en-native_20251209_195237_910.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Malaysia_en-native_20251209_200359_690.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Malta_en-native_20251209_201607_997.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_New Zealand_en-native_20251209_202656_729.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 8",
+            "issues": [
+              "包含文本: 1 2 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Nigeria_en-native_20251209_203826_484.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Pakistan_en-native_20251209_205103_943.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Philippines_en-native_20251209_210224_278.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Puerto Rico_en-native_20251209_211519_072.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Rwanda_en-native_20251209_212938_459.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-3-7-sonnet-20250219_Singapore_en-native_20251209_214257_859.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Australia_en-native_20251209_185858_488.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Canada_en-native_20251209_190931_066.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Ghana_en-native_20251209_192047_263.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Hong Kong_en-native_20251209_193105_828.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Ireland_en-native_20251209_194242_031.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Kenya_en-native_20251209_195550_727.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 9",
+            "issues": [
+              "包含文本: 1 4 6 8 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Malaysia_en-native_20251209_200658_778.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Malta_en-native_20251209_201846_861.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_New Zealand_en-native_20251209_203000_482.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Nigeria_en-native_20251209_204125_975.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Pakistan_en-native_20251209_205420_635.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 9 10 11",
+            "issues": [
+              "包含文本: 1 4 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Philippines_en-native_20251209_210552_376.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Puerto Rico_en-native_20251209_211900_359.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Rwanda_en-native_20251209_213319_453.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "claude-sonnet-4.5_Singapore_en-native_20251209_214643_119.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Australia_en-native_20251209_190211_725.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Canada_en-native_20251209_191211_109.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Ghana_en-native_20251209_192240_451.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Hong Kong_en-native_20251209_193251_042.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Ireland_en-native_20251209_194552_678.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 8",
+            "issues": [
+              "包含文本: 1 2 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Kenya_en-native_20251209_200003_052.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Malaysia_en-native_20251209_200839_580.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Malta_en-native_20251209_202144_667.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_New Zealand_en-native_20251209_203308_242.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Nigeria_en-native_20251209_204333_052.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Pakistan_en-native_20251209_205708_279.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Philippines_en-native_20251209_210736_879.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Puerto Rico_en-native_20251209_212307_895.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Rwanda_en-native_20251209_213553_184.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 8 10",
+            "issues": [
+              "包含文本: 3 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat-v3.1_Singapore_en-native_20251209_215043_242.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Australia_en-native_20251209_185841_436.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 8",
+            "issues": [
+              "包含文本: 1 2 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Canada_en-native_20251209_190654_088.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 8",
+            "issues": [
+              "包含文本: 1 2 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Ghana_en-native_20251209_191832_304.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 11",
+            "issues": [
+              "包含文本: 1 3 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Hong Kong_en-native_20251209_192850_959.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Ireland_en-native_20251209_194030_143.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 8",
+            "issues": [
+              "包含文本: 1 2 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Kenya_en-native_20251209_195347_857.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Malaysia_en-native_20251209_200430_097.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Malta_en-native_20251209_201532_469.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 6 9 4 10",
+            "issues": [
+              "包含文本: 1 6 9 4 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_New Zealand_en-native_20251209_202737_125.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 8",
+            "issues": [
+              "包含文本: 1 2 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Nigeria_en-native_20251209_203943_512.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Pakistan_en-native_20251209_205144_396.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 11",
+            "issues": [
+              "包含文本: 1 3 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Philippines_en-native_20251209_210320_315.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Puerto Rico_en-native_20251209_211609_194.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Rwanda_en-native_20251209_213043_830.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "deepseek-chat_Singapore_en-native_20251209_214351_743.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Australia_en-native_20251209_190434_232.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Canada_en-native_20251209_191552_434.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Ghana_en-native_20251209_192546_207.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 10 11",
+            "issues": [
+              "包含文本: 1 3 4 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Hong Kong_en-native_20251209_193717_086.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 8 10",
+            "issues": [
+              "包含文本: 1 3 4 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Ireland_en-native_20251209_195054_403.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Kenya_en-native_20251209_200139_108.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 11",
+            "issues": [
+              "包含文本: 1 3 4 6 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Malaysia_en-native_20251209_201241_914.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 10 11",
+            "issues": [
+              "包含文本: 1 3 6 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Malta_en-native_20251209_202443_031.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_New Zealand_en-native_20251209_203648_971.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Nigeria_en-native_20251209_204816_031.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 9 10 11",
+            "issues": [
+              "包含文本: 1 4 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Pakistan_en-native_20251209_210013_567.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 9 10 11",
+            "issues": [
+              "包含文本: 1 4 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Philippines_en-native_20251209_211234_897.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 10 11",
+            "issues": [
+              "包含文本: 1 3 4 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Puerto Rico_en-native_20251209_212654_412.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 10 11",
+            "issues": [
+              "包含文本: 1 4 6 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Rwanda_en-native_20251209_214010_928.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 10 11",
+            "issues": [
+              "包含文本: 1 4 6 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-flash_Singapore_en-native_20251209_215325_474.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Australia_en-native_20251209_191351_646.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 2 4 10 1",
+            "issues": [
+              "包含文本: 6 2 4 10 1"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Canada_en-native_20251209_192513_141.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 2 4 1 10",
+            "issues": [
+              "包含文本: 6 2 4 1 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Ghana_en-native_20251209_193830_126.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 11",
+            "issues": [
+              "包含文本: 1 3 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Hong Kong_en-native_20251209_195045_673.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 8 11",
+            "issues": [
+              "包含文本: 1 3 4 8 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Ireland_en-native_20251209_195933_543.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 6 4 10 2",
+            "issues": [
+              "包含文本: 1 6 4 10 2"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Kenya_en-native_20251209_201156_000.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Malaysia_en-native_20251209_202655_270.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 6 9 11 4",
+            "issues": [
+              "包含文本: 1 6 9 11 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Malta_en-native_20251209_203453_395.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 3",
+            "issues": [
+              "包含文本: 1 4 6 9 3"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_New Zealand_en-native_20251209_204603_076.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 2 4 1 10",
+            "issues": [
+              "包含文本: 6 2 4 1 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Nigeria_en-native_20251209_205838_875.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 9 11 3 4",
+            "issues": [
+              "包含文本: 1 9 11 3 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Pakistan_en-native_20251209_211312_034.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "9 1 11 4 3",
+            "issues": [
+              "包含文本: 9 1 11 4 3"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Philippines_en-native_20251209_212510_497.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 6 9 11 4",
+            "issues": [
+              "包含文本: 1 6 9 11 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Puerto Rico_en-native_20251209_213736_642.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 6 9 4 10",
+            "issues": [
+              "包含文本: 1 6 9 4 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-2.5-pro_Rwanda_en-native_20251209_214850_254.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Australia_en-native_20251209_191009_899.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4",
+            "issues": [
+              "包含文本: 1 2 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Canada_en-native_20251209_191932_944.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E018",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Ghana_en-native_20251209_192839_870.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Hong Kong_en-native_20251209_194437_938.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F063",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Ireland_en-native_20251209_195410_807.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "A165",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "E018",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Kenya_en-native_20251209_200407_811.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Malaysia_en-native_20251209_201651_086.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Malta_en-native_20251209_203129_478.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_New Zealand_en-native_20251209_203826_496.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E018",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Nigeria_en-native_20251209_204844_841.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Pakistan_en-native_20251209_210338_024.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Philippines_en-native_20251209_211739_465.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F118",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Puerto Rico_en-native_20251209_213031_140.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F120",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemini-3-pro-preview_Rwanda_en-native_20251209_214313_623.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Australia_en-native_20251209_190417_627.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Canada_en-native_20251209_191554_102.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Ghana_en-native_20251209_192548_266.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Hong Kong_en-native_20251209_193701_059.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 1",
+            "issues": [
+              "包含文本: 1 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Ireland_en-native_20251209_195009_343.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 10 11",
+            "issues": [
+              "包含文本: 3 4 6 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Kenya_en-native_20251209_200152_229.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 1",
+            "issues": [
+              "包含文本: 1 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Malaysia_en-native_20251209_201242_156.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 1",
+            "issues": [
+              "包含文本: 1 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Malta_en-native_20251209_202408_241.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 1",
+            "issues": [
+              "包含文本: 1 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_New Zealand_en-native_20251209_203647_915.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Nigeria_en-native_20251209_204813_177.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Pakistan_en-native_20251209_205940_014.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 1",
+            "issues": [
+              "包含文本: 1 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Philippines_en-native_20251209_211249_552.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Puerto Rico_en-native_20251209_212702_986.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Rwanda_en-native_20251209_214027_852.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 1",
+            "issues": [
+              "包含文本: 1 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gemma-3-4b-it_Singapore_en-native_20251209_215335_875.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 1",
+            "issues": [
+              "包含文本: 1 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Australia_en-native_20251209_190330_058.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Canada_en-native_20251209_191402_689.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Ireland_en-native_20251209_194745_467.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "A008",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "A165",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "F063",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "F118",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "F120",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "G006",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Kenya_en-native_20251209_195906_151.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 10",
+            "issues": [
+              "包含文本: 1 3 4 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Malaysia_en-native_20251209_201121_341.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Malta_en-native_20251209_202135_880.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 10 3",
+            "issues": [
+              "包含文本: 1 4 6 10 3"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_New Zealand_en-native_20251209_203452_520.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Nigeria_en-native_20251209_204635_772.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "A008",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "A165",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "E018",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "F063",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "F118",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "F120",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "G006",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Pakistan_en-native_20251209_205715_823.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Philippines_en-native_20251209_211059_566.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 10",
+            "issues": [
+              "包含文本: 1 3 4 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "glm-4.6_Puerto Rico_en-native_20251209_212412_297.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Australia_en-native_20251209_185814_867.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Canada_en-native_20251209_190559_818.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Ghana_en-native_20251209_191635_588.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Hong Kong_en-native_20251209_192752_259.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Ireland_en-native_20251209_193909_894.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Kenya_en-native_20251209_195116_024.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Malaysia_en-native_20251209_200322_074.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 10 9",
+            "issues": [
+              "包含文本: 1 4 6 10 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Malta_en-native_20251209_201400_838.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_New Zealand_en-native_20251209_202622_852.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Nigeria_en-native_20251209_203732_592.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Pakistan_en-native_20251209_205039_949.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 10",
+            "issues": [
+              "包含文本: 1 3 4 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Philippines_en-native_20251209_210216_453.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Puerto Rico_en-native_20251209_211446_396.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Rwanda_en-native_20251209_212901_225.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o-mini_Singapore_en-native_20251209_214203_160.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Australia_en-native_20251209_185813_590.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Canada_en-native_20251209_190542_692.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Ghana_en-native_20251209_191623_070.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Hong Kong_en-native_20251209_192719_616.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 3 4 6 8",
+            "issues": [
+              "包含文本: 2 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Ireland_en-native_20251209_193908_907.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Kenya_en-native_20251209_195117_047.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 9 10",
+            "issues": [
+              "包含文本: 3 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Malaysia_en-native_20251209_200241_429.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Malta_en-native_20251209_201341_146.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_New Zealand_en-native_20251209_202548_193.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Nigeria_en-native_20251209_203714_605.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Pakistan_en-native_20251209_205012_994.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Philippines_en-native_20251209_210150_794.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Puerto Rico_en-native_20251209_211408_132.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Rwanda_en-native_20251209_212759_411.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 9 11",
+            "issues": [
+              "包含文本: 3 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_Singapore_en-native_20251209_214107_502.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 8",
+            "issues": [
+              "包含文本: 1 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-4o_South Africa_en-native_20251209_215418_707.pkl",
+        "country": "South Africa",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Australia_en-native_20251209_190038_276.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 5 6 10",
+            "issues": [
+              "包含文本: 2 4 5 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Canada_en-native_20251209_191101_235.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Ghana_en-native_20251209_192031_979.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Hong Kong_en-native_20251209_193152_769.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 7 8",
+            "issues": [
+              "包含文本: 3 4 6 7 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Ireland_en-native_20251209_194349_549.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Kenya_en-native_20251209_195517_515.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Malaysia_en-native_20251209_200745_972.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Malta_en-native_20251209_201828_698.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_New Zealand_en-native_20251209_203128_105.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Nigeria_en-native_20251209_204111_634.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Pakistan_en-native_20251209_205420_677.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Philippines_en-native_20251209_210717_923.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Puerto Rico_en-native_20251209_212010_864.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Rwanda_en-native_20251209_213327_673.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "gpt-5.1_Singapore_en-native_20251209_214736_953.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Australia_en-native_20251209_190339_496.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 3 4 6 8",
+            "issues": [
+              "包含文本: 2 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Canada_en-native_20251209_191353_591.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 3 4 6",
+            "issues": [
+              "包含文本: 1 2 3 4 6"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Ghana_en-native_20251209_192348_990.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Hong Kong_en-native_20251209_193459_544.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 8 11",
+            "issues": [
+              "包含文本: 3 4 6 8 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Ireland_en-native_20251209_194754_545.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Kenya_en-native_20251209_195928_059.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Malaysia_en-native_20251209_201014_267.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 11",
+            "issues": [
+              "包含文本: 1 3 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Malta_en-native_20251209_202148_824.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_New Zealand_en-native_20251209_203433_954.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 3 4 6 10",
+            "issues": [
+              "包含文本: 2 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Nigeria_en-native_20251209_204434_443.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 9 10 11",
+            "issues": [
+              "包含文本: 1 3 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Pakistan_en-native_20251209_205808_405.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Philippines_en-native_20251209_211026_584.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 11",
+            "issues": [
+              "包含文本: 1 3 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Puerto Rico_en-native_20251209_212358_106.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Rwanda_en-native_20251209_213716_172.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 9 11",
+            "issues": [
+              "包含文本: 3 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "grok-4.1-fast_Singapore_en-native_20251209_215054_657.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 11",
+            "issues": [
+              "包含文本: 1 3 4 6 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Australia_en-native_20251209_185820_192.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Canada_en-native_20251209_190659_630.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Ghana_en-native_20251209_191820_113.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Hong Kong_en-native_20251209_192901_264.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Ireland_en-native_20251209_194150_920.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Kenya_en-native_20251209_195510_428.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 11",
+            "issues": [
+              "包含文本: 1 3 4 6 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Malaysia_en-native_20251209_200504_221.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Malta_en-native_20251209_201605_069.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_New Zealand_en-native_20251209_202909_215.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Nigeria_en-native_20251209_203945_039.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Pakistan_en-native_20251209_205439_750.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Philippines_en-native_20251209_210508_077.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Puerto Rico_en-native_20251209_211656_955.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Rwanda_en-native_20251209_213020_485.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 11",
+            "issues": [
+              "包含文本: 1 3 4 6 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "kimi-k2_Singapore_en-native_20251209_214344_168.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Australia_en-native_20251209_190420_603.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F120",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 1 5",
+            "issues": [
+              "包含文本: 3 6 8 1 5"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Canada_en-native_20251209_191522_226.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F120",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 5 2",
+            "issues": [
+              "包含文本: 3 6 8 5 2"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Ghana_en-native_20251209_192605_875.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F118",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 7",
+            "issues": [
+              "包含文本: 3 6 8 10 7"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Hong Kong_en-native_20251209_193704_936.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F120",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 1 10",
+            "issues": [
+              "包含文本: 3 6 8 1 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Ireland_en-native_20251209_194908_314.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F120",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 5",
+            "issues": [
+              "包含文本: 3 6 8 10 5"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Kenya_en-native_20251209_200148_328.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 7",
+            "issues": [
+              "包含文本: 3 6 8 10 7"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Malaysia_en-native_20251209_201207_292.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 7",
+            "issues": [
+              "包含文本: 3 6 8 10 7"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Malta_en-native_20251209_202425_996.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F118",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 1 10",
+            "issues": [
+              "包含文本: 3 6 8 1 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_New Zealand_en-native_20251209_203546_026.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 5 2",
+            "issues": [
+              "包含文本: 3 6 8 5 2"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Nigeria_en-native_20251209_204836_074.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F118",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 7",
+            "issues": [
+              "包含文本: 3 6 8 10 7"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Pakistan_en-native_20251209_205941_250.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F118",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 8 10",
+            "issues": [
+              "包含文本: 1 3 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Philippines_en-native_20251209_211212_929.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 7",
+            "issues": [
+              "包含文本: 3 6 8 10 7"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Puerto Rico_en-native_20251209_212645_407.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 8 10",
+            "issues": [
+              "包含文本: 1 3 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Rwanda_en-native_20251209_213941_978.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F120",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 7",
+            "issues": [
+              "包含文本: 3 6 8 10 7"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.2-3b-instruct_Singapore_en-native_20251209_215334_922.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 1 10",
+            "issues": [
+              "包含文本: 3 6 8 1 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Australia_en-native_20251209_190012_818.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Canada_en-native_20251209_190853_341.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Ghana_en-native_20251209_192020_031.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 9 10 11",
+            "issues": [
+              "包含文本: 3 6 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Hong Kong_en-native_20251209_193044_233.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 11",
+            "issues": [
+              "包含文本: 3 6 8 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Ireland_en-native_20251209_194355_247.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Kenya_en-native_20251209_195547_296.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 9 10 11",
+            "issues": [
+              "包含文本: 3 6 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Malaysia_en-native_20251209_200631_647.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 11",
+            "issues": [
+              "包含文本: 1 3 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Malta_en-native_20251209_201803_494.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_New Zealand_en-native_20251209_203054_693.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Nigeria_en-native_20251209_204148_080.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "9 11 3 6 10",
+            "issues": [
+              "包含文本: 9 11 3 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Pakistan_en-native_20251209_205412_092.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 11",
+            "issues": [
+              "包含文本: 1 3 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Philippines_en-native_20251209_210554_837.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 11",
+            "issues": [
+              "包含文本: 1 3 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Puerto Rico_en-native_20251209_211949_373.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 8 10",
+            "issues": [
+              "包含文本: 1 3 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Rwanda_en-native_20251209_213305_472.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 8 11",
+            "issues": [
+              "包含文本: 3 4 6 8 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "llama-3.3-70b-instruct_Singapore_en-native_20251209_214558_667.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 11",
+            "issues": [
+              "包含文本: 3 6 8 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Australia_en-native_20251209_190238_796.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 4",
+            "issues": [
+              "包含文本: 3 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Canada_en-native_20251209_191357_040.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Ghana_en-native_20251209_192436_736.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 6 9 10 11",
+            "issues": [
+              "包含文本: 1 6 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Hong Kong_en-native_20251209_193528_197.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 8 10",
+            "issues": [
+              "包含文本: 3 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Ireland_en-native_20251209_194749_225.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 1 10 4 8",
+            "issues": [
+              "包含文本: 6 1 10 4 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Kenya_en-native_20251209_200022_834.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 9 11",
+            "issues": [
+              "包含文本: 3 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Malaysia_en-native_20251209_201047_934.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 1 9 10 4",
+            "issues": [
+              "包含文本: 6 1 9 10 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Malta_en-native_20251209_202328_407.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 1 9 10 4",
+            "issues": [
+              "包含文本: 6 1 9 10 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_New Zealand_en-native_20251209_203500_675.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Nigeria_en-native_20251209_204612_360.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 6 9 10 11",
+            "issues": [
+              "包含文本: 1 6 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Pakistan_en-native_20251209_210009_914.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "9 1 11 6 4",
+            "issues": [
+              "包含文本: 9 1 11 6 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Philippines_en-native_20251209_210958_818.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 9 1 10",
+            "issues": [
+              "包含文本: 3 6 9 1 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Puerto Rico_en-native_20251209_212414_598.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 1 10 4 9",
+            "issues": [
+              "包含文本: 6 1 10 4 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Rwanda_en-native_20251209_213726_094.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 1 10 4 11",
+            "issues": [
+              "包含文本: 6 1 10 4 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-medium-3.1_Singapore_en-native_20251209_215147_017.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 4 6 8 10",
+            "issues": [
+              "包含文本: 3 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Australia_en-native_20251209_190209_005.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 2 3 10 4",
+            "issues": [
+              "包含文本: 6 2 3 10 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Canada_en-native_20251209_191253_684.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 2 3 10 4",
+            "issues": [
+              "包含文本: 6 2 3 10 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Ghana_en-native_20251209_192339_036.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 11",
+            "issues": [
+              "包含文本: 3 6 8 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Hong Kong_en-native_20251209_193449_325.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 1",
+            "issues": [
+              "包含文本: 4 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 1",
+            "issues": [
+              "包含文本: 3 6 8 10 1"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Ireland_en-native_20251209_194638_252.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 3 10 2 8",
+            "issues": [
+              "包含文本: 6 3 10 2 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Kenya_en-native_20251209_195829_391.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 1",
+            "issues": [
+              "包含文本: 4 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 3 10 8 4",
+            "issues": [
+              "包含文本: 6 3 10 8 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Malaysia_en-native_20251209_200958_637.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 3 10 8 2",
+            "issues": [
+              "包含文本: 6 3 10 8 2"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Malta_en-native_20251209_202247_121.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 2 3 10 1",
+            "issues": [
+              "包含文本: 6 2 3 10 1"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_New Zealand_en-native_20251209_203338_132.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 2 3 10 4",
+            "issues": [
+              "包含文本: 6 2 3 10 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Nigeria_en-native_20251209_204537_193.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 11",
+            "issues": [
+              "包含文本: 3 6 8 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Pakistan_en-native_20251209_205710_006.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 9 10 11",
+            "issues": [
+              "包含文本: 3 6 9 10 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Philippines_en-native_20251209_210948_536.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 1",
+            "issues": [
+              "包含文本: 4 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 8 10",
+            "issues": [
+              "包含文本: 1 3 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Puerto Rico_en-native_20251209_212343_172.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 2 3 10 8",
+            "issues": [
+              "包含文本: 6 2 3 10 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Rwanda_en-native_20251209_213633_650.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "6 3 10 8 4",
+            "issues": [
+              "包含文本: 6 3 10 8 4"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "mistral-nemo_Singapore_en-native_20251209_215047_698.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 4",
+            "issues": [
+              "包含文本: 1 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "3 6 8 10 1",
+            "issues": [
+              "包含文本: 3 6 8 10 1"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Australia_en-native_20251209_190253_605.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Canada_en-native_20251209_191416_611.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Ghana_en-native_20251209_192611_523.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 1 1",
+            "issues": [
+              "包含文本: 1 1 1"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Hong Kong_en-native_20251209_193658_649.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Ireland_en-native_20251209_194904_846.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Kenya_en-native_20251209_200107_457.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Malaysia_en-native_20251209_201122_040.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Malta_en-native_20251209_202336_716.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_New Zealand_en-native_20251209_203519_569.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Nigeria_en-native_20251209_204742_910.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Pakistan_en-native_20251209_205923_250.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Philippines_en-native_20251209_211126_751.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Puerto Rico_en-native_20251209_212615_725.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Rwanda_en-native_20251209_213900_622.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "phi-3-mini-128k-instruct_Singapore_en-native_20251209_215131_515.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 2",
+            "issues": [
+              "包含文本: 1 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 8 10",
+            "issues": [
+              "包含文本: 1 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Australia_en-native_20251209_185827_962.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Canada_en-native_20251209_190809_207.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Ghana_en-native_20251209_191852_924.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Hong Kong_en-native_20251209_192941_359.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Ireland_en-native_20251209_194159_344.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Kenya_en-native_20251209_195350_756.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Malaysia_en-native_20251209_200503_100.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Malta_en-native_20251209_201621_476.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_New Zealand_en-native_20251209_202857_456.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Nigeria_en-native_20251209_204003_400.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Pakistan_en-native_20251209_205303_348.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Philippines_en-native_20251209_210456_073.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Puerto Rico_en-native_20251209_211743_520.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Rwanda_en-native_20251209_213127_903.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-1.7b_Singapore_en-native_20251209_214433_960.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "002 1",
+            "issues": [
+              "包含文本: 002 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Australia_en-native_20251209_190057_886.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 3 4 6 8",
+            "issues": [
+              "包含文本: 2 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Canada_en-native_20251209_191156_068.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "4 2",
+            "issues": [
+              "包含文本: 4 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 3 4 6 8",
+            "issues": [
+              "包含文本: 2 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Ghana_en-native_20251209_192308_475.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Hong Kong_en-native_20251209_193335_759.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 3 4 6",
+            "issues": [
+              "包含文本: 1 2 3 4 6"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Ireland_en-native_20251209_194542_277.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Kenya_en-native_20251209_195812_617.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Malaysia_en-native_20251209_200922_417.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Malta_en-native_20251209_202045_227.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_New Zealand_en-native_20251209_203319_715.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 3 4 6 8",
+            "issues": [
+              "包含文本: 2 3 4 6 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Nigeria_en-native_20251209_204404_353.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 11",
+            "issues": [
+              "包含文本: 1 3 4 6 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Pakistan_en-native_20251209_205721_201.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 9",
+            "issues": [
+              "包含文本: 1 3 4 6 9"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Philippines_en-native_20251209_210901_137.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 6 9 10",
+            "issues": [
+              "包含文本: 1 3 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Puerto Rico_en-native_20251209_212108_780.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Rwanda_en-native_20251209_213438_842.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwen3-max_Singapore_en-native_20251209_214853_174.pkl",
+        "country": "Singapore",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Australia_en-native_20251209_190923_640.pkl",
+        "country": "Australia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E018",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Canada_en-native_20251209_192136_521.pkl",
+        "country": "Canada",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 2 4 6 10",
+            "issues": [
+              "包含文本: 1 2 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Ghana_en-native_20251209_193343_468.pkl",
+        "country": "Ghana",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "G006",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 9 11",
+            "issues": [
+              "包含文本: 1 3 4 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Hong Kong_en-native_20251209_194255_410.pkl",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E018",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 7 8",
+            "issues": [
+              "包含文本: 1 3 4 7 8"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Ireland_en-native_20251209_195544_481.pkl",
+        "country": "Ireland",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "E025",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "G006",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Kenya_en-native_20251209_200756_985.pkl",
+        "country": "Kenya",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "A008",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Malaysia_en-native_20251209_202057_774.pkl",
+        "country": "Malaysia",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Malta_en-native_20251209_203044_705.pkl",
+        "country": "Malta",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_New Zealand_en-native_20251209_205232_301.pkl",
+        "country": "New Zealand",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "2 4",
+            "issues": [
+              "包含文本: 2 4"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "2 4 6 8 10",
+            "issues": [
+              "包含文本: 2 4 6 8 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Nigeria_en-native_20251209_205154_372.pkl",
+        "country": "Nigeria",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Pakistan_en-native_20251209_210603_579.pkl",
+        "country": "Pakistan",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "1 3",
+            "issues": [
+              "包含文本: 1 3"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Philippines_en-native_20251209_211702_860.pkl",
+        "country": "Philippines",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "F118",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": "3 1",
+            "issues": [
+              "包含文本: 3 1"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 11",
+            "issues": [
+              "包含文本: 1 4 6 9 11"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Puerto Rico_en-native_20251209_213104_752.pkl",
+        "country": "Puerto Rico",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "Y002",
+            "response": "3 2",
+            "issues": [
+              "包含文本: 3 2"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 4 6 9 10",
+            "issues": [
+              "包含文本: 1 4 6 9 10"
+            ]
+          }
+        ]
+      },
+      {
+        "file": "qwq-32b_Rwanda_en-native_20251209_214538_276.pkl",
+        "country": "Rwanda",
+        "language": "en-native",
+        "problems": [
+          {
+            "question_id": "A008",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y002",
+            "response": null,
+            "issues": [
+              "未知格式: <class 'NoneType'>"
+            ]
+          },
+          {
+            "question_id": "Y003",
+            "response": "1 3 4 6 10",
+            "issues": [
+              "包含文本: 1 3 4 6 10"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

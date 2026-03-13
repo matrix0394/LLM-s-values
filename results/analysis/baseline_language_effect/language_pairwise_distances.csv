@@ -1,0 +1,16 @@
+language_1,language_2,distance
+ar,fr,1.872
+ar,es,1.79
+ar,en,1.733
+ar,zh-cn,1.516
+ar,ru,1.263
+en,ru,0.646
+fr,ru,0.611
+en,es,0.605
+es,ru,0.53
+en,fr,0.493
+en,zh-cn,0.479
+fr,zh-cn,0.356
+es,zh-cn,0.303
+ru,zh-cn,0.258
+es,fr,0.168

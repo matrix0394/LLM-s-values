@@ -1,419 +1,164 @@
-# 🌍 大语言模型跨语言文化价值观研究
+# The Value Atlas of AI: Mapping World Human Values in Large Language Models
 
-[![项目状态](https://img.shields.io/badge/状态-实验完成-success)](https://github.com/matrix0394/LLM-s-values)
-[![最后更新](https://img.shields.io/badge/更新-2025.11.22-blue)](https://github.com/matrix0394/LLM-s-values)
-[![阶段](https://img.shields.io/badge/阶段-Stage3_10模型完成-brightgreen)](https://github.com/matrix0394/LLM-s-values)
+## 项目概述
 
-## 🚀 快速导航
+本项目系统性研究**语言对大语言模型文化价值表达的影响**。通过让 20 个 LLM 用不同语言模仿 66 个国家/地区的文化背景回答 WVS 价值观问题，发现了普遍的英语优势现象和数字东方主义效应。
 
-- **📊 查看最新结果** → [正确的距离分析](results/distance_analysis_correct/)
-- **📑 汇报材料** → [Stage3一页纸汇报](汇报md/11_18_10模型_日韩/Stage3_一页纸汇报_十模型日韩.md)
-- **🎬 演示文稿** → [Slides](slides/stage3/11_19.html)
-- **🔧 核心脚本** → [正确的距离计算](scripts/data_analysis/calculate_correct_distances.py)
-- **� 方法说明** → [距离计算方法](#-距离计算方法)
+### 核心发现
 
----
+- **Study 1**: LLM 内在价值观存在显著的世俗-理性偏差，阿拉伯语与英语差异最大
+- **Study 2**: 46 个非英语国家中，英语角色扮演普遍比母语更接近真实文化坐标（EA = +4.6%）
+- **Study 3**: 非西方国家英语优势显著高于西方国家（数字东方主义），文化距离与英语优势正相关
+- **Study 4**: 殖民历史塑造了 LLM 的文化表征模式
 
-## 📖 项目概述
+### 实验规模
 
-本项目通过让大语言模型用不同语言模仿不同国家的文化背景回答价值观问题，系统性地研究**语言对LLM文化价值表达的影响**。
-
-### 🎯 核心研究问题
-
-**语言是否影响大语言模型对文化价值观的表达？**
-
-通过严格的控制变量实验，让LLM用英语和母语分别模仿同一国家文化，对比其文化价值表达与真实国家的距离差异。
+- **20 个模型**: GPT-4o/4o-mini/5.1, Claude 3.7/4.5, Gemini 2.5/3, DeepSeek v3/v3.1, Llama 3.2/3.3, Mistral Medium/Nemo, Phi-3, Gemma-3, Doubao, Kimi-K2, Qwen3-Max, Grok-4.1
+- **66 个国家/地区**: 20 英语母语 + 46 非英语
+- **6 种核心语言**: English, Arabic, Chinese, French, Russian, Spanish
 
 ---
 
-## 🔬 研究阶段与规模
+## 快速开始
 
-### Stage 0: 真实文化价值观基准
-- **数据源**: World Values Survey (WVS)
-- **国家/地区数**: 109个
-- **问题数**: 10个核心价值观问题
-- **作用**: 提供真实文化坐标作为对比基准
+### 运行论文分析流程
 
-### Stage 1: LLM原生文化倾向
-- **模型数**: 10个主流LLM
-- **问题**: 直接回答价值观问题（无角色扮演）
-- **作用**: 测量每个模型的原生文化倾向
-- **发现**: 不同模型展现不同的文化倾向基线
+```bash
+# 完整分析（Study 1-4 + 回归数据）
+python3 src/run/run_paper_analysis.py
 
-### Stage 2: 英语角色扮演（暂时停用）
-- **状态**: 因数据兼容性问题暂时跳过
-- **原计划**: 测试纯英语角色扮演效果
+# 从原始访谈数据重建 PCA 后再分析
+python3 src/run/run_paper_analysis.py --rebuild-from-raw
 
-### Stage 3: 多语言对比实验（核心）⭐
-- **10个模型**: GPT-4o-mini, Gemini 2.0/2.5, Claude 3.7/4.5, Llama 3.3, DeepSeek v3, Mistral Nemo, QwQ-32B, Grok
-- **34个国家/地区**: 覆盖东亚、俄语区、阿拉伯、西班牙语区
-- **10种语言**: 英语 + 9种母语（中文、日语、韩语、俄语、西班牙语、阿拉伯语等）
-- **669条模仿数据**: 34国家/地区 × 10模型 × 2-3语言
-- **控制变量设计**: 仅改变语言，其他条件完全相同
+# 只运行特定 Study
+python3 src/run/run_paper_analysis.py --study 1 2
+
+# 生成论文图表数据
+python3 src/analysis/figure_data/regenerate_paper_data.py
+```
+
+### 查看论文数据
+
+论文所有图表和统计数据位于 `results/paper_data/`，详见 [Paper Data README](results/paper_data/README.md)。
 
 ---
 
-## 🏆 核心发现
-
-### 1. 全球英语优势格局
-
-基于**真实WVS坐标**的正确计算：
-
-- **84.4%的国家显示英语优势**（54/64）
-- **15.6%的国家显示母语优势**（10/64）
-- **最强英语优势**：香港(粤语) +63.8%
-- **最强母语优势**：智利 -35.2%
-
-**英语优势 Top 5**：
-1. 🥇 香港(粤语): +63.8%
-2. 🥈 香港(简体): +61.8%
-3. 🥉 白俄罗斯: +47.1%
-4. 新加坡: +41.6%
-5. 塔吉克斯坦: +36.7%
-
-### 2. 东亚完整梯度
-
-```
-台湾简体 (+5.0%) → 韩国 (+5.2%) → 日本 (+5.9%) → 
-澳门粤语 (+11.3%) → 澳门简体 (+15.4%) → 台湾繁体 (+15.5%) → 
-中国 (+16.4%) → 新加坡 (+41.6%) → 香港简体 (+61.8%) → 香港粤语 (+63.8%)
-```
-
-**关键发现**：
-- ✅ **所有东亚国家都是英语优势**（之前错误计算认为日本是母语优势）
-- 🏆 **香港遥遥领先**：+63.8%，远超其他国家
-- 📊 **日韩台接近中性**：+5-6%，母语和英语模仿都比较准确
-
-### 3. 语言区对比
-
-| 语言区 | 平均英语优势 | 特点 |
-|--------|--------------|------|
-| **东亚** | **+24.2%** | 最强，香港效应 |
-| **俄语区** | **+19.9%** | 第二强，白俄罗斯突出 |
-| 阿拉伯语 | +1.8% | 两极分化 |
-| **西班牙语** | **-12.8%** | 唯一母语优势主导 |
-
-### 4. "数据驱动东方学"理论验证
-
-**核心公式**：
-```
-英语优势 = f(训练数据稀缺度40%, 他者讨论比重40%, 数据质量20%)
-```
-
-**验证案例**：
-- **香港** (+63.8%): 数据极度稀缺 + 高他者讨论 → 最强英语优势
-- **日本** (+5.9%): 数据稀缺 + 高数据质量 → 弱英语优势
-- **西班牙** (-33.8%): 数据充足 + 高数据质量 → 强母语优势
-
----
-
-## 📊 距离计算方法
-
-### ✅ 正确的方法（当前使用）
-
-```python
-# 距离 = LLM模仿坐标与真实WVS坐标的欧氏距离
-distance = sqrt((LLM_PC1 - 真实WVS_PC1)² + (LLM_PC2 - 真实WVS_PC2)²)
-
-# 英语优势
-英语优势 = (母语距离 - 英语距离) / 母语距离 × 100%
-```
-
-- **正值**：英语模仿比母语模仿更接近真实国家（英语优势）
-- **负值**：母语模仿比英语模仿更接近真实国家（母语优势）
-
-
-
----
-
-## 🔄 数据流程
-
-```
-Stage0 (真实基准)          Stage1 (LLM原生)          Stage3 (多语言模仿)
-     ↓                          ↓                          ↓
-WVS问卷数据              直接回答问题              角色扮演回答
-(109国家/地区)           (10个模型)              (10模型×34国家/地区×10语言)
-     ↓                          ↓                          ↓
-PCA降维                   PCA降维                   PCA降维
-     ↓                          ↓                          ↓
-PC1/PC2坐标              PC1/PC2坐标              PC1/PC2坐标
-     ↓                          ↓                          ↓
-     └──────────────┬───────────┴───────────────┐
-                    ↓                           ↓
-            跨Stage分析                  可视化与理论验证
-                    ↓                           ↓
-        ┌───────────┼───────────┐       ┌──────┴──────┐
-        ↓           ↓           ↓       ↓             ↓
-  Stage0 vs   Stage1 vs   英语母语   东方主义    港台澳
-   Stage3      Stage3      基准      理论验证    专项分析
-    距离        分布        对比
-```
-
-**关键数据文件**：
-- `country_scores_pca.json` - Stage0真实坐标（109个）
-- `llm_pca_entity_scores.pkl` - Stage1原生坐标（10个）
-- `roleplay_ml_pca_entity_scores_latest.pkl` - Stage3聚合坐标（778行）
-  - IVS基准：109个国家/地区
-  - Multilingual：669条模仿数据
-
----
-
-## 🏗️ 项目结构
+## 核心目录结构
 
 ```
 LLM's values/
-├── README.md                          # 项目总README
 │
-├── 📁 data/                           # 数据存储
-│   ├── country_values/               # Stage0: 真实国家/地区数据
-│   │   ├── country_scores_pca.json  # 109个国家/地区的PCA坐标
-│   │   ├── ivs_df.pkl               # 原始IVS问卷数据
-│   │   └── country_codes.pkl        # 国家/地区代码映射
+├── src/                                    # 源代码
+│   ├── base/                              # 共享基础模块
+│   │   ├── base_pca_analyzer.py          #   PCA 分析基类
+│   │   ├── base_interview.py             #   访谈基类
+│   │   ├── ivs_question_processor.py     #   WVS 问题处理器
+│   │   └── ppca.py                       #   概率 PCA 实现
 │   │
-│   ├── llm_values/                   # Stage1: LLM原生倾向
-│   │   ├── llm_pca_entity_scores.pkl  # 10个模型的原生坐标
-│   │   └── llm_responses/           # 原始LLM回答
+│   ├── country_values/                    # Stage 0: 真实国家 WVS 数据处理
+│   ├── llm_values/                        # Stage 1: LLM 内在价值观（baseline）
+│   ├── roleplay_multilingual/             # Stage 3: 多语言角色扮演
+│   │   ├── multilingual_roleplay_interview.py
+│   │   ├── multilingual_roleplay_data_processor.py
+│   │   └── multilingual_roleplay_pca_analysis.py
 │   │
-│   ├── roleplay_English/             # Stage2: 英语角色扮演（暂时跳过）
-│   │   └── (兼容性问题，暂时跳过)
+│   ├── analysis/                          # 分析模块
+│   │   ├── figure_data/                  #   论文图表数据生成
+│   │   │   └── regenerate_paper_data.py  #     生成 Figure 1-4 数据
+│   │   ├── distance/                     #   文化距离与英语优势计算
+│   │   ├── comparative/                  #   法语优势等对比分析
+│   │   └── plotting/                     #   绘图脚本
 │   │
-│   └── roleplay_multilingual/        # Stage3: 多语言角色扮演 ⭐
-│       ├── roleplay_ml_pca_entity_scores_latest.pkl  # 778行聚合数据
-│       │   # └─ IVS: 109个国家/地区（基准）
-│       │   # └─ Multilingual: 669条模仿数据
-│       ├── roleplay_ml_pca_results_latest.pkl  # 完整PCA结果
-│       └── llm_responses_roleplay_ml/  # 原始访谈数据
+│   └── run/                               # 运行入口
+│       ├── run_paper_analysis.py          #   论文主分析流程（Study 1-4）
+│       ├── run_country_values_analysis.py #   Stage 0
+│       ├── run_llm_values_analysis.py     #   Stage 1
+│       └── run_roleplay_multilingual_analysis.py  # Stage 3
 │
-├── 📁 src/                            # 源代码
-│   ├── base/                         # 基础设施（所有Stage共享）
-│   │   ├── base_pca_analyzer.py     # PCA分析基类
-│   │   ├── base_interview.py        # 访谈基类
-│   │   └── ivs_question_processor.py  # 问题处理器
-│   │
-│   ├── country_values/               # Stage0: 真实数据处理
-│   │   └── country_pca_analysis.py
-│   │
-│   ├── llm_values/                   # Stage1: LLM原生分析
-│   │   ├── llm_interview.py
-│   │   └── llm_pca_analysis.py
-│   │
-│   ├── roleplay_English/             # Stage2: 英语角色扮演（已废弃）
-│   │
-│   ├── roleplay_multilingual/        # Stage3: 多语言角色扮演 ⭐
-│   │   ├── multilingual_roleplay_interview.py  # 多语言访谈
-│   │   ├── multilingual_roleplay_pca_analysis.py  # PCA分析
-│   │   └── multilingual_roleplay_visualization.py  # 可视化
-│   │
-│   └── run/                          # 运行脚本
-│       ├── run_country_values_analysis.py  # Stage0运行器
-│       ├── run_llm_values_analysis.py      # Stage1运行器
-│       ├── run_roleplay_english_analysis.py  # Stage2运行器（暂停）
-│       └── run_roleplay_multilingual_analysis.py  # Stage3运行器
+├── data/                                   # 数据存储
+│   ├── country_values/                    # WVS 真实坐标
+│   │   ├── country_scores_pca.json       #   109 个国家 PCA 坐标
+│   │   └── pca_model_fixed.pkl           #   固定 PCA 模型
+│   ├── llm_pca/                           # LLM PCA 坐标
+│   │   ├── intrinsic/                    #   Stage 1 内在坐标
+│   │   └── multilingual/                 #   Stage 3 角色扮演坐标
+│   └── llm_interviews/                    # 原始访谈 JSON
+│       └── multilingual/interview_raw/
 │
-├── 📁 analysis/                       # 跨Stage分析脚本 ⭐
-│   ├── README.md                     # 分析脚本说明
-│   ├── stage0_vs_stage3_distance.py  # 核心：距离和英语优势
-│   ├── stage1_vs_stage3_distribution.py  # 模型灵活性分析
-│   └── visualize_orientalism.py      # 东方主义理论验证
+├── results/                                # 分析结果
+│   ├── paper_data/                        # 论文图表数据（核心输出）
+│   │   ├── figure1_data_66countries.csv  #   Fig.1: 地图热力图数据
+│   │   ├── figure2_baseline_20models.csv #   Fig.2: 6 语言 baseline
+│   │   ├── figure3_digital_orientalism.csv  # Fig.3: 东方主义 distance
+│   │   ├── figure4_colonial_history.csv  #   Fig.4: 殖民遗产 distance
+│   │   ├── regression_data.csv           #   回归分析数据
+│   │   ├── french_advantage_12_countries.csv  # 法语优势数据
+│   │   └── study[1-4]_*.json             #   各 Study 统计结果
+│   ├── analysis/                          # 中间分析结果
+│   └── figures/                           # 历史图表文件
 │
-├── 📁 results/                        # 分析结果
-│   ├── analysis/                     # 跨Stage分析结果 ⭐
-│   │   ├── stage0_vs_stage3/        # Stage0 vs Stage3对比
-│   │   │   ├── distances_detailed.xlsx
-│   │   │   ├── english_advantage_average.xlsx
-│   │   │   ├── english_native_baseline.xlsx  # 英语母语国家/地区基准
-│   │   │   └── *.png                # 可视化图表
-│   │   │
-│   │   ├── stage1_vs_stage3/        # Stage1 vs Stage3对比
-│   │   │   ├── distribution_analysis.xlsx
-│   │   │   ├── model_concentration.csv
-│   │   │   └── *.png
-│   │   │
-│   │   └── orientalism_analysis/    # 东方主义理论验证
-│   │       └── *.png
-│   │
-│   ├── country_values/               # Stage0结果
-│   ├── llm_values/                   # Stage1结果
-│   └── roleplay_multilingual/        # Stage3结果
+├── SI/                                     # Supplementary Information
+│   └── pca/                               # PCA 坐标表
+│       ├── Table_S5_IVS_PCA_coordinates.csv
+│       ├── Table_S6_LLM_baseline_PCA_coordinates.csv
+│       ├── Table_S7_LLM_roleplay_PCA_coordinates.csv
+│       └── Table_S8_PCA_component_summary.csv
 │
-├── 📁 config/                         # 配置文件
-│   ├── multilingual_questions_complete.json  # 完整问题配置
-│   └── country_language_mapping.json  # 国家/地区-语言映射
+├── config/                                 # 配置文件
+│   ├── country/                           # 国家代码与语言映射
+│   ├── models/                            # 模型配置
+│   └── questions/                         # WVS 问题配置
 │
-├── 📁 汇报md/                         # 汇报文档
-│   └── 11_18_10模型_日韩/
-│       ├── Stage3_一页纸汇报_十模型日韩.md
-│       └── Stage3_十模型_日韩_详细分析报告.md
-│
-└── 📁 slides/                         # 演示文稿
-    └── stage3/
-        └── 11_19.html
+└── .env                                    # API keys
 ```
 
 ---
 
-## 🚀 快速开始
+## 论文图表说明
 
-### 1. 查看核心分析结果
+### Figure 1: 文化价值观世界地图（4 张热力图）
 
-```bash
-# Stage0 vs Stage3: 距离和英语优势分析
-cd results/analysis/stage0_vs_stage3/
-start english_advantage_average.xlsx
-start english_native_baseline.xlsx
+左侧：LLM 英语角色扮演 PC1 热力图 + WVS PC1 热力图对照
+右侧：LLM 英语角色扮演 PC2 热力图 + WVS PC2 热力图对照
 
-# Stage1 vs Stage3: 模型灵活性分析
-cd results/analysis/stage1_vs_stage3/
-start distribution_analysis.xlsx
+数据：`results/paper_data/figure1_data_66countries.csv`
+
+### Figure 2: LLM 内在价值观（6 种语言 × 20 模型）
+
+展示 20 个模型在 6 种语言下的 baseline PCA 坐标分布。
+
+数据：`results/paper_data/figure2_baseline_20models.csv`
+
+### Figure 3: 数字东方主义（distance 地图）
+
+中东 + 东亚地区的英语优势 distance 地图。
+
+数据：`results/paper_data/figure3_digital_orientalism.csv`
+
+### Figure 4: 殖民遗产（distance 地图）
+
+撒哈拉以南非洲（8 国）+ 拉丁美洲（13 国）+ 儒家（6 国）的 distance 地图。
+
+数据：`results/paper_data/figure4_colonial_history.csv`
+
+---
+
+## 技术栈
+
+- **Python 3.10+**
+- **核心库**: pandas, numpy, scipy, scikit-learn
+- **PCA**: 概率 PCA (PPCA) + 固定旋转矩阵
+- **LLM API**: OpenAI, Anthropic, Google, DeepSeek, Mistral, etc.
+- **数据源**: World Values Survey / Integrated Values Survey (WVS/IVS)
+
+---
+
+## 距离计算方法
+
+```
+distance = √((LLM_PC1 - WVS_PC1)² + (LLM_PC2 - WVS_PC2)²)
+English Advantage = (d_native - d_english) / d_native × 100%
 ```
 
-### 2. 运行分析脚本
-
-```bash
-# 核心分析：Stage0 vs Stage3
-python analysis/stage0_vs_stage3_distance.py
-
-# 模型灵活性分析：Stage1 vs Stage3
-python analysis/stage1_vs_stage3_distribution.py
-
-# 东方主义理论验证
-python analysis/visualize_orientalism.py
-```
-
-### 3. 重新生成Stage3数据（如果需要）
-
-```bash
-# 运行Stage3完整流程
-python src/run/run_roleplay_multilingual_analysis.py
-```
-
-### 4. 查看汇报材料
-
-```bash
-# 主汇报（一页纸）
-cat "汇报md/11_18_10模型_日韩/Stage3_一页纸汇报_十模型日韩.md"
-
-# 打开slides
-start slides/stage3/11_19.html
-```
-
----
-
-## 📚 核心文档
-
-### 分析脚本说明
-- [Analysis README](analysis/README.md) - 所有跨Stage分析脚本的完整说明
-- [Base模块README](src/base/README.md) - 基础设施说明
-
-### Stage文档
-- **Stage0**: [Country Values README](src/country_values/README.md)
-- **Stage1**: [LLM Values README](src/llm_values/README.md)
-- **Stage3**: [Roleplay Multilingual README](src/roleplay_multilingual/README.md)
-
-### 汇报材料
-- [Stage3一页纸汇报](汇报md/11_18_10模型_日韩/Stage3_一页纸汇报_十模型日韩.md)
-- [详细分析报告](汇报md/11_18_10模型_日韩/Stage3_十模型_日韩_详细分析报告.md)
-
-### Slides
-- [最新演示文稿](slides/stage3/11_19.html)
-
----
-
-## 🔧 技术栈
-
-- **Python 3.8+**
-- **核心库**：pandas, numpy, scikit-learn, matplotlib, seaborn
-- **API**：OpenAI, Anthropic, Google, DeepSeek, etc.
-- **数据源**：World Values Survey (WVS)
-
----
-
-## ⚠️ 重要说明
-
-### 关于距离计算
-
-1. **正确方法**（当前使用）：
-   - 从真实WVS坐标计算距离
-   - 位置：`results/distance_analysis_correct/`
-   - 脚本：`scripts/data_analysis/calculate_correct_distances.py`
-
-2. **错误方法**（已废弃）：
-   - 从原点(0,0)计算距离
-   - 位置：`results/distance_analysis/`（标记为DEPRECATED）
-   - 不要使用这些结果！
-
-### 关于坐标系统
-
-- 使用 **rescaled坐标**（与WVS标准对齐）
-- PC1_rescaled = 1.81 × PC1 + 0.38
-- PC2_rescaled = 1.61 × PC2 - 0.01
-
----
-
-## 📝 引用
-
-如果你使用了本项目的代码或数据，请引用：
-
-```bibtex
-@misc{llm_cultural_values_2025,
-  title={Cross-lingual Cultural Value Expression in Large Language Models},
-  author={Your Name},
-  year={2025},
-  url={https://github.com/matrix0394/LLM-s-values}
-}
-```
-
----
-
-## 📧 联系方式
-
-- **GitHub**: [@matrix0394](https://github.com/matrix0394)
-- **项目主页**: [LLM's values](https://github.com/matrix0394/LLM-s-values)
-
----
-
-## 📅 更新日志
-
-### 2025-11-22 (Phase 1 完成) ⭐
-- ✅ **修复Stage3 PCA数据聚合**：正确保存778行实体数据（109国家/地区 + 669模仿数据）
-- ✅ **添加英语母语国家/地区基准**：美英澳新加基准距离3.26 vs 所有英语模仿2.12
-- ✅ **修正政治敏感性**：所有港台澳表述改为"国家/地区"或"地区"
-- ✅ **重构分析代码**：
-  - 删除重复脚本（`calculate_distances.py`, `generate_alignment_report.py`）
-  - 跳过Stage2（数据兼容性问题）
-  - 重命名`stage1_vs_stage23_distribution.py` → `stage1_vs_stage3_distribution.py`
-  - 最终保留3个核心分析脚本
-- ✅ **完善分析功能**：
-  - 所有脚本使用完整模型名称（不简化）
-  - 过滤Stage1数据中的IVS真实国家数据
-  - 修复坐标使用（`PC1_rescaled`, `PC2_rescaled`）
-- ✅ **更新项目文档**：全面更新README，涵盖Stage0-3完整结构
-
-### 2025-11-18
-- ✅ 添加日本和韩国数据
-- ✅ 扩展到10个模型
-- ✅ 完成东亚完整梯度分析
-
-### 2025-10-20
-- ✅ 完成Stage3多语言对比实验
-- ✅ 发现"英语悖论"现象
-- ✅ 提出"数据驱动东方学"理论
-
----
-
-## 📊 项目状态
-
-| 阶段 | 状态 | 说明 |
-|------|------|------|
-| **Stage0** | ✅ 完成 | 109个国家/地区真实文化坐标 |
-| **Stage1** | ✅ 完成 | 10个LLM原生文化倾向 |
-| **Stage2** | ⏸️ 暂停 | 数据兼容性问题 |
-| **Stage3** | ✅ 完成 | 10模型×34国家/地区×10语言 |
-| **跨Stage分析** | ✅ 完成 | 3个核心分析脚本 |
-| **论文撰写** | 🚧 进行中 | - |
-
----
-
-**最后更新**: 2025-11-22  
-**项目状态**: Phase 1 完成，数据分析完成，论文撰写中  
-**下一步**: Phase 2 - 扩展更多模型和语言
+- **正值**: 英语角色扮演比母语更接近真实文化坐标（英语优势）
+- **负值**: 母语角色扮演更接近真实文化坐标（母语优势）

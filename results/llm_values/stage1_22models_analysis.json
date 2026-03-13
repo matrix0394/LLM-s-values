@@ -1,0 +1,116 @@
+{
+  "model_coordinates": [
+    {
+      "model": "google/gemini-2.5-flash",
+      "trad_sec": -0.7069087309629561,
+      "surv_self": 5.20037597104021
+    },
+    {
+      "model": "google/gemini-3-pro-preview",
+      "trad_sec": 0.4204158268226561,
+      "surv_self": 1.1834410639430881
+    },
+    {
+      "model": "qwen/qwen3-max",
+      "trad_sec": 0.7601047659061804,
+      "surv_self": -0.3660904617683805
+    },
+    {
+      "model": "meta-llama/llama-3.2-3b-instruct",
+      "trad_sec": 0.7803131295074042,
+      "surv_self": 2.5414689582704493
+    },
+    {
+      "model": "gpt-4o",
+      "trad_sec": 0.8101331026540866,
+      "surv_self": 1.054246608670255
+    },
+    {
+      "model": "mistralai/mistral-medium-3.1",
+      "trad_sec": 0.812425766985956,
+      "surv_self": 3.596247929545712
+    },
+    {
+      "model": "google/gemma-3-4b-it",
+      "trad_sec": 1.4074080512999863,
+      "surv_self": 2.368722889605094
+    },
+    {
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "trad_sec": 2.131837094423651,
+      "surv_self": 1.916040968209088
+    },
+    {
+      "model": "qwen/qwq-32b",
+      "trad_sec": 2.5486637326741945,
+      "surv_self": 4.108575222132294
+    },
+    {
+      "model": "microsoft/phi-3-mini-128k-instruct",
+      "trad_sec": 2.6048885813160756,
+      "surv_self": 0.9787145744768788
+    },
+    {
+      "model": "deepseek-chat",
+      "trad_sec": 2.628147172181786,
+      "surv_self": -0.438089943320358
+    },
+    {
+      "model": "z-ai/glm-4.6",
+      "trad_sec": 2.637012866352883,
+      "surv_self": -0.1370027627557184
+    },
+    {
+      "model": "openai/gpt-5.1",
+      "trad_sec": 2.641094903638919,
+      "surv_self": 2.660477623520251
+    },
+    {
+      "model": "anthropic/claude-sonnet-4.5",
+      "trad_sec": 2.9884241119657053,
+      "surv_self": 2.1091197911947663
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "trad_sec": 3.12409512925967,
+      "surv_self": 0.6869531463770636
+    },
+    {
+      "model": "qwen3-1.7b",
+      "trad_sec": 3.4954158657559034,
+      "surv_self": -0.0761394332193548
+    },
+    {
+      "model": "kimi-k2",
+      "trad_sec": 3.887847848984947,
+      "surv_self": 0.4065405490413784
+    },
+    {
+      "model": "claude-3-7-sonnet-20250219",
+      "trad_sec": 4.32899950764872,
+      "surv_self": 0.5368983913185141
+    },
+    {
+      "model": "deepseek/deepseek-chat-v3.1",
+      "trad_sec": 4.440715695309514,
+      "surv_self": -0.6088426442005348
+    },
+    {
+      "model": "x-ai/grok-4.1-fast",
+      "trad_sec": 5.023711204140887,
+      "surv_self": 2.6412875260182913
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "trad_sec": 6.052308158546642,
+      "surv_self": -0.46949123190017866
+    },
+    {
+      "model": "gpt-4o-mini",
+      "trad_sec": 6.644282513258702,
+      "surv_self": -1.4210579302614297
+    }
+  ],
+  "model_count": 22,
+  "analysis_date": "2025-12-09 21:53:57"
+}

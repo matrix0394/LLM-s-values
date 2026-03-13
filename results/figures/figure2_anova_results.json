@@ -1,0 +1,11 @@
+{
+  "pc1": {
+    "f_statistic": 3.349,
+    "p_value": 0.0074
+  },
+  "pc2": {
+    "f_statistic": 0.856,
+    "p_value": 0.513
+  },
+  "models_count": 20
+}

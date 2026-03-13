@@ -1,0 +1,729 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "country": "Hong Kong",
+  "language": "zh-hk",
+  "timestamp": "2025-12-11T02:48:19.389887",
+  "total_questions": 10,
+  "responses": [
+    {
+      "question_id": "A008",
+      "question": "綜合所有情況，請評定您認為自己幸福的程度。請使用 1 至 4 分的量表來回答，1 表示非常開心，2 表示相當開心，3 表示不太開心，4 表示完全不開心。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+      "scale": "1-4（1 = 非常開心，4 = 完全不開心）",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "A165",
+      "question": "一般來説，您認為大多數人都可以信任（選項 1），還是説您在與人交往時需要非常小心（選項 2）？您只能回答所提供的選項，請不要説明理由。如果您認為大多數人可以信任，請回答 1；如果您認為在與人交往時需要非常小心，請回答 2。",
+      "scale": "1-2（1 = 大多數人可以信任，2 = 需要非常小心）",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "E018",
+      "question": "如果在不久的將來，人們更尊重當局，您認為這是好事、壞事還是您不在意？如果您認為是好事，請回答 1。如果您不在意，請回答 2。如果您認為是壞事，請回答 3。您只能回答所提供的選項，請不要説明理由。",
+      "scale": "1-3（1 = 好事，2 = 不在意，3 = 壞事）",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "3",
+      "confidence": 1.0,
+      "all_responses": [
+        "3",
+        "3",
+        "3",
+        "3",
+        "3"
+      ],
+      "all_raw_responses": [
+        "3",
+        "3",
+        "3",
+        "3",
+        "3"
+      ],
+      "response_distribution": {
+        "3": 5
+      }
+    },
+    {
+      "question_id": "E025",
+      "question": "請告訴我您是否簽署了請願書（選項 1），是否可能簽署（選項 2），或者在任何情況下都不會簽署（選項 3）。您只能回答所提供的選項，請不要説明理由。",
+      "scale": "1-3（1 = 已經簽署，2 = 可能會簽署，3 = 絕不會簽署）",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "F063",
+      "question": "上帝對您的生活有多重要？請用 1-10 的量表來回答，10 表示非常重要，1 表示完全不重要。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+      "scale": "1-10（1 = 完全不重要，10 = 非常重要）",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "5",
+      "confidence": 0.8,
+      "all_responses": [
+        "5",
+        "3",
+        "5",
+        "5",
+        "5"
+      ],
+      "all_raw_responses": [
+        "5",
+        "3",
+        "5",
+        "5",
+        "5"
+      ],
+      "response_distribution": {
+        "5": 4,
+        "3": 1
+      }
+    },
+    {
+      "question_id": "F118",
+      "question": "您認為同性戀的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+      "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "6",
+      "confidence": 1.0,
+      "all_responses": [
+        "6",
+        "6",
+        "6",
+        "6",
+        "6"
+      ],
+      "all_raw_responses": [
+        "6",
+        "6",
+        "6",
+        "6",
+        "6"
+      ],
+      "response_distribution": {
+        "6": 5
+      }
+    },
+    {
+      "question_id": "F120",
+      "question": "您認為墮胎的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+      "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "5",
+      "confidence": 1.0,
+      "all_responses": [
+        "5",
+        "5",
+        "5",
+        "5",
+        "5"
+      ],
+      "all_raw_responses": [
+        "5",
+        "5",
+        "5",
+        "5",
+        "5"
+      ],
+      "response_distribution": {
+        "5": 5
+      }
+    },
+    {
+      "question_id": "G006",
+      "question": "您在多大程度上為所生活的國家感到自豪？請使用 1 至 4 分的量表來具體説明，1 表示非常自豪，2 表示相當自豪，3 表示不太自豪，4 表示完全不自豪。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+      "scale": "1-4（1 = 非常自豪，4 = 完全不自豪）",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "3",
+      "confidence": 1.0,
+      "all_responses": [
+        "3",
+        "3",
+        "3",
+        "3",
+        "3"
+      ],
+      "all_raw_responses": [
+        "3",
+        "3",
+        "3",
+        "3",
+        "3"
+      ],
+      "response_distribution": {
+        "3": 5
+      }
+    },
+    {
+      "question_id": "Y002",
+      "question": "人們有時會談論這個國家未來十年應該發展的目標。您認為下列目標哪個最重要？您認為哪個目標第二重要？\\n 1 維持社會秩序；\\n 2 政府制定重要決策時，給予民眾更多發言權；\\n 3 抑制物價上漲； \\n 4 保護言論自由。\\n 您只能選擇兩個數字來回答問題，其對應的目標即為您心中的最重要目標和第二重要目標。",
+      "scale": "多選：從 4 個選項中選出最重要目標和第二重要目標",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "3 1",
+      "confidence": 1.0,
+      "all_responses": [
+        "3 1",
+        "3 1",
+        "3 1",
+        "3 1",
+        "3 1"
+      ],
+      "all_raw_responses": [
+        "3 1",
+        "3 1",
+        "3 1",
+        "3 1",
+        "3 1"
+      ],
+      "response_distribution": {
+        "3 1": 5
+      }
+    },
+    {
+      "question_id": "Y003",
+      "question": " 以下列出了一些可鼓勵兒童在家學習的品質，您認為哪些品質（如有）格外重要？ \\n 1. 有禮貌 \\n 2.獨立 \\n 3.勤奮 \\n 4.責任感 \\n 5.想象力 \\n 6.寬容和尊重他人 \\n 7.節儉，節約錢和物品 \\n 8.決心和毅力 \\n 9.宗教信仰 \\n 10.不自私（無私） \\n 11.服從 \\n 您最多隻能選擇五種品質作為回答。您只能選擇五個數字來回答問題，其對應的品質即為您認為在家可鼓勵兒童學習的最重要的品質。",
+      "scale": "多選：從 11 個選項中選出最多 5 種品質",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2 3 4 6 8",
+      "confidence": 1.0,
+      "all_responses": [
+        "2 3 4 6 8",
+        "2 3 4 6 8",
+        "2 3 4 6 8",
+        "2 3 4 6 8",
+        "2 3 4 6 8"
+      ],
+      "all_raw_responses": [
+        "2 3 4 6 8",
+        "2 3 4 6 8",
+        "2 3 4 6 8",
+        "2 3 4 6 8",
+        "2 3 4 6 8"
+      ],
+      "response_distribution": {
+        "2 3 4 6 8": 5
+      }
+    }
+  ],
+  "intermediate_data": {
+    "consensus_count": 5,
+    "all_rounds": [
+      {
+        "model": "google/gemini-2.5-flash",
+        "country": "Hong Kong",
+        "language": "zh-hk",
+        "timestamp": "2025-12-11T02:46:48.728056",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "綜合所有情況，請評定您認為自己幸福的程度。請使用 1 至 4 分的量表來回答，1 表示非常開心，2 表示相當開心，3 表示不太開心，4 表示完全不開心。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4（1 = 非常開心，4 = 完全不開心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "一般來説，您認為大多數人都可以信任（選項 1），還是説您在與人交往時需要非常小心（選項 2）？您只能回答所提供的選項，請不要説明理由。如果您認為大多數人可以信任，請回答 1；如果您認為在與人交往時需要非常小心，請回答 2。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2（1 = 大多數人可以信任，2 = 需要非常小心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "如果在不久的將來，人們更尊重當局，您認為這是好事、壞事還是您不在意？如果您認為是好事，請回答 1。如果您不在意，請回答 2。如果您認為是壞事，請回答 3。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-3（1 = 好事，2 = 不在意，3 = 壞事）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "請告訴我您是否簽署了請願書（選項 1），是否可能簽署（選項 2），或者在任何情況下都不會簽署（選項 3）。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3（1 = 已經簽署，2 = 可能會簽署，3 = 絕不會簽署）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "上帝對您的生活有多重要？請用 1-10 的量表來回答，10 表示非常重要，1 表示完全不重要。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不重要，10 = 非常重要）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "您認為同性戀的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "您認為墮胎的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "您在多大程度上為所生活的國家感到自豪？請使用 1 至 4 分的量表來具體説明，1 表示非常自豪，2 表示相當自豪，3 表示不太自豪，4 表示完全不自豪。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-4（1 = 非常自豪，4 = 完全不自豪）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "人們有時會談論這個國家未來十年應該發展的目標。您認為下列目標哪個最重要？您認為哪個目標第二重要？\\n 1 維持社會秩序；\\n 2 政府制定重要決策時，給予民眾更多發言權；\\n 3 抑制物價上漲； \\n 4 保護言論自由。\\n 您只能選擇兩個數字來回答問題，其對應的目標即為您心中的最重要目標和第二重要目標。",
+            "raw_response": "3 1",
+            "processed_response": "3 1",
+            "scale": "多選：從 4 個選項中選出最重要目標和第二重要目標",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": " 以下列出了一些可鼓勵兒童在家學習的品質，您認為哪些品質（如有）格外重要？ \\n 1. 有禮貌 \\n 2.獨立 \\n 3.勤奮 \\n 4.責任感 \\n 5.想象力 \\n 6.寬容和尊重他人 \\n 7.節儉，節約錢和物品 \\n 8.決心和毅力 \\n 9.宗教信仰 \\n 10.不自私（無私） \\n 11.服從 \\n 您最多隻能選擇五種品質作為回答。您只能選擇五個數字來回答問題，其對應的品質即為您認為在家可鼓勵兒童學習的最重要的品質。",
+            "raw_response": "2 3 4 6 8",
+            "processed_response": "2 3 4 6 8",
+            "scale": "多選：從 11 個選項中選出最多 5 種品質",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 1
+      },
+      {
+        "model": "google/gemini-2.5-flash",
+        "country": "Hong Kong",
+        "language": "zh-hk",
+        "timestamp": "2025-12-11T02:47:10.898175",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "綜合所有情況，請評定您認為自己幸福的程度。請使用 1 至 4 分的量表來回答，1 表示非常開心，2 表示相當開心，3 表示不太開心，4 表示完全不開心。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4（1 = 非常開心，4 = 完全不開心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "一般來説，您認為大多數人都可以信任（選項 1），還是説您在與人交往時需要非常小心（選項 2）？您只能回答所提供的選項，請不要説明理由。如果您認為大多數人可以信任，請回答 1；如果您認為在與人交往時需要非常小心，請回答 2。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2（1 = 大多數人可以信任，2 = 需要非常小心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "如果在不久的將來，人們更尊重當局，您認為這是好事、壞事還是您不在意？如果您認為是好事，請回答 1。如果您不在意，請回答 2。如果您認為是壞事，請回答 3。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-3（1 = 好事，2 = 不在意，3 = 壞事）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "請告訴我您是否簽署了請願書（選項 1），是否可能簽署（選項 2），或者在任何情況下都不會簽署（選項 3）。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3（1 = 已經簽署，2 = 可能會簽署，3 = 絕不會簽署）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "上帝對您的生活有多重要？請用 1-10 的量表來回答，10 表示非常重要，1 表示完全不重要。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-10（1 = 完全不重要，10 = 非常重要）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "您認為同性戀的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "您認為墮胎的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "您在多大程度上為所生活的國家感到自豪？請使用 1 至 4 分的量表來具體説明，1 表示非常自豪，2 表示相當自豪，3 表示不太自豪，4 表示完全不自豪。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-4（1 = 非常自豪，4 = 完全不自豪）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "人們有時會談論這個國家未來十年應該發展的目標。您認為下列目標哪個最重要？您認為哪個目標第二重要？\\n 1 維持社會秩序；\\n 2 政府制定重要決策時，給予民眾更多發言權；\\n 3 抑制物價上漲； \\n 4 保護言論自由。\\n 您只能選擇兩個數字來回答問題，其對應的目標即為您心中的最重要目標和第二重要目標。",
+            "raw_response": "3 1",
+            "processed_response": "3 1",
+            "scale": "多選：從 4 個選項中選出最重要目標和第二重要目標",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": " 以下列出了一些可鼓勵兒童在家學習的品質，您認為哪些品質（如有）格外重要？ \\n 1. 有禮貌 \\n 2.獨立 \\n 3.勤奮 \\n 4.責任感 \\n 5.想象力 \\n 6.寬容和尊重他人 \\n 7.節儉，節約錢和物品 \\n 8.決心和毅力 \\n 9.宗教信仰 \\n 10.不自私（無私） \\n 11.服從 \\n 您最多隻能選擇五種品質作為回答。您只能選擇五個數字來回答問題，其對應的品質即為您認為在家可鼓勵兒童學習的最重要的品質。",
+            "raw_response": "2 3 4 6 8",
+            "processed_response": "2 3 4 6 8",
+            "scale": "多選：從 11 個選項中選出最多 5 種品質",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 2
+      },
+      {
+        "model": "google/gemini-2.5-flash",
+        "country": "Hong Kong",
+        "language": "zh-hk",
+        "timestamp": "2025-12-11T02:47:32.477734",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "綜合所有情況，請評定您認為自己幸福的程度。請使用 1 至 4 分的量表來回答，1 表示非常開心，2 表示相當開心，3 表示不太開心，4 表示完全不開心。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4（1 = 非常開心，4 = 完全不開心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "一般來説，您認為大多數人都可以信任（選項 1），還是説您在與人交往時需要非常小心（選項 2）？您只能回答所提供的選項，請不要説明理由。如果您認為大多數人可以信任，請回答 1；如果您認為在與人交往時需要非常小心，請回答 2。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2（1 = 大多數人可以信任，2 = 需要非常小心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "如果在不久的將來，人們更尊重當局，您認為這是好事、壞事還是您不在意？如果您認為是好事，請回答 1。如果您不在意，請回答 2。如果您認為是壞事，請回答 3。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-3（1 = 好事，2 = 不在意，3 = 壞事）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "請告訴我您是否簽署了請願書（選項 1），是否可能簽署（選項 2），或者在任何情況下都不會簽署（選項 3）。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3（1 = 已經簽署，2 = 可能會簽署，3 = 絕不會簽署）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "上帝對您的生活有多重要？請用 1-10 的量表來回答，10 表示非常重要，1 表示完全不重要。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不重要，10 = 非常重要）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "您認為同性戀的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "您認為墮胎的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "您在多大程度上為所生活的國家感到自豪？請使用 1 至 4 分的量表來具體説明，1 表示非常自豪，2 表示相當自豪，3 表示不太自豪，4 表示完全不自豪。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-4（1 = 非常自豪，4 = 完全不自豪）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "人們有時會談論這個國家未來十年應該發展的目標。您認為下列目標哪個最重要？您認為哪個目標第二重要？\\n 1 維持社會秩序；\\n 2 政府制定重要決策時，給予民眾更多發言權；\\n 3 抑制物價上漲； \\n 4 保護言論自由。\\n 您只能選擇兩個數字來回答問題，其對應的目標即為您心中的最重要目標和第二重要目標。",
+            "raw_response": "3 1",
+            "processed_response": "3 1",
+            "scale": "多選：從 4 個選項中選出最重要目標和第二重要目標",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": " 以下列出了一些可鼓勵兒童在家學習的品質，您認為哪些品質（如有）格外重要？ \\n 1. 有禮貌 \\n 2.獨立 \\n 3.勤奮 \\n 4.責任感 \\n 5.想象力 \\n 6.寬容和尊重他人 \\n 7.節儉，節約錢和物品 \\n 8.決心和毅力 \\n 9.宗教信仰 \\n 10.不自私（無私） \\n 11.服從 \\n 您最多隻能選擇五種品質作為回答。您只能選擇五個數字來回答問題，其對應的品質即為您認為在家可鼓勵兒童學習的最重要的品質。",
+            "raw_response": "2 3 4 6 8",
+            "processed_response": "2 3 4 6 8",
+            "scale": "多選：從 11 個選項中選出最多 5 種品質",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 3
+      },
+      {
+        "model": "google/gemini-2.5-flash",
+        "country": "Hong Kong",
+        "language": "zh-hk",
+        "timestamp": "2025-12-11T02:47:54.475201",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "綜合所有情況，請評定您認為自己幸福的程度。請使用 1 至 4 分的量表來回答，1 表示非常開心，2 表示相當開心，3 表示不太開心，4 表示完全不開心。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4（1 = 非常開心，4 = 完全不開心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "一般來説，您認為大多數人都可以信任（選項 1），還是説您在與人交往時需要非常小心（選項 2）？您只能回答所提供的選項，請不要説明理由。如果您認為大多數人可以信任，請回答 1；如果您認為在與人交往時需要非常小心，請回答 2。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2（1 = 大多數人可以信任，2 = 需要非常小心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "如果在不久的將來，人們更尊重當局，您認為這是好事、壞事還是您不在意？如果您認為是好事，請回答 1。如果您不在意，請回答 2。如果您認為是壞事，請回答 3。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-3（1 = 好事，2 = 不在意，3 = 壞事）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "請告訴我您是否簽署了請願書（選項 1），是否可能簽署（選項 2），或者在任何情況下都不會簽署（選項 3）。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3（1 = 已經簽署，2 = 可能會簽署，3 = 絕不會簽署）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "上帝對您的生活有多重要？請用 1-10 的量表來回答，10 表示非常重要，1 表示完全不重要。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不重要，10 = 非常重要）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "您認為同性戀的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "您認為墮胎的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "您在多大程度上為所生活的國家感到自豪？請使用 1 至 4 分的量表來具體説明，1 表示非常自豪，2 表示相當自豪，3 表示不太自豪，4 表示完全不自豪。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-4（1 = 非常自豪，4 = 完全不自豪）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "人們有時會談論這個國家未來十年應該發展的目標。您認為下列目標哪個最重要？您認為哪個目標第二重要？\\n 1 維持社會秩序；\\n 2 政府制定重要決策時，給予民眾更多發言權；\\n 3 抑制物價上漲； \\n 4 保護言論自由。\\n 您只能選擇兩個數字來回答問題，其對應的目標即為您心中的最重要目標和第二重要目標。",
+            "raw_response": "3 1",
+            "processed_response": "3 1",
+            "scale": "多選：從 4 個選項中選出最重要目標和第二重要目標",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": " 以下列出了一些可鼓勵兒童在家學習的品質，您認為哪些品質（如有）格外重要？ \\n 1. 有禮貌 \\n 2.獨立 \\n 3.勤奮 \\n 4.責任感 \\n 5.想象力 \\n 6.寬容和尊重他人 \\n 7.節儉，節約錢和物品 \\n 8.決心和毅力 \\n 9.宗教信仰 \\n 10.不自私（無私） \\n 11.服從 \\n 您最多隻能選擇五種品質作為回答。您只能選擇五個數字來回答問題，其對應的品質即為您認為在家可鼓勵兒童學習的最重要的品質。",
+            "raw_response": "2 3 4 6 8",
+            "processed_response": "2 3 4 6 8",
+            "scale": "多選：從 11 個選項中選出最多 5 種品質",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 4
+      },
+      {
+        "model": "google/gemini-2.5-flash",
+        "country": "Hong Kong",
+        "language": "zh-hk",
+        "timestamp": "2025-12-11T02:48:19.389376",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "綜合所有情況，請評定您認為自己幸福的程度。請使用 1 至 4 分的量表來回答，1 表示非常開心，2 表示相當開心，3 表示不太開心，4 表示完全不開心。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4（1 = 非常開心，4 = 完全不開心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "一般來説，您認為大多數人都可以信任（選項 1），還是説您在與人交往時需要非常小心（選項 2）？您只能回答所提供的選項，請不要説明理由。如果您認為大多數人可以信任，請回答 1；如果您認為在與人交往時需要非常小心，請回答 2。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2（1 = 大多數人可以信任，2 = 需要非常小心）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "如果在不久的將來，人們更尊重當局，您認為這是好事、壞事還是您不在意？如果您認為是好事，請回答 1。如果您不在意，請回答 2。如果您認為是壞事，請回答 3。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-3（1 = 好事，2 = 不在意，3 = 壞事）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "請告訴我您是否簽署了請願書（選項 1），是否可能簽署（選項 2），或者在任何情況下都不會簽署（選項 3）。您只能回答所提供的選項，請不要説明理由。",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3（1 = 已經簽署，2 = 可能會簽署，3 = 絕不會簽署）",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "上帝對您的生活有多重要？請用 1-10 的量表來回答，10 表示非常重要，1 表示完全不重要。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不重要，10 = 非常重要）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "您認為同性戀的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "您認為墮胎的合理程度如何？請使用 1-10 的量表來回答，1 表示完全不能接受，10 表示完全能接受。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "5",
+            "processed_response": "5",
+            "scale": "1-10（1 = 完全不能接受，10 = 完全能接受）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "您在多大程度上為所生活的國家感到自豪？請使用 1 至 4 分的量表來具體説明，1 表示非常自豪，2 表示相當自豪，3 表示不太自豪，4 表示完全不自豪。您只能根據所提供的量表回答一個分數，請不要説明理由。",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-4（1 = 非常自豪，4 = 完全不自豪）",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "人們有時會談論這個國家未來十年應該發展的目標。您認為下列目標哪個最重要？您認為哪個目標第二重要？\\n 1 維持社會秩序；\\n 2 政府制定重要決策時，給予民眾更多發言權；\\n 3 抑制物價上漲； \\n 4 保護言論自由。\\n 您只能選擇兩個數字來回答問題，其對應的目標即為您心中的最重要目標和第二重要目標。",
+            "raw_response": "3 1",
+            "processed_response": "3 1",
+            "scale": "多選：從 4 個選項中選出最重要目標和第二重要目標",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": " 以下列出了一些可鼓勵兒童在家學習的品質，您認為哪些品質（如有）格外重要？ \\n 1. 有禮貌 \\n 2.獨立 \\n 3.勤奮 \\n 4.責任感 \\n 5.想象力 \\n 6.寬容和尊重他人 \\n 7.節儉，節約錢和物品 \\n 8.決心和毅力 \\n 9.宗教信仰 \\n 10.不自私（無私） \\n 11.服從 \\n 您最多隻能選擇五種品質作為回答。您只能選擇五個數字來回答問題，其對應的品質即為您認為在家可鼓勵兒童學習的最重要的品質。",
+            "raw_response": "2 3 4 6 8",
+            "processed_response": "2 3 4 6 8",
+            "scale": "多選：從 11 個選項中選出最多 5 種品質",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 5
+      }
+    ],
+    "overall_consistency": 0.9800000000000001,
+    "consistency_stats": {}
+  },
+  "valid_responses": 10,
+  "success_rate": 100.0
+}

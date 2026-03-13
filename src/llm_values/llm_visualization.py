@@ -30,7 +30,7 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
         
         # 配置Stage1专用的子目录
         self.llm_data_dir = Path(data_path) / "llm_values"  # data/llm_values/
-        self.llm_results_dir = Path(results_path) / "llm_dashboard"  # results/llm_values/llm_dashboard/
+        self.llm_results_dir = Path(results_path) / "llm_values" / "llm_dashboard"  # results/llm_values/llm_dashboard/
         
         # 创建结果目录
         self.llm_results_dir.mkdir(parents=True, exist_ok=True)
@@ -71,6 +71,27 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
                 f"提示：请先运行 llm_pca_analysis.py 生成PCA结果"
             )
     
+    def _split_llm_and_country_data(self, data: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
+        """分离LLM和国家数据
+        
+        Args:
+            data: 包含LLM和国家数据的DataFrame
+            
+        Returns:
+            (country_data, llm_data)
+        """
+        if 'data_source' in data.columns:
+            country_data = data[data['data_source'] == 'IVS']
+            llm_data = data[data['data_source'] == 'LLM']
+        elif 'is_llm' in data.columns:
+            country_data = data[data['is_llm'] == False]
+            llm_data = data[data['is_llm'] == True]
+        else:
+            country_data = data[data['Cultural Region'] != 'AI Model']
+            llm_data = data[data['Cultural Region'] == 'AI Model']
+        
+        return country_data, llm_data
+    
     def _get_point_label(self, row: pd.Series) -> str:
         """获取数据点的标签文本 - 重写以支持LLM"""
         # 优先使用Country，然后是model_name，最后是提取的模型名
@@ -104,13 +125,7 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
         fig, ax = plt.subplots(figsize=figsize)
         
         # 分离LLM和国家数据
-        if 'data_source' in data.columns:
-            country_data = data[data['data_source'] == 'IVS']
-            llm_data = data[data['data_source'] == 'LLM']
-        else:
-            # 根据Cultural Region判断
-            country_data = data[data['Cultural Region'] != 'AI Model']
-            llm_data = data[data['Cultural Region'] == 'AI Model']
+        country_data, llm_data = self._split_llm_and_country_data(data)
         
         # 绘制国家数据 - 完全按照country_values的风格
         for region, color in self.cultural_region_colors.items():
@@ -185,12 +200,7 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
             data = self.load_data()
         
         # 筛选LLM数据
-        if 'is_llm' in data.columns:
-            llm_data = data[data['is_llm'] == True]
-        elif 'data_source' in data.columns:
-            llm_data = data[data['data_source'] == 'LLM']
-        else:
-            llm_data = data[data['Cultural Region'] == 'AI Model']
+        _, llm_data = self._split_llm_and_country_data(data)
         
         if llm_data.empty:
             print("⚠️ 未找到LLM数据")

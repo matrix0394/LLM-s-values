@@ -1,0 +1,4 @@
+# file: E:\Code\value of LLM\LLM's values\src\utils\s3_templates.py
+# hypothesis_version: 6.148.8
+
+[0.3, 0.5, 0.7, 0.8, '#888888', '#cccccc', '*', '--', '->', '...', 'Country', 'Language', 'PC1', 'PC2', 'black', 'bold', 'bottom', 'center', 'country', 'cultural_region', 'cultural_zone', 'deviation', 'gold', 'gray', 'ivs_pc1', 'ivs_pc2', 'language', 'llm_pc1', 'llm_pc2', 'none', 'o', 's']

@@ -1,0 +1,1153 @@
+{
+  "total_responses": 2826,
+  "languages": [
+    "en",
+    "fr",
+    "en-native",
+    "es",
+    "de",
+    "ar",
+    "zh-cn",
+    "it",
+    "pt",
+    "ru",
+    "zh-tw",
+    "ja",
+    "zh-hk",
+    "ko"
+  ],
+  "models": [
+    "deepseek-chat",
+    "claude-sonnet-4.5",
+    "glm-4.6",
+    "gemini-3-pro-preview",
+    "qwq-32b",
+    "gemini-2.5-pro",
+    "gpt-4o",
+    "doubao-1-5-pro-32k-250115",
+    "claude-3-7-sonnet-20250219",
+    "mistral-medium-3.1",
+    "llama-3.2-3b-instruct",
+    "qwen3-max",
+    "gpt-5.1",
+    "qwen3-1.7b",
+    "deepseek-chat-v3.1",
+    "phi-3-mini-128k-instruct",
+    "grok-4.1-fast",
+    "gemini-2.5-flash",
+    "mistral-nemo",
+    "gpt-4o-mini",
+    "gemma-3-4b-it",
+    "kimi-k2",
+    "llama-3.3-70b-instruct"
+  ],
+  "countries": [
+    "Mali",
+    "Egypt",
+    "Algeria",
+    "Ireland",
+    "Mexico",
+    "Morocco",
+    "Iraq",
+    "Kyrgyzstan",
+    "Switzerland",
+    "Libya",
+    "Palestine",
+    "China",
+    "Uruguay",
+    "Yemen",
+    "Luxembourg",
+    "Lebanon",
+    "Belgium",
+    "Rwanda",
+    "Venezuela",
+    "Australia",
+    "Jordan",
+    "Qatar",
+    "Tunisia",
+    "Puerto Rico",
+    "Colombia",
+    "Bolivia",
+    "Spain",
+    "Italy",
+    "Canada",
+    "Guatemala",
+    "Macao",
+    "Peru",
+    "Argentina",
+    "Brazil",
+    "Austria",
+    "Taiwan",
+    "Singapore",
+    "Kazakhstan",
+    "Hong Kong",
+    "United Kingdom",
+    "Pakistan",
+    "Ecuador",
+    "Kenya",
+    "South Africa",
+    "United States",
+    "Kuwait",
+    "Korea",
+    "Zimbabwe",
+    "Haiti",
+    "Nicaragua",
+    "Chile",
+    "Germany",
+    "Japan",
+    "Malta",
+    "Burkina Faso",
+    "France",
+    "Portugal",
+    "Malaysia",
+    "Zambia",
+    "Russia",
+    "Ghana",
+    "Belarus",
+    "Trinidad and Tobago",
+    "Philippines",
+    "Nigeria",
+    "New Zealand"
+  ],
+  "overall_success_rate": 99.43029016277424,
+  "question_validity": {
+    "A008": {
+      "valid_count": "2794",
+      "total_count": 2826,
+      "validity_rate": 0.9886765746638358
+    },
+    "A165": {
+      "valid_count": "2816",
+      "total_count": 2826,
+      "validity_rate": 0.9964614295824487
+    },
+    "E018": {
+      "valid_count": "2816",
+      "total_count": 2826,
+      "validity_rate": 0.9964614295824487
+    },
+    "E025": {
+      "valid_count": "2807",
+      "total_count": 2826,
+      "validity_rate": 0.9932767162066525
+    },
+    "F063": {
+      "valid_count": "2813",
+      "total_count": 2826,
+      "validity_rate": 0.9953998584571833
+    },
+    "F118": {
+      "valid_count": "2806",
+      "total_count": 2826,
+      "validity_rate": 0.9929228591648974
+    },
+    "F120": {
+      "valid_count": "2811",
+      "total_count": 2826,
+      "validity_rate": 0.994692144373673
+    },
+    "G006": {
+      "valid_count": "2813",
+      "total_count": 2826,
+      "validity_rate": 0.9953998584571833
+    },
+    "Y002": {
+      "valid_count": "2814",
+      "total_count": 2826,
+      "validity_rate": 0.9957537154989384
+    },
+    "Y003": {
+      "valid_count": "2809",
+      "total_count": 2826,
+      "validity_rate": 0.9939844302901628
+    }
+  },
+  "language_stats": {
+    "en": {
+      "count": 945,
+      "success_rate": 99.92592592592592,
+      "countries": [
+        "Mali",
+        "Kyrgyzstan",
+        "Switzerland",
+        "China",
+        "Uruguay",
+        "Yemen",
+        "Belgium",
+        "Mexico",
+        "Colombia",
+        "Spain",
+        "Palestine",
+        "Guatemala",
+        "Argentina",
+        "Brazil",
+        "Peru",
+        "Austria",
+        "Taiwan",
+        "Ecuador",
+        "Lebanon",
+        "Korea",
+        "Morocco",
+        "Luxembourg",
+        "Macao",
+        "Bolivia",
+        "Nicaragua",
+        "Haiti",
+        "Chile",
+        "Tunisia",
+        "Venezuela",
+        "Burkina Faso",
+        "Portugal",
+        "Libya",
+        "Qatar",
+        "Japan",
+        "Kazakhstan",
+        "Germany",
+        "Russia",
+        "Algeria",
+        "Kuwait",
+        "Italy",
+        "Belarus",
+        "Egypt",
+        "Jordan",
+        "Iraq",
+        "France"
+      ]
+    },
+    "fr": {
+      "count": 453,
+      "success_rate": 96.82119205298014,
+      "countries": [
+        "Egypt",
+        "Algeria",
+        "Mali",
+        "Morocco",
+        "Iraq",
+        "Palestine",
+        "Lebanon",
+        "Rwanda",
+        "Jordan",
+        "Switzerland",
+        "Qatar",
+        "Tunisia",
+        "Canada",
+        "Luxembourg",
+        "Kuwait",
+        "Haiti",
+        "Yemen",
+        "Burkina Faso",
+        "Libya",
+        "France",
+        "Belgium"
+      ]
+    },
+    "en-native": {
+      "count": 441,
+      "success_rate": 99.93197278911565,
+      "countries": [
+        "Ireland",
+        "Australia",
+        "Rwanda",
+        "Canada",
+        "United Kingdom",
+        "Pakistan",
+        "Kenya",
+        "South Africa",
+        "United States",
+        "Zimbabwe",
+        "Singapore",
+        "Malta",
+        "Malaysia",
+        "Zambia",
+        "Hong Kong",
+        "Ghana",
+        "Trinidad and Tobago",
+        "Philippines",
+        "Nigeria",
+        "Puerto Rico",
+        "New Zealand"
+      ]
+    },
+    "es": {
+      "count": 273,
+      "success_rate": 99.96336996336996,
+      "countries": [
+        "Mexico",
+        "Venezuela",
+        "Puerto Rico",
+        "Bolivia",
+        "Peru",
+        "Colombia",
+        "Spain",
+        "Ecuador",
+        "Chile",
+        "Guatemala",
+        "Nicaragua",
+        "Uruguay",
+        "Argentina"
+      ]
+    },
+    "de": {
+      "count": 105,
+      "success_rate": 100.0,
+      "countries": [
+        "Switzerland",
+        "Luxembourg",
+        "Germany",
+        "Austria",
+        "Belgium"
+      ]
+    },
+    "ar": {
+      "count": 252,
+      "success_rate": 100.0,
+      "countries": [
+        "Libya",
+        "Egypt",
+        "Tunisia",
+        "Algeria",
+        "Yemen",
+        "Jordan",
+        "Kuwait",
+        "Iraq",
+        "Morocco",
+        "Lebanon",
+        "Qatar",
+        "Palestine"
+      ]
+    },
+    "zh-cn": {
+      "count": 84,
+      "success_rate": 99.88095238095238,
+      "countries": [
+        "China",
+        "Singapore",
+        "Hong Kong",
+        "Macao"
+      ]
+    },
+    "it": {
+      "count": 42,
+      "success_rate": 100.0,
+      "countries": [
+        "Italy",
+        "Switzerland"
+      ]
+    },
+    "pt": {
+      "count": 63,
+      "success_rate": 99.84126984126983,
+      "countries": [
+        "Macao",
+        "Brazil",
+        "Portugal"
+      ]
+    },
+    "ru": {
+      "count": 84,
+      "success_rate": 100.0,
+      "countries": [
+        "Kazakhstan",
+        "Russia",
+        "Kyrgyzstan",
+        "Belarus"
+      ]
+    },
+    "zh-tw": {
+      "count": 21,
+      "success_rate": 98.0952380952381,
+      "countries": [
+        "Taiwan"
+      ]
+    },
+    "ja": {
+      "count": 21,
+      "success_rate": 100.0,
+      "countries": [
+        "Japan"
+      ]
+    },
+    "zh-hk": {
+      "count": 21,
+      "success_rate": 100.0,
+      "countries": [
+        "Hong Kong"
+      ]
+    },
+    "ko": {
+      "count": 21,
+      "success_rate": 100.0,
+      "countries": [
+        "Korea"
+      ]
+    }
+  },
+  "model_stats": {
+    "deepseek-chat": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "en",
+        "fr",
+        "en-native",
+        "es",
+        "de",
+        "ar",
+        "zh-cn",
+        "it",
+        "pt",
+        "ru",
+        "zh-tw",
+        "ja",
+        "zh-hk",
+        "ko"
+      ]
+    },
+    "claude-sonnet-4.5": {
+      "count": 134,
+      "success_rate": 98.2089552238806,
+      "languages": [
+        "zh-cn",
+        "fr",
+        "en-native",
+        "en",
+        "zh-hk",
+        "it",
+        "es",
+        "ja",
+        "ar",
+        "de",
+        "ru",
+        "ko",
+        "pt",
+        "zh-tw"
+      ]
+    },
+    "glm-4.6": {
+      "count": 12,
+      "success_rate": 100.0,
+      "languages": [
+        "fr"
+      ]
+    },
+    "gemini-3-pro-preview": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "es",
+        "fr",
+        "ar",
+        "en",
+        "en-native",
+        "de",
+        "ru",
+        "pt",
+        "zh-cn",
+        "zh-hk",
+        "it",
+        "zh-tw",
+        "ko",
+        "ja"
+      ]
+    },
+    "qwq-32b": {
+      "count": 12,
+      "success_rate": 100.0,
+      "languages": [
+        "fr"
+      ]
+    },
+    "gemini-2.5-pro": {
+      "count": 134,
+      "success_rate": 95.8955223880597,
+      "languages": [
+        "fr",
+        "en-native",
+        "en",
+        "ar",
+        "es",
+        "zh-cn",
+        "it",
+        "de",
+        "ru",
+        "zh-tw",
+        "pt",
+        "ja",
+        "zh-hk",
+        "ko"
+      ]
+    },
+    "gpt-4o": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "fr",
+        "en",
+        "es",
+        "ko",
+        "ar",
+        "it",
+        "en-native",
+        "zh-hk",
+        "pt",
+        "de",
+        "zh-cn",
+        "zh-tw",
+        "ru",
+        "ja"
+      ]
+    },
+    "doubao-1-5-pro-32k-250115": {
+      "count": 134,
+      "success_rate": 99.70149253731343,
+      "languages": [
+        "ar",
+        "pt",
+        "fr",
+        "ru",
+        "es",
+        "en-native",
+        "en",
+        "de",
+        "zh-hk",
+        "ko",
+        "zh-cn",
+        "ja",
+        "zh-tw",
+        "it"
+      ]
+    },
+    "claude-3-7-sonnet-20250219": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "en",
+        "es",
+        "zh-cn",
+        "fr",
+        "en-native",
+        "ar",
+        "ru",
+        "ja",
+        "de",
+        "ko",
+        "pt",
+        "it",
+        "zh-tw",
+        "zh-hk"
+      ]
+    },
+    "mistral-medium-3.1": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "de",
+        "it",
+        "ar",
+        "es",
+        "pt",
+        "en-native",
+        "fr",
+        "en",
+        "ru",
+        "zh-cn",
+        "ja",
+        "zh-hk",
+        "zh-tw",
+        "ko"
+      ]
+    },
+    "llama-3.2-3b-instruct": {
+      "count": 134,
+      "success_rate": 99.25373134328358,
+      "languages": [
+        "fr",
+        "en",
+        "ar",
+        "zh-hk",
+        "zh-cn",
+        "en-native",
+        "pt",
+        "es",
+        "de",
+        "it",
+        "ru",
+        "ja",
+        "zh-tw",
+        "ko"
+      ]
+    },
+    "qwen3-max": {
+      "count": 134,
+      "success_rate": 99.85074626865672,
+      "languages": [
+        "en-native",
+        "fr",
+        "en",
+        "ru",
+        "zh-cn",
+        "es",
+        "de",
+        "ar",
+        "it",
+        "pt",
+        "ko",
+        "zh-hk",
+        "zh-tw",
+        "ja"
+      ]
+    },
+    "gpt-5.1": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "en",
+        "fr",
+        "en-native",
+        "ar",
+        "es",
+        "ru",
+        "de",
+        "pt",
+        "zh-cn",
+        "it",
+        "zh-hk",
+        "ja",
+        "zh-tw",
+        "ko"
+      ]
+    },
+    "qwen3-1.7b": {
+      "count": 134,
+      "success_rate": 99.92537313432835,
+      "languages": [
+        "ar",
+        "en",
+        "fr",
+        "es",
+        "en-native",
+        "it",
+        "ru",
+        "zh-hk",
+        "de",
+        "pt",
+        "zh-cn",
+        "ko",
+        "zh-tw",
+        "ja"
+      ]
+    },
+    "deepseek-chat-v3.1": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "pt",
+        "en-native",
+        "ru",
+        "zh-cn",
+        "ar",
+        "zh-tw",
+        "de",
+        "zh-hk",
+        "it",
+        "ko",
+        "ja"
+      ]
+    },
+    "phi-3-mini-128k-instruct": {
+      "count": 122,
+      "success_rate": 100.0,
+      "languages": [
+        "fr",
+        "en-native",
+        "ar",
+        "es",
+        "en",
+        "zh-tw",
+        "de",
+        "ru",
+        "zh-cn",
+        "ja",
+        "zh-hk",
+        "pt",
+        "it",
+        "ko"
+      ]
+    },
+    "grok-4.1-fast": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "ja",
+        "en",
+        "en-native",
+        "zh-cn",
+        "de",
+        "es",
+        "ar",
+        "ru",
+        "fr",
+        "it",
+        "pt",
+        "ko",
+        "zh-tw",
+        "zh-hk"
+      ]
+    },
+    "gemini-2.5-flash": {
+      "count": 134,
+      "success_rate": 95.22388059701493,
+      "languages": [
+        "fr",
+        "es",
+        "ar",
+        "en-native",
+        "en",
+        "zh-tw",
+        "zh-hk",
+        "pt",
+        "zh-cn",
+        "de",
+        "ko",
+        "ru",
+        "it",
+        "ja"
+      ]
+    },
+    "mistral-nemo": {
+      "count": 134,
+      "success_rate": 99.92537313432835,
+      "languages": [
+        "en",
+        "en-native",
+        "fr",
+        "pt",
+        "de",
+        "es",
+        "ar",
+        "zh-cn",
+        "ko",
+        "it",
+        "ru",
+        "zh-hk",
+        "zh-tw",
+        "ja"
+      ]
+    },
+    "gpt-4o-mini": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "en",
+        "ar",
+        "en-native",
+        "fr",
+        "pt",
+        "es",
+        "zh-tw",
+        "ko",
+        "de",
+        "ru",
+        "zh-hk",
+        "zh-cn",
+        "it",
+        "ja"
+      ]
+    },
+    "gemma-3-4b-it": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "en",
+        "fr",
+        "ar",
+        "en-native",
+        "ru",
+        "zh-cn",
+        "de",
+        "es",
+        "pt",
+        "it",
+        "zh-hk",
+        "zh-tw",
+        "ko",
+        "ja"
+      ]
+    },
+    "kimi-k2": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "en-native",
+        "en",
+        "fr",
+        "pt",
+        "es",
+        "ar",
+        "zh-cn",
+        "de",
+        "zh-hk",
+        "zh-tw",
+        "it",
+        "ru",
+        "ko",
+        "ja"
+      ]
+    },
+    "llama-3.3-70b-instruct": {
+      "count": 134,
+      "success_rate": 100.0,
+      "languages": [
+        "en-native",
+        "en",
+        "fr",
+        "es",
+        "ar",
+        "zh-cn",
+        "it",
+        "de",
+        "zh-tw",
+        "ru",
+        "ja",
+        "pt",
+        "zh-hk",
+        "ko"
+      ]
+    }
+  },
+  "country_stats": {
+    "Mali": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Egypt": {
+      "count": 64,
+      "success_rate": 99.84375,
+      "language": "fr"
+    },
+    "Algeria": {
+      "count": 64,
+      "success_rate": 99.84375,
+      "language": "fr"
+    },
+    "Ireland": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Mexico": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "es"
+    },
+    "Morocco": {
+      "count": 64,
+      "success_rate": 97.34375,
+      "language": "fr"
+    },
+    "Iraq": {
+      "count": 64,
+      "success_rate": 98.4375,
+      "language": "fr"
+    },
+    "Kyrgyzstan": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Switzerland": {
+      "count": 84,
+      "success_rate": 99.76190476190476,
+      "language": "de"
+    },
+    "Libya": {
+      "count": 64,
+      "success_rate": 98.28125,
+      "language": "ar"
+    },
+    "Palestine": {
+      "count": 64,
+      "success_rate": 97.34375,
+      "language": "fr"
+    },
+    "China": {
+      "count": 42,
+      "success_rate": 99.76190476190476,
+      "language": "en"
+    },
+    "Uruguay": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Yemen": {
+      "count": 64,
+      "success_rate": 97.8125,
+      "language": "en"
+    },
+    "Luxembourg": {
+      "count": 63,
+      "success_rate": 99.84126984126983,
+      "language": "de"
+    },
+    "Lebanon": {
+      "count": 64,
+      "success_rate": 97.34375,
+      "language": "fr"
+    },
+    "Belgium": {
+      "count": 63,
+      "success_rate": 99.52380952380952,
+      "language": "en"
+    },
+    "Rwanda": {
+      "count": 42,
+      "success_rate": 99.76190476190476,
+      "language": "fr"
+    },
+    "Venezuela": {
+      "count": 42,
+      "success_rate": 99.76190476190476,
+      "language": "es"
+    },
+    "Australia": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Jordan": {
+      "count": 64,
+      "success_rate": 97.5,
+      "language": "fr"
+    },
+    "Qatar": {
+      "count": 64,
+      "success_rate": 96.875,
+      "language": "fr"
+    },
+    "Tunisia": {
+      "count": 64,
+      "success_rate": 99.6875,
+      "language": "fr"
+    },
+    "Puerto Rico": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "es"
+    },
+    "Colombia": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Bolivia": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "es"
+    },
+    "Spain": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Italy": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "it"
+    },
+    "Canada": {
+      "count": 42,
+      "success_rate": 99.52380952380952,
+      "language": "fr"
+    },
+    "Guatemala": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Macao": {
+      "count": 63,
+      "success_rate": 99.84126984126983,
+      "language": "pt"
+    },
+    "Peru": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "es"
+    },
+    "Argentina": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Brazil": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Austria": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Taiwan": {
+      "count": 42,
+      "success_rate": 98.57142857142857,
+      "language": "en"
+    },
+    "Singapore": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "zh-cn"
+    },
+    "Kazakhstan": {
+      "count": 42,
+      "success_rate": 99.76190476190476,
+      "language": "ru"
+    },
+    "Hong Kong": {
+      "count": 63,
+      "success_rate": 100.0,
+      "language": "zh-cn"
+    },
+    "United Kingdom": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Pakistan": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Ecuador": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Kenya": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "South Africa": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "United States": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Kuwait": {
+      "count": 64,
+      "success_rate": 98.4375,
+      "language": "fr"
+    },
+    "Korea": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Zimbabwe": {
+      "count": 21,
+      "success_rate": 99.52380952380952,
+      "language": "en-native"
+    },
+    "Haiti": {
+      "count": 42,
+      "success_rate": 99.52380952380952,
+      "language": "fr"
+    },
+    "Nicaragua": {
+      "count": 42,
+      "success_rate": 99.76190476190476,
+      "language": "en"
+    },
+    "Chile": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Germany": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "de"
+    },
+    "Japan": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "ja"
+    },
+    "Malta": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Burkina Faso": {
+      "count": 42,
+      "success_rate": 99.76190476190476,
+      "language": "fr"
+    },
+    "France": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "fr"
+    },
+    "Portugal": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Malaysia": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Zambia": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Russia": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "ru"
+    },
+    "Ghana": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Belarus": {
+      "count": 42,
+      "success_rate": 100.0,
+      "language": "en"
+    },
+    "Trinidad and Tobago": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Philippines": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "Nigeria": {
+      "count": 21,
+      "success_rate": 100.0,
+      "language": "en-native"
+    },
+    "New Zealand": {
+      "count": 21,
+      "success_rate": 99.52380952380952,
+      "language": "en-native"
+    }
+  }
+}

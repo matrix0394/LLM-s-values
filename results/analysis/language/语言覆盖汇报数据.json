@@ -1,0 +1,1208 @@
+{
+  "report_metadata": {
+    "title": "WVS 109国语言覆盖分析报告",
+    "date": "2024-12-02",
+    "total_countries": 109,
+    "covered_countries": 66,
+    "uncovered_countries": 43,
+    "coverage_rate": "60.6%",
+    "total_languages": 13,
+    "total_population_million": 7074.1,
+    "covered_population_million": 4388.4,
+    "uncovered_population_million": 2685.7,
+    "population_coverage_rate": "62.0%",
+    "population_data_source": "Wikipedia (2024)",
+    "population_data_url": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population"
+  },
+  "covered_by_language": {
+    "English": {
+      "language_name_zh": "英语",
+      "country_count": 21,
+      "percentage": "19.3%",
+      "countries": [
+        {
+          "name_en": "Australia",
+          "name_zh": "澳大利亚",
+          "cultural_region": "English-Speaking",
+          "population_million": 26.6
+        },
+        {
+          "name_en": "Canada",
+          "name_zh": "加拿大",
+          "cultural_region": "English-Speaking",
+          "population_million": 39.7
+        },
+        {
+          "name_en": "Ghana",
+          "name_zh": "加纳",
+          "cultural_region": "African-Islamic",
+          "population_million": 33.5
+        },
+        {
+          "name_en": "Hong Kong",
+          "name_zh": "香港",
+          "cultural_region": "Confucian",
+          "population_million": 7.5
+        },
+        {
+          "name_en": "Ireland",
+          "name_zh": "爱尔兰",
+          "cultural_region": "Catholic Europe",
+          "population_million": 5.2
+        },
+        {
+          "name_en": "Kenya",
+          "name_zh": "肯尼亚",
+          "cultural_region": "African-Islamic",
+          "population_million": 55.1
+        },
+        {
+          "name_en": "Malaysia",
+          "name_zh": "马来西亚",
+          "cultural_region": "West & South Asia",
+          "population_million": 34.3
+        },
+        {
+          "name_en": "Malta",
+          "name_zh": "马耳他",
+          "cultural_region": "Catholic Europe",
+          "population_million": 0.5
+        },
+        {
+          "name_en": "New Zealand",
+          "name_zh": "新西兰",
+          "cultural_region": "English-Speaking",
+          "population_million": 5.2
+        },
+        {
+          "name_en": "Nigeria",
+          "name_zh": "尼日利亚",
+          "cultural_region": "African-Islamic",
+          "population_million": 223.8
+        },
+        {
+          "name_en": "Pakistan",
+          "name_zh": "巴基斯坦",
+          "cultural_region": "West & South Asia",
+          "population_million": 240.5
+        },
+        {
+          "name_en": "Philippines",
+          "name_zh": "菲律宾",
+          "cultural_region": "Latin America",
+          "population_million": 117.3
+        },
+        {
+          "name_en": "Puerto Rico",
+          "name_zh": "波多黎各",
+          "cultural_region": "Latin America",
+          "population_million": 3.2
+        },
+        {
+          "name_en": "Rwanda",
+          "name_zh": "卢旺达",
+          "cultural_region": "African-Islamic",
+          "population_million": 14.1
+        },
+        {
+          "name_en": "Singapore",
+          "name_zh": "新加坡",
+          "cultural_region": "West & South Asia",
+          "population_million": 6.0
+        },
+        {
+          "name_en": "South Africa",
+          "name_zh": "南非",
+          "cultural_region": "African-Islamic",
+          "population_million": 60.4
+        },
+        {
+          "name_en": "Trinidad and Tobago",
+          "name_zh": "特立尼达和多巴哥",
+          "cultural_region": "Latin America",
+          "population_million": 1.5
+        },
+        {
+          "name_en": "United Kingdom",
+          "name_zh": "英国",
+          "cultural_region": "English-Speaking",
+          "population_million": 67.7
+        },
+        {
+          "name_en": "United States",
+          "name_zh": "美国",
+          "cultural_region": "English-Speaking",
+          "population_million": 341.8
+        },
+        {
+          "name_en": "Zambia",
+          "name_zh": "赞比亚",
+          "cultural_region": "African-Islamic",
+          "population_million": 20.6
+        },
+        {
+          "name_en": "Zimbabwe",
+          "name_zh": "津巴布韦",
+          "cultural_region": "African-Islamic",
+          "population_million": 16.7
+        }
+      ],
+      "total_population_million": 1321.2
+    },
+    "Spanish": {
+      "language_name_zh": "西班牙语",
+      "country_count": 13,
+      "percentage": "11.9%",
+      "countries": [
+        {
+          "name_en": "Argentina",
+          "name_zh": "阿根廷",
+          "cultural_region": "Latin America",
+          "population_million": 46.2
+        },
+        {
+          "name_en": "Bolivia",
+          "name_zh": "玻利维亚",
+          "cultural_region": "Latin America",
+          "population_million": 12.4
+        },
+        {
+          "name_en": "Chile",
+          "name_zh": "智利",
+          "cultural_region": "Latin America",
+          "population_million": 19.6
+        },
+        {
+          "name_en": "Colombia",
+          "name_zh": "哥伦比亚",
+          "cultural_region": "Latin America",
+          "population_million": 52.1
+        },
+        {
+          "name_en": "Ecuador",
+          "name_zh": "厄瓜多尔",
+          "cultural_region": "Latin America",
+          "population_million": 18.2
+        },
+        {
+          "name_en": "Guatemala",
+          "name_zh": "危地马拉",
+          "cultural_region": "Latin America",
+          "population_million": 17.1
+        },
+        {
+          "name_en": "Mexico",
+          "name_zh": "墨西哥",
+          "cultural_region": "Latin America",
+          "population_million": 128.5
+        },
+        {
+          "name_en": "Nicaragua",
+          "name_zh": "尼加拉瓜",
+          "cultural_region": "Latin America",
+          "population_million": 7.0
+        },
+        {
+          "name_en": "Peru",
+          "name_zh": "秘鲁",
+          "cultural_region": "Latin America",
+          "population_million": 34.4
+        },
+        {
+          "name_en": "Puerto Rico",
+          "name_zh": "波多黎各",
+          "cultural_region": "Latin America",
+          "population_million": 3.2
+        },
+        {
+          "name_en": "Spain",
+          "name_zh": "西班牙",
+          "cultural_region": "Catholic Europe",
+          "population_million": 47.4
+        },
+        {
+          "name_en": "Uruguay",
+          "name_zh": "乌拉圭",
+          "cultural_region": "Latin America",
+          "population_million": 3.4
+        },
+        {
+          "name_en": "Venezuela",
+          "name_zh": "委内瑞拉",
+          "cultural_region": "Latin America",
+          "population_million": 28.8
+        }
+      ],
+      "total_population_million": 418.3
+    },
+    "Arabic": {
+      "language_name_zh": "阿拉伯语",
+      "country_count": 12,
+      "percentage": "11.0%",
+      "countries": [
+        {
+          "name_en": "Algeria",
+          "name_zh": "阿尔及利亚",
+          "cultural_region": "African-Islamic",
+          "population_million": 45.6
+        },
+        {
+          "name_en": "Egypt",
+          "name_zh": "埃及",
+          "cultural_region": "African-Islamic",
+          "population_million": 112.7
+        },
+        {
+          "name_en": "Iraq",
+          "name_zh": "伊拉克",
+          "cultural_region": "African-Islamic",
+          "population_million": 45.5
+        },
+        {
+          "name_en": "Jordan",
+          "name_zh": "约旦",
+          "cultural_region": "African-Islamic",
+          "population_million": 11.3
+        },
+        {
+          "name_en": "Kuwait",
+          "name_zh": "科威特",
+          "cultural_region": "African-Islamic",
+          "population_million": 4.3
+        },
+        {
+          "name_en": "Lebanon",
+          "name_zh": "黎巴嫩",
+          "cultural_region": "African-Islamic",
+          "population_million": 5.5
+        },
+        {
+          "name_en": "Libya",
+          "name_zh": "利比亚",
+          "cultural_region": "African-Islamic",
+          "population_million": 6.9
+        },
+        {
+          "name_en": "Morocco",
+          "name_zh": "摩洛哥",
+          "cultural_region": "African-Islamic",
+          "population_million": 37.8
+        },
+        {
+          "name_en": "Palestine",
+          "name_zh": "巴勒斯坦",
+          "cultural_region": "African-Islamic",
+          "population_million": 5.5
+        },
+        {
+          "name_en": "Qatar",
+          "name_zh": "卡塔尔",
+          "cultural_region": "African-Islamic",
+          "population_million": 2.7
+        },
+        {
+          "name_en": "Tunisia",
+          "name_zh": "突尼斯",
+          "cultural_region": "African-Islamic",
+          "population_million": 12.5
+        },
+        {
+          "name_en": "Yemen",
+          "name_zh": "也门",
+          "cultural_region": "African-Islamic",
+          "population_million": 34.5
+        }
+      ],
+      "total_population_million": 324.8
+    },
+    "French": {
+      "language_name_zh": "法语",
+      "country_count": 9,
+      "percentage": "8.3%",
+      "countries": [
+        {
+          "name_en": "Belgium",
+          "name_zh": "比利时",
+          "cultural_region": "Catholic Europe",
+          "population_million": 11.7
+        },
+        {
+          "name_en": "Burkina Faso",
+          "name_zh": "布基纳法索",
+          "cultural_region": "African-Islamic",
+          "population_million": 23.3
+        },
+        {
+          "name_en": "Canada",
+          "name_zh": "加拿大",
+          "cultural_region": "English-Speaking",
+          "population_million": 39.7
+        },
+        {
+          "name_en": "France",
+          "name_zh": "法国",
+          "cultural_region": "Catholic Europe",
+          "population_million": 64.8
+        },
+        {
+          "name_en": "Haiti",
+          "name_zh": "海地",
+          "cultural_region": "Latin America",
+          "population_million": 11.7
+        },
+        {
+          "name_en": "Luxembourg",
+          "name_zh": "卢森堡",
+          "cultural_region": "Catholic Europe",
+          "population_million": 0.7
+        },
+        {
+          "name_en": "Mali",
+          "name_zh": "马里",
+          "cultural_region": "African-Islamic",
+          "population_million": 23.3
+        },
+        {
+          "name_en": "Rwanda",
+          "name_zh": "卢旺达",
+          "cultural_region": "African-Islamic",
+          "population_million": 14.1
+        },
+        {
+          "name_en": "Switzerland",
+          "name_zh": "瑞士",
+          "cultural_region": "Protestant Europe",
+          "population_million": 8.8
+        }
+      ],
+      "total_population_million": 198.1
+    },
+    "German": {
+      "language_name_zh": "德语",
+      "country_count": 5,
+      "percentage": "4.6%",
+      "countries": [
+        {
+          "name_en": "Austria",
+          "name_zh": "奥地利",
+          "cultural_region": "Catholic Europe",
+          "population_million": 9.0
+        },
+        {
+          "name_en": "Belgium",
+          "name_zh": "比利时",
+          "cultural_region": "Catholic Europe",
+          "population_million": 11.7
+        },
+        {
+          "name_en": "Germany",
+          "name_zh": "德国",
+          "cultural_region": "Protestant Europe",
+          "population_million": 83.3
+        },
+        {
+          "name_en": "Luxembourg",
+          "name_zh": "卢森堡",
+          "cultural_region": "Catholic Europe",
+          "population_million": 0.7
+        },
+        {
+          "name_en": "Switzerland",
+          "name_zh": "瑞士",
+          "cultural_region": "Protestant Europe",
+          "population_million": 8.8
+        }
+      ],
+      "total_population_million": 113.5
+    },
+    "Russian": {
+      "language_name_zh": "俄语",
+      "country_count": 4,
+      "percentage": "3.7%",
+      "countries": [
+        {
+          "name_en": "Belarus",
+          "name_zh": "白俄罗斯",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 9.1
+        },
+        {
+          "name_en": "Kazakhstan",
+          "name_zh": "哈萨克斯坦",
+          "cultural_region": "African-Islamic",
+          "population_million": 19.6
+        },
+        {
+          "name_en": "Kyrgyzstan",
+          "name_zh": "吉尔吉斯斯坦",
+          "cultural_region": "West & South Asia",
+          "population_million": 7.0
+        },
+        {
+          "name_en": "Russia",
+          "name_zh": "俄罗斯",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 144.4
+        }
+      ],
+      "total_population_million": 180.1
+    },
+    "Chinese (Simplified)": {
+      "language_name_zh": "简体中文",
+      "country_count": 4,
+      "percentage": "3.7%",
+      "countries": [
+        {
+          "name_en": "China",
+          "name_zh": "中国",
+          "cultural_region": "Confucian",
+          "population_million": 1425.7
+        },
+        {
+          "name_en": "Hong Kong",
+          "name_zh": "香港",
+          "cultural_region": "Confucian",
+          "population_million": 7.5
+        },
+        {
+          "name_en": "Macao",
+          "name_zh": "澳门",
+          "cultural_region": "Confucian",
+          "population_million": 0.7
+        },
+        {
+          "name_en": "Singapore",
+          "name_zh": "新加坡",
+          "cultural_region": "West & South Asia",
+          "population_million": 6.0
+        }
+      ],
+      "total_population_million": 1439.9
+    },
+    "Portuguese": {
+      "language_name_zh": "葡萄牙语",
+      "country_count": 3,
+      "percentage": "2.8%",
+      "countries": [
+        {
+          "name_en": "Brazil",
+          "name_zh": "巴西",
+          "cultural_region": "Latin America",
+          "population_million": 216.4
+        },
+        {
+          "name_en": "Macao",
+          "name_zh": "澳门",
+          "cultural_region": "Confucian",
+          "population_million": 0.7
+        },
+        {
+          "name_en": "Portugal",
+          "name_zh": "葡萄牙",
+          "cultural_region": "Catholic Europe",
+          "population_million": 10.3
+        }
+      ],
+      "total_population_million": 227.4
+    },
+    "Italian": {
+      "language_name_zh": "意大利语",
+      "country_count": 2,
+      "percentage": "1.8%",
+      "countries": [
+        {
+          "name_en": "Italy",
+          "name_zh": "意大利",
+          "cultural_region": "Catholic Europe",
+          "population_million": 58.9
+        },
+        {
+          "name_en": "Switzerland",
+          "name_zh": "瑞士",
+          "cultural_region": "Protestant Europe",
+          "population_million": 8.8
+        }
+      ],
+      "total_population_million": 67.7
+    },
+    "Japanese": {
+      "language_name_zh": "日语",
+      "country_count": 1,
+      "percentage": "0.9%",
+      "countries": [
+        {
+          "name_en": "Japan",
+          "name_zh": "日本",
+          "cultural_region": "Confucian",
+          "population_million": 123.3
+        }
+      ],
+      "total_population_million": 123.3
+    },
+    "Korean": {
+      "language_name_zh": "韩语",
+      "country_count": 1,
+      "percentage": "0.9%",
+      "countries": [
+        {
+          "name_en": "Korea",
+          "name_zh": "韩国",
+          "cultural_region": "Confucian",
+          "population_million": 51.7
+        }
+      ],
+      "total_population_million": 51.7
+    },
+    "Chinese (Traditional - Hong Kong)": {
+      "language_name_zh": "繁体中文（香港）",
+      "country_count": 1,
+      "percentage": "0.9%",
+      "countries": [
+        {
+          "name_en": "Hong Kong",
+          "name_zh": "香港",
+          "cultural_region": "Confucian",
+          "population_million": 7.5
+        }
+      ],
+      "total_population_million": 7.5
+    },
+    "Chinese (Traditional - Taiwan)": {
+      "language_name_zh": "繁体中文（台湾）",
+      "country_count": 1,
+      "percentage": "0.9%",
+      "countries": [
+        {
+          "name_en": "Taiwan",
+          "name_zh": "台湾",
+          "cultural_region": "Confucian",
+          "population_million": 23.6
+        }
+      ],
+      "total_population_million": 23.6
+    }
+  },
+  "uncovered_by_language": [
+    {
+      "language": "Serbian/Croatian/Bosnian",
+      "language_zh": "塞尔维亚语/克罗地亚语/波黑语",
+      "language_code": "sr/hr/bs",
+      "country_count": 4,
+      "note": "南斯拉夫语群，高度互通",
+      "countries": [
+        {
+          "name_en": "Bosnia and Herzegovina",
+          "name_zh": "波斯尼亚和黑塞哥维那",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 3.2
+        },
+        {
+          "name_en": "Croatia",
+          "name_zh": "克罗地亚",
+          "cultural_region": "Catholic Europe",
+          "population_million": 3.9
+        },
+        {
+          "name_en": "Montenegro",
+          "name_zh": "黑山",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 0.6
+        },
+        {
+          "name_en": "Serbia",
+          "name_zh": "塞尔维亚",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 6.7
+        }
+      ],
+      "total_population_million": 14.4
+    },
+    {
+      "language": "Romanian",
+      "language_zh": "罗马尼亚语",
+      "language_code": "ro",
+      "country_count": 2,
+      "countries": [
+        {
+          "name_en": "Moldova",
+          "name_zh": "摩尔多瓦",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 3.0
+        },
+        {
+          "name_en": "Romania",
+          "name_zh": "罗马尼亚",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 19.0
+        }
+      ],
+      "total_population_million": 22.0
+    },
+    {
+      "language": "Swedish",
+      "language_zh": "瑞典语",
+      "language_code": "sv",
+      "country_count": 2,
+      "countries": [
+        {
+          "name_en": "Finland",
+          "name_zh": "芬兰",
+          "cultural_region": "Protestant Europe",
+          "population_million": 5.6
+        },
+        {
+          "name_en": "Sweden",
+          "name_zh": "瑞典",
+          "cultural_region": "Protestant Europe",
+          "population_million": 10.5
+        }
+      ],
+      "total_population_million": 16.1
+    },
+    {
+      "language": "Greek",
+      "language_zh": "希腊语",
+      "language_code": "el",
+      "country_count": 2,
+      "countries": [
+        {
+          "name_en": "Cyprus",
+          "name_zh": "塞浦路斯",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 1.3
+        },
+        {
+          "name_en": "Greece",
+          "name_zh": "希腊",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 10.3
+        }
+      ],
+      "total_population_million": 11.6
+    },
+    {
+      "language": "Turkish",
+      "language_zh": "土耳其语",
+      "language_code": "tr",
+      "country_count": 2,
+      "countries": [
+        {
+          "name_en": "Cyprus",
+          "name_zh": "塞浦路斯",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 1.3
+        },
+        {
+          "name_en": "Turkey",
+          "name_zh": "土耳其",
+          "cultural_region": "West & South Asia",
+          "population_million": 85.8
+        }
+      ],
+      "total_population_million": 87.1
+    },
+    {
+      "language": "Indonesian",
+      "language_zh": "印度尼西亚语",
+      "language_code": "id",
+      "country_count": 1,
+      "note": "人口2.75亿，世界第4人口大国",
+      "countries": [
+        {
+          "name_en": "Indonesia",
+          "name_zh": "印度尼西亚",
+          "cultural_region": "West & South Asia",
+          "population_million": 277.5
+        }
+      ],
+      "total_population_million": 277.5
+    },
+    {
+      "language": "Vietnamese",
+      "language_zh": "越南语",
+      "language_code": "vi",
+      "country_count": 1,
+      "note": "人口9800万",
+      "countries": [
+        {
+          "name_en": "Viet Nam",
+          "name_zh": "越南",
+          "cultural_region": "West & South Asia",
+          "population_million": 98.9
+        }
+      ],
+      "total_population_million": 98.9
+    },
+    {
+      "language": "Thai",
+      "language_zh": "泰语",
+      "language_code": "th",
+      "country_count": 1,
+      "note": "人口7000万",
+      "countries": [
+        {
+          "name_en": "Thailand",
+          "name_zh": "泰国",
+          "cultural_region": "West & South Asia",
+          "population_million": 71.8
+        }
+      ],
+      "total_population_million": 71.8
+    },
+    {
+      "language": "Polish",
+      "language_zh": "波兰语",
+      "language_code": "pl",
+      "country_count": 1,
+      "note": "人口3800万",
+      "countries": [
+        {
+          "name_en": "Poland",
+          "name_zh": "波兰",
+          "cultural_region": "Catholic Europe",
+          "population_million": 37.7
+        }
+      ],
+      "total_population_million": 37.7
+    },
+    {
+      "language": "Ukrainian",
+      "language_zh": "乌克兰语",
+      "language_code": "uk",
+      "country_count": 1,
+      "note": "人口4000万",
+      "countries": [
+        {
+          "name_en": "Ukraine",
+          "name_zh": "乌克兰",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 37.0
+        }
+      ],
+      "total_population_million": 37.0
+    },
+    {
+      "language": "Dutch",
+      "language_zh": "荷兰语",
+      "language_code": "nl",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Netherlands",
+          "name_zh": "荷兰",
+          "cultural_region": "Protestant Europe",
+          "population_million": 17.6
+        }
+      ],
+      "total_population_million": 17.6
+    },
+    {
+      "language": "Persian/Farsi",
+      "language_zh": "波斯语",
+      "language_code": "fa",
+      "country_count": 1,
+      "note": "人口8500万",
+      "countries": [
+        {
+          "name_en": "Iran",
+          "name_zh": "伊朗",
+          "cultural_region": "West & South Asia",
+          "population_million": 89.2
+        }
+      ],
+      "total_population_million": 89.2
+    },
+    {
+      "language": "Bengali",
+      "language_zh": "孟加拉语",
+      "language_code": "bn",
+      "country_count": 1,
+      "note": "人口1.7亿",
+      "countries": [
+        {
+          "name_en": "Bangladesh",
+          "name_zh": "孟加拉国",
+          "cultural_region": "West & South Asia",
+          "population_million": 173.6
+        }
+      ],
+      "total_population_million": 173.6
+    },
+    {
+      "language": "Czech",
+      "language_zh": "捷克语",
+      "language_code": "cs",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Czechia",
+          "name_zh": "捷克",
+          "cultural_region": "Catholic Europe",
+          "population_million": 10.5
+        }
+      ],
+      "total_population_million": 10.5
+    },
+    {
+      "language": "Hungarian",
+      "language_zh": "匈牙利语",
+      "language_code": "hu",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Hungary",
+          "name_zh": "匈牙利",
+          "cultural_region": "Catholic Europe",
+          "population_million": 9.6
+        }
+      ],
+      "total_population_million": 9.6
+    },
+    {
+      "language": "Bulgarian",
+      "language_zh": "保加利亚语",
+      "language_code": "bg",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Bulgaria",
+          "name_zh": "保加利亚",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 6.4
+        }
+      ],
+      "total_population_million": 6.4
+    },
+    {
+      "language": "Norwegian",
+      "language_zh": "挪威语",
+      "language_code": "no",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Norway",
+          "name_zh": "挪威",
+          "cultural_region": "Protestant Europe",
+          "population_million": 5.5
+        }
+      ],
+      "total_population_million": 5.5
+    },
+    {
+      "language": "Danish",
+      "language_zh": "丹麦语",
+      "language_code": "da",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Denmark",
+          "name_zh": "丹麦",
+          "cultural_region": "Protestant Europe",
+          "population_million": 5.9
+        }
+      ],
+      "total_population_million": 5.9
+    },
+    {
+      "language": "Slovak",
+      "language_zh": "斯洛伐克语",
+      "language_code": "sk",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Slovakia",
+          "name_zh": "斯洛伐克",
+          "cultural_region": "Catholic Europe",
+          "population_million": 5.4
+        }
+      ],
+      "total_population_million": 5.4
+    },
+    {
+      "language": "Albanian",
+      "language_zh": "阿尔巴尼亚语",
+      "language_code": "sq",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Albania",
+          "name_zh": "阿尔巴尼亚",
+          "cultural_region": "African-Islamic",
+          "population_million": 2.8
+        }
+      ],
+      "total_population_million": 2.8
+    },
+    {
+      "language": "Finnish",
+      "language_zh": "芬兰语",
+      "language_code": "fi",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Finland",
+          "name_zh": "芬兰",
+          "cultural_region": "Protestant Europe",
+          "population_million": 5.6
+        }
+      ],
+      "total_population_million": 5.6
+    },
+    {
+      "language": "Lithuanian",
+      "language_zh": "立陶宛语",
+      "language_code": "lt",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Lithuania",
+          "name_zh": "立陶宛",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 2.7
+        }
+      ],
+      "total_population_million": 2.7
+    },
+    {
+      "language": "Latvian",
+      "language_zh": "拉脱维亚语",
+      "language_code": "lv",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Latvia",
+          "name_zh": "拉脱维亚",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 1.8
+        }
+      ],
+      "total_population_million": 1.8
+    },
+    {
+      "language": "Estonian",
+      "language_zh": "爱沙尼亚语",
+      "language_code": "et",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Estonia",
+          "name_zh": "爱沙尼亚",
+          "cultural_region": "West & South Asia",
+          "population_million": 1.4
+        }
+      ],
+      "total_population_million": 1.4
+    },
+    {
+      "language": "Slovenian",
+      "language_zh": "斯洛文尼亚语",
+      "language_code": "sl",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Slovenia",
+          "name_zh": "斯洛文尼亚",
+          "cultural_region": "Catholic Europe",
+          "population_million": 2.1
+        }
+      ],
+      "total_population_million": 2.1
+    },
+    {
+      "language": "Georgian",
+      "language_zh": "格鲁吉亚语",
+      "language_code": "ka",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Georgia",
+          "name_zh": "格鲁吉亚",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 3.7
+        }
+      ],
+      "total_population_million": 3.7
+    },
+    {
+      "language": "Armenian",
+      "language_zh": "亚美尼亚语",
+      "language_code": "hy",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Armenia",
+          "name_zh": "亚美尼亚",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 2.8
+        }
+      ],
+      "total_population_million": 2.8
+    },
+    {
+      "language": "Azerbaijani",
+      "language_zh": "阿塞拜疆语",
+      "language_code": "az",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Azerbaijan",
+          "name_zh": "阿塞拜疆",
+          "cultural_region": "African-Islamic",
+          "population_million": 10.4
+        }
+      ],
+      "total_population_million": 10.4
+    },
+    {
+      "language": "Burmese",
+      "language_zh": "缅甸语",
+      "language_code": "my",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Myanmar",
+          "name_zh": "缅甸",
+          "cultural_region": "West & South Asia",
+          "population_million": 54.6
+        }
+      ],
+      "total_population_million": 54.6
+    },
+    {
+      "language": "Mongolian",
+      "language_zh": "蒙古语",
+      "language_code": "mn",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Mongolia",
+          "name_zh": "蒙古国",
+          "cultural_region": "Confucian",
+          "population_million": 3.4
+        }
+      ],
+      "total_population_million": 3.4
+    },
+    {
+      "language": "Tajik",
+      "language_zh": "塔吉克语",
+      "language_code": "tg",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Tajikistan",
+          "name_zh": "塔吉克斯坦",
+          "cultural_region": "West & South Asia",
+          "population_million": 10.1
+        }
+      ],
+      "total_population_million": 10.1
+    },
+    {
+      "language": "Uzbek",
+      "language_zh": "乌兹别克语",
+      "language_code": "uz",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Uzbekistan",
+          "name_zh": "乌兹别克斯坦",
+          "cultural_region": "West & South Asia",
+          "population_million": 35.2
+        }
+      ],
+      "total_population_million": 35.2
+    },
+    {
+      "language": "Amharic",
+      "language_zh": "阿姆哈拉语",
+      "language_code": "am",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Ethiopia",
+          "name_zh": "埃塞俄比亚",
+          "cultural_region": "African-Islamic",
+          "population_million": 126.5
+        }
+      ],
+      "total_population_million": 126.5
+    },
+    {
+      "language": "Dhivehi",
+      "language_zh": "迪维希语",
+      "language_code": "dv",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Maldives",
+          "name_zh": "马尔代夫",
+          "cultural_region": "West & South Asia",
+          "population_million": 0.5
+        }
+      ],
+      "total_population_million": 0.5
+    },
+    {
+      "language": "Icelandic",
+      "language_zh": "冰岛语",
+      "language_code": "is",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Iceland",
+          "name_zh": "冰岛",
+          "cultural_region": "Protestant Europe",
+          "population_million": 0.4
+        }
+      ],
+      "total_population_million": 0.4
+    },
+    {
+      "language": "Catalan",
+      "language_zh": "加泰罗尼亚语",
+      "language_code": "ca",
+      "country_count": 1,
+      "countries": [
+        {
+          "name_en": "Andorra",
+          "name_zh": "安道尔",
+          "cultural_region": "Catholic Europe",
+          "population_million": 0.08
+        }
+      ],
+      "total_population_million": 0.1
+    },
+    {
+      "language": "Hindi",
+      "language_zh": "印地语",
+      "language_code": "hi",
+      "country_count": 1,
+      "total_population_million": 1428.6,
+      "note": "印度官方语言之一（有22种官方语言）",
+      "countries": [
+        {
+          "name_en": "India",
+          "name_zh": "印度",
+          "cultural_region": "West & South Asia",
+          "population_million": 1428.6
+        }
+      ]
+    },
+    {
+      "language": "Macedonian",
+      "language_zh": "马其顿语",
+      "language_code": "mk",
+      "country_count": 1,
+      "total_population_million": 2.1,
+      "countries": [
+        {
+          "name_en": "North Macedonia",
+          "name_zh": "北马其顿",
+          "cultural_region": "Orthodox Europe",
+          "population_million": 2.1
+        }
+      ]
+    }
+  ]
+}

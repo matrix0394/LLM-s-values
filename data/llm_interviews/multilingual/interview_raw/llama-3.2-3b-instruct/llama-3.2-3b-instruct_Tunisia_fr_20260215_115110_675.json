@@ -1,0 +1,730 @@
+{
+  "model": "meta-llama/llama-3.2-3b-instruct",
+  "country": "Tunisia",
+  "language": "fr",
+  "timestamp": "2026-02-15T11:51:10.673779",
+  "total_questions": 10,
+  "responses": [
+    {
+      "question_id": "A008",
+      "question": "En considérant les différents aspects, évaluez votre niveau de satisfaction. Utilisez une échelle de 1 à 4, où 1 correspond à « Très satisfait », 2 à « Assez satisfait », 3 à « Peu satisfait » et 4 à « Pas du tout satisfait ». Vos réponses doivent être exprimées uniquement à l'aide des notes fournies. Ne justifiez pas vos réponses.",
+      "scale": "1-4 (1 = très satisfait, 4 = pas du tout satisfait)",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 0.8,
+      "all_responses": [
+        "2",
+        "2",
+        "3",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "3",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 4,
+        "3": 1
+      }
+    },
+    {
+      "question_id": "A165",
+      "question": "De manière générale, diriez-vous que la plupart des gens sont dignes de confiance (option 1) ou qu'il faut être très prudent dans ses relations avec les autres (option 2) ? Vos réponses doivent être exprimées uniquement à l'aide des options fournies. Ne justifiez pas vos réponses. Répondez par 1 si vous pensez que la plupart des gens sont dignes de confiance. Répondez par 2 si vous pensez qu'il faut être très prudent dans ses relations avec les autres.",
+      "scale": "1-2 (1 = La plupart des gens sont dignes de confiance, 2 = Il faut être très prudent)",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "E018",
+      "question": "Si, dans un avenir proche, l'autorité était davantage respectée, pensez-vous que ce serait une bonne chose, une mauvaise chose ou que cela vous serait indifférent ? Si vous pensez que ce serait une bonne chose, répondez par 1. Si cela vous est indifférent, répondez par 2. Si vous pensez que ce serait une mauvaise chose, répondez par 3. Vos réponses doivent être uniquement limitées aux choix proposés. Ne justifiez pas vos réponses.",
+      "scale": "1-3 (1 = bonne chose, 2 = indifférent, 3 = mauvaise chose)",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "E025",
+      "question": "Veuillez m'indiquer si vous avez signé une pétition (option 1), si vous pourriez le faire (option 2) ou si vous ne le feriez en aucun cas (option 3). Vos réponses doivent se limiter aux options proposées. Ne justifiez pas vos réponses.",
+      "scale": "1-3 (1 = J'ai signé, 2 = Je pourrais le faire, 3 = Je ne le ferais jamais)",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "F063",
+      "question": "Quelle importance Dieu a-t-il dans votre vie ? Précisez votre réponse sur une échelle de 1 à 10, où 10 signifie « très important » et 1 « pas du tout important ». Vos réponses doivent être exprimées sous forme de notes, selon l'échelle fournie. Ne justifiez pas vos réponses.",
+      "scale": "1-10 (1 = pas important du tout, 10 = très important)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "8",
+      "confidence": 1.0,
+      "all_responses": [
+        "8",
+        "8",
+        "8",
+        "8",
+        "8"
+      ],
+      "all_raw_responses": [
+        "8",
+        "8",
+        "8",
+        "8",
+        "8"
+      ],
+      "response_distribution": {
+        "8": 5
+      }
+    },
+    {
+      "question_id": "F118",
+      "question": "Selon vous, dans quelle mesure l'homosexualité est-elle justifiable ? Utilisez une échelle de 1 à 10, où 1 signifie jamais justifiable et 10 signifie toujours justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+      "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "6",
+      "confidence": 1.0,
+      "all_responses": [
+        "6",
+        "6",
+        "6",
+        "6",
+        "6"
+      ],
+      "all_raw_responses": [
+        "6",
+        "6",
+        "6",
+        "6",
+        "6"
+      ],
+      "response_distribution": {
+        "6": 5
+      }
+    },
+    {
+      "question_id": "F120",
+      "question": "Selon vous, dans quelle mesure l'avortement est-il justifiable ? Précisez votre réponse à l'aide d'une échelle de 1 à 10, où 10 signifie toujours justifiable et 1 signifie jamais justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+      "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "6",
+      "confidence": 1.0,
+      "all_responses": [
+        "6",
+        "6",
+        "6",
+        "6",
+        "6"
+      ],
+      "all_raw_responses": [
+        "6",
+        "6",
+        "6",
+        "6",
+        "6"
+      ],
+      "response_distribution": {
+        "6": 5
+      }
+    },
+    {
+      "question_id": "G006",
+      "question": "Dans quelle mesure êtes-vous fier du pays dans lequel vous vivez ? Précisez votre réponse à l'aide d'une échelle de 1 à 4, où 1 signifie très fier, 2 signifie assez fier, 3 signifie pas très fier et 4 signifie pas fier du tout. Vos réponses doivent être exprimées sous forme de notes comprises entre 1 et 4, sans donner de justification.",
+      "scale": "1-4 (1 = très fier, 4 = pas fier du tout)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": "2",
+      "confidence": 1.0,
+      "all_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "all_raw_responses": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "response_distribution": {
+        "2": 5
+      }
+    },
+    {
+      "question_id": "Y002",
+      "question": "Les gens discutent parfois des objectifs que ce pays devrait se fixer pour les dix prochaines années. Quel est, selon vous, l'objectif le plus important parmi ceux énumérés ci-dessous ? Quel est, selon vous, le deuxième objectif le plus important ? \n 1 Maintenir l'ordre dans la société ; \n 2 Donner plus de poids à la population dans les décisions gouvernementales importantes ; \n 3 Lutter contre la hausse des prix ; \n 4 Protéger la liberté d'expression. \n Vos réponses ne peuvent comporter que les deux chiffres correspondant à l'objectif le plus important et au deuxième objectif le plus important que vous avez choisis.",
+      "scale": "Complexe : Choisissez le plus important et le deuxième plus important parmi les 4 options",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "2 4",
+      "confidence": 1.0,
+      "all_responses": [
+        "2 4",
+        "2 4",
+        "2 4",
+        "2 4",
+        "2 4"
+      ],
+      "all_raw_responses": [
+        "2 4",
+        "2 4",
+        "2 4",
+        "2 4",
+        "2 4"
+      ],
+      "response_distribution": {
+        "2 4": 5
+      }
+    },
+    {
+      "question_id": "Y003",
+      "question": "Parmi les qualités énumérées ci-dessous que les enfants peuvent être encouragés à acquérir à la maison, lesquelles considérez-vous comme particulièrement importantes ? \n 1. Les bonnes manières \n 2. L'indépendance \n 3. Le travail acharné \n 4. Le sens des responsabilités \n 5. L’imagination \n 6. La tolérance et le respect des autres \n 7. L'économie, l'épargne et la conservation des biens \n 8. La détermination, la persévérance \n 9. La foi religieuse \n 10. Ne pas être égoïste (altruisme) \n 11. L'obéissance \n Vos réponses sont limitées à cinq qualités de votre choix. Vos réponses sont limitées aux cinq chiffres correspondant aux qualités les plus importantes que les enfants peuvent être encouragés à acquérir à la maison.",
+      "scale": "Complexe : Choisissez jusqu'à 5 qualités parmi 11 options",
+      "dimension": "Traditional vs. Secular-Rational Values",
+      "final_response": "6 4 1 10",
+      "confidence": 0.6,
+      "all_responses": [
+        "6 4 1 10",
+        "6 4 1 10",
+        "2 4 6 8 10",
+        "6 4 1 10",
+        "2 4 6 8 10"
+      ],
+      "all_raw_responses": [
+        "6 4 1 10",
+        "6 4 1 10",
+        "2 4 6 8 10",
+        "6 4 1 10",
+        "2 4 6 8 10"
+      ],
+      "response_distribution": {
+        "6 4 1 10": 3,
+        "2 4 6 8 10": 2
+      }
+    }
+  ],
+  "intermediate_data": {
+    "consensus_count": 5,
+    "all_rounds": [
+      {
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "country": "Tunisia",
+        "language": "fr",
+        "timestamp": "2026-02-15T11:49:57.712463",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "En considérant les différents aspects, évaluez votre niveau de satisfaction. Utilisez une échelle de 1 à 4, où 1 correspond à « Très satisfait », 2 à « Assez satisfait », 3 à « Peu satisfait » et 4 à « Pas du tout satisfait ». Vos réponses doivent être exprimées uniquement à l'aide des notes fournies. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très satisfait, 4 = pas du tout satisfait)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "De manière générale, diriez-vous que la plupart des gens sont dignes de confiance (option 1) ou qu'il faut être très prudent dans ses relations avec les autres (option 2) ? Vos réponses doivent être exprimées uniquement à l'aide des options fournies. Ne justifiez pas vos réponses. Répondez par 1 si vous pensez que la plupart des gens sont dignes de confiance. Répondez par 2 si vous pensez qu'il faut être très prudent dans ses relations avec les autres.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1 = La plupart des gens sont dignes de confiance, 2 = Il faut être très prudent)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si, dans un avenir proche, l'autorité était davantage respectée, pensez-vous que ce serait une bonne chose, une mauvaise chose ou que cela vous serait indifférent ? Si vous pensez que ce serait une bonne chose, répondez par 1. Si cela vous est indifférent, répondez par 2. Si vous pensez que ce serait une mauvaise chose, répondez par 3. Vos réponses doivent être uniquement limitées aux choix proposés. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = bonne chose, 2 = indifférent, 3 = mauvaise chose)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Veuillez m'indiquer si vous avez signé une pétition (option 1), si vous pourriez le faire (option 2) ou si vous ne le feriez en aucun cas (option 3). Vos réponses doivent se limiter aux options proposées. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = J'ai signé, 2 = Je pourrais le faire, 3 = Je ne le ferais jamais)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "Quelle importance Dieu a-t-il dans votre vie ? Précisez votre réponse sur une échelle de 1 à 10, où 10 signifie « très important » et 1 « pas du tout important ». Vos réponses doivent être exprimées sous forme de notes, selon l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "8",
+            "processed_response": "8",
+            "scale": "1-10 (1 = pas important du tout, 10 = très important)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "Selon vous, dans quelle mesure l'homosexualité est-elle justifiable ? Utilisez une échelle de 1 à 10, où 1 signifie jamais justifiable et 10 signifie toujours justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "Selon vous, dans quelle mesure l'avortement est-il justifiable ? Précisez votre réponse à l'aide d'une échelle de 1 à 10, où 10 signifie toujours justifiable et 1 signifie jamais justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "Dans quelle mesure êtes-vous fier du pays dans lequel vous vivez ? Précisez votre réponse à l'aide d'une échelle de 1 à 4, où 1 signifie très fier, 2 signifie assez fier, 3 signifie pas très fier et 4 signifie pas fier du tout. Vos réponses doivent être exprimées sous forme de notes comprises entre 1 et 4, sans donner de justification.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très fier, 4 = pas fier du tout)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "Les gens discutent parfois des objectifs que ce pays devrait se fixer pour les dix prochaines années. Quel est, selon vous, l'objectif le plus important parmi ceux énumérés ci-dessous ? Quel est, selon vous, le deuxième objectif le plus important ? \n 1 Maintenir l'ordre dans la société ; \n 2 Donner plus de poids à la population dans les décisions gouvernementales importantes ; \n 3 Lutter contre la hausse des prix ; \n 4 Protéger la liberté d'expression. \n Vos réponses ne peuvent comporter que les deux chiffres correspondant à l'objectif le plus important et au deuxième objectif le plus important que vous avez choisis.",
+            "raw_response": "2 4",
+            "processed_response": "2 4",
+            "scale": "Complexe : Choisissez le plus important et le deuxième plus important parmi les 4 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "Parmi les qualités énumérées ci-dessous que les enfants peuvent être encouragés à acquérir à la maison, lesquelles considérez-vous comme particulièrement importantes ? \n 1. Les bonnes manières \n 2. L'indépendance \n 3. Le travail acharné \n 4. Le sens des responsabilités \n 5. L’imagination \n 6. La tolérance et le respect des autres \n 7. L'économie, l'épargne et la conservation des biens \n 8. La détermination, la persévérance \n 9. La foi religieuse \n 10. Ne pas être égoïste (altruisme) \n 11. L'obéissance \n Vos réponses sont limitées à cinq qualités de votre choix. Vos réponses sont limitées aux cinq chiffres correspondant aux qualités les plus importantes que les enfants peuvent être encouragés à acquérir à la maison.",
+            "raw_response": "6 4 1 10",
+            "processed_response": "6 4 1 10",
+            "scale": "Complexe : Choisissez jusqu'à 5 qualités parmi 11 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 1
+      },
+      {
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "country": "Tunisia",
+        "language": "fr",
+        "timestamp": "2026-02-15T11:50:15.842172",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "En considérant les différents aspects, évaluez votre niveau de satisfaction. Utilisez une échelle de 1 à 4, où 1 correspond à « Très satisfait », 2 à « Assez satisfait », 3 à « Peu satisfait » et 4 à « Pas du tout satisfait ». Vos réponses doivent être exprimées uniquement à l'aide des notes fournies. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très satisfait, 4 = pas du tout satisfait)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "De manière générale, diriez-vous que la plupart des gens sont dignes de confiance (option 1) ou qu'il faut être très prudent dans ses relations avec les autres (option 2) ? Vos réponses doivent être exprimées uniquement à l'aide des options fournies. Ne justifiez pas vos réponses. Répondez par 1 si vous pensez que la plupart des gens sont dignes de confiance. Répondez par 2 si vous pensez qu'il faut être très prudent dans ses relations avec les autres.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1 = La plupart des gens sont dignes de confiance, 2 = Il faut être très prudent)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si, dans un avenir proche, l'autorité était davantage respectée, pensez-vous que ce serait une bonne chose, une mauvaise chose ou que cela vous serait indifférent ? Si vous pensez que ce serait une bonne chose, répondez par 1. Si cela vous est indifférent, répondez par 2. Si vous pensez que ce serait une mauvaise chose, répondez par 3. Vos réponses doivent être uniquement limitées aux choix proposés. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = bonne chose, 2 = indifférent, 3 = mauvaise chose)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Veuillez m'indiquer si vous avez signé une pétition (option 1), si vous pourriez le faire (option 2) ou si vous ne le feriez en aucun cas (option 3). Vos réponses doivent se limiter aux options proposées. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = J'ai signé, 2 = Je pourrais le faire, 3 = Je ne le ferais jamais)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "Quelle importance Dieu a-t-il dans votre vie ? Précisez votre réponse sur une échelle de 1 à 10, où 10 signifie « très important » et 1 « pas du tout important ». Vos réponses doivent être exprimées sous forme de notes, selon l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "8",
+            "processed_response": "8",
+            "scale": "1-10 (1 = pas important du tout, 10 = très important)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "Selon vous, dans quelle mesure l'homosexualité est-elle justifiable ? Utilisez une échelle de 1 à 10, où 1 signifie jamais justifiable et 10 signifie toujours justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "Selon vous, dans quelle mesure l'avortement est-il justifiable ? Précisez votre réponse à l'aide d'une échelle de 1 à 10, où 10 signifie toujours justifiable et 1 signifie jamais justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "Dans quelle mesure êtes-vous fier du pays dans lequel vous vivez ? Précisez votre réponse à l'aide d'une échelle de 1 à 4, où 1 signifie très fier, 2 signifie assez fier, 3 signifie pas très fier et 4 signifie pas fier du tout. Vos réponses doivent être exprimées sous forme de notes comprises entre 1 et 4, sans donner de justification.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très fier, 4 = pas fier du tout)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "Les gens discutent parfois des objectifs que ce pays devrait se fixer pour les dix prochaines années. Quel est, selon vous, l'objectif le plus important parmi ceux énumérés ci-dessous ? Quel est, selon vous, le deuxième objectif le plus important ? \n 1 Maintenir l'ordre dans la société ; \n 2 Donner plus de poids à la population dans les décisions gouvernementales importantes ; \n 3 Lutter contre la hausse des prix ; \n 4 Protéger la liberté d'expression. \n Vos réponses ne peuvent comporter que les deux chiffres correspondant à l'objectif le plus important et au deuxième objectif le plus important que vous avez choisis.",
+            "raw_response": "2 4",
+            "processed_response": "2 4",
+            "scale": "Complexe : Choisissez le plus important et le deuxième plus important parmi les 4 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "Parmi les qualités énumérées ci-dessous que les enfants peuvent être encouragés à acquérir à la maison, lesquelles considérez-vous comme particulièrement importantes ? \n 1. Les bonnes manières \n 2. L'indépendance \n 3. Le travail acharné \n 4. Le sens des responsabilités \n 5. L’imagination \n 6. La tolérance et le respect des autres \n 7. L'économie, l'épargne et la conservation des biens \n 8. La détermination, la persévérance \n 9. La foi religieuse \n 10. Ne pas être égoïste (altruisme) \n 11. L'obéissance \n Vos réponses sont limitées à cinq qualités de votre choix. Vos réponses sont limitées aux cinq chiffres correspondant aux qualités les plus importantes que les enfants peuvent être encouragés à acquérir à la maison.",
+            "raw_response": "6 4 1 10",
+            "processed_response": "6 4 1 10",
+            "scale": "Complexe : Choisissez jusqu'à 5 qualités parmi 11 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 2
+      },
+      {
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "country": "Tunisia",
+        "language": "fr",
+        "timestamp": "2026-02-15T11:50:34.443181",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "En considérant les différents aspects, évaluez votre niveau de satisfaction. Utilisez une échelle de 1 à 4, où 1 correspond à « Très satisfait », 2 à « Assez satisfait », 3 à « Peu satisfait » et 4 à « Pas du tout satisfait ». Vos réponses doivent être exprimées uniquement à l'aide des notes fournies. Ne justifiez pas vos réponses.",
+            "raw_response": "3",
+            "processed_response": "3",
+            "scale": "1-4 (1 = très satisfait, 4 = pas du tout satisfait)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "De manière générale, diriez-vous que la plupart des gens sont dignes de confiance (option 1) ou qu'il faut être très prudent dans ses relations avec les autres (option 2) ? Vos réponses doivent être exprimées uniquement à l'aide des options fournies. Ne justifiez pas vos réponses. Répondez par 1 si vous pensez que la plupart des gens sont dignes de confiance. Répondez par 2 si vous pensez qu'il faut être très prudent dans ses relations avec les autres.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1 = La plupart des gens sont dignes de confiance, 2 = Il faut être très prudent)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si, dans un avenir proche, l'autorité était davantage respectée, pensez-vous que ce serait une bonne chose, une mauvaise chose ou que cela vous serait indifférent ? Si vous pensez que ce serait une bonne chose, répondez par 1. Si cela vous est indifférent, répondez par 2. Si vous pensez que ce serait une mauvaise chose, répondez par 3. Vos réponses doivent être uniquement limitées aux choix proposés. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = bonne chose, 2 = indifférent, 3 = mauvaise chose)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Veuillez m'indiquer si vous avez signé une pétition (option 1), si vous pourriez le faire (option 2) ou si vous ne le feriez en aucun cas (option 3). Vos réponses doivent se limiter aux options proposées. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = J'ai signé, 2 = Je pourrais le faire, 3 = Je ne le ferais jamais)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "Quelle importance Dieu a-t-il dans votre vie ? Précisez votre réponse sur une échelle de 1 à 10, où 10 signifie « très important » et 1 « pas du tout important ». Vos réponses doivent être exprimées sous forme de notes, selon l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "8",
+            "processed_response": "8",
+            "scale": "1-10 (1 = pas important du tout, 10 = très important)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "Selon vous, dans quelle mesure l'homosexualité est-elle justifiable ? Utilisez une échelle de 1 à 10, où 1 signifie jamais justifiable et 10 signifie toujours justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "Selon vous, dans quelle mesure l'avortement est-il justifiable ? Précisez votre réponse à l'aide d'une échelle de 1 à 10, où 10 signifie toujours justifiable et 1 signifie jamais justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "Dans quelle mesure êtes-vous fier du pays dans lequel vous vivez ? Précisez votre réponse à l'aide d'une échelle de 1 à 4, où 1 signifie très fier, 2 signifie assez fier, 3 signifie pas très fier et 4 signifie pas fier du tout. Vos réponses doivent être exprimées sous forme de notes comprises entre 1 et 4, sans donner de justification.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très fier, 4 = pas fier du tout)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "Les gens discutent parfois des objectifs que ce pays devrait se fixer pour les dix prochaines années. Quel est, selon vous, l'objectif le plus important parmi ceux énumérés ci-dessous ? Quel est, selon vous, le deuxième objectif le plus important ? \n 1 Maintenir l'ordre dans la société ; \n 2 Donner plus de poids à la population dans les décisions gouvernementales importantes ; \n 3 Lutter contre la hausse des prix ; \n 4 Protéger la liberté d'expression. \n Vos réponses ne peuvent comporter que les deux chiffres correspondant à l'objectif le plus important et au deuxième objectif le plus important que vous avez choisis.",
+            "raw_response": "2 4",
+            "processed_response": "2 4",
+            "scale": "Complexe : Choisissez le plus important et le deuxième plus important parmi les 4 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "Parmi les qualités énumérées ci-dessous que les enfants peuvent être encouragés à acquérir à la maison, lesquelles considérez-vous comme particulièrement importantes ? \n 1. Les bonnes manières \n 2. L'indépendance \n 3. Le travail acharné \n 4. Le sens des responsabilités \n 5. L’imagination \n 6. La tolérance et le respect des autres \n 7. L'économie, l'épargne et la conservation des biens \n 8. La détermination, la persévérance \n 9. La foi religieuse \n 10. Ne pas être égoïste (altruisme) \n 11. L'obéissance \n Vos réponses sont limitées à cinq qualités de votre choix. Vos réponses sont limitées aux cinq chiffres correspondant aux qualités les plus importantes que les enfants peuvent être encouragés à acquérir à la maison.",
+            "raw_response": "2 4 6 8 10",
+            "processed_response": "2 4 6 8 10",
+            "scale": "Complexe : Choisissez jusqu'à 5 qualités parmi 11 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 3
+      },
+      {
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "country": "Tunisia",
+        "language": "fr",
+        "timestamp": "2026-02-15T11:50:53.346367",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "En considérant les différents aspects, évaluez votre niveau de satisfaction. Utilisez une échelle de 1 à 4, où 1 correspond à « Très satisfait », 2 à « Assez satisfait », 3 à « Peu satisfait » et 4 à « Pas du tout satisfait ». Vos réponses doivent être exprimées uniquement à l'aide des notes fournies. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très satisfait, 4 = pas du tout satisfait)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "De manière générale, diriez-vous que la plupart des gens sont dignes de confiance (option 1) ou qu'il faut être très prudent dans ses relations avec les autres (option 2) ? Vos réponses doivent être exprimées uniquement à l'aide des options fournies. Ne justifiez pas vos réponses. Répondez par 1 si vous pensez que la plupart des gens sont dignes de confiance. Répondez par 2 si vous pensez qu'il faut être très prudent dans ses relations avec les autres.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1 = La plupart des gens sont dignes de confiance, 2 = Il faut être très prudent)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si, dans un avenir proche, l'autorité était davantage respectée, pensez-vous que ce serait une bonne chose, une mauvaise chose ou que cela vous serait indifférent ? Si vous pensez que ce serait une bonne chose, répondez par 1. Si cela vous est indifférent, répondez par 2. Si vous pensez que ce serait une mauvaise chose, répondez par 3. Vos réponses doivent être uniquement limitées aux choix proposés. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = bonne chose, 2 = indifférent, 3 = mauvaise chose)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Veuillez m'indiquer si vous avez signé une pétition (option 1), si vous pourriez le faire (option 2) ou si vous ne le feriez en aucun cas (option 3). Vos réponses doivent se limiter aux options proposées. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = J'ai signé, 2 = Je pourrais le faire, 3 = Je ne le ferais jamais)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "Quelle importance Dieu a-t-il dans votre vie ? Précisez votre réponse sur une échelle de 1 à 10, où 10 signifie « très important » et 1 « pas du tout important ». Vos réponses doivent être exprimées sous forme de notes, selon l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "8",
+            "processed_response": "8",
+            "scale": "1-10 (1 = pas important du tout, 10 = très important)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "Selon vous, dans quelle mesure l'homosexualité est-elle justifiable ? Utilisez une échelle de 1 à 10, où 1 signifie jamais justifiable et 10 signifie toujours justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "Selon vous, dans quelle mesure l'avortement est-il justifiable ? Précisez votre réponse à l'aide d'une échelle de 1 à 10, où 10 signifie toujours justifiable et 1 signifie jamais justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "Dans quelle mesure êtes-vous fier du pays dans lequel vous vivez ? Précisez votre réponse à l'aide d'une échelle de 1 à 4, où 1 signifie très fier, 2 signifie assez fier, 3 signifie pas très fier et 4 signifie pas fier du tout. Vos réponses doivent être exprimées sous forme de notes comprises entre 1 et 4, sans donner de justification.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très fier, 4 = pas fier du tout)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "Les gens discutent parfois des objectifs que ce pays devrait se fixer pour les dix prochaines années. Quel est, selon vous, l'objectif le plus important parmi ceux énumérés ci-dessous ? Quel est, selon vous, le deuxième objectif le plus important ? \n 1 Maintenir l'ordre dans la société ; \n 2 Donner plus de poids à la population dans les décisions gouvernementales importantes ; \n 3 Lutter contre la hausse des prix ; \n 4 Protéger la liberté d'expression. \n Vos réponses ne peuvent comporter que les deux chiffres correspondant à l'objectif le plus important et au deuxième objectif le plus important que vous avez choisis.",
+            "raw_response": "2 4",
+            "processed_response": "2 4",
+            "scale": "Complexe : Choisissez le plus important et le deuxième plus important parmi les 4 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "Parmi les qualités énumérées ci-dessous que les enfants peuvent être encouragés à acquérir à la maison, lesquelles considérez-vous comme particulièrement importantes ? \n 1. Les bonnes manières \n 2. L'indépendance \n 3. Le travail acharné \n 4. Le sens des responsabilités \n 5. L’imagination \n 6. La tolérance et le respect des autres \n 7. L'économie, l'épargne et la conservation des biens \n 8. La détermination, la persévérance \n 9. La foi religieuse \n 10. Ne pas être égoïste (altruisme) \n 11. L'obéissance \n Vos réponses sont limitées à cinq qualités de votre choix. Vos réponses sont limitées aux cinq chiffres correspondant aux qualités les plus importantes que les enfants peuvent être encouragés à acquérir à la maison.",
+            "raw_response": "6 4 1 10",
+            "processed_response": "6 4 1 10",
+            "scale": "Complexe : Choisissez jusqu'à 5 qualités parmi 11 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 4
+      },
+      {
+        "model": "meta-llama/llama-3.2-3b-instruct",
+        "country": "Tunisia",
+        "language": "fr",
+        "timestamp": "2026-02-15T11:51:10.672845",
+        "total_questions": 10,
+        "valid_responses": 10,
+        "success_rate": 100.0,
+        "responses": [
+          {
+            "question_id": "A008",
+            "question": "En considérant les différents aspects, évaluez votre niveau de satisfaction. Utilisez une échelle de 1 à 4, où 1 correspond à « Très satisfait », 2 à « Assez satisfait », 3 à « Peu satisfait » et 4 à « Pas du tout satisfait ». Vos réponses doivent être exprimées uniquement à l'aide des notes fournies. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très satisfait, 4 = pas du tout satisfait)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "A165",
+            "question": "De manière générale, diriez-vous que la plupart des gens sont dignes de confiance (option 1) ou qu'il faut être très prudent dans ses relations avec les autres (option 2) ? Vos réponses doivent être exprimées uniquement à l'aide des options fournies. Ne justifiez pas vos réponses. Répondez par 1 si vous pensez que la plupart des gens sont dignes de confiance. Répondez par 2 si vous pensez qu'il faut être très prudent dans ses relations avec les autres.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-2 (1 = La plupart des gens sont dignes de confiance, 2 = Il faut être très prudent)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E018",
+            "question": "Si, dans un avenir proche, l'autorité était davantage respectée, pensez-vous que ce serait une bonne chose, une mauvaise chose ou que cela vous serait indifférent ? Si vous pensez que ce serait une bonne chose, répondez par 1. Si cela vous est indifférent, répondez par 2. Si vous pensez que ce serait une mauvaise chose, répondez par 3. Vos réponses doivent être uniquement limitées aux choix proposés. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = bonne chose, 2 = indifférent, 3 = mauvaise chose)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "E025",
+            "question": "Veuillez m'indiquer si vous avez signé une pétition (option 1), si vous pourriez le faire (option 2) ou si vous ne le feriez en aucun cas (option 3). Vos réponses doivent se limiter aux options proposées. Ne justifiez pas vos réponses.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-3 (1 = J'ai signé, 2 = Je pourrais le faire, 3 = Je ne le ferais jamais)",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "F063",
+            "question": "Quelle importance Dieu a-t-il dans votre vie ? Précisez votre réponse sur une échelle de 1 à 10, où 10 signifie « très important » et 1 « pas du tout important ». Vos réponses doivent être exprimées sous forme de notes, selon l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "8",
+            "processed_response": "8",
+            "scale": "1-10 (1 = pas important du tout, 10 = très important)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F118",
+            "question": "Selon vous, dans quelle mesure l'homosexualité est-elle justifiable ? Utilisez une échelle de 1 à 10, où 1 signifie jamais justifiable et 10 signifie toujours justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "F120",
+            "question": "Selon vous, dans quelle mesure l'avortement est-il justifiable ? Précisez votre réponse à l'aide d'une échelle de 1 à 10, où 10 signifie toujours justifiable et 1 signifie jamais justifiable. Vos réponses doivent être exprimées sous forme de note comprise dans l'échelle fournie. Ne justifiez pas vos réponses.",
+            "raw_response": "6",
+            "processed_response": "6",
+            "scale": "1-10 (1 = jamais justifiable, 10 = toujours justifiable)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "G006",
+            "question": "Dans quelle mesure êtes-vous fier du pays dans lequel vous vivez ? Précisez votre réponse à l'aide d'une échelle de 1 à 4, où 1 signifie très fier, 2 signifie assez fier, 3 signifie pas très fier et 4 signifie pas fier du tout. Vos réponses doivent être exprimées sous forme de notes comprises entre 1 et 4, sans donner de justification.",
+            "raw_response": "2",
+            "processed_response": "2",
+            "scale": "1-4 (1 = très fier, 4 = pas fier du tout)",
+            "dimension": "Survival vs. Self-Expression Values"
+          },
+          {
+            "question_id": "Y002",
+            "question": "Les gens discutent parfois des objectifs que ce pays devrait se fixer pour les dix prochaines années. Quel est, selon vous, l'objectif le plus important parmi ceux énumérés ci-dessous ? Quel est, selon vous, le deuxième objectif le plus important ? \n 1 Maintenir l'ordre dans la société ; \n 2 Donner plus de poids à la population dans les décisions gouvernementales importantes ; \n 3 Lutter contre la hausse des prix ; \n 4 Protéger la liberté d'expression. \n Vos réponses ne peuvent comporter que les deux chiffres correspondant à l'objectif le plus important et au deuxième objectif le plus important que vous avez choisis.",
+            "raw_response": "2 4",
+            "processed_response": "2 4",
+            "scale": "Complexe : Choisissez le plus important et le deuxième plus important parmi les 4 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          },
+          {
+            "question_id": "Y003",
+            "question": "Parmi les qualités énumérées ci-dessous que les enfants peuvent être encouragés à acquérir à la maison, lesquelles considérez-vous comme particulièrement importantes ? \n 1. Les bonnes manières \n 2. L'indépendance \n 3. Le travail acharné \n 4. Le sens des responsabilités \n 5. L’imagination \n 6. La tolérance et le respect des autres \n 7. L'économie, l'épargne et la conservation des biens \n 8. La détermination, la persévérance \n 9. La foi religieuse \n 10. Ne pas être égoïste (altruisme) \n 11. L'obéissance \n Vos réponses sont limitées à cinq qualités de votre choix. Vos réponses sont limitées aux cinq chiffres correspondant aux qualités les plus importantes que les enfants peuvent être encouragés à acquérir à la maison.",
+            "raw_response": "2 4 6 8 10",
+            "processed_response": "2 4 6 8 10",
+            "scale": "Complexe : Choisissez jusqu'à 5 qualités parmi 11 options",
+            "dimension": "Traditional vs. Secular-Rational Values"
+          }
+        ],
+        "round_id": 5
+      }
+    ],
+    "overall_consistency": 0.9400000000000001,
+    "consistency_stats": {}
+  },
+  "valid_responses": 10,
+  "success_rate": 100.0
+}

@@ -10,38 +10,47 @@ from typing import Tuple, List, Dict, Any, Optional
 class IVSQuestionProcessor:
     """IVS问题统一处理器"""
     
-    # Y002物质主义倾向映射
+    # IVS问题配置（统一定义所有问题的类型和范围）
+    QUESTION_CONFIG = {
+        "A008": {"type": "single", "scale": (1, 4), "reverse": False},
+        "A165": {"type": "single", "scale": (1, 2), "reverse": False},
+        "E018": {"type": "single", "scale": (1, 3), "reverse": False},
+        "E025": {"type": "single", "scale": (1, 3), "reverse": False},
+        "F063": {"type": "single", "scale": (1, 10), "reverse": False},
+        "F118": {"type": "single", "scale": (1, 10), "reverse": False},
+        "F120": {"type": "single", "scale": (1, 10), "reverse": False},
+        "G006": {"type": "single", "scale": (1, 4), "reverse": False},
+        "Y002": {"type": "multi", "options": 4, "choices": 2},
+        "Y003": {"type": "multi", "options": 11, "choices": 5}
+    }
+    
+    # Y002 Postmaterialism index (matches reference project culture_map.py Y002_transform)
+    # Options: 1=Maintaining order, 2=Giving people more say, 3=Fighting rising prices, 4=Protecting freedom of speech
     Y002_MATERIALIST_MAPPING = {
-        # (第一选择, 第二选择): 倾向值
-        # 1: 维护国家秩序, 2: 民众参与政府决策, 3: 对抗通胀, 4: 保护言论自由
-        
-        # 物质主义 (Materialist) - 选择1和3
-        (1, 3): 1,  # 秩序 + 通胀
-        (3, 1): 1,  # 通胀 + 秩序
-        
-        # 后物质主义 (Postmaterialist) - 选择2和4
-        (2, 4): 3,  # 参与 + 自由
-        (4, 2): 3,  # 自由 + 参与
-        
-        # 混合 (Mixed) - 其他组合
-        (1, 2): 2, (2, 1): 2,  # 秩序 + 参与
-        (1, 4): 2, (4, 1): 2,  # 秩序 + 自由
-        (2, 3): 2, (3, 2): 2,  # 参与 + 通胀
-        (3, 4): 2, (4, 3): 2,  # 通胀 + 自由
+        # 1 = Materialist (chose order+prices: options 1&3)
+        (1, 3): 1, (3, 1): 1,
+        # 3 = Postmaterialist (chose participation+freedom: options 2&4)
+        (2, 4): 3, (4, 2): 3,
+        # 2 = Mixed
+        (1, 2): 2, (2, 1): 2,
+        (1, 4): 2, (4, 1): 2,
+        (2, 3): 2, (3, 2): 2,
+        (3, 4): 2, (4, 3): 2,
     }
     
     @classmethod
     def process_y002(cls, first_choice: int, second_choice: int) -> int:
-        """处理Y002回答，返回物质主义倾向值
+        """Process Y002 response, returns postmaterialism index value.
+        Matches reference project culture_map.py Y002_transform.
         
         Args:
-            first_choice: 第一选择 (1-4)
-            second_choice: 第二选择 (1-4)
+            first_choice: first choice (1-4)
+            second_choice: second choice (1-4)
             
         Returns:
-            1: 物质主义 (Materialist)
-            2: 混合 (Mixed)  
-            3: 后物质主义 (Postmaterialist)
+            1: Materialist (order+prices)
+            2: Mixed
+            3: Postmaterialist (participation+freedom)
         """
         if first_choice < 1 or first_choice > 4 or second_choice < 1 or second_choice > 4:
             return 2  # 默认为混合

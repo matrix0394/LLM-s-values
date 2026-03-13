@@ -1,0 +1,4 @@
+# file: E:\Code\value of LLM\LLM's values\scripts\generate_si_atlas.py
+# hypothesis_version: 6.148.8
+
+[-3.0, 0.3, 0.5, 3.0, 8.5, 11.0, 122, 294, 300, 1386, ' | ', '*.pdf', '*.png', '-', '.pdf', '.png', '=', 'Arial', 'Consistency data', 'Data files:', 'FigS2A1', 'FigS3B3', 'FigS3B4', 'FigS3B5', 'Grid configuration:', 'IVS data', 'N', 'PCA coordinates', 'RdBu_r', 'SI', 'Y', '_', '__main__', '_languages', 'ar', 'atlas', 'atlas_type', 'axes.labelsize', 'axes.spines.right', 'axes.spines.top', 'axes.titlesize', 'claude', 'country', 'de', 'deepseek', 'derived_data', 'doubao', 'en', 'en-native', 'es', 'figure.dpi', 'figures', 'font.family', 'font.size', 'fr', 'gemini', 'gemma', 'glm', 'gpt', 'grok', 'ignore', 'it', 'ja', 'kimi', 'ko', 'language', 'legend.fontsize', 'llama', 'mistral', 'model', 'pca', 'phi', 'pt', 'qwen', 'ru', 'savefig.bbox', 'savefig.dpi', 'summary', 'tight', 'viridis', 'xtick.labelsize', 'ytick.labelsize', 'zh-cn', 'zh-hk', 'zh-tw']
