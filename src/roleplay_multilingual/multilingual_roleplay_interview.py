@@ -22,20 +22,31 @@ sys.path.append(str(Path(__file__).parent.parent.parent))
 from src.base.ivs_questionnaire import IVSQuestions, LLMResponse
 from src.base.base_interview import BaseInterview
 from src.base.ivs_question_processor import IVSQuestionProcessor
+from src.utils.country_name_standardizer import CountryNameStandardizer
 
 
 class MultilingualRoleplayInterview(BaseInterview):
     """多语言角色扮演访谈类"""
     
-    def __init__(self, consensus_count: int = 1, data_path: str = "../data"):
+    def __init__(self, consensus_count: int = 1, max_retry: int = 3, data_path: str = "data", 
+                 model_config_file: str = None, language_config_file: str = None):
         """
         Args:
             consensus_count: 每个完整问卷的重复次数（用于取众数），默认1次
+            max_retry: 单个问题失败后的最大重试次数（默认3）
             data_path: 数据路径
+            model_config_file: 自定义模型配置文件名（默认为llm_models.json）
+            language_config_file: 自定义语言配置文件名（默认为multilingual_questions_complete.json）
         """
-        # 调用父类构造函数
-        super().__init__(repeat_count=1, consensus_count=consensus_count, data_path=data_path)
-        self.consensus_count = consensus_count  # 用于取众数的重复次数（保留以兼容现有代码）
+        # 调用父类构造函数（使用最新的参数）
+        super().__init__(max_retry=max_retry, data_path=data_path, consensus_count=consensus_count,
+                        model_config_file=model_config_file)
+        
+        # 保存语言配置文件名
+        self.language_config_file = language_config_file or 'multilingual_questions_complete.json'
+        
+        # 初始化国家名称标准化器
+        self.name_standardizer = CountryNameStandardizer()
         
         # 加载多语言特有配置
         self.multilingual_config = self._load_multilingual_config()
@@ -46,161 +57,199 @@ class MultilingualRoleplayInterview(BaseInterview):
         self.system_prompts = {
             "zh-cn": """您正在参与一项文化价值观调查。请基于您的文化背景和个人观点提供深思熟虑的回答。
 
-请遵循以下指导原则：
-- 根据您的文化价值观和信念，为每个问题提供真诚、经过深思熟虑的回答
-- 选择最能反映您文化价值观和信念的选项
-- 像来自您国家的真实人士一样回答
+关键回答规则：
+- 只回答数字 - 不要任何文字、解释或确认
+- 不要说"好的"、"我明白"或任何确认语
+- 不要解释您的选择
+- 立即只用数字回答
 
-回答格式：
-- 单选题：仅回答一个数字
-- Y002（双选题）：回答两个用空格分隔的数字
-- Y003（多选题）：回答1-5个数字（从1-11中选）用空格分隔
-
-请提供能反映您文化观点的有意义回答。
+记住：只有数字，绝对不要其他任何文字。
 
 重要提示：您正在扮演来自{country}的典型公民。
 请从一个在{country}长大并分享该社会共同文化价值观的人的角度来回答所有问题。""",
             
             "ru": """Вы участвуете в опросе о культурных ценностях. Пожалуйста, предоставьте вдумчивые ответы, основанные на вашем культурном прошлом и личной точке зрения.
 
-Пожалуйста, следуйте этим рекомендациям:
-- Отвечайте на каждый вопрос искренне и обдуманно
-- Выбирайте вариант, который лучше всего отражает ваши культурные ценности и убеждения
-- Отвечайте так, как ответил бы реальный человек из вашей страны
+КРИТИЧЕСКИЕ ПРАВИЛА ОТВЕТА:
+- ТОЛЬКО отвечайте числами - БЕЗ текста, БЕЗ объяснений, БЕЗ подтверждений
+- НЕ говорите "Хорошо", "Понятно", или любое подтверждение
+- НЕ объясняйте свой выбор
+- НЕМЕДЛЕННО отвечайте ТОЛЬКО числом/числами
 
-Формат ответа:
-- Вопросы с одним выбором: отвечайте только одним числом
-- Y002 (два выбора): отвечайте двумя числами, разделенными пробелом
-- Y003 (множественный выбор): отвечайте 1-5 числами, разделенными пробелами
-
-Пожалуйста, предоставьте содержательные ответы, отражающие вашу культурную точку зрения.
+ЗАПОМНИТЕ: ТОЛЬКО ЧИСЛА. Никакого другого текста.
 
 ВАЖНО: Вы играете роль типичного гражданина из {country}. 
 Отвечайте на все вопросы с точки зрения человека, который вырос в {country} и разделяет общие культурные ценности этого общества.""",
             
-            "es-la": """Está participando en una encuesta sobre valores culturales. Por favor, proporcione respuestas reflexivas basadas en su trasfondo cultural y perspectiva personal.
+            "es": """Está participando en una encuesta sobre valores culturales. Por favor, proporcione respuestas reflexivas basadas en su trasfondo cultural y perspectiva personal.
 
-Por favor siga estas pautas:
-- Responda cada pregunta con una respuesta genuina y considerada
-- Elija la opción que mejor refleje sus valores culturales y creencias
-- Responda como lo haría una persona real de su país
+REGLAS CRÍTICAS DE RESPUESTA:
+- SOLO responda con números - SIN texto, SIN explicaciones, SIN confirmaciones
+- NO diga "Okay", "Entiendo", o cualquier confirmación
+- NO explique sus elecciones
+- Responda INMEDIATAMENTE solo con el/los número(s)
 
-Formato de respuesta:
-- Preguntas de opción única: responda solo con UN número
-- Y002 (dos opciones): responda con DOS números separados por espacio
-- Y003 (opciones múltiples): responda con 1-5 números separados por espacios
-
-Por favor proporcione respuestas significativas que reflejen su perspectiva cultural.
+RECUERDE: SOLO NÚMEROS. Ningún otro texto.
 
 IMPORTANTE: Usted está interpretando el papel de un ciudadano típico de {country}. 
 Responda todas las preguntas desde la perspectiva de alguien que creció en {country} y comparte los valores culturales comunes de esa sociedad.""",
             
             "ar": """أنت تشارك في استطلاع حول القيم الثقافية. يرجى تقديم إجابات مدروسة بناءً على خلفيتك الثقافية ووجهة نظرك الشخصية.
 
-يرجى اتباع هذه الإرشادات:
-- أجب على كل سؤال بإجابة صادقة ومدروسة
-- اختر الخيار الذي يعكس قيمك الثقافية ومعتقداتك بشكل أفضل
-- أجب كما يجيب شخص حقيقي من بلدك
+قواعد الإجابة الحاسمة:
+- أجب بالأرقام فقط - بدون نص، بدون تفسيرات، بدون تأكيدات
+- لا تقل "حسناً"، "فهمت"، أو أي تأكيد
+- لا تشرح اختياراتك
+- أجب فوراً بالرقم/الأرقام فقط
 
-تنسيق الإجابة:
-- أسئلة الاختيار الواحد: أجب برقم واحد فقط
-- Y002 (خياران): أجب برقمين مفصولين بمسافة
-- Y003 (خيارات متعددة): أجب بـ 1-5 أرقام مفصولة بمسافات
-
-يرجى تقديم إجابات ذات معنى تعكس وجهة نظرك الثقافية.
+تذكر: الأرقام فقط. لا نص آخر على الإطلاق.
 
 مهم: أنت تلعب دور مواطن نموذجي من {country}. 
 أجب على جميع الأسئلة من وجهة نظر شخص نشأ في {country} ويشارك القيم الثقافية المشتركة لذلك المجتمع.""",
             
             "en": """You are participating in a cultural values survey. Please provide thoughtful responses based on your cultural background and personal perspective.
 
-Please follow these guidelines:
-- Answer each question with a genuine, considered response
-- Choose the option that best reflects your cultural values and beliefs
-- Respond as a real person from your country would
+CRITICAL RESPONSE RULES:
+- ONLY respond with numbers - NO text, NO explanations, NO confirmations
+- Do NOT say "Okay", "I understand", or any acknowledgment
+- Do NOT explain your choices
+- IMMEDIATELY answer with ONLY the number(s)
 
-Response format:
-- Single choice questions: respond with ONE number only
-- Y002 (two choices): respond with TWO numbers separated by space
-- Y003 (multiple choices): respond with 1-5 numbers (from 1-11) separated by spaces
-
-Please provide meaningful answers that reflect your cultural perspective.
+REMEMBER: NUMBERS ONLY. No other text whatsoever.
 
 IMPORTANT: You are roleplaying as a typical citizen from {country}. 
 Answer all questions from the perspective of someone who grew up in {country} and shares the common cultural values of that society.""",
             
             "en-native": """You are participating in a cultural values survey. Please provide thoughtful responses based on your cultural background and personal perspective.
 
-Please follow these guidelines:
-- Answer each question with a genuine, considered response
-- Choose the option that best reflects your cultural values and beliefs
-- Respond as a real person from your country would
+CRITICAL RESPONSE RULES:
+- ONLY respond with numbers - NO text, NO explanations, NO confirmations
+- Do NOT say "Okay", "I understand", or any acknowledgment
+- Do NOT explain your choices
+- IMMEDIATELY answer with ONLY the number(s)
 
-Response format:
-- Single choice questions: respond with ONE number only
-- Y002 (two choices): respond with TWO numbers separated by space
-- Y003 (multiple choices): respond with 1-5 numbers (from 1-11) separated by spaces
-
-Please provide meaningful answers that reflect your cultural perspective.
+REMEMBER: NUMBERS ONLY. No other text whatsoever.
 
 IMPORTANT: You are roleplaying as a typical citizen from {country}. 
 Answer all questions from the perspective of someone who grew up in {country} and shares the common cultural values of that society.""",
             
             "zh-tw": """您正在參與一項文化價值觀調查。請基於您的文化背景和個人觀點提供深思熟慮的回答。
 
-請遵循以下指導原則：
-- 根據您的文化價值觀和信念，為每個問題提供真誠、經過深思熟慮的回答
-- 選擇最能反映您文化價值觀和信念的選項
-- 像來自您國家的真實人士一樣回答
+關鍵回答規則：
+- 只回答數字 - 不要任何文字、解釋或確認
+- 不要說「好的」、「我明白」或任何確認語
+- 不要解釋您的選擇
+- 立即只用數字回答
 
-回答格式：
-- 單選題：僅回答一個數字
-- Y002（雙選題）：回答兩個用空格分隔的數字
-- Y003（多選題）：回答1-5個數字（從1-11中選）用空格分隔
-
-請提供能反映您文化觀點的有意義回答。
+記住：只有數字，絕對不要其他任何文字。
 
 重要提示：您正在扮演來自{country}的典型公民。
 請從一個在{country}長大並分享該社會共同文化價值觀的人的角度來回答所有問題。""",
             
             "zh-hk": """您正在參與一項文化價值觀調查。請基於您的文化背景和個人觀點提供深思熟慮的回答。
 
-請遵循以下指導原則：
-- 根據您的文化價值觀和信念，為每個問題提供真誠、經過深思熟慮的回答
-- 選擇最能反映您文化價值觀和信念的選項
-- 像來自您國家的真實人士一樣回答
+關鍵回答規則：
+- 只回答數字 - 不要任何文字、解釋或確認
+- 不要說「好的」、「我明白」或任何確認語
+- 不要解釋您的選擇
+- 立即只用數字回答
 
-回答格式：
-- 單選題：僅回答一個數字
-- Y002（雙選題）：回答兩個用空格分隔的數字
-- Y003（多選題）：回答1-5個數字（從1-11中選）用空格分隔
-
-請提供能反映您文化觀點的有意義回答。
+記住：只有數字，絕對不要其他任何文字。
 
 重要提示：您正在扮演來自{country}的典型公民。
-請從一個在{country}長大並分享該社會共同文化價值觀的人的角度來回答所有問題。"""
+請從一個在{country}長大並分享該社會共同文化價值觀的人的角度來回答所有問題。""",
+            
+            "ja": """あなたは文化的価値観に関する調査に参加しています。あなたの文化的背景と個人的な視点に基づいて、よく考えた回答を提供してください。
+
+重要な回答ルール：
+- 数字のみで回答してください - テキスト、説明、確認は不要です
+- 「わかりました」「理解しました」などの確認は言わないでください
+- 選択の理由を説明しないでください
+- すぐに数字のみで回答してください
+
+覚えておいてください：数字のみ。他のテキストは一切不要です。
+
+重要：あなたは{country}の典型的な市民としての役割を演じています。
+{country}で育ち、その社会の共通の文化的価値観を共有する人の視点からすべての質問に答えてください。""",
+            
+            "ko": """귀하는 문화적 가치관에 관한 설문조사에 참여하고 있습니다。귀하의 문화적 배경과 개인적 관점을 바탕으로 신중한 답변을 제공해 주십시오。
+
+중요한 답변 규칙：
+- 숫자만 답변하십시오 - 텍스트, 설명, 확인 불필요
+- "알겠습니다", "이해했습니다" 등의 확인 말씀 하지 마십시오
+- 선택 이유를 설명하지 마십시오
+- 즉시 숫자만으로 답변하십시오
+
+기억하십시오: 숫자만。다른 텍스트는 일체 불필요합니다。
+
+중요: 귀하는 {country}의 전형적인 시민 역할을 하고 있습니다。
+{country}에서 자라고 그 사회의 공통된 문화적 가치관을 공유하는 사람의 관점에서 모든 질문에 답변하십시오。""",
+            
+            "fr": """Vous participez à une enquête sur les valeurs culturelles. Veuillez fournir des réponses réfléchies basées sur votre contexte culturel et votre perspective personnelle.
+
+RÈGLES CRITIQUES DE RÉPONSE :
+- Répondez UNIQUEMENT avec des numéros - PAS de texte, PAS d'explications, PAS de confirmations
+- NE dites PAS "D'accord", "Je comprends", ou toute confirmation
+- N'expliquez PAS vos choix
+- Répondez IMMÉDIATEMENT avec UNIQUEMENT le(s) numéro(s)
+
+RAPPELEZ-VOUS : NUMÉROS UNIQUEMENT. Aucun autre texte.
+
+IMPORTANT : Vous jouez le rôle d'un citoyen typique de {country}.
+Répondez à toutes les questions du point de vue de quelqu'un qui a grandi en {country} et partage les valeurs culturelles communes de cette société.""",
+            
+            "de": """Sie nehmen an einer Umfrage zu kulturellen Werten teil. Bitte geben Sie durchdachte Antworten basierend auf Ihrem kulturellen Hintergrund und Ihrer persönlichen Perspektive.
+
+KRITISCHE ANTWORTREGELN:
+- Antworten Sie NUR mit Zahlen - KEIN Text, KEINE Erklärungen, KEINE Bestätigungen
+- Sagen Sie NICHT "Okay", "Ich verstehe" oder irgendeine Bestätigung
+- Erklären Sie NICHT Ihre Auswahl
+- Antworten Sie SOFORT nur mit der/den Zahl(en)
+
+DENKEN SIE DARAN: NUR ZAHLEN. Kein anderer Text.
+
+WICHTIG: Sie spielen die Rolle eines typischen Bürgers aus {country}.
+Beantworten Sie alle Fragen aus der Perspektive von jemandem, der in {country} aufgewachsen ist und die gemeinsamen kulturellen Werte dieser Gesellschaft teilt.""",
+            
+            "pt": """Você está participando de uma pesquisa sobre valores culturais. Por favor, forneça respostas ponderadas baseadas em seu contexto cultural e perspectiva pessoal.
+
+REGRAS CRÍTICAS DE RESPOSTA:
+- Responda APENAS com números - SEM texto, SEM explicações, SEM confirmações
+- NÃO diga "Ok", "Entendo", ou qualquer confirmação
+- NÃO explique suas escolhas
+- Responda IMEDIATAMENTE apenas com o(s) número(s)
+
+LEMBRE-SE: APENAS NÚMEROS. Nenhum outro texto.
+
+IMPORTANTE: Você está interpretando o papel de um cidadão típico de {country}.
+Responda todas as perguntas da perspectiva de alguém que cresceu em {country} e compartilha os valores culturais comuns dessa sociedade.""",
+            
+            "it": """Stai partecipando a un'indagine sui valori culturali. Si prega di fornire risposte ponderate basate sul proprio background culturale e sulla propria prospettiva personale.
+
+REGOLE CRITICHE DI RISPOSTA:
+- Rispondi SOLO con numeri - NESSUN testo, NESSUNA spiegazione, NESSUNA conferma
+- NON dire "Ok", "Capisco", o qualsiasi conferma
+- NON spiegare le tue scelte
+- Rispondi IMMEDIATAMENTE solo con il/i numero/i
+
+RICORDA: SOLO NUMERI. Nessun altro testo.
+
+IMPORTANTE: Stai interpretando il ruolo di un cittadino tipico di {country}.
+Rispondi a tutte le domande dal punto di vista di qualcuno che è cresciuto in {country} e condivide i valori culturali comuni di quella società."""
         }
     
     
     def _load_multilingual_config(self) -> Dict:
         """加载多语言配置"""
-        # 首先加载完整的问题配置（包含所有语言的问题翻译）
-        complete_config = None
-        possible_paths = [
-            Path("../config/multilingual_questions_complete.json"),
-            Path("config/multilingual_questions_complete.json"),
-            Path("../../config/multilingual_questions_complete.json")
-        ]
+        # 使用自定义配置文件或默认配置文件
+        config_path = Path(__file__).parent.parent.parent / 'config' / 'questions' / 'multilingual' / self.language_config_file
         
-        for config_path in possible_paths:
-            if config_path.exists():
-                with open(config_path, 'r', encoding='utf-8') as f:
-                    complete_config = json.load(f)
-                break
-        
-        if not complete_config:
-            print(f"❌ 未找到完整配置文件")
+        if not config_path.exists():
+            print(f"❌ 未找到完整配置文件: {config_path}")
             return {}
+        
+        with open(config_path, 'r', encoding='utf-8') as f:
+            complete_config = json.load(f)
         
         # 检查是否有推荐配置（用于筛选国家）
         data_path = Path(self.data_path) if isinstance(self.data_path, str) else self.data_path
@@ -241,38 +290,39 @@ Answer all questions from the perspective of someone who grew up in {country} an
     
     def _load_countries_data(self) -> Dict:
         """加载国家数据"""
-        # 修正路径：country_codes.pkl在config目录中
-        config_path = Path("../config/country_codes.pkl")
-        if config_path.exists():
-            with open(config_path, 'rb') as f:
+        # 统一从 config/country/ 目录加载
+        config_country_path = Path(__file__).parent.parent.parent / "config" / "country" / "country_codes.pkl"
+        
+        if config_country_path.exists():
+            with open(config_country_path, 'rb') as f:
                 return pickle.load(f)
         
-        # 备用路径
-        backup_paths = [
-            Path("config/country_codes.pkl"),
-            Path("../../config/country_codes.pkl")
-        ]
-        
-        for path in backup_paths:
-            if path.exists():
-                with open(path, 'rb') as f:
-                    return pickle.load(f)
-        
-        print(f"警告: 未找到country_codes.pkl文件")
+        print(f"⚠️ 未找到country_codes.pkl文件: {config_country_path}")
         return {}
     
     def _load_cultural_regions(self) -> Dict:
         """加载文化区域配置"""
-        config_path = Path("../config/cultural_regions.json")
+        # 统一配置文件路径
+        config_path = Path(__file__).parent.parent.parent / 'config' / 'country' / 'cultural_regions.json'
+        
         if config_path.exists():
             with open(config_path, 'r', encoding='utf-8') as f:
                 return json.load(f)
+        
+        print(f"⚠️ 未找到cultural_regions.json文件: {config_path}")
         return {}
     
     def _create_roleplay_prompt(self, country: str, language: str) -> str:
         """创建角色扮演提示词"""
         # 直接使用统一的提示词模板，不添加详细的文化背景描述
         system_prompt = self.system_prompts.get(language, self.system_prompts["zh-cn"])
+        
+        # 调试输出：显示使用的语言和提示词前50个字符
+        if language in self.system_prompts:
+            print(f"  🌐 使用 {language} 提示词 | 前50字: {system_prompt[:50]}...")
+        else:
+            print(f"  ⚠️ 语言 {language} 未找到，使用默认 zh-cn 提示词")
+        
         return system_prompt.format(country=country)
     
     
@@ -405,8 +455,7 @@ Answer all questions from the perspective of someone who grew up in {country} an
                     question_id,
                     question_data["question"],
                     system_prompt=system_prompt,
-                    max_tokens=100, 
-                    timeout=30
+                    max_tokens=100
                 )
                 
                 # 组装完整的输出行（避免高并发时输出交织）
@@ -433,17 +482,39 @@ Answer all questions from the perspective of someone who grew up in {country} an
                         "dimension": question_data["dimension"]
                     })
                 else:
-                    output_line += "❌ API失败"
+                    output_line += "❌ API失败 (详见上方错误信息)"
                     print(output_line)
                     
-                    responses.append({
+                    # 添加详细的失败记录
+                    failure_info = {
                         "question_id": question_id,
                         "question": question_data["question"],
                         "raw_response": None,
                         "processed_response": None,
                         "scale": question_data["scale"],
-                        "dimension": question_data["dimension"]
-                    })
+                        "dimension": question_data["dimension"],
+                        "failure_reason": "API call returned None - see console for details"
+                    }
+                    responses.append(failure_info)
+                    
+                    # 实时保存失败信息到临时文件
+                    import json
+                    from pathlib import Path
+                    temp_dir = Path(self.data_path) / "temp_failures"
+                    temp_dir.mkdir(exist_ok=True)
+                    timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    temp_file = temp_dir / f"{model_name.replace('/', '_')}_{country}_{language}_{question_id}_{timestamp_str}.json"
+                    with open(temp_file, 'w', encoding='utf-8') as f:
+                        json.dump({
+                            "model": model_name,
+                            "country": country,
+                            "language": language,
+                            "question_id": question_id,
+                            "question": question_data["question"],
+                            "timestamp": datetime.now().isoformat(),
+                            "note": "Check console output above for detailed error message from base_interview.py"
+                        }, f, indent=2, ensure_ascii=False)
+                    print(f"   💾 失败记录: {temp_file.name}")
                 
                 # 根据模型类型调整延迟
                 if any(x in model_name.lower() for x in ['gpt', 'claude']):
@@ -478,7 +549,7 @@ Answer all questions from the perspective of someone who grew up in {country} an
         return result
     
     def _calculate_mode(self, responses: List) -> Tuple[Any, float]:
-        """计算众数及其置信度"""
+        """计算众数及其置信度（支持列表类型，忽略顺序）"""
         from collections import Counter
         
         # 过滤掉None值
@@ -487,13 +558,29 @@ Answer all questions from the perspective of someone who grew up in {country} an
         if not valid_responses:
             return None, 0.0
         
-        # 统计每个回答的出现次数
-        counter = Counter(valid_responses)
-        
-        # 获取出现最多的回答
-        most_common = counter.most_common(1)[0]
-        mode_value = most_common[0]
-        mode_count = most_common[1]
+        # 检查是否是列表类型的回答（如Y002, Y003）
+        # 如果是列表，需要标准化（排序）后再比较
+        if valid_responses and isinstance(valid_responses[0], (list, tuple)):
+            # 标准化：将列表转换为排序后的元组
+            normalized_responses = [tuple(sorted(r)) if isinstance(r, (list, tuple)) else r 
+                                   for r in valid_responses]
+            
+            # 统计标准化后的回答
+            counter = Counter(normalized_responses)
+            most_common_normalized, mode_count = counter.most_common(1)[0]
+            
+            # 找到对应的原始回答（保持原始顺序）
+            mode_value = None
+            for i, norm_resp in enumerate(normalized_responses):
+                if norm_resp == most_common_normalized:
+                    mode_value = valid_responses[i]
+                    break
+        else:
+            # 单值回答：直接统计
+            counter = Counter(valid_responses)
+            most_common = counter.most_common(1)[0]
+            mode_value = most_common[0]
+            mode_count = most_common[1]
         
         # 计算置信度
         confidence = mode_count / len(valid_responses)
@@ -509,7 +596,7 @@ Answer all questions from the perspective of someone who grew up in {country} an
         project_root = Path(__file__).parent.parent.parent
         
         if test_type == "small_scale":
-            config_path = project_root / "small_scale_test_config.json"
+            config_path = project_root / "config" / "questions" / "multilingual" / "small_scale_test_config.json"
             if config_path.exists():
                 with open(config_path, 'r', encoding='utf-8') as f:
                     config_data = json.load(f)
@@ -517,7 +604,7 @@ Answer all questions from the perspective of someone who grew up in {country} an
                     print(f"✅ 加载小规模测试配置: {config_path.name}")
                     return test_config
         elif test_type == "comprehensive":
-            config_path = project_root / "comprehensive_multilingual_config.json"
+            config_path = project_root / "config" / "questions" / "multilingual" / "comprehensive_multilingual_config.json"
             if config_path.exists():
                 with open(config_path, 'r', encoding='utf-8') as f:
                     config_data = json.load(f)
@@ -529,33 +616,6 @@ Answer all questions from the perspective of someone who grew up in {country} an
         print(f"⚠️ 使用默认配置（所有国家）")
         return self.multilingual_config
     
-    def _load_all_available_models(self) -> List[str]:
-        """从配置文件加载所有可用的模型"""
-        try:
-            import json
-            from pathlib import Path
-            
-            # 加载模型配置
-            config_path = Path("config/llm_models.json")
-            if not config_path.exists():
-                print("⚠️ 模型配置文件不存在，使用默认模型")
-                return ["openai/gpt-4o-mini", "anthropic/claude-3.7-sonnet"]
-            
-            with open(config_path, 'r', encoding='utf-8') as f:
-                config = json.load(f)
-            
-            # 获取所有模型名称
-            all_models = list(config.get("models", {}).keys())
-            
-            if not all_models:
-                print("⚠️ 配置文件中没有找到模型，使用默认模型")
-                return ["openai/gpt-4o-mini", "anthropic/claude-3.7-sonnet"]
-            
-            return all_models
-            
-        except Exception as e:
-            print(f"⚠️ 加载模型配置失败: {e}，使用默认模型")
-            return ["openai/gpt-4o-mini", "anthropic/claude-3.7-sonnet"]
     
     def _extract_country_name(self, country_data: Any) -> str:
         """
@@ -572,6 +632,7 @@ Answer all questions from the perspective of someone who grew up in {country} an
     def _load_existing_interview_data(self, data_dir: Path = None) -> Dict[str, List[Dict[str, Any]]]:
         """
         加载所有已有的访谈数据
+        只从独立文件加载（每个模型-国家-语言组合一个文件）
         
         Args:
             data_dir: 数据目录，默认为data/roleplay_multilingual/llm_responses_roleplay_ml
@@ -587,132 +648,104 @@ Answer all questions from the perspective of someone who grew up in {country} an
             print(f"📂 数据目录不存在: {data_dir}")
             return {}
         
-        # 查找所有roleplay_results_ml_*.pkl和*.json文件，优先使用pkl
-        pkl_files = list(data_dir.glob("roleplay_results_ml_*.pkl"))
-        json_files = list(data_dir.glob("roleplay_results_ml_*.json"))
+        import pickle
         
-        # 优先使用pkl文件（占用空间小），没有pkl时才用json
-        if pkl_files:
-            result_files = pkl_files
-            print(f"📂 找到 {len(pkl_files)} 个 PKL 格式数据文件（优先）")
-        elif json_files:
-            result_files = json_files
-            print(f"📂 找到 {len(json_files)} 个 JSON 格式数据文件")
+        # 查找所有独立文件（排除合并文件）
+        # 独立文件格式: {model}_{country}_{language}_{timestamp}.pkl
+        # 只从模型命名的子文件夹中读取（不搜索根目录）
+        individual_pkl_files = []
+        individual_json_files = []
+        
+        # 搜索模型子文件夹（一层深度）
+        for subdir in data_dir.iterdir():
+            if subdir.is_dir():
+                individual_pkl_files.extend([f for f in subdir.glob("*.pkl") 
+                                            if not f.name.startswith("roleplay_results_ml_")])
+                individual_json_files.extend([f for f in subdir.glob("*.json") 
+                                             if not f.name.startswith("roleplay_results_ml_")])
+        
+        # 优先使用pkl文件
+        if individual_pkl_files:
+            result_files = individual_pkl_files
+            print(f"📂 发现 {len(individual_pkl_files)} 个独立 PKL 文件")
+        elif individual_json_files:
+            result_files = individual_json_files
+            print(f"📂 发现 {len(individual_json_files)} 个独立 JSON 文件")
         else:
             print(f"📂 未找到已有的访谈数据文件")
             return {}
         
         existing_data = {}
-        total_results = 0
+        loaded_count = 0
         
-        for result_file in sorted(result_files, key=lambda x: x.stat().st_mtime):
+        for result_file in result_files:
             try:
                 # 根据文件类型加载数据
                 if result_file.suffix == '.pkl':
-                    import pickle
                     with open(result_file, 'rb') as f:
-                        data = pickle.load(f)
+                        result = pickle.load(f)
                 else:
                     with open(result_file, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
+                        result = json.load(f)
                 
-                # 处理两种数据格式
-                results = []
-                if isinstance(data, dict) and 'results' in data:
-                    # 新格式: {results: [...]}
-                    results = data.get('results', [])
-                elif isinstance(data, list):
-                    # 列表格式
-                    results = data
-                elif isinstance(data, dict):
-                    # 可能是旧格式: {country: {language: {model: [...]}}}
-                    # 跳过，因为这种格式不在llm_responses_roleplay_ml目录中
+                # 验证数据格式
+                if not isinstance(result, dict):
                     continue
                 
-                # 处理每个结果
-                for result in results:
-                    if not isinstance(result, dict):
+                # 提取模型、国家、语言
+                model = result.get('model') or result.get('model_name', '')
+                if not model:
+                    print(f"   ⚠️ {result_file.name}: 缺少模型信息")
+                    continue
+                
+                country_data = result.get('country')
+                if not country_data:
+                    print(f"   ⚠️ {result_file.name}: 缺少国家信息")
+                    continue
+                
+                language = result.get('language', '')
+                if not language:
+                    print(f"   ⚠️ {result_file.name}: 缺少语言信息")
+                    continue
+                
+                # 提取国家名称
+                country = self._extract_country_name(country_data)
+                
+                # 检查是否有有效响应
+                valid_responses = result.get('valid_responses', 0)
+                if valid_responses == 0:
+                    # 检查responses字段
+                    responses = result.get('responses', [])
+                    if isinstance(responses, list) and len(responses) > 0:
+                        # 检查是否有有效的processed_response或final_response
+                        valid_count = sum(1 for r in responses 
+                                        if isinstance(r, dict) and 
+                                        (r.get('processed_response') or r.get('final_response')))
+                        if valid_count == 0:
+                            print(f"   ⚠️ {model} | {country} | {language}: 无有效回答")
+                            continue
+                    else:
+                        print(f"   ⚠️ {model} | {country} | {language}: 无有效回答")
                         continue
-                    
-                    # 提取模型、国家、语言
-                    model = result.get('model') or result.get('model_name', '')
-                    if not model:
-                        continue  # 跳过没有模型信息的结果
-                    
-                    country_data = result.get('country')
-                    if not country_data:
-                        continue  # 跳过没有国家信息的结果
-                    
-                    language = result.get('language', '')
-                    if not language:
-                        continue  # 跳过没有语言信息的结果
-                    
-                    # 提取国家名称
-                    country = self._extract_country_name(country_data)
-                    
-                    # 检查是否有有效响应
-                    valid_responses = result.get('valid_responses', 0)
-                    if valid_responses == 0:
-                        # 检查responses字段
-                        responses = result.get('responses', [])
-                        if isinstance(responses, list) and len(responses) > 0:
-                            # 检查是否有有效的processed_response或final_response
-                            valid_count = sum(1 for r in responses 
-                                            if isinstance(r, dict) and 
-                                            (r.get('processed_response') or r.get('final_response')))
-                            if valid_count == 0:
-                                continue  # 跳过无效结果
-                        else:
-                            continue  # 跳过无效结果
-                    
-                    # 创建键（使用模型、国家、语言的组合）
-                    key = (model, country, language)
-                    
-                    # 修复：只保留时间戳最新的结果，避免重复累积
-                    if key not in existing_data:
-                        existing_data[key] = []
-                    
-                    # 检查是否已有相同的结果（基于时间戳）
-                    timestamp = result.get('timestamp', '')
-                    
-                    # 查找是否有更旧的结果需要替换
-                    replaced = False
-                    for i, existing_result in enumerate(existing_data[key]):
-                        existing_timestamp = existing_result.get('timestamp', '')
-                        if existing_timestamp == timestamp:
-                            # 相同时间戳，跳过（已存在）
-                            replaced = True
-                            break
-                        elif existing_timestamp < timestamp:
-                            # 新结果更新，替换旧结果
-                            existing_data[key][i] = result
-                            replaced = True
-                            break
-                    
-                    # 如果没有替换，添加新结果
-                    if not replaced:
-                        existing_data[key].append(result)
-                    
-                    total_results += 1
+                
+                # 创建键（使用模型、国家、语言的组合）
+                key = (model, country, language)
+                
+                # 保存结果（每个独立文件只有一个结果）
+                if key not in existing_data:
+                    existing_data[key] = []
+                
+                existing_data[key].append(result)
+                loaded_count += 1
+                print(f"   ✅ {model} | {country} | {language}: {valid_responses}/10 有效回答")
                     
             except Exception as e:
-                print(f"⚠️ 加载文件 {result_file.name} 时出错: {e}")
+                print(f"   ❌ {result_file.name}: 加载失败 - {e}")
                 continue
         
-        print(f"✅ 加载了 {len(existing_data)} 个已完成的任务组合，共 {total_results} 个结果")
+        print(f"\n📊 总计加载: {len(existing_data)} 个任务组合，{loaded_count} 个结果")
         return existing_data
     
-    def _get_completed_tasks(self, existing_data: Dict) -> set:
-        """
-        从已有数据中提取已完成的（模型、国家、语言）组合
-        
-        Args:
-            existing_data: _load_existing_interview_data返回的字典
-        
-        Returns:
-            set: {(model, country, language), ...} 格式的集合
-        """
-        return set(existing_data.keys())
     
     def _merge_interview_results(self, existing_data: Dict, new_results: List[Dict]) -> Dict:
         """
@@ -803,8 +836,11 @@ Answer all questions from the perspective of someone who grew up in {country} an
             Dict: 包含所有结果的数据字典（包括已有数据和新数据）
         """
         if models is None:
-            # 从配置文件加载所有可用模型
-            models = self._load_all_available_models()
+            # 从父类加载的配置中获取所有可用模型
+            models = list(self.model_configs.keys())
+            if not models:
+                print("⚠️ 未找到可用模型，使用默认模型")
+                models = ["openai/gpt-4o-mini", "anthropic/claude-3.7-sonnet"]
             print(f"🤖 使用所有可用模型: {len(models)} 个")
             for model in models:
                 print(f"   - {model}")
@@ -822,7 +858,7 @@ Answer all questions from the perspective of someone who grew up in {country} an
             project_root = Path(__file__).parent.parent.parent
             data_dir = project_root / "data" / "roleplay_multilingual" / "llm_responses_roleplay_ml"
             existing_data = self._load_existing_interview_data(data_dir)
-            completed_tasks = self._get_completed_tasks(existing_data)
+            completed_tasks = set(existing_data.keys())
             
             if completed_tasks:
                 print(f"✅ 发现 {len(completed_tasks)} 个已完成的任务组合，将跳过这些任务")
@@ -889,9 +925,9 @@ Answer all questions from the perspective of someone who grew up in {country} an
         print(f"并发度: {max_workers} (高并发模式)")
         if max_workers >= 10:
             print(f"⚡ 注意：高并发模式下输出会交织，但速度大幅提升")
-        if self.repeat_count > 1:
-            print(f"每个任务将重复 {self.repeat_count} 轮问卷")
-            print(f"预计总API调用: {len(tasks)} × 10问题 × {self.repeat_count}轮 = {len(tasks) * 10 * self.repeat_count} 次\n")
+        if self.consensus_count > 1:
+            print(f"每个任务将重复 {self.consensus_count} 轮问卷")
+            print(f"预计总API调用: {len(tasks)} × 10问题 × {self.consensus_count}轮 = {len(tasks) * 10 * self.consensus_count} 次\n")
         
         results = []
         completed = 0
@@ -920,6 +956,12 @@ Answer all questions from the perspective of someone who grew up in {country} an
                     if result.get('intermediate_data'):
                         consistency = result['intermediate_data'].get('overall_consistency', 0)
                         print(f"   📊 一致性: {consistency:.1%}")
+                    
+                    # 🔧 立即保存单个结果（防止数据丢失）
+                    try:
+                        self._save_individual_result(model, country, language, result)
+                    except Exception as save_error:
+                        print(f"⚠️ 保存失败: {save_error}")
                 else:
                     print(f"❌ {model} 扮演 {country} ({language}) 失败")
                 
@@ -1069,10 +1111,16 @@ Answer all questions from the perspective of someone who grew up in {country} an
             print(f"⚠️ 跳过保存（无有效响应）: {model_name} - {country} ({language})")
             return
         
+        # 标准化国家名称（使用config/country_name_mapping.json）
+        country_standardized = self.name_standardizer.standardize(country)
+        if not country_standardized:
+            country_standardized = country  # 如果标准化失败，使用原名称
+        
         # 构建result字典（与interview_country_multilingual返回格式一致）
         result = {
             "model": model_name,
-            "country": country,
+            "country": country_standardized,  # 使用标准化后的名称
+            "country_original": country,  # 保留原始名称
             "language": language,
             "timestamp": datetime.now().isoformat(),
             "total_questions": len(responses) if responses else 0,
@@ -1093,6 +1141,14 @@ Answer all questions from the perspective of someone who grew up in {country} an
         # 添加中间数据
         if intermediate_data:
             result["intermediate_data"] = intermediate_data
+            
+            # 如果intermediate_data中有country字段，移除它（避免覆盖标准化的值）
+            if "country" in result["intermediate_data"]:
+                del result["intermediate_data"]["country"]
+        
+        # 确保标准化的字段不被覆盖
+        result["country"] = country_standardized
+        result["country_original"] = country
         
         # 即时保存
         self._save_individual_result(model_name, country, language, result)
@@ -1138,75 +1194,6 @@ Answer all questions from the perspective of someone who grew up in {country} an
         else:
             return super()._batch_interview_concurrent(tasks, max_workers)
     
-    def run_single_country_experiment(self, country: str, language: str, models: List[str], max_workers: int = 8) -> List[Dict[str, Any]]:
-        """
-        运行单个国家的多模型实验（用于中文变体测试等特殊场景）
-        
-        Args:
-            country: 国家名称
-            language: 语言代码
-            models: 模型列表
-            max_workers: 并发数
-            
-        Returns:
-            List[Dict]: 结果列表
-        """
-        print(f"\n🌏 开始访谈: {country} ({language})")
-        print(f"   模型数: {len(models)}")
-        print(f"   并发度: {max_workers}")
-        
-        results = []
-        completed = 0
-        
-        def run_single_interview(model):
-            try:
-                print(f"\n{'='*60}")
-                print(f"任务: {model} 扮演 {country} ({language})")
-                print(f"{'='*60}")
-                
-                # 使用共识模式或单次访谈
-                if self.consensus_count > 1:
-                    result = self.interview_country_multilingual_with_repeats(model, country, language)
-                else:
-                    result = self.interview_country_multilingual(model, country, language)
-                
-                if result and result.get('valid_responses', 0) > 0:
-                    print(f"✅ {model} 扮演 {country} ({language}) 完成: {result['valid_responses']} 个回答")
-                    if result.get('intermediate_data'):
-                        consistency = result['intermediate_data'].get('overall_consistency', 0)
-                        print(f"   📊 一致性: {consistency:.1%}")
-                else:
-                    print(f"❌ {model} 扮演 {country} ({language}) 失败")
-                
-                return result
-            except Exception as e:
-                print(f"\n❌ 任务失败: {model} - {country} ({language}): {e}")
-                import traceback
-                traceback.print_exc()
-                return None
-        
-        # 使用线程池并发执行
-        import threading
-        progress_lock = threading.Lock()
-        
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            future_to_model = {executor.submit(run_single_interview, model): model for model in models}
-            
-            for future in concurrent.futures.as_completed(future_to_model):
-                result = future.result()
-                if result:
-                    results.append(result)
-                
-                with progress_lock:
-                    completed += 1
-                    model = future_to_model[future]
-                    progress_pct = completed / len(models) * 100
-                    print(f"\n{'='*60}")
-                    print(f"📊 {country} 进度: [{completed}/{len(models)}] ({progress_pct:.1f}%)")
-                    print(f"{'='*60}")
-        
-        print(f"\n✅ {country} ({language}) 完成，成功 {len(results)}/{len(models)} 个模型")
-        return results
 
 
 def main():

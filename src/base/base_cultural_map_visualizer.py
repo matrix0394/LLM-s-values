@@ -60,47 +60,157 @@ class BaseCulturalMapVisualizer(ABC):
             'Unknown': '#cccccc'               # 浅灰
         }
         
-        # LLM模型颜色映射（7个模型，颜色差异明显）
-        # 基于模型来源地区选择颜色主题
-        self.llm_model_colors = {
-            # 美国模型 - 红蓝系
-            'openai/gpt-4o-mini': '#ff4444',           # 鲜红
-            'GPT': '#ff4444',                          # 简称映射
-            'gpt': '#ff4444',                          # 小写映射
-            
-            'anthropic/claude-3.7-sonnet': '#00bfff',  # 深天蓝
-            'Claude': '#00bfff',
-            'claude': '#00bfff',
-            
-            'google/gemini-2.0-flash-001': '#4285f4',  # Google蓝
-            'Gemini': '#4285f4',
-            'gemini': '#4285f4',
-            
-            'meta-llama/llama-3.3-70b-instruct': '#8b4513', # 棕色
-            'LLaMA': '#8b4513',
-            'llama': '#8b4513',
-            
-            # 中国模型 - 暖色系
-            'deepseek/deepseek-chat-v3-0324': '#ff6b35',   # 橙红
-            'DeepSeek': '#ff6b35',
-            'deepseek': '#ff6b35',
-            
-            'qwen/qwq-32b': '#ffaa00',                 # 金橙
-            'QWen': '#ffaa00',
-            'qwen': '#ffaa00',
-            
-            # 欧洲模型 - 紫色系
-            'mistralai/mistral-nemo': '#9370db',       # 中紫
-            'Mistral': '#9370db',
-            'mistral': '#9370db',
-            
-            # 通用LLM标记
-            'LLM': '#ff1493',
-            'Model': '#ff1493'
-        }
+        # LLM模型颜色映射（22个模型，颜色差异明显）
+        # 基于模型来源地区和提供商选择颜色主题
+        self.llm_model_colors = self._generate_llm_model_colors()
         
         # 合并所有颜色映射
         self.extended_colors = self._generate_extended_colors()
+    
+    def _generate_llm_model_colors(self) -> Dict[str, str]:
+        """生成22个LLM模型的颜色映射（避免重复定义）
+        
+        颜色分配策略：
+        - OpenAI (GPT系列): 红色系 (#ff4444, #ff6666)
+        - Anthropic (Claude): 蓝色系 (#00bfff, #4169e1)
+        - Google (Gemini/Gemma): Google蓝系 (#4285f4, #5a9fd4, #6eb5d4)
+        - Meta (LLaMA): 棕色系 (#8b4513, #a0522d)
+        - DeepSeek: 橙红系 (#ff6b35, #ff8c5a)
+        - Qwen: 金橙系 (#ffaa00, #ffbb33)
+        - Kimi: 紫罗兰 (#9966cc)
+        - GLM: 青色 (#20b2aa)
+        - Mistral: 紫色系 (#9370db, #ba55d3)
+        - X.AI (Grok): 电蓝 (#00ffff)
+        - Microsoft (Phi): 微软蓝 (#0078d4)
+        
+        Returns:
+            模型名称到颜色的映射字典
+        """
+        # 基础颜色定义（每个模型族一个颜色）
+        base_colors = {
+            # === OpenKey平台模型 (8个) ===
+            # OpenAI
+            'gpt-4o': '#ff4444',              # 鲜红
+            'gpt-4o-mini': '#ff6666',         # 浅红
+            
+            # Anthropic
+            'claude-3-7-sonnet': '#00bfff',   # 深天蓝
+            
+            # Google
+            'gemini-2.5-flash': '#4285f4',    # Google蓝
+            'gemini-2.5-pro': '#5a9fd4',      # 浅Google蓝
+            
+            # DeepSeek
+            'deepseek-chat': '#ff6b35',       # 橙红
+            
+            # Moonshot (Kimi)
+            'kimi-k2': '#9966cc',             # 紫罗兰
+            
+            # Alibaba (Qwen)
+            'qwen3-1.7b': '#ffaa00',          # 金橙
+            
+            # === OpenRouter平台模型 (14个) ===
+            # OpenAI
+            'openai/gpt-5.1': '#ff3333',      # 深红
+            
+            # Anthropic
+            'anthropic/claude-sonnet-4.5': '#4169e1',  # 皇家蓝
+            
+            # Google
+            'google/gemini-3-pro-previewl': '#6eb5d4',  # 更浅的蓝
+            'google/gemma-3-4b-it': '#87ceeb',          # 天蓝
+            
+            # Meta (LLaMA)
+            'meta-llama/llama-3.3-70b-instruct': '#8b4513',  # 棕色
+            'meta-llama/llama-3.2-3b-instruct': '#a0522d',   # 浅棕
+            
+            # X.AI (Grok)
+            'x-ai/grok-4.1-fast': '#00ffff',  # 电蓝
+            
+            # DeepSeek
+            'deepseek/deepseek-chat-v3.1': '#ff8c5a',  # 浅橙红
+            
+            # Qwen
+            'qwen/qwen3-max': '#ffbb33',      # 浅金橙
+            'qwen/qwq-32b-preview': '#ffcc55',  # 更浅金橙
+            
+            # GLM
+            'z-ai/glm-4.6': '#20b2aa',        # 青色
+            
+            # Mistral
+            'mistralai/mistral-nemo': '#9370db',      # 中紫
+            'mistralai/mistral-medium-3.1': '#ba55d3',  # 兰花紫
+            
+            # Microsoft (Phi)
+            'microsoft/phi-3-mini-128k-instruct': '#0078d4',  # 微软蓝
+        }
+        
+        # 生成完整映射（包括简称和变体）
+        full_mapping = {}
+        
+        # 添加所有基础颜色
+        full_mapping.update(base_colors)
+        
+        # 添加常用简称映射（避免重复定义颜色值）
+        aliases = {
+            # GPT系列
+            'gpt': base_colors['gpt-4o'],
+            'GPT': base_colors['gpt-4o'],
+            'gpt-4o': base_colors['gpt-4o'],
+            'gpt-4o-mini': base_colors['gpt-4o-mini'],
+            
+            # Claude系列
+            'claude': base_colors['claude-3-7-sonnet'],
+            'Claude': base_colors['claude-3-7-sonnet'],
+            
+            # Gemini系列
+            'gemini': base_colors['gemini-2.5-flash'],
+            'Gemini': base_colors['gemini-2.5-flash'],
+            
+            # LLaMA系列
+            'llama': base_colors['meta-llama/llama-3.3-70b-instruct'],
+            'LLaMA': base_colors['meta-llama/llama-3.3-70b-instruct'],
+            
+            # DeepSeek系列
+            'deepseek': base_colors['deepseek-chat'],
+            'DeepSeek': base_colors['deepseek-chat'],
+            
+            # Qwen系列
+            'qwen': base_colors['qwen3-1.7b'],
+            'QWen': base_colors['qwen3-1.7b'],
+            
+            # Kimi
+            'kimi': base_colors['kimi-k2'],
+            'Kimi': base_colors['kimi-k2'],
+            
+            # Mistral系列
+            'mistral': base_colors['mistralai/mistral-nemo'],
+            'Mistral': base_colors['mistralai/mistral-nemo'],
+            
+            # GLM
+            'glm': base_colors['z-ai/glm-4.6'],
+            'GLM': base_colors['z-ai/glm-4.6'],
+            
+            # Grok
+            'grok': base_colors['x-ai/grok-4.1-fast'],
+            'Grok': base_colors['x-ai/grok-4.1-fast'],
+            
+            # Gemma
+            'gemma': base_colors['google/gemma-3-4b-it'],
+            'Gemma': base_colors['google/gemma-3-4b-it'],
+            
+            # Phi
+            'phi': base_colors['microsoft/phi-3-mini-128k-instruct'],
+            'Phi': base_colors['microsoft/phi-3-mini-128k-instruct'],
+        }
+        
+        full_mapping.update(aliases)
+        
+        # 通用LLM标记
+        full_mapping['LLM'] = '#ff1493'  # 深粉
+        full_mapping['Model'] = '#ff1493'
+        
+        return full_mapping
     
     def _generate_extended_colors(self) -> Dict[str, str]:
         """生成扩展的颜色映射"""
@@ -171,18 +281,61 @@ class BaseCulturalMapVisualizer(ABC):
         if model_str in self.llm_model_colors:
             return self.llm_model_colors[model_str]
         
-        # 按优先级匹配关键词
+        # 按优先级匹配关键词（支持22个模型族）
         model_lower = model_str.lower()
         
-        # 精确匹配模型族
+        # 精确匹配模型族（按优先级排序，避免误匹配）
         model_patterns = [
-            ('gpt', '#ff4444'),
+            # OpenAI
+            ('gpt-5', '#ff3333'),      # GPT-5优先匹配
+            ('gpt-4o-mini', '#ff6666'),
+            ('gpt-4o', '#ff4444'),
+            ('gpt', '#ff4444'),        # 通用GPT
+            
+            # Anthropic
+            ('claude-sonnet-4.5', '#4169e1'),
+            ('claude-3-7', '#00bfff'),
             ('claude', '#00bfff'),
+            
+            # Google
+            ('gemini-3', '#6eb5d4'),
+            ('gemini-2.5-pro', '#5a9fd4'),
+            ('gemini-2.5', '#4285f4'),
             ('gemini', '#4285f4'),
+            ('gemma', '#87ceeb'),
+            
+            # Meta
+            ('llama-3.3', '#8b4513'),
+            ('llama-3.2', '#a0522d'),
             ('llama', '#8b4513'),
+            
+            # DeepSeek
+            ('deepseek-v3.1', '#ff8c5a'),
+            ('deepseek-chat', '#ff6b35'),
             ('deepseek', '#ff6b35'),
+            
+            # Qwen
+            ('qwq', '#ffcc55'),
+            ('qwen3-max', '#ffbb33'),
+            ('qwen3', '#ffaa00'),
             ('qwen', '#ffaa00'),
+            
+            # Kimi
+            ('kimi', '#9966cc'),
+            
+            # GLM
+            ('glm', '#20b2aa'),
+            
+            # Mistral
+            ('mistral-medium', '#ba55d3'),
+            ('mistral-nemo', '#9370db'),
             ('mistral', '#9370db'),
+            
+            # X.AI
+            ('grok', '#00ffff'),
+            
+            # Microsoft
+            ('phi', '#0078d4'),
         ]
         
         for pattern, color in model_patterns:

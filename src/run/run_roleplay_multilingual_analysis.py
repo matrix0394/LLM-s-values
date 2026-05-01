@@ -37,7 +37,7 @@ sys.path.append(str(project_root))
 
 # 导入所需模块
 from src.roleplay_multilingual.multilingual_roleplay_data_processor import MultilingualRoleplayDataProcessor
-from src.roleplay_multilingual.multilingual_roleplay_pca_analysis import MultilingualRoleplayPCAAnalysis
+from src.roleplay_multilingual.multilingual_roleplay_pca_analysis import MultilingualRoleplayPCAAnalysis, LanguageComparisonAnalyzer
 from src.roleplay_multilingual.multilingual_roleplay_visualization import MultilingualRoleplayVisualizer
 
 
@@ -60,11 +60,57 @@ class RoleplayMultilingualAnalysisRunner:
         self.data_path.mkdir(parents=True, exist_ok=True)
         self.results_path.mkdir(parents=True, exist_ok=True)
         
+        # 初始化可视化器实例（复用于所有可视化方法，从base继承颜色映射）
+        self.visualizer = MultilingualRoleplayVisualizer(
+            data_path=str(self.project_root / "data"),
+            results_path=str(self.results_path)
+        )
+        self.cultural_region_colors = self.visualizer.cultural_region_colors
+        self.llm_model_colors = self.visualizer.llm_model_colors
+        
+        # 初始化语言对比分析器
+        self.language_analyzer = LanguageComparisonAnalyzer()
+        
         print(f"🏠 项目根目录: {self.project_root}")
         print(f"📁 Multilingual数据目录: {self.data_path}")
         print(f"📁 结果目录: {self.results_path}")
         print(f"📁 Country Values数据目录: {self.country_values_data_path}")
         print(f"📁 English Roleplay数据目录: {self.roleplay_english_data_path}")
+    
+    def _load_countries_from_config(self, config_file: Path, default_countries: list) -> list:
+        """从配置文件加载国家列表"""
+        try:
+            if not config_file.exists():
+                print("📋 配置文件不存在，使用默认国家列表")
+                return default_countries
+            
+            with open(config_file, 'r', encoding='utf-8') as f:
+                content = f.read().strip()
+                if not content:
+                    print("⚠️ 配置文件为空，使用默认国家列表")
+                    return default_countries
+                recommended_data = json.loads(content)
+            
+            # 提取国家列表
+            countries = []
+            if isinstance(recommended_data, dict):
+                for lang, country_list in recommended_data.items():
+                    if lang != 'metadata' and isinstance(country_list, list):
+                        for country_info in country_list:
+                            if isinstance(country_info, dict) and 'name' in country_info:
+                                country_name = country_info['name']
+                                if country_name not in countries:
+                                    countries.append(country_name)
+            
+            if not countries:
+                countries = recommended_data.get('countries', default_countries)
+            
+            print(f"✅ 成功加载推荐国家列表: {len(countries)} 个国家")
+            return countries
+            
+        except Exception as e:
+            print(f"⚠️ 加载配置文件失败: {e}")
+            return default_countries
     
     def step0_multilingual_interview(self):
         """步骤0: 多语言角色扮演访谈"""
@@ -139,72 +185,19 @@ class RoleplayMultilingualAnalysisRunner:
             print("\n🚀 开始多语言角色扮演访谈...")
             
             # 默认国家列表 - 使用完整配置（32个国家）
-            # 配置来自 config/multilingual_questions_complete.json
+            # 配置来自 config/questions/multilingual/multilingual_questions_complete.json
             default_countries = [
                 'China', 'United States'  # 最小默认集合
             ]
             
-            # 尝试从 multilingual_questions_complete.json 加载完整配置
-            try:
-                config_file = self.project_root / "config" / "multilingual_questions_complete.json"
-                if config_file.exists():
-                    with open(config_file, 'r', encoding='utf-8') as f:
-                        content = f.read().strip()
-                        if not content:
-                            raise ValueError("配置文件为空")
-                        recommended_data = json.loads(content)
-                    
-                    # 从配置格式中提取国家列表
-                    countries_to_interview = []
-                    if isinstance(recommended_data, dict):
-                        # 格式：languages -> en/zh-cn/ru/es/ar/en-native -> countries[]
-                        for lang, country_list in recommended_data.items():
-                            if lang != 'metadata' and isinstance(country_list, list):
-                                for country_info in country_list:
-                                    if isinstance(country_info, dict) and 'name' in country_info:
-                                        country_name = country_info['name']
-                                        if country_name not in countries_to_interview:
-                                            countries_to_interview.append(country_name)
-                    
-                    # 如果没有提取到国家，尝试旧格式
-                    if not countries_to_interview:
-                        countries_to_interview = recommended_data.get('countries', default_countries)
-                    
-                    print(f"✅ 成功加载推荐国家列表: {len(countries_to_interview)} 个国家")
-                    print(f"📋 国家列表: {', '.join(countries_to_interview)}")
-                    
-                else:
-                    print("📋 推荐国家配置文件不存在，使用默认配置")
-                    countries_to_interview = default_countries
-                    
-            except (json.JSONDecodeError, ValueError, UnicodeDecodeError) as e:
-                print(f"❌ 配置文件损坏: {e}")
-                print("📋 使用默认国家列表")
-                countries_to_interview = default_countries
-                
-                # 备份损坏的文件
-                if config_file.exists():
-                    backup_file = config_file.with_suffix(f'.backup_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json')
-                    try:
-                        config_file.rename(backup_file)
-                        print(f"💾 损坏文件已备份为: {backup_file.name}")
-                    except Exception:
-                        print("⚠️ 无法备份损坏文件")
-                
-            except Exception as e:
-                print(f"❌ 读取推荐国家配置时发生未知错误: {e}")
-                print("📋 使用默认国家列表")
-                countries_to_interview = default_countries
+            # 从配置文件加载国家列表
+            config_file = self.project_root / "config" / "questions" / "multilingual" / "multilingual_questions_complete.json"
+            countries_to_interview = self._load_countries_from_config(config_file, default_countries)
             
             print(f"🎯 将访谈 {len(countries_to_interview)} 个国家")
             
             # 执行批量访谈
             print(f"\n🎯 开始批量多语言访谈...")
-            
-            # 验证访谈器是否正确初始化
-            if not hasattr(interviewer, 'run_multilingual_experiment'):
-                print("❌ 访谈器缺少 run_multilingual_experiment 方法")
-                return False
             
             try:
                 # 使用现有的run_multilingual_experiment方法（启用增量访谈）
@@ -228,151 +221,22 @@ class RoleplayMultilingualAnalysisRunner:
                     traceback.print_exc()
                     return False
             
-            if interview_results and interview_results.get('results'):
+            # 关键修复：检查返回结果的结构
+            # run_multilingual_experiment返回的数据已经保存到文件了
+            # 只要有total_tasks > 0就说明有数据
+            if interview_results and interview_results.get('total_tasks', 0) > 0:
                 print(f"✅ 多语言访谈完成!")
                 print(f"📊 访谈统计:")
                 print(f"   - 总任务数: {interview_results.get('total_tasks', 0)}")
                 print(f"   - 成功任务数: {interview_results.get('successful_tasks', 0)}")
                 success_rate = interview_results.get('successful_tasks', 0) / max(interview_results.get('total_tasks', 1), 1)
                 print(f"   - 成功率: {success_rate:.1%}")
-                print(f"   - 使用的模型: {interview_results.get('models', [])}")
-                print(f"   - 支持的语言: {interview_results.get('languages', [])}")
                 
-                # 保存访谈结果到我们的数据目录
-                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                results_file = self.data_path / f"interview_data_{timestamp}.json"
-                
-                # 重新格式化结果以符合现有数据结构
-                # 格式: {country: {language: {model: [responses...]}}}
-                formatted_results = {}
-                
-                # 转换results格式为现有的层级结构
-                results_list = interview_results.get('results', [])
-                print(f"🔄 处理 {len(results_list)} 个访谈结果...")
-                
-                # 调试：显示第一个结果的结构
-                if results_list:
-                    first_result = results_list[0]
-                    print(f"🔍 调试 - 第一个结果的字段: {list(first_result.keys()) if isinstance(first_result, dict) else type(first_result)}")
-                    if isinstance(first_result, dict):
-                        print(f"🔍 调试 - model字段值: {first_result.get('model', 'NOT_FOUND')}")
-                        print(f"🔍 调试 - model_name字段值: {first_result.get('model_name', 'NOT_FOUND')}")
-                
-                processed_count = 0
-                error_count = 0
-                
-                for i, result in enumerate(interview_results.get('results', [])):
-                    try:
-                        if result and 'responses' in result:
-                            # 尝试多种可能的字段名
-                            model_name = result.get('model_name') or result.get('model', 'unknown')
-                            country_data = result.get('country', 'unknown')
-                            language = result.get('language', 'unknown')
-                            
-                            # 提取国家名称（处理country可能是字典或字符串的情况）
-                            if isinstance(country_data, dict):
-                                country = country_data.get('name', str(country_data))
-                            elif isinstance(country_data, str):
-                                country = country_data
-                            else:
-                                country = str(country_data) if country_data != 'unknown' else 'unknown'
-                            
-                            # 验证必要字段
-                            if model_name == 'unknown' or country == 'unknown' or language == 'unknown':
-                                print(f"⚠️ 第 {i+1} 个结果缺少必要信息: model={model_name}, country={country}, language={language}")
-                                error_count += 1
-                                continue
-                            
-                            # 确保国家层级存在
-                            if country not in formatted_results:
-                                formatted_results[country] = {}
-                            
-                            # 确保语言层级存在
-                            if language not in formatted_results[country]:
-                                formatted_results[country][language] = {}
-                            
-                            # 确保模型层级存在
-                            if model_name not in formatted_results[country][language]:
-                                formatted_results[country][language][model_name] = []
-                            
-                            # 添加响应数据，格式与现有数据一致
-                            response_entry = {
-                                'repeat': len(formatted_results[country][language][model_name]) + 1,
-                                'responses': result.get('responses', {})
-                            }
-                            formatted_results[country][language][model_name].append(response_entry)
-                            processed_count += 1
-                            
-                            # 显示处理进度
-                            if (processed_count) % 20 == 0:
-                                print(f"   处理进度: {processed_count} 个结果已处理")
-                        else:
-                            print(f"⚠️ 第 {i+1} 个结果格式无效")
-                            error_count += 1
-                            
-                    except Exception as e:
-                        print(f"❌ 处理第 {i+1} 个结果时出错: {e}")
-                        error_count += 1
-                        continue
-                
-                print(f"📊 处理完成: {processed_count} 个成功, {error_count} 个错误")
-                
-                # 验证格式化结果
-                if not formatted_results:
-                    print("❌ 没有有效的访谈结果可保存")
-                    return False
-                
-                # 统计结果
-                total_countries = len(formatted_results)
-                total_entries = sum(
-                    len(responses)
-                    for country_data in formatted_results.values()
-                    for lang_data in country_data.values()
-                    for responses in lang_data.values()
-                )
-                
-                print(f"📊 最终统计:")
-                print(f"   - 国家数量: {total_countries}")
-                print(f"   - 总访谈条目: {total_entries}")
-                
-                # 保存访谈结果，带错误处理
-                try:
-                    with open(results_file, 'w', encoding='utf-8') as f:
-                        json.dump(formatted_results, f, indent=2, ensure_ascii=False)
-                    
-                    # 验证保存的文件
-                    if results_file.exists():
-                        file_size = results_file.stat().st_size
-                        print(f"💾 访谈结果已保存到: {results_file.name}")
-                        print(f"📁 文件大小: {file_size:,} 字节")
-                        
-                        # 验证文件内容
-                        try:
-                            with open(results_file, 'r', encoding='utf-8') as f:
-                                saved_data = json.load(f)
-                            saved_countries = len(saved_data)
-                            print(f"✅ 文件验证成功: {saved_countries} 个国家的数据")
-                        except Exception as e:
-                            print(f"⚠️ 文件验证失败: {e}")
-                    else:
-                        print("❌ 文件保存失败：文件不存在")
-                        return False
-                    
-                    return True
-                    
-                except Exception as e:
-                    print(f"❌ 保存访谈结果时发生错误: {e}")
-                    
-                    # 尝试保存到备用位置
-                    try:
-                        backup_file = self.data_path / f"interview_data_backup_{timestamp}.json"
-                        with open(backup_file, 'w', encoding='utf-8') as f:
-                            json.dump(formatted_results, f, indent=2, ensure_ascii=False)
-                        print(f"💾 已保存到备用文件: {backup_file.name}")
-                        return True
-                    except Exception as e2:
-                        print(f"❌ 备用保存也失败: {e2}")
-                        return False
+                # 数据已经由访谈器保存到PKL和JSON文件了
+                # 不需要再次保存，直接返回True继续后续步骤
+                print(f"💾 访谈数据已自动保存到: data/roleplay_multilingual/llm_responses_roleplay_ml/")
+                print(f"✅ 跳过重复保存，继续后续步骤...")
+                return True
             else:
                 print(f"❌ 多语言访谈失败或无结果")
                 print("💡 可能的原因:")
@@ -416,7 +280,7 @@ class RoleplayMultilingualAnalysisRunner:
             
             # 创建测试实例
             tester = ComprehensiveMultilingualTest(
-                config_path="comprehensive_multilingual_config.json"
+                config_path="config/questions/multilingual/comprehensive_multilingual_config.json"
             )
             
             # 运行测试（使用高并发加快速度）
@@ -452,7 +316,7 @@ class RoleplayMultilingualAnalysisRunner:
             
             # 创建测试实例（使用小规模配置）
             tester = ComprehensiveMultilingualTest(
-                config_path="small_scale_test_config.json"
+                config_path="config/questions/multilingual/small_scale_test_config.json"
             )
             
             # 运行小规模测试（适度并发）
@@ -752,9 +616,12 @@ class RoleplayMultilingualAnalysisRunner:
         
         try:
             # 检查必要的数据文件
+            # country_codes.pkl 统一放在 config/country/ 目录
+            from pathlib import Path
+            config_country_path = self.project_root / "config" / "country" / "country_codes.pkl"
             required_files = [
                 self.country_values_data_path / "ivs_df.pkl",
-                self.country_values_data_path / "country_codes.pkl"
+                config_country_path  # 统一从 config/country/ 加载
             ]
             
             for file_path in required_files:
@@ -851,77 +718,6 @@ class RoleplayMultilingualAnalysisRunner:
             traceback.print_exc()
             return False
     
-    def _fix_country_names(self, entity_scores):
-        """修复国家名称匹配问题"""
-        print("🔧 修复IVS数据的国家名称匹配...")
-        
-        # 加载国家代码数据
-        country_codes = pd.read_pickle(self.country_values_data_path / "country_codes.pkl")
-        
-        # 分离数据
-        ivs_data = entity_scores[entity_scores['data_source'] == 'IVS'].copy()
-        multilingual_data = entity_scores[entity_scores['data_source'] == 'Multilingual'].copy()
-        
-        if len(ivs_data) > 0:
-            # country_code已经是国家名称字符串，直接merge
-            ivs_fixed = ivs_data.merge(
-                country_codes[['Country', 'Cultural Region']], 
-                left_on='country_code', 
-                right_on='Country', 
-                how='left',
-                suffixes=('_old', '')
-            )
-            
-            # 清理列名，保留需要的列
-            columns_to_keep = ['country_code', 'data_source', 'PC1_rescaled', 'PC2_rescaled', 
-                               'Country', 'Cultural Region']
-            # 如果Country_old存在，删除它
-            if 'Country_old' in ivs_fixed.columns:
-                ivs_fixed = ivs_fixed.drop('Country_old', axis=1)
-            ivs_final = ivs_fixed[[col for col in columns_to_keep if col in ivs_fixed.columns]].copy()
-            
-            print(f"✅ 修复了 {ivs_final['Country'].notna().sum()}/{len(ivs_final)} 个国家名称")
-        else:
-            ivs_final = ivs_data
-        
-        # 重新组合完整数据
-        if len(multilingual_data) > 0:
-            # 检查多语言数据中实际存在的列
-            available_columns = ['country_code', 'data_source', 'PC1_rescaled', 'PC2_rescaled']
-            optional_columns = ['model_name', 'language', 'Country', 'Cultural Region']
-            
-            print(f"多语言数据现有列: {list(multilingual_data.columns)}")
-            
-            for col in optional_columns:
-                if col in multilingual_data.columns:
-                    available_columns.append(col)
-                    print(f"  ✅ 保留: {col}")
-                else:
-                    print(f"  ⚠️ 缺失: {col}")
-            
-            multilingual_final = multilingual_data[available_columns].copy()
-            
-            # 确保multilingual_data也有Country和Cultural Region列（通过country_code匹配）
-            if 'Country' not in multilingual_final.columns and len(multilingual_final) > 0:
-                multilingual_final['country_code_int'] = pd.to_numeric(multilingual_final['country_code'], errors='coerce')
-                multilingual_final = multilingual_final.merge(
-                    country_codes[['Numeric_int', 'Country', 'Cultural Region']], 
-                    left_on='country_code_int', 
-                    right_on='Numeric_int', 
-                    how='left'
-                )
-                multilingual_final = multilingual_final.drop(['country_code_int', 'Numeric_int'], axis=1, errors='ignore')
-                print(f"  ✅ 为多语言数据添加Country和Cultural Region列")
-            
-            entity_scores_final = pd.concat([ivs_final, multilingual_final], ignore_index=True)
-        else:
-            entity_scores_final = ivs_final
-        
-        print(f"\n最终数据列: {list(entity_scores_final.columns)}")
-        print(f"最终数据形状: {entity_scores_final.shape}")
-        
-        return entity_scores_final
-    
     def step3_language_comparison_analysis(self, test_type: str = None):
         """步骤3: 英文vs本国语言效果对比分析"""
         print("\n" + "="*60)
@@ -958,7 +754,6 @@ class RoleplayMultilingualAnalysisRunner:
                 print(f"📁 使用最新PCA文件: {multilingual_path.name}")
             
             # 显示文件时间，帮助验证是否是最新的
-            from datetime import datetime
             file_time = datetime.fromtimestamp(multilingual_path.stat().st_mtime)
             print(f"   文件时间: {file_time.strftime('%Y-%m-%d %H:%M:%S')}")
             
@@ -989,7 +784,7 @@ class RoleplayMultilingualAnalysisRunner:
             
             # 执行距离对比分析（包含三种语言类型）
             print("\n3️⃣ 执行距离对比分析（en-native vs en vs native）...")
-            comparison_results = self._calculate_language_distance_comparison(
+            comparison_results = self.language_analyzer.calculate_language_distance_comparison(
                 real_countries, multilingual_native, multilingual_english, multilingual_en_native
             )
             
@@ -1015,742 +810,36 @@ class RoleplayMultilingualAnalysisRunner:
             traceback.print_exc()
             return False
     
-    def _calculate_language_distance_comparison(self, real_countries, multilingual_native, multilingual_english, multilingual_en_native):
-        """计算三种语言类型的距离对比：en-native（基准）vs en vs native"""
-        print("📏 计算距离对比...")
-        
-        comparison_results = {
-            'summary': {},
-            'country_details': {},
-            'model_performance': {},
-            'language_effectiveness': {},
-            'model_specific_analysis': {},
-            'en_native_baseline': {}  # 新增：en-native作为基准
-        }
-        
-        # 使用传入的分离后数据
-        native_data = multilingual_native
-        english_data = multilingual_english
-        en_native_data = multilingual_en_native
-        
-        print(f"📊 本国语言数据: {len(native_data)} 个实体")
-        print(f"📊 英文数据(非英语国家): {len(english_data)} 个实体")
-        print(f"📊 英语母语国家(en-native): {len(en_native_data)} 个实体")
-        
-        # 标准化国家名称（去除后缀如"(the)"）
-        def normalize_country_name(name):
-            """标准化国家名称，去除常见后缀"""
-            if pd.isna(name):
-                return None
-            name = str(name).strip()
-            # 去除常见后缀
-            name = name.replace(' (the)', '').replace('(the)', '')
-            name = name.replace(' (Islamic Republic of)', '').replace('(Islamic Republic of)', '')
-            name = name.replace(' (Bolivarian Republic of)', '').replace('(Bolivarian Republic of)', '')
-            return name.strip()
-        
-        # ✅ 修复：先对IVS数据按国家分组并计算平均坐标
-        # 这样避免了一个国家有多个样本时只保留最后一条的问题
-        real_country_avg = real_countries.groupby('Country')[['PC1_rescaled', 'PC2_rescaled']].mean()
-        
-        # 为真实国家建立查找字典（使用标准化的Country名称）
-        real_country_coords = {}
-        real_country_name_mapping = {}  # 映射：标准化名称 -> 原始名称
-        for country_name, row in real_country_avg.iterrows():
-            if pd.notna(country_name) and country_name != 'Unknown':
-                normalized_name = normalize_country_name(country_name)
-                if normalized_name:
-                    real_country_coords[normalized_name] = (row['PC1_rescaled'], row['PC2_rescaled'])
-                    real_country_name_mapping[normalized_name] = country_name
-        
-        print(f"📊 真实国家数量: {len(real_country_coords)}")
-        
-        # 获取多语言数据中的国家列表（合并所有三种语言类型，标准化名称）
-        all_multilingual_data = pd.concat([native_data, english_data, en_native_data], ignore_index=True)
-        multilingual_countries_raw = all_multilingual_data['country_code'].dropna().unique()
-        multilingual_countries = set(normalize_country_name(name) for name in multilingual_countries_raw if normalize_country_name(name))
-        print(f"📊 多语言数据覆盖的国家: {len(multilingual_countries)}")
-        
-        # 找到可以匹配的国家（使用标准化名称）
-        matchable_countries = real_country_coords.keys() & multilingual_countries
-        print(f"📊 可匹配的国家数量: {len(matchable_countries)}")
-        print(f"📊 可匹配的国家: {sorted(list(matchable_countries))}")
-        
-        # 单独计算en-native（英语母语国家）的表现作为基准
-        en_native_countries_raw = en_native_data['country_code'].dropna().unique()
-        en_native_countries = set(normalize_country_name(name) for name in en_native_countries_raw if normalize_country_name(name))
-        en_native_baseline = {}
-        all_en_native_distances = []
-        
-        for country_name_normalized in en_native_countries:
-            if country_name_normalized in real_country_coords:
-                print(f"   🔍 匹配到en-native国家: {country_name_normalized}")
-                real_coords = real_country_coords[country_name_normalized]
-                # 在en_native_data中查找时，需要匹配标准化后的名称
-                country_en_native = en_native_data[
-                    en_native_data['country_code'].apply(normalize_country_name) == country_name_normalized
-                ]
-                distances = []
-                models_data = {}
-                
-                for _, row in country_en_native.iterrows():
-                    model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
-                    distance = euclidean(real_coords, model_coords)
-                    distances.append(distance)
-                    all_en_native_distances.append(distance)
-                    
-                    model_name = row.get('model_name', 'Unknown')
-                    models_data[model_name] = distance
-                
-                en_native_baseline[country_name_normalized] = {
-                    'avg_distance': np.mean(distances) if distances else None,
-                    'models': models_data
-                }
-        
-        print(f"📊 en-native基准: {len(en_native_baseline)} 个英语母语国家")
-        if all_en_native_distances:
-            print(f"📊 en-native平均距离: {np.mean(all_en_native_distances):.3f} （基准）")
-        
-        # 按国家分组计算距离（本国语言 vs 英文）
-        country_comparisons = {}
-        for country_name_normalized in matchable_countries:
-            real_coords = real_country_coords[country_name_normalized]
-            country_results = {
-                'real_coordinates': real_coords,
-                'native_distances': [],
-                'english_distances': [],
-                'en_native_distances': [],  # 新增：如果该国有en-native数据
-                'models': {}
-            }
-            
-            # 计算本国语言距离（使用标准化名称匹配）
-            country_native = native_data[
-                native_data['country_code'].apply(normalize_country_name) == country_name_normalized
-            ]
-            for _, row in country_native.iterrows():
-                model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
-                distance = euclidean(real_coords, model_coords)
-                country_results['native_distances'].append(distance)
-                
-                model_name = row.get('model_name', 'Unknown')
-                if model_name not in country_results['models']:
-                    country_results['models'][model_name] = {}
-                country_results['models'][model_name]['native_distance'] = distance
-            
-            # 计算英文距离（非英语国家用英语）
-            country_english = english_data[
-                english_data['country_code'].apply(normalize_country_name) == country_name_normalized
-            ]
-            for _, row in country_english.iterrows():
-                model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
-                distance = euclidean(real_coords, model_coords)
-                country_results['english_distances'].append(distance)
-                
-                model_name = row.get('model_name', 'Unknown')
-                if model_name not in country_results['models']:
-                    country_results['models'][model_name] = {}
-                country_results['models'][model_name]['english_distance'] = distance
-            
-            # 计算en-native距离（如果该国是英语母语国家）
-            country_en_native = en_native_data[
-                en_native_data['country_code'].apply(normalize_country_name) == country_name_normalized
-            ]
-            for _, row in country_en_native.iterrows():
-                model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
-                distance = euclidean(real_coords, model_coords)
-                country_results['en_native_distances'].append(distance)
-                
-                model_name = row.get('model_name', 'Unknown')
-                if model_name not in country_results['models']:
-                    country_results['models'][model_name] = {}
-                country_results['models'][model_name]['en_native_distance'] = distance
-            
-            # 计算平均距离
-            country_results['avg_native_distance'] = np.mean(country_results['native_distances']) if country_results['native_distances'] else None
-            country_results['avg_english_distance'] = np.mean(country_results['english_distances']) if country_results['english_distances'] else None
-            country_results['avg_en_native_distance'] = np.mean(country_results['en_native_distances']) if country_results['en_native_distances'] else None
-            
-            country_comparisons[country_name_normalized] = country_results
-        
-        # 汇总统计
-        all_native_distances = []
-        all_english_distances = []
-        
-        for country_data in country_comparisons.values():
-            if country_data['native_distances']:
-                all_native_distances.extend(country_data['native_distances'])
-            if country_data['english_distances']:
-                all_english_distances.extend(country_data['english_distances'])
-        
-        comparison_results['summary'] = {
-            'total_countries_analyzed': len(country_comparisons),
-            'en_native_avg_distance': float(np.mean(all_en_native_distances)) if all_en_native_distances else None,  # 新增：基准
-            'native_language_avg_distance': float(np.mean(all_native_distances)) if all_native_distances else None,
-            'english_language_avg_distance': float(np.mean(all_english_distances)) if all_english_distances else None,
-            'language_improvement': None,  # native vs english
-            'native_vs_en_native': None,  # 新增：本国语言 vs en-native基准
-            'english_vs_en_native': None   # 新增：英文 vs en-native基准
-        }
-        
-        # 保存en-native基准信息
-        comparison_results['en_native_baseline'] = en_native_baseline
-        
-        # 计算改进百分比
-        # 1. 英文相对于本国语言的改进
-        if comparison_results['summary']['native_language_avg_distance'] and comparison_results['summary']['english_language_avg_distance']:
-            native_avg = comparison_results['summary']['native_language_avg_distance']
-            english_avg = comparison_results['summary']['english_language_avg_distance']
-            improvement = ((native_avg - english_avg) / native_avg) * 100
-            comparison_results['summary']['language_improvement'] = float(improvement)
-        
-        # 2. 本国语言 vs en-native基准
-        if comparison_results['summary']['native_language_avg_distance'] and comparison_results['summary']['en_native_avg_distance']:
-            native_avg = comparison_results['summary']['native_language_avg_distance']
-            en_native_avg = comparison_results['summary']['en_native_avg_distance']
-            diff = ((native_avg - en_native_avg) / en_native_avg) * 100
-            comparison_results['summary']['native_vs_en_native'] = float(diff)
-        
-        # 3. 英文 vs en-native基准
-        if comparison_results['summary']['english_language_avg_distance'] and comparison_results['summary']['en_native_avg_distance']:
-            english_avg = comparison_results['summary']['english_language_avg_distance']
-            en_native_avg = comparison_results['summary']['en_native_avg_distance']
-            diff = ((english_avg - en_native_avg) / en_native_avg) * 100
-            comparison_results['summary']['english_vs_en_native'] = float(diff)
-        
-        comparison_results['country_details'] = country_comparisons
-        
-        # 新增：按模型分析语言效果
-        print("\n📊 按模型分析语言效果...")
-        model_analysis = self._analyze_model_specific_language_performance(
-            native_data, english_data, real_country_coords, matchable_countries, normalize_country_name
-        )
-        comparison_results['model_specific_analysis'] = model_analysis
-        
-        # 输出统计信息
-        print(f"\n✅ 分析了 {len(country_comparisons)} 个国家")
-        
-        # 显示三种语言类型的平均距离
-        print(f"\n📊 三种语言类型平均距离对比:")
-        if comparison_results['summary']['en_native_avg_distance']:
-            print(f"   🇺🇸 en-native (英语母语国家): {comparison_results['summary']['en_native_avg_distance']:.3f} ← 基准")
-        if comparison_results['summary']['english_language_avg_distance']:
-            print(f"   🌏 en (非英语国家用英语): {comparison_results['summary']['english_language_avg_distance']:.3f}")
-        if comparison_results['summary']['native_language_avg_distance']:
-            print(f"   🗣️  native (本国语言): {comparison_results['summary']['native_language_avg_distance']:.3f}")
-        
-        # 显示对比en-native基准的差距
-        print(f"\n📊 与en-native基准对比:")
-        if comparison_results['summary']['english_vs_en_native'] is not None:
-            diff = comparison_results['summary']['english_vs_en_native']
-            if diff > 0:
-                print(f"   en (非英语国家用英语) 比 en-native 差 {diff:.1f}%")
-            else:
-                print(f"   en (非英语国家用英语) 比 en-native 好 {-diff:.1f}%")
-        
-        if comparison_results['summary']['native_vs_en_native'] is not None:
-            diff = comparison_results['summary']['native_vs_en_native']
-            if diff > 0:
-                print(f"   native (本国语言) 比 en-native 差 {diff:.1f}%")
-            else:
-                print(f"   native (本国语言) 比 en-native 好 {-diff:.1f}%")
-        
-        # 显示native vs english对比
-        print(f"\n📊 native vs english 对比:")
-        if comparison_results['summary']['language_improvement']:
-            improvement = comparison_results['summary']['language_improvement']
-            if improvement > 0:
-                print(f"   英文比本国语言好 {improvement:.1f}%")
-            else:
-                print(f"   本国语言比英文好 {-improvement:.1f}%")
-        
-        # 输出每个模型的分析结果
-        print(f"\n🤖 各模型语言效果对比:")
-        for model_name, model_stats in model_analysis.items():
-            if model_stats['native_avg_distance'] and model_stats['english_avg_distance']:
-                native_avg = model_stats['native_avg_distance']
-                english_avg = model_stats['english_avg_distance']
-                improvement = ((native_avg - english_avg) / native_avg) * 100
-                
-                print(f"   {model_name.split('/')[-1]}:")
-                print(f"     本国语言: {native_avg:.3f}, 英文: {english_avg:.3f}")
-                if improvement > 0:
-                    print(f"     → 英文效果更好 ({improvement:.1f}%)")
-                else:
-                    print(f"     → 本国语言效果更好 ({-improvement:.1f}%)")
-        
-        return comparison_results
-    
-    def _analyze_model_specific_language_performance(self, native_data, english_data, real_country_coords, matchable_countries, normalize_country_name):
-        """分析每个模型的语言效果对比"""
-        model_analysis = {}
-        
-        # 获取所有模型
-        all_models = set()
-        if 'model_name' in native_data.columns:
-            all_models.update(native_data['model_name'].dropna().unique())
-        if 'model_name' in english_data.columns:
-            all_models.update(english_data['model_name'].dropna().unique())
-        
-        for model_name in all_models:
-            model_stats = {
-                'model_name': model_name,
-                'native_distances': [],
-                'english_distances': [],
-                'native_avg_distance': None,
-                'english_avg_distance': None,
-                'language_improvement': None,
-                'countries_analyzed': [],
-                'native_count': 0,
-                'english_count': 0
-            }
-            
-            # 分析该模型在每个国家的表现（使用标准化名称匹配）
-            for country_name_normalized in matchable_countries:
-                real_coords = real_country_coords[country_name_normalized]
-                
-                # 本国语言数据
-                model_native = native_data[
-                    (native_data['country_code'].apply(normalize_country_name) == country_name_normalized) & 
-                    (native_data['model_name'] == model_name)
-                ]
-                
-                for _, row in model_native.iterrows():
-                    model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
-                    distance = euclidean(real_coords, model_coords)
-                    model_stats['native_distances'].append(distance)
-                    model_stats['native_count'] += 1
-                
-                # 英文数据
-                model_english = english_data[
-                    (english_data['country_code'].apply(normalize_country_name) == country_name_normalized) & 
-                    (english_data['model_name'] == model_name)
-                ]
-                
-                for _, row in model_english.iterrows():
-                    model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
-                    distance = euclidean(real_coords, model_coords)
-                    model_stats['english_distances'].append(distance)
-                    model_stats['english_count'] += 1
-                
-                # 如果该模型在这个国家有数据，记录
-                if len(model_native) > 0 or len(model_english) > 0:
-                    model_stats['countries_analyzed'].append(country_name_normalized)
-            
-            # 计算平均距离
-            if model_stats['native_distances']:
-                model_stats['native_avg_distance'] = float(np.mean(model_stats['native_distances']))
-            if model_stats['english_distances']:
-                model_stats['english_avg_distance'] = float(np.mean(model_stats['english_distances']))
-            
-            # 计算改进百分比
-            if model_stats['native_avg_distance'] and model_stats['english_avg_distance']:
-                native_avg = model_stats['native_avg_distance']
-                english_avg = model_stats['english_avg_distance']
-                improvement = ((native_avg - english_avg) / native_avg) * 100
-                model_stats['language_improvement'] = float(improvement)
-            
-            model_analysis[model_name] = model_stats
-        
-        return model_analysis
-    
     def _generate_language_comparison_visualization(self, comparison_results):
         """生成语言对比可视化"""
         print("🎨 生成语言对比可视化...")
         
-        # 1. 生成距离对比柱状图
-        self._plot_distance_comparison_bar(comparison_results)
-        
-        # 2. 生成国家级别的详细对比
-        self._plot_country_level_comparison(comparison_results)
-        
-        # 3. 生成交互式对比图
-        self._plot_interactive_language_comparison(comparison_results)
-        
-        # 4. 新增：生成每个模型的语言效果对比图
-        self._plot_model_specific_language_comparison(comparison_results)
-    
-    def _plot_distance_comparison_bar(self, comparison_results):
-        """绘制距离对比柱状图"""
-        summary = comparison_results['summary']
-        
-        distances = []
-        labels = []
-        colors = []
-        
-        if summary['native_language_avg_distance']:
-            distances.append(summary['native_language_avg_distance'])
-            labels.append('Native Language')
-            colors.append('#2E8B57')  # 深绿色
-        
-        if summary['english_language_avg_distance']:
-            distances.append(summary['english_language_avg_distance'])
-            labels.append('English Language')
-            colors.append('#4169E1')  # 皇家蓝
-        
-        if not distances:
-            print("⚠️ 没有足够的数据生成距离对比图")
-            return
-        
-        plt.figure(figsize=(12, 8))
-        bars = plt.bar(labels, distances, color=colors, alpha=0.8, edgecolor='black', linewidth=1)
-        
-        # 添加数值标签
-        for bar, distance in zip(bars, distances):
-            plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01,
-                    f'{distance:.3f}', ha='center', va='bottom', fontsize=12, fontweight='bold')
-        
-        plt.title('Language Effectiveness Comparison\n(Lower Distance = Better Performance)', 
-                 fontsize=16, fontweight='bold', pad=20)
-        plt.ylabel('Average Distance to Real Countries', fontsize=14, fontweight='bold')
-        plt.xlabel('Language Type', fontsize=14, fontweight='bold')
-        
-        # 添加改进百分比注释
-        if summary['language_improvement']:
-            improvement = summary['language_improvement']
-            if improvement > 0:
-                text = f'English is {improvement:.1f}% better'
-                color = 'lightblue'
-            else:
-                text = f'Native is {-improvement:.1f}% better'
-                color = 'lightgreen'
-            
-            plt.text(0.5, max(distances) * 0.8, text, 
-                    transform=plt.gca().transAxes, ha='center', fontsize=12,
-                    bbox=dict(boxstyle='round,pad=0.5', facecolor=color, alpha=0.7))
-        
-        plt.grid(True, alpha=0.3, axis='y')
-        plt.tight_layout()
-        
-        # 保存图片到dashboard（带时间戳）
+        # 使用类实例的可视化器
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         dashboard_path = self.results_path / "roleplay_ml_dashboard"
         dashboard_path.mkdir(parents=True, exist_ok=True)
+        
+        # 1. 生成距离对比柱状图（使用visualization模块）
         save_path = dashboard_path / f"language_distance_comparison_{timestamp}.png"
-        plt.savefig(save_path, dpi=300, bbox_inches='tight', facecolor='white')
-        plt.close()
-        print(f"✅ 距离对比图已保存到: {save_path.name}")
-    
-    def _plot_country_level_comparison(self, comparison_results):
-        """绘制国家级别的详细对比"""
-        country_details = comparison_results['country_details']
+        self.visualizer.plot_language_distance_comparison(comparison_results, str(save_path))
         
-        # 准备数据
-        countries = []
-        native_distances = []
-        english_distances = []
-        
-        for country, data in country_details.items():
-            if data['avg_native_distance'] or data['avg_english_distance']:
-                countries.append(country)
-                native_distances.append(data['avg_native_distance'] or 0)
-                english_distances.append(data['avg_english_distance'] or 0)
-        
-        if not countries:
-            print("⚠️ 没有足够的数据生成国家级别对比图")
-            return
-        
-        # 限制显示前15个国家（避免图表过于拥挤）
-        if len(countries) > 15:
-            countries = countries[:15]
-            native_distances = native_distances[:15]
-            english_distances = english_distances[:15]
-        
-        x = np.arange(len(countries))
-        width = 0.35
-        
-        plt.figure(figsize=(16, 10))
-        
-        plt.bar(x - width/2, native_distances, width, label='Native Language', 
-               color='#2E8B57', alpha=0.8, edgecolor='black', linewidth=0.5)
-        plt.bar(x + width/2, english_distances, width, label='English Language', 
-               color='#4169E1', alpha=0.8, edgecolor='black', linewidth=0.5)
-        
-        plt.title('Country-Level Language Effectiveness Comparison', fontsize=16, fontweight='bold', pad=20)
-        plt.ylabel('Average Distance to Real Country', fontsize=14, fontweight='bold')
-        plt.xlabel('Countries', fontsize=14, fontweight='bold')
-        plt.xticks(x, countries, rotation=45, ha='right')
-        plt.legend(fontsize=12)
-        plt.grid(True, alpha=0.3, axis='y')
-        plt.tight_layout()
-        
-        # 保存图片到dashboard（带时间戳）
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        dashboard_path = self.results_path / "roleplay_ml_dashboard"
-        dashboard_path.mkdir(parents=True, exist_ok=True)
+        # 2. 生成国家级别的详细对比（使用visualization模块）
         save_path = dashboard_path / f"country_level_language_comparison_{timestamp}.png"
-        plt.savefig(save_path, dpi=300, bbox_inches='tight', facecolor='white')
-        plt.close()
-        print(f"✅ 国家级别对比图已保存到: {save_path.name}")
-    
-    def _plot_interactive_language_comparison(self, comparison_results):
-        """生成交互式语言对比图"""
-        if not PLOTLY_AVAILABLE:
-            print("⚠️ plotly未安装，跳过交互式图表生成")
-            return
+        self.visualizer.plot_country_level_language_comparison(comparison_results, str(save_path))
         
-        country_details = comparison_results['country_details']
+        # 3. 生成交互式对比图（使用visualization模块）
+        save_path = dashboard_path / f"interactive_language_comparison_{timestamp}.html"
+        self.visualizer.plot_interactive_language_comparison(comparison_results, str(save_path))
         
-        # 准备数据
-        countries = []
-        native_distances = []
-        english_distances = []
-        
-        for country, data in country_details.items():
-            countries.append(country)
-            native_distances.append(data['avg_native_distance'])
-            english_distances.append(data['avg_english_distance'])
-        
-        # 创建交互式图表
-        fig = go.Figure()
-        
-        # 添加本国语言数据
-        fig.add_trace(go.Bar(
-            name='Native Language',
-            x=countries,
-            y=native_distances,
-            marker_color='#2E8B57',
-            opacity=0.8,
-            hovertemplate='<b>%{x}</b><br>Native Language Distance: %{y:.3f}<extra></extra>'
-        ))
-        
-        # 添加英文数据
-        fig.add_trace(go.Bar(
-            name='English Language',
-            x=countries,
-            y=english_distances,
-            marker_color='#4169E1',
-            opacity=0.8,
-            hovertemplate='<b>%{x}</b><br>English Distance: %{y:.3f}<extra></extra>'
-        ))
-        
-        fig.update_layout(
-            title=dict(
-                text='<b>Interactive Language Effectiveness Comparison</b><br><sub>Lower Distance = Better Performance</sub>',
-                x=0.5,
-                font=dict(size=18)
-            ),
-            xaxis=dict(
-                title='<b>Countries</b>',
-                titlefont=dict(size=14),
-                tickangle=45
-            ),
-            yaxis=dict(
-                title='<b>Average Distance to Real Country</b>',
-                titlefont=dict(size=14)
-            ),
-            barmode='group',
-            width=1200,
-            height=700,
-            showlegend=True,
-            legend=dict(
-                orientation='h',
-                yanchor='bottom',
-                y=1.02,
-                xanchor='center',
-                x=0.5
-            ),
-            plot_bgcolor='white',
-            paper_bgcolor='white'
-        )
-        
-        # 保存HTML文件到dashboard（带时间戳）
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        dashboard_path = self.results_path / "roleplay_ml_dashboard"
-        dashboard_path.mkdir(parents=True, exist_ok=True)
-        html_path = dashboard_path / f"interactive_language_comparison_{timestamp}.html"
-        fig.write_html(html_path)
-        print(f"✅ 交互式语言对比图已保存到: {html_path.name}")
-    
-    def _plot_model_specific_language_comparison(self, comparison_results):
-        """绘制每个模型的语言效果对比图"""
-        model_analysis = comparison_results.get('model_specific_analysis', {})
-        
-        if not model_analysis:
-            print("⚠️ 没有模型特定分析数据，跳过模型对比图")
-            return
-        
-        # 准备数据
-        models = []
-        native_distances = []
-        english_distances = []
-        improvements = []
-        
-        for model_name, stats in model_analysis.items():
-            if stats['native_avg_distance'] and stats['english_avg_distance']:
-                models.append(model_name.split('/')[-1])  # 使用简短名称
-                native_distances.append(stats['native_avg_distance'])
-                english_distances.append(stats['english_avg_distance'])
-                improvements.append(stats['language_improvement'])
-        
-        if not models:
-            print("⚠️ 没有足够的数据生成模型对比图")
-            return
-        
-        # 1. 生成静态对比图
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 8))
-        
-        # 左图：距离对比
-        x = np.arange(len(models))
-        width = 0.35
-        
-        bars1 = ax1.bar(x - width/2, native_distances, width, label='Native Language', 
-                       color='#2E8B57', alpha=0.8, edgecolor='black')
-        bars2 = ax1.bar(x + width/2, english_distances, width, label='English Language', 
-                       color='#4169E1', alpha=0.8, edgecolor='black')
-        
-        # 添加数值标签
-        for bar in bars1:
-            height = bar.get_height()
-            ax1.text(bar.get_x() + bar.get_width()/2., height + 0.01,
-                    f'{height:.3f}', ha='center', va='bottom', fontsize=10)
-        
-        for bar in bars2:
-            height = bar.get_height()
-            ax1.text(bar.get_x() + bar.get_width()/2., height + 0.01,
-                    f'{height:.3f}', ha='center', va='bottom', fontsize=10)
-        
-        ax1.set_xlabel('Models', fontsize=12, fontweight='bold')
-        ax1.set_ylabel('Average Distance to Real Countries', fontsize=12, fontweight='bold')
-        ax1.set_title('Model-Specific Language Performance Comparison\n(Lower Distance = Better Performance)', 
-                     fontsize=14, fontweight='bold')
-        ax1.set_xticks(x)
-        ax1.set_xticklabels(models, rotation=45, ha='right')
-        ax1.legend()
-        ax1.grid(True, alpha=0.3, axis='y')
-        
-        # 右图：改进百分比
-        colors = ['#2E8B57' if imp < 0 else '#4169E1' for imp in improvements]
-        bars3 = ax2.bar(models, improvements, color=colors, alpha=0.8, edgecolor='black')
-        
-        # 添加数值标签
-        for bar, imp in zip(bars3, improvements):
-            height = bar.get_height()
-            ax2.text(bar.get_x() + bar.get_width()/2., height + (0.5 if height > 0 else -0.5),
-                    f'{imp:.1f}%', ha='center', va='bottom' if height > 0 else 'top', fontsize=10)
-        
-        ax2.set_xlabel('Models', fontsize=12, fontweight='bold')
-        ax2.set_ylabel('Language Improvement (%)', fontsize=12, fontweight='bold')
-        ax2.set_title('Language Effectiveness Improvement by Model\n(Positive = English Better, Negative = Native Better)', 
-                     fontsize=14, fontweight='bold')
-        ax2.set_xticklabels(models, rotation=45, ha='right')
-        ax2.axhline(y=0, color='black', linestyle='-', alpha=0.5)
-        ax2.grid(True, alpha=0.3, axis='y')
-        
-        plt.tight_layout()
-        
-        # 保存静态图到dashboard（带时间戳）
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        dashboard_path = self.results_path / "roleplay_ml_dashboard"
-        dashboard_path.mkdir(parents=True, exist_ok=True)
+        # 4. 生成每个模型的语言效果对比图（使用visualization模块）
         save_path = dashboard_path / f"model_specific_language_comparison_{timestamp}.png"
-        plt.savefig(save_path, dpi=300, bbox_inches='tight', facecolor='white')
-        plt.close()
-        print(f"✅ 模型语言对比图已保存到: {save_path.name}")
+        self.visualizer.plot_model_language_comparison(comparison_results, str(save_path))
         
-        # 2. 生成交互式对比图
-        if PLOTLY_AVAILABLE:
-            self._plot_interactive_model_comparison(model_analysis)
-    
-    def _plot_interactive_model_comparison(self, model_analysis):
-        """生成交互式模型对比图"""
-        import plotly.graph_objects as go
-        from plotly.subplots import make_subplots
-        
-        # 准备数据
-        models = []
-        native_distances = []
-        english_distances = []
-        improvements = []
-        native_counts = []
-        english_counts = []
-        
-        for model_name, stats in model_analysis.items():
-            if stats['native_avg_distance'] and stats['english_avg_distance']:
-                models.append(model_name.split('/')[-1])
-                native_distances.append(stats['native_avg_distance'])
-                english_distances.append(stats['english_avg_distance'])
-                improvements.append(stats['language_improvement'])
-                native_counts.append(stats['native_count'])
-                english_counts.append(stats['english_count'])
-        
-        # 创建子图
-        fig = make_subplots(
-            rows=1, cols=2,
-            subplot_titles=('Distance Comparison by Model', 'Language Improvement by Model'),
-            specs=[[{"secondary_y": False}, {"secondary_y": False}]]
-        )
-        
-        # 左图：距离对比
-        fig.add_trace(
-            go.Bar(
-                name='Native Language',
-                x=models,
-                y=native_distances,
-                marker_color='#2E8B57',
-                opacity=0.8,
-                hovertemplate='<b>%{x}</b><br>Native Distance: %{y:.3f}<br>Count: %{customdata}<extra></extra>',
-                customdata=native_counts
-            ),
-            row=1, col=1
-        )
-        
-        fig.add_trace(
-            go.Bar(
-                name='English Language',
-                x=models,
-                y=english_distances,
-                marker_color='#4169E1',
-                opacity=0.8,
-                hovertemplate='<b>%{x}</b><br>English Distance: %{y:.3f}<br>Count: %{customdata}<extra></extra>',
-                customdata=english_counts
-            ),
-            row=1, col=1
-        )
-        
-        # 右图：改进百分比
-        colors = ['#2E8B57' if imp < 0 else '#4169E1' for imp in improvements]
-        fig.add_trace(
-            go.Bar(
-                name='Language Improvement',
-                x=models,
-                y=improvements,
-                marker_color=colors,
-                opacity=0.8,
-                hovertemplate='<b>%{x}</b><br>Improvement: %{y:.1f}%<br>' +
-                             '<i>Positive = English Better<br>Negative = Native Better</i><extra></extra>',
-                showlegend=False
-            ),
-            row=1, col=2
-        )
-        
-        # 更新布局
-        fig.update_layout(
-            title=dict(
-                text='<b>Model-Specific Language Performance Analysis</b>',
-                x=0.5,
-                font=dict(size=18)
-            ),
-            barmode='group',
-            width=1400,
-            height=600,
-            showlegend=True
-        )
-        
-        fig.update_xaxes(title_text="Models", row=1, col=1, tickangle=45)
-        fig.update_yaxes(title_text="Average Distance", row=1, col=1)
-        fig.update_xaxes(title_text="Models", row=1, col=2, tickangle=45)
-        fig.update_yaxes(title_text="Improvement (%)", row=1, col=2)
-        
-        # 添加零线
-        fig.add_hline(y=0, line_dash="dash", line_color="black", opacity=0.5, row=1, col=2)
-        
-        # 保存HTML文件到dashboard（带时间戳）
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        dashboard_path = self.results_path / "roleplay_ml_dashboard"
-        dashboard_path.mkdir(parents=True, exist_ok=True)
-        html_path = dashboard_path / f"interactive_model_language_comparison_{timestamp}.html"
-        fig.write_html(html_path)
-        print(f"✅ 交互式模型语言对比图已保存到: {html_path.name}")
+        # 5. 生成交互式模型对比图（使用visualization模块）
+        model_analysis = comparison_results.get('model_specific_analysis', {})
+        if model_analysis:
+            save_path = dashboard_path / f"interactive_model_language_comparison_{timestamp}.html"
+            self.visualizer.plot_interactive_model_comparison(model_analysis, str(save_path))
     
     def step4_visualization(self, test_type: str = None):
         """步骤4: 综合可视化"""
@@ -1788,7 +877,6 @@ class RoleplayMultilingualAnalysisRunner:
                 print(f"📁 使用最新PCA文件: {entity_scores_path.name}")
             
             # 显示文件时间，帮助验证是否是最新的
-            from datetime import datetime
             file_time = datetime.fromtimestamp(entity_scores_path.stat().st_mtime)
             print(f"   文件时间: {file_time.strftime('%Y-%m-%d %H:%M:%S')}")
             
@@ -1809,30 +897,19 @@ class RoleplayMultilingualAnalysisRunner:
             print("\n2️⃣ 生成修正后的静态文化地图...")
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             type_suffix = f"_{test_type}" if test_type else ""
-            static_map_path = dashboard_path / f"multilingual_cultural_map_corrected{type_suffix}_{timestamp}.png"
-            self._generate_corrected_static_map(entity_scores, static_map_path)
+            
+            # 使用类实例的可视化器生成地图
+            static_map_path = dashboard_path / f"multilingual_cultural_map_{timestamp}.png"
+            self.visualizer.generate_cultural_map_static(entity_scores, str(static_map_path))
             print(f"✅ 修正后的静态文化地图已保存到: {static_map_path.name}")
             
-            # 生成修正后的交互式HTML地图
+            # 生成修正后的交互式HTML地图（使用visualization模块）
             print("\n3️⃣ 生成修正后的交互式HTML地图...")
             interactive_map_path = dashboard_path / f"multilingual_cultural_map_interactive_fixed{type_suffix}_{timestamp}.html"
-            self._generate_corrected_interactive_map(entity_scores, interactive_map_path)
-            print(f"✅ 修正后的交互式地图已保存到: {interactive_map_path.name}")
-            
-            # 初始化可视化器（用于其他图表）
-            print("\n4️⃣ 生成其他分析图表...")
-            visualizer = MultilingualRoleplayVisualizer(
-                data_path=str(self.data_path),
-                results_path=str(self.results_path)
-            )
-            
-            # 生成语言对比图
-            language_comparison_path = dashboard_path / f"language_model_comparison_{timestamp}.png"
-            visualizer.plot_language_comparison(data=entity_scores, save_path=str(language_comparison_path))
-            print(f"✅ 语言对比图已保存到: {language_comparison_path.name}")
+            self.visualizer.generate_cultural_map_interactive(entity_scores, str(interactive_map_path))
             
             # 分析多语言准确性
-            print("\n5️⃣ 生成多语言统计...")
+            print("\n4️⃣ 生成多语言统计...")
             accuracy_analysis = {
                 'timestamp': timestamp,
                 'total_entities': len(entity_scores),
@@ -1912,442 +989,329 @@ class RoleplayMultilingualAnalysisRunner:
             traceback.print_exc()
             return False
     
-    def _generate_corrected_static_map(self, entity_scores, save_path):
-        """生成修正后的静态文化地图"""
-        # 分离数据
-        ivs_data = entity_scores[entity_scores['data_source'] == 'IVS'].copy()
-        multilingual_data = entity_scores[entity_scores['data_source'] == 'Multilingual'].copy()
+    def run_complete_analysis(self, skip_interview=False):
+        """运行完整分析流程"""
+        print("🚀 开始Roleplay Multilingual完整分析流程...")
+        print(f"⏰ 开始时间: {datetime.now()}")
         
-        # 🔥 关键修复：聚合IVS数据（按国家取平均，避免多个年份的重复）
-        if len(ivs_data) > 0:
-            print(f"   聚合前IVS数据: {len(ivs_data)} 行")
-            # 按Country或country_code聚合（取PC1_rescaled和PC2_rescaled的平均值）
-            group_col = 'Country' if 'Country' in ivs_data.columns else 'country_code'
-            ivs_data = ivs_data.groupby(group_col).agg({
-                'PC1_rescaled': 'mean',
-                'PC2_rescaled': 'mean',
-                'Cultural Region': 'first',  # 取第一个值（都一样）
-                'data_source': 'first'
-            }).reset_index()
-            print(f"   聚合后IVS数据: {len(ivs_data)} 个国家")
+        success_steps = []
         
-        # 设置图形样式
-        plt.style.use('default')
-        fig, ax = plt.subplots(1, 1, figsize=(18, 14))
+        # 步骤0: 多语言角色扮演访谈（可选）
+        if not skip_interview:
+            print("\n💡 提示: 如果已有访谈数据，可以跳过访谈步骤")
+            if self.step0_multilingual_interview():
+                success_steps.append("多语言角色扮演访谈")
+            else:
+                print("❌ 多语言访谈失败，但可能已有数据，继续后续步骤")
+        else:
+            print("⏭️ 跳过访谈步骤，使用现有数据")
         
-        # 文化区域颜色映射（与base保持一致）
-        cultural_region_colors = {
-            'African-Islamic': '#cc79a7',      # 粉红色
-            'Orthodox Europe': '#0072b2',      # 深蓝
-            'Catholic Europe': '#e69f00',      # 橙色
-            'Latin America': '#7f7f7f',        # 中灰色 (修复：与base一致)
-            'West & South Asia': '#f0e442',    # 黄色
-            'Confucian': '#cc0000',            # 鲜红色 (修复：与base一致)
-            'Protestant Europe': '#d55e00',    # 深橙红 (修复：与base一致)
-            'English-Speaking': '#009e73'      # 青绿色
-        }
+        # 步骤1: 多语言数据处理
+        if self.step1_data_processing():
+            success_steps.append("多语言数据处理")
         
-        # 绘制IVS国家（背景）- 已聚合的数据
-        if len(ivs_data) > 0 and 'Cultural Region' in ivs_data.columns:
-            regions = ivs_data['Cultural Region'].dropna().unique()
-            
-            for region in regions:
-                if region in cultural_region_colors:
-                    region_data = ivs_data[ivs_data['Cultural Region'] == region]
-                    ax.scatter(
-                        region_data['PC1_rescaled'], 
-                        region_data['PC2_rescaled'],
-                        c=cultural_region_colors[region], 
-                        alpha=0.7, 
-                        s=80, 
-                        label=f'{region} ({len(region_data)} countries)',
-                        marker='o',
-                        edgecolors='white',
-                        linewidth=1
-                    )
+        # 步骤2: PCA分析
+        if self.step2_pca_analysis():
+            success_steps.append("PCA分析")
         
-        # 绘制多语言数据（前景）- 按模型和语言分组
-        if len(multilingual_data) > 0 and 'model_name' in multilingual_data.columns and 'language' in multilingual_data.columns:
-            print(f"   多语言数据: {len(multilingual_data)} 个实体")
-            # 获取所有模型和语言
-            models = sorted(multilingual_data['model_name'].dropna().unique())
-            languages = sorted(multilingual_data['language'].dropna().unique())
-            print(f"   模型数: {len(models)}, 语言数: {len(languages)}")
-            
-            # 模型颜色映射
-            model_colors = {
-                'deepseek/deepseek-chat-v3-0324': '#E74C3C',
-                'google/gemini-2.0-flash-001': '#3498DB', 
-                'meta-llama/llama-3.3-70b-instruct': '#9B59B6',
-                'mistralai/mistral-nemo': '#F39C12',
-                'openai/gpt-4o-mini': '#2ECC71',
-                'qwen/qwq-32b': '#E67E22'
-            }
-            
-            # 语言标记映射
-            language_markers = {'english': 'o', 'native': 'D'}
-            
-            for model in models:
-                model_short = model.split('/')[-1] if '/' in model else model
-                model_color = model_colors.get(model, '#95A5A6')
-                
-                for lang in languages:
-                    model_lang_data = multilingual_data[
-                        (multilingual_data['model_name'] == model) & 
-                        (multilingual_data['language'] == lang)
-                    ]
-                    
-                    if len(model_lang_data) > 0:
-                        # 根据语言调整透明度和大小
-                        alpha = 0.8 if lang == 'english' else 0.6
-                        size = 60 if lang == 'english' else 40
-                        
-                        # 改进的重复坐标处理：全局检测并添加偏移
-                        coords_data = model_lang_data[['PC1_rescaled', 'PC2_rescaled']].copy()
-                        
-                        import numpy as np
-                        
-                        # 为每个数据点检查全局重复情况
-                        for idx in coords_data.index:
-                            current_x = round(coords_data.loc[idx, 'PC1_rescaled'], 6)
-                            current_y = round(coords_data.loc[idx, 'PC2_rescaled'], 6)
-                            
-                            # 检查与所有多语言数据的重复情况
-                            global_duplicates = multilingual_data[
-                                (multilingual_data['PC1_rescaled'].round(6) == current_x) & 
-                                (multilingual_data['PC2_rescaled'].round(6) == current_y)
-                            ]
-                            
-                            if len(global_duplicates) > 1:
-                                # 使用基于数据点信息的确定性偏移
-                                current_row = model_lang_data.loc[idx]
-                                
-                                # 创建唯一标识符用于确定性偏移
-                                identifier = f"{current_row['country_code']}_{current_row['model_name']}_{current_row['language']}"
-                                hash_val = hash(identifier) % 1000
-                                
-                                # 使用更大的偏移量和圆形分布
-                                offset_factor = 0.15  # 增加偏移量使点更明显分离
-                                angle = (hash_val * 137.5) % 360  # 黄金角度分布
-                                
-                                offset_x = offset_factor * np.cos(np.radians(angle))
-                                offset_y = offset_factor * np.sin(np.radians(angle))
-                                
-                                coords_data.loc[idx, 'PC1_rescaled'] += offset_x
-                                coords_data.loc[idx, 'PC2_rescaled'] += offset_y
-                        
-                        ax.scatter(
-                            coords_data['PC1_rescaled'], 
-                            coords_data['PC2_rescaled'],
-                            c=model_color, 
-                            alpha=alpha, 
-                            s=size, 
-                            label=f'{model_short} ({lang.title()})',
-                            marker=language_markers.get(lang, 'o'),
-                            edgecolors='black',
-                            linewidth=0.8
-                        )
+        # 步骤3: 英文vs本国语言对比分析
+        if self.step3_language_comparison():
+            success_steps.append("英文vs本国语言对比分析")
         
-        # 修正坐标轴标签（按照llm_values的正确设置）
-        ax.set_xlabel('PC1: Survival vs Self-Expression Values', fontsize=16, fontweight='bold')
-        ax.set_ylabel('PC2: Traditional vs Secular-Rational Values', fontsize=16, fontweight='bold')
-        ax.set_title('Cultural Values Map: Multilingual LLM Roleplay vs Real Countries\\n(Inglehart-Welzel Framework)', 
-                     fontsize=20, fontweight='bold', pad=25)
+        # 步骤4: 综合可视化
+        if self.step4_visualization():
+            success_steps.append("综合可视化")
         
-        # 添加网格和坐标轴
-        ax.grid(True, alpha=0.3, linestyle='--')
-        ax.axhline(y=0, color='black', linestyle='-', alpha=0.4, linewidth=1)
-        ax.axvline(x=0, color='black', linestyle='-', alpha=0.4, linewidth=1)
+        # 打印完成总结
+        print("\n" + "="*60)
+        print("🎉 Roleplay Multilingual分析完成!")
+        print("="*60)
+        print(f"✅ 成功完成的步骤: {', '.join(success_steps)}")
+        print(f"📁 数据文件位置: {self.data_path}")
+        print(f"📁 结果文件位置: {self.results_path}")
+        print(f"⏰ 完成时间: {datetime.now()}")
         
-        # 添加象限标签（修正后的标签）
-        quadrant_style = dict(boxstyle='round,pad=0.5', facecolor='white', alpha=0.8, edgecolor='gray')
-        ax.text(0.02, 0.98, 'Self-Expression\\n& Secular-Rational', 
-                transform=ax.transAxes, fontsize=12, ha='left', va='top', bbox=quadrant_style)
-        ax.text(0.02, 0.02, 'Survival\\n& Secular-Rational', 
-                transform=ax.transAxes, fontsize=12, ha='left', va='bottom', bbox=quadrant_style)
-        ax.text(0.98, 0.98, 'Self-Expression\\n& Traditional', 
-                transform=ax.transAxes, fontsize=12, ha='right', va='top', bbox=quadrant_style)
-        ax.text(0.98, 0.02, 'Survival\\n& Traditional', 
-                transform=ax.transAxes, fontsize=12, ha='right', va='bottom', bbox=quadrant_style)
+        # 显示生成的文件
+        print("\n📋 生成的文件:")
         
-        # 添加图例
-        legend = ax.legend(bbox_to_anchor=(1.02, 1), loc='upper left', fontsize=10, 
-                           title='Cultural Regions & Languages', title_fontsize=12,
-                           frameon=True, fancybox=True, shadow=True)
-        legend.get_frame().set_facecolor('white')
-        legend.get_frame().set_alpha(0.95)
+        # 访谈数据文件
+        interview_files = list(self.data_path.glob("interview_data_*.json"))
+        if interview_files:
+            print("\n🎤 访谈数据文件 (data/roleplay_multilingual/):")
+            for file_path in sorted(interview_files, key=lambda x: x.stat().st_mtime, reverse=True)[:3]:
+                print(f"  ✅ {file_path.name}")
         
-        # 调整布局
-        plt.tight_layout()
-        
-        # 保存图片
-        plt.savefig(save_path, dpi=300, bbox_inches='tight', facecolor='white')
-        plt.close()
-    
-    def _generate_corrected_interactive_map(self, entity_scores, save_path):
-        """生成修正后的交互式HTML地图"""
-        if not PLOTLY_AVAILABLE:
-            print("⚠️ plotly未安装，跳过交互式地图生成")
-            return
-        # 分离数据
-        ivs_data = entity_scores[entity_scores['data_source'] == 'IVS'].copy()
-        multilingual_data = entity_scores[entity_scores['data_source'] == 'Multilingual'].copy()
-        
-        # 🔥 关键修复：聚合IVS数据（按国家取平均，避免多个年份的重复）
-        if len(ivs_data) > 0:
-            print(f"   聚合前IVS数据: {len(ivs_data)} 行")
-            # 按Country或country_code聚合
-            group_col = 'Country' if 'Country' in ivs_data.columns else 'country_code'
-            ivs_data = ivs_data.groupby(group_col).agg({
-                'PC1_rescaled': 'mean',
-                'PC2_rescaled': 'mean',
-                'Cultural Region': 'first',
-                'data_source': 'first'
-            }).reset_index()
-            print(f"   聚合后IVS数据: {len(ivs_data)} 个国家")
-        
-        # 创建交互式图表
-        fig = go.Figure()
-        
-        # 文化区域颜色映射（与base保持一致）
-        cultural_region_colors = {
-            'African-Islamic': '#cc79a7',      # 粉红色
-            'Orthodox Europe': '#0072b2',      # 深蓝
-            'Catholic Europe': '#e69f00',      # 橙色
-            'Latin America': '#7f7f7f',        # 中灰色 (修复：与base一致)
-            'West & South Asia': '#f0e442',    # 黄色
-            'Confucian': '#cc0000',            # 鲜红色 (修复：与base一致)
-            'Protestant Europe': '#d55e00',    # 深橙红 (修复：与base一致)
-            'English-Speaking': '#009e73'      # 青绿色
-        }
-        
-        # 添加文化区域分组标题
-        fig.add_trace(go.Scatter(
-            x=[None], y=[None],
-            mode='markers',
-            marker=dict(size=0, color='rgba(0,0,0,0)'),
-            name='<b>🌍 Cultural Regions (Real Countries)</b>',
-            showlegend=True,
-            hoverinfo='skip'
-        ))
-        
-        # 添加IVS国家数据
-        if len(ivs_data) > 0 and 'Cultural Region' in ivs_data.columns:
-            regions = sorted(ivs_data['Cultural Region'].dropna().unique())
-            
-            for region in regions:
-                if region in cultural_region_colors:
-                    region_data = ivs_data[ivs_data['Cultural Region'] == region]
-                    
-                    # 创建hover文本
-                    hover_text = []
-                    for _, row in region_data.iterrows():
-                        country_name = row.get('Country', 'Unknown')
-                        if pd.isna(country_name):
-                            country_name = f'Country {row.get("country_code", "Unknown")}'
-                        
-                        hover_text.append(
-                            f'<b>{country_name}</b><br>' +
-                            f'Region: {region}<br>' +
-                            f'PC1 (Survival↔Self-Expression): {row["PC1_rescaled"]:.2f}<br>' +
-                            f'PC2 (Traditional↔Secular): {row["PC2_rescaled"]:.2f}<br>' +
-                            f'Source: Real Country (IVS)'
-                        )
-                    
-                    fig.add_trace(go.Scatter(
-                        x=region_data['PC1_rescaled'],
-                        y=region_data['PC2_rescaled'],
-                        mode='markers',
-                        marker=dict(
-                            color=cultural_region_colors[region],
-                            size=12,
-                            opacity=0.8,
-                            line=dict(width=1, color='white'),
-                            symbol='circle'
-                        ),
-                        name=f'  • {region} ({len(region_data)})',
-                        text=hover_text,
-                        hovertemplate='%{text}<extra></extra>',
-                    ))
-        
-        # 添加多语言分组标题
-        fig.add_trace(go.Scatter(
-            x=[None], y=[None],
-            mode='markers',
-            marker=dict(size=0, color='rgba(0,0,0,0)'),
-            name='<b>🌐 Multilingual LLM (Roleplay)</b>',
-            showlegend=True,
-            hoverinfo='skip'
-        ))
-        
-        # 添加多语言数据 - 按模型和语言分组
-        if len(multilingual_data) > 0 and 'model_name' in multilingual_data.columns and 'language' in multilingual_data.columns:
-            # 获取所有模型和语言
-            models = sorted(multilingual_data['model_name'].dropna().unique())
-            languages = sorted(multilingual_data['language'].dropna().unique())
-            
-            # 模型颜色映射
-            model_colors = {
-                'deepseek/deepseek-chat-v3-0324': '#E74C3C',
-                'google/gemini-2.0-flash-001': '#3498DB', 
-                'meta-llama/llama-3.3-70b-instruct': '#9B59B6',
-                'mistralai/mistral-nemo': '#F39C12',
-                'openai/gpt-4o-mini': '#2ECC71',
-                'qwen/qwq-32b': '#E67E22'
-            }
-            
-            # 语言符号映射
-            language_symbols = {'english': 'circle', 'native': 'diamond'}
-            
-            for model in models:
-                model_short = model.split('/')[-1] if '/' in model else model
-                model_color = model_colors.get(model, '#95A5A6')
-                
-                for lang in languages:
-                    model_lang_data = multilingual_data[
-                        (multilingual_data['model_name'] == model) & 
-                        (multilingual_data['language'] == lang)
-                    ]
-                    
-                    if len(model_lang_data) > 0:
-                        # 创建hover文本
-                        hover_text = []
-                        for _, row in model_lang_data.iterrows():
-                            country_name = row.get('country_code', 'Unknown')
-                            
-                            hover_text.append(
-                                f'<b>{country_name}</b><br>' +
-                                f'Model: {model_short}<br>' +
-                                f'Language: {lang.title()}<br>' +
-                                f'PC1 (Survival↔Self-Expression): {row["PC1_rescaled"]:.2f}<br>' +
-                                f'PC2 (Traditional↔Secular): {row["PC2_rescaled"]:.2f}<br>' +
-                                f'Source: Multilingual LLM'
-                            )
-                        
-                        # 根据语言调整透明度
-                        opacity = 0.8 if lang == 'english' else 0.6
-                        size = 8 if lang == 'english' else 6
-                        
-                        # 改进的重复坐标处理：全局检测并添加偏移
-                        coords_data = model_lang_data[['PC1_rescaled', 'PC2_rescaled']].copy()
-                        
-                        import numpy as np
-                        
-                        # 为每个数据点检查全局重复情况
-                        for idx in coords_data.index:
-                            current_x = round(coords_data.loc[idx, 'PC1_rescaled'], 6)
-                            current_y = round(coords_data.loc[idx, 'PC2_rescaled'], 6)
-                            
-                            # 检查与所有多语言数据的重复情况
-                            global_duplicates = multilingual_data[
-                                (multilingual_data['PC1_rescaled'].round(6) == current_x) & 
-                                (multilingual_data['PC2_rescaled'].round(6) == current_y)
-                            ]
-                            
-                            if len(global_duplicates) > 1:
-                                # 使用基于数据点信息的确定性偏移
-                                current_row = model_lang_data.loc[idx]
-                                
-                                # 创建唯一标识符用于确定性偏移
-                                identifier = f"{current_row['country_code']}_{current_row['model_name']}_{current_row['language']}"
-                                hash_val = hash(identifier) % 1000
-                                
-                                # 使用更大的偏移量和圆形分布
-                                offset_factor = 0.15  # 增加偏移量使点更明显分离
-                                angle = (hash_val * 137.5) % 360  # 黄金角度分布
-                                
-                                offset_x = offset_factor * np.cos(np.radians(angle))
-                                offset_y = offset_factor * np.sin(np.radians(angle))
-                                
-                                coords_data.loc[idx, 'PC1_rescaled'] += offset_x
-                                coords_data.loc[idx, 'PC2_rescaled'] += offset_y
-                        
-                        fig.add_trace(go.Scatter(
-                            x=coords_data['PC1_rescaled'],
-                            y=coords_data['PC2_rescaled'],
-                            mode='markers',
-                            marker=dict(
-                                color=model_color,
-                                size=size,
-                                opacity=opacity,
-                                symbol=language_symbols.get(lang, 'circle'),
-                                line=dict(width=1, color='black')
-                            ),
-                            name=f'  🤖 {model_short} ({lang.title()}) ({len(model_lang_data)})',
-                            text=hover_text,
-                            hovertemplate='%{text}<extra></extra>',
-                        ))
-        
-        # 添加坐标轴线
-        fig.add_hline(y=0, line_dash='dash', line_color='gray', opacity=0.5)
-        fig.add_vline(x=0, line_dash='dash', line_color='gray', opacity=0.5)
-        
-        # 设置布局
-        fig.update_layout(
-            title=dict(
-                text='<b>Cultural Values Map: Multilingual LLM Roleplay vs Real Countries</b><br>' +
-                     '<sub>Inglehart-Welzel Framework • Independent Legend Control</sub>',
-                x=0.5,
-                font=dict(size=20)
-            ),
-            xaxis=dict(
-                title='<b>PC1: Survival vs Self-Expression Values</b>',
-                titlefont=dict(size=14),
-                showgrid=True,
-                gridwidth=1,
-                gridcolor='lightgray'
-            ),
-            yaxis=dict(
-                title='<b>PC2: Traditional vs Secular-Rational Values</b>',
-                titlefont=dict(size=14),
-                showgrid=True,
-                gridwidth=1,
-                gridcolor='lightgray'
-            ),
-            width=1500,
-            height=900,
-            showlegend=True,
-            legend=dict(
-                orientation='v',
-                yanchor='top',
-                y=1,
-                xanchor='left',
-                x=1.02,
-                font=dict(size=11),
-                bgcolor='rgba(255,255,255,0.95)',
-                bordercolor='gray',
-                borderwidth=1,
-                itemsizing='constant'
-            ),
-            plot_bgcolor='white',
-            paper_bgcolor='white',
-            margin=dict(r=300)
-        )
-        
-        # 添加象限注释
-        annotations = [
-            dict(x=0.02, y=0.98, xref='paper', yref='paper',
-                 text='<b>Self-Expression<br>& Secular-Rational</b>',
-                 showarrow=False, font=dict(size=12), 
-                 bgcolor='rgba(255,255,255,0.8)', bordercolor='gray'),
-            dict(x=0.02, y=0.02, xref='paper', yref='paper',
-                 text='<b>Survival<br>& Secular-Rational</b>',
-                 showarrow=False, font=dict(size=12),
-                 bgcolor='rgba(255,255,255,0.8)', bordercolor='gray'),
-            dict(x=0.75, y=0.98, xref='paper', yref='paper',
-                 text='<b>Self-Expression<br>& Traditional</b>',
-                 showarrow=False, font=dict(size=12),
-                 bgcolor='rgba(255,255,255,0.8)', bordercolor='gray'),
-            dict(x=0.75, y=0.02, xref='paper', yref='paper',
-                 text='<b>Survival<br>& Traditional</b>',
-                 showarrow=False, font=dict(size=12),
-                 bgcolor='rgba(255,255,255,0.8)', bordercolor='gray')
+        # 数据文件
+        data_files = [
+            "multilingual_roleplay_processed_responses_ivs_format.pkl",
+            "multilingual_entity_scores_pca_fixed.pkl", 
+            "multilingual_entity_scores_pca_fixed.json"
         ]
+        print("\n📊 处理后数据文件 (data/roleplay_multilingual/):")
+        for file_name in data_files:
+            file_path = self.data_path / file_name
+            if file_path.exists():
+                print(f"  ✅ {file_name}")
+            else:
+                print(f"  ❌ {file_name}")
         
-        fig.update_layout(annotations=annotations)
+        # 结果文件
+        result_files = [
+            "multilingual_cultural_map_corrected.png", 
+            "multilingual_cultural_map_interactive_fixed.html",
+            "language_distance_comparison.png",
+            "country_level_language_comparison.png",
+            "interactive_language_comparison.html",
+            "language_comparison_analysis.json",
+            "language_model_comparison.png",
+            "multilingual_accuracy_analysis.json", 
+            "summary_statistics.txt", 
+            "multilingual_cultural_coordinates.json"
+        ]
+        print("\n🎨 结果文件 (results/roleplay_multilingual/):")
+        for file_name in result_files:
+            file_path = self.results_path / file_name
+            if file_path.exists():
+                print(f"  ✅ {file_name}")
+            else:
+                print(f"  ❌ {file_name}")
         
-        # 保存HTML文件
-        fig.write_html(save_path)
+        return len(success_steps) >= 3
+    
+    def run_interview_only(self):
+        """仅运行访谈步骤"""
+        print("🎤 仅运行多语言角色扮演访谈...")
+        print(f"⏰ 开始时间: {datetime.now()}")
+        
+        success = self.step0_multilingual_interview()
+        
+        print("\n" + "="*60)
+        if success:
+            print("✅ 多语言访谈成功完成!")
+        else:
+            print("❌ 多语言访谈失败!")
+        print("="*60)
+        print(f"⏰ 完成时间: {datetime.now()}")
+        
+        return success
+    
+    def _run_small_scale_test_with_full_pipeline(self):
+        """运行小规模测试并完成整个分析流程"""
+        try:
+            # 动态读取配置文件
+            config_path = self.project_root / "config" / "questions" / "multilingual" / "small_scale_test_config.json"
+            
+            if config_path.exists():
+                with open(config_path, 'r', encoding='utf-8') as f:
+                    config_data = json.load(f)
+                test_config = config_data.get('small_scale_test', {})
+                
+                models = test_config.get('models', [])
+                countries_config = test_config.get('countries', [])
+                consensus_count = test_config.get('consensus_count', 3)
+                
+                # 计算语言-国家组合数
+                language_country_pairs = []
+                for country_info in countries_config:
+                    country = country_info.get('country', '')
+                    languages = country_info.get('languages', [])
+                    for lang in languages:
+                        language_country_pairs.append(f"{country}({lang})")
+                
+                num_pairs = len(language_country_pairs)
+                num_models = len(models)
+                
+                print(f"🧪 开始小规模测试 ({num_models}模型×{num_pairs}语言组合×{consensus_count}重复)")
+                print(f"   配置: {', '.join(language_country_pairs)}")
+            else:
+                # 使用默认配置
+                num_pairs = 9
+                num_models = 3
+                consensus_count = 3
+                print(f"⚠️ 配置文件不存在: {config_path}")
+                print("🧪 开始小规模测试 (3模型×5国家×各语言组合×3重复，使用默认配置)")
+                print("   国家：Egypt(阿语+英), China(中文+英), Mexico(西语+英), Russia(俄语+英), USA(英)")
+            
+            # 动态计算统计
+            total_tasks = num_pairs * num_models
+            total_calls = total_tasks * 10 * consensus_count
+            estimated_cost = total_calls * 0.0006
+            estimated_hours_min = (total_tasks / 8) * (10 / 60)
+            estimated_hours_max = (total_tasks / 8) * (20 / 60)
+            
+            print(f"\n📊 预估统计:")
+            print(f"   - 语言-国家组合: {num_pairs}个")
+            print(f"   - 模型数量: {num_models}个")
+            print(f"   - 总任务数: {total_tasks}个 ({num_pairs}组合 × {num_models}模型)")
+            print(f"   - 共识轮数: {consensus_count}轮/任务")
+            print(f"   - 总API调用: {total_calls:,}次 ({total_tasks}任务 × 10问题 × {consensus_count}轮)")
+            print(f"   - 预估费用: ${estimated_cost:.2f} (混合模型平均价)")
+            print(f"   - 预估时间: {estimated_hours_min:.1f}-{estimated_hours_max:.1f}小时 (并发8)")
+            
+            confirm = input("\n确认继续? (y/N): ").strip().lower()
+            if confirm != 'y':
+                print("❌ 用户取消")
+                return False
+            
+            # 运行访谈
+            if self._run_multilingual_interview_with_config("small_scale"):
+                # 继续后续步骤
+                return self._run_full_analysis_pipeline("small_scale")
+            else:
+                return False
+                
+        except Exception as e:
+            print(f"❌ 小规模测试失败: {e}")
+            import traceback
+            traceback.print_exc()
+            return False
+
+    def step4_visualization(self, test_type: str = None):
+        """步骤4: 综合可视化"""
+        print("\n" + "="*60)
+        print("🎨 步骤4: 综合可视化")
+        print("="*60)
+        
+        # 创建dashboard目录（与Stage2一致）
+        dashboard_path = self.results_path / "roleplay_ml_dashboard"
+        dashboard_path.mkdir(parents=True, exist_ok=True)
+        print(f"📁 可视化保存到: {dashboard_path}")
+        
+        try:
+            # 查找最新的PCA结果文件
+            # 优先使用_latest.pkl（最可靠）
+            latest_file = self.data_path / "roleplay_ml_pca_entity_scores_latest.pkl"
+            if latest_file.exists():
+                entity_scores_path = latest_file
+                print(f"📁 使用最新PCA文件: {entity_scores_path.name}")
+            else:
+                # 回退：查找新格式的带时间戳文件（不使用test_type过滤）
+                pca_files = list(self.data_path.glob("roleplay_ml_pca_entity_scores_*.pkl"))
+                if not pca_files:
+                    # 最后回退：兼容旧格式
+                    pca_files = list(self.data_path.glob("multilingual_entity_scores_pca_fixed_*.pkl"))
+                    if pca_files:
+                        print("⚠️ 发现旧格式PCA文件，建议重新运行PCA分析")
+                
+                if not pca_files:
+                    print(f"❌ 未找到PCA结果文件")
+                    print(f"请先运行步骤2进行PCA分析")
+                    return False
+                
+                entity_scores_path = max(pca_files, key=lambda x: x.stat().st_mtime)
+                print(f"📁 使用最新PCA文件: {entity_scores_path.name}")
+            
+            # 显示文件时间，帮助验证是否是最新的
+            file_time = datetime.fromtimestamp(entity_scores_path.stat().st_mtime)
+            print(f"   文件时间: {file_time.strftime('%Y-%m-%d %H:%M:%S')}")
+            
+            # 加载修复后的实体分数数据
+            print("\n1️⃣ 加载修复后的实体分数数据...")
+            entity_scores = pd.read_pickle(entity_scores_path)
+            print(f"✅ 成功加载实体分数数据: {len(entity_scores)} 个实体")
+            
+            # 验证数据质量
+            ivs_data = entity_scores[entity_scores['data_source'] == 'IVS']
+            multilingual_data = entity_scores[entity_scores['data_source'] == 'Multilingual']
+            print(f"   - IVS国家: {len(ivs_data)} 个")
+            print(f"   - 多语言实体: {len(multilingual_data)} 个")
+            if len(ivs_data) > 0 and 'Country' in ivs_data.columns:
+                print(f"   - 有效国家名称: {ivs_data['Country'].notna().sum()}/{len(ivs_data)}")
+            
+            # 生成修正后的高质量静态文化地图
+            print("\n2️⃣ 生成修正后的静态文化地图...")
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            type_suffix = f"_{test_type}" if test_type else ""
+            # 使用类实例的可视化器生成地图
+            static_map_path = dashboard_path / f"multilingual_cultural_map_{timestamp}.png"
+            self.visualizer.generate_cultural_map_static(entity_scores, str(static_map_path))
+            print(f"✅ 修正后的静态文化地图已保存到: {static_map_path.name}")
+            
+            # 生成修正后的交互式HTML地图（使用visualization模块）
+            print("\n3️⃣ 生成修正后的交互式HTML地图...")
+            interactive_map_path = dashboard_path / f"multilingual_cultural_map_interactive_fixed{type_suffix}_{timestamp}.html"
+            self.visualizer.generate_cultural_map_interactive(entity_scores, str(interactive_map_path))
+            
+            # 分析多语言准确性
+            print("\n4️⃣ 生成多语言统计...")
+            accuracy_analysis = {
+                'timestamp': timestamp,
+                'total_entities': len(entity_scores),
+                'multilingual_entities': len(multilingual_data),
+                'ivs_entities': len(ivs_data),
+                'pc1_range': [float(entity_scores['PC1_rescaled'].min()), float(entity_scores['PC1_rescaled'].max())],
+                'pc2_range': [float(entity_scores['PC2_rescaled'].min()), float(entity_scores['PC2_rescaled'].max())]
+            }
+            
+            # 保存准确性分析结果
+            accuracy_analysis_path = dashboard_path / f"multilingual_accuracy_analysis_{timestamp}.json"
+            with open(accuracy_analysis_path, 'w', encoding='utf-8') as f:
+                json.dump(accuracy_analysis, f, indent=2, ensure_ascii=False)
+            print(f"✅ 多语言准确性分析已保存到: {accuracy_analysis_path.name}")
+            
+            # 生成汇总统计
+            print("\n6️⃣ 生成汇总统计...")
+            summary_stats = {
+                'total_entities': len(entity_scores),
+                'ivs_countries': len(ivs_data),
+                'multilingual_entries': len(multilingual_data),
+                'pc1_range': [entity_scores['PC1_rescaled'].min(), entity_scores['PC2_rescaled'].max()],
+                'pc2_range': [entity_scores['PC2_rescaled'].min(), entity_scores['PC2_rescaled'].max()]
+            }
+            
+            # 保存汇总统计到文件
+            summary_path = dashboard_path / f"summary_statistics_{timestamp}.txt"
+            with open(summary_path, 'w', encoding='utf-8') as f:
+                f.write("Roleplay Multilingual Analysis Summary\n")
+                f.write("="*50 + "\n\n")
+                f.write(f"Total entities: {summary_stats['total_entities']}\n\n")
+                
+                if 'data_source' in entity_scores.columns:
+                    f.write("Entities by Data Source:\n")
+                    source_counts = entity_scores['data_source'].value_counts()
+                    for source, count in source_counts.items():
+                        f.write(f"  {source}: {count}\n")
+                    f.write("\n")
+                
+                if 'language' in entity_scores.columns:
+                    multilingual_data = entity_scores[entity_scores['data_source'] == 'Multilingual']
+                    if len(multilingual_data) > 0:
+                        f.write("Language Distribution:\n")
+                        lang_counts = multilingual_data['language'].value_counts()
+                        for lang, count in lang_counts.items():
+                            f.write(f"  {lang}: {count}\n")
+                        f.write("\n")
+                
+                if 'model_name' in entity_scores.columns:
+                    multilingual_data = entity_scores[entity_scores['data_source'] == 'Multilingual']
+                    if len(multilingual_data) > 0:
+                        f.write("Multilingual Models:\n")
+                        model_counts = multilingual_data['model_name'].value_counts()
+                        for model, count in model_counts.items():
+                            f.write(f"  {model}: {count}\n")
+                        f.write("\n")
+                
+                f.write("Principal Component Statistics:\n")
+                f.write(f"PC1 range: [{summary_stats['pc1_range'][0]:.2f}, {summary_stats['pc1_range'][1]:.2f}]\n")
+                f.write(f"PC2 range: [{summary_stats['pc2_range'][0]:.2f}, {summary_stats['pc2_range'][1]:.2f}]\n\n")
+                
+                f.write("Accuracy Analysis:\n")
+                f.write(str(accuracy_analysis))
+            
+            print(f"✅ 汇总统计已保存到: {summary_path.name}")
+            
+            # 保存文化坐标数据到dashboard目录
+            cultural_coordinates_path = dashboard_path / f"multilingual_cultural_coordinates_{timestamp}.json"
+            entity_scores.to_json(cultural_coordinates_path, orient='records', indent=2)
+            print(f"✅ 文化坐标数据已保存到: {cultural_coordinates_path.name}")
+            
+            return True
+            
+        except Exception as e:
+            print(f"❌ 可视化失败: {e}")
+            import traceback
+            traceback.print_exc()
+            return False
     
     def run_complete_analysis(self, skip_interview=False):
         """运行完整分析流程"""
@@ -2468,28 +1432,98 @@ class RoleplayMultilingualAnalysisRunner:
     def _run_comprehensive_test_with_full_pipeline(self):
         """使用配置文件运行测试并完成整个分析流程"""
         try:
-            # 使用comprehensive_multilingual_config.json配置
-            config_file = self.project_root / "comprehensive_multilingual_config.json"
-            if config_file.exists():
-                with open(config_file, 'r', encoding='utf-8') as f:
-                    config = json.load(f)
-                test_config = config.get('comprehensive_test_config', {})
-                task_calc = test_config.get('task_calculation', {})
-                language_country_pairs = task_calc.get('total_language_country_pairs', 59)
-                total_countries = task_calc.get('total_countries', 32)
-                total_models = task_calc.get('total_models', 7)
-                repeat_count = test_config.get('repeat_count', 5)
-            else:
-                # 默认值（完整测试）
-                # 27个非英语国家×2语言 + 5个英语母语国家×1语言 = 59个语言-国家对
-                language_country_pairs = 59
-                total_countries = 32
-                total_models = 7
-                repeat_count = 5
+            from src.roleplay_multilingual.multilingual_roleplay_interview import MultilingualRoleplayInterview
             
-            print(f"🚀 开始完整测试 (32国家×7模型×5轮)")
-            print(f"   - 27个非英语国家（各自母语+英语）")
-            print(f"   - 5个英语母语国家（仅英语）")
+            # 询问使用哪个语言配置文件
+            print("\n选择语言配置文件:")
+            print("  1. multilingual_questions_complete.json (完整配置，所有语言所有国家)")
+            print("  2. multilingual_questions_test.json (测试配置，每个语言1个国家)")
+            
+            lang_config_choice = input("\n请选择 (1-2，默认1): ").strip() or "1"
+            
+            lang_config_files = {
+                "1": "multilingual_questions_complete.json",
+                "2": "multilingual_questions_test.json"
+            }
+            
+            lang_config_file = lang_config_files.get(lang_config_choice, "multilingual_questions_complete.json")
+            print(f"✅ 使用语言配置文件: {lang_config_file}")
+            
+            # 统一使用选择的配置文件
+            config_path = self.project_root / "config" / "questions" / "multilingual" / lang_config_file
+            if not config_path.exists():
+                print(f"❌ 找不到配置文件: {config_path}")
+                return False
+            
+            with open(config_path, 'r', encoding='utf-8') as f:
+                try:
+                    config_data = json.load(f)
+                except json.JSONDecodeError as e:
+                    print(f"❌ 配置文件解析失败: {e}")
+                    return False
+            
+            languages_config = config_data.get("languages")
+            if not languages_config:
+                print("❌ 配置文件不包含 'languages' 字段")
+                return False
+            
+            # 询问使用哪个模型配置文件
+            print("\n选择模型配置文件:")
+            print("  1. llm_models.json (所有22个模型)")
+            print("  2. llm_models_fix_all.json (所有6个有问题的模型)")
+            print("  3. llm_models_fix_gemini.json (只修复gemini-3-pro-preview)")
+            print("  4. llm_models_healthy.json (15个100%成功率模型)")
+            print("  5. llm_models_test_3_cheap.json (第1批: gpt-4o-mini/deepseek-chat/kimi-k2)")
+            print("  6. llm_models_test_3_batch2.json (第2批: 6个便宜健康模型)")
+            
+            config_choice = input("\n请选择 (1-6，默认1): ").strip() or "1"
+            
+            model_config_files = {
+                "1": "llm_models.json",
+                "2": "llm_models_fix_all.json",
+                "3": "llm_models_fix_gemini.json",
+                "4": "llm_models_healthy.json",
+                "5": "llm_models_test_3_cheap.json",
+                "6": "llm_models_test_3_batch2.json"
+            }
+            
+            model_config_file = model_config_files.get(config_choice, "llm_models.json")
+            print(f"✅ 使用配置文件: {model_config_file}")
+            
+            # 计算统计信息
+            interviewer = MultilingualRoleplayInterview(
+                consensus_count=5, 
+                data_path=str(self.data_path),
+                model_config_file=model_config_file,
+                language_config_file=lang_config_file
+            )
+            # 从interviewer的model_configs获取所有可用模型
+            available_models = list(interviewer.model_configs.keys())
+            if not available_models:
+                print("⚠️ 未找到可用模型")
+                return False
+            
+            # 统计语言-国家对
+            language_country_pairs = 0
+            unique_countries = set()
+            for lang_code, lang_cfg in languages_config.items():
+                country_entries = lang_cfg.get("countries", [])
+                for entry in country_entries:
+                    country_name = entry.get("name") if isinstance(entry, dict) else entry
+                    if country_name:
+                        language_country_pairs += 1
+                        unique_countries.add(country_name)
+            
+            total_countries = len(unique_countries)
+            total_models = len(available_models)
+            repeat_count = 5  # 默认5轮共识
+            
+            print(f"🚀 开始全面测试")
+            print(f"   - 语言配置: {lang_config_file}")
+            print(f"   - 模型配置: {model_config_file}")
+            print(f"   - 语言数量: {len(languages_config)}种")
+            print(f"   - 国家数量: {total_countries}个")
+            print(f"   - 模型数量: {total_models}个")
             
             questions_per_interview = 10
             total_tasks = language_country_pairs * total_models
@@ -2514,12 +1548,30 @@ class RoleplayMultilingualAnalysisRunner:
                 print("❌ 用户取消")
                 return False
             
-            # 运行访谈
-            if self._run_multilingual_interview_with_config("comprehensive"):
-                # 继续后续步骤
-                return self._run_full_analysis_pipeline("comprehensive")
-            else:
+            # 使用 run_multilingual_experiment 运行全面访谈
+            print("\n" + "="*70)
+            print("🚀 开始全面访谈...")
+            print("="*70)
+            
+            results = interviewer.run_multilingual_experiment(
+                models=available_models,
+                max_workers=8,
+                repeat_count=repeat_count,
+                test_type="comprehensive",
+                skip_existing=False  # 全面测试：不跳过已有数据
+            )
+            
+            # 修复：检查正确的字段名
+            if not results or results.get('total_tasks', 0) == 0:
+                print("❌ 访谈失败或无结果")
                 return False
+            
+            print(f"\n✅ 访谈完成！")
+            print(f"   - 总任务数: {results.get('total_tasks', 0)}")
+            print(f"   - 成功任务数: {results.get('successful_tasks', 0)}")
+            
+            # 继续后续分析步骤
+            return self._run_full_analysis_pipeline("comprehensive")
                 
         except Exception as e:
             print(f"❌ 全面测试失败: {e}")
@@ -2527,52 +1579,12 @@ class RoleplayMultilingualAnalysisRunner:
             traceback.print_exc()
             return False
     
-    def _run_small_scale_test_with_full_pipeline(self):
-        """运行小规模测试并完成整个分析流程"""
-        try:
-            print("🧪 开始小规模测试 (3模型×5国家×各语言组合×3重复)")
-            print("   国家：Egypt(阿语+英), China(中文+英), Mexico(西语+英), Russia(俄语+英), USA(英)")
-            
-            # 估算成本和时间 - 正确的计算
-            # 小规模: (4国家×2语言 + 1国家×1语言) × 3模型 = 27个任务
-            total_tasks = (4 * 2 + 1 * 1) * 3  # 27个任务
-            total_calls = total_tasks * 10 * 3  # 810次API调用（每任务10问题×3重复）
-            estimated_cost = total_calls * 0.0006  # 平均每次$0.0006
-            # 并发8：27任务÷8=1.8批，每批约10分钟
-            estimated_hours_min = (total_tasks / 8) * (10 / 60)
-            estimated_hours_max = (total_tasks / 8) * (20 / 60)
-            
-            print(f"\n📊 预估统计:")
-            print(f"   - 语言-国家组合: 9个 (4国家×2语言 + 1国家×1语言)")
-            print(f"   - 总任务数: {total_tasks}个 (9组合 × 3模型)")
-            print(f"   - 总API调用: {total_calls:,}次")
-            print(f"   - 预估费用: ${estimated_cost:.2f} (混合模型平均价)")
-            print(f"   - 预估时间: {estimated_hours_min:.1f}-{estimated_hours_max:.1f}小时 (并发8)")
-            
-            confirm = input("\n确认继续? (y/N): ").strip().lower()
-            if confirm != 'y':
-                print("❌ 用户取消")
-                return False
-            
-            # 运行访谈
-            if self._run_multilingual_interview_with_config("small_scale"):
-                # 继续后续步骤
-                return self._run_full_analysis_pipeline("small_scale")
-            else:
-                return False
-                
-        except Exception as e:
-            print(f"❌ 小规模测试失败: {e}")
-            import traceback
-            traceback.print_exc()
-            return False
-
     def _run_incremental_languages_with_full_pipeline(self):
         """仅针对配置中缺失的语言-国家组合执行增量访谈并运行完整分析"""
         try:
             from src.roleplay_multilingual.multilingual_roleplay_interview import MultilingualRoleplayInterview
             
-            config_path = self.project_root / "config" / "multilingual_questions_complete.json"
+            config_path = self.project_root / "config" / "questions" / "multilingual" / "multilingual_questions_complete.json"
             if not config_path.exists():
                 print(f"❌ 找不到配置文件: {config_path}")
                 return False
@@ -2590,7 +1602,11 @@ class RoleplayMultilingualAnalysisRunner:
                 return False
             
             interviewer = MultilingualRoleplayInterview(consensus_count=5, data_path=str(self.data_path))
-            available_models = interviewer._load_all_available_models()
+            # 从interviewer的model_configs获取所有可用模型
+            available_models = list(interviewer.model_configs.keys())
+            if not available_models:
+                print("⚠️ 未找到可用模型")
+                return False
             
             completed_task_keys = set()
             latest_results_file = self._get_latest_roleplay_results_file()
@@ -2696,8 +1712,13 @@ class RoleplayMultilingualAnalysisRunner:
                         skip_existing=True
                     )
                     
-                    if not results or not results.get("results"):
+                    # 修复：检查正确的字段
+                    if not results or results.get('total_tasks', 0) == 0:
                         print(f"   ❌ 模型 {model_name} 访谈失败或无结果")
+                    else:
+                        print(f"   ✅ 模型 {model_name} 访谈完成")
+                        print(f"      - 总任务数: {results.get('total_tasks', 0)}")
+                        print(f"      - 成功任务数: {results.get('successful_tasks', 0)}")
                 finally:
                     interviewer.multilingual_config = original_config
             
@@ -2792,7 +1813,7 @@ class RoleplayMultilingualAnalysisRunner:
             # 从配置文件加载参数
             if config_type == "comprehensive":
                 # 加载 comprehensive_multilingual_config.json
-                config_path = self.project_root / "comprehensive_multilingual_config.json"
+                config_path = self.project_root / "config" / "questions" / "multilingual" / "comprehensive_multilingual_config.json"
                 if config_path.exists():
                     with open(config_path, 'r', encoding='utf-8') as f:
                         config_data = json.load(f)
@@ -2829,33 +1850,35 @@ class RoleplayMultilingualAnalysisRunner:
                     repeat_count = 2
                     
             elif config_type == "small_scale":
-                # 加载 small_scale_test_config.json
-                config_path = self.project_root / "small_scale_test_config.json"
+                # 加载 config/small_scale_test_config.json
+                config_path = self.project_root / "config" / "questions" / "multilingual" / "small_scale_test_config.json"
                 if config_path.exists():
                     with open(config_path, 'r', encoding='utf-8') as f:
                         config_data = json.load(f)
                     
-                    test_config = config_data.get('small_scale_test_config', {})
-                    repeat_count = test_config.get('repeat_count', 3)
+                    # 正确的键名是 "small_scale_test"
+                    test_config = config_data.get('small_scale_test', {})
+                    repeat_count = test_config.get('consensus_count', 5)
                     models = test_config.get('models', [])
                     
-                    # 从配置中提取国家（统计语言-国家组合）
+                    # 从配置中提取国家和语言组合
                     countries = []
                     language_country_pairs = []
-                    languages_config = test_config.get('languages', {})
-                    for lang_code, lang_config in languages_config.items():
-                        country_list = lang_config.get('countries', [])
-                        for country_info in country_list:
-                            country_name = country_info.get('name')
-                            if country_name:
-                                language_country_pairs.append(f"{country_name}({lang_code})")
-                                if country_name not in countries:
-                                    countries.append(country_name)
+                    country_configs = test_config.get('countries', [])
+                    
+                    for country_info in country_configs:
+                        country_name = country_info.get('country')
+                        languages = country_info.get('languages', [])
+                        if country_name:
+                            if country_name not in countries:
+                                countries.append(country_name)
+                            for lang in languages:
+                                language_country_pairs.append(f"{country_name}({lang})")
                     
                     print(f"✅ 从配置文件加载参数:")
-                    print(f"   - 独特国家: {len(countries)}个")
-                    print(f"   - 语言-国家组合: {len(language_country_pairs)}个")
-                    print(f"   - 模型: {len(models)}个")
+                    print(f"   - 独特国家: {len(countries)}个 ({', '.join(countries)})")
+                    print(f"   - 语言-国家组合: {len(language_country_pairs)}个 ({', '.join(language_country_pairs)})")
+                    print(f"   - 模型: {len(models)}个 ({', '.join(models)})")
                     print(f"   - 共识轮数: {repeat_count}轮")
                     
                 else:
@@ -2865,6 +1888,7 @@ class RoleplayMultilingualAnalysisRunner:
                     countries = ["China", "Egypt", "Mexico", "Russian Federation", "United States of America"]
                     models = ["openai/gpt-4o-mini", "deepseek/deepseek-chat-v3-0324", "google/gemini-2.0-flash-001"]
                     repeat_count = 3
+                    language_country_pairs = []
             else:
                 print(f"❌ 未知配置类型: {config_type}")
                 return False
@@ -2872,7 +1896,36 @@ class RoleplayMultilingualAnalysisRunner:
             print(f"🎯 访谈配置:")
             print(f"   - 国家: {len(countries)} 个 ({', '.join(countries)})")
             print(f"   - 模型: {len(models)} 个")
-            print(f"   - 重复次数: {repeat_count}")
+            print(f"   - 共识轮数: {repeat_count}")
+            
+            # 🔥 关键：对于small_scale，需要创建临时配置文件
+            if config_type == "small_scale" and 'language_country_pairs' in locals() and len(language_country_pairs) > 0:
+                # 将small_scale配置转换为访谈器期望的格式
+                import json
+                temp_config = {
+                    "languages": {}
+                }
+                
+                for pair in language_country_pairs:
+                    # 解析 "China(zh-cn)" 格式
+                    if '(' in pair and ')' in pair:
+                        country = pair.split('(')[0]
+                        lang = pair.split('(')[1].rstrip(')')
+                        
+                        if lang not in temp_config["languages"]:
+                            temp_config["languages"][lang] = {"countries": []}
+                        
+                        # 添加国家信息
+                        temp_config["languages"][lang]["countries"].append({
+                            'name': country,
+                            'code': country.lower().replace(' ', '_')
+                        })
+                
+                # 保存临时配置文件到项目根目录
+                temp_config_path = self.project_root / "config" / "questions" / "multilingual" / "small_scale_test_config.json"
+                with open(temp_config_path, 'w', encoding='utf-8') as f:
+                    json.dump({"small_scale_test_config": temp_config}, f, indent=2, ensure_ascii=False)
+                print(f"✅ 已创建临时配置文件: {temp_config_path}")
             
             # 创建访谈器（传入consensus_count）
             interviewer = MultilingualRoleplayInterview(
@@ -2880,9 +1933,34 @@ class RoleplayMultilingualAnalysisRunner:
                 data_path=str(self.data_path)
             )
             
-            # 🔥 关键：直接使用访谈器内置的逻辑，它会自动读取配置文件
-            # run_multilingual_experiment 会从 self.multilingual_config 读取国家和语言
             print(f"🚀 使用配置文件运行访谈...")
+            
+            # 计算实际的语言-国家组合数
+            # 优先使用从配置文件读取的值，否则从interviewer的multilingual_config读取
+            num_language_country_pairs = 0
+            if 'language_country_pairs' in locals() and isinstance(language_country_pairs, list):
+                num_language_country_pairs = len(language_country_pairs)
+            elif hasattr(interviewer, 'multilingual_config') and interviewer.multilingual_config:
+                for lang_code, lang_data in interviewer.multilingual_config.items():
+                    if isinstance(lang_data, list):
+                        num_language_country_pairs += len(lang_data)
+            
+            # 动态计算任务统计
+            if num_language_country_pairs > 0:
+                total_tasks = num_language_country_pairs * len(models)
+                total_calls = total_tasks * 10 * repeat_count
+                estimated_cost = total_calls * 0.0006
+                estimated_hours_min = (total_tasks / 8) * (10 / 60)
+                estimated_hours_max = (total_tasks / 8) * (20 / 60)
+                
+                print(f"\n📊 动态任务统计:")
+                print(f"   - 语言-国家组合: {num_language_country_pairs}个")
+                print(f"   - 模型数量: {len(models)}个")
+                print(f"   - 总任务数: {total_tasks}个 ({num_language_country_pairs}组合 × {len(models)}模型)")
+                print(f"   - 共识轮数: {repeat_count}轮/任务")
+                print(f"   - 总API调用: {total_calls:,}次 ({total_tasks}任务 × 10问题 × {repeat_count}轮)")
+                print(f"   - 预估费用: ${estimated_cost:.2f}")
+                print(f"   - 预估时间: {estimated_hours_min:.1f}-{estimated_hours_max:.1f}小时 (并发8)\n")
             
             # 运行多语言实验（会自动从配置文件读取国家和语言配置）
             results = interviewer.run_multilingual_experiment(
@@ -2891,11 +1969,14 @@ class RoleplayMultilingualAnalysisRunner:
                 test_type=config_type
             )
             
-            if results:
+            # 修复：检查正确的字段
+            if results and results.get('total_tasks', 0) > 0:
                 print("✅ 访谈完成")
+                print(f"   - 总任务数: {results.get('total_tasks', 0)}")
+                print(f"   - 成功任务数: {results.get('successful_tasks', 0)}")
                 return True
             else:
-                print("❌ 访谈失败")
+                print("❌ 访谈失败或无结果")
                 return False
                 
         except Exception as e:
@@ -2935,234 +2016,73 @@ class RoleplayMultilingualAnalysisRunner:
             import traceback
             traceback.print_exc()
             return False
-    
-    def _run_chinese_variant_test_with_full_pipeline(self):
-        """运行中文变体测试并执行完整分析流程（他者理论验证）"""
-        try:
-            print("\n" + "="*80)
-            print("🔬 开始中文变体测试（他者理论验证）")
-            print("="*80)
-            
-            # 1. 运行繁体中文访谈
-            print("\n📝 步骤1: 访谈繁体中文地区")
-            print("-" * 80)
-            
-            # 定义测试配置
-            chinese_variant_regions = {
-                "Hong Kong": "zh-hk",      # 香港繁体
-                "Taiwan (Province of China)": "zh-tw",  # 台湾繁体
-                "Macao": "zh-hk"           # 澳门繁体（使用香港繁体）
-            }
-            
-            # 从comprehensive配置读取模型列表
-            config_path = self.project_root / "comprehensive_multilingual_config.json"
-            if config_path.exists():
-                import json
-                with open(config_path, 'r', encoding='utf-8') as f:
-                    config = json.load(f)
-                    models = config.get('models', [])
-                    repeat_count = config.get('repeat_count', 5)
-            else:
-                print("⚠️ 未找到comprehensive配置，使用默认7模型")
-                models = [
-                    "openai/gpt-4o-mini",
-                    "anthropic/claude-3.7-sonnet",
-                    "google/gemini-2.0-flash-001",
-                    "deepseek/deepseek-chat-v3-0324",
-                    "meta-llama/llama-3.3-70b-instruct",
-                    "mistralai/mistral-nemo",
-                    "qwen/qwq-32b"
-                ]
-                repeat_count = 5
-            
-            print(f"\n🎯 测试配置:")
-            print(f"   地区: {list(chinese_variant_regions.keys())}")
-            print(f"   模型: {len(models)} 个")
-            print(f"   共识轮数: {repeat_count}")
-            
-            # 创建访谈器
-            from src.roleplay_multilingual.multilingual_roleplay_interview import MultilingualRoleplayInterview
-            interviewer = MultilingualRoleplayInterview(
-                consensus_count=repeat_count,
-                data_path=str(self.data_path)
-            )
-            
-            # 对每个地区运行访谈
-            all_results = []
-            for country, language in chinese_variant_regions.items():
-                print(f"\n🌏 访谈 {country} ({language})...")
-                
-                # 运行单个国家的访谈
-                results = interviewer.run_single_country_experiment(
-                    country=country,
-                    language=language,
-                    models=models,
-                    max_workers=8  # 与选项1保持一致
-                )
-                
-                if results:
-                    all_results.extend(results)
-                    print(f"   ✅ {country} 完成 ({len(results)} 个结果)")
-                else:
-                    print(f"   ⚠️ {country} 访谈失败")
-            
-            if not all_results:
-                print("❌ 所有访谈都失败了")
-                return False
-            
-            print(f"\n✅ 繁体中文访谈完成，共 {len(all_results)} 个结果")
-            
-            # 2. 合并数据
-            print("\n📝 步骤2: 合并繁体中文数据到现有数据")
-            print("-" * 80)
-            
-            # 保存新访谈数据
-            from datetime import datetime
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            temp_file = self.data_path / f"chinese_variant_temp_{timestamp}.json"
-            
-            import json
-            with open(temp_file, 'w', encoding='utf-8') as f:
-                json.dump(all_results, f, ensure_ascii=False, indent=2)
-            print(f"   临时数据已保存: {temp_file.name}")
-            
-            # 读取现有的processed数据
-            existing_files = list(self.data_path.glob("roleplay_ml_processed_*.pkl"))
-            if not existing_files:
-                print("   ⚠️ 未找到现有processed数据")
-                print("   🔄 自动运行数据处理步骤...")
-                
-                # 先运行数据处理
-                if not self.step1_data_processing(test_type="comprehensive"):
-                    print("   ❌ 数据处理失败")
-                    return False
-                
-                # 重新检查
-                existing_files = list(self.data_path.glob("roleplay_ml_processed_*.pkl"))
-                if not existing_files:
-                    print("   ⚠️ 数据处理后仍未找到数据，只处理繁体中文")
-                    existing_data = []
-                else:
-                    latest_file = max(existing_files, key=lambda x: x.stat().st_mtime)
-                    print(f"   ✅ 读取新处理的数据: {latest_file.name}")
-                    existing_data = pd.read_pickle(latest_file)
-                    print(f"   现有数据: {len(existing_data)} 条")
-            else:
-                latest_file = max(existing_files, key=lambda x: x.stat().st_mtime)
-                print(f"   读取现有数据: {latest_file.name}")
-                existing_data = pd.read_pickle(latest_file)
-                print(f"   现有数据: {len(existing_data)} 条")
-            
-            # 处理新数据（格式化为与existing_data相同的结构）
-            new_data_processed = []
-            for result in all_results:
-                processed_entry = {
-                    'country_code': result.get('country'),
-                    'model_name': result.get('model'),
-                    'language': result.get('language'),
-                    'data_source': 'Multilingual',
-                    'timestamp': result.get('timestamp', timestamp)
-                }
-                
-                # 添加问题答案
-                # responses 是列表格式，每个元素包含 question_id 和 final_response
-                responses = result.get('responses', [])
-                if isinstance(responses, list):
-                    for response_item in responses:
-                        q_id = response_item.get('question_id')
-                        answer = response_item.get('final_response')
-                        if q_id and answer:
-                            processed_entry[q_id] = answer
-                elif isinstance(responses, dict):
-                    # 兼容旧格式
-                    for q_id, answer in responses.items():
-                        processed_entry[q_id] = answer
-                
-                new_data_processed.append(processed_entry)
-            
-            new_df = pd.DataFrame(new_data_processed)
-            print(f"   新数据（繁体中文）: {len(new_df)} 条")
-            
-            # 合并数据
-            if isinstance(existing_data, list):
-                existing_df = pd.DataFrame(existing_data)
-            else:
-                existing_df = existing_data
-            
-            # 移除现有数据中相同地区的旧数据（如果有的话）
-            if len(existing_df) > 0:
-                existing_df = existing_df[
-                    ~existing_df['country_code'].isin(list(chinese_variant_regions.keys()))
-                ]
-                print(f"   移除旧数据后: {len(existing_df)} 条")
-            
-            # 合并
-            merged_df = pd.concat([existing_df, new_df], ignore_index=True)
-            print(f"   合并后总数据: {len(merged_df)} 条")
-            
-            # 保存合并后的数据
-            merged_file = self.data_path / f"roleplay_ml_processed_{timestamp}_with_variants.pkl"
-            merged_df.to_pickle(merged_file)
-            print(f"   ✅ 合并数据已保存: {merged_file.name}")
-            
-            # 同时保存最新版本
-            latest_file = self.data_path / "roleplay_ml_processed_latest.pkl"
-            merged_df.to_pickle(latest_file)
-            print(f"   ✅ 最新数据已保存: {latest_file.name}")
-            
-            # 清理临时文件
-            temp_file.unlink()
-            print(f"   临时文件已删除")
-            
-            # 3. 运行完整分析流程
-            print("\n📝 步骤3: 重新运行完整分析流程")
-            print("-" * 80)
-            
-            if not self._run_full_analysis_pipeline(test_type="comprehensive"):
-                print("❌ 分析流程失败")
-                return False
-            
-            print("\n" + "="*80)
-            print("🎉 中文变体测试与分析全部完成！")
-            print("="*80)
-            print("\n📊 数据说明:")
-            print(f"   - 新增繁体中文数据: {len(new_df)} 条")
-            print(f"   - 总数据量: {len(merged_df)} 条")
-            print(f"   - 可以查看language_comparison_analysis结果了解繁简体差异")
-            
-            return True
-            
-        except Exception as e:
-            print(f"❌ 中文变体测试失败: {e}")
-            import traceback
-            traceback.print_exc()
-            return False
 
 
 def main():
     """主函数"""
     
+    # 读取small_scale配置以显示准确信息
+    from pathlib import Path
+    project_root = Path(__file__).parent.parent.parent
+    small_scale_config_path = project_root / "config" / "questions" / "multilingual" / "small_scale_test_config.json"
+    
+    small_scale_desc = "测试小规模访谈 (根据配置文件动态调整)"
+    small_scale_details = []
+    
+    if small_scale_config_path.exists():
+        try:
+            with open(small_scale_config_path, 'r', encoding='utf-8') as f:
+                config_data = json.load(f)
+            test_config = config_data.get('small_scale_test', {})
+            
+            models = test_config.get('models', [])
+            countries_config = test_config.get('countries', [])
+            consensus_count = test_config.get('consensus_count', 3)
+            
+            # 提取国家和语言信息
+            country_lang_pairs = []
+            for country_info in countries_config:
+                country = country_info.get('country', '')
+                languages = country_info.get('languages', [])
+                if languages:
+                    lang_str = '+'.join(languages)
+                    country_lang_pairs.append(f"{country}({lang_str})")
+            
+            small_scale_desc = f"测试小规模访谈 ({len(models)}模型×{len(country_lang_pairs)}组合)"
+            small_scale_details = [
+                f"• 模型: {', '.join([m.split('/')[-1] if '/' in m else m for m in models])}",
+                f"• 国家-语言组合: {', '.join(country_lang_pairs)}",
+                f"• 共识轮数: {consensus_count}轮"
+            ]
+        except Exception as e:
+            small_scale_details = [
+                "• ⚠️ 配置文件读取失败，将使用默认配置",
+                "• 模型：GPT-4o-mini, DeepSeek, Gemini",
+                "• 国家：Egypt(阿拉伯语+英语), China(中文+英语), Mexico(西班牙语+英语), Russia(俄语+英语), USA(英语)"
+            ]
+    else:
+        small_scale_details = [
+            "• ⚠️ 配置文件不存在，将使用默认配置",
+            "• 模型：GPT-4o-mini, DeepSeek, Gemini",
+            "• 国家：Egypt(阿拉伯语+英语), China(中文+英语), Mexico(西班牙语+英语), Russia(俄语+英语), USA(英语)"
+        ]
+    
     print("\n" + "="*70)
     print("🌐 Stage3: Roleplay Multilingual 分析系统")
     print("="*70)
     print("\n请选择要执行的操作：")
-    print("\n1️⃣  重新全部访谈 (32国家×7模型，完整测试)")
-    print("     • 27个非英语国家（各自母语+英语）")
-    print("     • 5个英语母语国家（仅英语）")
-    print("     • 7个模型，共识轮数: 5轮")
-    print("\n2️⃣  测试小规模访谈 (3模型×5国家×各语言组合，快速验证)")
-    print("     • 模型：GPT-4o-mini, DeepSeek, Gemini")
-    print("     • 国家：Egypt(阿拉伯语+英语), China(中文+英语), Mexico(西班牙语+英语),")
-    print("            Russia(俄语+英语), USA(英语)")
+    print("\n1️⃣  全面测试（读取 multilingual_questions_complete.json）")
+    print("     • 使用配置文件中的所有语言和国家")
+    print("     • 使用 llm_models.json 中的所有模型")
     print("     • 共识轮数: 3轮")
+    print("     • 不跳过已有数据（完全重新访谈）")
+    print(f"\n2️⃣  {small_scale_desc}")
+    for detail in small_scale_details:
+        print(f"     {detail}")
     print("\n3️⃣  只分析现有数据 (数据处理 → PCA → 可视化)")
-    print("\n4️⃣  【他者理论验证】测试中文变体 (繁体中文 vs 简体中文)")
-    print("     • 测试地区：香港(zh-hk繁体)、台湾(zh-tw繁体)、澳门(zh-hk繁体)")
-    print("     • 7个模型，共识轮数: 5轮")
-    print("     • 完成后合并到现有数据并重新分析")
-    print("\n5️⃣  增量访谈：根据配置补齐缺失语言/国家")
+    print("\n4️⃣  增量访谈：根据配置补齐缺失语言/国家")
     print("     • 自动检测 data/roleplay_multilingual/llm_responses_roleplay_ml/ 中已有组合")
-    print("     • 只访谈 config/multilingual_questions_complete.json 中尚未出现的国家/语言")
+    print("     • 只访谈 config/questions/multilingual/multilingual_questions_complete.json 中尚未出现的国家/语言")
     print("     • 完成后立即运行 数据处理 → PCA → 可视化")
     print("\n0️⃣  退出")
     print("\n" + "="*70)
@@ -3173,15 +2093,15 @@ def main():
         
         while True:
             try:
-                choice = input("\n请输入选项 (0-5): ").strip()
+                choice = input("\n请输入选项 (0-4): ").strip()
                 
                 if choice == '0':
                     print("👋 退出程序")
                     return 0
-                elif choice in ['1', '2', '3', '4', '5']:
+                elif choice in ['1', '2', '3', '4']:
                     break
                 else:
-                    print("❌ 无效选项，请输入 0-5")
+                    print("❌ 无效选项，请输入 0-4")
             except (KeyboardInterrupt, EOFError):
                 print("\n\n👋 用户取消，退出程序")
                 return 0
@@ -3190,30 +2110,17 @@ def main():
         
         # 处理选项1: 重新全部访谈
         if choice == '1':
-            print("\n🚀 选项1: 重新全部访谈（完整测试）")
-            print("  - 32个国家：27个非英语（各母语+英语）+ 5个英语母语（仅英语）")
-            print("  - 7个模型")
-            print("  - 共识轮数: 5轮")
-            print("  - 然后自动运行 数据处理 → PCA → 可视化")
+            print("\n🚀 选项1: 全面测试（读取配置文件）")
+            print("  - 正在读取配置...")
             
-            confirm = input("\n确认执行? (y/n): ").strip().lower()
-            if confirm != 'y':
-                print("❌ 已取消")
-                return 0
-            
+            # 直接调用方法，它会显示详细的配置信息和成本估算
             success = runner._run_comprehensive_test_with_full_pipeline()
         
         # 处理选项2: 测试小规模访谈
         elif choice == '2':
-            print("\n🧪 选项2: 测试小规模访谈")
-            print("  - 3个模型：GPT-4o-mini, DeepSeek, Gemini")
-            print("  - 5个国家：")
-            print("    · Egypt(阿拉伯语+英语)")
-            print("    · China(中文+英语)")
-            print("    · Mexico(西班牙语+英语)")
-            print("    · Russia(俄语+英语)")
-            print("    · USA(英语)")
-            print("  - 共识轮数: 3轮")
+            print(f"\n🧪 选项2: {small_scale_desc}")
+            for detail in small_scale_details:
+                print(f"  {detail.replace('•', '-')}")
             print("  - 然后自动运行 数据处理 → PCA → 可视化")
             
             confirm = input("\n确认执行? (y/n): ").strip().lower()
@@ -3236,29 +2143,10 @@ def main():
             
             success = runner._run_data_processing_pipeline()
         
-        # 处理选项4: 中文变体测试（他者理论验证）
+        # 处理选项4: 只访谈缺失的国家/语言
         elif choice == '4':
-            print("\n🔬 选项4: 【他者理论验证】测试中文变体")
-            print("  - 测试地区：")
-            print("    · 香港 (繁体中文 zh-hk)")
-            print("    · 台湾 (繁体中文 zh-tw)")
-            print("    · 澳门 (繁体中文 zh-hk)")
-            print("  - 对比基准：大陆简体中文 (zh-cn) 已有数据")
-            print("  - 7个模型")
-            print("  - 共识轮数: 5轮")
-            print("  - 完成后合并数据并重新运行完整分析流程")
-            
-            confirm = input("\n确认执行? (y/n): ").strip().lower()
-            if confirm != 'y':
-                print("❌ 已取消")
-                return 0
-            
-            success = runner._run_chinese_variant_test_with_full_pipeline()
-        
-        # 处理选项5: 只访谈缺失的国家/语言
-        elif choice == '5':
-            print("\n🆕 选项5: 增量访谈（仅补齐缺失的国家/语言）")
-            print("  - 自动比对 config/multilingual_questions_complete.json 与现有访谈数据")
+            print("\n🆕 选项4: 增量访谈（仅补齐缺失的国家/语言）")
+            print("  - 自动比对 config/questions/multilingual/multilingual_questions_complete.json 与现有访谈数据")
             print("  - 跳过所有已经有结果的国家/语言组合")
             print("  - 访谈完成后立即运行 数据处理 → PCA → 可视化")
             

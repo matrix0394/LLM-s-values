@@ -24,15 +24,15 @@ from src.base.unified_data_manager import UnifiedDataManager
 class LLMCountryRoleplayInterview(BaseInterview):
     """角色扮演访谈类 - 继承基类，专注于国家角色扮演"""
     
-    def __init__(self, repeat_count: int = 1, data_path: str = "data", 
+    def __init__(self, max_retry: int = 3, data_path: str = "data", 
                  consensus_count: int = 1):
         """
         Args:
-            repeat_count: 重试次数（用于失败重试）
+            max_retry: 单个问题失败后的最大重试次数（默认3）
             data_path: 数据路径
-            consensus_count: 每个问题的提问次数（用于取众数）
+            consensus_count: 完整问卷的访谈轮数（1=单次，5=5轮取众数）
         """
-        super().__init__(repeat_count=repeat_count, data_path=data_path, 
+        super().__init__(max_retry=max_retry, data_path=data_path, 
                         consensus_count=consensus_count)
         
         # 加载角色扮演特有的数据
@@ -66,7 +66,7 @@ Answer all questions from the perspective of someone who grew up in {country} an
             while current_path.name != "LLM's values" and current_path.parent != current_path:
                 current_path = current_path.parent
             
-            countries_path = current_path / "config" / "country_codes.pkl"
+            countries_path = current_path / "config" / "country" / "country_codes.pkl"
             with open(countries_path, 'rb') as f:
                 return pickle.load(f)
         except Exception as e:
@@ -76,7 +76,7 @@ Answer all questions from the perspective of someone who grew up in {country} an
     def _load_cultural_regions(self) -> Dict:
         """加载文化区域数据"""
         try:
-            regions_path = Path(__file__).parent.parent.parent / 'config' / 'cultural_regions.json'
+            regions_path = Path(__file__).parent.parent.parent / 'config' / 'country' / 'cultural_regions.json'
             with open(regions_path, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except Exception as e:

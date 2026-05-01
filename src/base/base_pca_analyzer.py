@@ -18,6 +18,7 @@ from src.base.ppca import PPCA
 from factor_analyzer import Rotator
 import pickle
 from pathlib import Path
+from src.utils.country_name_standardizer import CountryNameStandardizer
 
 
 class BasePCAAnalyzer(ABC):
@@ -38,7 +39,7 @@ class BasePCAAnalyzer(ABC):
         self.meta_col = ["S020", "S003"]  # year, country_code
         self.weights = ["S017"]
         
-        # 主成分重新缩放参数（与旧代码完全一致）
+        # 主成分重新缩放参数
         self.pc_rescale_params = {
             'PC1': (1.81, 0.38), 
             'PC2': (1.61, -0.01)
@@ -49,6 +50,9 @@ class BasePCAAnalyzer(ABC):
         self.country_codes = None
         self.combined_data = None
         self.pca_results = None
+        
+        # 国家名称标准化器
+        self.name_standardizer = CountryNameStandardizer()
     
     # ==================== 数据清理工具方法 ====================
     
@@ -80,6 +84,19 @@ class BasePCAAnalyzer(ABC):
         except (ValueError, TypeError):
             # 如果不是数字（如国家名），直接返回字符串
             return str(code).strip()
+    
+    def _merge_metadata_helper(self, df: pd.DataFrame) -> pd.DataFrame:
+        """合并元数据的辅助方法（组合prepare和merge）
+        
+        Args:
+            df: 需要合并元数据的DataFrame
+            
+        Returns:
+            合并后的DataFrame
+        """
+        df = self.prepare_country_codes_for_merge(df)
+        df = self.merge_country_metadata(df, on_column='country_code_clean')
+        return df
     
     def prepare_country_codes_for_merge(self, df: pd.DataFrame) -> pd.DataFrame:
         """为DataFrame准备标准化的country_code列
@@ -124,36 +141,50 @@ class BasePCAAnalyzer(ABC):
         if 'Cultural Region' in df_merged.columns:
             original_cultural_region = df_merged['Cultural Region'].copy()
         
-        # 策略1: 尝试按数字代码匹配（主要策略）
-        if on_column in df_merged.columns:
-            # 准备country_codes的数字列
-            if 'Numeric_str' not in self.country_codes.columns:
-                self.country_codes['Numeric_str'] = self.country_codes['Numeric'].astype(str)
+        # 策略1: 按数字代码匹配（主要策略）
+        if on_column in df_merged.columns and 'Numeric' in self.country_codes.columns:
+            # Convert both sides to float for consistent merge; non-numeric codes (e.g. LLM entities) become NaN
+            df_merged['_merge_key'] = pd.to_numeric(df_merged['country_code'], errors='coerce')
+            self.country_codes['_Numeric_float'] = self.country_codes['Numeric'].astype(float)
             
             df_merged = df_merged.merge(
                 self.country_codes, 
-                left_on=on_column, 
-                right_on='Numeric_str', 
+                left_on='_merge_key', 
+                right_on='_Numeric_float', 
                 how='left',
                 suffixes=('', '_from_codes')
             )
             
-            # 检查匹配成功率
-            match_rate = (~df_merged['Country'].isna()).sum() / len(df_merged)
-            print(f"📊 数字代码匹配成功率: {match_rate:.1%}")
+            # 删除临时列
+            for tmp_col in ['_merge_key', '_Numeric_float']:
+                if tmp_col in df_merged.columns:
+                    df_merged = df_merged.drop(columns=[tmp_col])
+                if tmp_col in self.country_codes.columns:
+                    self.country_codes = self.country_codes.drop(columns=[tmp_col])
             
-            # 策略2: 如果匹配失败，尝试按国家名匹配
-            if match_rate < 0.5:
-                print("⚠️ 数字匹配成功率低，尝试按国家名匹配...")
-                df_merged = df.merge(
-                    self.country_codes, 
-                    left_on=on_column, 
-                    right_on='Country', 
-                    how='left',
-                    suffixes=('', '_from_codes')
-                )
-                match_rate = (~df_merged['Country'].isna()).sum() / len(df_merged)
-                print(f"📊 国家名匹配成功率: {match_rate:.1%}")
+            if 'Country' in df_merged.columns:
+                match_rate = df_merged['Country'].notna().sum() / len(df_merged)
+                print(f"📊 数字代码匹配成功率: {match_rate:.1%}")
+            
+                # 策略2: 如果匹配失败，尝试按国家名匹配
+                if match_rate < 0.5:
+                    print("⚠️ 数字匹配成功率低，尝试按国家名匹配...")
+                    existing_numeric = df_merged.get('Numeric', pd.Series(dtype=float)).copy()
+                    
+                    df_merged = df.merge(
+                        self.country_codes, 
+                        left_on=on_column, 
+                        right_on='Country', 
+                        how='left',
+                        suffixes=('', '_from_codes')
+                    )
+                    
+                    if 'Numeric' in df_merged.columns and len(existing_numeric) == len(df_merged):
+                        nan_mask = df_merged['Numeric'].isna() & existing_numeric.notna()
+                        df_merged.loc[nan_mask, 'Numeric'] = existing_numeric[nan_mask]
+                    
+                    match_rate = df_merged['Country'].notna().sum() / len(df_merged)
+                    print(f"📊 国家名匹配成功率: {match_rate:.1%}")
         
         # 处理Cultural Region：merge可能产生Cultural Region_from_codes列
         if 'Cultural Region_from_codes' in df_merged.columns:
@@ -163,17 +194,11 @@ class BasePCAAnalyzer(ABC):
                 df_merged.loc[match_mask, 'Cultural Region'] = df_merged.loc[match_mask, 'Cultural Region_from_codes']
                 print(f"✅ 填充了{match_mask.sum()}个国家实体的Cultural Region")
             
-            # 对于未匹配的行（如LLM），保留原有的Cultural Region
-            if original_cultural_region is not None:
-                unmatch_mask = df_merged['Country'].isna()
-                if unmatch_mask.any():
-                    df_merged.loc[unmatch_mask, 'Cultural Region'] = original_cultural_region[unmatch_mask]
-                    print(f"✅ 保留了{unmatch_mask.sum()}个非国家实体的Cultural Region")
-            
             # 删除临时列
             df_merged = df_merged.drop(columns=['Cultural Region_from_codes'])
-        elif original_cultural_region is not None:
-            # 如果没有Cultural Region_from_codes，只恢复原有的（对于未匹配实体）
+        
+        # 统一处理：对于未匹配的行（如LLM），保留原有的Cultural Region
+        if original_cultural_region is not None:
             unmatch_mask = df_merged['Country'].isna()
             if unmatch_mask.any():
                 df_merged.loc[unmatch_mask, 'Cultural Region'] = original_cultural_region[unmatch_mask]
@@ -182,6 +207,13 @@ class BasePCAAnalyzer(ABC):
         # 保留原始列
         if keep_original and 'country_code' in df.columns:
             df_merged['country_code_original'] = df['country_code']
+        
+        # 标准化国家名称（使用config/country_name_mapping.json）
+        if 'Country' in df_merged.columns:
+            df_merged['Country'] = df_merged['Country'].apply(
+                lambda x: self.name_standardizer.standardize(x) if pd.notna(x) else x
+            )
+            print(f"✅ 已标准化国家名称（使用config/country_name_mapping.json）")
         
         return df_merged
     
@@ -211,15 +243,22 @@ class BasePCAAnalyzer(ABC):
                 print(f"❌ IVS数据文件不存在: {ivs_path}")
                 return False
             
-            # 加载国家代码数据
-            country_codes_path = base_path / "country_codes.pkl"
-            if country_codes_path.exists():
-                self.country_codes = pd.read_pickle(country_codes_path)
-                print(f"✅ 加载国家代码: {country_codes_path}")
+            # 加载国家代码数据 - 统一从 config/country 目录加载
+            config_country_path = Path(__file__).parent.parent.parent / "config" / "country" / "country_codes.pkl"
+            if config_country_path.exists():
+                self.country_codes = pd.read_pickle(config_country_path)
+                print(f"✅ 加载国家代码: {config_country_path}")
                 print(f"   - 国家数量: {len(self.country_codes)}")
             else:
-                print(f"❌ 国家代码文件不存在: {country_codes_path}")
-                return False
+                # 兼容旧路径
+                country_codes_path = base_path / "country_codes.pkl"
+                if country_codes_path.exists():
+                    self.country_codes = pd.read_pickle(country_codes_path)
+                    print(f"✅ 加载国家代码: {country_codes_path}")
+                    print(f"   - 国家数量: {len(self.country_codes)}")
+                else:
+                    print(f"❌ 国家代码文件不存在: {config_country_path}")
+                    return False
             
             return True
             
@@ -313,9 +352,8 @@ class BasePCAAnalyzer(ABC):
         # 添加元数据
         ppca_df = self._add_metadata_to_pca_results(ppca_df, data)
         
-        # 合并国家元数据（使用新的统一方法）
-        ppca_df = self.prepare_country_codes_for_merge(ppca_df)
-        ppca_df = self.merge_country_metadata(ppca_df, on_column='country_code_clean')
+        # 合并国家元数据
+        ppca_df = self._merge_metadata_helper(ppca_df)
         
         # 过滤掉无效的主成分分数
         self.pca_results = ppca_df.dropna(subset=['PC1_rescaled', 'PC2_rescaled'])
@@ -377,6 +415,105 @@ class BasePCAAnalyzer(ABC):
         )
         
         return ppca_df
+    
+    def save_pca_model(self, save_path: Path = None):
+        """保存完整的PCA模型（用于后续阶段复用）
+        
+        Args:
+            save_path: 保存路径，默认为 data/country_values/pca_model_fixed.pkl
+        """
+        if save_path is None:
+            save_path = Path('data/country_values/pca_model_fixed.pkl')
+        
+        if not hasattr(self, 'ppca_model') or self.ppca_model is None:
+            raise RuntimeError("请先运行PCA分析")
+        
+        pca_model = {
+            'ppca_C': self.ppca_model.C,  # 载荷矩阵
+            'ppca_means': self.ppca_model.means,  # 均值
+            'ppca_stds': self.ppca_model.stds,  # 标准差
+            'rotation_matrix': self.rotation_matrix,  # varimax旋转矩阵
+            'rotated_loadings': self.rotated_loadings,  # 旋转后的载荷
+            'pc_rescale_params': self.pc_rescale_params,  # 缩放参数
+            'question_ids': self.iv_qns,  # 问题ID列表
+        }
+        
+        with open(save_path, 'wb') as f:
+            pickle.dump(pca_model, f)
+        
+        print(f"✅ PCA模型已保存: {save_path}")
+        return save_path
+    
+    def load_pca_model(self, model_path: Path = None) -> Dict:
+        """加载已保存的PCA模型
+        
+        Args:
+            model_path: 模型路径，默认为 data/country_values/pca_model_fixed.pkl
+            
+        Returns:
+            PCA模型字典
+        """
+        if model_path is None:
+            model_path = Path('data/country_values/pca_model_fixed.pkl')
+        
+        if not model_path.exists():
+            raise FileNotFoundError(f"PCA模型文件不存在: {model_path}")
+        
+        with open(model_path, 'rb') as f:
+            pca_model = pickle.load(f)
+        
+        print(f"✅ 加载PCA模型: {model_path}")
+        return pca_model
+    
+    def transform_with_fixed_pca(self, data: pd.DataFrame, pca_model: Dict = None) -> pd.DataFrame:
+        """使用固定的PCA模型转换数据（不重新拟合）
+        
+        Args:
+            data: 要转换的数据，必须包含iv_qns列
+            pca_model: PCA模型字典，如果为None则自动加载
+            
+        Returns:
+            包含PC1, PC2, PC1_rescaled, PC2_rescaled的DataFrame
+        """
+        if pca_model is None:
+            pca_model = self.load_pca_model()
+        
+        # 提取模型参数
+        ppca_C = pca_model['ppca_C']
+        ppca_means = pca_model['ppca_means']
+        ppca_stds = pca_model['ppca_stds']
+        rotation_matrix = pca_model['rotation_matrix']
+        pc_rescale_params = pca_model['pc_rescale_params']
+        
+        # 准备数据
+        data_for_pca = data[self.iv_qns].to_numpy()
+        
+        # 标准化（使用固定的均值和标准差）
+        # 处理NaN：用0替换（与PPCA.fit中的处理一致）
+        data_standardized = (data_for_pca - ppca_means) / ppca_stds
+        data_standardized = np.nan_to_num(data_standardized, nan=0.0)
+        
+        # 投影到主成分空间
+        principal_components = np.dot(data_standardized, ppca_C)
+        
+        # 应用varimax旋转
+        rotated_components = np.dot(principal_components, rotation_matrix)
+        
+        # 创建结果DataFrame
+        result_df = pd.DataFrame(rotated_components, columns=["PC1", "PC2"])
+        
+        # 重新缩放
+        result_df['PC1_rescaled'] = (
+            pc_rescale_params['PC1'][0] * result_df['PC1'] + 
+            pc_rescale_params['PC1'][1]
+        )
+        result_df['PC2_rescaled'] = (
+            pc_rescale_params['PC2'][0] * result_df['PC2'] + 
+            pc_rescale_params['PC2'][1]
+        )
+        
+        print(f"✅ 使用固定PCA模型转换了 {len(result_df)} 行数据")
+        return result_df
     
     def _save_loadings_and_rotation(self):
         """保存载荷矩阵和旋转矩阵"""
@@ -470,9 +607,8 @@ class BasePCAAnalyzer(ABC):
         # 分别处理IVS和非IVS数据
         entity_scores = self._aggregate_by_data_source(group_by)
         
-        # 合并国家元数据（使用新的统一方法）
-        entity_scores = self.prepare_country_codes_for_merge(entity_scores)
-        entity_scores = self.merge_country_metadata(entity_scores, on_column='country_code_clean')
+        # 合并国家元数据
+        entity_scores = self._merge_metadata_helper(entity_scores)
         
         print(f"\n📈 计算完成: {len(entity_scores)} 个实体的分数")
         return entity_scores

@@ -1,6 +1,5 @@
 """
-LLM PCA分析器 - 使用新的统一架构
-替换原有的 src/llm_analysis/llm_pca_analysis.py
+LLM PCA分析器 
 """
 
 import pandas as pd
@@ -45,16 +44,13 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
         - 由llm_data_processor.py生成
         """
         try:
-            # Stage1专用路径：data/llm_values/
-            llm_dir = self.data_path / "llm_values"
+            llm_dir = self.data_path / "llm_interviews" / "intrinsic"
             
-            # 查找最新的处理后数据文件
             import glob
             pattern = str(llm_dir / "llm_processed_responses_ivs_format_*.pkl")
             matching_files = sorted(glob.glob(pattern), reverse=True)
             
             if matching_files:
-                from pathlib import Path
                 llm_path = Path(matching_files[0])  # 最新的文件
                 self.llm_data = pd.read_pickle(llm_path)
                 print(f"✅ 加载LLM数据: {llm_path.name}")
@@ -100,9 +96,10 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
         if 'model_name' not in llm_prepared.columns:
             llm_prepared['model_name'] = llm_prepared['country_code']
         
-        # 确保country_code格式（如果需要加LLM_前缀）
-        if not llm_prepared['country_code'].iloc[0].startswith('LLM_'):
-            llm_prepared['country_code'] = 'LLM_' + llm_prepared['country_code'].astype(str)
+        # 确俜ountry_code格式（添加LLM_前缀）
+        llm_prepared['country_code'] = llm_prepared['country_code'].apply(
+            lambda x: x if str(x).startswith('LLM_') else f'LLM_{x}'
+        )
         
         print(f"✅ LLM数据准备完成: {len(llm_prepared)} 行")
         print(f"   - 数据已是IVS标准格式，无需额外处理")
@@ -162,27 +159,127 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
         return entity_scores
     
     def save_results(self, entity_scores=None, prefix="llm_pca"):
-        """保存结果 - 保存到Stage1专用的data/llm_values/子目录"""
-        # Stage1专用保存目录
-        llm_data_dir = self.data_path / "llm_values"
-        llm_data_dir.mkdir(parents=True, exist_ok=True)
+        """保存结果 - 保存到 data/llm_pca/intrinsic/ 目录"""
+        output_dir = self.data_path / "llm_pca" / "intrinsic"
+        output_dir.mkdir(parents=True, exist_ok=True)
         
-        # 保存PCA结果到Stage1目录
         if self.pca_results is not None:
-            pca_path = llm_data_dir / f"{prefix}_results.pkl"
+            pca_path = output_dir / f"{prefix}_results.pkl"
             self.pca_results.to_pickle(pca_path)
             print(f"💾 保存PCA结果到: {pca_path}")
         
-        # 保存实体分数到Stage1目录
         if entity_scores is not None:
-            scores_path = llm_data_dir / f"{prefix}_entity_scores.pkl"
+            scores_path = output_dir / f"{prefix}_entity_scores.pkl"
             entity_scores.to_pickle(scores_path)
             print(f"💾 保存实体分数到: {scores_path}")
             
-            # JSON格式（也保存到Stage1目录）
-            scores_json = llm_data_dir / f"{prefix}_entity_scores.json"
+            scores_json = output_dir / f"{prefix}_entity_scores.json"
             entity_scores.to_json(scores_json, orient='records', indent=2)
             print(f"💾 保存JSON格式到: {scores_json}")
+    
+    def run_analysis_with_fixed_pca(self) -> pd.DataFrame:
+        """使用固定的PCA模型运行分析（推荐方法）
+        
+        这个方法使用Stage0训练的PCA模型来转换Stage1的数据，
+        确保所有坐标都在同一个坐标系中，使得距离计算有意义。
+        
+        Returns:
+            实体分数DataFrame
+        """
+        print("\n" + "="*60)
+        print("🔄 使用固定PCA模型进行Stage1分析（与Stage0坐标系一致）")
+        print("="*60)
+        
+        # 1. 加载固定的PCA模型
+        pca_model_path = Path('data/country_values/pca_model_fixed.pkl')
+        if not pca_model_path.exists():
+            raise FileNotFoundError(
+                f"固定PCA模型不存在: {pca_model_path}\n"
+                "请先运行Stage0分析生成PCA模型：python src/country_values/pca_analysis.py"
+            )
+        
+        pca_model = self.load_pca_model(pca_model_path)
+        
+        # 2. 加载IVS数据（作为基准）
+        print("\n📊 加载IVS基准数据...")
+        if not self.load_base_data():
+            raise ValueError("加载IVS数据失败")
+        
+        ivs_data = self.prepare_ivs_data()
+        ivs_data['data_source'] = 'IVS'
+        ivs_data['model_name'] = None
+        print(f"   IVS数据: {len(ivs_data)} 行")
+        
+        # 3. 加载LLM数据
+        print("\n📊 加载LLM数据...")
+        llm_data = self.load_additional_data()
+        if llm_data.empty:
+            raise ValueError("LLM数据为空")
+        
+        llm_prepared = self._prepare_llm_data_for_pca(llm_data)
+        print(f"   LLM数据: {len(llm_prepared)} 行")
+        
+        # 4. 对IVS数据应用固定PCA
+        print("\n🔄 对IVS数据应用固定PCA...")
+        ivs_pca = self.transform_with_fixed_pca(ivs_data, pca_model)
+        ivs_pca['country_code'] = ivs_data['country_code'].values
+        ivs_pca['data_source'] = 'IVS'
+        ivs_pca['model_name'] = None
+        if 'year' in ivs_data.columns:
+            ivs_pca['year'] = ivs_data['year'].values
+        
+        # 5. 对LLM数据应用固定PCA
+        print("\n🔄 对LLM数据应用固定PCA...")
+        llm_pca = self.transform_with_fixed_pca(llm_prepared, pca_model)
+        
+        # 添加元数据
+        llm_pca['country_code'] = llm_prepared['country_code'].values
+        llm_pca['data_source'] = 'LLM'
+        llm_pca['Cultural Region'] = 'AI Model'
+        
+        # 添加模型名称
+        if 'model_name' in llm_prepared.columns:
+            llm_pca['model_name'] = llm_prepared['model_name'].values
+        
+        # 6. 合并结果
+        print("\n📊 合并PCA结果...")
+        self.pca_results = pd.concat([ivs_pca, llm_pca], ignore_index=True)
+        print(f"   合并后总行数: {len(self.pca_results)}")
+        
+        # 7. 合并国家元数据
+        self.pca_results = self.prepare_country_codes_for_merge(self.pca_results)
+        self.pca_results = self.merge_country_metadata(self.pca_results, on_column='country_code_clean')
+        
+        # 8. 计算实体分数
+        print("\n📊 计算实体分数...")
+        entity_scores = self.calculate_entity_scores()
+        
+        # 9. 保存结果
+        self.save_results(entity_scores)
+        
+        # 10. 打印摘要
+        self.print_summary(entity_scores)
+        
+        return entity_scores
+    
+    def run_llm_analysis_for_runner(self, use_fixed_pca: bool = True) -> pd.DataFrame:
+        """为run脚本运行LLM分析，返回实体分数DataFrame
+        
+        Args:
+            use_fixed_pca: 是否使用固定的PCA模型（Stage0的模型），默认True
+        """
+        print("🚀 开始LLM价值观PCA分析...")
+        
+        if use_fixed_pca:
+            # 【新方法】使用固定的PCA模型，确保坐标系一致
+            entity_scores = self.run_analysis_with_fixed_pca()
+        else:
+            # 【旧方法】重新拟合PCA（不推荐，会导致坐标系变化）
+            print("⚠️ 警告：使用重新拟合PCA模式，坐标系可能与Stage0不一致")
+            entity_scores = super().run_full_analysis()
+        
+        print(f"✅ LLM PCA分析完成: {len(entity_scores)} 个实体")
+        return entity_scores
     
     def print_summary(self, entity_scores=None):
         """打印分析结果摘要 - 增强LLM相关信息"""
@@ -212,8 +309,8 @@ def main():
     analyzer = LLMPCAAnalyzer(data_path=data_path)
     
     try:
-        # 运行完整分析
-        entity_scores = analyzer.run_full_analysis()
+        # 使用固定PCA模型运行分析（推荐，与Stage0坐标系一致）
+        entity_scores = analyzer.run_llm_analysis_for_runner(use_fixed_pca=True)
         
         print(f"\n🎉 LLM PCA分析完成！")
         print(f"📊 生成了 {len(entity_scores)} 个实体的PCA分数")

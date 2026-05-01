@@ -25,7 +25,7 @@ class LLMResponse:
 class IVSQuestions:
     """IVS文化价值观调查问题定义 - 从配置文件加载"""
     _questions_config: Dict = {}
-    _config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'config', 'ivs_questions.json')
+    _config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'config', 'questions', 'ivs_questions.json')
 
     @classmethod
     def _load_config(cls):
