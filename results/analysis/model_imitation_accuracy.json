@@ -1,0 +1,300 @@
+{
+  "study": "Study 5: Model Imitation Accuracy (English Roleplay)",
+  "n_models": 20,
+  "n_countries": 66,
+  "model_ranking": [
+    {
+      "model_name": "gpt-4o",
+      "vendor": "OpenAI",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 1.168,
+      "median_distance": 1.112,
+      "std_distance": 0.647,
+      "pc1_bias": 0.302,
+      "pc2_bias": -0.096,
+      "n_countries": 66
+    },
+    {
+      "model_name": "deepseek-chat",
+      "vendor": "DeepSeek",
+      "origin": "China",
+      "open_source": true,
+      "size_category": "Large",
+      "mean_distance": 1.292,
+      "median_distance": 1.024,
+      "std_distance": 0.798,
+      "pc1_bias": 0.029,
+      "pc2_bias": -0.068,
+      "n_countries": 66
+    },
+    {
+      "model_name": "qwen3-max",
+      "vendor": "Alibaba",
+      "origin": "China",
+      "open_source": true,
+      "size_category": "Large",
+      "mean_distance": 1.439,
+      "median_distance": 1.351,
+      "std_distance": 0.795,
+      "pc1_bias": -0.39,
+      "pc2_bias": 0.487,
+      "n_countries": 66
+    },
+    {
+      "model_name": "deepseek-chat-v3.1",
+      "vendor": "DeepSeek",
+      "origin": "China",
+      "open_source": true,
+      "size_category": "Large",
+      "mean_distance": 1.466,
+      "median_distance": 1.281,
+      "std_distance": 0.956,
+      "pc1_bias": 0.303,
+      "pc2_bias": -0.115,
+      "n_countries": 66
+    },
+    {
+      "model_name": "llama-3.3-70b-instruct",
+      "vendor": "Meta",
+      "origin": "US",
+      "open_source": true,
+      "size_category": "Large",
+      "mean_distance": 1.519,
+      "median_distance": 1.377,
+      "std_distance": 0.873,
+      "pc1_bias": 0.048,
+      "pc2_bias": 0.376,
+      "n_countries": 66
+    },
+    {
+      "model_name": "doubao-1-5-pro-32k-250115",
+      "vendor": "ByteDance",
+      "origin": "China",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 1.663,
+      "median_distance": 1.472,
+      "std_distance": 0.815,
+      "pc1_bias": -0.279,
+      "pc2_bias": -0.325,
+      "n_countries": 66
+    },
+    {
+      "model_name": "claude-sonnet-4.5",
+      "vendor": "Anthropic",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 1.677,
+      "median_distance": 1.429,
+      "std_distance": 1.106,
+      "pc1_bias": 0.435,
+      "pc2_bias": 0.663,
+      "n_countries": 66
+    },
+    {
+      "model_name": "kimi-k2",
+      "vendor": "Moonshot",
+      "origin": "China",
+      "open_source": true,
+      "size_category": "Large",
+      "mean_distance": 1.737,
+      "median_distance": 1.291,
+      "std_distance": 1.21,
+      "pc1_bias": 0.787,
+      "pc2_bias": 0.232,
+      "n_countries": 66
+    },
+    {
+      "model_name": "gemini-2.5-flash",
+      "vendor": "Google",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 1.745,
+      "median_distance": 1.571,
+      "std_distance": 1.016,
+      "pc1_bias": -0.281,
+      "pc2_bias": 0.456,
+      "n_countries": 66
+    },
+    {
+      "model_name": "claude-3-7-sonnet-20250219",
+      "vendor": "Anthropic",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 1.755,
+      "median_distance": 1.405,
+      "std_distance": 1.056,
+      "pc1_bias": 0.17,
+      "pc2_bias": 0.808,
+      "n_countries": 66
+    },
+    {
+      "model_name": "mistral-medium-3.1",
+      "vendor": "Mistral",
+      "origin": "Europe",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 1.811,
+      "median_distance": 1.676,
+      "std_distance": 1.058,
+      "pc1_bias": 0.008,
+      "pc2_bias": 0.617,
+      "n_countries": 66
+    },
+    {
+      "model_name": "gpt-5.1",
+      "vendor": "OpenAI",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 1.842,
+      "median_distance": 1.345,
+      "std_distance": 1.274,
+      "pc1_bias": 0.291,
+      "pc2_bias": 0.647,
+      "n_countries": 66
+    },
+    {
+      "model_name": "gemini-3-pro-preview",
+      "vendor": "Google",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 1.886,
+      "median_distance": 1.833,
+      "std_distance": 1.084,
+      "pc1_bias": -0.042,
+      "pc2_bias": 0.452,
+      "n_countries": 66
+    },
+    {
+      "model_name": "gemini-2.5-pro",
+      "vendor": "Google",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 2.147,
+      "median_distance": 2.014,
+      "std_distance": 1.322,
+      "pc1_bias": -0.143,
+      "pc2_bias": 1.237,
+      "n_countries": 66
+    },
+    {
+      "model_name": "gpt-4o-mini",
+      "vendor": "OpenAI",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Small",
+      "mean_distance": 2.381,
+      "median_distance": 1.905,
+      "std_distance": 1.415,
+      "pc1_bias": 1.349,
+      "pc2_bias": 0.439,
+      "n_countries": 66
+    },
+    {
+      "model_name": "gemma-3-4b-it",
+      "vendor": "Google",
+      "origin": "US",
+      "open_source": true,
+      "size_category": "Small",
+      "mean_distance": 2.396,
+      "median_distance": 2.529,
+      "std_distance": 0.784,
+      "pc1_bias": -0.197,
+      "pc2_bias": 2.078,
+      "n_countries": 66
+    },
+    {
+      "model_name": "grok-4.1-fast",
+      "vendor": "xAI",
+      "origin": "US",
+      "open_source": false,
+      "size_category": "Large",
+      "mean_distance": 2.452,
+      "median_distance": 2.707,
+      "std_distance": 0.952,
+      "pc1_bias": -1.309,
+      "pc2_bias": 0.77,
+      "n_countries": 66
+    },
+    {
+      "model_name": "phi-3-mini-128k-instruct",
+      "vendor": "Microsoft",
+      "origin": "US",
+      "open_source": true,
+      "size_category": "Small",
+      "mean_distance": 2.703,
+      "median_distance": 2.957,
+      "std_distance": 1.043,
+      "pc1_bias": 2.236,
+      "pc2_bias": 1.269,
+      "n_countries": 66
+    },
+    {
+      "model_name": "mistral-nemo",
+      "vendor": "Mistral",
+      "origin": "Europe",
+      "open_source": true,
+      "size_category": "Small",
+      "mean_distance": 2.991,
+      "median_distance": 3.017,
+      "std_distance": 0.961,
+      "pc1_bias": 1.096,
+      "pc2_bias": 2.448,
+      "n_countries": 66
+    },
+    {
+      "model_name": "llama-3.2-3b-instruct",
+      "vendor": "Meta",
+      "origin": "US",
+      "open_source": true,
+      "size_category": "Small",
+      "mean_distance": 3.296,
+      "median_distance": 3.58,
+      "std_distance": 1.601,
+      "pc1_bias": 2.062,
+      "pc2_bias": 2.426,
+      "n_countries": 66
+    }
+  ],
+  "open_vs_closed": {
+    "open_mean": 2.093,
+    "closed_mean": 1.866,
+    "n_open": 9,
+    "n_closed": 11,
+    "t": 0.881,
+    "p": 0.3898,
+    "cohens_d": 0.382
+  },
+  "origin_comparison": {
+    "US": {
+      "mean": 2.074,
+      "n": 13
+    },
+    "China": {
+      "mean": 1.519,
+      "n": 5
+    },
+    "Europe": {
+      "mean": 2.401,
+      "n": 2
+    },
+    "us_vs_china": {
+      "t": 2.123,
+      "p": 0.0497
+    }
+  },
+  "interaction_open_closed_x_western": {
+    "Open_Western": 2.263,
+    "Open_Non-Western": 1.78,
+    "Closed_Western": 2.774,
+    "Closed_Non-Western": 1.457
+  }
+}

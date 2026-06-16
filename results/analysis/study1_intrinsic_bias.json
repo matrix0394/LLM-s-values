@@ -1,0 +1,82 @@
+{
+  "study": "Study 1: Pervasive Secular-Rational Bias",
+  "n_models": 20,
+  "models": [
+    "claude-3-7-sonnet-20250219",
+    "claude-sonnet-4.5",
+    "deepseek-chat",
+    "deepseek-chat-v3.1",
+    "doubao-1-5-pro-32k-250115",
+    "gemini-2.5-flash",
+    "gemini-2.5-pro",
+    "gemini-3-pro-preview",
+    "gemma-3-4b-it",
+    "gpt-4o",
+    "gpt-4o-mini",
+    "gpt-5.1",
+    "grok-4.1-fast",
+    "kimi-k2",
+    "llama-3.2-3b-instruct",
+    "llama-3.3-70b-instruct",
+    "mistral-medium-3.1",
+    "mistral-nemo",
+    "phi-3-mini-128k-instruct",
+    "qwen3-max"
+  ],
+  "n_combinations": 120,
+  "language_stats": {
+    "ar": {
+      "n": 20,
+      "secular_rational_mean": 1.06,
+      "secular_rational_std": 1.545,
+      "self_expression_mean": 0.61,
+      "self_expression_std": 1.897
+    },
+    "en": {
+      "n": 20,
+      "secular_rational_mean": 2.656,
+      "secular_rational_std": 1.982,
+      "self_expression_mean": 1.173,
+      "self_expression_std": 1.687
+    },
+    "es": {
+      "n": 20,
+      "secular_rational_mean": 2.782,
+      "secular_rational_std": 1.364,
+      "self_expression_mean": 1.615,
+      "self_expression_std": 1.305
+    },
+    "fr": {
+      "n": 20,
+      "secular_rational_mean": 2.867,
+      "secular_rational_std": 1.499,
+      "self_expression_mean": 1.399,
+      "self_expression_std": 1.199
+    },
+    "ru": {
+      "n": 20,
+      "secular_rational_mean": 2.156,
+      "secular_rational_std": 1.833,
+      "self_expression_mean": 1.246,
+      "self_expression_std": 1.725
+    },
+    "zh-cn": {
+      "n": 20,
+      "secular_rational_mean": 2.66,
+      "secular_rational_std": 1.738,
+      "self_expression_mean": 1.233,
+      "self_expression_std": 1.794
+    }
+  },
+  "anova_secular_rational_pc1": {
+    "F": 3.349,
+    "p": 0.0074,
+    "significant": true
+  },
+  "anova_self_expression_pc2": {
+    "F": 0.856,
+    "p": 0.513,
+    "significant": false
+  },
+  "en_ar_divergence_secular_rational": 1.596
+}

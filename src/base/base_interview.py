@@ -178,16 +178,16 @@ class BaseInterview(ABC):
                 "retry": "\n\n시도 {attempt}회: 숫자만 제공하십시오. 텍스트는 불필요합니다."
             },
             "zh-tw": {
-                "Y002": "\n\n格式：回答兩個不同的數字，用空格分隔（例如：'1 3'）。兩個數字必須不同。",
-                "Y003": "\n\n格式：回答1-5個數字（從1-11中選），用空格分隔（例如：'2 4 6 8 10'）。",
-                "single": "\n\n格式：只回答一個數字（例如：'3'）。",
-                "retry": "\n\n第{attempt}次嘗試：請只提供數字，不要文字。"
+                "Y002": "\n\n格式：請回答兩個不同的數字，並以空格分隔（例如：'1 3'）。",
+                "Y003": "\n\n格式：請回答 1 到 5 個數字（從 1 到 11 中選），並以空格分隔（例如：'2 4 6 8 10'）。",
+                "single": "\n\n格式：請只回答一個數字（例如：'3'）。",
+                "retry": "\n\n第{attempt}次嘗試：請只提供數字，不需任何文字。"
             },
             "zh-hk": {
-                "Y002": "\n\n格式：回答兩個不同的數字，用空格分隔（例如：'1 3'）。兩個數字必須不同。",
-                "Y003": "\n\n格式：回答1-5個數字（從1-11中選），用空格分隔（例如：'2 4 6 8 10'）。",
-                "single": "\n\n格式：只回答一個數字（例如：'3'）。",
-                "retry": "\n\n第{attempt}次嘗試：請只提供數字，不要文字。"
+                "Y002": "\n\n格式：請回答兩個不同的數字，並以空格分隔（例如：'1 3'）。",
+                "Y003": "\n\n格式：請回答 1 至 5 個數字（由 1 至 11 中選），並以空格分隔（例如：'2 4 6 8 10'）。",
+                "single": "\n\n格式：請只回答一個數字（例如：'3'）。",
+                "retry": "\n\n第{attempt}次嘗試：請只提供數字，無須任何文字。"
             },
             "en-native": {
                 "Y002": "\n\nFormat: Respond with exactly 2 DIFFERENT numbers separated by space (e.g., '1 3'). The two numbers must be different.",
@@ -233,12 +233,13 @@ class BaseInterview(ABC):
         language = "en"  # 默认英语
         if "您正在参与" in system_prompt or "请基于您的文化背景" in system_prompt:
             language = "zh-cn"
-        elif "您正在參與" in system_prompt:  # 繁体中文
-            # 区分台湾繁体和香港繁体（都使用相同的格式提示）
-            if "關鍵回答規則" in system_prompt:
-                language = "zh-tw"  # 可以用 zh-tw 或 zh-hk，格式提示相同
+        elif "您正在參與" in system_prompt:  # 繁體中文
+            if "香港常用的繁體中文書面語" in system_prompt or "避免台灣用語" in system_prompt:
+                language = "zh-hk"
+            elif "台灣常用的正體中文書面語" in system_prompt:
+                language = "zh-tw"
             else:
-                language = "zh-tw"  # 默认使用台湾繁体
+                language = "zh-tw"
         elif "Вы участвуете" in system_prompt:
             language = "ru"
         elif "Está participando" in system_prompt:
@@ -278,8 +279,8 @@ class BaseInterview(ABC):
                         "en": "\n\n🚫 CRITICAL: Your response MUST be ONLY the number(s). DO NOT include ANY reasoning, thinking, or explanation. NO text except the number(s). This is mandatory.",
                         "en-native": "\n\n🚫 CRITICAL: Your response MUST be ONLY the number(s). DO NOT include ANY reasoning, thinking, or explanation. NO text except the number(s). This is mandatory.",
                         "zh-cn": "\n\n🚫 关键：你的回答必须只有数字。绝对不要包含任何推理、思考或解释。除了数字不要任何文字。这是强制要求。",
-                        "zh-tw": "\n\n🚫 關鍵：你的回答必須只有數字。絕對不要包含任何推理、思考或解釋。除了數字不要任何文字。這是強制要求。",
-                        "zh-hk": "\n\n🚫 關鍵：你的回答必須只有數字。絕對不要包含任何推理、思考或解釋。除了數字不要任何文字。這是強制要求。",
+                        "zh-tw": "\n\n🚫 關鍵：你的回答必須只有數字。絕對不要包含任何推理、思考或解釋。除了數字之外，不需任何文字。這是強制要求。",
+                        "zh-hk": "\n\n🚫 關鍵：你的回答必須只有數字。絕對不要包含任何推理、思考或解釋。除數字外，無須任何文字。這是強制要求。",
                         "ar": "\n\n🚫 حاسم: يجب أن تكون إجابتك أرقامًا فقط. لا تُضمّن أي تفكير أو استدلال أو شرح. لا نص إلا الأرقام. هذا إلزامي.",
                         "es": "\n\n🚫 CRÍTICO: Tu respuesta DEBE ser SOLO el/los número(s). NO incluyas NINGÚN razonamiento, pensamiento o explicación. NINGÚN texto excepto el/los número(s). Esto es obligatorio.",
                         "ru": "\n\n🚫 КРИТИЧЕСКИ ВАЖНО: Ваш ответ ДОЛЖЕН быть ТОЛЬКО числом/числами. НЕ включайте рассуждения, мышление или объяснения. Никакого текста, кроме чисел. Это обязательно.",

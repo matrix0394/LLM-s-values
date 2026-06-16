@@ -1,0 +1,104 @@
+{
+  "confucian_stratification": {
+    "China": {
+      "mean_ea_pct": 0.073,
+      "n_models": 20
+    },
+    "Japan": {
+      "mean_ea_pct": 3.317,
+      "n_models": 20
+    },
+    "South Korea": {
+      "mean_ea_pct": 2.968,
+      "n_models": 20
+    },
+    "Taiwan": {
+      "mean_ea_pct": 27.055,
+      "n_models": 20
+    },
+    "Hong Kong": {
+      "mean_ea_pct": 20.561,
+      "n_models": 20
+    },
+    "Macao": {
+      "mean_ea_pct": -5.312,
+      "n_models": 20
+    }
+  },
+  "africa_british": {
+    "per_country": {
+      "Kenya": {
+        "mean_pc2_bias": -0.291,
+        "n_models": 20
+      },
+      "Nigeria": {
+        "mean_pc2_bias": 0.564,
+        "n_models": 20
+      },
+      "Ghana": {
+        "mean_pc2_bias": 0.747,
+        "n_models": 20
+      },
+      "South Africa": {
+        "mean_pc2_bias": 1.71,
+        "n_models": 20
+      },
+      "Zimbabwe": {
+        "mean_pc2_bias": 0.833,
+        "n_models": 20
+      },
+      "Zambia": {
+        "mean_pc2_bias": -0.623,
+        "n_models": 20
+      }
+    },
+    "aggregate_mean_bias": 0.49,
+    "t_test": {
+      "t": 1.43,
+      "p": 0.2122,
+      "significant": false
+    }
+  },
+  "africa_french": {
+    "per_country": {
+      "Mali": {
+        "mean_ea_pct": 17.575,
+        "n_models": 20
+      },
+      "Burkina Faso": {
+        "mean_ea_pct": 17.507,
+        "n_models": 20
+      }
+    },
+    "aggregate_mean_ea_pct": 17.541,
+    "t_test": {
+      "t": 509.568,
+      "p": 0.0012
+    }
+  },
+  "latin_america": {
+    "spanish_colonies": {
+      "n": 11,
+      "mean_ea_pct": 5.427,
+      "per_country": {
+        "Argentina": -2.676,
+        "Bolivia": 19.824,
+        "Chile": 9.586,
+        "Colombia": 10.399,
+        "Ecuador": 13.178,
+        "Guatemala": -2.717,
+        "Mexico": 12.03,
+        "Nicaragua": 17.365,
+        "Peru": -2.243,
+        "Uruguay": -5.126,
+        "Venezuela": -9.926
+      }
+    },
+    "brazil": {
+      "mean_ea_pct": 3.578
+    },
+    "haiti": {
+      "mean_ea_pct": 20.381
+    }
+  }
+}

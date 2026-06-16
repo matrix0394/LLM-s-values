@@ -90,3 +90,26 @@ results/roleplay_multilingual/roleplay_ml_dashboard/
 data/country_values/ivs_df.pkl.bak
 data/llm_values/interview_raw/
 data/llm_values/llm_processed_responses_ivs_format_*.json
+
+# 缓存和临时文件
+__pycache__/
+*.pyc
+*.log
+*.bak
+data/*/_archive/
+.hypothesis/
+
+# 本机环境和密钥
+.env
+.env.local
+.env.*.local
+.cursor/
+.mplconfig/
+
+# 本地打包副本和官方原始大数据
+*.zip
+LLM's values/
+The Value Atlas of AI/
+data/**/*.sav
+data/**/*.dta
+data/**/*.spss

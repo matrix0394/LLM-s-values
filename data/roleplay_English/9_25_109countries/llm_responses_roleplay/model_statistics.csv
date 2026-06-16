@@ -1,9 +1,0 @@
-,PC1,PC1,PC1,PC2,PC2
-,mean,std,count,mean,std
-model,,,,,
-anthropic/claude-3.7-sonnet,0.605,0.591,2,0.086,0.158
-deepseek/deepseek-chat-v3-0324,2.024,1.761,10,0.77,1.156
-google/gemini-2.0-flash-001,1.06,0.675,4,-0.274,0.097
-mistralai/mistral-nemo,-0.235,1.348,148,-0.099,0.968
-mistralai/mistral-nemo:free,-0.014,1.404,7,0.09,0.434
-qwen/qwq-32b,2.307,2.336,4,1.825,1.497

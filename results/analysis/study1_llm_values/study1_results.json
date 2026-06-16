@@ -1,0 +1,35 @@
+{
+  "model_count": 20,
+  "excluded_models": [
+    "qwen3-1.7b",
+    "z-ai/glm-4.6",
+    "qwen/qwq-32b"
+  ],
+  "pc1": {
+    "language_means": {
+      "French": 2.867005,
+      "Spanish": 2.782385,
+      "Chinese": 2.660005,
+      "English": 2.65602,
+      "Russian": 2.15648,
+      "Arabic": 1.05972
+    },
+    "f_statistic": 3.35,
+    "p_value": 0.0074,
+    "en_vs_ar_diff": 1.6,
+    "interpretation": "PC1: Traditional vs Secular-rational (higher = more secular-rational)"
+  },
+  "pc2": {
+    "language_means": {
+      "Spanish": 1.615395,
+      "French": 1.39908,
+      "Russian": 1.24637,
+      "Chinese": 1.23316,
+      "English": 1.172885,
+      "Arabic": 0.6103200000000001
+    },
+    "f_statistic": 0.86,
+    "p_value": 0.513,
+    "interpretation": "PC2: Survival vs Self-expression (higher = more self-expression)"
+  }
+}

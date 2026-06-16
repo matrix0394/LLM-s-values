@@ -1,0 +1,2241 @@
+Model,Country,Language,PC1_Self_Expression,PC2_Secular_Rational,Cultural_Region
+claude-3-7-sonnet-20250219,Algeria,ar,-1.647451506228367,-1.7093075607579828,African-Islamic
+claude-3-7-sonnet-20250219,Algeria,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-sonnet-4.5,Algeria,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+claude-sonnet-4.5,Algeria,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+deepseek-chat,Algeria,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+deepseek-chat,Algeria,en,-1.8582511310251144,-1.8756565689537408,African-Islamic
+deepseek-chat-v3.1,Algeria,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+deepseek-chat-v3.1,Algeria,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+doubao-1-5-pro-32k-250115,Algeria,ar,-2.7148460351671426,-2.0686075304522955,African-Islamic
+doubao-1-5-pro-32k-250115,Algeria,en,-2.1733821735396637,-2.2766191977022157,African-Islamic
+gemini-2.5-flash,Algeria,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-flash,Algeria,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-pro,Algeria,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Algeria,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemini-3-pro-preview,Algeria,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-3-pro-preview,Algeria,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Algeria,ar,1.2008427159840385,-0.5647885812822381,African-Islamic
+gemma-3-4b-it,Algeria,en,-0.9000075096230663,1.4944578229172976,African-Islamic
+gpt-4o,Algeria,ar,-0.8524603268053227,-1.4074782648896271,African-Islamic
+gpt-4o,Algeria,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+gpt-4o-mini,Algeria,ar,-0.39284344983586084,-0.46467141486672037,African-Islamic
+gpt-4o-mini,Algeria,en,-2.4072600195293026,-0.8650435007642671,African-Islamic
+gpt-5.1,Algeria,ar,-1.7412324588136636,-1.9797354054100604,African-Islamic
+gpt-5.1,Algeria,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Algeria,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+grok-4.1-fast,Algeria,en,-4.227267127149362,-1.3065440781645141,African-Islamic
+kimi-k2,Algeria,ar,-1.3910782486102673,-1.6360974448248238,African-Islamic
+kimi-k2,Algeria,en,-0.7627945531094101,-1.580833157440408,African-Islamic
+llama-3.2-3b-instruct,Algeria,ar,1.9058482925645488,3.4163608300863313,African-Islamic
+llama-3.2-3b-instruct,Algeria,en,1.3212342590871808,1.6342078134438056,African-Islamic
+llama-3.3-70b-instruct,Algeria,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+llama-3.3-70b-instruct,Algeria,en,-2.4072600195293026,-0.8650435007642671,African-Islamic
+mistral-medium-3.1,Algeria,ar,-1.7692945077905935,-1.9152588472290804,African-Islamic
+mistral-medium-3.1,Algeria,en,-1.8582511310251144,-1.8756565689537408,African-Islamic
+mistral-nemo,Algeria,ar,2.3998213338359924,0.9142277032622504,African-Islamic
+mistral-nemo,Algeria,en,-0.6770646167274365,1.0662161232269924,African-Islamic
+phi-3-mini-128k-instruct,Algeria,ar,-2.3211847189581167,3.713241328974441,African-Islamic
+phi-3-mini-128k-instruct,Algeria,en,1.828446808244109,0.3575129171711133,African-Islamic
+qwen3-max,Algeria,ar,-1.8582511310251144,-1.8756565689537408,African-Islamic
+qwen3-max,Algeria,en,-1.840739547180691,-1.90431890303536,African-Islamic
+claude-3-7-sonnet-20250219,Argentina,en,0.9970053084995704,1.528971527587264,Latin America
+claude-3-7-sonnet-20250219,Argentina,es,0.899185098518614,0.5760161776630076,Latin America
+claude-sonnet-4.5,Argentina,en,3.0791016191739344,1.7784845440090944,Latin America
+claude-sonnet-4.5,Argentina,es,1.242828100985165,1.637995867619784,Latin America
+deepseek-chat,Argentina,en,0.47951574908363837,0.30754478987269923,Latin America
+deepseek-chat,Argentina,es,1.0037572998407214,1.249071439320204,Latin America
+deepseek-chat-v3.1,Argentina,en,0.9531998392353312,-0.1712378153699234,Latin America
+deepseek-chat-v3.1,Argentina,es,1.16651134147493,2.90942857442228,Latin America
+doubao-1-5-pro-32k-250115,Argentina,en,1.115953880869539,1.489119319732152,Latin America
+doubao-1-5-pro-32k-250115,Argentina,es,1.1639994640320785,-0.004888807174165449,Latin America
+gemini-2.5-flash,Argentina,en,2.538083927590038,1.409488892038954,Latin America
+gemini-2.5-flash,Argentina,es,1.5934284812321442,1.4046265089849608,Latin America
+gemini-2.5-pro,Argentina,en,2.9747228106867696,3.114393808992569,Latin America
+gemini-2.5-pro,Argentina,es,1.9448493956026773,4.390232284237324,Latin America
+gemini-3-pro-preview,Argentina,en,1.9268134155888097,-0.08236569032768815,Latin America
+gemini-3-pro-preview,Argentina,es,2.2875180909247117,0.22545804615818757,Latin America
+gemma-3-4b-it,Argentina,en,-0.42418016783255064,2.4395225969610093,Latin America
+gemma-3-4b-it,Argentina,es,0.32718723757302004,2.249373637737626,Latin America
+gpt-4o,Argentina,en,1.6417228115794313,0.19885609285539083,Latin America
+gpt-4o,Argentina,es,2.1942355386842105,1.362958162406718,Latin America
+gpt-4o-mini,Argentina,en,4.1358850754740235,2.990611108497712,Latin America
+gpt-4o-mini,Argentina,es,3.0508304428262383,1.5559091239052727,Latin America
+gpt-5.1,Argentina,en,2.763923185890022,2.948044800796812,Latin America
+gpt-5.1,Argentina,es,1.8498017388502443,1.47783662491812,Latin America
+grok-4.1-fast,Argentina,en,1.212740271710632,2.526334341224423,Latin America
+grok-4.1-fast,Argentina,es,-0.06545388202489039,2.0006853633343518,Latin America
+kimi-k2,Argentina,en,2.830384397496083,1.423656709650365,Latin America
+kimi-k2,Argentina,es,3.0202964435081228,3.0212549167299714,Latin America
+llama-3.2-3b-instruct,Argentina,en,2.3330141795065114,2.1997964754257606,Latin America
+llama-3.2-3b-instruct,Argentina,es,1.8552908319591586,1.9960515753962034,Latin America
+llama-3.3-70b-instruct,Argentina,en,0.9291770476540616,0.5757662480832353,Latin America
+llama-3.3-70b-instruct,Argentina,es,0.8257902003246375,1.1720732692110662,Latin America
+mistral-medium-3.1,Argentina,en,3.384377113784307,1.9264917884136163,Latin America
+mistral-medium-3.1,Argentina,es,2.0116596994657976,2.989707459850974,Latin America
+mistral-nemo,Argentina,en,0.9411953807440288,3.6191757472635357,Latin America
+mistral-nemo,Argentina,es,3.129499581346063,1.9953757746739134,Latin America
+phi-3-mini-128k-instruct,Argentina,en,3.4443544267059854,1.1995731836365202,Latin America
+phi-3-mini-128k-instruct,Argentina,es,3.946309693205374,0.9433659984977195,Latin America
+qwen3-max,Argentina,en,0.48449957686767553,1.8209929368254256,Latin America
+qwen3-max,Argentina,es,1.5210873608233917,1.2670801530094598,Latin America
+claude-3-7-sonnet-20250219,Australia,en,5.242231020433766,3.4541302327869823,English-Speaking
+claude-sonnet-4.5,Australia,en,5.522627069633136,2.7803362852669826,English-Speaking
+deepseek-chat,Australia,en,5.972448414806752,1.2357183894188115,English-Speaking
+deepseek-chat-v3.1,Australia,en,5.115853510664724,1.042767427920257,English-Speaking
+doubao-1-5-pro-32k-250115,Australia,en,3.206593641856032,1.923154303554793,English-Speaking
+gemini-2.5-flash,Australia,en,5.072918380293349,4.082637712592638,English-Speaking
+gemini-2.5-pro,Australia,en,5.0904299641377735,4.053975378511019,English-Speaking
+gemini-3-pro-preview,Australia,en,5.831246904410839,3.899640643386997,English-Speaking
+gemma-3-4b-it,Australia,en,1.0507333776059669,2.5621428777997024,English-Speaking
+gpt-4o,Australia,en,5.297932639536553,1.6785043874550938,English-Speaking
+gpt-4o-mini,Australia,en,5.737465951825542,3.6292127987349194,English-Speaking
+gpt-5.1,Australia,en,5.072918380293349,4.082637712592638,English-Speaking
+grok-4.1-fast,Australia,en,4.309606028391824,2.752186634845554,English-Speaking
+kimi-k2,Australia,en,6.0476131665560535,2.516727280530668,English-Speaking
+llama-3.2-3b-instruct,Australia,en,4.133086526420852,1.8567190701466365,English-Speaking
+llama-3.3-70b-instruct,Australia,en,5.5188365594222235,2.3860464907715517,English-Speaking
+mistral-medium-3.1,Australia,en,4.729725288801871,3.746151642025143,English-Speaking
+mistral-nemo,Australia,en,4.421105454024168,2.6268472839051293,English-Speaking
+phi-3-mini-128k-instruct,Australia,en,4.144878436761225,3.900626695287804,English-Speaking
+qwen3-max,Australia,en,3.719239929772071,2.8854011736241096,English-Speaking
+claude-3-7-sonnet-20250219,Austria,de,3.290625708419616,2.389348540555034,Catholic Europe
+claude-3-7-sonnet-20250219,Austria,en,4.304086781812718,2.730926120361449,Catholic Europe
+claude-sonnet-4.5,Austria,de,3.4159132774693335,2.750770302538626,Catholic Europe
+claude-sonnet-4.5,Austria,en,3.894291922431035,2.6645598616329242,Catholic Europe
+deepseek-chat,Austria,de,0.7872315392622444,1.4285667781512243,Catholic Europe
+deepseek-chat,Austria,en,0.763208747680975,2.1755708416043835,Catholic Europe
+deepseek-chat-v3.1,Austria,de,1.7194405147307963,2.2105632593187345,Catholic Europe
+deepseek-chat-v3.1,Austria,en,2.5292305440527727,3.44615781464471,Catholic Europe
+doubao-1-5-pro-32k-250115,Austria,de,1.440571845484235,0.6525673305144669,Catholic Europe
+doubao-1-5-pro-32k-250115,Austria,en,1.8662103524733884,1.667792852178162,Catholic Europe
+gemini-2.5-flash,Austria,de,4.615920874929301,0.5900687498582401,Catholic Europe
+gemini-2.5-flash,Austria,en,1.958957485918822,2.022480368398254,Catholic Europe
+gemini-2.5-pro,Austria,de,2.408618784489245,2.2907018266087897,Catholic Europe
+gemini-2.5-pro,Austria,en,1.5039782971846778,3.5917589920165525,Catholic Europe
+gemini-3-pro-preview,Austria,de,3.447938047714273,1.9609678396428347,Catholic Europe
+gemini-3-pro-preview,Austria,en,3.521735466113959,3.6609272530202492,Catholic Europe
+gemma-3-4b-it,Austria,de,0.23501151646776916,1.9936794789793286,Catholic Europe
+gemma-3-4b-it,Austria,en,0.555498446214191,2.3870603118517653,Catholic Europe
+gpt-4o,Austria,de,1.885408814703883,0.6107586657975863,Catholic Europe
+gpt-4o,Austria,en,3.2508594965510373,1.3716667028700256,Catholic Europe
+gpt-4o-mini,Austria,de,4.3105979895495645,2.0125843909899093,Catholic Europe
+gpt-4o-mini,Austria,en,3.1136085429692297,2.617039397274936,Catholic Europe
+gpt-5.1,Austria,de,2.9977831883309043,3.84027658618855,Catholic Europe
+gpt-5.1,Austria,en,3.35776339921787,3.7035853343242437,Catholic Europe
+grok-4.1-fast,Austria,de,1.6844173470419488,2.267887927481972,Catholic Europe
+grok-4.1-fast,Austria,en,1.0823790475911839,3.259060975625036,Catholic Europe
+kimi-k2,Austria,de,2.6184738388976143,1.6261301931240004,Catholic Europe
+kimi-k2,Austria,en,4.3081260392083776,3.4134536256336276,Catholic Europe
+llama-3.2-3b-instruct,Austria,de,3.735510068408627,0.7770169903019617,Catholic Europe
+llama-3.2-3b-instruct,Austria,en,2.357036971087781,1.4527924119726017,Catholic Europe
+llama-3.3-70b-instruct,Austria,de,3.583502122910011,1.7439669975368814,Catholic Europe
+llama-3.3-70b-instruct,Austria,en,3.8746577646126514,1.3214108042023223,Catholic Europe
+mistral-medium-3.1,Austria,de,2.1803075758480746,2.153015152494651,Catholic Europe
+mistral-medium-3.1,Austria,en,2.197819159692498,2.124352818413032,Catholic Europe
+mistral-nemo,Austria,de,3.7753835612728985,4.123054792812163,Catholic Europe
+mistral-nemo,Austria,en,2.795704947226157,4.175517077921408,Catholic Europe
+phi-3-mini-128k-instruct,Austria,de,3.269945018837534,3.453492877928,Catholic Europe
+phi-3-mini-128k-instruct,Austria,en,3.144598178674717,1.0728264537161019,Catholic Europe
+qwen3-max,Austria,de,3.4470419666956174,1.8124815394736122,Catholic Europe
+qwen3-max,Austria,en,2.0287024301860304,2.2864017616622414,Catholic Europe
+claude-3-7-sonnet-20250219,Belgium,de,4.409658907873008,2.5141752078352684,Catholic Europe
+claude-3-7-sonnet-20250219,Belgium,en,5.266253812015036,2.7071261693338236,Catholic Europe
+claude-sonnet-4.5,Belgium,de,3.4159132774693335,2.750770302538626,Catholic Europe
+claude-sonnet-4.5,Belgium,en,3.9118035062754593,2.6358975275513052,Catholic Europe
+deepseek-chat,Belgium,de,2.4314103340718165,2.4932024647204534,Catholic Europe
+deepseek-chat,Belgium,en,3.031185810552162,3.189950629505909,Catholic Europe
+deepseek-chat-v3.1,Belgium,de,2.699119128777538,2.15810097420949,Catholic Europe
+deepseek-chat-v3.1,Belgium,en,4.365504062241542,3.5866464910340197,Catholic Europe
+doubao-1-5-pro-32k-250115,Belgium,de,3.8147077607434383,2.1274571659772303,Catholic Europe
+doubao-1-5-pro-32k-250115,Belgium,en,3.9699059937575587,3.253605381301878,Catholic Europe
+gemini-2.5-flash,Belgium,de,3.419875998737344,2.0254443978238146,Catholic Europe
+gemini-2.5-flash,Belgium,en,3.4861176085169427,3.1911948914238017,Catholic Europe
+gemini-2.5-pro,Belgium,de,3.749002073871889,2.546063277985421,Catholic Europe
+gemini-2.5-pro,Belgium,en,3.7009564907093493,4.040071404891739,Catholic Europe
+gemini-3-pro-preview,Belgium,de,4.760259288119987,2.280805849200445,Catholic Europe
+gemini-3-pro-preview,Belgium,en,5.072918380293349,4.082637712592638,Catholic Europe
+gemma-3-4b-it,Belgium,de,2.5250615121163467,2.846172350782034,Catholic Europe
+gemma-3-4b-it,Belgium,en,1.172576379168193,2.7680941642708006,Catholic Europe
+gpt-4o,Belgium,de,4.038194640033834,1.9551137171639517,Catholic Europe
+gpt-4o,Belgium,en,3.0344932344058226,2.7545800657263553,Catholic Europe
+gpt-4o-mini,Belgium,de,4.788321337096917,2.216329291019466,Catholic Europe
+gpt-4o-mini,Belgium,en,5.743977159562388,2.9108710693633792,Catholic Europe
+gpt-5.1,Belgium,de,5.12096396345589,2.588629585686321,Catholic Europe
+gpt-5.1,Belgium,en,5.283718005090097,4.2489867207883965,Catholic Europe
+grok-4.1-fast,Belgium,de,1.8646829725205811,3.8995827285024287,Catholic Europe
+grok-4.1-fast,Belgium,en,2.721277876662608,4.092533690000984,Catholic Europe
+kimi-k2,Belgium,de,4.903653130922296,3.140622306862103,Catholic Europe
+kimi-k2,Belgium,en,5.831246904410839,3.899640643386997,Catholic Europe
+llama-3.2-3b-instruct,Belgium,de,3.9791960715330785,1.188919563244157,Catholic Europe
+llama-3.2-3b-instruct,Belgium,en,2.995306254605142,1.490417719775818,Catholic Europe
+llama-3.3-70b-instruct,Belgium,de,5.115693464061532,2.855606781978964,Catholic Europe
+llama-3.3-70b-instruct,Belgium,en,5.074159088635839,3.6312731795137414,Catholic Europe
+mistral-medium-3.1,Belgium,de,4.7187249126942925,3.0564722467352228,Catholic Europe
+mistral-medium-3.1,Belgium,en,3.346763023110293,3.013905939034323,Catholic Europe
+mistral-nemo,Belgium,de,3.7994063528541675,3.376050729359005,Catholic Europe
+mistral-nemo,Belgium,en,4.397082662442898,3.373851347358288,Catholic Europe
+phi-3-mini-128k-instruct,Belgium,de,4.545876042314953,1.3530621849983737,Catholic Europe
+phi-3-mini-128k-instruct,Belgium,en,3.566197428268211,1.405524470107618,Catholic Europe
+qwen3-max,Belgium,de,3.6688419675999424,2.668509942959291,Catholic Europe
+qwen3-max,Belgium,en,1.8472187794455186,2.357722177047855,Catholic Europe
+claude-3-7-sonnet-20250219,Bolivia,en,-1.218677786442651,-0.009836903663598549,Latin America
+claude-3-7-sonnet-20250219,Bolivia,es,-1.218677786442651,-0.009836903663598549,Latin America
+claude-sonnet-4.5,Bolivia,en,-0.12198050018445872,-0.16637802522916223,Latin America
+claude-sonnet-4.5,Bolivia,es,0.034885669066614555,-0.017751406921302587,Latin America
+deepseek-chat,Bolivia,en,-1.0023115242974359,-1.392750266519928,Latin America
+deepseek-chat,Bolivia,es,-0.7459382666793356,-1.3195401505867688,Latin America
+deepseek-chat-v3.1,Bolivia,en,-0.19676987974188553,-1.126735194750933,Latin America
+deepseek-chat-v3.1,Bolivia,es,-0.13368466307610882,-1.2485364210951508,Latin America
+doubao-1-5-pro-32k-250115,Bolivia,en,-1.556304240585661,-1.8955853452831806,Latin America
+doubao-1-5-pro-32k-250115,Bolivia,es,-1.223661614226688,-1.5232850506163247,Latin America
+gemini-2.5-flash,Bolivia,en,-0.523932879335734,-1.4789607074256301,Latin America
+gemini-2.5-flash,Bolivia,es,-1.3630161996333379,-1.7005740030058034,Latin America
+gemini-2.5-pro,Bolivia,en,-0.07427158076531049,-1.2107392492150937,Latin America
+gemini-2.5-pro,Bolivia,es,-0.378353757802559,-0.23958814116232152,Latin America
+gemini-3-pro-preview,Bolivia,en,-1.3630161996333379,-1.7005740030058034,Latin America
+gemini-3-pro-preview,Bolivia,es,-1.3630161996333379,-1.7005740030058034,Latin America
+gemma-3-4b-it,Bolivia,en,-0.21836437081984128,1.0924234582040406,Latin America
+gemma-3-4b-it,Bolivia,es,-0.1313376477438386,0.9885945513274936,Latin America
+gpt-4o,Bolivia,en,-0.25289397769574407,-0.9977820783889731,Latin America
+gpt-4o,Bolivia,es,0.3466723714138345,-0.5880858918883194,Latin America
+gpt-4o-mini,Bolivia,en,2.294880506709856,-1.2492975607050574,Latin America
+gpt-4o-mini,Bolivia,es,2.54070329919545,-1.1402732206725368,Latin America
+gpt-5.1,Bolivia,en,-0.19004954463427304,-1.558024945837671,Latin America
+gpt-5.1,Bolivia,es,-0.692004811133662,-1.3018177606988703,Latin America
+grok-4.1-fast,Bolivia,en,-3.3481768113788735,0.3711926962051473,Latin America
+grok-4.1-fast,Bolivia,es,-2.379197970552373,-0.929520058945247,Latin America
+kimi-k2,Bolivia,en,-0.046209531788381275,-1.2752158073960735,Latin America
+kimi-k2,Bolivia,es,1.4287040136501368,-1.1525955265573808,Latin America
+llama-3.2-3b-instruct,Bolivia,en,0.8996350094936866,1.3015097970522893,Latin America
+llama-3.2-3b-instruct,Bolivia,es,0.1443641539332062,4.236229323218791,Latin America
+llama-3.3-70b-instruct,Bolivia,en,-1.0198231081418596,-1.364087932438309,Latin America
+llama-3.3-70b-instruct,Bolivia,es,-1.4119658273949742,-0.2048482459409753,Latin America
+mistral-medium-3.1,Bolivia,en,-0.7200668601105912,-1.2373412025178905,Latin America
+mistral-medium-3.1,Bolivia,es,-1.1416661097040852,-1.5700392189094063,Latin America
+mistral-nemo,Bolivia,en,1.1197917818498135,0.3128862286913913,Latin America
+mistral-nemo,Bolivia,es,0.9089921570530662,0.14653722049563328,Latin America
+phi-3-mini-128k-instruct,Bolivia,en,2.184327154229236,0.355306530729572,Latin America
+phi-3-mini-128k-instruct,Bolivia,es,3.0750491450414565,0.342446523895667,Latin America
+qwen3-max,Bolivia,en,-0.984799940453012,-1.4214126006015468,Latin America
+qwen3-max,Bolivia,es,0.233740347367406,-1.3720024356960132,Latin America
+claude-3-7-sonnet-20250219,Brazil,en,2.7354586167073833,0.7165048540523179,Latin America
+claude-3-7-sonnet-20250219,Brazil,pt,-0.29129314032487497,0.46212945457649407,Latin America
+claude-sonnet-4.5,Brazil,en,1.8898640886729337,1.213233287843684,Latin America
+claude-sonnet-4.5,Brazil,pt,1.6790644638761862,1.046884279647926,Latin America
+deepseek-chat,Brazil,en,1.5304900944327415,-1.039922133570777,Latin America
+deepseek-chat,Brazil,pt,1.1250243568185985,2.1145720864208655,Latin America
+deepseek-chat-v3.1,Brazil,en,2.254036234465689,-0.7271528935087007,Latin America
+deepseek-chat-v3.1,Brazil,pt,1.498416286648149,2.0837033658977053,Latin America
+doubao-1-5-pro-32k-250115,Brazil,en,2.31688066752716,-1.2873957609573983,Latin America
+doubao-1-5-pro-32k-250115,Brazil,pt,1.178636577329606,-0.9286984115375397,Latin America
+gemini-2.5-flash,Brazil,en,0.23265913745818,0.28278012140819325,Latin America
+gemini-2.5-flash,Brazil,pt,1.5730424268408236,0.5381415727848244,Latin America
+gemini-2.5-pro,Brazil,en,0.47152081123185624,0.38465257142297127,Latin America
+gemini-2.5-pro,Brazil,pt,-0.21201833332820608,1.5280068101503834,Latin America
+gemini-3-pro-preview,Brazil,en,0.8986866981738186,-0.8319117832376001,Latin America
+gemini-3-pro-preview,Brazil,pt,-0.006202536315496332,0.180907671393415,Latin America
+gemma-3-4b-it,Brazil,en,-0.42418016783255064,2.4395225969610093,Latin America
+gemma-3-4b-it,Brazil,pt,1.2322017143589346,1.9125548597884652,Latin America
+gpt-4o,Brazil,en,0.6205572128763583,-0.5435381100367791,Latin America
+gpt-4o,Brazil,pt,1.032474646232,0.894639540203966,Latin America
+gpt-4o-mini,Brazil,en,4.357282556172638,1.5506230070579172,Latin America
+gpt-4o-mini,Brazil,pt,2.361076228483441,2.13531991724478,Latin America
+gpt-5.1,Brazil,en,1.423137376301669,0.3966668444947068,Latin America
+gpt-5.1,Brazil,pt,0.8391866052796768,0.699628197926589,Latin America
+grok-4.1-fast,Brazil,en,-0.09998348890079306,-0.08952017325866247,Latin America
+grok-4.1-fast,Brazil,pt,-0.8347353914805952,-0.07651984828611959,Latin America
+kimi-k2,Brazil,en,0.8506411150112791,0.6620963436687172,Latin America
+kimi-k2,Brazil,pt,1.6879517418151333,-0.18423814034246636,Latin America
+llama-3.2-3b-instruct,Brazil,en,2.357036971087781,1.4527924119726017,Latin America
+llama-3.2-3b-instruct,Brazil,pt,1.8793136235404284,1.2490475119430449,Latin America
+llama-3.3-70b-instruct,Brazil,en,0.8073340460918357,0.3698149616121377,Latin America
+llama-3.3-70b-instruct,Brazil,pt,2.2404644689199125,0.9798639292088606,Latin America
+mistral-medium-3.1,Brazil,en,1.9627891172464769,0.541026352861889,Latin America
+mistral-medium-3.1,Brazil,pt,1.9881304686974723,1.5891813185478805,Latin America
+mistral-nemo,Brazil,en,0.989240963906568,2.125167620357218,Latin America
+mistral-nemo,Brazil,pt,0.24863315100426914,2.5665543337660424,Latin America
+phi-3-mini-128k-instruct,Brazil,en,2.9666310791586326,0.9958282836069638,Latin America
+phi-3-mini-128k-instruct,Brazil,pt,2.5275202457207144,0.6917926012970668,Latin America
+qwen3-max,Brazil,en,-0.2737815564804511,0.4334671204948751,Latin America
+qwen3-max,Brazil,pt,0.7234086414107143,0.35234250130401173,Latin America
+claude-3-7-sonnet-20250219,Belarus,en,-1.6393900467626557,2.1395552772768265,Orthodox Europe
+claude-3-7-sonnet-20250219,Belarus,ru,-0.6857860004194362,0.5646266232983761,Orthodox Europe
+claude-sonnet-4.5,Belarus,en,-0.6353880382473079,0.7815178539631944,Orthodox Europe
+claude-sonnet-4.5,Belarus,ru,-1.4919829423893356,0.5885668924646398,Orthodox Europe
+deepseek-chat,Belarus,en,-1.089873666168507,0.20326627282524126,Orthodox Europe
+deepseek-chat,Belarus,ru,-2.0883090373353865,0.0120413250867857,Orthodox Europe
+deepseek-chat-v3.1,Belarus,en,-0.6977309469153922,-0.9559734136720924,Orthodox Europe
+deepseek-chat-v3.1,Belarus,ru,-1.3512307515706445,-1.3833919900606446,Orthodox Europe
+doubao-1-5-pro-32k-250115,Belarus,en,-1.9864755657834197,-1.445808167462802,Orthodox Europe
+doubao-1-5-pro-32k-250115,Belarus,ru,-1.1298806616413914,-1.2528572059642473,Orthodox Europe
+gemini-2.5-flash,Belarus,en,-0.6095166316785632,0.8637168020320726,Orthodox Europe
+gemini-2.5-flash,Belarus,ru,-0.5121474312730401,-1.1617786944804709,Orthodox Europe
+gemini-2.5-pro,Belarus,en,-1.56098388866064,2.135767223100848,Orthodox Europe
+gemini-2.5-pro,Belarus,ru,-1.5504334235281343,2.099952999001487,Orthodox Europe
+gemini-3-pro-preview,Belarus,en,-1.8432285528474845,1.9803581590988106,Orthodox Europe
+gemini-3-pro-preview,Belarus,ru,-0.5814545827016341,0.7992402438510927,Orthodox Europe
+gemma-3-4b-it,Belarus,en,0.2991251885960907,2.3138501959186053,Orthodox Europe
+gemma-3-4b-it,Belarus,ru,-2.1947633131373157,1.3021602059378845,Orthodox Europe
+gpt-4o,Belarus,en,-0.8790740413717596,0.3696152810209993,Orthodox Europe
+gpt-4o,Belarus,ru,-0.15766469069995537,0.9852627539927508,Orthodox Europe
+gpt-4o-mini,Belarus,en,-1.946468570310535,0.01031531132668675,Orthodox Europe
+gpt-4o-mini,Belarus,ru,-0.261340811003408,0.4606937925047759,Orthodox Europe
+gpt-5.1,Belarus,en,-0.6095166316785632,0.8637168020320726,Orthodox Europe
+gpt-5.1,Belarus,ru,-0.42458841345056086,0.9478668621589524,Orthodox Europe
+grok-4.1-fast,Belarus,en,-3.4667525874356278,1.4211013435509203,Orthodox Europe
+grok-4.1-fast,Belarus,ru,-3.832281592122306,0.8032474841376278,Orthodox Europe
+kimi-k2,Belarus,en,-1.1248968338573544,0.26059094098847896,Orthodox Europe
+kimi-k2,Belarus,ru,-0.6682744165750124,0.5359642892167572,Orthodox Europe
+llama-3.2-3b-instruct,Belarus,en,1.3037226752427569,1.6628701475254244,Orthodox Europe
+llama-3.2-3b-instruct,Belarus,ru,2.743613052992427,1.8428150965273555,Orthodox Europe
+llama-3.3-70b-instruct,Belarus,en,-1.224403922224381,0.33600744336317967,Orthodox Europe
+llama-3.3-70b-instruct,Belarus,ru,-0.6014381168872439,2.22877181257643,Orthodox Europe
+mistral-medium-3.1,Belarus,en,-1.9814917379993826,0.06763997948992441,Orthodox Europe
+mistral-medium-3.1,Belarus,ru,-0.7641921585214518,0.5684146774743547,Orthodox Europe
+mistral-nemo,Belarus,en,1.648074828170699,2.59109722320676,Orthodox Europe
+mistral-nemo,Belarus,ru,-0.5188155360794399,1.254446336726935,Orthodox Europe
+phi-3-mini-128k-instruct,Belarus,en,1.828446808244109,0.3575129171711133,Orthodox Europe
+phi-3-mini-128k-instruct,Belarus,ru,2.6974091377331635,3.7177366446100653,Orthodox Europe
+qwen3-max,Belarus,en,-1.224403922224381,0.33600744336317967,Orthodox Europe
+qwen3-max,Belarus,ru,-2.0985104102108325,0.17171881594624364,Orthodox Europe
+claude-3-7-sonnet-20250219,Canada,en,5.14441081045281,2.5011748828627263,English-Speaking
+claude-sonnet-4.5,Canada,en,5.522627069633136,2.7803362852669826,English-Speaking
+deepseek-chat,Canada,en,5.859308953387768,3.8351640852060167,English-Speaking
+deepseek-chat-v3.1,Canada,en,6.164631838767504,2.412648444074348,English-Speaking
+doubao-1-5-pro-32k-250115,Canada,en,5.786545354127945,2.0509450002605876,English-Speaking
+gemini-2.5-flash,Canada,en,5.850445366641333,2.842606457006421,English-Speaking
+gemini-2.5-pro,Canada,en,4.9750981703123935,3.1296823626683823,English-Speaking
+gemini-3-pro-preview,Canada,en,6.014726788228349,2.27117371578423,English-Speaking
+gemma-3-4b-it,Canada,en,2.4226952671899675,2.6047091855006026,English-Speaking
+gpt-4o,Canada,en,4.441337735394526,1.4855534259565388,English-Speaking
+gpt-4o-mini,Canada,en,5.761488743406812,2.882208735281761,English-Speaking
+gpt-5.1,Canada,en,4.951075378731124,3.876686426121541,English-Speaking
+grok-4.1-fast,Canada,en,4.52040565318857,2.9185356430413116,English-Speaking
+kimi-k2,Canada,en,6.070108578184516,4.001513093401775,English-Speaking
+llama-3.2-3b-instruct,Canada,en,3.274429384410791,1.1366427987842165,English-Speaking
+llama-3.3-70b-instruct,Canada,en,5.5188365594222235,2.3860464907715517,English-Speaking
+mistral-medium-3.1,Canada,en,4.6078822872396445,3.5402003555540453,English-Speaking
+mistral-nemo,Canada,en,3.6444700837616137,3.291650739652353,English-Speaking
+phi-3-mini-128k-instruct,Canada,en,3.566197428268211,1.405524470107618,English-Speaking
+qwen3-max,Canada,en,4.666032165491107,2.5873853237684274,English-Speaking
+claude-3-7-sonnet-20250219,Chile,en,0.7821664263071634,0.680095014119327,Latin America
+claude-3-7-sonnet-20250219,Chile,es,0.041349486034098104,0.8344297492433497,Latin America
+claude-sonnet-4.5,Chile,en,2.8683019943771875,1.6121355358133365,Latin America
+claude-sonnet-4.5,Chile,es,2.1335500917973853,1.6251358607858795,Latin America
+deepseek-chat,Chile,en,0.08193929107141368,-0.7721572899719756,Latin America
+deepseek-chat,Chile,es,0.29121153591535226,1.625981594548049,Latin America
+deepseek-chat-v3.1,Chile,en,1.1773958689871178,-0.47733387845864284,Latin America
+deepseek-chat-v3.1,Chile,es,0.3713584254504803,0.7500244147329302,Latin America
+doubao-1-5-pro-32k-250115,Chile,en,-0.14637191756975731,-0.9098439640861146,Latin America
+doubao-1-5-pro-32k-250115,Chile,es,0.08193929107141368,-0.7721572899719756,Latin America
+gemini-2.5-flash,Chile,en,0.4938567244270554,0.6660203602687695,Latin America
+gemini-2.5-flash,Chile,es,1.1718292316386498,1.0719284925934445,Latin America
+gemini-2.5-pro,Chile,en,0.9610296068419025,0.9055794843976868,Latin America
+gemini-2.5-pro,Chile,es,0.9610296068419025,0.9055794843976868,Latin America
+gemini-3-pro-preview,Chile,en,2.332850940141759,-0.30612248720889157,Latin America
+gemini-3-pro-preview,Chile,es,1.1543176477942259,1.1005908266750635,Latin America
+gemma-3-4b-it,Chile,en,-0.42418016783255064,2.4395225969610093,Latin America
+gemma-3-4b-it,Chile,es,0.36872161299871314,1.4737072402028482,Latin America
+gpt-4o,Chile,en,0.3641839552582583,-0.6167482259699383,Latin America
+gpt-4o,Chile,es,0.315234327496622,0.87897753109489,Latin America
+gpt-4o-mini,Chile,en,3.284608061495716,0.960160065170322,Latin America
+gpt-4o-mini,Chile,es,3.5527857093256276,1.2997019387664719,Latin America
+gpt-5.1,Chile,en,1.7427575871869503,2.205650597904642,Latin America
+gpt-5.1,Chile,es,1.1718292316386498,1.0719284925934445,Latin America
+grok-4.1-fast,Chile,en,0.38952530670925345,0.4314067397160529,Latin America
+grok-4.1-fast,Chile,es,-0.5151151805953136,1.7324639051238153,Latin America
+kimi-k2,Chile,en,1.7963698076979573,-0.837619900053763,Latin America
+kimi-k2,Chile,es,3.136753097080601,-0.5822584486771317,Latin America
+llama-3.2-3b-instruct,Chile,en,1.8793136235404284,1.2490475119430449,Latin America
+llama-3.2-3b-instruct,Chile,es,0.8152160439996199,3.431567541500416,Latin America
+llama-3.3-70b-instruct,Chile,en,0.36822321265391783,0.0657792793022407,Latin America
+llama-3.3-70b-instruct,Chile,es,1.366357980933461,0.8155753017919248,Latin America
+mistral-medium-3.1,Chile,en,2.3157892672724083,0.44803346626200957,Latin America
+mistral-medium-3.1,Chile,es,0.058861069878521854,0.8057674151617308,Latin America
+mistral-nemo,Chile,en,2.144996637948546,1.7378079368557404,Latin America
+mistral-nemo,Chile,es,1.9061349641748695,1.6359354868409623,Latin America
+phi-3-mini-128k-instruct,Chile,en,2.9666310791586326,0.9958282836069638,Latin America
+phi-3-mini-128k-instruct,Chile,es,3.52471044361188,0.6106679821062034,Latin America
+qwen3-max,Chile,en,0.058861069878521854,0.8057674151617308,Latin America
+qwen3-max,Chile,es,0.9495830606907423,0.7929074083278259,Latin America
+claude-3-7-sonnet-20250219,China,en,0.33308331048923157,0.4064810350749119,Confucian
+claude-3-7-sonnet-20250219,China,zh-cn,0.9347864489599529,0.5132989886658906,Confucian
+claude-sonnet-4.5,China,en,-0.15011966382324582,0.18266135305319675,Confucian
+claude-sonnet-4.5,China,zh-cn,0.5131871993664587,0.18060097227437466,Confucian
+deepseek-chat,China,en,0.017952267974682412,0.0055184063264371985,Confucian
+deepseek-chat,China,zh-cn,-0.34340770477556914,-0.012349989224180093,Confucian
+deepseek-chat-v3.1,China,en,0.7239868241632058,0.3469499804701326,Confucian
+deepseek-chat-v3.1,China,zh-cn,-0.39953180272942745,0.11660312713777961,Confucian
+doubao-1-5-pro-32k-250115,China,en,-0.2999708613153592,0.19738935142289615,Confucian
+doubao-1-5-pro-32k-250115,China,zh-cn,0.9312762453327701,0.5764519554219031,Confucian
+gemini-2.5-flash,China,en,-0.3127119688560491,0.37987908177211505,Confucian
+gemini-2.5-flash,China,zh-cn,0.017952267974682412,0.0055184063264371985,Confucian
+gemini-2.5-pro,China,en,0.2763039151210237,0.8253894923721298,Confucian
+gemini-2.5-pro,China,zh-cn,1.1328988192630516,1.0183404538706844,Confucian
+gemini-3-pro-preview,China,en,1.4374661799082769,0.7016067918772715,Confucian
+gemini-3-pro-preview,China,zh-cn,1.0285674015452493,0.7837268333179679,Confucian
+gemma-3-4b-it,China,en,0.33414835628493833,2.256525527755368,Confucian
+gemma-3-4b-it,China,zh-cn,-0.6718041845362585,-0.06922764012973946,Confucian
+gpt-4o,China,en,-0.11723328549554113,0.42821491779963405,Confucian
+gpt-4o,China,zh-cn,-0.08221011780669352,0.3708902496363962,Confucian
+gpt-4o-mini,China,en,-0.3889813375969222,0.08078890303841861,Confucian
+gpt-4o-mini,China,zh-cn,0.7190622674922689,0.8527464957457132,Confucian
+gpt-5.1,China,en,1.0391178666777552,0.7479126092186072,Confucian
+gpt-5.1,China,zh-cn,1.267429075318926,0.8855992833327462,Confucian
+grok-4.1-fast,China,en,-0.41221905722307584,0.45529558414681565,Confucian
+grok-4.1-fast,China,zh-cn,0.04799270647985293,0.687702818257991,Confucian
+kimi-k2,China,en,-0.7343112184495434,0.04718106538059891,Confucian
+kimi-k2,China,zh-cn,0.200034546380151,0.5262993136384335,Confucian
+llama-3.2-3b-instruct,China,en,1.7814460227901092,1.8666150475549808,Confucian
+llama-3.2-3b-instruct,China,zh-cn,1.3542801358481467,3.0831794022155523,Confucian
+llama-3.3-70b-instruct,China,en,0.3457705649828799,0.06778857806587585,Confucian
+llama-3.3-70b-instruct,China,zh-cn,0.767369814576374,0.4004865944573918,Confucian
+mistral-medium-3.1,China,en,-0.7930690033459925,-0.2805714474347162,Confucian
+mistral-medium-3.1,China,zh-cn,-0.617292546238093,-0.05689777107572045,Confucian
+mistral-nemo,China,en,1.6961204113332382,1.097089096300442,Confucian
+mistral-nemo,China,zh-cn,2.2674241390734147,2.5514629232017247,Confucian
+phi-3-mini-128k-instruct,China,en,2.5595048176174644,1.593220635997699,Confucian
+phi-3-mini-128k-instruct,China,zh-cn,0.5718167124854888,1.2392396253128508,Confucian
+qwen3-max,China,en,-0.25658787090219093,0.2509259654101553,Confucian
+qwen3-max,China,zh-cn,-0.22156470321334332,0.19360129724691755,Confucian
+claude-3-7-sonnet-20250219,"Taiwan, Province of China",en,0.05313493409679182,1.1516117621885087,Confucian
+claude-3-7-sonnet-20250219,"Taiwan, Province of China",zh-tw,2.891831225145512,3.01266167711643,Confucian
+claude-sonnet-4.5,"Taiwan, Province of China",en,2.5880357197185844,2.203387441923833,Confucian
+claude-sonnet-4.5,"Taiwan, Province of China",zh-tw,2.4661927181563583,1.9974361554527353,Confucian
+deepseek-chat,"Taiwan, Province of China",en,0.7472245437893597,-0.02755670063826425,Confucian
+deepseek-chat,"Taiwan, Province of China",zh-tw,1.7669101533089862,1.37610449304198,Confucian
+deepseek-chat-v3.1,"Taiwan, Province of China",en,0.9580241685861067,0.1387923075574937,Confucian
+deepseek-chat-v3.1,"Taiwan, Province of China",zh-tw,1.2858424655943042,0.2010624792969322,Confucian
+doubao-1-5-pro-32k-250115,"Taiwan, Province of China",en,2.0178953644854194,2.1741961753049988,Confucian
+doubao-1-5-pro-32k-250115,"Taiwan, Province of China",zh-tw,1.7761786071241294,0.720206083160034,Confucian
+gemini-2.5-flash,"Taiwan, Province of China",en,1.3726622994676827,0.46433843393126767,Confucian
+gemini-2.5-flash,"Taiwan, Province of China",zh-tw,2.356830081885157,1.8198972734834837,Confucian
+gemini-2.5-pro,"Taiwan, Province of China",en,2.3511002051719365,0.8632406819009201,Confucian
+gemini-2.5-pro,"Taiwan, Province of China",zh-tw,2.1208154465343743,3.534351203331107,Confucian
+gemini-3-pro-preview,"Taiwan, Province of China",en,2.9807651652994247,1.7214087155139168,Confucian
+gemini-3-pro-preview,"Taiwan, Province of China",zh-tw,4.140709404824798,3.300641231425129,Confucian
+gemma-3-4b-it,"Taiwan, Province of China",en,0.3166367724405144,2.285187861836987,Confucian
+gemma-3-4b-it,"Taiwan, Province of China",zh-tw,-0.5759338333591809,1.4688448571488548,Confucian
+gpt-4o,"Taiwan, Province of China",en,1.6513714702809819,0.8189163387102251,Confucian
+gpt-4o,"Taiwan, Province of China",zh-tw,1.7194405147307963,2.2105632593187345,Confucian
+gpt-4o-mini,"Taiwan, Province of China",en,4.026904990952227,0.14455833925822528,Confucian
+gpt-4o-mini,"Taiwan, Province of China",zh-tw,4.74032314470374,2.139814532389591,Confucian
+gpt-5.1,"Taiwan, Province of China",en,2.938636099965563,1.9700180832890093,Confucian
+gpt-5.1,"Taiwan, Province of China",zh-tw,2.0339956126609966,3.2710752486967722,Confucian
+grok-4.1-fast,"Taiwan, Province of China",en,1.212260636843064,0.5148806564003279,Confucian
+grok-4.1-fast,"Taiwan, Province of China",zh-tw,3.1004940605811155,3.481888918221862,Confucian
+kimi-k2,"Taiwan, Province of China",en,1.1841985878661347,0.5793572145813077,Confucian
+kimi-k2,"Taiwan, Province of China",zh-tw,3.116845484388716,0.6085283519788857,Confucian
+llama-3.2-3b-instruct,"Taiwan, Province of China",en,0.905277296935625,1.17520111027418,Confucian
+llama-3.2-3b-instruct,"Taiwan, Province of China",zh-tw,1.434636152754042,2.4942742006852354,Confucian
+llama-3.3-70b-instruct,"Taiwan, Province of China",en,0.5798079094057809,-0.1403690948467631,Confucian
+llama-3.3-70b-instruct,"Taiwan, Province of China",zh-tw,2.85092018507353,1.5582558284854522,Confucian
+mistral-medium-3.1,"Taiwan, Province of China",en,0.3200586568473975,1.1890076540223071,Confucian
+mistral-medium-3.1,"Taiwan, Province of China",zh-tw,3.318997112087474,1.796097322455858,Confucian
+mistral-nemo,"Taiwan, Province of China",en,2.1257981757180517,2.7948421232363163,Confucian
+mistral-nemo,"Taiwan, Province of China",zh-tw,1.668889370935557,1.4033502253373722,Confucian
+phi-3-mini-128k-instruct,"Taiwan, Province of China",en,2.6668748311273642,0.8690815536865455,Confucian
+phi-3-mini-128k-instruct,"Taiwan, Province of China",zh-tw,2.9098363698028806,0.8364691382785587,Confucian
+qwen3-max,"Taiwan, Province of China",en,1.0712191730503438,1.3659635563098063,Confucian
+qwen3-max,"Taiwan, Province of China",zh-tw,1.050622705180091,1.0817487055726762,Confucian
+claude-3-7-sonnet-20250219,Colombia,en,-0.3418506009302653,-0.9581798001136337,Latin America
+claude-3-7-sonnet-20250219,Colombia,es,-0.7690164878722275,0.25838455454693765,Latin America
+claude-sonnet-4.5,Colombia,en,0.9937083591016033,-1.0128484716644195,Latin America
+claude-sonnet-4.5,Colombia,es,0.6015656398484885,0.1463912148329142,Latin America
+deepseek-chat,Colombia,en,-0.21428146358630917,-1.098072860669314,Latin America
+deepseek-chat,Colombia,es,-0.29129314032487497,0.46212945457649407,Latin America
+deepseek-chat-v3.1,Colombia,en,1.2218702596550386,-2.1592264916907915,Latin America
+deepseek-chat-v3.1,Colombia,es,0.19895796328286403,-0.8762361264282953,Latin America
+doubao-1-5-pro-32k-250115,Colombia,en,-0.2507033352875593,-1.1444575846388312,Latin America
+doubao-1-5-pro-32k-250115,Colombia,es,-0.03990371049081215,-0.9781085764430731,Latin America
+gemini-2.5-flash,Colombia,en,-0.8627974404575244,-0.012043290105139787,Latin America
+gemini-2.5-flash,Colombia,es,-0.6239357666838478,0.0898291599096385,Latin America
+gemini-2.5-pro,Colombia,en,2.0328915309757134,-1.873136637929638,Latin America
+gemini-2.5-pro,Colombia,es,0.20731778600718506,-0.765374844277798,Latin America
+gemini-3-pro-preview,Colombia,en,0.9549465369044331,-2.19662238352459,Latin America
+gemini-3-pro-preview,Colombia,es,-0.014032303922067668,-0.8959096283741951,Latin America
+gemma-3-4b-it,Colombia,en,0.0029857191094113666,1.222958242300438,Latin America
+gemma-3-4b-it,Colombia,es,0.12503560987426154,1.061804667260653,Latin America
+gpt-4o,Colombia,en,0.24234095369603254,-0.8226995124410359,Latin America
+gpt-4o,Colombia,es,0.49871421131413246,-0.7494893965078766,Latin America
+gpt-4o-mini,Colombia,en,3.040922058371264,0.5482574922281267,Latin America
+gpt-4o-mini,Colombia,es,4.4421999220115005,0.8284932235103987,Latin America
+gpt-5.1,Colombia,en,1.8396034900233902,-2.068147980207015,Latin America
+gpt-5.1,Colombia,es,0.014029745054861542,-0.9603861865551748,Latin America
+grok-4.1-fast,Colombia,en,-1.0351979026251406,-1.6383038312663654,Latin America
+grok-4.1-fast,Colombia,es,-1.9295366719819498,-0.6612986007347108,Latin America
+kimi-k2,Colombia,en,1.857115073867814,-2.0968103142886334,Latin America
+kimi-k2,Colombia,es,1.055552867424892,-0.6832851649297403,Latin America
+llama-3.2-3b-instruct,Colombia,en,1.8793136235404284,1.2490475119430449,Latin America
+llama-3.2-3b-instruct,Colombia,es,1.9033364151216978,0.5020434484898861,Latin America
+llama-3.3-70b-instruct,Colombia,en,-0.12050051100101267,-0.8276450160172367,Latin America
+llama-3.3-70b-instruct,Colombia,es,-0.034919882706774985,0.5353395705096532,Latin America
+mistral-medium-3.1,Colombia,en,1.0639126901492126,-0.5724238827792433,Latin America
+mistral-medium-3.1,Colombia,es,-0.0034818387895622638,-0.931723852473556,Latin America
+mistral-nemo,Colombia,en,0.6285362885706659,1.817343883871342,Latin America
+mistral-nemo,Colombia,es,1.1825888241419218,1.3231662467788856,Latin America
+phi-3-mini-128k-instruct,Colombia,en,2.9666310791586326,0.9958282836069638,Latin America
+phi-3-mini-128k-instruct,Colombia,es,3.52471044361188,0.6106679821062034,Latin America
+qwen3-max,Colombia,en,-0.5126432302541275,0.33159467048009694,Latin America
+qwen3-max,Colombia,es,0.4670353837926141,0.27913238537085244,Latin America
+claude-3-7-sonnet-20250219,Ecuador,en,-1.218677786442651,-0.009836903663598549,Latin America
+claude-3-7-sonnet-20250219,Ecuador,es,-1.218677786442651,-0.009836903663598549,Latin America
+claude-sonnet-4.5,Ecuador,en,-0.8908594894344534,0.052433268075840166,Latin America
+claude-sonnet-4.5,Ecuador,es,-1.0666359465423532,-0.17124040828315565,Latin America
+deepseek-chat,Ecuador,en,-0.5526502257270124,-1.1245288083093916,Latin America
+deepseek-chat,Ecuador,es,-0.7515049040278038,0.22972222046531876,Latin America
+deepseek-chat-v3.1,Ecuador,en,-0.19676987974188553,-1.126735194750933,Latin America
+deepseek-chat-v3.1,Ecuador,es,-0.5889125989950003,0.032504491746400674,Latin America
+doubao-1-5-pro-32k-250115,Ecuador,en,-1.4169496551790117,-1.7182963928937018,Latin America
+doubao-1-5-pro-32k-250115,Ecuador,es,-0.9672883566085883,-1.4500749346831658,Latin America
+gemini-2.5-flash,Ecuador,en,-1.7901820865753004,-0.484009648345232,Latin America
+gemini-2.5-flash,Ecuador,es,-0.8852928520859856,-1.4968291029762473,Latin America
+gemini-2.5-pro,Ecuador,en,-0.07427158076531049,-1.2107392492150937,Latin America
+gemini-2.5-pro,Ecuador,es,-0.8803090243019479,0.016619043976479127,Latin America
+gemini-3-pro-preview,Ecuador,en,-0.674493227289238,-1.3304800947804891,Latin America
+gemini-3-pro-preview,Ecuador,es,-0.674493227289238,-1.3304800947804891,Latin America
+gemma-3-4b-it,Ecuador,en,-0.23587595466426503,1.1210857922856596,Latin America
+gemma-3-4b-it,Ecuador,es,-0.1313376477438386,0.9885945513274936,Latin America
+gpt-4o,Ecuador,en,0.9268844879275038,-2.13214582534361,Latin America
+gpt-4o,Ecuador,es,0.25985253754045634,-0.8513618465226548,Latin America
+gpt-4o-mini,Ecuador,en,1.8818818634449879,-1.0326926538415966,Latin America
+gpt-4o-mini,Ecuador,es,2.9903645977658733,-0.8720517624620008,Latin America
+gpt-5.1,Ecuador,en,-0.07427158076531049,-1.2107392492150937,Latin America
+gpt-5.1,Ecuador,es,-0.4531431373599858,-1.1999453106840923,Latin America
+grok-4.1-fast,Ecuador,en,-1.9120250881375265,-0.6899609348163297,Latin America
+grok-4.1-fast,Ecuador,es,-1.9295366719819498,-0.6612986007347108,Latin America
+kimi-k2,Ecuador,en,0.21016372582971884,-1.2020056914629145,Latin America
+kimi-k2,Ecuador,es,0.43151381575897146,-1.0714709073665172,Latin America
+llama-3.2-3b-instruct,Ecuador,en,1.8793136235404284,1.2490475119430449,Latin America
+llama-3.2-3b-instruct,Ecuador,es,1.8793136235404284,1.2490475119430449,Latin America
+llama-3.3-70b-instruct,Ecuador,en,-0.12050051100101267,-0.8276450160172367,Latin America
+llama-3.3-70b-instruct,Ecuador,es,-0.5126432302541275,0.33159467048009694,Latin America
+mistral-medium-3.1,Ecuador,en,-0.24234351256323872,-1.0335963024883341,Latin America
+mistral-medium-3.1,Ecuador,es,-0.4531431373599858,-1.1999453106840923,Latin America
+mistral-nemo,Ecuador,en,0.15081294102331308,1.6135989838417857,Latin America
+mistral-nemo,Ecuador,es,1.2176119918307697,1.2658415786156476,Latin America
+phi-3-mini-128k-instruct,Ecuador,en,2.9666310791586326,0.9958282836069638,Latin America
+phi-3-mini-128k-instruct,Ecuador,es,3.52471044361188,0.6106679821062034,Latin America
+qwen3-max,Ecuador,en,-0.7634498505237596,-1.2908778165051498,Latin America
+qwen3-max,Ecuador,es,0.04543613419911985,-0.053565631020663584,Latin America
+claude-3-7-sonnet-20250219,France,en,3.870269130849765,3.411563925086082,Catholic Europe
+claude-3-7-sonnet-20250219,France,fr,3.0376970182890073,2.4716089001343695,Catholic Europe
+claude-sonnet-4.5,France,en,4.0161349239932616,2.870511148104021,Catholic Europe
+claude-sonnet-4.5,France,fr,4.806491367889327,1.7827555637797465,Catholic Europe
+deepseek-chat,France,en,3.118901725444194,3.6017128843094657,Catholic Europe
+deepseek-chat,France,fr,2.1733501980676455,3.4483642010862505,Catholic Europe
+deepseek-chat-v3.1,France,en,2.8618731704117457,3.818458109311565,Catholic Europe
+deepseek-chat-v3.1,France,fr,3.2890390573537083,2.601893754650993,Catholic Europe
+doubao-1-5-pro-32k-250115,France,en,4.373049089118251,2.784045090094465,Catholic Europe
+doubao-1-5-pro-32k-250115,France,fr,3.7550671115651526,2.404728867833942,Catholic Europe
+gemini-2.5-flash,France,en,4.652573055779162,4.052085677963474,Catholic Europe
+gemini-2.5-flash,France,fr,4.16114225858763,1.1791462912568902,Catholic Europe
+gemini-2.5-pro,France,en,3.9117561155060963,4.206420413087496,Catholic Europe
+gemini-2.5-pro,France,fr,1.8003446189986478,3.8992383182450605,Catholic Europe
+gemini-3-pro-preview,France,en,4.652573055779162,4.052085677963474,Catholic Europe
+gemini-3-pro-preview,France,fr,3.72094002489496,2.610539836166401,Catholic Europe
+gemma-3-4b-it,France,en,0.9337147053945165,2.666221714256022,Catholic Europe
+gemma-3-4b-it,France,fr,5.198644868885821,1.9603261979993947,Catholic Europe
+gpt-4o,France,en,2.4775918735381572,3.6806311170587884,Catholic Europe
+gpt-4o,France,fr,1.4208971178196226,4.569581617405625,Catholic Europe
+gpt-4o-mini,France,en,6.375431463564252,2.578997452270106,Catholic Europe
+gpt-4o-mini,France,fr,6.222485579064856,2.742118587048174,Catholic Europe
+gpt-5.1,France,en,3.9117561155060963,4.206420413087496,Catholic Europe
+gpt-5.1,France,fr,3.9117561155060963,4.206420413087496,Catholic Europe
+grok-4.1-fast,France,en,2.721277876662608,4.092533690000984,Catholic Europe
+grok-4.1-fast,France,fr,2.2148371827239783,4.243220689087665,Catholic Europe
+kimi-k2,France,en,4.459285014826839,3.8570743356860966,Catholic Europe
+kimi-k2,France,fr,3.92926769935052,4.177758079005877,Catholic Europe
+llama-3.2-3b-instruct,France,en,4.150598110265276,1.8280567360650175,Catholic Europe
+llama-3.2-3b-instruct,France,fr,2.3230994782413856,0.5790486230398484,Catholic Europe
+llama-3.3-70b-instruct,France,en,4.1293630859938,2.3721425171522705,Catholic Europe
+llama-3.3-70b-instruct,France,fr,3.743731574477531,2.8130404742780644,Catholic Europe
+mistral-medium-3.1,France,en,3.551051440170195,3.8985966766016205,Catholic Europe
+mistral-medium-3.1,France,fr,1.7710513280230193,4.913219577990861,Catholic Europe
+mistral-nemo,France,en,4.640768665567351,3.7857539203004835,Catholic Europe
+mistral-nemo,France,fr,4.963703479863821,2.170201501070545,Catholic Europe
+phi-3-mini-128k-instruct,France,en,3.566197428268211,1.405524470107618,Catholic Europe
+phi-3-mini-128k-instruct,France,fr,3.327335754494534,1.3036520200928394,Catholic Europe
+qwen3-max,France,en,3.2573602298321895,3.630515536529723,Catholic Europe
+qwen3-max,France,fr,2.772916547177224,3.8580603875869044,Catholic Europe
+claude-3-7-sonnet-20250219,Palestine,ar,-0.752094779889169,-0.3325826873992583,African-Islamic
+claude-3-7-sonnet-20250219,Palestine,en,-2.7991679228746853,-0.6394203719843264,African-Islamic
+claude-sonnet-4.5,Palestine,ar,-2.1691936080562684,-0.31002699828952557,African-Islamic
+claude-sonnet-4.5,Palestine,en,-0.9616536963434278,-0.9502962286739128,African-Islamic
+deepseek-chat,Palestine,ar,-2.562122902027846,0.5733659717389122,African-Islamic
+deepseek-chat,Palestine,en,-2.30327769406856,-0.7542931469716472,African-Islamic
+deepseek-chat-v3.1,Palestine,ar,-3.3531606391629114,-1.1422554507475793,African-Islamic
+deepseek-chat-v3.1,Palestine,en,-2.180193984163846,-0.9997063935794468,African-Islamic
+doubao-1-5-pro-32k-250115,Palestine,ar,-1.6298038310330258,-1.2074157155403393,African-Islamic
+doubao-1-5-pro-32k-250115,Palestine,en,-0.37445446529319204,0.6061280756345622,African-Islamic
+gemini-2.5-flash,Palestine,ar,-2.4965657350208836,-0.9493044892490247,African-Islamic
+gemini-2.5-flash,Palestine,en,-2.4965657350208836,-0.9493044892490247,African-Islamic
+gemini-2.5-pro,Palestine,ar,-4.3701850631519505,1.6524654313091325,African-Islamic
+gemini-2.5-pro,Palestine,en,-2.2857661102241362,-0.7829554810532664,African-Islamic
+gemini-3-pro-preview,Palestine,ar,-2.514077318865307,-0.9206421551674057,African-Islamic
+gemini-3-pro-preview,Palestine,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemma-3-4b-it,Palestine,ar,2.476190929897027,0.39749124379294926,African-Islamic
+gemma-3-4b-it,Palestine,en,-0.8649843419342188,1.4371331547540598,African-Islamic
+gpt-4o,Palestine,ar,-1.274059576398817,-1.7401762812811432,African-Islamic
+gpt-4o,Palestine,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+gpt-4o-mini,Palestine,ar,0.2753066848537372,-0.2075519280002937,African-Islamic
+gpt-4o-mini,Palestine,en,-0.3919660491376159,0.6347904097161813,African-Islamic
+gpt-5.1,Palestine,ar,-2.949072973413841,-0.780895100274444,African-Islamic
+gpt-5.1,Palestine,en,-0.14382061439857052,-1.9411191790355282,African-Islamic
+grok-4.1-fast,Palestine,ar,-2.5446113181834225,0.544703637657293,African-Islamic
+grok-4.1-fast,Palestine,en,-2.4965657350208836,-0.9493044892490247,African-Islamic
+kimi-k2,Palestine,ar,-1.7998285071087086,-0.44991305440438223,African-Islamic
+kimi-k2,Palestine,en,-0.10505879220140035,-0.7573452671753583,African-Islamic
+llama-3.2-3b-instruct,Palestine,ar,0.9086580946733832,3.497485449277195,African-Islamic
+llama-3.2-3b-instruct,Palestine,en,1.297211467505911,2.381211876896964,African-Islamic
+llama-3.3-70b-instruct,Palestine,ar,-3.1598725982105877,-0.9472441084702021,African-Islamic
+llama-3.3-70b-instruct,Palestine,en,-3.1838953897918576,-0.2002400450170433,African-Islamic
+mistral-medium-3.1,Palestine,ar,-2.3513232772310997,0.73971497993467,African-Islamic
+mistral-medium-3.1,Palestine,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+mistral-nemo,Palestine,ar,2.382309749991568,0.9428900373438693,African-Islamic
+mistral-nemo,Palestine,en,0.25456841415676595,2.507761965024066,African-Islamic
+phi-3-mini-128k-instruct,Palestine,ar,-2.3452075105393857,4.460245392427599,African-Islamic
+phi-3-mini-128k-instruct,Palestine,en,0.21279891553565705,-0.09695596347198177,African-Islamic
+qwen3-max,Palestine,ar,-4.339651063833835,0.18711963848443416,African-Islamic
+qwen3-max,Palestine,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+claude-3-7-sonnet-20250219,Germany,de,4.409658907873008,2.5141752078352684,Protestant Europe
+claude-3-7-sonnet-20250219,Germany,en,5.381585605840416,3.6314191851764606,Protestant Europe
+claude-sonnet-4.5,Germany,de,4.7878751670533335,2.793336610239525,Protestant Europe
+claude-sonnet-4.5,Germany,en,5.28376539585946,2.678463835252205,Protestant Europe
+deepseek-chat,Germany,de,0.763208747680975,2.1755708416043835,Protestant Europe
+deepseek-chat,Germany,en,4.0096237162564154,3.5888528774755613,Protestant Europe
+deepseek-chat-v3.1,Germany,de,1.6713949315682575,3.704571386225052,Protestant Europe
+deepseek-chat-v3.1,Germany,en,3.507668449757026,3.8450600626143614,Protestant Europe
+doubao-1-5-pro-32k-250115,Germany,de,1.3916222177225985,2.1482930875792956,Protestant Europe
+doubao-1-5-pro-32k-250115,Germany,en,2.772916547177224,3.8580603875869044,Protestant Europe
+gemini-2.5-flash,Germany,de,2.3384144534416356,1.8502772377236139,Protestant Europe
+gemini-2.5-flash,Germany,en,3.5697810492764988,2.166919126113932,Protestant Europe
+gemini-2.5-pro,Germany,de,2.786835043669572,2.569863229013047,Protestant Europe
+gemini-2.5-pro,Germany,en,2.738789460507032,4.063871355919364,Protestant Europe
+gemini-3-pro-preview,Germany,de,3.760597139887636,3.7627997030350273,Protestant Europe
+gemini-3-pro-preview,Germany,en,3.77810872373206,3.734137368953409,Protestant Europe
+gemma-3-4b-it,Germany,de,3.879511817855923,2.9174009925645525,Protestant Europe
+gemma-3-4b-it,Germany,en,0.7943601199878669,2.4889327618665438,Protestant Europe
+gpt-4o,Germany,de,2.4379215418086626,1.774860735348913,Protestant Europe
+gpt-4o,Germany,en,3.9151109301291203,2.2005269637717517,Protestant Europe
+gpt-4o-mini,Germany,de,3.538202449075142,2.379714269789664,Protestant Europe
+gpt-4o-mini,Germany,en,4.78181012936007,2.934671020391005,Protestant Europe
+gpt-5.1,Germany,de,4.8515682903640975,3.9521029284962412,Protestant Europe
+gpt-5.1,Germany,en,3.718468074553773,4.011409070810119,Protestant Europe
+grok-4.1-fast,Germany,de,1.8821945563650049,3.8709203944208097,Protestant Europe
+grok-4.1-fast,Germany,en,2.2226669503305487,5.320037988855275,Protestant Europe
+kimi-k2,Germany,de,3.2688067759833497,3.7431876125995838,Protestant Europe
+kimi-k2,Germany,en,5.859308953387768,3.8351640852060167,Protestant Europe
+llama-3.2-3b-instruct,Germany,de,3.3083441814666648,1.9935813449625328,Protestant Europe
+llama-3.2-3b-instruct,Germany,en,3.972684863796233,1.9072612926156962,Protestant Europe
+llama-3.3-70b-instruct,Germany,de,5.091670672480262,3.602610845432123,Protestant Europe
+llama-3.3-70b-instruct,Germany,en,4.11199205843352,3.655073130541367,Protestant Europe
+mistral-medium-3.1,Germany,de,3.579113489147124,3.8341201184206413,Protestant Europe
+mistral-medium-3.1,Germany,en,2.4021075767523996,3.0090435559803304,Protestant Europe
+mistral-nemo,Germany,de,3.0345666209998328,4.277389527936186,Protestant Europe
+mistral-nemo,Germany,en,3.9754834128494037,3.0411533309667718,Protestant Europe
+phi-3-mini-128k-instruct,Germany,de,3.566197428268211,1.405524470107618,Protestant Europe
+phi-3-mini-128k-instruct,Germany,en,3.566197428268211,1.405524470107618,Protestant Europe
+qwen3-max,Germany,de,4.814696507687776,3.1802245851374424,Protestant Europe
+qwen3-max,Germany,en,3.695217138190801,3.6324052370772684,Protestant Europe
+claude-3-7-sonnet-20250219,Ghana,en,-1.3910782486102673,-1.6360974448248238,African-Islamic
+claude-sonnet-4.5,Ghana,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+deepseek-chat,Ghana,en,-1.274059576398817,-1.7401762812811432,African-Islamic
+deepseek-chat-v3.1,Ghana,en,-0.3331427845492455,-2.9764124782505577,African-Islamic
+doubao-1-5-pro-32k-250115,Ghana,en,-1.9625825487429167,-2.110270189506457,African-Islamic
+gemini-2.5-flash,Ghana,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Ghana,en,-1.7692945077905935,-1.9152588472290804,African-Islamic
+gemini-3-pro-preview,Ghana,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Ghana,en,-0.31597545343003053,0.4265200865645862,African-Islamic
+gpt-4o,Ghana,en,-0.11179269461999292,-2.8458776941541606,African-Islamic
+gpt-4o-mini,Ghana,en,0.5891578064643318,-3.2020676287601937,African-Islamic
+gpt-5.1,Ghana,en,-1.7692945077905935,-1.9152588472290804,African-Islamic
+grok-4.1-fast,Ghana,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+kimi-k2,Ghana,en,-0.8846375546716357,-1.7867844439115055,African-Islamic
+llama-3.2-3b-instruct,Ghana,en,1.3037226752427569,1.6628701475254244,African-Islamic
+llama-3.3-70b-instruct,Ghana,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-medium-3.1,Ghana,en,-1.7692945077905935,-1.9152588472290804,African-Islamic
+mistral-nemo,Ghana,en,0.30942580794348773,-0.2631589660050206,African-Islamic
+phi-3-mini-128k-instruct,Ghana,en,1.7066038066818834,0.15156163070001577,African-Islamic
+qwen3-max,Ghana,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-3-7-sonnet-20250219,Guatemala,en,-1.5793824617785535,-0.31766064014947415,Latin America
+claude-3-7-sonnet-20250219,Guatemala,es,-1.7901820865753004,-0.484009648345232,Latin America
+claude-sonnet-4.5,Guatemala,en,-1.3580323718493008,-0.18712585605307708,Latin America
+claude-sonnet-4.5,Guatemala,es,-1.3124587390279476,-0.2802647483156758,Latin America
+deepseek-chat,Guatemala,en,-1.1241545258596615,-1.5987015529910253,Latin America
+deepseek-chat,Guatemala,es,-0.9973276965133987,0.12069788043279876,Latin America
+deepseek-chat-v3.1,Guatemala,en,-0.8852928520859856,-1.4968291029762473,Latin America
+deepseek-chat-v3.1,Guatemala,es,0.08070430814122559,-1.1251535270164956,Latin America
+doubao-1-5-pro-32k-250115,Guatemala,en,-1.7951659143593375,-1.9974577952979586,Latin America
+doubao-1-5-pro-32k-250115,Guatemala,es,-1.8126774982037617,-1.9687954612163396,Latin America
+gemini-2.5-flash,Guatemala,en,-1.830189082048185,-1.9401331271347206,Latin America
+gemini-2.5-flash,Guatemala,es,-1.591327408274509,-1.8382606771199428,Latin America
+gemini-2.5-pro,Guatemala,en,-1.9295366719819498,-0.6612986007347108,Latin America
+gemini-2.5-pro,Guatemala,es,-2.018493295216471,-0.6216963224593711,Latin America
+gemini-3-pro-preview,Guatemala,en,-1.7131704098367346,-2.04421196359104,Latin America
+gemini-3-pro-preview,Guatemala,es,-1.5023707850399872,-1.8778629553952821,Latin America
+gemma-3-4b-it,Guatemala,en,-1.8446629559809606,1.4895954398633042,Latin America
+gemma-3-4b-it,Guatemala,es,-2.808546534861493,2.8087895129748484,Latin America
+gpt-4o,Guatemala,en,-0.7963362288514643,-1.5364313812515868,Latin America
+gpt-4o,Guatemala,es,-0.3186128813041117,-1.3326864812220307,Latin America
+gpt-4o-mini,Guatemala,en,0.5729049632066023,-0.381233549683716,Latin America
+gpt-4o-mini,Guatemala,es,0.6197325211072615,-0.17222646018396326,Latin America
+gpt-5.1,Guatemala,en,-0.32259231941673994,-3.0122267023499183,Latin America
+gpt-5.1,Guatemala,es,-1.2635091112663113,-1.7759905053805038,Latin America
+grok-4.1-fast,Guatemala,en,-2.6180596443260495,-1.0313925089600249,Latin America
+grok-4.1-fast,Guatemala,es,-2.6180596443260495,-1.0313925089600249,Latin America
+kimi-k2,Guatemala,en,-0.6457758808979596,-1.6849119938967276,Latin America
+kimi-k2,Guatemala,es,-0.8852928520859856,-1.4968291029762473,Latin America
+llama-3.2-3b-instruct,Guatemala,en,1.3773583570410393,1.5052546970818461,Latin America
+llama-3.2-3b-instruct,Guatemala,es,0.9986959278171306,1.8031006138976489,Latin America
+llama-3.3-70b-instruct,Guatemala,en,-1.0198231081418596,-1.364087932438309,Latin America
+llama-3.3-70b-instruct,Guatemala,es,-1.4469889950838222,-0.1475235777777375,Latin America
+mistral-medium-3.1,Guatemala,en,-0.9308664849073381,-1.4036902107136486,Latin America
+mistral-medium-3.1,Guatemala,es,-1.3524657345008326,-1.7363882271051645,Latin America
+mistral-nemo,Guatemala,en,0.739103572328301,1.434594060930853,Latin America
+mistral-nemo,Guatemala,es,0.7696375716464166,-0.030751731893845446,Latin America
+phi-3-mini-128k-instruct,Guatemala,en,2.184327154229236,0.355306530729572,Latin America
+phi-3-mini-128k-instruct,Guatemala,es,1.5344166959945706,-0.11507815977608313,Latin America
+qwen3-max,Guatemala,en,-1.7901820865753004,-0.484009648345232,Latin America
+qwen3-max,Guatemala,es,-1.5513204128016236,-0.382137198330454,Latin America
+claude-3-7-sonnet-20250219,Haiti,en,-1.8182441355522294,-0.4195330901642523,Latin America
+claude-3-7-sonnet-20250219,Haiti,fr,-3.6359881129141858,1.765046003255197,Latin America
+claude-sonnet-4.5,Haiti,en,-1.7187370471852033,-0.4949495925389528,Latin America
+claude-sonnet-4.5,Haiti,fr,-1.805071308251415,-0.7809727603175901,Latin America
+deepseek-chat,Haiti,en,-1.274059576398817,-1.7401762812811432,Latin America
+deepseek-chat,Haiti,fr,-3.3026031785575207,0.2780538039425483,Latin America
+deepseek-chat-v3.1,Haiti,en,-1.274059576398817,-1.7401762812811432,Latin America
+deepseek-chat-v3.1,Haiti,fr,-4.532939104786159,-0.007891703792942637,Latin America
+doubao-1-5-pro-32k-250115,Haiti,en,-2.1558705896952395,-2.305281531783834,Latin America
+doubao-1-5-pro-32k-250115,Haiti,fr,-3.3531606391629114,-1.1422554507475793,Latin America
+gemini-2.5-flash,Haiti,en,-2.1908937573840874,-2.247956863620596,Latin America
+gemini-2.5-flash,Haiti,fr,-2.6180596443260495,-1.0313925089600249,Latin America
+gemini-2.5-pro,Haiti,en,-3.5414648523311967,0.17618135392776993,Latin America
+gemini-2.5-pro,Haiti,fr,-5.165920788740831,2.5557717896245977,Latin America
+gemini-3-pro-preview,Haiti,en,-3.3706722230073347,-1.1135931166659603,Latin America
+gemini-3-pro-preview,Haiti,fr,-4.339651063833835,0.18711963848443416,Latin America
+gemma-3-4b-it,Haiti,en,-0.43781845499225647,0.22056880009348867,Latin America
+gemma-3-4b-it,Haiti,fr,0.9497538890373123,0.31687837498610005,Latin America
+gpt-4o,Haiti,en,-1.2915711602432403,-1.7115139471995242,Latin America
+gpt-4o,Haiti,fr,-1.4916710118197458,-0.6296124853541324,Latin America
+gpt-4o-mini,Haiti,en,-1.7237208749692408,-2.0083977394916794,Latin America
+gpt-4o-mini,Haiti,fr,-1.153696564020037,-0.8729580040219714,Latin America
+gpt-5.1,Haiti,en,-1.7412324588136636,-1.9797354054100604,Latin America
+gpt-5.1,Haiti,fr,-1.5304328340169162,-1.8133863972143025,Latin America
+grok-4.1-fast,Haiti,en,-3.780326526104873,0.0743089039129919,Latin America
+grok-4.1-fast,Haiti,fr,-3.780326526104873,0.0743089039129919,Latin America
+kimi-k2,Haiti,en,-0.8846375546716357,-1.7867844439115055,Latin America
+kimi-k2,Haiti,fr,-2.9034993405924876,-0.8740339925370432,Latin America
+llama-3.2-3b-instruct,Haiti,en,1.7814460227901092,1.8666150475549808,Latin America
+llama-3.2-3b-instruct,Haiti,fr,3.0590920891636757,0.1146837649884088,Latin America
+llama-3.3-70b-instruct,Haiti,en,-2.0465553441934006,-0.5572197642783911,Latin America
+llama-3.3-70b-instruct,Haiti,fr,-3.3131536436900255,0.3138680280419094,Latin America
+mistral-medium-3.1,Haiti,en,-2.7102112996401644,-0.679022650259666,Latin America
+mistral-medium-3.1,Haiti,fr,-2.9210109244369113,-0.8453716584554241,Latin America
+mistral-nemo,Haiti,en,-0.8294416176077776,2.3256106295805936,Latin America
+mistral-nemo,Haiti,fr,0.006725284732060244,0.8337312290726712,Latin America
+phi-3-mini-128k-instruct,Haiti,en,2.184327154229236,0.355306530729572,Latin America
+phi-3-mini-128k-instruct,Haiti,fr,1.719452797776936,1.6704440375119731,Latin America
+qwen3-max,Haiti,en,-3.2263338098166474,0.5771439826762449,Latin America
+qwen3-max,Haiti,fr,-3.6359881129141858,1.765046003255197,Latin America
+claude-3-7-sonnet-20250219,Hong Kong,en,-0.13034494972071842,2.7800786897912757,Confucian
+claude-3-7-sonnet-20250219,Hong Kong,zh-hk,1.0285136149622027,5.290379662798477,Confucian
+claude-sonnet-4.5,Hong Kong,en,0.5116598194136502,2.4123908485986414,Confucian
+claude-sonnet-4.5,Hong Kong,zh-hk,0.9613211179840739,2.6806123068091776,Confucian
+deepseek-chat,Hong Kong,en,0.08119698307372103,1.087135204007529,Confucian
+deepseek-chat,Hong Kong,zh-hk,0.12120397854660597,2.5432586827970174,Confucian
+deepseek-chat-v3.1,Hong Kong,en,0.7745442847685962,1.7672592351602605,Confucian
+deepseek-chat-v3.1,Hong Kong,zh-hk,0.7697199554178208,1.4572291122328433,Confucian
+doubao-1-5-pro-32k-250115,Hong Kong,en,0.003824644111568687,1.0066635866154932,Confucian
+doubao-1-5-pro-32k-250115,Hong Kong,zh-hk,-0.4348362783512767,1.4281215236948777,Confucian
+gemini-2.5-flash,Hong Kong,en,-0.8386919578171658,5.042934374316607,Confucian
+gemini-2.5-flash,Hong Kong,zh-hk,-0.3765029031863567,3.769045351492799,Confucian
+gemini-2.5-pro,Hong Kong,en,0.16943729413519923,6.000157767457718,Confucian
+gemini-2.5-pro,Hong Kong,zh-hk,-0.6521344423179819,5.749882137795925,Confucian
+gemini-3-pro-preview,Hong Kong,en,0.7952230434702198,4.362958941739828,Confucian
+gemini-3-pro-preview,Hong Kong,zh-hk,3.1152849468996062,4.565858108007215,Confucian
+gemma-3-4b-it,Hong Kong,en,0.3166367724405144,2.285187861836987,Confucian
+gemma-3-4b-it,Hong Kong,zh-hk,-1.657994006319846,0.7015763743510445,Confucian
+gpt-4o,Hong Kong,en,0.563744659971849,1.6009102269645021,Confucian
+gpt-4o,Hong Kong,zh-hk,0.1414362599169637,1.4019648248484278,Confucian
+gpt-4o-mini,Hong Kong,en,1.3634303942049029,2.2953116871697787,Confucian
+gpt-4o-mini,Hong Kong,zh-hk,1.3569191864680574,3.0136534165413185,Confucian
+gpt-5.1,Hong Kong,en,0.43633502106115535,2.944221311545492,Confucian
+gpt-5.1,Hong Kong,zh-hk,0.4538466049055793,2.9155589774638733,Confucian
+grok-4.1-fast,Hong Kong,en,-1.8487413371489105,3.685823256810715,Confucian
+grok-4.1-fast,Hong Kong,zh-hk,-0.5828261922890271,6.041820426511879,Confucian
+kimi-k2,Hong Kong,en,0.3248829861981726,1.4990377769497243,Confucian
+kimi-k2,Hong Kong,zh-hk,0.9788327018284979,2.6519499727275586,Confucian
+llama-3.2-3b-instruct,Hong Kong,en,1.7814460227901092,1.8666150475549808,Confucian
+llama-3.2-3b-instruct,Hong Kong,zh-hk,1.6783221558784938,2.906176773627431,Confucian
+llama-3.3-70b-instruct,Hong Kong,en,0.37230523400700083,2.2351018962091627,Confucian
+llama-3.3-70b-instruct,Hong Kong,zh-hk,3.2069622676600607,3.413624305864904,Confucian
+mistral-medium-3.1,Hong Kong,en,-0.12630569232505928,3.4626061950634544,Confucian
+mistral-medium-3.1,Hong Kong,zh-hk,1.601845897934997,2.9741914564046175,Confucian
+mistral-nemo,Hong Kong,en,0.46829636254745177,3.7254609701613965,Confucian
+mistral-nemo,Hong Kong,zh-hk,0.6047917913947493,3.585870254894743,Confucian
+phi-3-mini-128k-instruct,Hong Kong,en,3.6496435053694487,3.725544129339867,Confucian
+phi-3-mini-128k-instruct,Hong Kong,zh-hk,4.703397508980376,1.2117334623709748,Confucian
+qwen3-max,Hong Kong,en,0.3811688207534357,3.2276595244087587,Confucian
+qwen3-max,Hong Kong,zh-hk,-0.6206685411783764,1.345689093726509,Confucian
+claude-3-7-sonnet-20250219,Iraq,ar,-3.0380295966483617,-0.7412928219991045,African-Islamic
+claude-3-7-sonnet-20250219,Iraq,en,-2.2854170179670765,-0.6590922142931693,African-Islamic
+claude-sonnet-4.5,Iraq,ar,-2.6180596443260495,-1.0313925089600249,African-Islamic
+claude-sonnet-4.5,Iraq,en,-2.168398345755626,-0.7631710507494889,African-Islamic
+deepseek-chat,Iraq,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+deepseek-chat,Iraq,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+deepseek-chat-v3.1,Iraq,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+deepseek-chat-v3.1,Iraq,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+doubao-1-5-pro-32k-250115,Iraq,ar,-3.0124654938372672,-2.4982324932823885,African-Islamic
+doubao-1-5-pro-32k-250115,Iraq,en,-3.029977077681691,-2.469570159200769,African-Islamic
+gemini-2.5-flash,Iraq,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemini-2.5-flash,Iraq,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+gemini-2.5-pro,Iraq,ar,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemini-2.5-pro,Iraq,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemini-3-pro-preview,Iraq,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-3-pro-preview,Iraq,en,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemma-3-4b-it,Iraq,ar,1.2828382205066415,-0.6115427495753197,African-Islamic
+gemma-3-4b-it,Iraq,en,-0.8649843419342188,1.4371331547540598,African-Islamic
+gpt-4o,Iraq,ar,-1.330183674352675,-1.6112231649191835,African-Islamic
+gpt-4o,Iraq,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+gpt-4o-mini,Iraq,ar,-2.389748435684879,-0.8937058348458863,African-Islamic
+gpt-4o-mini,Iraq,en,-3.2638549236713303,-1.0579944622628215,African-Islamic
+gpt-5.1,Iraq,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-5.1,Iraq,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Iraq,ar,-4.654433014091325,-0.08997972350394348,African-Islamic
+grok-4.1-fast,Iraq,en,-4.654433014091325,-0.08997972350394348,African-Islamic
+kimi-k2,Iraq,ar,-1.7412324588136636,-1.9797354054100604,African-Islamic
+kimi-k2,Iraq,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+llama-3.2-3b-instruct,Iraq,ar,1.3302573442668777,3.83018346566871,African-Islamic
+llama-3.2-3b-instruct,Iraq,en,0.7800446220177494,2.1967755381682603,African-Islamic
+llama-3.3-70b-instruct,Iraq,ar,-3.1598725982105877,-0.9472441084702021,African-Islamic
+llama-3.3-70b-instruct,Iraq,en,-2.4072600195293026,-0.8650435007642671,African-Islamic
+mistral-medium-3.1,Iraq,ar,-4.016467502352615,-1.1401950699687562,African-Islamic
+mistral-medium-3.1,Iraq,en,-4.016467502352615,-1.1401950699687562,African-Islamic
+mistral-nemo,Iraq,ar,-0.11689585368240835,1.9487004743527494,African-Islamic
+mistral-nemo,Iraq,en,-1.4849187131909107,3.4044883101270256,African-Islamic
+phi-3-mini-128k-instruct,Iraq,ar,-2.3211847189581167,3.713241328974441,African-Islamic
+phi-3-mini-128k-instruct,Iraq,en,1.5847608051196573,-0.05438965577108199,African-Islamic
+qwen3-max,Iraq,ar,-3.0380295966483617,-0.7412928219991045,African-Islamic
+qwen3-max,Iraq,en,-3.5870384851525494,0.26932024619036904,African-Islamic
+claude-3-7-sonnet-20250219,Ireland,en,5.12038801887154,3.248178946315884,Catholic Europe
+claude-sonnet-4.5,Ireland,en,3.77244892086881,2.4586085751618265,Catholic Europe
+deepseek-chat,Ireland,en,4.1931036000739255,1.9603859498727938,Catholic Europe
+deepseek-chat-v3.1,Ireland,en,6.244129397124273,0.6734311626789613,Catholic Europe
+doubao-1-5-pro-32k-250115,Ireland,en,4.949019137675645,0.8835018937909603,Catholic Europe
+gemini-2.5-flash,Ireland,en,2.909788979033519,2.4069920238147513,Catholic Europe
+gemini-2.5-pro,Ireland,en,4.951075378731124,3.876686426121541,Catholic Europe
+gemini-3-pro-preview,Ireland,en,5.0280870554696895,2.3164841108757326,Catholic Europe
+gemma-3-4b-it,Ireland,en,1.2215260069298293,1.2723684072059716,Catholic Europe
+gpt-4o,Ireland,en,3.233347912706613,1.4003290369516443,Catholic Europe
+gpt-4o-mini,Ireland,en,4.882268653095556,1.2870140023216015,Catholic Europe
+gpt-5.1,Ireland,en,6.436176729734108,1.3198070380352354,Catholic Europe
+grok-4.1-fast,Ireland,en,3.1723235639082548,1.4579967984555073,Catholic Europe
+kimi-k2,Ireland,en,5.542729576462727,1.7215844687278958,Catholic Europe
+llama-3.2-3b-instruct,Ireland,en,4.150598110265276,1.8280567360650175,Catholic Europe
+llama-3.3-70b-instruct,Ireland,en,4.260496165331546,0.5134079855656462,Catholic Europe
+mistral-medium-3.1,Ireland,en,4.596881911132068,2.850520960264125,Catholic Europe
+mistral-nemo,Ireland,en,5.382327913838108,1.7721266911969555,Catholic Europe
+phi-3-mini-128k-instruct,Ireland,en,2.9666310791586326,0.9958282836069638,Catholic Europe
+qwen3-max,Ireland,en,3.6513303837555178,2.6971722770409094,Catholic Europe
+claude-3-7-sonnet-20250219,Italy,en,3.4117442455329083,2.1507848386759507,Catholic Europe
+claude-3-7-sonnet-20250219,Italy,it,2.5551493413908792,1.9578338771773958,Catholic Europe
+claude-sonnet-4.5,Italy,en,3.20094462073616,1.9844358304801921,Catholic Europe
+claude-sonnet-4.5,Italy,it,2.3443497165941327,1.7914848689816374,Catholic Europe
+deepseek-chat,Italy,en,0.43798137365794493,1.0832111874074764,Catholic Europe
+deepseek-chat,Italy,it,0.43707732905884783,1.0849288175659877,Catholic Europe
+deepseek-chat-v3.1,Italy,en,0.7248886305941605,-0.3089244894840625,Catholic Europe
+deepseek-chat-v3.1,Italy,it,1.6495525791860026,1.275673392623001,Catholic Europe
+doubao-1-5-pro-32k-250115,Italy,en,0.08193929107141368,-0.7721572899719756,Catholic Europe
+doubao-1-5-pro-32k-250115,Italy,it,0.9531998392353312,-0.1712378153699234,Catholic Europe
+gemini-2.5-flash,Italy,en,1.3195436397696203,1.3600787271334205,Catholic Europe
+gemini-2.5-flash,Italy,it,1.1289762963432308,0.05243586098907244,Catholic Europe
+gemini-2.5-pro,Italy,en,1.29956010558401,2.7896102958587576,Catholic Europe
+gemini-2.5-pro,Italy,it,2.6949500968411115,1.5581155103468143,Catholic Europe
+gemini-3-pro-preview,Italy,en,1.486960274153199,1.4728911213419194,Catholic Europe
+gemini-3-pro-preview,Italy,it,1.6977598989499465,1.6392401295376775,Catholic Europe
+gemma-3-4b-it,Italy,en,-0.42418016783255064,2.4395225969610093,Catholic Europe
+gemma-3-4b-it,Italy,it,1.2322017143589346,1.9125548597884652,Catholic Europe
+gpt-4o,Italy,en,1.1639994640320785,-0.004888807174165449,Catholic Europe
+gpt-4o,Italy,it,1.2145569246374688,1.4154204475159624,Catholic Europe
+gpt-4o-mini,Italy,en,3.902590039048815,1.3394762874308457,Catholic Europe
+gpt-4o-mini,Italy,it,3.2439589853452993,0.5475024421573401,Catholic Europe
+gpt-5.1,Italy,en,1.6672258996318305,3.104585922362376,Catholic Europe
+gpt-5.1,Italy,it,1.7152714827943703,1.6105777954560585,Catholic Europe
+grok-4.1-fast,Italy,en,0.37201372286482964,0.4600690737976718,Catholic Europe
+grok-4.1-fast,Italy,it,1.1543176477942259,1.1005908266750635,Catholic Europe
+kimi-k2,Italy,en,2.7414277742615614,1.463258987925704,Catholic Europe
+kimi-k2,Italy,it,3.000272982220848,0.13559986921514477,Catholic Europe
+llama-3.2-3b-instruct,Italy,en,4.150598110265276,1.8280567360650175,Catholic Europe
+llama-3.2-3b-instruct,Italy,it,2.72529745504377,2.2948250682359044,Catholic Europe
+llama-3.3-70b-instruct,Italy,en,0.9291770476540616,0.5757662480832353,Catholic Europe
+llama-3.3-70b-instruct,Italy,it,1.7152714827943703,1.6105777954560585,Catholic Europe
+mistral-medium-3.1,Italy,en,2.670927305259842,2.3051195737999732,Catholic Europe
+mistral-medium-3.1,Italy,it,0.8411649948079183,1.4462891680391226,Catholic Europe
+mistral-nemo,Italy,en,3.7606445306569976,2.1922768174988354,Catholic Europe
+mistral-nemo,Italy,it,3.5217828568833216,2.090404367484057,Catholic Europe
+phi-3-mini-128k-instruct,Italy,en,2.545031829565138,0.6631302672154479,Catholic Europe
+phi-3-mini-128k-instruct,Italy,it,1.8125430572434396,3.302210263007688,Catholic Europe
+qwen3-max,Italy,en,0.058861069878521854,0.8057674151617308,Catholic Europe
+qwen3-max,Italy,it,0.9320714768463183,0.8215697424094449,Catholic Europe
+claude-3-7-sonnet-20250219,Japan,en,0.2617977695323961,1.6208390032939417,Confucian
+claude-3-7-sonnet-20250219,Japan,ja,0.0860213124244964,1.3971653269349462,Confucian
+claude-sonnet-4.5,Japan,en,0.27930935337681984,1.592176669212323,Confucian
+claude-sonnet-4.5,Japan,ja,0.1035328962689202,1.3685029928533272,Confucian
+deepseek-chat,Japan,en,0.5131871993664587,0.18060097227437466,Confucian
+deepseek-chat,Japan,ja,0.7472245437893597,-0.02755670063826425,Confucian
+deepseek-chat-v3.1,Japan,en,0.9909105469138113,0.38434587230393086,Confucian
+deepseek-chat-v3.1,Japan,ja,0.030639522468330682,-0.33317405068259875,Confucian
+doubao-1-5-pro-32k-250115,Japan,en,-0.42181386287758504,-0.008561935048201498,Confucian
+doubao-1-5-pro-32k-250115,Japan,ja,0.4347810412644428,0.18438902645035327,Confucian
+gemini-2.5-flash,Japan,en,0.41170282007155073,1.7623137315840594,Confucian
+gemini-2.5-flash,Japan,ja,2.0350673562264325,1.1181525231066407,Confucian
+gemini-2.5-pro,Japan,en,2.461637216867146,2.2107881716096354,Confucian
+gemini-2.5-pro,Japan,ja,0.9853439095653436,1.9336082433560184,Confucian
+gemini-3-pro-preview,Japan,en,1.9076445005789204,1.707953092846382,Confucian
+gemini-3-pro-preview,Japan,ja,0.7745442847685962,1.7672592351602605,Confucian
+gemma-3-4b-it,Japan,en,-0.7373613515432215,1.4534428208581966,Confucian
+gemma-3-4b-it,Japan,ja,-0.057861464378818395,-0.3724389231413944,Confucian
+gpt-4o,Japan,en,0.9733989630693876,0.41300820638554975,Confucian
+gpt-4o,Japan,ja,0.3025470730029737,1.217669988103926,Confucian
+gpt-4o-mini,Japan,en,1.8628131757552597,-0.05820050887052405,Confucian
+gpt-4o-mini,Japan,ja,2.7320953343909364,-0.2039420043810051,Confucian
+gpt-5.1,Japan,en,1.107186911127569,2.139559529827116,Confucian
+gpt-5.1,Japan,ja,0.9678323257209199,1.9622705774376374,Confucian
+grok-4.1-fast,Japan,en,-2.395189026560427,2.3803867771079084,Confucian
+grok-4.1-fast,Japan,ja,0.7289706519472432,1.8603981274228591,Confucian
+kimi-k2,Japan,en,0.28487599072528785,0.042914298160235585,Confucian
+kimi-k2,Japan,ja,0.9733989630693876,0.41300820638554975,Confucian
+llama-3.2-3b-instruct,Japan,en,1.7989576066345334,1.8379527134733618,Confucian
+llama-3.2-3b-instruct,Japan,ja,4.604049919046611,2.4905679887709846,Confucian
+llama-3.3-70b-instruct,Japan,en,0.8410054963746563,0.2428711440138131,Confucian
+llama-3.3-70b-instruct,Japan,ja,0.00975194368362342,1.0980751482012499,Confucian
+mistral-medium-3.1,Japan,en,0.11408336140142561,1.3326887687539661,Confucian
+mistral-medium-3.1,Japan,ja,-0.04776663563368516,-0.3293859965066201,Confucian
+mistral-nemo,Japan,en,3.068082300917239,1.1396554040013425,Confucian
+mistral-nemo,Japan,ja,2.6409164139752765,2.3562197586619136,Confucian
+phi-3-mini-128k-instruct,Japan,en,2.428013157353688,0.7672091036717671,Confucian
+phi-3-mini-128k-instruct,Japan,ja,2.3061701557914622,0.5612578172006695,Confucian
+qwen3-max,Japan,en,-0.0204468946544486,1.4654299392919046,Confucian
+qwen3-max,Japan,ja,0.2184147791192277,1.5673023893066826,Confucian
+claude-3-7-sonnet-20250219,Kazakhstan,en,-1.3637585076310303,0.1587184909737008,African-Islamic
+claude-3-7-sonnet-20250219,Kazakhstan,ru,-1.2467398354195804,0.05463965451738139,African-Islamic
+claude-sonnet-4.5,Kazakhstan,en,-1.089873666168507,0.20326627282524126,African-Islamic
+claude-sonnet-4.5,Kazakhstan,ru,-0.591262739836447,-1.024238026029051,African-Islamic
+deepseek-chat,Kazakhstan,en,-0.9953504055855177,-1.385598376502186,African-Islamic
+deepseek-chat,Kazakhstan,ru,-1.0303735732743653,-1.3282737083389482,African-Islamic
+deepseek-chat-v3.1,Kazakhstan,en,-0.6627077792265447,-1.01329808183533,African-Islamic
+deepseek-chat-v3.1,Kazakhstan,ru,-1.3512307515706445,-1.3833919900606446,African-Islamic
+doubao-1-5-pro-32k-250115,Kazakhstan,en,-1.1123690777969677,-1.281519540045866,African-Islamic
+doubao-1-5-pro-32k-250115,Kazakhstan,ru,0.2420812279426088,-1.2102908982633478,African-Islamic
+gemini-2.5-flash,Kazakhstan,en,-0.7257929958923212,-0.8914968554911125,African-Islamic
+gemini-2.5-flash,Kazakhstan,ru,-1.490585336977294,-1.5606809424501231,African-Islamic
+gemini-2.5-pro,Kazakhstan,en,-0.3041937462988269,-0.5587988390995964,African-Islamic
+gemini-2.5-pro,Kazakhstan,ru,-0.2761316973218979,-0.6232753972805763,African-Islamic
+gemini-3-pro-preview,Kazakhstan,en,-1.0584356222512943,-1.2637971501579681,African-Islamic
+gemini-3-pro-preview,Kazakhstan,ru,-1.0584356222512943,-1.2637971501579681,African-Islamic
+gemma-3-4b-it,Kazakhstan,en,0.3166367724405144,2.285187861836987,African-Islamic
+gemma-3-4b-it,Kazakhstan,ru,0.30343790086525224,0.4624418431041667,African-Islamic
+gpt-4o,Kazakhstan,en,-0.591262739836447,-1.024238026029051,African-Islamic
+gpt-4o,Kazakhstan,ru,-0.5737511559920232,-1.05290036011067,African-Islamic
+gpt-4o-mini,Kazakhstan,en,0.5874111087952302,-1.176683060605528,African-Islamic
+gpt-4o-mini,Kazakhstan,ru,1.4159439639603293,-0.9192555409259936,African-Islamic
+gpt-5.1,Kazakhstan,en,-1.18027862381352,-1.4697484366290658,African-Islamic
+gpt-5.1,Kazakhstan,ru,-0.819573948477618,-1.16192470014319,African-Islamic
+grok-4.1-fast,Kazakhstan,en,-3.5269587067425694,-0.6192681569940413,African-Islamic
+grok-4.1-fast,Kazakhstan,ru,-2.593003033604916,-1.8626562439811976,African-Islamic
+kimi-k2,Kazakhstan,en,-1.1473922454858152,-1.2241948718826285,African-Islamic
+kimi-k2,Kazakhstan,ru,-0.847635997454547,-1.09744814196221,African-Islamic
+llama-3.2-3b-instruct,Kazakhstan,en,0.8215789974434426,1.421109140633483,African-Islamic
+llama-3.2-3b-instruct,Kazakhstan,ru,1.8948479164569711,2.7266814347964106,African-Islamic
+llama-3.3-70b-instruct,Kazakhstan,en,-0.8147496191268423,-0.851894577215773,African-Islamic
+llama-3.3-70b-instruct,Kazakhstan,ru,-0.5864384104856716,-0.7142079031016338,African-Islamic
+mistral-medium-3.1,Kazakhstan,en,-0.6627077792265447,-1.01329808183533,African-Islamic
+mistral-medium-3.1,Kazakhstan,ru,-0.4588692731417159,-0.8541009636573141,African-Islamic
+mistral-nemo,Kazakhstan,en,1.6961204113332382,1.097089096300442,African-Islamic
+mistral-nemo,Kazakhstan,ru,-0.9908127478450627,0.7048570896706007,African-Islamic
+phi-3-mini-128k-instruct,Kazakhstan,en,1.828446808244109,0.3575129171711133,African-Islamic
+phi-3-mini-128k-instruct,Kazakhstan,ru,2.4777459261899812,2.558830008214711,African-Islamic
+qwen3-max,Kazakhstan,en,-0.9190810368446446,-1.0865081977684894,African-Islamic
+qwen3-max,Kazakhstan,ru,-1.4856015091932564,-0.047232795497396785,African-Islamic
+claude-3-7-sonnet-20250219,Jordan,ar,-1.647451506228367,-1.7093075607579828,African-Islamic
+claude-3-7-sonnet-20250219,Jordan,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-sonnet-4.5,Jordan,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+claude-sonnet-4.5,Jordan,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+deepseek-chat,Jordan,ar,-1.952032083610411,-2.146084413605818,African-Islamic
+deepseek-chat,Jordan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+deepseek-chat-v3.1,Jordan,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+deepseek-chat-v3.1,Jordan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+doubao-1-5-pro-32k-250115,Jordan,ar,-2.8016658690405207,-2.3318834850866312,African-Islamic
+doubao-1-5-pro-32k-250115,Jordan,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-flash,Jordan,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-flash,Jordan,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-pro,Jordan,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Jordan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-3-pro-preview,Jordan,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-3-pro-preview,Jordan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Jordan,ar,2.5377814378791914,-0.4648976054181005,African-Islamic
+gemma-3-4b-it,Jordan,en,-0.8824959257786428,1.465795488835679,African-Islamic
+gpt-4o,Jordan,ar,-1.274059576398817,-1.7401762812811432,African-Islamic
+gpt-4o,Jordan,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+gpt-4o-mini,Jordan,ar,-0.35175898538523964,-1.9658314317907795,African-Islamic
+gpt-4o-mini,Jordan,en,-1.4647271471453678,-2.231992509222493,African-Islamic
+gpt-5.1,Jordan,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-5.1,Jordan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Jordan,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+grok-4.1-fast,Jordan,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+kimi-k2,Jordan,ar,-1.6018778734070143,-1.8024464530205817,African-Islamic
+kimi-k2,Jordan,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+llama-3.2-3b-instruct,Jordan,ar,0.9261696785178072,3.468823115195576,African-Islamic
+llama-3.2-3b-instruct,Jordan,en,1.7989576066345334,1.8379527134733618,African-Islamic
+llama-3.3-70b-instruct,Jordan,ar,-1.7412324588136636,-1.9797354054100604,African-Islamic
+llama-3.3-70b-instruct,Jordan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-medium-3.1,Jordan,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-medium-3.1,Jordan,en,-2.836689036729368,-2.274558816923393,African-Islamic
+mistral-nemo,Jordan,ar,2.4173329176804157,0.8855653691806316,African-Islamic
+mistral-nemo,Jordan,en,-0.6595530328830127,1.0375537891453737,African-Islamic
+phi-3-mini-128k-instruct,Jordan,ar,-2.3452075105393857,4.460245392427599,African-Islamic
+phi-3-mini-128k-instruct,Jordan,en,1.3739611803229104,-0.22073866396683986,African-Islamic
+qwen3-max,Jordan,ar,-1.8582511310251144,-1.8756565689537408,African-Islamic
+qwen3-max,Jordan,en,-1.8582511310251144,-1.8756565689537408,African-Islamic
+claude-3-7-sonnet-20250219,Kenya,en,-1.3910782486102673,-1.6360974448248238,African-Islamic
+claude-sonnet-4.5,Kenya,en,-1.1697281586810147,-1.5055626607284267,African-Islamic
+deepseek-chat,Kenya,en,-1.3910782486102673,-1.6360974448248238,African-Islamic
+deepseek-chat-v3.1,Kenya,en,-1.5129212501724933,-1.8420487312959215,African-Islamic
+doubao-1-5-pro-32k-250115,Kenya,en,-1.8232279633362665,-1.932981237116979,African-Islamic
+gemini-2.5-flash,Kenya,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Kenya,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-3-pro-preview,Kenya,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Kenya,en,-0.1941324518678048,0.6324713730356838,African-Islamic
+gpt-4o,Kenya,en,-1.2915711602432403,-1.7115139471995242,African-Islamic
+gpt-4o-mini,Kenya,en,-0.362309450517745,-1.9300172076914186,African-Islamic
+gpt-5.1,Kenya,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Kenya,en,-3.3706722230073347,-1.1135931166659603,African-Islamic
+kimi-k2,Kenya,en,-0.8671259708272124,-1.8154467779931247,African-Islamic
+llama-3.2-3b-instruct,Kenya,en,1.7989576066345334,1.8379527134733618,African-Islamic
+llama-3.3-70b-instruct,Kenya,en,-1.497546455689212,-1.567832832467865,African-Islamic
+mistral-medium-3.1,Kenya,en,-1.4085898324546906,-1.6074351107432048,African-Islamic
+mistral-nemo,Kenya,en,-0.4487534080862654,1.2039027973411316,African-Islamic
+phi-3-mini-128k-instruct,Kenya,en,1.7066038066818834,0.15156163070001577,African-Islamic
+qwen3-max,Kenya,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-3-7-sonnet-20250219,"Korea, Republic of",en,-0.5310566205295059,1.0161314745159111,Confucian
+claude-3-7-sonnet-20250219,"Korea, Republic of",ko,-0.15766469069995537,0.9852627539927508,Confucian
+claude-sonnet-4.5,"Korea, Republic of",en,-0.05333327298215318,1.2198763745454675,Confucian
+claude-sonnet-4.5,"Korea, Republic of",ko,-0.059844480718999005,1.938218103917007,Confucian
+deepseek-chat,"Korea, Republic of",en,-0.1801601023284165,-0.4995230588783567,Confucian
+deepseek-chat,"Korea, Republic of",ko,-0.2914526387581369,-0.7412885694488153,Confucian
+deepseek-chat-v3.1,"Korea, Republic of",en,-0.41902177610209257,-0.601395508893135,Confucian
+deepseek-chat-v3.1,"Korea, Republic of",ko,0.08865962617902623,-1.2034470410587137,Confucian
+doubao-1-5-pro-32k-250115,"Korea, Republic of",en,-0.4926036048533332,-0.2875773317897391,Confucian
+doubao-1-5-pro-32k-250115,"Korea, Republic of",ko,-0.6144466064155591,-0.49352861826083677,Confucian
+gemini-2.5-flash,"Korea, Republic of",en,0.20926191939876426,-0.5461312215087194,Confucian
+gemini-2.5-flash,"Korea, Republic of",ko,1.108584516539611,-0.00968830508764707,Confucian
+gemini-2.5-pro,"Korea, Republic of",en,0.35522962986063317,1.7674035811859223,Confucian
+gemini-2.5-pro,"Korea, Republic of",ko,-0.07193625708132906,2.983967935846494,Confucian
+gemini-3-pro-preview,"Korea, Republic of",en,0.7927111660273694,1.448641560143383,Confucian
+gemini-3-pro-preview,"Korea, Republic of",ko,0.7751995821829455,1.4773038942250019,Confucian
+gemma-3-4b-it,"Korea, Republic of",en,-0.7373613515432215,1.4534428208581966,Confucian
+gemma-3-4b-it,"Korea, Republic of",ko,0.7394540472958884,0.9148706618224327,Confucian
+gpt-4o,"Korea, Republic of",en,0.2519896123975832,-0.20263926658620166,Confucian
+gpt-4o,"Korea, Republic of",ko,0.6814186295976488,1.2068760495729243,Confucian
+gpt-4o-mini,"Korea, Republic of",en,0.4152372148447359,-0.6898123362403783,Confucian
+gpt-4o-mini,"Korea, Republic of",ko,1.0605389333770718,1.4843198218186704,Confucian
+gpt-5.1,"Korea, Republic of",en,-0.1857267396768847,1.0497393121737306,Confucian
+gpt-5.1,"Korea, Republic of",ko,1.103017879191143,1.5395740659644404,Confucian
+grok-4.1-fast,"Korea, Republic of",en,-1.7004441194535098,0.911262973345877,Confucian
+grok-4.1-fast,"Korea, Republic of",ko,-1.1050468022803575,0.7209736959838555,Confucian
+kimi-k2,"Korea, Republic of",en,-0.4211585654632357,-0.29851727598345984,Confucian
+kimi-k2,"Korea, Republic of",ko,-0.3530895210134216,1.093129644625049,Confucian
+llama-3.2-3b-instruct,"Korea, Republic of",en,2.6380409269321374,2.0595660090535355,Confucian
+llama-3.2-3b-instruct,"Korea, Republic of",ko,2.785147428418121,1.0671486989925776,Confucian
+llama-3.3-70b-instruct,"Korea, Republic of",en,-0.3195146877350661,-0.6768120112678355,Confucian
+llama-3.3-70b-instruct,"Korea, Republic of",ko,-0.30200310389064233,-0.7054743453494544,Confucian
+mistral-medium-3.1,"Korea, Republic of",en,-0.1801601023284165,-0.4995230588783567,Confucian
+mistral-medium-3.1,"Korea, Republic of",ko,0.6540988886184125,-0.5879398862256001,Confucian
+mistral-nemo,"Korea, Republic of",en,0.5163419457099907,2.2314528432550786,Confucian
+mistral-nemo,"Korea, Republic of",ko,1.4371151567707594,4.237587569069709,Confucian
+phi-3-mini-128k-instruct,"Korea, Republic of",en,2.428013157353688,0.7672091036717671,Confucian
+phi-3-mini-128k-instruct,"Korea, Republic of",ko,1.3548924926331827,0.7537534810042326,Confucian
+qwen3-max,"Korea, Republic of",en,0.15034573466941356,0.17565546869817397,Confucian
+qwen3-max,"Korea, Republic of",ko,0.1959193674907666,0.08251657643557528,Confucian
+claude-3-7-sonnet-20250219,Kuwait,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+claude-3-7-sonnet-20250219,Kuwait,en,-1.619389457251438,-1.773784118938963,African-Islamic
+claude-sonnet-4.5,Kuwait,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+claude-sonnet-4.5,Kuwait,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+deepseek-chat,Kuwait,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+deepseek-chat,Kuwait,en,-0.8003156669640926,-3.2159716023794744,African-Islamic
+deepseek-chat-v3.1,Kuwait,ar,-1.0111152917608397,-3.3823206105752326,African-Islamic
+deepseek-chat-v3.1,Kuwait,en,-0.8003156669640926,-3.2159716023794744,African-Islamic
+doubao-1-5-pro-32k-250115,Kuwait,ar,-0.46072513863001985,-3.5900299325361256,African-Islamic
+doubao-1-5-pro-32k-250115,Kuwait,en,-1.8677101959028675,-3.5752715720737873,African-Islamic
+gemini-2.5-flash,Kuwait,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-flash,Kuwait,en,-1.8677101959028675,-3.5752715720737873,African-Islamic
+gemini-2.5-pro,Kuwait,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Kuwait,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-3-pro-preview,Kuwait,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-3-pro-preview,Kuwait,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Kuwait,ar,0.7377717957217571,-1.1140754830495454,African-Islamic
+gemma-3-4b-it,Kuwait,en,-0.7117032964547804,0.17602101824194835,African-Islamic
+gpt-4o,Kuwait,ar,-1.7517829239461693,-1.9439211813106994,African-Islamic
+gpt-4o,Kuwait,en,-0.8003156669640926,-3.2159716023794744,African-Islamic
+gpt-4o-mini,Kuwait,ar,-0.35175898538523964,-1.9658314317907795,African-Islamic
+gpt-4o-mini,Kuwait,en,-1.4647271471453678,-2.231992509222493,African-Islamic
+gpt-5.1,Kuwait,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-5.1,Kuwait,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Kuwait,ar,-1.8677101959028675,-3.5752715720737873,African-Islamic
+grok-4.1-fast,Kuwait,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+kimi-k2,Kuwait,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+kimi-k2,Kuwait,en,-0.8003156669640926,-3.2159716023794744,African-Islamic
+llama-3.2-3b-instruct,Kuwait,ar,1.5399523520720542,4.978451186242627,African-Islamic
+llama-3.2-3b-instruct,Kuwait,en,1.7814460227901092,1.8666150475549808,African-Islamic
+llama-3.3-70b-instruct,Kuwait,ar,-1.0111152917608397,-3.3823206105752326,African-Islamic
+llama-3.3-70b-instruct,Kuwait,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+mistral-medium-3.1,Kuwait,ar,-3.0474886615261143,-2.44090782511915,African-Islamic
+mistral-medium-3.1,Kuwait,en,-2.836689036729368,-2.274558816923393,African-Islamic
+mistral-nemo,Kuwait,ar,2.3998213338359924,0.9142277032622504,African-Islamic
+mistral-nemo,Kuwait,en,0.7190801110410263,-1.4510609865839732,African-Islamic
+phi-3-mini-128k-instruct,Kuwait,ar,-2.3452075105393857,4.460245392427599,African-Islamic
+phi-3-mini-128k-instruct,Kuwait,en,1.0742049322916418,-0.3474853938872583,African-Islamic
+qwen3-max,Kuwait,ar,-3.0474886615261143,-2.44090782511915,African-Islamic
+qwen3-max,Kuwait,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+claude-3-7-sonnet-20250219,Kyrgyzstan,en,-1.6964011339900038,-0.2135818036931547,African-Islamic
+claude-3-7-sonnet-20250219,Kyrgyzstan,ru,-1.6964011339900038,-0.2135818036931547,African-Islamic
+claude-sonnet-4.5,Kyrgyzstan,en,-1.6788895501455796,-0.24224413777477363,African-Islamic
+claude-sonnet-4.5,Kyrgyzstan,ru,-1.2692352470480417,-1.4301461583537263,African-Islamic
+deepseek-chat,Kyrgyzstan,en,-1.2692352470480417,-1.4301461583537263,African-Islamic
+deepseek-chat,Kyrgyzstan,ru,-0.819573948477618,-1.16192470014319,African-Islamic
+deepseek-chat-v3.1,Kyrgyzstan,en,-1.2692352470480417,-1.4301461583537263,African-Islamic
+deepseek-chat-v3.1,Kyrgyzstan,ru,-1.2342120793591937,-1.487470826516964,African-Islamic
+doubao-1-5-pro-32k-250115,Kyrgyzstan,en,-1.718896545618465,-1.6983676165642625,African-Islamic
+doubao-1-5-pro-32k-250115,Kyrgyzstan,ru,-0.32942307219004063,-1.6844636429449815,African-Islamic
+gemini-2.5-flash,Kyrgyzstan,en,-1.0864976712282233,-1.1993205919769883,African-Islamic
+gemini-2.5-flash,Kyrgyzstan,ru,-1.647451506228367,-1.7093075607579828,African-Islamic
+gemini-2.5-pro,Kyrgyzstan,en,-0.682410005479153,-0.8379602415038533,African-Islamic
+gemini-2.5-pro,Kyrgyzstan,ru,-1.0759472060957176,-1.235134816076349,African-Islamic
+gemini-3-pro-preview,Kyrgyzstan,en,-1.6299399223839441,-1.737969894839602,African-Islamic
+gemini-3-pro-preview,Kyrgyzstan,ru,-1.6299399223839441,-1.737969894839602,African-Islamic
+gemma-3-4b-it,Kyrgyzstan,en,-0.21164403571222867,0.6611337071173027,African-Islamic
+gemma-3-4b-it,Kyrgyzstan,ru,-0.8733588841587056,-0.07558274105134306,African-Islamic
+gpt-4o,Kyrgyzstan,en,-0.7481289090875204,-1.1728646443369106,African-Islamic
+gpt-4o,Kyrgyzstan,ru,-0.6087743236808707,-0.995575691947432,African-Islamic
+gpt-4o-mini,Kyrgyzstan,en,0.22670643345932792,-1.4845067970914037,African-Islamic
+gpt-4o-mini,Kyrgyzstan,ru,1.083301337601356,-1.291555835592849,African-Islamic
+gpt-5.1,Kyrgyzstan,en,-1.3196332092201697,-1.6470373890185446,African-Islamic
+gpt-5.1,Kyrgyzstan,ru,-1.9575987209588792,-0.5968220425537308,African-Islamic
+grok-4.1-fast,Kyrgyzstan,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+grok-4.1-fast,Kyrgyzstan,ru,-2.4072600195293026,-0.8650435007642671,African-Islamic
+kimi-k2,Kyrgyzstan,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+kimi-k2,Kyrgyzstan,ru,-1.3910782486102673,-1.6360974448248238,African-Islamic
+llama-3.2-3b-instruct,Kyrgyzstan,en,0.4669024852032563,4.067336522764949,African-Islamic
+llama-3.2-3b-instruct,Kyrgyzstan,ru,1.8442904558515805,1.3063721801062829,African-Islamic
+llama-3.3-70b-instruct,Kyrgyzstan,en,-1.718896545618465,-1.6983676165642625,African-Islamic
+llama-3.3-70b-instruct,Kyrgyzstan,ru,-1.7419747668113565,-0.12044291143055594,African-Islamic
+mistral-medium-3.1,Kyrgyzstan,en,-1.0759472060957176,-1.235134816076349,African-Islamic
+mistral-medium-3.1,Kyrgyzstan,ru,-1.0759472060957176,-1.235134816076349,African-Islamic
+mistral-nemo,Kyrgyzstan,en,-0.2290901965430836,2.362809433736486,African-Islamic
+mistral-nemo,Kyrgyzstan,ru,0.29521117349703097,2.3073233673282822,African-Islamic
+phi-3-mini-128k-instruct,Kyrgyzstan,en,1.828446808244109,0.3575129171711133,African-Islamic
+phi-3-mini-128k-instruct,Kyrgyzstan,ru,1.7611609048689525,2.2532126581703764,African-Islamic
+qwen3-max,Kyrgyzstan,en,-1.04092403840687,-1.292459484239587,African-Islamic
+qwen3-max,Kyrgyzstan,ru,-1.9072007587867503,-0.3799308118889128,African-Islamic
+claude-3-7-sonnet-20250219,Lebanon,ar,-2.804734560223154,0.9098419990677606,African-Islamic
+claude-3-7-sonnet-20250219,Lebanon,en,-1.6964011339900038,-0.2135818036931547,African-Islamic
+claude-sonnet-4.5,Lebanon,ar,-2.0355549680858225,0.13245963101152947,African-Islamic
+claude-sonnet-4.5,Lebanon,en,-1.368582836981806,-0.15131163195371622,African-Islamic
+deepseek-chat,Lebanon,ar,-2.471349625866488,-0.577150200244888,African-Islamic
+deepseek-chat,Lebanon,en,-1.047885157118789,-1.299611374257329,African-Islamic
+deepseek-chat-v3.1,Lebanon,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+deepseek-chat-v3.1,Lebanon,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+doubao-1-5-pro-32k-250115,Lebanon,ar,-2.3191181921423927,-1.818108462129658,African-Islamic
+doubao-1-5-pro-32k-250115,Lebanon,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+gemini-2.5-flash,Lebanon,ar,-3.513241066752864,1.969279659567784,African-Islamic
+gemini-2.5-flash,Lebanon,en,-4.6521698838332215,2.536099947315754,African-Islamic
+gemini-2.5-pro,Lebanon,ar,-2.3777774933642744,3.7202265498706057,African-Islamic
+gemini-2.5-pro,Lebanon,en,-2.6341507509823745,3.6470164339374467,African-Islamic
+gemini-3-pro-preview,Lebanon,ar,-1.9250614348882338,-0.47513174456739055,African-Islamic
+gemini-3-pro-preview,Lebanon,en,-3.2263338098166474,0.5771439826762449,African-Islamic
+gemma-3-4b-it,Lebanon,ar,1.165819548295191,-0.5074639131190002,African-Islamic
+gemma-3-4b-it,Lebanon,en,0.07295076931606237,1.8732852888947917,African-Islamic
+gpt-4o,Lebanon,ar,-0.08049351552812783,0.6284784627722521,African-Islamic
+gpt-4o,Lebanon,en,-1.2796262137472847,-0.19091391022905577,African-Islamic
+gpt-4o-mini,Lebanon,ar,-0.4031673467512439,1.6842740747590157,African-Islamic
+gpt-4o-mini,Lebanon,en,-1.7492710465033183,0.9703962002857452,African-Islamic
+gpt-5.1,Lebanon,ar,-1.5793824617785535,-0.31766064014947415,African-Islamic
+gpt-5.1,Lebanon,en,-3.0155341850199004,0.7434929908720029,African-Islamic
+grok-4.1-fast,Lebanon,ar,-4.062249955257053,2.979892727757258,African-Islamic
+grok-4.1-fast,Lebanon,en,-3.7978381099492973,0.10297123799461097,African-Islamic
+kimi-k2,Lebanon,ar,-1.6274280449410923,1.1763474867568429,African-Islamic
+kimi-k2,Lebanon,en,-0.7627945531094101,-1.580833157440408,African-Islamic
+llama-3.2-3b-instruct,Lebanon,ar,0.1735570998365224,3.386622507489641,African-Islamic
+llama-3.2-3b-instruct,Lebanon,en,1.7814460227901092,1.8666150475549808,African-Islamic
+llama-3.3-70b-instruct,Lebanon,ar,-1.778002324171613,0.1029738309078434,African-Islamic
+llama-3.3-70b-instruct,Lebanon,en,-1.9247123426311745,-0.3512684778072937,African-Islamic
+mistral-medium-3.1,Lebanon,ar,-2.492075468049791,2.7116738624599543,African-Islamic
+mistral-medium-3.1,Lebanon,en,-2.804734560223154,0.9098419990677606,African-Islamic
+mistral-nemo,Lebanon,ar,1.6650694312561898,0.9272280282347931,African-Islamic
+mistral-nemo,Lebanon,en,0.12679014944204348,2.3606030472949446,African-Islamic
+phi-3-mini-128k-instruct,Lebanon,ar,-2.3211847189581167,3.713241328974441,African-Islamic
+phi-3-mini-128k-instruct,Lebanon,en,1.7066038066818834,0.15156163070001577,African-Islamic
+qwen3-max,Lebanon,ar,-3.579702278358923,3.4936677507142306,African-Islamic
+qwen3-max,Lebanon,en,-2.029043760348977,-0.5858820983600104,African-Islamic
+claude-3-7-sonnet-20250219,Libya,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+claude-3-7-sonnet-20250219,Libya,en,-2.697334451322719,-2.0972698645339145,African-Islamic
+claude-sonnet-4.5,Libya,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+claude-sonnet-4.5,Libya,en,-3.024993249897654,-0.9561220122480435,African-Islamic
+deepseek-chat,Libya,ar,-4.227267127149362,-1.3065440781645141,African-Islamic
+deepseek-chat,Libya,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+deepseek-chat-v3.1,Libya,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+deepseek-chat-v3.1,Libya,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+doubao-1-5-pro-32k-250115,Libya,ar,-3.0124654938372672,-2.4982324932823885,African-Islamic
+doubao-1-5-pro-32k-250115,Libya,en,-3.029977077681691,-2.469570159200769,African-Islamic
+gemini-2.5-flash,Libya,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemini-2.5-flash,Libya,en,-2.6180596443260495,-1.0313925089600249,African-Islamic
+gemini-2.5-pro,Libya,ar,-3.5870384851525494,0.26932024619036904,African-Islamic
+gemini-2.5-pro,Libya,en,-4.225003996891259,1.3195355926551824,African-Islamic
+gemini-3-pro-preview,Libya,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-3-pro-preview,Libya,en,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemma-3-4b-it,Libya,ar,-1.6246599566457967,-1.5068069226463199,African-Islamic
+gemma-3-4b-it,Libya,en,-1.1563807672411666,1.4212477069841385,African-Islamic
+gpt-4o,Libya,ar,-1.7517829239461693,-1.9439211813106994,African-Islamic
+gpt-4o,Libya,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-4o-mini,Libya,ar,-1.0177865461008784,-0.8511395271449862,African-Islamic
+gpt-4o-mini,Libya,en,-3.2638549236713303,-1.0579944622628215,African-Islamic
+gpt-5.1,Libya,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-5.1,Libya,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Libya,ar,-4.227267127149362,-1.3065440781645141,African-Islamic
+grok-4.1-fast,Libya,en,-4.654433014091325,-0.08997972350394348,African-Islamic
+kimi-k2,Libya,ar,-2.0281397157498793,-0.5875997285185213,African-Islamic
+kimi-k2,Libya,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+llama-3.2-3b-instruct,Libya,ar,-0.27112037094986396,4.631849196231831,African-Islamic
+llama-3.2-3b-instruct,Libya,en,1.7399116473644165,2.6422814450897585,African-Islamic
+llama-3.3-70b-instruct,Libya,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+llama-3.3-70b-instruct,Libya,en,-2.6180596443260495,-1.0313925089600249,African-Islamic
+mistral-medium-3.1,Libya,ar,-4.227267127149362,-1.3065440781645141,African-Islamic
+mistral-medium-3.1,Libya,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+mistral-nemo,Libya,ar,-0.08510871750813659,0.6055003181296367,African-Islamic
+mistral-nemo,Libya,en,-1.665184338669543,1.7727935091065694,African-Islamic
+phi-3-mini-128k-instruct,Libya,ar,-2.3452075105393857,4.460245392427599,African-Islamic
+phi-3-mini-128k-instruct,Libya,en,1.7066038066818834,0.15156163070001577,African-Islamic
+qwen3-max,Libya,ar,-4.105424125587136,-1.1005927916934166,African-Islamic
+qwen3-max,Libya,en,-2.2854170179670765,-0.6590922142931693,African-Islamic
+claude-3-7-sonnet-20250219,Luxembourg,de,4.83682479481497,1.2976108531746968,Catholic Europe
+claude-3-7-sonnet-20250219,Luxembourg,en,5.266253812015036,2.7071261693338236,Catholic Europe
+claude-sonnet-4.5,Luxembourg,de,5.505115485788712,2.8089986193486016,Catholic Europe
+claude-sonnet-4.5,Luxembourg,en,5.522627069633136,2.7803362852669826,Catholic Europe
+deepseek-chat,Luxembourg,de,5.312496366240071,-0.7681146791181113,Catholic Europe
+deepseek-chat,Luxembourg,en,3.79949301286335,0.040401913090466764,Catholic Europe
+deepseek-chat-v3.1,Luxembourg,de,1.7194405147307963,2.2105632593187345,Catholic Europe
+deepseek-chat-v3.1,Luxembourg,en,6.060649513306762,2.3018980902817288,Catholic Europe
+doubao-1-5-pro-32k-250115,Luxembourg,de,4.2418736476854,0.9108928113166582,Catholic Europe
+doubao-1-5-pro-32k-250115,Luxembourg,en,5.636490995501054,0.6254055778299592,Catholic Europe
+gemini-2.5-flash,Luxembourg,de,4.826720499726047,0.7564177580539979,Catholic Europe
+gemini-2.5-flash,Luxembourg,en,3.3271288652919093,1.670756881603722,Catholic Europe
+gemini-2.5-pro,Luxembourg,de,5.199220813470171,1.3007768373698319,Catholic Europe
+gemini-2.5-pro,Luxembourg,en,5.072918380293349,4.082637712592638,Catholic Europe
+gemini-3-pro-preview,Luxembourg,de,4.464119818633309,1.189913895582278,Catholic Europe
+gemini-3-pro-preview,Luxembourg,en,5.3957528495175096,2.63145973737935,Catholic Europe
+gemma-3-4b-it,Luxembourg,de,3.658161727926671,2.786866208468156,Catholic Europe
+gemma-3-4b-it,Luxembourg,en,1.0507333776059669,2.5621428777997024,Catholic Europe
+gpt-4o,Luxembourg,de,4.437149169911131,-0.48103877345615065,Catholic Europe
+gpt-4o,Luxembourg,en,4.641437586971032,0.4036519641111471,Catholic Europe
+gpt-4o-mini,Luxembourg,de,5.215487224038879,0.9997649363588941,Catholic Europe
+gpt-4o-mini,Luxembourg,en,7.2290785105653725,0.35399168127707387,Catholic Europe
+gpt-5.1,Luxembourg,de,4.446608234788886,1.218576229663897,Catholic Europe
+gpt-5.1,Luxembourg,en,5.700184118811819,1.7841718960866748,Catholic Europe
+grok-4.1-fast,Luxembourg,de,4.769791796270104,-0.10873847878929534,Catholic Europe
+grok-4.1-fast,Luxembourg,en,5.489384494015072,1.617822887890917,Catholic Europe
+kimi-k2,Luxembourg,de,6.005713893394179,-0.005448606555875919,Catholic Europe
+kimi-k2,Luxembourg,en,5.719954367981119,3.657875132816538,Catholic Europe
+llama-3.2-3b-instruct,Luxembourg,de,3.735510068408627,0.7770169903019617,Catholic Europe
+llama-3.2-3b-instruct,Luxembourg,en,3.7289988606717808,1.4953587196735012,Catholic Europe
+llama-3.3-70b-instruct,Luxembourg,de,6.722637816626741,0.504678680363756,Catholic Europe
+llama-3.3-70b-instruct,Luxembourg,en,4.563180736956752,1.691504712427637,Catholic Europe
+mistral-medium-3.1,Luxembourg,de,5.4022640572543565,1.91311800800781,Catholic Europe
+mistral-medium-3.1,Luxembourg,en,4.631905078820916,2.7931962921008875,Catholic Europe
+mistral-nemo,Luxembourg,de,4.0382680266278435,3.4779231793737835,Catholic Europe
+mistral-nemo,Luxembourg,en,4.946091550947086,2.363238279168814,Catholic Europe
+phi-3-mini-128k-instruct,Luxembourg,de,3.0310833450638577,3.351620427913222,Catholic Europe
+phi-3-mini-128k-instruct,Luxembourg,en,3.144598178674717,1.0728264537161019,Catholic Europe
+qwen3-max,Luxembourg,de,5.089009486949674,-0.5957712303048335,Catholic Europe
+qwen3-max,Luxembourg,en,4.808613437750305,0.07802271721516621,Catholic Europe
+claude-3-7-sonnet-20250219,Macao,en,-0.19268785838880287,1.0425874221559885,Confucian
+claude-3-7-sonnet-20250219,Macao,pt,-0.19268785838880287,1.0425874221559885,Confucian
+claude-sonnet-4.5,Macao,en,0.08119698307372103,1.087135204007529,Confucian
+claude-sonnet-4.5,Macao,pt,0.08119698307372103,1.087135204007529,Confucian
+deepseek-chat,Macao,en,0.5083628700156834,-0.1294291506530424,Confucian
+deepseek-chat,Macao,pt,1.460138933518758,1.0860031464440025,Confucian
+deepseek-chat-v3.1,Macao,en,0.6253815422271339,-0.2335079871093619,Confucian
+deepseek-chat-v3.1,Macao,pt,1.5057125663401107,0.9928642541814037,Confucian
+doubao-1-5-pro-32k-250115,Macao,en,-0.6151019038299084,-0.20357327732557848,Confucian
+doubao-1-5-pro-32k-250115,Macao,pt,0.6911542988825428,0.25759914238351245,Confucian
+gemini-2.5-flash,Macao,en,0.04617381538487364,1.1444598721707668,Confucian
+gemini-2.5-flash,Macao,pt,0.07407636592854072,-0.12343471003552241,Confucian
+gemini-2.5-pro,Macao,en,0.3179218674862545,1.491885886931982,Confucian
+gemini-2.5-pro,Macao,pt,0.3179218674862545,1.491885886931982,Confucian
+gemini-3-pro-preview,Macao,en,-0.5967755241378732,0.6812270716828537,Confucian
+gemini-3-pro-preview,Macao,pt,-0.5967755241378732,0.6812270716828537,Confucian
+gemma-3-4b-it,Macao,en,0.555498446214191,2.3870603118517653,Confucian
+gemma-3-4b-it,Macao,pt,0.9933400405852584,1.8106824097736873,Confucian
+gpt-4o,Macao,en,0.7297129599449359,0.001105633443354681,Confucian
+gpt-4o,Macao,pt,1.6038194479313876,0.16539426086029038,Confucian
+gpt-4o-mini,Macao,en,1.1744497018444222,0.7751236069294712,Confucian
+gpt-4o-mini,Macao,pt,1.448334543306946,0.8196713887810115,Confucian
+gpt-5.1,Macao,en,-0.042782807849647775,1.1840621504461064,Confucian
+gpt-5.1,Macao,pt,-0.0406460184885048,0.8811839175364313,Confucian
+grok-4.1-fast,Macao,en,-1.7763643959373239,0.7360360613722774,Confucian
+grok-4.1-fast,Macao,pt,-1.8044264449142529,0.8005126195532574,Confucian
+kimi-k2,Macao,en,0.7297129599449359,0.001105633443354681,Confucian
+kimi-k2,Macao,pt,2.7320953343909364,-0.2039420043810051,Confucian
+llama-3.2-3b-instruct,Macao,en,1.6210443601654911,1.9171572700240411,Confucian
+llama-3.2-3b-instruct,Macao,pt,2.12299962666488,1.66095008488524,Confucian
+llama-3.3-70b-instruct,Macao,en,0.1582086598122866,-0.47306711123827916,Confucian
+llama-3.3-70b-instruct,Macao,pt,0.653443591204063,-0.2979845452903418,Confucian
+mistral-medium-3.1,Macao,en,0.06368539922929728,1.1157975380891478,Confucian
+mistral-medium-3.1,Macao,pt,0.5083628700156834,-0.1294291506530424,Confucian
+mistral-nemo,Macao,en,2.173843758880591,1.3008339963299986,Confucian
+mistral-nemo,Macao,pt,1.6720976197519688,1.844093159753601,Confucian
+phi-3-mini-128k-instruct,Macao,en,2.428013157353688,0.7672091036717671,Confucian
+phi-3-mini-128k-instruct,Macao,pt,2.5275202457207144,0.6917926012970668,Confucian
+qwen3-max,Macao,en,0.4018946629367383,-0.061164538296083835,Confucian
+qwen3-max,Macao,pt,-0.40100572986291116,-0.9859011419106056,Confucian
+claude-3-7-sonnet-20250219,Malaysia,en,-1.2467398354195804,0.05463965451738139,West & South Asia
+claude-sonnet-4.5,Malaysia,en,-0.5982238585483655,-1.031389916046793,West & South Asia
+deepseek-chat,Malaysia,en,-1.1697281586810147,-1.5055626607284267,West & South Asia
+deepseek-chat-v3.1,Malaysia,en,-1.1697281586810147,-1.5055626607284267,West & South Asia
+doubao-1-5-pro-32k-250115,Malaysia,en,-1.5843662895625905,-1.8311087871022007,West & South Asia
+gemini-2.5-flash,Malaysia,en,-1.0016562268830866,-1.6827056074551865,West & South Asia
+gemini-2.5-pro,Malaysia,en,-1.8357557193966527,-0.3908707560826333,West & South Asia
+gemini-3-pro-preview,Malaysia,en,-2.4072600195293026,-0.8650435007642671,West & South Asia
+gemma-3-4b-it,Malaysia,en,0.3166367724405144,2.285187861836987,West & South Asia
+gpt-4o,Malaysia,en,-1.0303735732743653,-1.3282737083389482,West & South Asia
+gpt-4o-mini,Malaysia,en,-0.11846394896003143,-0.31469661072391397,West & South Asia
+gpt-5.1,Malaysia,en,-1.8357557193966527,-0.3908707560826333,West & South Asia
+grok-4.1-fast,Malaysia,en,-2.1908937573840874,-2.247956863620596,West & South Asia
+kimi-k2,Malaysia,en,-1.3910782486102673,-1.6360974448248238,West & South Asia
+llama-3.2-3b-instruct,Malaysia,en,1.7989576066345334,1.8379527134733618,West & South Asia
+llama-3.3-70b-instruct,Malaysia,en,-1.497546455689212,-1.567832832467865,West & South Asia
+mistral-medium-3.1,Malaysia,en,-1.047885157118789,-1.299611374257329,West & South Asia
+mistral-nemo,Malaysia,en,0.15081294102331308,1.6135989838417857,West & South Asia
+phi-3-mini-128k-instruct,Malaysia,en,2.3061701557914622,0.5612578172006695,West & South Asia
+qwen3-max,Malaysia,en,-1.9072007587867503,-0.3799308118889128,West & South Asia
+claude-3-7-sonnet-20250219,Mali,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-3-7-sonnet-20250219,Mali,fr,-3.1598725982105877,-0.9472441084702021,African-Islamic
+claude-sonnet-4.5,Mali,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+claude-sonnet-4.5,Mali,fr,-0.5614539931904163,-3.114099152364697,African-Islamic
+deepseek-chat,Mali,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+deepseek-chat,Mali,fr,-3.3531606391629114,-1.1422554507475793,African-Islamic
+deepseek-chat-v3.1,Mali,en,-1.9625825487429167,-2.110270189506457,African-Islamic
+deepseek-chat-v3.1,Mali,fr,-3.3531606391629114,-1.1422554507475793,African-Islamic
+doubao-1-5-pro-32k-250115,Mali,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+doubao-1-5-pro-32k-250115,Mali,fr,-0.8014202839556631,-2.234052890001316,African-Islamic
+gemini-2.5-flash,Mali,en,-0.8189318678000871,-2.2053905559196965,African-Islamic
+gemini-2.5-flash,Mali,fr,-0.8189318678000871,-2.2053905559196965,African-Islamic
+gemini-2.5-pro,Mali,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Mali,fr,-3.7978381099492973,0.10297123799461097,African-Islamic
+gemini-3-pro-preview,Mali,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-3-pro-preview,Mali,fr,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemma-3-4b-it,Mali,en,-0.43781845499225647,0.22056880009348867,African-Islamic
+gemma-3-4b-it,Mali,fr,2.345947697573349,-0.10050740248135707,African-Islamic
+gpt-4o,Mali,en,-1.2915711602432403,-1.7115139471995242,African-Islamic
+gpt-4o,Mali,fr,-2.69269971579574,-0.7076849843412854,African-Islamic
+gpt-4o-mini,Mali,en,-1.447215563300944,-2.260654843304112,African-Islamic
+gpt-4o-mini,Mali,fr,0.17825833009107864,-2.2865151751105603,African-Islamic
+gpt-5.1,Mali,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-5.1,Mali,fr,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Mali,en,-3.7978381099492973,0.10297123799461097,African-Islamic
+grok-4.1-fast,Mali,fr,-4.654433014091325,-0.08997972350394348,African-Islamic
+kimi-k2,Mali,en,-0.6081322430033396,-2.0390415477239383,African-Islamic
+kimi-k2,Mali,fr,-0.590620659158916,-2.0677038818055573,African-Islamic
+llama-3.2-3b-instruct,Mali,en,1.774934815053264,2.5849567769265205,African-Islamic
+llama-3.2-3b-instruct,Mali,fr,0.6645119902283332,2.4407359270609192,African-Islamic
+llama-3.3-70b-instruct,Mali,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+llama-3.3-70b-instruct,Mali,fr,-2.4072600195293026,-0.8650435007642671,African-Islamic
+mistral-medium-3.1,Mali,en,-2.836689036729368,-2.274558816923393,African-Islamic
+mistral-medium-3.1,Mali,fr,-1.0111152917608397,-3.3823206105752326,African-Islamic
+mistral-nemo,Mali,en,-1.266080500704509,0.6207057126269777,African-Islamic
+mistral-nemo,Mali,fr,1.0445268027803492,-0.1522960242174669,African-Islamic
+phi-3-mini-128k-instruct,Mali,en,1.467742132908207,0.049689180685237574,African-Islamic
+phi-3-mini-128k-instruct,Mali,fr,0.7792191605641072,-0.3204047275400767,African-Islamic
+qwen3-max,Mali,en,-1.840739547180691,-1.90431890303536,African-Islamic
+qwen3-max,Mali,fr,-3.4476838997459,0.4466091985798477,African-Islamic
+claude-3-7-sonnet-20250219,Malta,en,-0.10298892715658892,-0.8563073500988556,Catholic Europe
+claude-sonnet-4.5,Malta,en,0.014029745054861542,-0.9603861865551748,Catholic Europe
+deepseek-chat,Malta,en,0.8659899136699115,-2.15702010524925,Catholic Europe
+deepseek-chat-v3.1,Malta,en,1.2218702596550386,-2.1592264916907915,Catholic Europe
+doubao-1-5-pro-32k-250115,Malta,en,-0.3795074555617036,-1.3575607611276708,Catholic Europe
+gemini-2.5-flash,Malta,en,0.03240997779393823,0.08061688911307417,Catholic Europe
+gemini-2.5-pro,Malta,en,0.7159491223540007,-1.062737349614338,Catholic Europe
+gemini-3-pro-preview,Malta,en,0.5989304501425503,-0.9586585131580185,Catholic Europe
+gemma-3-4b-it,Malta,en,0.8608213315939273,0.9645446707200958,Catholic Europe
+gpt-4o,Malta,en,1.132913636420517,-2.119624213415452,Catholic Europe
+gpt-4o-mini,Malta,en,3.1506708053497983,-2.050455952411755,Catholic Europe
+gpt-5.1,Malta,en,0.9267487471507477,-0.8963883414185799,Catholic Europe
+grok-4.1-fast,Malta,en,0.11638277324442231,-1.4724335361149918,Catholic Europe
+kimi-k2,Malta,en,1.820987289187396,-1.0575669337472369,Catholic Europe
+llama-3.2-3b-instruct,Malta,en,3.296266336381351,4.261185445386159,Catholic Europe
+llama-3.3-70b-instruct,Malta,en,1.2835626849555763,-0.1670277612251379,Catholic Europe
+mistral-medium-3.1,Malta,en,0.8531130653524657,-0.7387728909750011,Catholic Europe
+mistral-nemo,Malta,en,3.6877511568564088,0.49059977396290955,Catholic Europe
+phi-3-mini-128k-instruct,Malta,en,2.4231888280029117,0.4571789807443502,Catholic Europe
+qwen3-max,Malta,en,-0.5245881767500835,-1.1890053664903715,Catholic Europe
+claude-3-7-sonnet-20250219,Mexico,en,-0.3418506009302653,-0.9581798001136337,Latin America
+claude-3-7-sonnet-20250219,Mexico,es,-0.7690164878722275,0.25838455454693765,Latin America
+claude-sonnet-4.5,Mexico,en,0.9937083591016033,-1.0128484716644195,Latin America
+claude-sonnet-4.5,Mexico,es,0.8123652646452357,0.3127402230286722,Latin America
+deepseek-chat,Mexico,en,0.10781069764015822,-0.6899583419030975,Latin America
+deepseek-chat,Mexico,es,0.4097575880796111,-0.7098871182325371,Latin America
+deepseek-chat-v3.1,Mexico,en,0.04209179403179053,-1.0248627447361547,Latin America
+deepseek-chat-v3.1,Mexico,es,0.6766813108302168,-0.6724912263987387,Latin America
+doubao-1-5-pro-32k-250115,Mexico,en,-0.372546336849785,-1.3504088711099287,Latin America
+doubao-1-5-pro-32k-250115,Mexico,es,-0.03990371049081215,-0.9781085764430731,Latin America
+gemini-2.5-flash,Mexico,en,-0.046209531788381275,-1.2752158073960735,Latin America
+gemini-2.5-flash,Mexico,es,-0.19676987974188553,-1.126735194750933,Latin America
+gemini-2.5-pro,Mexico,en,-0.24234351256323872,-1.0335963024883341,Latin America
+gemini-2.5-pro,Mexico,es,-0.0034818387895622638,-0.931723852473556,Latin America
+gemini-3-pro-preview,Mexico,en,-0.43563155351556193,-1.2286076447657113,Latin America
+gemini-3-pro-preview,Mexico,es,-0.22483192871881486,-1.0622586365699531,Latin America
+gemma-3-4b-it,Mexico,en,-0.4066685839881268,2.4108602628793903,Latin America
+gemma-3-4b-it,Mexico,es,0.008016937662811086,1.1658835037169724,Latin America
+gpt-4o,Mexico,en,1.526450837037082,-1.7224496388429558,Latin America
+gpt-4o,Mexico,es,0.37687120975190663,-0.9554406829789744,Latin America
+gpt-4o-mini,Mexico,en,2.1207435372186643,-0.9308202038268183,Latin America
+gpt-4o-mini,Mexico,es,5.073204315038291,-0.22887401297215706,Latin America
+gpt-5.1,Mexico,en,0.631762975423213,-0.8693076750713984,Latin America
+gpt-5.1,Mexico,es,0.014029745054861542,-0.9603861865551748,Latin America
+grok-4.1-fast,Mexico,en,-1.2635091112663113,-1.7759905053805038,Latin America
+grok-4.1-fast,Mexico,es,-1.2915711602432403,-1.7115139471995242,Latin America
+kimi-k2,Mexico,en,0.6598250244001423,-0.9337842332523782,Latin America
+kimi-k2,Mexico,es,-0.16870783076495643,-1.1912117529319128,Latin America
+llama-3.2-3b-instruct,Mexico,en,1.774934815053264,2.5849567769265205,Latin America
+llama-3.2-3b-instruct,Mexico,es,3.2752983047056983,0.544609756190786,Latin America
+llama-3.3-70b-instruct,Mexico,en,-0.12050051100101267,-0.8276450160172367,Latin America
+llama-3.3-70b-instruct,Mexico,es,-0.5476663979429751,0.3889193386433347,Latin America
+mistral-medium-3.1,Mexico,en,0.20731778600718506,-0.765374844277798,Latin America
+mistral-medium-3.1,Mexico,es,0.11836116277266356,-0.7257725660024584,Latin America
+mistral-nemo,Mexico,en,1.2825458234840212,1.9732433637934665,Latin America
+mistral-nemo,Mexico,es,1.2066116157231916,0.5761621833257268,Latin America
+phi-3-mini-128k-instruct,Mexico,en,2.60592640382273,0.6880045471210879,Latin America
+phi-3-mini-128k-instruct,Mexico,es,3.057537561197033,0.3711088579772861,Latin America
+qwen3-max,Mexico,en,-0.3418506009302653,-0.9581798001136337,Latin America
+qwen3-max,Mexico,es,-0.5301548140985514,0.3602570045617159,Latin America
+claude-3-7-sonnet-20250219,Morocco,ar,-1.4085898324546906,-1.6074351107432048,African-Islamic
+claude-3-7-sonnet-20250219,Morocco,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-sonnet-4.5,Morocco,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+claude-sonnet-4.5,Morocco,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+deepseek-chat,Morocco,ar,-1.5304328340169162,-1.8133863972143025,African-Islamic
+deepseek-chat,Morocco,en,-1.619389457251438,-1.773784118938963,African-Islamic
+deepseek-chat-v3.1,Morocco,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+deepseek-chat-v3.1,Morocco,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+doubao-1-5-pro-32k-250115,Morocco,ar,-2.8016658690405207,-2.3318834850866312,African-Islamic
+doubao-1-5-pro-32k-250115,Morocco,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-flash,Morocco,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-flash,Morocco,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-pro,Morocco,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Morocco,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-3-pro-preview,Morocco,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-3-pro-preview,Morocco,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Morocco,ar,2.6898232777794893,-0.6263011100376578,African-Islamic
+gemma-3-4b-it,Morocco,en,-0.4728416226811041,0.27789346825672645,African-Islamic
+gpt-4o,Morocco,ar,-0.8524603268053227,-1.4074782648896271,African-Islamic
+gpt-4o,Morocco,en,-1.2915711602432403,-1.7115139471995242,African-Islamic
+gpt-4o-mini,Morocco,ar,-0.14095936058849234,-1.7994824235950218,African-Islamic
+gpt-4o-mini,Morocco,en,-0.3692705692296634,-1.9371690977091602,African-Islamic
+gpt-5.1,Morocco,ar,-1.7237208749692408,-2.0083977394916794,African-Islamic
+gpt-5.1,Morocco,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+grok-4.1-fast,Morocco,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+grok-4.1-fast,Morocco,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+kimi-k2,Morocco,ar,-1.4085898324546906,-1.6074351107432048,African-Islamic
+kimi-k2,Morocco,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+llama-3.2-3b-instruct,Morocco,ar,0.16799046248805347,4.935884878541728,African-Islamic
+llama-3.2-3b-instruct,Morocco,en,1.7989576066345334,1.8379527134733618,African-Islamic
+llama-3.3-70b-instruct,Morocco,ar,-1.5304328340169162,-1.8133863972143025,African-Islamic
+llama-3.3-70b-instruct,Morocco,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-medium-3.1,Morocco,ar,-1.7412324588136636,-1.9797354054100604,African-Islamic
+mistral-medium-3.1,Morocco,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+mistral-nemo,Morocco,ar,2.382309749991568,0.9428900373438693,African-Islamic
+mistral-nemo,Morocco,en,0.6760183556625246,1.5563952872750708,African-Islamic
+phi-3-mini-128k-instruct,Morocco,ar,-2.3211847189581167,3.713241328974441,African-Islamic
+phi-3-mini-128k-instruct,Morocco,en,1.7066038066818834,0.15156163070001577,African-Islamic
+qwen3-max,Morocco,ar,-1.8582511310251144,-1.8756565689537408,African-Islamic
+qwen3-max,Morocco,en,-1.8582511310251144,-1.8756565689537408,African-Islamic
+claude-3-7-sonnet-20250219,New Zealand,en,5.242231020433766,3.4541302327869823,English-Speaking
+claude-sonnet-4.5,New Zealand,en,5.522627069633136,2.7803362852669826,English-Speaking
+deepseek-chat,New Zealand,en,4.9988348384532735,1.146846264376576,English-Speaking
+deepseek-chat-v3.1,New Zealand,en,6.487815400248724,1.085333735621157,English-Speaking
+doubao-1-5-pro-32k-250115,New Zealand,en,5.786545354127945,2.0509450002605876,English-Speaking
+gemini-2.5-flash,New Zealand,en,5.4022640572543565,1.91311800800781,English-Speaking
+gemini-2.5-pro,New Zealand,en,5.072918380293349,4.082637712592638,English-Speaking
+gemini-3-pro-preview,New Zealand,en,6.497274465126477,2.7849487387412033,English-Speaking
+gemma-3-4b-it,New Zealand,en,2.8673727379763534,1.359482496758412,English-Speaking
+gpt-4o,New Zealand,en,5.621116201017773,0.35118967900190257,English-Speaking
+gpt-4o-mini,New Zealand,en,7.246590094409796,0.3253293471954554,English-Speaking
+gpt-5.1,New Zealand,en,5.072918380293349,4.082637712592638,English-Speaking
+grok-4.1-fast,New Zealand,en,5.6219272687975375,3.0720246444031645,English-Speaking
+kimi-k2,New Zealand,en,6.497274465126477,2.7849487387412033,English-Speaking
+llama-3.2-3b-instruct,New Zealand,en,3.518115387535243,1.5485453717264117,English-Speaking
+llama-3.3-70b-instruct,New Zealand,en,5.5188365594222235,2.3860464907715517,English-Speaking
+mistral-medium-3.1,New Zealand,en,4.729725288801871,3.746151642025143,English-Speaking
+mistral-nemo,New Zealand,en,5.364816329993684,1.8007890252785745,English-Speaking
+phi-3-mini-128k-instruct,New Zealand,en,3.9317264329548887,2.0233783295209107,English-Speaking
+qwen3-max,New Zealand,en,5.336884055557522,1.7827235420500513,English-Speaking
+claude-3-7-sonnet-20250219,Nicaragua,en,-1.5793824617785535,-0.31766064014947415,Latin America
+claude-3-7-sonnet-20250219,Nicaragua,es,-1.7901820865753004,-0.484009648345232,Latin America
+claude-sonnet-4.5,Nicaragua,en,-0.692004811133662,-1.3018177606988703,Latin America
+claude-sonnet-4.5,Nicaragua,es,-1.3124587390279476,-0.2802647483156758,Latin America
+deepseek-chat,Nicaragua,en,-1.1241545258596615,-1.5987015529910253,Latin America
+deepseek-chat,Nicaragua,es,-1.0303735732743653,-1.3282737083389482,Latin America
+deepseek-chat-v3.1,Nicaragua,en,-0.8852928520859856,-1.4968291029762473,Latin America
+deepseek-chat-v3.1,Nicaragua,es,-1.3630161996333379,-1.7005740030058034,Latin America
+doubao-1-5-pro-32k-250115,Nicaragua,en,-1.7776543305149137,-2.0261201293795774,Latin America
+doubao-1-5-pro-32k-250115,Nicaragua,es,-0.42320402477533714,-1.9548914875970587,Latin America
+gemini-2.5-flash,Nicaragua,en,-2.2573549689901475,-0.7235687724741492,Latin America
+gemini-2.5-flash,Nicaragua,es,-1.830189082048185,-1.9401331271347206,Latin America
+gemini-2.5-pro,Nicaragua,en,-1.591327408274509,-1.8382606771199428,Latin America
+gemini-2.5-pro,Nicaragua,es,-3.2463173440022586,2.006675551401583,Latin America
+gemini-3-pro-preview,Nicaragua,en,-1.7131704098367346,-2.04421196359104,Latin America
+gemini-3-pro-preview,Nicaragua,es,-1.7131704098367346,-2.04421196359104,Latin America
+gemma-3-4b-it,Nicaragua,en,-0.340207372382067,0.8864721717329433,Latin America
+gemma-3-4b-it,Nicaragua,es,-0.9570245630864033,0.29453618446284263,Latin America
+gpt-4o,Nicaragua,en,-0.7963362288514643,-1.5364313812515868,Latin America
+gpt-4o,Nicaragua,es,-0.8138478126958878,-1.5077690471699678,Latin America
+gpt-4o-mini,Nicaragua,en,0.6772363809244044,-0.14661992913099933,Latin America
+gpt-4o-mini,Nicaragua,es,2.4188602976332243,-1.3462245071436345,Latin America
+gpt-5.1,Nicaragua,en,-0.6457758808979596,-1.6849119938967276,Latin America
+gpt-5.1,Nicaragua,es,-1.2635091112663113,-1.7759905053805038,Latin America
+grok-4.1-fast,Nicaragua,en,-2.6180596443260495,-1.0313925089600249,Latin America
+grok-4.1-fast,Nicaragua,es,-2.6180596443260495,-1.0313925089600249,Latin America
+kimi-k2,Nicaragua,en,-0.5064212954913101,-1.507623041507249,Latin America
+kimi-k2,Nicaragua,es,-1.0960924768827325,-1.6631781111720054,Latin America
+llama-3.2-3b-instruct,Nicaragua,en,1.8793136235404284,1.2490475119430449,Latin America
+llama-3.2-3b-instruct,Nicaragua,es,1.3556355703154206,1.7829529025858812,Latin America
+llama-3.3-70b-instruct,Nicaragua,en,-1.0198231081418596,-1.364087932438309,Latin America
+llama-3.3-70b-instruct,Nicaragua,es,-1.4469889950838222,-0.1475235777777375,Latin America
+mistral-medium-3.1,Nicaragua,en,-0.9308664849073381,-1.4036902107136486,Latin America
+mistral-medium-3.1,Nicaragua,es,-1.1416661097040852,-1.5700392189094063,Latin America
+mistral-nemo,Nicaragua,en,-0.3926293101324072,1.074949680979172,Latin America
+mistral-nemo,Nicaragua,es,0.7631263639095707,0.6875899974776946,Latin America
+phi-3-mini-128k-instruct,Nicaragua,en,2.60592640382273,0.6880045471210879,Latin America
+phi-3-mini-128k-instruct,Nicaragua,es,3.057537561197033,0.3711088579772861,Latin America
+qwen3-max,Nicaragua,en,-1.6018778734070143,-1.8024464530205817,Latin America
+qwen3-max,Nicaragua,es,-1.5513204128016236,-0.382137198330454,Latin America
+claude-3-7-sonnet-20250219,Nigeria,en,-1.619389457251438,-1.773784118938963,African-Islamic
+claude-sonnet-4.5,Nigeria,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+deepseek-chat,Nigeria,en,-1.5129212501724933,-1.8420487312959215,African-Islamic
+deepseek-chat-v3.1,Nigeria,en,-1.9625825487429167,-2.110270189506457,African-Islamic
+doubao-1-5-pro-32k-250115,Nigeria,en,-2.1733821735396637,-2.2766191977022157,African-Islamic
+gemini-2.5-flash,Nigeria,en,-2.6180596443260495,-1.0313925089600249,African-Islamic
+gemini-2.5-pro,Nigeria,en,-2.4072600195293026,-0.8650435007642671,African-Islamic
+gemini-3-pro-preview,Nigeria,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Nigeria,en,-0.43781845499225647,0.22056880009348867,African-Islamic
+gpt-4o,Nigeria,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+gpt-4o-mini,Nigeria,en,-2.389748435684879,-0.8937058348458863,African-Islamic
+gpt-5.1,Nigeria,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Nigeria,en,-3.7978381099492973,0.10297123799461097,African-Islamic
+kimi-k2,Nigeria,en,-0.8846375546716357,-1.7867844439115055,African-Islamic
+llama-3.2-3b-instruct,Nigeria,en,1.7814460227901092,1.8666150475549808,African-Islamic
+llama-3.3-70b-instruct,Nigeria,en,-2.4072600195293026,-0.8650435007642671,African-Islamic
+mistral-medium-3.1,Nigeria,en,-1.7692945077905935,-1.9152588472290804,African-Islamic
+mistral-nemo,Nigeria,en,-0.9921956592419855,0.6652534944785181,African-Islamic
+phi-3-mini-128k-instruct,Nigeria,en,1.7066038066818834,0.15156163070001577,African-Islamic
+qwen3-max,Nigeria,en,-2.0465553441934006,-0.5572197642783911,African-Islamic
+claude-3-7-sonnet-20250219,Pakistan,en,-1.619389457251438,-1.773784118938963,African-Islamic
+claude-sonnet-4.5,Pakistan,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+deepseek-chat,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+deepseek-chat-v3.1,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+doubao-1-5-pro-32k-250115,Pakistan,en,-2.1733821735396637,-2.2766191977022157,African-Islamic
+gemini-2.5-flash,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-3-pro-preview,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Pakistan,en,-0.9000075096230663,1.4944578229172976,African-Islamic
+gpt-4o,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-4o-mini,Pakistan,en,-2.389748435684879,-0.8937058348458863,African-Islamic
+gpt-5.1,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Pakistan,en,-3.3706722230073347,-1.1135931166659603,African-Islamic
+kimi-k2,Pakistan,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+llama-3.2-3b-instruct,Pakistan,en,1.7574232312088398,2.613619111008139,African-Islamic
+llama-3.3-70b-instruct,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-medium-3.1,Pakistan,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-nemo,Pakistan,en,-0.9053758253686072,0.9285294491128535,African-Islamic
+phi-3-mini-128k-instruct,Pakistan,en,0.7792191605641072,-0.3204047275400767,African-Islamic
+qwen3-max,Pakistan,en,-1.8582511310251144,-1.8756565689537408,African-Islamic
+claude-3-7-sonnet-20250219,Peru,en,-1.007878161645904,0.1565121045321595,Latin America
+claude-3-7-sonnet-20250219,Peru,es,-1.007878161645904,0.1565121045321595,Latin America
+claude-sonnet-4.5,Peru,en,-0.73399332018338,0.20105988638369987,Latin America
+claude-sonnet-4.5,Peru,es,0.034885669066614555,-0.017751406921302587,Latin America
+deepseek-chat,Peru,en,-0.5526502257270124,-1.1245288083093916,Latin America
+deepseek-chat,Peru,es,-0.29627696810891224,-1.0513186923762325,Latin America
+deepseek-chat-v3.1,Peru,en,-0.17925829589746167,-1.1553975288325518,Latin America
+deepseek-chat-v3.1,Peru,es,0.19895796328286403,-0.8762361264282953,Latin America
+doubao-1-5-pro-32k-250115,Peru,en,-1.3279930319444904,-1.7578986711690412,Latin America
+doubao-1-5-pro-32k-250115,Peru,es,-1.2061500303822643,-1.5519473846979437,Latin America
+gemini-2.5-flash,Peru,en,-1.3630161996333379,-1.7005740030058034,Latin America
+gemini-2.5-flash,Peru,es,-0.02869794794395769,-1.3038781414776925,Latin America
+gemini-2.5-pro,Peru,en,-0.9308664849073381,-1.4036902107136486,Latin America
+gemini-2.5-pro,Peru,es,-0.7584660227397223,0.2225703304475768,Latin America
+gemini-3-pro-preview,Peru,en,-1.1241545258596615,-1.5987015529910253,Latin America
+gemini-3-pro-preview,Peru,es,-0.9133549010629146,-1.4323525447952674,Latin America
+gemma-3-4b-it,Peru,en,-0.23587595466426503,1.1210857922856596,Latin America
+gemma-3-4b-it,Peru,es,-0.00949464618161261,1.1945458377985911,Latin America
+gpt-4o,Peru,en,0.3641839552582583,-0.6167482259699383,Latin America
+gpt-4o,Peru,es,0.2248293698516088,-0.7940371783594169,Latin America
+gpt-4o-mini,Peru,en,1.355208888135999,0.2592882031936759,Latin America
+gpt-4o-mini,Peru,es,1.6464647571588023,-0.9790946283438806,Latin America
+gpt-5.1,Peru,en,-0.9133549010629146,-1.4323525447952674,Latin America
+gpt-5.1,Peru,es,-0.43563155351556193,-1.2286076447657113,Latin America
+grok-4.1-fast,Peru,en,-2.36168638670795,-0.9581823930268659,Latin America
+grok-4.1-fast,Peru,es,-1.9295366719819498,-0.6612986007347108,Latin America
+kimi-k2,Peru,en,0.42096335062646606,-1.0356566832671565,Latin America
+kimi-k2,Peru,es,-0.2507033352875593,-1.1444575846388312,Latin America
+llama-3.2-3b-instruct,Peru,en,1.7989576066345334,1.8379527134733618,Latin America
+llama-3.2-3b-instruct,Peru,es,0.5955528324564381,2.2726609051050617,Latin America
+llama-3.3-70b-instruct,Peru,en,-0.12050051100101267,-0.8276450160172367,Latin America
+llama-3.3-70b-instruct,Peru,es,-0.5476663979429751,0.3889193386433347,Latin America
+mistral-medium-3.1,Peru,en,-0.3593621847746892,-0.9295174660320148,Latin America
+mistral-medium-3.1,Peru,es,-0.9973276965133987,0.12069788043279876,Latin America
+mistral-nemo,Peru,en,0.24863315100426914,2.5665543337660424,Latin America
+mistral-nemo,Peru,es,1.0308351586152922,0.3524885069667309,Latin America
+phi-3-mini-128k-instruct,Peru,en,2.184327154229236,0.355306530729572,Latin America
+phi-3-mini-128k-instruct,Peru,es,3.0750491450414565,0.342446523895667,Latin America
+qwen3-max,Peru,en,-0.5126432302541275,0.33159467048009694,Latin America
+qwen3-max,Peru,es,-0.9342424798476218,-0.0011033459114190725,Latin America
+claude-3-7-sonnet-20250219,Philippines,en,-0.674493227289238,-1.3304800947804891,Latin America
+claude-sonnet-4.5,Philippines,en,-0.692004811133662,-1.3018177606988703,Latin America
+deepseek-chat,Philippines,en,0.2944856135372625,-2.6311928499308834,Latin America
+deepseek-chat-v3.1,Philippines,en,-0.7577237147420292,-1.6367221635319276,Latin America
+doubao-1-5-pro-32k-250115,Philippines,en,-0.9615622208268583,-1.7959192817099436,Latin America
+gemini-2.5-flash,Philippines,en,-1.217935478444958,-1.8691293976431032,Latin America
+gemini-2.5-pro,Philippines,en,-1.0246474374926353,-1.674118055365726,Latin America
+gemini-3-pro-preview,Philippines,en,-1.4743087360630587,-1.9423395135762622,Latin America
+gemma-3-4b-it,Philippines,en,0.6219596578202509,0.8626722207053176,Latin America
+gpt-4o,Philippines,en,-0.3186128813041117,-1.3326864812220307,Latin America
+gpt-4o-mini,Philippines,en,1.783466175332714,-2.6927053786863038,Latin America
+gpt-5.1,Philippines,en,-1.2635091112663113,-1.7759905053805038,Latin America
+grok-4.1-fast,Philippines,en,-1.7131704098367346,-2.04421196359104,Latin America
+kimi-k2,Philippines,en,0.32718239804116933,-1.306084527919234,Latin America
+llama-3.2-3b-instruct,Philippines,en,2.7611246368368514,1.8141527624457363,Latin America
+llama-3.3-70b-instruct,Philippines,en,-1.1416661097040852,-1.5700392189094063,Latin America
+mistral-medium-3.1,Philippines,en,-0.4531431373599858,-1.1999453106840923,Latin America
+mistral-nemo,Philippines,en,0.02896993946108717,1.4076476973706882,Latin America
+phi-3-mini-128k-instruct,Philippines,en,2.184327154229236,0.355306530729572,Latin America
+qwen3-max,Philippines,en,-0.8852928520859856,-1.4968291029762473,Latin America
+claude-3-7-sonnet-20250219,Portugal,en,3.287764454609538,2.2477117851145274,Catholic Europe
+claude-3-7-sonnet-20250219,Portugal,pt,0.858676578652342,1.4176268339575038,Catholic Europe
+claude-sonnet-4.5,Portugal,en,3.6506059193065843,2.252657288690729,Catholic Europe
+claude-sonnet-4.5,Portugal,pt,2.9158540167267812,2.2656576136632713,Catholic Europe
+deepseek-chat,Portugal,en,0.6943546312760448,1.1564213033406359,Catholic Europe
+deepseek-chat,Portugal,pt,1.7340237749812815,1.1305509282955428,Catholic Europe
+deepseek-chat-v3.1,Portugal,en,1.1920615130090075,-0.06936536535514527,Catholic Europe
+deepseek-chat-v3.1,Portugal,pt,2.1637015393660954,2.8283039552314166,Catholic Europe
+doubao-1-5-pro-32k-250115,Portugal,en,1.1639994640320785,-0.004888807174165449,Catholic Europe
+doubao-1-5-pro-32k-250115,Portugal,pt,2.6310500843277236,0.7664540536009807,Catholic Europe
+gemini-2.5-flash,Portugal,en,1.8042281060288912,1.5709755171807187,Catholic Europe
+gemini-2.5-flash,Portugal,pt,2.0205943681741063,0.18806215432438933,Catholic Europe
+gemini-2.5-pro,Portugal,en,2.794457185208138,1.4826990079721136,Catholic Europe
+gemini-2.5-pro,Portugal,pt,3.1726734443884648,1.7618604103763702,Catholic Europe
+gemini-3-pro-preview,Portugal,en,2.1424373697363324,0.39401344079548706,Catholic Europe
+gemini-3-pro-preview,Portugal,pt,1.7433335317712988,1.5461012372750784,Catholic Europe
+gemma-3-4b-it,Portugal,en,0.555498446214191,2.3870603118517653,Catholic Europe
+gemma-3-4b-it,Portugal,pt,1.767343413903434,4.35958754272889,Catholic Europe
+gpt-4o,Portugal,en,1.6417228115794313,0.19885609285539083,Catholic Europe
+gpt-4o,Portugal,pt,1.6417228115794313,0.19885609285539083,Catholic Europe
+gpt-4o-mini,Portugal,en,3.9266128306300847,0.5924722239776876,Catholic Europe
+gpt-4o-mini,Portugal,pt,6.025277253360856,2.235359491684869,Catholic Europe
+gpt-5.1,Portugal,en,2.8682546036078245,3.182658421349528,Catholic Europe
+gpt-5.1,Portugal,pt,2.1233984059391,2.6544656512013725,Catholic Europe
+grok-4.1-fast,Portugal,en,0.7473840422226217,1.175861323387045,Catholic Europe
+grok-4.1-fast,Portugal,pt,1.0037572998407214,1.249071439320204,Catholic Europe
+kimi-k2,Portugal,en,2.9522273990583088,1.6296079961214618,Catholic Europe
+kimi-k2,Portugal,pt,5.590775159625267,0.22757634182157813,Catholic Europe
+llama-3.2-3b-instruct,Portugal,en,3.7289988606717808,1.4953587196735012,Catholic Europe
+llama-3.2-3b-instruct,Portugal,pt,1.6958337397229175,2.877514439545812,Catholic Europe
+llama-3.3-70b-instruct,Portugal,en,1.4485965072285123,1.8614196143990072,Catholic Europe
+llama-3.3-70b-instruct,Portugal,pt,5.735113572815954,1.9183134411637839,Catholic Europe
+mistral-medium-3.1,Portugal,en,2.909788979033519,2.4069920238147513,Catholic Europe
+mistral-medium-3.1,Portugal,pt,3.993799010798061,2.5891433592582227,Catholic Europe
+mistral-nemo,Portugal,en,3.7366217390757273,2.9392808809519937,Catholic Europe
+mistral-nemo,Portugal,pt,2.1498209672993216,2.0478380597831576,Catholic Europe
+phi-3-mini-128k-instruct,Portugal,en,2.545031829565138,0.6631302672154479,Catholic Europe
+phi-3-mini-128k-instruct,Portugal,pt,2.5275202457207144,0.6917926012970668,Catholic Europe
+qwen3-max,Portugal,en,1.2774013576989398,0.8551775800672646,Catholic Europe
+qwen3-max,Portugal,pt,2.8268973934922603,2.305259891938611,Catholic Europe
+claude-3-7-sonnet-20250219,Puerto Rico,en,0.964405601782186,-0.49700738040454273,Latin America
+claude-sonnet-4.5,Puerto Rico,en,1.7570207110031295,0.31760260608266566,Latin America
+deepseek-chat,Puerto Rico,en,1.3630734600491632,-1.1527345277792758,Latin America
+deepseek-chat-v3.1,Puerto Rico,en,2.623148123295274,-1.8789907604085196,Latin America
+doubao-1-5-pro-32k-250115,Puerto Rico,en,2.130103834311682,-2.2007488326063145,Latin America
+gemini-2.5-flash,Puerto Rico,en,-1.1191706980756244,-0.08525340603829898,Latin America
+gemini-2.5-pro,Puerto Rico,en,1.8327916793992074,-0.7912351760842457,Latin America
+gemini-3-pro-preview,Puerto Rico,en,1.8115414410464612,-2.003671422026035,Latin America
+gemma-3-4b-it,Puerto Rico,en,-0.1188572824528144,1.0170069558293402,Latin America
+gpt-4o,Puerto Rico,en,1.6434695092485327,-1.8265284752992756,Latin America
+gpt-4o-mini,Puerto Rico,en,5.450695321546532,-0.5742279440788485,Latin America
+gpt-5.1,Puerto Rico,en,1.8503032632436311,-0.8198975101658647,Latin America
+grok-4.1-fast,Puerto Rico,en,-1.484859201195564,-1.9065252894769011,Latin America
+kimi-k2,Puerto Rico,en,2.0891649370173075,-0.7180250601510867,Latin America
+llama-3.2-3b-instruct,Puerto Rico,en,2.778636220681275,1.7854904283641178,Latin America
+llama-3.3-70b-instruct,Puerto Rico,en,1.3128786590118118,0.0706416623562341,Latin America
+mistral-medium-3.1,Puerto Rico,en,2.3697227228180813,0.46575585614990755,Latin America
+mistral-nemo,Puerto Rico,en,1.0076565923500889,2.094787656117089,Latin America
+phi-3-mini-128k-instruct,Puerto Rico,en,3.4443544267059854,1.1995731836365202,Latin America
+qwen3-max,Puerto Rico,en,1.0112199429460271,-1.0415108057460383,Latin America
+claude-3-7-sonnet-20250219,Qatar,ar,-1.6569105711061205,-3.408922563878029,African-Islamic
+claude-3-7-sonnet-20250219,Qatar,en,-2.8191774528849445,-2.303221151005012,African-Islamic
+claude-sonnet-4.5,Qatar,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+claude-sonnet-4.5,Qatar,en,-0.8003156669640926,-3.2159716023794744,African-Islamic
+deepseek-chat,Qatar,ar,-1.8677101959028675,-3.5752715720737873,African-Islamic
+deepseek-chat,Qatar,en,-1.0111152917608397,-3.3823206105752326,African-Islamic
+deepseek-chat-v3.1,Qatar,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+deepseek-chat-v3.1,Qatar,en,-1.0111152917608397,-3.3823206105752326,African-Islamic
+doubao-1-5-pro-32k-250115,Qatar,ar,-0.46072513863001985,-3.5900299325361256,African-Islamic
+doubao-1-5-pro-32k-250115,Qatar,en,-1.8677101959028675,-3.5752715720737873,African-Islamic
+gemini-2.5-flash,Qatar,ar,-1.8677101959028675,-3.5752715720737873,African-Islamic
+gemini-2.5-flash,Qatar,en,-1.8677101959028675,-3.5752715720737873,African-Islamic
+gemini-2.5-pro,Qatar,ar,-0.8003156669640926,-3.2159716023794744,African-Islamic
+gemini-2.5-pro,Qatar,en,-0.8003156669640926,-3.2159716023794744,African-Islamic
+gemini-3-pro-preview,Qatar,ar,-1.0111152917608397,-3.3823206105752326,African-Islamic
+gemini-3-pro-preview,Qatar,en,-2.836689036729368,-2.274558816923393,African-Islamic
+gemma-3-4b-it,Qatar,ar,0.9766334694954335,-1.012203033034767,African-Islamic
+gemma-3-4b-it,Qatar,en,-0.7117032964547804,0.17602101824194835,African-Islamic
+gpt-4o,Qatar,ar,-1.6393989872616972,-3.437584897959648,African-Islamic
+gpt-4o,Qatar,en,-1.6569105711061205,-3.408922563878029,African-Islamic
+gpt-4o-mini,Qatar,ar,1.5688364205110732,-3.254529913869438,African-Islamic
+gpt-4o-mini,Qatar,en,-0.28494868152212005,-3.3663562561771294,African-Islamic
+gpt-5.1,Qatar,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-5.1,Qatar,en,-0.8003156669640926,-3.2159716023794744,African-Islamic
+grok-4.1-fast,Qatar,ar,-1.8677101959028675,-3.5752715720737873,African-Islamic
+grok-4.1-fast,Qatar,en,-1.8677101959028675,-3.5752715720737873,African-Islamic
+kimi-k2,Qatar,ar,0.571646222619908,-3.1734052946785747,African-Islamic
+kimi-k2,Qatar,en,0.36084659782316086,-3.339754302874333,African-Islamic
+llama-3.2-3b-instruct,Qatar,ar,2.7197308176953015,3.844087439287992,African-Islamic
+llama-3.2-3b-instruct,Qatar,en,1.790220360785058,3.7743529890031384,African-Islamic
+llama-3.3-70b-instruct,Qatar,ar,-1.0111152917608397,-3.3823206105752326,African-Islamic
+llama-3.3-70b-instruct,Qatar,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+mistral-medium-3.1,Qatar,ar,-1.8677101959028675,-3.5752715720737873,African-Islamic
+mistral-medium-3.1,Qatar,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+mistral-nemo,Qatar,ar,2.3998213338359924,0.9142277032622504,African-Islamic
+mistral-nemo,Qatar,en,0.5082804862442791,-1.6174099947797314,African-Islamic
+phi-3-mini-128k-instruct,Qatar,ar,-2.3211847189581167,3.713241328974441,African-Islamic
+phi-3-mini-128k-instruct,Qatar,en,1.4958041818851364,-0.014787377495742219,African-Islamic
+qwen3-max,Qatar,ar,-1.8677101959028675,-3.5752715720737873,African-Islamic
+qwen3-max,Qatar,en,-1.8677101959028675,-3.5752715720737873,African-Islamic
+claude-3-7-sonnet-20250219,Russian Federation,en,-1.51754704520043,2.345506563747924,Orthodox Europe
+claude-3-7-sonnet-20250219,Russian Federation,ru,-0.6857860004194362,0.5646266232983761,Orthodox Europe
+claude-sonnet-4.5,Russian Federation,en,-0.7747426236539577,0.6042289015737158,Orthodox Europe
+claude-sonnet-4.5,Russian Federation,ru,-1.0473054716029497,-0.6566597962775504,Orthodox Europe
+deepseek-chat,Russian Federation,en,-0.31255356902314757,-0.6696601212500934,Orthodox Europe
+deepseek-chat,Russian Federation,ru,-0.5408647776643185,-0.8073467953642324,Orthodox Europe
+deepseek-chat-v3.1,Russian Federation,en,-0.4343965705853735,-0.8756114077211911,Orthodox Europe
+deepseek-chat-v3.1,Russian Federation,ru,-0.9121199181327263,-1.0793563077507473,Orthodox Europe
+doubao-1-5-pro-32k-250115,Russian Federation,en,-0.49748178725115033,-0.7538101813769733,Orthodox Europe
+doubao-1-5-pro-32k-250115,Russian Federation,ru,-1.1298806616413914,-1.2528572059642473,Orthodox Europe
+gemini-2.5-flash,Russian Federation,en,-0.9646546696659976,-0.9933693055058905,Orthodox Europe
+gemini-2.5-flash,Russian Federation,ru,-1.3687423354150683,-1.3547296559790256,Orthodox Europe
+gemini-2.5-pro,Russian Federation,en,-1.3446176265154248,0.7528538602445187,Orthodox Europe
+gemini-2.5-pro,Russian Federation,ru,0.07402251288149914,-0.2796374366953395,Orthodox Europe
+gemini-3-pro-preview,Russian Federation,en,-0.35812720184450064,-0.5765212289874947,Orthodox Europe
+gemini-3-pro-preview,Russian Federation,ru,-0.8028046726308867,0.6687054597546956,Orthodox Europe
+gemma-3-4b-it,Russian Federation,en,-0.6388099226541911,1.8776980617778742,Orthodox Europe
+gemma-3-4b-it,Russian Federation,ru,0.002885491789249739,2.0387848805034356,Orthodox Europe
+gpt-4o,Russian Federation,en,-0.22573373514976935,-0.40638416661575794,Orthodox Europe
+gpt-4o,Russian Federation,ru,0.2695011962420071,-0.23130160066782063,Orthodox Europe
+gpt-4o-mini,Russian Federation,en,-1.6313375277959854,0.41127794007516105,Orthodox Europe
+gpt-4o-mini,Russian Federation,ru,0.22120686589472005,0.9744688154617492,Orthodox Europe
+gpt-5.1,Russian Federation,en,-0.13677711191524822,-0.4459864448910976,Orthodox Europe
+gpt-5.1,Russian Federation,ru,1.1584866797306526,1.7005762905377393,Orthodox Europe
+grok-4.1-fast,Russian Federation,en,-2.828787075696919,0.37088599708610714,Orthodox Europe
+grok-4.1-fast,Russian Federation,ru,-3.3700925374914963,-0.4706415386861816,Orthodox Europe
+kimi-k2,Russian Federation,en,-0.08637914974311972,-0.22909521422627915,Orthodox Europe
+kimi-k2,Russian Federation,ru,-0.45190815442979737,-0.8469490736395722,Orthodox Europe
+llama-3.2-3b-instruct,Russian Federation,en,1.2796998836614872,2.409874210978583,Orthodox Europe
+llama-3.2-3b-instruct,Russian Federation,ru,1.465418899256905,1.317166118637284,Orthodox Europe
+llama-3.3-70b-instruct,Russian Federation,en,-0.7972380352824188,-0.8805569112973918,Orthodox Europe
+llama-3.3-70b-instruct,Russian Federation,ru,-1.013604297427634,0.5023564515589376,Orthodox Europe
+mistral-medium-3.1,Russian Federation,en,-0.5408647776643185,-0.8073467953642324,Orthodox Europe
+mistral-medium-3.1,Russian Federation,ru,-1.0030538322951283,0.4665422274595767,Orthodox Europe
+mistral-nemo,Russian Federation,en,0.5163419457099907,2.2314528432550786,Orthodox Europe
+mistral-nemo,Russian Federation,ru,-2.3540710972858205,3.467687764228004,Orthodox Europe
+phi-3-mini-128k-instruct,Russian Federation,en,2.849612406947182,1.0999071200632835,Orthodox Europe
+phi-3-mini-128k-instruct,Russian Federation,ru,4.002929590140321,-0.6789604828248083,Orthodox Europe
+qwen3-max,Russian Federation,en,-0.8147496191268423,-0.851894577215773,Orthodox Europe
+qwen3-max,Russian Federation,ru,-0.9365926206890683,-1.0578458636868704,Orthodox Europe
+claude-3-7-sonnet-20250219,Rwanda,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-sonnet-4.5,Rwanda,en,-1.5668547057181668,-1.8597711211838195,African-Islamic
+deepseek-chat,Rwanda,en,-1.9625825487429167,-2.110270189506457,African-Islamic
+deepseek-chat-v3.1,Rwanda,en,-0.7477809154308214,-3.3019586046243314,African-Islamic
+doubao-1-5-pro-32k-250115,Rwanda,en,-2.01651600428859,-2.127992579394356,African-Islamic
+gemini-2.5-flash,Rwanda,en,-1.9625825487429167,-2.110270189506457,African-Islamic
+gemini-2.5-pro,Rwanda,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+gemini-3-pro-preview,Rwanda,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemma-3-4b-it,Rwanda,en,-1.491816578975992,-0.6111762408853014,African-Islamic
+gpt-4o,Rwanda,en,-1.274059576398817,-1.7401762812811432,African-Islamic
+gpt-4o-mini,Rwanda,en,-0.5731090753144918,-2.096366215887176,African-Islamic
+gpt-5.1,Rwanda,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+grok-4.1-fast,Rwanda,en,-3.029977077681691,-2.469570159200769,African-Islamic
+kimi-k2,Rwanda,en,-1.7237208749692408,-2.0083977394916794,African-Islamic
+llama-3.2-3b-instruct,Rwanda,en,1.763934438945686,1.8952773816366,African-Islamic
+llama-3.3-70b-instruct,Rwanda,en,-1.7364081294628884,-1.6697052824826435,African-Islamic
+mistral-medium-3.1,Rwanda,en,-1.373566664765843,-1.6647597789064426,African-Islamic
+mistral-nemo,Rwanda,en,0.7365916948854501,-1.479723320665592,African-Islamic
+phi-3-mini-128k-instruct,Rwanda,en,1.7066038066818834,0.15156163070001577,African-Islamic
+qwen3-max,Rwanda,en,-1.840739547180691,-1.90431890303536,African-Islamic
+claude-3-7-sonnet-20250219,Singapore,en,-0.09120347909389509,-0.5391253371536963,West & South Asia
+claude-sonnet-4.5,Singapore,en,0.2695011962420071,-0.23130160066782063,West & South Asia
+deepseek-chat,Singapore,en,0.1476581946797812,-0.43725288713891824,West & South Asia
+deepseek-chat-v3.1,Singapore,en,0.02581519311755548,-0.6432041736100158,West & South Asia
+doubao-1-5-pro-32k-250115,Singapore,en,-1.26024188576084,-0.5201305715636335,West & South Asia
+gemini-2.5-flash,Singapore,en,0.3303957704995992,-0.2064273207621803,West & South Asia
+gemini-2.5-pro,Singapore,en,1.1407617444059244,0.3696178739342314,West & South Asia
+gemini-3-pro-preview,Singapore,en,0.3584578194765284,-0.27090387894316015,West & South Asia
+gemma-3-4b-it,Singapore,en,0.7678254509637463,0.3216194437232567,West & South Asia
+gpt-4o,Singapore,en,0.7297129599449359,0.001105633443354681,West & South Asia
+gpt-4o-mini,Singapore,en,1.3977770827015559,-0.6006378659091162,West & South Asia
+gpt-5.1,Singapore,en,0.4474144427110497,-0.3105061572184997,West & South Asia
+grok-4.1-fast,Singapore,en,-2.0039871496278434,-1.4171458333811835,West & South Asia
+kimi-k2,Singapore,en,0.24716528304680782,-0.5126693895136188,West & South Asia
+llama-3.2-3b-instruct,Singapore,en,3.15340791237411,1.9091813552558803,West & South Asia
+llama-3.3-70b-instruct,Singapore,en,-0.3195146877350661,-0.6768120112678355,West & South Asia
+mistral-medium-3.1,Singapore,en,0.2695011962420071,-0.23130160066782063,West & South Asia
+mistral-nemo,Singapore,en,1.6720976197519688,1.844093159753601,West & South Asia
+phi-3-mini-128k-instruct,Singapore,en,2.428013157353688,0.7672091036717671,West & South Asia
+qwen3-max,Singapore,en,0.16303298916306203,-0.16303698831086202,West & South Asia
+claude-3-7-sonnet-20250219,South Africa,en,2.257735269160031,0.5127599540227614,African-Islamic
+claude-sonnet-4.5,South Africa,en,1.913886880254203,0.46622922439052533,African-Islamic
+deepseek-chat,South Africa,en,-0.28433202161295656,0.46928134459423615,African-Islamic
+deepseek-chat-v3.1,South Africa,en,-0.04547034783928028,0.5711537946090142,African-Islamic
+doubao-1-5-pro-32k-250115,South Africa,en,1.8110354517198473,-0.4296513869502655,African-Islamic
+gemini-2.5-flash,South Africa,en,0.21926273250314085,0.7552251926926705,African-Islamic
+gemini-2.5-pro,South Africa,en,-0.3602940865961791,2.0093297852127026,African-Islamic
+gemini-3-pro-preview,South Africa,en,-0.2704055615401677,-0.9691197443073543,African-Islamic
+gemma-3-4b-it,South Africa,en,0.3166367724405144,2.285187861836987,African-Islamic
+gpt-4o,South Africa,en,-0.06298193168370403,0.599816128690633,African-Islamic
+gpt-4o-mini,South Africa,en,2.9572586176117084,1.5725332575379969,African-Islamic
+gpt-5.1,South Africa,en,-0.42368660701960614,0.29199239220475737,African-Islamic
+grok-4.1-fast,South Africa,en,-2.396319462704755,0.8216486103813628,African-Islamic
+kimi-k2,South Africa,en,1.23829044324471,-0.45245959855300244,African-Islamic
+llama-3.2-3b-instruct,South Africa,en,1.8793136235404284,1.2490475119430449,African-Islamic
+llama-3.3-70b-instruct,South Africa,en,-0.09755518839747918,1.3826344162431528,African-Islamic
+mistral-medium-3.1,South Africa,en,1.1977006382073943,1.1541274406623228,African-Islamic
+mistral-nemo,South Africa,en,0.7023337069703526,3.5173032972487577,African-Islamic
+phi-3-mini-128k-instruct,South Africa,en,2.9666310791586326,0.9958282836069638,African-Islamic
+qwen3-max,South Africa,en,-0.3018436054573803,0.4979436786758549,African-Islamic
+claude-3-7-sonnet-20250219,Zimbabwe,en,-1.8182441355522294,-0.4195330901642523,African-Islamic
+claude-sonnet-4.5,Zimbabwe,en,-1.3560550809214194,-1.6934221129880616,African-Islamic
+deepseek-chat,Zimbabwe,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+deepseek-chat-v3.1,Zimbabwe,en,-1.3910782486102673,-1.6360974448248238,African-Islamic
+doubao-1-5-pro-32k-250115,Zimbabwe,en,-1.8232279633362665,-1.932981237116979,African-Islamic
+gemini-2.5-flash,Zimbabwe,en,-2.389748435684879,-0.8937058348458863,African-Islamic
+gemini-2.5-pro,Zimbabwe,en,-3.5870384851525494,0.26932024619036904,African-Islamic
+gemini-3-pro-preview,Zimbabwe,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemma-3-4b-it,Zimbabwe,en,-1.7228199544187346,1.6955467263344015,African-Islamic
+gpt-4o,Zimbabwe,en,-1.0807715354464933,-1.5451649390037663,African-Islamic
+gpt-4o-mini,Zimbabwe,en,-0.5786757126629601,-0.5471038448350891,African-Islamic
+gpt-5.1,Zimbabwe,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Zimbabwe,en,-3.7978381099492973,0.10297123799461097,African-Islamic
+kimi-k2,Zimbabwe,en,-0.8671259708272124,-1.8154467779931247,African-Islamic
+llama-3.2-3b-instruct,Zimbabwe,en,0.7975562058621735,2.1681132040866413,African-Islamic
+llama-3.3-70b-instruct,Zimbabwe,en,-2.146062432560427,-0.481803261903691,African-Islamic
+mistral-medium-3.1,Zimbabwe,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+mistral-nemo,Zimbabwe,en,-0.8959028292138383,3.849998720727041,African-Islamic
+phi-3-mini-128k-instruct,Zimbabwe,en,2.3061701557914622,0.5612578172006695,African-Islamic
+qwen3-max,Zimbabwe,en,-2.029043760348977,-0.5858820983600104,African-Islamic
+claude-3-7-sonnet-20250219,Spain,en,3.77244892086881,2.4586085751618265,Catholic Europe
+claude-3-7-sonnet-20250219,Spain,es,2.9158540167267812,2.2656576136632713,Catholic Europe
+claude-sonnet-4.5,Spain,en,3.894291922431035,2.6645598616329242,Catholic Europe
+claude-sonnet-4.5,Spain,es,3.0376970182890073,2.4716089001343695,Catholic Europe
+deepseek-chat,Spain,en,1.0685316330607113,0.753055200472714,Catholic Europe
+deepseek-chat,Spain,es,1.912152611098771,3.0651239622256745,Catholic Europe
+deepseek-chat-v3.1,Spain,en,1.7395430215603875,1.1518114427796475,Catholic Europe
+deepseek-chat-v3.1,Spain,es,2.4138987502273928,2.521864798802072,Catholic Europe
+doubao-1-5-pro-32k-250115,Spain,en,2.4803599618334524,0.9974767076556248,Catholic Europe
+doubao-1-5-pro-32k-250115,Spain,es,2.420250459530976,0.6001050454052225,Catholic Europe
+gemini-2.5-flash,Spain,en,1.9060875734055074,3.206458372377154,Catholic Europe
+gemini-2.5-flash,Spain,es,2.933811770614788,1.6599879603615924,Catholic Europe
+gemini-2.5-pro,Spain,en,3.579113489147124,3.8341201184206413,Catholic Europe
+gemini-2.5-pro,Spain,es,3.627159072309663,2.3401119915143234,Catholic Europe
+gemini-3-pro-preview,Spain,en,3.627159072309663,2.3401119915143234,Catholic Europe
+gemini-3-pro-preview,Spain,es,4.999120961893664,2.382678299215223,Catholic Europe
+gemma-3-4b-it,Spain,en,-0.42418016783255064,2.4395225969610093,Catholic Europe
+gemma-3-4b-it,Spain,es,-0.4744768861882753,0.8083112074198161,Catholic Europe
+gpt-4o,Spain,en,2.62469837502414,2.68821380699783,Catholic Europe
+gpt-4o,Spain,es,1.4582429277619209,1.8273230204581576,Catholic Europe
+gpt-4o-mini,Spain,en,6.795401415886564,2.2888977653091858,Catholic Europe
+gpt-4o-mini,Spain,es,5.6461569495814325,1.9579157194391232,Catholic Europe
+gpt-5.1,Spain,en,3.579113489147124,3.8341201184206413,Catholic Europe
+gpt-5.1,Spain,es,3.579113489147124,3.8341201184206413,Catholic Europe
+grok-4.1-fast,Spain,en,3.3508022805059525,3.696433444306502,Catholic Europe
+grok-4.1-fast,Spain,es,2.2834077515671773,3.337133474612189,Catholic Europe
+kimi-k2,Spain,en,3.5566180775186615,2.3493343055495335,Catholic Europe
+kimi-k2,Spain,es,3.9173227528545644,2.657158042035409,Catholic Europe
+llama-3.2-3b-instruct,Spain,en,3.7289988606717808,1.4953587196735012,Catholic Europe
+llama-3.2-3b-instruct,Spain,es,2.848132417763736,1.7611741108513577,Catholic Europe
+llama-3.3-70b-instruct,Spain,en,3.885677082869348,1.9602399442100749,Catholic Europe
+llama-3.3-70b-instruct,Spain,es,3.0288334315425725,1.4790512719347726,Catholic Europe
+mistral-medium-3.1,Spain,en,3.224920021548067,2.807954652563225,Catholic Europe
+mistral-medium-3.1,Spain,es,2.1815482841905625,1.701650619415754,Catholic Europe
+mistral-nemo,Spain,en,2.556843273452481,4.0736446279066305,Catholic Europe
+mistral-nemo,Spain,es,4.243192207555126,2.7060518404558085,Catholic Europe
+phi-3-mini-128k-instruct,Spain,en,3.4443544267059854,1.1995731836365202,Catholic Europe
+phi-3-mini-128k-instruct,Spain,es,3.646553445174106,0.8166192685773009,Catholic Europe
+qwen3-max,Spain,en,1.8297071956010953,2.3863845111294744,Catholic Europe
+qwen3-max,Spain,es,1.812195611756671,2.415046845211093,Catholic Europe
+claude-3-7-sonnet-20250219,Switzerland,de,4.287815906310782,2.308223921364171,Protestant Europe
+claude-3-7-sonnet-20250219,Switzerland,en,5.28376539585946,2.678463835252205,Protestant Europe
+claude-sonnet-4.5,Switzerland,de,4.648520581646684,2.6160476578500464,Protestant Europe
+claude-sonnet-4.5,Switzerland,en,6.702405535256383,1.6459725383123456,Protestant Europe
+deepseek-chat,Switzerland,de,1.0309175423866963,1.8404693510934196,Protestant Europe
+deepseek-chat,Switzerland,en,5.70023150958118,0.21364901055048316,Protestant Europe
+deepseek-chat-v3.1,Switzerland,de,1.7194405147307963,2.2105632593187345,Protestant Europe
+deepseek-chat-v3.1,Switzerland,en,4.757787337778801,3.6816750838441634,Protestant Europe
+doubao-1-5-pro-32k-250115,Switzerland,de,3.040844943709406,0.832820312329506,Protestant Europe
+doubao-1-5-pro-32k-250115,Switzerland,en,4.47422411372223,1.7311069907029764,Protestant Europe
+gemini-2.5-flash,Switzerland,de,6.128341966911521,-0.17199470242954143,Protestant Europe
+gemini-2.5-flash,Switzerland,en,6.77537795459929,-0.5967572822056414,Protestant Europe
+gemini-2.5-pro,Switzerland,de,4.999120961893664,2.382678299215223,Protestant Europe
+gemini-2.5-pro,Switzerland,en,5.072918380293349,4.082637712592638,Protestant Europe
+gemini-3-pro-preview,Switzerland,de,5.546649861214405,2.033332221813824,Protestant Europe
+gemini-3-pro-preview,Switzerland,en,4.729725288801871,3.746151642025143,Protestant Europe
+gemma-3-4b-it,Switzerland,de,4.0013548194181485,3.12335227903565,Protestant Europe
+gemma-3-4b-it,Switzerland,en,1.172576379168193,2.7680941642708006,Protestant Europe
+gpt-4o,Switzerland,de,5.416827783957873,-0.5335010585653953,Protestant Europe
+gpt-4o,Switzerland,en,5.498032491113061,0.5966029256097022,Protestant Europe
+gpt-4o-mini,Switzerland,de,4.80583292094134,2.1876669569378464,Protestant Europe
+gpt-4o-mini,Switzerland,en,6.028049806589379,0.27591918228992157,Protestant Europe
+gpt-5.1,Switzerland,de,4.999120961893664,2.382678299215223,Protestant Europe
+gpt-5.1,Switzerland,en,6.148365428198796,2.7136603450852856,Protestant Europe
+grok-4.1-fast,Switzerland,de,4.288551897498324,-0.16416479332409945,Protestant Europe
+grok-4.1-fast,Switzerland,en,5.278584869218325,1.4514738796951594,Protestant Europe
+kimi-k2,Switzerland,de,7.129571422198346,0.4294081836517751,Protestant Europe
+kimi-k2,Switzerland,en,5.644470071195362,2.9862875717380803,Protestant Europe
+llama-3.2-3b-instruct,Switzerland,de,3.2577867208612736,0.5732720902724048,Protestant Europe
+llama-3.2-3b-instruct,Switzerland,en,3.6939756929829333,1.5526833878367385,Protestant Europe
+llama-3.3-70b-instruct,Switzerland,de,5.542859351003494,1.6390424273183926,Protestant Europe
+llama-3.3-70b-instruct,Switzerland,en,4.563180736956752,1.691504712427637,Protestant Europe
+mistral-medium-3.1,Switzerland,de,3.9954195562656527,3.182144647777627,Protestant Europe
+mistral-medium-3.1,Switzerland,en,3.7740694663364005,3.0516098636812297,Protestant Europe
+mistral-nemo,Switzerland,de,3.0585894125811026,3.5303854644830275,Protestant Europe
+mistral-nemo,Switzerland,en,3.9754834128494037,3.0411533309667718,Protestant Europe
+phi-3-mini-128k-instruct,Switzerland,de,3.269945018837534,3.453492877928,Protestant Europe
+phi-3-mini-128k-instruct,Switzerland,en,3.5101271833613947,1.6906803131293946,Protestant Europe
+qwen3-max,Switzerland,de,5.945604391091703,-0.40282026880627886,Protestant Europe
+qwen3-max,Switzerland,en,4.0825873837957305,1.3163266421245414,Protestant Europe
+claude-3-7-sonnet-20250219,Trinidad and Tobago,en,0.2758826294380864,-0.867101288629857,Latin America
+claude-sonnet-4.5,Trinidad and Tobago,en,0.5159850115542509,-1.2165933716939756,Latin America
+deepseek-chat,Trinidad and Tobago,en,0.8379278646929827,-2.0925435470682703,Latin America
+deepseek-chat-v3.1,Trinidad and Tobago,en,0.238361515583404,-2.502239733568924,Latin America
+doubao-1-5-pro-32k-250115,Trinidad and Tobago,en,-0.026371564759016863,-2.6863111316525803,Latin America
+gemini-2.5-flash,Trinidad and Tobago,en,-0.3131332545389869,-1.312611699229872,Latin America
+gemini-2.5-pro,Trinidad and Tobago,en,-1.3580323718493008,-0.18712585605307708,Latin America
+gemini-3-pro-preview,Trinidad and Tobago,en,-1.0527094864695643,-1.6096414971847461,Latin America
+gemma-3-4b-it,Trinidad and Tobago,en,-0.35771895622649064,0.915134505814562,Latin America
+gpt-4o,Trinidad and Tobago,en,0.8050414863652777,-2.338097111814707,Latin America
+gpt-4o-mini,Trinidad and Tobago,en,4.554294585721944,-1.7860464757543575,Latin America
+gpt-5.1,Trinidad and Tobago,en,-0.9133549010629146,-1.4323525447952674,Latin America
+grok-4.1-fast,Trinidad and Tobago,en,-1.9625825487429167,-2.110270189506457,Latin America
+kimi-k2,Trinidad and Tobago,en,1.3618801424760374,-2.271892880236571,Latin America
+llama-3.2-3b-instruct,Trinidad and Tobago,en,2.3009128731339223,1.5817455283345612,Latin America
+llama-3.3-70b-instruct,Trinidad and Tobago,en,-0.5872234824407876,-0.341710520756872,Latin America
+mistral-medium-3.1,Trinidad and Tobago,en,0.10781069764015822,-0.6899583419030975,Latin America
+mistral-nemo,Trinidad and Tobago,en,0.5299332448027358,1.891042756087532,Latin America
+phi-3-mini-128k-instruct,Trinidad and Tobago,en,2.9666310791586326,0.9958282836069638,Latin America
+qwen3-max,Trinidad and Tobago,en,-0.32433901708584156,-0.9868421341952526,Latin America
+claude-3-7-sonnet-20250219,Tunisia,ar,-0.4289112184079493,-1.6598973958524492,African-Islamic
+claude-3-7-sonnet-20250219,Tunisia,en,-1.8182441355522294,-0.4195330901642523,African-Islamic
+claude-sonnet-4.5,Tunisia,ar,-1.8472507549175363,-1.18597717366382,African-Islamic
+claude-sonnet-4.5,Tunisia,en,-1.8357557193966527,-0.3908707560826333,African-Islamic
+deepseek-chat,Tunisia,ar,-1.2915711602432403,-1.7115139471995242,African-Islamic
+deepseek-chat,Tunisia,en,-1.4085898324546906,-1.6074351107432048,African-Islamic
+deepseek-chat-v3.1,Tunisia,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+deepseek-chat-v3.1,Tunisia,en,-1.4085898324546906,-1.6074351107432048,African-Islamic
+doubao-1-5-pro-32k-250115,Tunisia,ar,-2.3191181921423927,-1.818108462129658,African-Islamic
+doubao-1-5-pro-32k-250115,Tunisia,en,-1.840739547180691,-1.90431890303536,African-Islamic
+gemini-2.5-flash,Tunisia,ar,-0.804253007041379,-1.043911527974951,African-Islamic
+gemini-2.5-flash,Tunisia,en,-1.0206192691865938,0.33900183488137847,African-Islamic
+gemini-2.5-pro,Tunisia,ar,-2.459242942769128,2.8010247005465745,African-Islamic
+gemini-2.5-pro,Tunisia,en,-2.4111973596065885,1.3070165736402566,African-Islamic
+gemini-3-pro-preview,Tunisia,ar,-1.7517829239461693,-1.9439211813106994,African-Islamic
+gemini-3-pro-preview,Tunisia,en,-2.738273348617094,-0.614546092078686,African-Islamic
+gemma-3-4b-it,Tunisia,ar,2.555293021723615,-0.4935599394997194,African-Islamic
+gemma-3-4b-it,Tunisia,en,0.07295076931606237,1.8732852888947917,African-Islamic
+gpt-4o,Tunisia,ar,-0.13105097613351824,-0.7918307919178759,African-Islamic
+gpt-4o,Tunisia,en,-1.2915711602432403,-1.7115139471995242,African-Islamic
+gpt-4o-mini,Tunisia,ar,0.05681784873456275,-0.19644995665618414,African-Islamic
+gpt-4o-mini,Tunisia,en,-1.9856607699358082,-0.5323454843727512,African-Islamic
+gpt-5.1,Tunisia,ar,-1.0640022595997625,0.2854652208941192,African-Islamic
+gpt-5.1,Tunisia,en,-1.4141564698031592,-0.058172739691117366,African-Islamic
+grok-4.1-fast,Tunisia,ar,-3.1598725982105877,-0.9472441084702021,African-Islamic
+grok-4.1-fast,Tunisia,en,-3.5870384851525494,0.26932024619036904,African-Islamic
+kimi-k2,Tunisia,ar,-1.8838013025591924,1.1031373708236838,African-Islamic
+kimi-k2,Tunisia,en,-0.7627945531094101,-1.580833157440408,African-Islamic
+llama-3.2-3b-instruct,Tunisia,ar,2.098031716525302,4.593290884741867,African-Islamic
+llama-3.2-3b-instruct,Tunisia,en,1.3796583618966904,1.0359488391327225,African-Islamic
+llama-3.3-70b-instruct,Tunisia,ar,-0.865147581298971,-1.0687858078805912,African-Islamic
+llama-3.3-70b-instruct,Tunisia,en,-1.9247123426311745,-0.3512684778072937,African-Islamic
+mistral-medium-3.1,Tunisia,ar,-1.1977902076579436,-1.4410861025474466,African-Islamic
+mistral-medium-3.1,Tunisia,en,-1.1977902076579436,-1.4410861025474466,African-Islamic
+mistral-nemo,Tunisia,ar,2.43484450152484,0.8569030350990128,African-Islamic
+mistral-nemo,Tunisia,en,-0.46873694227187546,2.6334343660664694,African-Islamic
+phi-3-mini-128k-instruct,Tunisia,ar,-2.3211847189581167,3.713241328974441,African-Islamic
+phi-3-mini-128k-instruct,Tunisia,en,1.828446808244109,0.3575129171711133,African-Islamic
+qwen3-max,Tunisia,ar,-2.0465553441934006,-0.5572197642783911,African-Islamic
+qwen3-max,Tunisia,en,-2.029043760348977,-0.5858820983600104,African-Islamic
+claude-3-7-sonnet-20250219,Egypt,ar,-1.647451506228367,-1.7093075607579828,African-Islamic
+claude-3-7-sonnet-20250219,Egypt,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-sonnet-4.5,Egypt,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+claude-sonnet-4.5,Egypt,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+deepseek-chat,Egypt,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+deepseek-chat,Egypt,en,-1.647451506228367,-1.7093075607579828,African-Islamic
+deepseek-chat-v3.1,Egypt,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+deepseek-chat-v3.1,Egypt,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+doubao-1-5-pro-32k-250115,Egypt,ar,-2.8016658690405207,-2.3318834850866312,African-Islamic
+doubao-1-5-pro-32k-250115,Egypt,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-flash,Egypt,ar,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-flash,Egypt,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+gemini-2.5-pro,Egypt,ar,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemini-2.5-pro,Egypt,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemini-3-pro-preview,Egypt,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-3-pro-preview,Egypt,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Egypt,ar,1.5931259915212972,-0.4697599884720937,African-Islamic
+gemma-3-4b-it,Egypt,en,-0.4553300388366802,0.2492311341751075,African-Islamic
+gpt-4o,Egypt,ar,-0.7306173252430964,-1.2015269784185294,African-Islamic
+gpt-4o,Egypt,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+gpt-4o-mini,Egypt,ar,-1.7517829239461693,-1.9439211813106994,African-Islamic
+gpt-4o-mini,Egypt,en,-3.2638549236713303,-1.0579944622628215,African-Islamic
+gpt-5.1,Egypt,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-5.1,Egypt,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Egypt,ar,-3.0474886615261143,-2.44090782511915,African-Islamic
+grok-4.1-fast,Egypt,en,-3.3706722230073347,-1.1135931166659603,African-Islamic
+kimi-k2,Egypt,ar,-1.3910782486102673,-1.6360974448248238,African-Islamic
+kimi-k2,Egypt,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+llama-3.2-3b-instruct,Egypt,ar,0.9261696785178072,3.468823115195576,African-Islamic
+llama-3.2-3b-instruct,Egypt,en,2.6380409269321374,2.0595660090535355,African-Islamic
+llama-3.3-70b-instruct,Egypt,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+llama-3.3-70b-instruct,Egypt,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-medium-3.1,Egypt,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-medium-3.1,Egypt,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-nemo,Egypt,ar,1.560738013538388,0.6926144076820767,African-Islamic
+mistral-nemo,Egypt,en,-0.8703526576797597,0.8712047809496157,African-Islamic
+phi-3-mini-128k-instruct,Egypt,ar,-2.3211847189581167,3.713241328974441,African-Islamic
+phi-3-mini-128k-instruct,Egypt,en,1.3739611803229104,-0.22073866396683986,African-Islamic
+qwen3-max,Egypt,ar,-1.8582511310251144,-1.8756565689537408,African-Islamic
+qwen3-max,Egypt,en,-1.8582511310251144,-1.8756565689537408,African-Islamic
+claude-3-7-sonnet-20250219,United Kingdom,en,5.266253812015036,2.7071261693338236,English-Speaking
+claude-sonnet-4.5,United Kingdom,en,3.894291922431035,2.6645598616329242,English-Speaking
+deepseek-chat,United Kingdom,en,1.0958513740399483,2.5478711362712394,English-Speaking
+deepseek-chat-v3.1,United Kingdom,en,2.5357417517896184,2.72781608527317,English-Speaking
+doubao-1-5-pro-32k-250115,United Kingdom,en,2.77942775491407,3.1397186582153647,English-Speaking
+gemini-2.5-flash,United Kingdom,en,2.9146133083842938,2.7170221467421687,English-Speaking
+gemini-2.5-pro,United Kingdom,en,3.7009564907093493,4.040071404891739,English-Speaking
+gemini-3-pro-preview,United Kingdom,en,5.837758112147685,3.1812989140154566,English-Speaking
+gemma-3-4b-it,United Kingdom,en,1.0507333776059669,2.5621428777997024,English-Speaking
+gpt-4o,United Kingdom,en,4.8532551687501675,2.9237310761972846,English-Speaking
+gpt-4o-mini,United Kingdom,en,5.737465951825542,3.6292127987349194,English-Speaking
+gpt-5.1,United Kingdom,en,3.7009564907093493,4.040071404891739,English-Speaking
+grok-4.1-fast,United Kingdom,en,2.5104782518658615,3.9261846818052253,English-Speaking
+kimi-k2,United Kingdom,en,5.602935695769668,3.7619539692728585,English-Speaking
+llama-3.2-3b-instruct,United Kingdom,en,3.284321389885395,2.7405854084156913,English-Speaking
+llama-3.3-70b-instruct,United Kingdom,en,3.9252152252180426,2.7417200588924504,English-Speaking
+mistral-medium-3.1,United Kingdom,en,3.1534749821579697,2.8188945967569463,English-Speaking
+mistral-nemo,United Kingdom,en,4.397082662442898,3.373851347358288,English-Speaking
+phi-3-mini-128k-instruct,United Kingdom,en,3.566197428268211,1.405524470107618,English-Speaking
+qwen3-max,United Kingdom,en,2.09090478256997,2.769624749990051,English-Speaking
+claude-3-7-sonnet-20250219,United States of America,en,3.4573178783542606,2.0576459464133516,English-Speaking
+claude-sonnet-4.5,United States of America,en,3.546274501588781,2.0180436681380116,English-Speaking
+deepseek-chat,United States of America,en,3.3365086959318986,1.7674349883742393,English-Speaking
+deepseek-chat-v3.1,United States of America,en,3.359746415558052,1.3929283072658427,English-Speaking
+doubao-1-5-pro-32k-250115,United States of America,en,1.9503900371264966,-0.25236243456078666,English-Speaking
+gemini-2.5-flash,United States of America,en,2.5906186791233097,1.3235018897940976,English-Speaking
+gemini-2.5-pro,United States of America,en,2.809496818711376,2.8549059085342128,English-Speaking
+gemini-3-pro-preview,United States of America,en,5.232422863298954,1.6306519629068383,English-Speaking
+gemma-3-4b-it,United States of America,en,0.8293832876767149,2.4316080937033058,English-Speaking
+gpt-4o,United States of America,en,2.834553429432509,2.0236421735130405,English-Speaking
+gpt-4o-mini,United States of America,en,5.137899602715963,3.2195166122342656,English-Speaking
+gpt-5.1,United States of America,en,2.9978010318796615,1.5364691038588634,English-Speaking
+grok-4.1-fast,United States of America,en,3.317018722559233,1.049436352343325,English-Speaking
+kimi-k2,United States of America,en,4.188279270723151,1.6503558269453773,English-Speaking
+llama-3.2-3b-instruct,United States of America,en,3.7049760690905114,2.24236278312666,English-Speaking
+llama-3.3-70b-instruct,United States of America,en,2.8820230680106995,1.1891834072362863,English-Speaking
+mistral-medium-3.1,United States of America,en,3.882956385343414,3.072871468077046,English-Speaking
+mistral-nemo,United States of America,en,2.368539060284195,5.392081432581979,English-Speaking
+phi-3-mini-128k-instruct,United States of America,en,3.583709012112635,1.3768621360259987,English-Speaking
+qwen3-max,United States of America,en,2.4877435593964417,2.651301326643295,English-Speaking
+claude-3-7-sonnet-20250219,Burkina Faso,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+claude-3-7-sonnet-20250219,Burkina Faso,fr,-2.7991679228746853,-0.6394203719843264,African-Islamic
+claude-sonnet-4.5,Burkina Faso,en,-1.7412324588136636,-1.9797354054100604,African-Islamic
+claude-sonnet-4.5,Burkina Faso,fr,-1.5992555112387055,-2.1280718990745586,African-Islamic
+deepseek-chat,Burkina Faso,en,-1.3910782486102673,-1.6360974448248238,African-Islamic
+deepseek-chat,Burkina Faso,fr,-1.6018778734070143,-1.8024464530205817,African-Islamic
+deepseek-chat-v3.1,Burkina Faso,en,-1.6018778734070143,-1.8024464530205817,African-Islamic
+deepseek-chat-v3.1,Burkina Faso,fr,-3.3531606391629114,-1.1422554507475793,African-Islamic
+doubao-1-5-pro-32k-250115,Burkina Faso,en,-2.9081340761194654,-2.2636188727296727,African-Islamic
+doubao-1-5-pro-32k-250115,Burkina Faso,fr,-2.034027588133014,-2.0993302453127365,African-Islamic
+gemini-2.5-flash,Burkina Faso,en,-1.9625825487429167,-2.110270189506457,African-Islamic
+gemini-2.5-flash,Burkina Faso,fr,-1.8582511310251144,-1.8756565689537408,African-Islamic
+gemini-2.5-pro,Burkina Faso,en,-3.3762388603558025,0.435669254386127,African-Islamic
+gemini-2.5-pro,Burkina Faso,fr,-4.644973949213572,1.6096352796161038,African-Islamic
+gemini-3-pro-preview,Burkina Faso,en,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemini-3-pro-preview,Burkina Faso,fr,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gemma-3-4b-it,Burkina Faso,en,-0.1941324518678048,0.6324713730356838,African-Islamic
+gemma-3-4b-it,Burkina Faso,fr,2.5896337006978007,0.31139517046083814,African-Islamic
+gpt-4o,Burkina Faso,en,-1.5129212501724933,-1.8420487312959215,African-Islamic
+gpt-4o,Burkina Faso,fr,-2.471349625866488,-0.577150200244888,African-Islamic
+gpt-4o-mini,Burkina Faso,en,-0.590620659158916,-2.0677038818055573,African-Islamic
+gpt-4o-mini,Burkina Faso,fr,0.4240811225766731,-2.1774908350780398,African-Islamic
+gpt-5.1,Burkina Faso,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-5.1,Burkina Faso,fr,-1.7692945077905935,-1.9152588472290804,African-Islamic
+grok-4.1-fast,Burkina Faso,en,-3.7978381099492973,0.10297123799461097,African-Islamic
+grok-4.1-fast,Burkina Faso,fr,-3.7978381099492973,0.10297123799461097,African-Islamic
+kimi-k2,Burkina Faso,en,-1.7237208749692408,-2.0083977394916794,African-Islamic
+kimi-k2,Burkina Faso,fr,-1.7237208749692408,-2.0083977394916794,African-Islamic
+llama-3.2-3b-instruct,Burkina Faso,en,1.3212342590871808,1.6342078134438056,African-Islamic
+llama-3.2-3b-instruct,Burkina Faso,fr,3.024068921474828,0.17200843315164643,African-Islamic
+llama-3.3-70b-instruct,Burkina Faso,en,-1.7364081294628884,-1.6697052824826435,African-Islamic
+llama-3.3-70b-instruct,Burkina Faso,fr,-2.1285508487160034,-0.5104655959853097,African-Islamic
+mistral-medium-3.1,Burkina Faso,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+mistral-medium-3.1,Burkina Faso,fr,-3.1598725982105877,-0.9472441084702021,African-Islamic
+mistral-nemo,Burkina Faso,en,-0.7075986160455517,2.5315619160516913,African-Islamic
+mistral-nemo,Burkina Faso,fr,2.1600561636331492,-2.2021844946780327,African-Islamic
+phi-3-mini-128k-instruct,Burkina Faso,en,1.467742132908207,0.049689180685237574,African-Islamic
+phi-3-mini-128k-instruct,Burkina Faso,fr,0.7792191605641072,-0.3204047275400767,African-Islamic
+qwen3-max,Burkina Faso,en,-1.840739547180691,-1.90431890303536,African-Islamic
+qwen3-max,Burkina Faso,fr,-2.2679054341226528,-0.6877545483747886,African-Islamic
+claude-3-7-sonnet-20250219,Uruguay,en,1.6798021450619403,2.2449097828393567,Latin America
+claude-3-7-sonnet-20250219,Uruguay,es,2.939876808308051,1.5186535502101124,Latin America
+claude-sonnet-4.5,Uruguay,en,3.894291922431035,2.6645598616329242,Latin America
+claude-sonnet-4.5,Uruguay,es,3.0376970182890073,2.4716089001343695,Latin America
+deepseek-chat,Uruguay,en,3.0646113357427813,0.13594427947251292,Latin America
+deepseek-chat,Uruguay,es,1.1728630507785134,0.9876688210254306,Latin America
+deepseek-chat-v3.1,Uruguay,en,1.593677228416892,1.6928642197617083,Latin America
+deepseek-chat-v3.1,Uruguay,es,1.7395430215603875,1.1518114427796475,Latin America
+doubao-1-5-pro-32k-250115,Uruguay,en,3.0847506402938065,1.7172030170836956,Latin America
+doubao-1-5-pro-32k-250115,Uruguay,es,5.343395263294368,1.0643818126785114,Latin America
+gemini-2.5-flash,Uruguay,en,2.32921420295181,1.3073665124444038,Latin America
+gemini-2.5-flash,Uruguay,es,3.3925562577581068,0.23062846202528922,Latin America
+gemini-2.5-pro,Uruguay,en,2.721277876662608,4.092533690000984,Latin America
+gemini-2.5-pro,Uruguay,es,2.738789460507032,4.063871355919364,Latin America
+gemini-3-pro-preview,Uruguay,en,4.747096316362151,2.4632210286360467,Latin America
+gemini-3-pro-preview,Uruguay,es,2.6474804582629208,2.392574276623568,Latin America
+gemma-3-4b-it,Uruguay,en,-0.42418016783255064,2.4395225969610093,Latin America
+gemma-3-4b-it,Uruguay,es,0.5970328216398841,1.6113939143169875,Latin America
+gpt-4o,Uruguay,en,1.8613860231226131,1.3577627292507448,Latin America
+gpt-4o,Uruguay,es,2.1137200233450537,0.7484453399117255,Latin America
+gpt-4o-mini,Uruguay,en,6.164631838767504,2.412648444074348,Latin America
+gpt-4o-mini,Uruguay,es,6.399454255145521,1.831993388816947,Latin America
+gpt-5.1,Uruguay,en,3.462094816935673,3.9381989548769605,Latin America
+gpt-5.1,Uruguay,es,3.271527473509284,2.6305560887326123,Latin America
+grok-4.1-fast,Uruguay,en,3.8892607038776354,2.721634600216389,Latin America
+grok-4.1-fast,Uruguay,es,3.078239432556961,2.4355447464552356,Latin America
+kimi-k2,Uruguay,en,4.684893963978211,1.9799980403082376,Latin America
+kimi-k2,Uruguay,es,6.164631838767504,2.412648444074348,Latin America
+llama-3.2-3b-instruct,Uruguay,en,3.4949615162488796,1.7035163925861398,Latin America
+llama-3.2-3b-instruct,Uruguay,es,3.4949615162488796,1.7035163925861398,Latin America
+llama-3.3-70b-instruct,Uruguay,en,5.041113211874871,2.1823015907419947,Latin America
+llama-3.3-70b-instruct,Uruguay,es,5.115693464061532,2.855606781978964,Latin America
+mistral-medium-3.1,Uruguay,en,5.0350481741816075,2.3236360008934747,Latin America
+mistral-medium-3.1,Uruguay,es,2.175037076453717,2.419992348787294,Latin America
+mistral-nemo,Uruguay,en,4.716300353122469,2.8868185958427492,Latin America
+mistral-nemo,Uruguay,es,4.623304472492289,2.24389336884591,Latin America
+phi-3-mini-128k-instruct,Uruguay,en,3.566197428268211,1.405524470107618,Latin America
+phi-3-mini-128k-instruct,Uruguay,es,4.0681526947676,1.1493172849688171,Latin America
+qwen3-max,Uruguay,en,1.924230456184084,0.7975198618020468,Latin America
+qwen3-max,Uruguay,es,2.973357876543924,2.2912641447162345,Latin America
+claude-3-7-sonnet-20250219,Venezuela,en,-0.21650376076744815,1.4224866240982645,Latin America
+claude-3-7-sonnet-20250219,Venezuela,es,-0.7690164878722275,0.25838455454693765,Latin America
+claude-sonnet-4.5,Venezuela,en,0.9342082662074614,0.5186915094997698,Latin America
+claude-sonnet-4.5,Venezuela,es,-0.18148059307860076,1.3651619559350268,Latin America
+deepseek-chat,Venezuela,en,-2.159594578292222,1.2263992933058157,Latin America
+deepseek-chat,Venezuela,es,-2.619806341995151,0.9939920591946407,Latin America
+deepseek-chat-v3.1,Venezuela,en,-1.7686910646182477,1.1668682387010367,Latin America
+deepseek-chat-v3.1,Venezuela,es,-1.5298293908445713,1.268740688715815,Latin America
+doubao-1-5-pro-32k-250115,Venezuela,en,-1.3279930319444904,-1.7578986711690412,Latin America
+doubao-1-5-pro-32k-250115,Venezuela,es,-2.3859284960055125,-0.41758363774330765,Latin America
+gemini-2.5-flash,Venezuela,en,-3.4626836061474733,3.389588914257912,Latin America
+gemini-2.5-flash,Venezuela,es,-2.9699605521985477,0.6503540986094041,Latin America
+gemini-2.5-pro,Venezuela,en,-2.585856420635088,2.441246017807877,Latin America
+gemini-2.5-pro,Venezuela,es,-2.2441433183270556,3.438999079163446,Latin America
+gemini-3-pro-preview,Venezuela,en,-0.15054094950618346,-1.5098294279487903,Latin America
+gemini-3-pro-preview,Venezuela,es,-0.8852928520859856,-1.4968291029762473,Latin America
+gemma-3-4b-it,Venezuela,en,-0.6455302577618031,2.308987812864612,Latin America
+gemma-3-4b-it,Venezuela,es,-0.1313376477438386,0.9885945513274936,Latin America
+gpt-4o,Venezuela,en,-0.06298193168370403,0.599816128690633,Latin America
+gpt-4o,Venezuela,es,-0.04547034783928028,0.5711537946090142,Latin America
+gpt-4o-mini,Venezuela,en,-0.04728700076611725,1.6820676883174743,Latin America
+gpt-4o-mini,Venezuela,es,1.069393819677685,0.09599499802657291,Latin America
+gpt-5.1,Venezuela,en,-0.05424811947803554,1.6749157982997325,Latin America
+gpt-5.1,Venezuela,es,0.014029745054861542,-0.9603861865551748,Latin America
+grok-4.1-fast,Venezuela,en,-3.7578311144764127,1.5590947167840996,Latin America
+grok-4.1-fast,Venezuela,es,-3.7883651137945273,3.024440509608798,Latin America
+kimi-k2,Venezuela,en,0.6598250244001423,-0.9337842332523782,Latin America
+kimi-k2,Venezuela,es,-1.6468480630560216,1.3728195251721342,Latin America
+llama-3.2-3b-instruct,Venezuela,en,0.8215789974434426,1.421109140633483,Latin America
+llama-3.2-3b-instruct,Venezuela,es,1.9033364151216978,0.5020434484898861,Latin America
+llama-3.3-70b-instruct,Venezuela,en,-2.645356513529229,3.972785998972065,Latin America
+llama-3.3-70b-instruct,Venezuela,es,-1.90878795802259,2.8488717802910624,Latin America
+mistral-medium-3.1,Venezuela,en,-1.474206818744685,0.912248066100441,Latin America
+mistral-medium-3.1,Venezuela,es,-1.8492878651284483,1.3173317991268734,Latin America
+mistral-nemo,Venezuela,en,0.7023337069703526,3.5173032972487577,Latin America
+mistral-nemo,Venezuela,es,1.2176119918307697,1.2658415786156476,Latin America
+phi-3-mini-128k-instruct,Venezuela,en,2.727769405384956,0.8939558335921856,Latin America
+phi-3-mini-128k-instruct,Venezuela,es,2.184327154229236,0.355306530729572,Latin America
+qwen3-max,Venezuela,en,-1.9312833696510516,1.364085967419955,Latin America
+qwen3-max,Venezuela,es,-1.56150821836609,2.2973624705945443,Latin America
+claude-3-7-sonnet-20250219,Yemen,ar,-3.1598725982105877,-0.9472441084702021,African-Islamic
+claude-3-7-sonnet-20250219,Yemen,en,-4.016467502352615,-1.1401950699687562,African-Islamic
+claude-sonnet-4.5,Yemen,ar,-4.227267127149362,-1.3065440781645141,African-Islamic
+claude-sonnet-4.5,Yemen,en,-4.016467502352615,-1.1401950699687562,African-Islamic
+deepseek-chat,Yemen,ar,-4.227267127149362,-1.3065440781645141,African-Islamic
+deepseek-chat,Yemen,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+deepseek-chat-v3.1,Yemen,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+deepseek-chat-v3.1,Yemen,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+doubao-1-5-pro-32k-250115,Yemen,ar,-4.192243959460515,-1.3638687463277521,African-Islamic
+doubao-1-5-pro-32k-250115,Yemen,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+gemini-2.5-flash,Yemen,ar,-4.550450688630582,0.02077063028867642,African-Islamic
+gemini-2.5-flash,Yemen,en,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemini-2.5-pro,Yemen,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemini-2.5-pro,Yemen,en,-4.227267127149362,-1.3065440781645141,African-Islamic
+gemini-3-pro-preview,Yemen,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemini-3-pro-preview,Yemen,en,-3.3706722230073347,-1.1135931166659603,African-Islamic
+gemma-3-4b-it,Yemen,ar,1.2588154289253717,0.13546131387783913,African-Islamic
+gemma-3-4b-it,Yemen,en,-1.2607121849589689,1.1866340864314218,African-Islamic
+gpt-4o,Yemen,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-4o,Yemen,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gpt-4o-mini,Yemen,ar,-2.8191774528849445,-2.303221151005012,African-Islamic
+gpt-4o-mini,Yemen,en,-3.474654548468077,-1.2243434704585796,African-Islamic
+gpt-5.1,Yemen,ar,-3.1598725982105877,-0.9472441084702021,African-Islamic
+gpt-5.1,Yemen,en,-3.1598725982105877,-0.9472441084702021,African-Islamic
+grok-4.1-fast,Yemen,ar,-5.407045592772611,-0.17218033120987802,African-Islamic
+grok-4.1-fast,Yemen,en,-4.654433014091325,-0.08997972350394348,African-Islamic
+kimi-k2,Yemen,ar,-1.9800941325873405,-2.0816078554248385,African-Islamic
+kimi-k2,Yemen,en,-2.1908937573840874,-2.247956863620596,African-Islamic
+llama-3.2-3b-instruct,Yemen,ar,1.3477689281113017,3.801521131587091,African-Islamic
+llama-3.2-3b-instruct,Yemen,en,1.7574232312088398,2.613619111008139,African-Islamic
+llama-3.3-70b-instruct,Yemen,ar,-3.3706722230073347,-1.1135931166659603,African-Islamic
+llama-3.3-70b-instruct,Yemen,en,-3.0474886615261143,-2.44090782511915,African-Islamic
+mistral-medium-3.1,Yemen,ar,-4.227267127149362,-1.3065440781645141,African-Islamic
+mistral-medium-3.1,Yemen,en,-4.227267127149362,-1.3065440781645141,African-Islamic
+mistral-nemo,Yemen,ar,-1.9680757994973739,0.9618016437554614,African-Islamic
+mistral-nemo,Yemen,en,-1.4943917093456802,0.48301903851283867,African-Islamic
+phi-3-mini-128k-instruct,Yemen,ar,-2.3211847189581167,3.713241328974441,African-Islamic
+phi-3-mini-128k-instruct,Yemen,en,-0.7145857305821189,-0.5689223217120742,African-Islamic
+qwen3-max,Yemen,ar,-4.227267127149362,-1.3065440781645141,African-Islamic
+qwen3-max,Yemen,en,-4.227267127149362,-1.3065440781645141,African-Islamic
+claude-3-7-sonnet-20250219,Zambia,en,-1.3910782486102673,-1.6360974448248238,African-Islamic
+claude-sonnet-4.5,Zambia,en,-1.4085898324546906,-1.6074351107432048,African-Islamic
+deepseek-chat,Zambia,en,-1.3910782486102673,-1.6360974448248238,African-Islamic
+deepseek-chat-v3.1,Zambia,en,-1.7237208749692408,-2.0083977394916794,African-Islamic
+doubao-1-5-pro-32k-250115,Zambia,en,-1.840739547180691,-1.90431890303536,African-Islamic
+gemini-2.5-flash,Zambia,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemini-2.5-pro,Zambia,en,-1.7692945077905935,-1.9152588472290804,African-Islamic
+gemini-3-pro-preview,Zambia,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+gemma-3-4b-it,Zambia,en,0.7613142432269004,1.0399611730947962,African-Islamic
+gpt-4o,Zambia,en,-1.274059576398817,-1.7401762812811432,African-Islamic
+gpt-4o-mini,Zambia,en,-0.5731090753144918,-2.096366215887176,African-Islamic
+gpt-5.1,Zambia,en,-1.9800941325873405,-2.0816078554248385,African-Islamic
+grok-4.1-fast,Zambia,en,-3.7978381099492973,0.10297123799461097,African-Islamic
+kimi-k2,Zambia,en,-0.8671259708272124,-1.8154467779931247,African-Islamic
+llama-3.2-3b-instruct,Zambia,en,1.3212342590871808,1.6342078134438056,African-Islamic
+llama-3.3-70b-instruct,Zambia,en,-1.7364081294628884,-1.6697052824826435,African-Islamic
+mistral-medium-3.1,Zambia,en,-1.5304328340169162,-1.8133863972143025,African-Islamic
+mistral-nemo,Zambia,en,-1.0867189198249751,2.2541181438059454,African-Islamic
+phi-3-mini-128k-instruct,Zambia,en,1.7066038066818834,0.15156163070001577,African-Islamic
+qwen3-max,Zambia,en,-1.6018778734070143,-1.8024464530205817,African-Islamic

@@ -1,0 +1,66 @@
+{
+  "model": "bigscience/bloom-1b7",
+  "country": "Hong Kong",
+  "language": "en-native",
+  "timestamp": "2026-04-28T21:52:47.674463",
+  "total_questions": 1,
+  "responses": [
+    {
+      "question_id": "F063",
+      "question": "How important is God in your life? Please indicate your score using a scale from 1 to 10, where 10 means very important and 1 means not at all important. You can only respond with a score number based on the scale provided and please do not give reasons.",
+      "scale": "1-10 (1=Not at all important, 10=Very important)",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": null,
+      "confidence": 0.0,
+      "all_responses": [
+        null
+      ],
+      "all_raw_responses": [
+        "Please do not use any other words or phrases.\n\nFormat:"
+      ],
+      "response_distribution": {}
+    }
+  ],
+  "intermediate_data": {
+    "consensus_count": 1,
+    "all_rounds": [
+      {
+        "model": "bigscience/bloom-1b7",
+        "country": "Hong Kong",
+        "language": "en-native",
+        "timestamp": "2026-04-28T21:52:47.669604",
+        "total_questions": 1,
+        "valid_responses": 0,
+        "success_rate": 0.0,
+        "responses": [
+          {
+            "question_id": "F063",
+            "question": "How important is God in your life? Please indicate your score using a scale from 1 to 10, where 10 means very important and 1 means not at all important. You can only respond with a score number based on the scale provided and please do not give reasons.",
+            "raw_response": "Please do not use any other words or phrases.\n\nFormat:",
+            "processed_response": null,
+            "scale": "1-10 (1=Not at all important, 10=Very important)",
+            "dimension": "Survival vs. Self-Expression Values"
+          }
+        ],
+        "round_id": 1
+      }
+    ],
+    "overall_consistency": 0.0,
+    "consistency_stats": {}
+  },
+  "valid_responses": 0,
+  "success_rate": 0.0,
+  "backend": "huggingface_local",
+  "generation_config": {
+    "temperature": 0.1,
+    "top_p": 0.95,
+    "max_new_tokens": 12,
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "seed": 42,
+    "trust_remote_code": true,
+    "allow_unsafe_torch_load": true,
+    "validation_mode": "legacy",
+    "is_encoder_decoder": false
+  }
+}

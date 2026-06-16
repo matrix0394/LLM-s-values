@@ -1,0 +1,288 @@
+{
+  "regional_analysis": {
+    "African-Islamic": {
+      "n_countries": 15,
+      "n_models": 20,
+      "n_observations": 300,
+      "mean_ea_pct": 14.686,
+      "std_ea_pct": 7.572,
+      "t_test_paired": {
+        "t": 5.515,
+        "p": 0.0,
+        "significant": true
+      },
+      "n_models_positive_ea": 16,
+      "n_models_total": 20
+    },
+    "Catholic Europe": {
+      "n_countries": 7,
+      "n_models": 20,
+      "n_observations": 180,
+      "mean_ea_pct": -11.018,
+      "std_ea_pct": 13.365,
+      "t_test_paired": {
+        "t": -2.985,
+        "p": 0.003231,
+        "significant": true
+      },
+      "n_models_positive_ea": 6,
+      "n_models_total": 20
+    },
+    "Confucian": {
+      "n_countries": 4,
+      "n_models": 20,
+      "n_observations": 120,
+      "mean_ea_pct": 4.66,
+      "std_ea_pct": 11.182,
+      "t_test_paired": {
+        "t": 1.485,
+        "p": 0.140217,
+        "significant": false
+      },
+      "n_models_positive_ea": 12,
+      "n_models_total": 20
+    },
+    "Latin America": {
+      "n_countries": 11,
+      "n_models": 20,
+      "n_observations": 220,
+      "mean_ea_pct": 6.705,
+      "std_ea_pct": 8.941,
+      "t_test_paired": {
+        "t": 2.49,
+        "p": 0.013524,
+        "significant": true
+      },
+      "n_models_positive_ea": 12,
+      "n_models_total": 20
+    },
+    "Orthodox Europe": {
+      "n_countries": 1,
+      "n_models": 20,
+      "n_observations": 20,
+      "mean_ea_pct": -0.924,
+      "std_ea_pct": NaN,
+      "t_test_paired": {
+        "t": -0.053,
+        "p": 0.958299,
+        "significant": false
+      },
+      "n_models_positive_ea": 11,
+      "n_models_total": 20
+    },
+    "Protestant Europe": {
+      "n_countries": 2,
+      "n_models": 20,
+      "n_observations": 80,
+      "mean_ea_pct": -21.784,
+      "std_ea_pct": 6.143,
+      "t_test_paired": {
+        "t": -2.965,
+        "p": 0.004,
+        "significant": true
+      },
+      "n_models_positive_ea": 6,
+      "n_models_total": 20
+    }
+  },
+  "western_vs_nonwestern": {
+    "western_mean": -13.411,
+    "nonwestern_mean": 10.057,
+    "t_test": {
+      "t": 6.08,
+      "p": 0.0,
+      "cohens_d": 2.302
+    }
+  },
+  "french_advantage": {
+    "overall_french_advantage_pct": -9.287,
+    "median_french_advantage_pct_pairwise": 0.0,
+    "mean_french_advantage_pct_winsorized_200": -27.891,
+    "country_level_mean_french_advantage_pct": -10.113,
+    "n_models": 19,
+    "n_countries": 11,
+    "n_observations": 205,
+    "n_pairs_negative_fa": 102,
+    "paired_t_test": {
+      "t": -2.495,
+      "p": 0.0134,
+      "cohens_d": -0.174,
+      "significant": true
+    },
+    "per_country": {
+      "Algeria": -10.137,
+      "Egypt": 0.251,
+      "Iraq": -14.564,
+      "Jordan": -38.451,
+      "Kuwait": 6.132,
+      "Lebanon": -15.208,
+      "Libya": -43.169,
+      "Morocco": 6.472,
+      "Qatar": 11.556,
+      "Tunisia": 5.87,
+      "Yemen": -20.0
+    }
+  },
+  "model_origin": {
+    "China": {
+      "n_models": 5,
+      "models": [
+        "deepseek-chat",
+        "deepseek-chat-v3.1",
+        "doubao-1-5-pro-32k-250115",
+        "kimi-k2",
+        "qwen3-max"
+      ],
+      "by_region": {
+        "African-Islamic": 23.063,
+        "Catholic Europe": -14.098,
+        "Confucian": -4.758,
+        "Latin America": 17.715,
+        "Orthodox Europe": 17.784,
+        "Protestant Europe": -20.258
+      },
+      "western_vs_nonwestern": {
+        "t": 3.623,
+        "p": 0.00085,
+        "cohens_d": 1.372
+      }
+    },
+    "Europe": {
+      "n_models": 2,
+      "models": [
+        "mistral-medium-3.1",
+        "mistral-nemo"
+      ],
+      "by_region": {
+        "African-Islamic": 6.842,
+        "Catholic Europe": -10.207,
+        "Confucian": 9.112,
+        "Latin America": -19.457,
+        "Orthodox Europe": -294.774,
+        "Protestant Europe": 11.838
+      },
+      "western_vs_nonwestern": {
+        "t": -0.318,
+        "p": 0.752014,
+        "cohens_d": -0.121
+      }
+    },
+    "US": {
+      "n_models": 13,
+      "models": [
+        "claude-3-7-sonnet-20250219",
+        "claude-sonnet-4.5",
+        "gemini-2.5-flash",
+        "gemini-2.5-pro",
+        "gemini-3-pro-preview",
+        "gemma-3-4b-it",
+        "gpt-4o",
+        "gpt-4o-mini",
+        "gpt-5.1",
+        "grok-4.1-fast",
+        "llama-3.2-3b-instruct",
+        "llama-3.3-70b-instruct",
+        "phi-3-mini-128k-instruct"
+      ],
+      "by_region": {
+        "African-Islamic": 12.733,
+        "Catholic Europe": -11.382,
+        "Confucian": 5.552,
+        "Latin America": 5.719,
+        "Orthodox Europe": 7.969,
+        "Protestant Europe": -29.37
+      },
+      "western_vs_nonwestern": {
+        "t": 5.514,
+        "p": 3e-06,
+        "cohens_d": 2.088
+      }
+    }
+  },
+  "cultural_distance_correlation": {
+    "row_level": {
+      "pearson_r": 0.108,
+      "pearson_p": 0.001,
+      "spearman_rho": 0.213,
+      "spearman_p": 0.0,
+      "n": 920
+    },
+    "country_level": {
+      "pearson_r": 0.792,
+      "pearson_p": 0.0,
+      "n": 40
+    }
+  },
+  "language_family": {
+    "CJK": {
+      "n_countries": 4,
+      "n_observations": 100,
+      "row_level_mean_ea_pct": -29.039,
+      "country_level_mean_ea_pct": 2.597,
+      "row_level_t_test": {
+        "t": -1.826,
+        "p": 0.0709
+      },
+      "country_level_t_test": {
+        "t": 0.37,
+        "p": 0.7359
+      }
+    },
+    "Germanic": {
+      "n_countries": 5,
+      "n_observations": 100,
+      "row_level_mean_ea_pct": -81.446,
+      "country_level_mean_ea_pct": -14.941,
+      "row_level_t_test": {
+        "t": -1.728,
+        "p": 0.0871
+      },
+      "country_level_t_test": {
+        "t": -3.927,
+        "p": 0.0171
+      }
+    },
+    "Romance": {
+      "n_countries": 21,
+      "n_observations": 440,
+      "row_level_mean_ea_pct": -16.467,
+      "country_level_mean_ea_pct": 0.819,
+      "row_level_t_test": {
+        "t": -4.074,
+        "p": 0.0001
+      },
+      "country_level_t_test": {
+        "t": 0.253,
+        "p": 0.8031
+      }
+    },
+    "Semitic": {
+      "n_countries": 11,
+      "n_observations": 220,
+      "row_level_mean_ea_pct": -2.789,
+      "country_level_mean_ea_pct": 16.217,
+      "row_level_t_test": {
+        "t": -0.568,
+        "p": 0.5708
+      },
+      "country_level_t_test": {
+        "t": 7.593,
+        "p": 0.0
+      }
+    },
+    "Slavic": {
+      "n_countries": 3,
+      "n_observations": 60,
+      "row_level_mean_ea_pct": -53.478,
+      "country_level_mean_ea_pct": 1.968,
+      "row_level_t_test": {
+        "t": -2.016,
+        "p": 0.0484
+      },
+      "country_level_t_test": {
+        "t": 1.158,
+        "p": 0.3663
+      }
+    }
+  }
+}

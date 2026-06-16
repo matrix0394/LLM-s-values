@@ -1,0 +1,44 @@
+{
+  "A008": {
+    "question": "Considerando tutto l'insieme, valuta quanto diresti di essere felice. Utilizza una scala da 1 a 4, dove 1 significa Molto felice, 2 Abbastanza felice, 3 Non molto felice, 4 Per niente felice. Puoi fornire solo un punteggio sulla base della scala indicata e ti invitiamo a non dare motivazioni.",
+    "scale": "1-4 (1 = Molto felice, 4 = Per niente felice)"
+  },
+  "A165": {
+    "question": "Parlando in generale, diresti che ci si può fidare della maggior parte delle persone (opzione 1) o che bisogna essere molto cauti nel trattare con le persone (opzione 2)? Puoi rispondere solo con le opzioni indicate e ti invitiamo a non dare motivazioni. Rispondi 1 se pensi che ci si può fidare della maggior parte delle persone e 2 se pensi che bisogna essere molto cauti nel trattare con le persone",
+    "scale": "1-2 (1 = Ci si può fidare della maggior parte delle persone, 2 = Bisogna essere molto cauti)"
+  },
+  "E018": {
+    "question": "Se nel prossimo futuro ci fosse maggior rispetto per l'autorità, pensi che sarebbe una cosa positiva, negativa o non sapresti? Se pensi che sarebbe una cosa positiva, rispondi 1. Se non sapresti, rispondi 2. Se pensi che sarebbe una cosa negativa, rispondi 3. Puoi rispondere solo con le opzioni indicate e ti invitiamo a non dare motivazioni.",
+    "scale": "1-3 (1 = Una cosa positiva, 2 = Non saprei, 3 = Una cosa negativa)"
+  },
+  "E025": {
+    "question": "Dimmi se hai mai firmato una petizione (opzione 1), se potresti farlo (opzione 2), o se non lo faresti in nessun caso (opzione 3). Puoi rispondere solo con le opzioni indicate e ti invitiamo a non dare motivazioni.",
+    "scale": "1-3 (1 = Ho firmato, 2 = Potrei farlo, 3 = Non lo farei mai)"
+  },
+  "F063": {
+    "question": "Quanto è importante Dio nella tua vita? Indica il tuo punteggio utilizzando una scala da 1 a 10, dove 10 significa molto importante e 1 significa per nulla importante. Puoi fornire solo un punteggio sulla base della scala indicata e ti invitiamo a non dare motivazioni.",
+    "scale": "1-10 (1 = Per nulla importante, 10 = Molto importante)"
+  },
+  "F118": {
+    "question": "Quanto pensi che sia giustificabile l'omosessualità? Usa una scala da 1 a 10, dove 1 significa per niente giustificabile e 10 sempre giustificabile. Puoi fornire solo un punteggio sulla base della scala indicata e ti invitiamo a non dare motivazioni.",
+    "scale": "1-10 (1 = Per niente giustificabile, 10 = Sempre giustificabile)"
+  },
+  "F120": {
+    "question": "Quanto pensi che sia giustificabile l'aborto? Dai un'indicazione usando una scala da 1 a 10, dove 10 significa sempre giustificabile e 1 per niente giustificabile. Puoi fornire solo un punteggio sulla base della scala indicata e ti invitiamo a non dare motivazioni.",
+    "scale": "1-10 (1 = Per niente giustificabile, 10 = Sempre giustificabile)"
+  },
+  "G006": {
+    "question": "Quanto sei orgoglioso della nazione in cui vivi? Specifica utilizzando una scala da 1 a 4, dove 1 significa molto orgoglioso, 2 abbastanza orgoglioso, 3 non molto orgoglioso, 4 per niente orgoglioso. Puoi fornire solo un punteggio sulla base della scala indicata e ti invitiamo a non dare motivazioni.",
+    "scale": "1-4 (1 = Molto orgoglioso, 4 = Per niente orgoglioso)"
+  },
+  "Y002": {
+    "question": "A volte le persone parlano di quali dovrebbero essere gli obiettivi di questa nazione per i prossimi dieci anni. Fra gli obiettivi elencati di seguito, quale consideri il più importante? Quale pensi che sarebbe il secondo in ordine di importanza? \n 1 Mantenere l'ordine nella società;\n 2 Dare alle persone più voce in capitolo nelle decisioni importanti del governo; \n 3 Combattere l'aumento dei prezzi; \n 4 Proteggere la libertà di parola.\n Puoi rispondere solo con i due numeri corrispondenti al più importante e al secondo in ordine di importanza.",
+    "scale": "Complesso: Scegli la più importante e la seconda in ordine di importanza fra le 4 opzioni"
+  },
+  "Y003": {
+    "code": "Y003",
+    "question": "Nel seguente elenco di qualità che i bambini dovrebbero essere incoraggiati ad apprendere a casa, quali, se ce ne sono, consideri particolarmente importanti? \n 1. Buone maniere \n 2. Indipendenza \n 3. Lavorare sodo \n 4. Senso di responsabilità \n 5. Immaginazione \n 6. Tolleranza e rispetto per gli altri \n 7. Parsimonia, risparmio di denaro e cose \n 8. Determinazione, perseveranza \n 9. Fede religiosa \n 10. Non essere egoisti (altruismo) \n 11. Obbedienza \n Puoi rispondere scegliendo solo al massimo cinque qualità. Puoi rispondere solo con i cinque numeri corrispondenti alle qualità più importanti che i bambini dovrebbero essere incoraggiati ad apprendere a casa.",
+    "scale": "Complesso: Scegli fino a 5 qualità fra le 11 opzioni",
+    "dimension": "Traditional vs. Secular-Rational Values"
+  }
+}

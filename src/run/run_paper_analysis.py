@@ -10,6 +10,7 @@ Usage:
     python src/run/run_paper_analysis.py                  # run everything (from precomputed PCA)
     python src/run/run_paper_analysis.py --study 1        # run Study 1 only
     python src/run/run_paper_analysis.py --study 2 3      # run Study 2 & 3
+    python src/run/run_paper_analysis.py --model-imitation  # model imitation only
     python src/run/run_paper_analysis.py --regression-only # only generate regression CSV
     python src/run/run_paper_analysis.py --rebuild-from-raw # rebuild PCA from raw interviews, then run all
 
@@ -19,6 +20,7 @@ Outputs:
     results/analysis/study3_digital_orientalism.json
     results/analysis/study4_colonial_legacies.json
     results/analysis/regression_data_v5.csv
+    results/paper_data/regression_data.csv
     results/analysis/paper_statistics_all.json
 """
 
@@ -41,6 +43,8 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 OUT_DIR = PROJECT_ROOT / "results" / "analysis"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
+PAPER_DATA_DIR = PROJECT_ROOT / "results" / "paper_data"
+PAPER_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
 # Model name normalisation (API format -> folder format)
@@ -64,7 +68,11 @@ MODEL_NAME_MAP = {
     "z-ai/glm-4.6": "glm-4.6",
 }
 
-# Models excluded from Study 2-4 (roleplay): only French data, no en/native
+# Keep the formal paper analysis on the final 20-model roleplay sample.
+# These later/exploratory multilingual models are kept in the data package for
+# follow-up analysis, but excluded from Study 1-4/model-imitation paper stats:
+# qwen3-1.7b is a complete small-model run; glm-4.6 and qwq-32b only have
+# partial French rows for Arabic-country follow-up checks.
 EXCLUDED_ROLEPLAY = {"qwen3-1.7b", "glm-4.6", "qwq-32b"}
 
 # English-native countries (excluded from English-advantage calculation)
@@ -88,8 +96,7 @@ MODEL_ORIGIN = {
     "grok-4.1-fast": "US", "phi-3-mini-128k-instruct": "US",
     "deepseek-chat": "China", "deepseek-chat-v3.1": "China",
     "doubao-1-5-pro-32k-250115": "China", "kimi-k2": "China",
-    "qwen3-max": "China", "qwen3-1.7b": "China",
-    "qwq-32b": "China", "glm-4.6": "China",
+    "qwen3-max": "China",
     "mistral-medium-3.1": "Europe", "mistral-nemo": "Europe",
 }
 
@@ -168,6 +175,7 @@ def load_intrinsic_pca() -> pd.DataFrame:
 def load_roleplay_pca() -> pd.DataFrame:
     path = PROJECT_ROOT / "data" / "llm_pca" / "multilingual" / "roleplay_ml_pca_entity_scores_latest.pkl"
     df = pd.read_pickle(path)
+    df["model_name"] = df["model_name"].map(lambda x: MODEL_NAME_MAP.get(x, x))
     return df
 
 
@@ -710,103 +718,39 @@ def run_study3(ea_df: pd.DataFrame, rp_df: pd.DataFrame, ivs_coords: dict) -> di
 
 
 def compute_french_advantage(rp_df: pd.DataFrame, ivs_coords: dict) -> dict:
-    """French advantage for 12 Arabic countries."""
-    from src.base.ivs_question_processor import IVSQuestionProcessor
+    """
+    French advantage for 12 Arabic-speaking countries (Study 3).
 
-    IV_QNS = ["A008", "A165", "E018", "E025", "F063", "F118", "F120", "G006", "Y002", "Y003"]
+    French Advantage (%) = (d_arabic - d_french) / d_arabic * 100
+      Positive => French roleplay is closer to IVS than Arabic.
+      Negative => Arabic is closer than French.
 
+    Arabic and French must use the same PCA pipeline: coordinates from
+    ``roleplay_ml_pca_entity_scores_latest.pkl`` only. Re-projecting French from
+    raw JSON alone desynchronises French vs Arabic and biases distances.
+
+    Phi-3 excluded from French side (paper: no reliable French). Pairwise % can
+    explode when d_arabic is tiny (same issue as English Advantage); we also
+    report median FA%, winsorized mean, and country-level mean FA%.
+    """
     llm = rp_df[rp_df["data_source"] != "IVS"].copy()
     llm = llm[~llm["model_name"].isin(EXCLUDED_ROLEPLAY)]
 
-    # Arabic data from PCA
     ar_pca = llm[(llm["language"] == "ar") & (llm["Country"].isin(ARABIC_COUNTRIES_12))]
+    fr_pca = llm[(llm["language"] == "fr") & (llm["Country"].isin(ARABIC_COUNTRIES_12))]
+    fr_pca = fr_pca[~fr_pca["model_name"].str.contains("phi-3", case=False, na=False)]
 
-    # French data: load raw interviews and project through PCA
-    pca_model = load_pca_model()
-    processor = IVSQuestionProcessor()
-    raw_dir = PROJECT_ROOT / "data" / "llm_interviews" / "multilingual" / "interview_raw"
-
-    fr_rows = []
-    seen = set()
-    for model_dir in sorted(raw_dir.iterdir()):
-        if not model_dir.is_dir():
-            continue
-        folder = model_dir.name
-        if folder in EXCLUDED_ROLEPLAY:
-            continue
-        # Also skip phi-3 for French (paper says it doesn't support French)
-        if folder == "phi-3-mini-128k-instruct":
-            continue
-
-        for jf in model_dir.glob("*_fr_*.json"):
-            try:
-                with open(jf, encoding="utf-8") as f:
-                    data = json.load(f)
-            except (json.JSONDecodeError, OSError):
-                continue
-            country = data.get("country", "")
-            if country not in ARABIC_COUNTRIES_12:
-                continue
-            key = (folder, country, jf.name)
-            if key in seen:
-                continue
-            seen.add(key)
-
-            row = {"country": country, "model_name": folder, "language": "fr"}
-            for q in IV_QNS:
-                row[q] = np.nan
-            for resp in data.get("responses", []):
-                qid = resp.get("question_id", "")
-                if qid not in IV_QNS:
-                    continue
-                raw = resp.get("final_response") or resp.get("processed_response", "")
-                if not raw:
-                    continue
-                result = processor.validate_and_process_response(str(raw), qid)
-                if not result["valid"]:
-                    continue
-                if qid == "Y002" and "materialist_score" in result:
-                    row[qid] = result["materialist_score"]
-                elif qid == "Y003" and "y003_score" in result:
-                    row[qid] = result["y003_score"]
-                else:
-                    row[qid] = result["numeric_value"]
-            fr_rows.append(row)
-
-    if not fr_rows:
-        print("    No French interview data found.")
+    if fr_pca.empty:
+        print("    No French roleplay PCA rows in unified pkl.")
         return {"error": "no_french_data"}
 
-    fr_raw = pd.DataFrame(fr_rows)
-
-    # Project through PCA
-    ppca_C = pca_model["ppca_C"]
-    ppca_means = pca_model["ppca_means"]
-    ppca_stds = pca_model["ppca_stds"]
-    rotation_matrix = pca_model["rotation_matrix"]
-    pc_rescale = pca_model["pc_rescale_params"]
-
-    raw_vals = fr_raw[IV_QNS].to_numpy(dtype=float)
-    standardized = (raw_vals - ppca_means) / ppca_stds
-    standardized = np.nan_to_num(standardized, nan=0.0)
-    pcs = standardized @ ppca_C
-    rotated = pcs @ rotation_matrix
-    fr_raw["PC1_rescaled"] = pc_rescale["PC1"][0] * rotated[:, 0] + pc_rescale["PC1"][1]
-    fr_raw["PC2_rescaled"] = pc_rescale["PC2"][0] * rotated[:, 1] + pc_rescale["PC2"][1]
-
-    fr_pca = fr_raw.groupby(["model_name", "country"]).agg(
-        PC1_rescaled=("PC1_rescaled", "mean"),
-        PC2_rescaled=("PC2_rescaled", "mean"),
-    ).reset_index()
-
-    # Calculate French advantage
     rows = []
     for country in ARABIC_COUNTRIES_12:
         if country not in ivs_coords:
             continue
         ivs = ivs_coords[country]
         ar_c = ar_pca[ar_pca["Country"] == country]
-        fr_c = fr_pca[fr_pca["country"] == country]
+        fr_c = fr_pca[fr_pca["Country"] == country]
 
         for model in ar_c["model_name"].unique():
             ar_m = ar_c[ar_c["model_name"] == model]
@@ -814,14 +758,25 @@ def compute_french_advantage(rp_df: pd.DataFrame, ivs_coords: dict) -> dict:
             if ar_m.empty or fr_m.empty:
                 continue
 
-            d_ar = euclidean(ar_m["PC1_rescaled"].mean(), ar_m["PC2_rescaled"].mean(), ivs["PC1"], ivs["PC2"])
-            d_fr = euclidean(fr_m["PC1_rescaled"].mean(), fr_m["PC2_rescaled"].mean(), ivs["PC1"], ivs["PC2"])
+            ar_pc1 = float(ar_m["PC1_rescaled"].mean())
+            ar_pc2 = float(ar_m["PC2_rescaled"].mean())
+            fr_pc1 = float(fr_m["PC1_rescaled"].mean())
+            fr_pc2 = float(fr_m["PC2_rescaled"].mean())
+
+            d_ar = euclidean(ar_pc1, ar_pc2, ivs["PC1"], ivs["PC2"])
+            d_fr = euclidean(fr_pc1, fr_pc2, ivs["PC1"], ivs["PC2"])
             adv = (d_ar - d_fr) / d_ar * 100 if d_ar > 0 else 0.0
 
             rows.append({
-                "country": country, "model_name": model,
-                "d_arabic": d_ar, "d_french": d_fr,
+                "country": country,
+                "model_name": model,
+                "d_arabic": d_ar,
+                "d_french": d_fr,
                 "french_advantage_pct": adv,
+                "ar_pc1": ar_pc1,
+                "ar_pc2": ar_pc2,
+                "fr_pc1": fr_pc1,
+                "fr_pc2": fr_pc2,
             })
 
     if not rows:
@@ -829,33 +784,57 @@ def compute_french_advantage(rp_df: pd.DataFrame, ivs_coords: dict) -> dict:
 
     fa_df = pd.DataFrame(rows)
 
-    # Paired t-test
     t_fa, p_fa = stats.ttest_rel(fa_df["d_arabic"], fa_df["d_french"])
     diff = fa_df["d_arabic"].values - fa_df["d_french"].values
     d_fa = cohens_d_paired(diff)
 
     overall = (fa_df["d_arabic"].mean() - fa_df["d_french"].mean()) / fa_df["d_arabic"].mean() * 100
+    median_fa = float(np.median(fa_df["french_advantage_pct"].values))
+    mean_fa_winsor = float(np.mean(np.clip(fa_df["french_advantage_pct"].values, -200.0, 200.0)))
+
+    country_level_fas = []
+    for _, g in fa_df.groupby("country"):
+        md_ar = g["d_arabic"].mean()
+        md_fr = g["d_french"].mean()
+        if md_ar > 0:
+            country_level_fas.append((md_ar - md_fr) / md_ar * 100)
+    country_level_overall = float(np.mean(country_level_fas)) if country_level_fas else float("nan")
 
     n_models_fa = fa_df["model_name"].nunique()
     n_countries_fa = fa_df["country"].nunique()
+    n_negative = int((fa_df["french_advantage_pct"] < 0).sum())
 
-    print(f"    French Advantage: {overall:+.1f}%, n_models={n_models_fa}, n_countries={n_countries_fa}")
-    print(f"    Paired t-test: t={t_fa:.3f}, p={p_fa:.4f}, Cohen's d={d_fa:.3f}")
+    print(f"    French Advantage (unified PCA): {overall:+.1f}%, n_models={n_models_fa}, "
+          f"n_countries={n_countries_fa}, n_pairs={len(fa_df)}")
+    print(f"    Paired t-test (distances): t={t_fa:.3f}, p={p_fa:.4f}, Cohen's d={d_fa:.3f}")
+    print(f"    Median FA%: {median_fa:+.1f}; winsor mean [-200,200]: {mean_fa_winsor:+.1f}; "
+          f"country-level mean: {country_level_overall:+.1f}% ({n_negative}/{len(fa_df)} pairs < 0)")
 
-    # Per-country
     per_country = {}
     for c, g in fa_df.groupby("country"):
         c_adv = (g["d_arabic"].mean() - g["d_french"].mean()) / g["d_arabic"].mean() * 100
         per_country[c] = fmt(c_adv)
 
-    # Save detail CSV
-    fa_df.to_csv(OUT_DIR / "french_advantage_12_arab_countries.csv", index=False)
+    fa_path = OUT_DIR / "french_advantage_12_arab_countries.csv"
+    fa_df.to_csv(fa_path, index=False)
+    # Legacy path expected by docs / paper_data README
+    fa_df.to_csv(PAPER_DATA_DIR / "french_advantage_12_countries.csv", index=False)
+    fa_df.groupby("model_name")["french_advantage_pct"].agg(["mean", "count"]).reset_index().sort_values(
+        "mean"
+    ).to_csv(OUT_DIR / "french_advantage_by_model.csv", index=False)
+    fa_df.groupby("country")["french_advantage_pct"].agg(["mean", "count"]).reset_index().sort_values(
+        "mean"
+    ).to_csv(OUT_DIR / "french_advantage_by_country.csv", index=False)
 
     return {
         "overall_french_advantage_pct": fmt(overall),
+        "median_french_advantage_pct_pairwise": fmt(median_fa),
+        "mean_french_advantage_pct_winsorized_200": fmt(mean_fa_winsor),
+        "country_level_mean_french_advantage_pct": fmt(country_level_overall),
         "n_models": n_models_fa,
         "n_countries": n_countries_fa,
         "n_observations": len(fa_df),
+        "n_pairs_negative_fa": n_negative,
         "paired_t_test": {
             "t": fmt(t_fa), "p": fmt(p_fa, 4),
             "cohens_d": fmt(d_fa),
@@ -1056,33 +1035,40 @@ def run_study4(ea_df: pd.DataFrame, rp_df: pd.DataFrame, ivs_coords: dict) -> di
 # ===========================================================================
 
 def generate_regression_data(ea_df: pd.DataFrame, ivs_coords: dict) -> pd.DataFrame:
-    """Generate regression_data_v5.csv with:
-    - Original english_advantage_pct
-    - log_ratio = log(d_english / d_native)  [symmetric, no explosion]
-    - ea_winsorized (winsorized to [-200, 200])
-    - Country metadata
+    """Generate the publication-ready regression table.
+
+    The released paper table is written to `results/paper_data/regression_data.csv`.
+    A separate external covariate table is used only to supply country-level
+    metadata that are not stored in the final paper table itself.
     """
     print("\n" + "=" * 70)
     print("REGRESSION DATA GENERATION (v5)")
     print("=" * 70)
 
-    # Load external metadata from v4
-    v4_path = PROJECT_ROOT / "results" / "figures" / "regression_data_v4.csv"
+    # Load the upstream covariate lookup table. Prefer the stable public name,
+    # but accept older local paths for backwards compatibility.
+    candidate_covariate_paths = [
+        PROJECT_ROOT / "data" / "external" / "regression_covariates.csv",
+    ]
     meta_cols = [
         "country", "internet_collectivity_index", "colonial_power",
         "colonial_history", "gdp_per_capita", "HDI", "has_colonial_history",
         "colony_CN", "colony_ES", "colony_FR", "colony_IT", "colony_JP",
         "colony_PT", "colony_RU", "colony_UK", "freedom_on_net",
     ]
-    # v4 uses short names; our data uses IVS formal names
-    V4_NAME_MAP = {
+    # The older covariate table uses short country names; the paper data use
+    # the IVS formal names.
+    covariate_name_map = {
         "South Korea": "Korea, Republic of",
         "Taiwan": "Taiwan, Province of China",
     }
-    if v4_path.exists():
-        v4 = pd.read_csv(v4_path)
-        v4["country"] = v4["country"].map(lambda x: V4_NAME_MAP.get(x, x))
-        meta = v4[meta_cols].drop_duplicates(subset=["country"])
+    covariate_path = next((path for path in candidate_covariate_paths if path.exists()), None)
+    if covariate_path is not None:
+        covariates = pd.read_csv(covariate_path)
+        covariates["country"] = covariates["country"].map(
+            lambda x: covariate_name_map.get(x, x)
+        )
+        meta = covariates[meta_cols].drop_duplicates(subset=["country"])
     else:
         meta = pd.DataFrame(columns=meta_cols)
 
@@ -1134,6 +1120,221 @@ def generate_regression_data(ea_df: pd.DataFrame, ivs_coords: dict) -> pd.DataFr
 
 
 # ===========================================================================
+# Model Imitation Accuracy (supplements Study 2)
+# ===========================================================================
+
+# Open-source vs closed-source classification
+OPEN_SOURCE_MODELS = {
+    "llama-3.2-3b-instruct", "llama-3.3-70b-instruct",
+    "mistral-nemo", "phi-3-mini-128k-instruct", "gemma-3-4b-it",
+    "deepseek-chat", "deepseek-chat-v3.1", "qwen3-max", "kimi-k2",
+}
+CLOSED_SOURCE_MODELS = {
+    "gpt-4o", "gpt-4o-mini", "gpt-5.1",
+    "claude-3-7-sonnet-20250219", "claude-sonnet-4.5",
+    "gemini-2.5-flash", "gemini-2.5-pro", "gemini-3-pro-preview",
+    "mistral-medium-3.1", "doubao-1-5-pro-32k-250115", "grok-4.1-fast",
+}
+MODEL_VENDOR = {
+    "gpt-4o": "OpenAI", "gpt-4o-mini": "OpenAI", "gpt-5.1": "OpenAI",
+    "claude-3-7-sonnet-20250219": "Anthropic", "claude-sonnet-4.5": "Anthropic",
+    "gemini-2.5-flash": "Google", "gemini-2.5-pro": "Google",
+    "gemini-3-pro-preview": "Google", "gemma-3-4b-it": "Google",
+    "llama-3.2-3b-instruct": "Meta", "llama-3.3-70b-instruct": "Meta",
+    "mistral-medium-3.1": "Mistral", "mistral-nemo": "Mistral",
+    "deepseek-chat": "DeepSeek", "deepseek-chat-v3.1": "DeepSeek",
+    "qwen3-max": "Alibaba", "doubao-1-5-pro-32k-250115": "ByteDance",
+    "kimi-k2": "Moonshot", "grok-4.1-fast": "xAI",
+    "phi-3-mini-128k-instruct": "Microsoft",
+}
+SMALL_MODELS = {
+    "llama-3.2-3b-instruct", "phi-3-mini-128k-instruct",
+    "gemma-3-4b-it", "gpt-4o-mini", "mistral-nemo",
+}
+
+
+def _compute_distance_to_ivs(row, ivs_coords):
+    """Euclidean distance from a single PCA row to its IVS reference."""
+    c = row["Country"]
+    matched = match_country(c, ivs_coords)
+    if matched is None:
+        return np.nan
+    ivs = ivs_coords[matched]
+    return euclidean(row["PC1_rescaled"], row["PC2_rescaled"],
+                     ivs["PC1"], ivs["PC2"])
+
+
+def run_model_imitation(rp_df: pd.DataFrame, ivs_coords: dict) -> dict:
+    """Model-level imitation accuracy analysis (English roleplay).
+
+    For every model, compute the mean Euclidean distance between its English
+    roleplay coordinates and the IVS ground truth across all 66 countries.
+    Also compute bias direction (PC1/PC2 signed deviations) and compare
+    open-source vs closed-source, model origin, and cultural-region patterns.
+
+    Supplements Study 2 (Language Divergence) by characterizing model-level
+    variation before examining language effects.
+
+    Outputs:
+        results/analysis/model_imitation_accuracy.json
+        results/analysis/model_imitation_accuracy.csv
+        results/analysis/model_imitation_by_region.csv
+    """
+    print("\n" + "=" * 70)
+    print("MODEL IMITATION ACCURACY (supplements Study 2)")
+    print("=" * 70)
+
+    llm = rp_df[rp_df["data_source"] != "IVS"].copy()
+    llm = llm[~llm["model_name"].isin(EXCLUDED_ROLEPLAY)]
+
+    # Cultural region mapping
+    cr_col = "Cultural Region" if "Cultural Region" in llm.columns else "cultural_region"
+    cr_map = rp_df.drop_duplicates("Country").set_index("Country")[cr_col].to_dict()
+    cr_map = {k: v for k, v in cr_map.items() if v is not None and v != ""}
+
+    # --- English roleplay subset ---
+    en_rp = llm[llm["language"].isin(["en", "en-native"])].copy()
+    countries_with_en = set(en_rp[en_rp["language"] == "en"]["Country"].unique())
+    en_rp = en_rp[~((en_rp["language"] == "en-native")
+                     & en_rp["Country"].isin(countries_with_en))]
+
+    n_models = en_rp["model_name"].nunique()
+    n_countries = en_rp["Country"].nunique()
+    print(f"  English roleplay: {len(en_rp)} rows, {n_models} models, {n_countries} countries")
+
+    # --- Per-model metrics ---
+    western_regions = {"Catholic Europe", "Protestant Europe", "English-Speaking"}
+
+    model_rows = []
+    model_region_rows = []
+    for model in sorted(en_rp["model_name"].unique()):
+        m = en_rp[en_rp["model_name"] == model]
+        dists, pc1_biases, pc2_biases = [], [], []
+        region_dists: dict[str, list] = {}
+
+        for _, row in m.iterrows():
+            c = row["Country"]
+            matched = match_country(c, ivs_coords)
+            if matched is None:
+                continue
+            ivs = ivs_coords[matched]
+            d = euclidean(row["PC1_rescaled"], row["PC2_rescaled"],
+                          ivs["PC1"], ivs["PC2"])
+            dists.append(d)
+            pc1_biases.append(row["PC1_rescaled"] - ivs["PC1"])
+            pc2_biases.append(row["PC2_rescaled"] - ivs["PC2"])
+
+            region = cr_map.get(c, "Other")
+            region_dists.setdefault(region, []).append(d)
+
+        if not dists:
+            continue
+
+        is_open = model in OPEN_SOURCE_MODELS
+        origin = MODEL_ORIGIN.get(model, "?")
+        vendor = MODEL_VENDOR.get(model, "?")
+        is_small = model in SMALL_MODELS
+
+        model_rows.append({
+            "model_name": model,
+            "vendor": vendor,
+            "origin": origin,
+            "open_source": is_open,
+            "size_category": "Small" if is_small else "Large",
+            "mean_distance": fmt(np.mean(dists)),
+            "median_distance": fmt(np.median(dists)),
+            "std_distance": fmt(np.std(dists)),
+            "pc1_bias": fmt(np.mean(pc1_biases)),
+            "pc2_bias": fmt(np.mean(pc2_biases)),
+            "n_countries": m["Country"].nunique(),
+        })
+
+        for region, rd in region_dists.items():
+            is_western = region in western_regions
+            model_region_rows.append({
+                "model_name": model,
+                "cultural_region": region,
+                "is_western": is_western,
+                "mean_distance": fmt(np.mean(rd)),
+                "n_countries": len(rd),
+                "open_source": is_open,
+                "origin": origin,
+            })
+
+    model_df = pd.DataFrame(model_rows).sort_values("mean_distance")
+    region_df = pd.DataFrame(model_region_rows)
+
+    # --- Print ranking ---
+    print(f"\n  Model ranking (English roleplay, mean distance to IVS):")
+    for i, (_, r) in enumerate(model_df.iterrows()):
+        oc = "Open" if r["open_source"] else "Closed"
+        print(f"    {i+1:2d}. {r['model_name']:35s} dist={r['mean_distance']:.3f}  "
+              f"{oc:6s} {r['origin']:6s}  "
+              f"bias=({r['pc1_bias']:+.2f}, {r['pc2_bias']:+.2f})")
+
+    # --- Open vs Closed ---
+    open_d = model_df[model_df["open_source"]]["mean_distance"]
+    closed_d = model_df[~model_df["open_source"]]["mean_distance"]
+    t_oc, p_oc = stats.ttest_ind(open_d, closed_d)
+    pooled_std = np.sqrt((open_d.std()**2 + closed_d.std()**2) / 2)
+    d_oc = (open_d.mean() - closed_d.mean()) / pooled_std if pooled_std > 0 else 0
+
+    print(f"\n  Open-source vs Closed-source:")
+    print(f"    Open  (n={len(open_d)}): mean={open_d.mean():.3f}")
+    print(f"    Closed(n={len(closed_d)}): mean={closed_d.mean():.3f}")
+    print(f"    t={t_oc:.3f}, p={p_oc:.4f}, Cohen's d={d_oc:.3f}")
+
+    # --- Origin comparison ---
+    origin_stats = {}
+    for origin in ["US", "China", "Europe"]:
+        o_d = model_df[model_df["origin"] == origin]["mean_distance"]
+        if len(o_d) > 0:
+            origin_stats[origin] = {"mean": fmt(o_d.mean()), "n": len(o_d)}
+            print(f"    {origin}: mean={o_d.mean():.3f} (n={len(o_d)})")
+
+    us_d = model_df[model_df["origin"] == "US"]["mean_distance"]
+    cn_d = model_df[model_df["origin"] == "China"]["mean_distance"]
+    if len(us_d) > 1 and len(cn_d) > 1:
+        t_uc, p_uc = stats.ttest_ind(us_d, cn_d)
+        print(f"    US vs China: t={t_uc:.3f}, p={p_uc:.4f}")
+        origin_stats["us_vs_china"] = {"t": fmt(t_uc), "p": fmt(p_uc, 4)}
+
+    # --- Open/Closed × Western/Non-Western ---
+    region_df["is_western_str"] = region_df["is_western"].map(
+        {True: "Western", False: "Non-Western"})
+    interaction = {}
+    for oc_label, oc_val in [("Open", True), ("Closed", False)]:
+        for wn in ["Western", "Non-Western"]:
+            subset = region_df[(region_df["open_source"] == oc_val)
+                               & (region_df["is_western_str"] == wn)]
+            mean_d = float(subset["mean_distance"].mean()) if len(subset) > 0 else float("nan")
+            interaction[f"{oc_label}_{wn}"] = fmt(mean_d)
+            print(f"    {oc_label:6s} × {wn:12s}: {mean_d:.3f}")
+
+    # --- Save outputs ---
+    model_df.to_csv(OUT_DIR / "model_imitation_accuracy.csv", index=False)
+    region_df.to_csv(OUT_DIR / "model_imitation_by_region.csv", index=False)
+
+    result = {
+        "study": "Study 5: Model Imitation Accuracy (English Roleplay)",
+        "n_models": n_models,
+        "n_countries": n_countries,
+        "model_ranking": model_df.to_dict(orient="records"),
+        "open_vs_closed": {
+            "open_mean": fmt(open_d.mean()),
+            "closed_mean": fmt(closed_d.mean()),
+            "n_open": len(open_d), "n_closed": len(closed_d),
+            "t": fmt(t_oc), "p": fmt(p_oc, 4), "cohens_d": fmt(d_oc),
+        },
+        "origin_comparison": origin_stats,
+        "interaction_open_closed_x_western": interaction,
+    }
+    save_json(result, "model_imitation_accuracy.json")
+    print(f"\n  Saved: model_imitation_accuracy.csv, model_imitation_by_region.csv")
+    return result
+
+
+# ===========================================================================
 # Helpers
 # ===========================================================================
 
@@ -1144,7 +1345,7 @@ def save_json(data, filename):
     print(f"  -> Saved: {path}")
 
 
-def collect_all_statistics(s1, s2, s3, s4) -> dict:
+def collect_all_statistics(s1, s2, s3, s4, model_imit=None) -> dict:
     """Collect all paper statistics into one JSON for easy reference."""
     all_stats = {
         "study1": s1,
@@ -1152,6 +1353,8 @@ def collect_all_statistics(s1, s2, s3, s4) -> dict:
         "study3": s3,
         "study4": s4,
     }
+    if model_imit is not None:
+        all_stats["model_imitation"] = model_imit
     save_json(all_stats, "paper_statistics_all.json")
     return all_stats
 
@@ -1207,9 +1410,11 @@ def rebuild_pca_from_raw():
 # ===========================================================================
 
 def main():
-    parser = argparse.ArgumentParser(description="Paper analysis: Study 1-4")
+    parser = argparse.ArgumentParser(description="Paper analysis: Study 1-4 + model imitation")
     parser.add_argument("--study", nargs="+", type=int, choices=[1, 2, 3, 4],
                         help="Run specific studies (default: all)")
+    parser.add_argument("--model-imitation", action="store_true",
+                        help="Run model imitation accuracy analysis (supplements Study 2)")
     parser.add_argument("--regression-only", action="store_true",
                         help="Only generate regression CSV")
     parser.add_argument("--rebuild-from-raw", action="store_true",
@@ -1217,6 +1422,7 @@ def main():
     args = parser.parse_args()
 
     studies_to_run = set(args.study) if args.study else {1, 2, 3, 4}
+    run_imitation = args.model_imitation or (args.study is None)
 
     print("=" * 70)
     print("THE VALUE ATLAS OF AI — Paper Analysis Pipeline")
@@ -1250,6 +1456,7 @@ def main():
 
     # Run studies
     s1 = s2 = s3 = s4 = None
+    model_imit = None
 
     if 1 in studies_to_run:
         s1 = run_study1(intrinsic_df)
@@ -1263,13 +1470,16 @@ def main():
     if 4 in studies_to_run:
         s4 = run_study4(ea_df, rp_df, ivs_coords)
 
+    if run_imitation:
+        model_imit = run_model_imitation(rp_df, ivs_coords)
+
     # Generate regression data
     if studies_to_run & {2, 3, 4}:
         generate_regression_data(ea_df, ivs_coords)
 
     # Collect all stats
-    if studies_to_run == {1, 2, 3, 4}:
-        collect_all_statistics(s1, s2, s3, s4)
+    if studies_to_run == {1, 2, 3, 4} and run_imitation:
+        collect_all_statistics(s1, s2, s3, s4, model_imit)
 
     print("\n" + "=" * 70)
     print("ANALYSIS COMPLETE")

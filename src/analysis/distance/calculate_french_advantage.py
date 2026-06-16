@@ -1,49 +1,45 @@
 #!/usr/bin/env python3
 """
-Script 3: French Advantage for 12 Arabic Countries
-Compares cultural distance when LLMs use Arabic vs French for 12 Arab countries.
+French Advantage for 12 Arabic-speaking countries (standalone copy of logic).
 
     advantage(%) = (d_arabic - d_french) / d_arabic * 100
 
-Positive => French gets closer to IVS truth (French advantage).
+Positive => French roleplay is closer to IVS than Arabic.
 
-Because French interview data is not yet included in the standard PCA pipeline,
-this script loads raw French interviews, converts them to IVS format, and
-projects them through the fixed PCA model alongside Arabic data.
+Canonical implementation (kept in sync): ``compute_french_advantage`` in
+``src/run/run_paper_analysis.py``. Run the full paper pipeline with::
+
+    python src/run/run_paper_analysis.py --study 3
+
+Arabic AND French coordinates must come from the same file
+``roleplay_ml_pca_entity_scores_latest.pkl`` (unified PCA). Do not re-project
+French from raw JSON only — that desynchronises coordinates vs Arabic.
 
 Input:
-    - data/llm_pca/multilingual/roleplay_ml_pca_entity_scores_latest.pkl  (has Arabic PCA scores)
-    - data/llm_interviews/multilingual/interview_raw/*/  (raw French JSON files)
-    - data/country_values/pca_model_fixed.pkl
+    - data/llm_pca/multilingual/roleplay_ml_pca_entity_scores_latest.pkl
     - data/country_values/country_scores_pca.json
 
 Output:
-    - results/analysis/french_advantage_12_arab_countries.csv
+    - results/analysis/french_advantage_12_arab_countries_standalone.csv
     - results/analysis/french_advantage_summary.csv
 """
 
 import sys
 import json
-import pickle
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from typing import Optional
+from typing import Tuple
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.base.ivs_question_processor import IVSQuestionProcessor
-
-EXCLUDED_MODELS = ['qwen3-1.7b']
+EXCLUDED_MODELS = ['qwen3-1.7b', 'glm-4.6', 'qwq-32b']
 
 ARABIC_COUNTRIES_12 = [
     'Algeria', 'Egypt', 'Iraq', 'Jordan', 'Kuwait', 'Lebanon',
     'Libya', 'Morocco', 'Palestine', 'Qatar', 'Tunisia', 'Yemen',
 ]
-
-IV_QNS = ['A008', 'A165', 'E018', 'E025', 'F063', 'F118', 'F120', 'G006', 'Y002', 'Y003']
-
 
 def load_ivs_coordinates() -> dict:
     json_path = PROJECT_ROOT / 'data' / 'country_values' / 'country_scores_pca.json'
@@ -62,113 +58,20 @@ def load_ivs_coordinates() -> dict:
     return coords
 
 
-def load_pca_model() -> dict:
-    path = PROJECT_ROOT / 'data' / 'country_values' / 'pca_model_fixed.pkl'
-    with open(path, 'rb') as f:
-        return pickle.load(f)
-
-
-def transform_with_pca(data: pd.DataFrame, pca_model: dict) -> tuple:
-    """Apply the fixed PCA model to produce rescaled PC1, PC2 for each row."""
-    ppca_C = pca_model['ppca_C']
-    ppca_means = pca_model['ppca_means']
-    ppca_stds = pca_model['ppca_stds']
-    rotation_matrix = pca_model['rotation_matrix']
-    pc_rescale = pca_model['pc_rescale_params']
-
-    raw = data[IV_QNS].to_numpy(dtype=float)
-    standardized = (raw - ppca_means) / ppca_stds
-    standardized = np.nan_to_num(standardized, nan=0.0)
-
-    pcs = standardized @ ppca_C
-    rotated = pcs @ rotation_matrix
-
-    pc1 = pc_rescale['PC1'][0] * rotated[:, 0] + pc_rescale['PC1'][1]
-    pc2 = pc_rescale['PC2'][0] * rotated[:, 1] + pc_rescale['PC2'][1]
-    return pc1, pc2
-
-
-def load_arabic_from_pca() -> pd.DataFrame:
-    """Load Arabic data for the 12 countries from existing PCA entity scores."""
+def load_roleplay_ar_fr_12() -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """Arabic and French rows for 12 countries from unified roleplay PCA pkl."""
     path = PROJECT_ROOT / 'data' / 'llm_pca' / 'multilingual' / 'roleplay_ml_pca_entity_scores_latest.pkl'
     df = pd.read_pickle(path)
     df = df[df['data_source'] != 'IVS'].copy()
-    df = df[df['language'] == 'ar']
-    df = df[df['Country'].isin(ARABIC_COUNTRIES_12)]
     df = df[~df['model_name'].isin(EXCLUDED_MODELS)]
-    print(f"Arabic PCA entries (12 countries): {len(df)}")
-    return df
+    df = df[df['model_name'].notna()]
 
-
-def load_french_raw_interviews() -> pd.DataFrame:
-    """
-    Load and process raw French interview JSON files for the 12 Arab countries.
-    Returns a DataFrame with IV_QNS columns ready for PCA projection.
-    """
-    raw_dir = PROJECT_ROOT / 'data' / 'llm_interviews' / 'multilingual' / 'interview_raw'
-    processor = IVSQuestionProcessor()
-
-    all_rows = []
-    seen_keys = set()
-
-    for model_dir in sorted(raw_dir.iterdir()):
-        if not model_dir.is_dir():
-            continue
-
-        folder_name = model_dir.name
-
-        if folder_name in EXCLUDED_MODELS:
-            continue
-
-        for jf in model_dir.glob('*_fr_*.json'):
-            try:
-                with open(jf, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-            except (json.JSONDecodeError, OSError):
-                continue
-
-            country = data.get('country', '')
-            if country not in ARABIC_COUNTRIES_12:
-                continue
-
-            key = (folder_name, country, jf.name)
-            if key in seen_keys:
-                continue
-            seen_keys.add(key)
-
-            row = {'country': country, 'model_name': folder_name, 'language': 'fr'}
-            for q in IV_QNS:
-                row[q] = np.nan
-
-            for resp in data.get('responses', []):
-                qid = resp.get('question_id', '')
-                if qid not in IV_QNS:
-                    continue
-
-                raw_answer = resp.get('final_response') or resp.get('processed_response', '')
-                if not raw_answer:
-                    continue
-
-                result = processor.validate_and_process_response(str(raw_answer), qid)
-                if not result['valid']:
-                    continue
-
-                if qid == 'Y002' and 'materialist_score' in result:
-                    row[qid] = result['materialist_score']
-                elif qid == 'Y003' and 'y003_score' in result:
-                    row[qid] = result['y003_score']
-                else:
-                    row[qid] = result['numeric_value']
-
-            all_rows.append(row)
-
-    df = pd.DataFrame(all_rows)
-    print(f"French raw interviews loaded: {len(df)} entries from {df['model_name'].nunique()} models")
-
-    if not df.empty:
-        print(f"  Countries: {sorted(df['country'].unique())}")
-
-    return df
+    ar = df[(df['language'] == 'ar') & (df['Country'].isin(ARABIC_COUNTRIES_12))]
+    fr = df[(df['language'] == 'fr') & (df['Country'].isin(ARABIC_COUNTRIES_12))]
+    fr = fr[~fr['model_name'].astype(str).str.contains('phi-3', case=False, na=False)]
+    print(f"Arabic PCA entries (12 countries): {len(ar)}")
+    print(f"French PCA entries (12 countries): {len(fr)}")
+    return ar, fr
 
 
 def euclidean(pc1, pc2, ref1, ref2) -> float:
@@ -191,7 +94,7 @@ def calculate_french_advantage(
 
         ivs = ivs_coords[country]
         ar_c = ar_pca[ar_pca['Country'] == country]
-        fr_c = fr_pca[fr_pca['country'] == country]
+        fr_c = fr_pca[fr_pca['Country'] == country]
 
         for model in ar_c['model_name'].unique():
             ar_m = ar_c[ar_c['model_name'] == model]
@@ -227,35 +130,16 @@ def calculate_french_advantage(
 
 def main():
     print("=" * 70)
-    print("French Advantage — 12 Arabic Countries")
+    print("French Advantage — 12 Arabic Countries (unified PCA pkl)")
     print("=" * 70)
 
     ivs_coords = load_ivs_coordinates()
-    pca_model = load_pca_model()
+    ar_pca, fr_pca = load_roleplay_ar_fr_12()
 
-    # Arabic data from existing PCA results
-    ar_pca = load_arabic_from_pca()
-
-    # French data: load raw, process, project through PCA
-    fr_raw = load_french_raw_interviews()
-    if fr_raw.empty:
-        print("No French interview data found. Exiting.")
+    if fr_pca.empty:
+        print("No French PCA rows. Exiting.")
         return
 
-    print("\nProjecting French data through fixed PCA model...")
-    pc1, pc2 = transform_with_pca(fr_raw, pca_model)
-    fr_raw['PC1_rescaled'] = pc1
-    fr_raw['PC2_rescaled'] = pc2
-
-    # Aggregate per (model, country) to get entity-level scores
-    fr_pca = fr_raw.groupby(['model_name', 'country']).agg({
-        'PC1_rescaled': 'mean',
-        'PC2_rescaled': 'mean',
-        'language': 'first',
-    }).reset_index()
-    print(f"French entity-level entries: {len(fr_pca)}")
-
-    # Calculate
     results = calculate_french_advantage(ar_pca, fr_pca, ivs_coords)
     print(f"\nFrench advantage entries: {len(results)}")
 
@@ -263,12 +147,13 @@ def main():
         print("No paired Arabic-French data found.")
         return
 
-    # Summary
     overall_adv = (
         (results['d_arabic'].mean() - results['d_french'].mean()) /
         results['d_arabic'].mean() * 100
     )
-    print(f"Overall French advantage: {overall_adv:+.1f}%")
+    med = float(np.median(results['french_advantage_pct'].values))
+    print(f"Overall French advantage (grand-mean %): {overall_adv:+.1f}%")
+    print(f"Median pairwise FA%: {med:+.1f}%")
     print(f"Countries: {results['country'].nunique()}, Models: {results['model_name'].nunique()}")
 
     print(f"\nPer country:")
@@ -277,11 +162,10 @@ def main():
         print(f"  {country:15s}  d_ar={g['d_arabic'].mean():.3f}  d_fr={g['d_french'].mean():.3f}  "
               f"advantage={c_adv:+.1f}%  n_models={len(g)}")
 
-    # Save
     out_dir = PROJECT_ROOT / 'results' / 'analysis'
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    csv_path = out_dir / 'french_advantage_12_arab_countries.csv'
+    csv_path = out_dir / 'french_advantage_12_arab_countries_standalone.csv'
     results.to_csv(csv_path, index=False, encoding='utf-8')
     print(f"\nSaved: {csv_path}")
 
