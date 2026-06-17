@@ -1,7 +1,0 @@
-language,PC1_mean,PC1_std,PC2_mean,PC2_std,n_models,language_name
-ar,1.06,1.545,0.61,1.897,20,Arabic
-en,2.656,1.982,1.173,1.687,20,English
-es,2.782,1.364,1.615,1.305,20,Spanish
-fr,2.867,1.499,1.399,1.199,20,French
-ru,2.156,1.833,1.246,1.725,20,Russian
-zh-cn,2.66,1.738,1.233,1.794,20,Chinese
