@@ -1,3 +1,112 @@
+# LLM Values 2026-06 Handoff
+
+这是给师弟接手“大模型价值观”后续工作的第一入口。先看这一页，再看 `PACKAGE_README.md` 和 `docs/code_data_handoff_2026-06.md`。
+
+## GitHub 地址
+
+目标仓库：
+
+```bash
+https://github.com/matrix0394/LLM-s-values.git
+```
+
+交接分支名：
+
+```bash
+codex/llm_values_2026_06
+```
+
+如果分支已经推到 GitHub，师弟可以这样拿代码：
+
+```bash
+git clone -b codex/llm_values_2026_06 https://github.com/matrix0394/LLM-s-values.git llm_values_2026_06
+cd llm_values_2026_06
+```
+
+如果 GitHub 上还看不到这个分支，说明本地已经整理和提交，但还没有成功 push。可从本机整理好的副本推送：
+
+```bash
+cd /private/tmp/llm_values_github_branch_2026_06_local
+git push -u github codex/llm_values_2026_06
+```
+
+## 先跑这几个命令
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python3 src/run/run_paper_analysis.py --help
+python3 src/run/run_paper_analysis.py --study 2
+python3 external_runners/hk_local_hf_interview_upload.py --help
+```
+
+Study 2 的正式样本口径应为：
+
+```text
+Models: 20
+Total model×country×language observations: 920
+Overall English Advantage: +3.6%
+```
+
+## 这个包包含什么
+
+- 可运行代码：`src/`、`analysis/`、`config/`、`external_runners/`
+- 主入口：`src/run/run_paper_analysis.py`
+- 香港本地 Hugging Face runner：`external_runners/hk_local_hf_interview_upload.py`
+- 核心 PCA 和轻量结果：`data/country_values/`、`data/llm_pca/`、`results/analysis/`、`results/paper_data/`
+- BLOOM/PolyLM 旧 pilot 的少量 raw 记录，用来说明旧结果为什么只能作调试参考
+
+## 这个包不包含什么
+
+- WVS/EVS 官方原始 `.sav`
+- `ivs_df.pkl`、`valid_data.pkl` 这类几 GB 的派生缓存
+- 全量 API/raw interview
+- `.env`、zip、本机临时文件、Python cache
+
+WVS/EVS 原始数据是官方可获得的数据，不应放进 GitHub。需要从头重建人类基准时，让师弟从 WVS 官网下载 `Integrated_values_surveys_1981-2022.sav`，再放到项目约定路径。
+
+## 正式样本和探索样本不要混
+
+当前 PCA 文件里保留了后续探索模型：
+
+```text
+qwen3-1.7b
+glm-4.6
+qwq-32b
+```
+
+它们可以留给后续扩展分析，但正式 Study 1-4 和 model imitation 使用 20-model paper sample，`src/run/run_paper_analysis.py` 已排除这三个探索模型。不要把它们混进正式论文统计，否则 Study 2 的 English Advantage 会被拉偏。
+
+## 师兄说的后续工作怎么接
+
+后续不是只看旧 PCA，也不是从一堆原始 API 回答开始瞎跑。正确顺序是：
+
+```text
+新模型回答 WVS/IVS 题
+  -> 解析/adjudication 成 10 个题目的数值回答
+  -> 用固定 PCA 模型投影到同一文化空间
+  -> 跟人类国家坐标算距离
+  -> 纳入 Study 1-4 / model imitation / 新优化实验比较
+```
+
+三类后续任务：
+
+- 旧模型补测：BLOOM、PolyLM 等。旧 pilot 只作调试参考，正式结果要重新用稳定 runner 跑。
+- 最新模型更新：把新 API 模型或新开源模型接到同一套问卷、解析、PCA、分析流程。
+- 多语言模型优化：比较 prompt、本地化语言、解析策略、adjudication、微调或后处理方法是否能减少语言偏差。
+
+## 下一步读什么
+
+- `PACKAGE_README.md`：这个包里有哪些文件、哪些没放、验证过哪些命令。
+- `docs/code_data_handoff_2026-06.md`：完整交接说明。
+- `docs/data_flow_traceability.md`：数据从原始回答到 PCA/统计的链路。
+- `docs/REPRODUCIBILITY.md`：复现说明。
+
+---
+
+下面保留完整交接说明原文，供需要细节时继续往下读。
+
 # Code And Data Handoff Guide
 
 交接时间建议：2026-06-17 周三  
