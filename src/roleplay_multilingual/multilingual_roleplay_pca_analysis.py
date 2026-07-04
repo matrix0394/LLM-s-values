@@ -3,18 +3,13 @@
 对多语言角色扮演数据进行主成分分析，生成文化坐标
 """
 
-import os
 import json
 import pickle
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 from pathlib import Path
 from datetime import datetime
-from typing import Dict, List, Optional, Any, Tuple
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler
+from typing import Dict
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -23,7 +18,7 @@ import sys
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
 try:
-    from src.core.ppca import PPCA
+    from src.base.ppca import PPCA
 except ImportError:
     print("警告: 无法导入PPCA，将使用标准PCA")
     PPCA = None
@@ -34,69 +29,72 @@ from src.base.base_pca_analyzer import BasePCAAnalyzer
 class MultilingualRoleplayPCAAnalysis(BasePCAAnalyzer):
     """多语言角色扮演PCA分析器"""
     
-    def __init__(self, data_path: str = "../data"):
-        # 调用父类构造函数
-        super().__init__(data_path=data_path)
+    def __init__(self, data_path: str = "data"):
+        # 调用父类构造函数，指定IVS数据子目录
+        super().__init__(data_path=data_path, ivs_data_subdir="country_values")
         
         # 多语言特有的配置
-        self.processed_dir = self.data_path / "processed"
-        self.results_dir = self.data_path / "results" / "multilingual_pca"
-        
-        # 确保目录存在
-        self.results_dir.mkdir(parents=True, exist_ok=True)
-        
-        # PCA配置（基类已有iv_qns，这里保持兼容）
-        self.n_components = 2
-        self.question_ids = self.iv_qns  # 使用基类的问题列表
+        self.processed_dir = self.data_path / "llm_interviews" / "multilingual" / "processed"
         
         # 加载文化区域配置
         self.cultural_regions = self._load_cultural_regions()
-        
-        # 设置中文字体
-        plt.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS', 'DejaVu Sans']
-        plt.rcParams['axes.unicode_minus'] = False
+        # 加载国家代码映射
+        self.country_mapping = self._load_country_mapping()
     
     def _load_cultural_regions(self) -> Dict:
         """加载文化区域配置"""
-        possible_paths = [
-            Path("config/cultural_regions.json"),
-            Path("../config/cultural_regions.json"),
-            Path("../../config/cultural_regions.json")
-        ]
+        config_path = Path(__file__).parent.parent.parent / 'config' / 'country' / 'cultural_regions.json'
         
-        for config_path in possible_paths:
-            if config_path.exists():
-                with open(config_path, 'r', encoding='utf-8') as f:
-                    return json.load(f)
+        try:
+            with open(config_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"⚠️ 加载文化区域配置失败: {e}")
+            return {}
+    
+    def _load_country_mapping(self) -> Dict:
+        """加载国家代码映射"""
+        config_path = Path(__file__).parent.parent.parent / 'config' / 'country' / 'country_codes.json'
         
-        print("警告: 未找到文化区域配置文件")
-        return {}
+        try:
+            with open(config_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                # 关键修复：确保键是整数类型，与IVS数据的country_code类型一致
+                mapping = {int(item['Numeric']): item['Country'] for item in data}
+                print(f"✅ 加载国家代码映射: {len(mapping)} 个国家")
+                return mapping
+        except Exception as e:
+            print(f"⚠️ 加载国家代码映射失败: {e}")
+            import traceback
+            traceback.print_exc()
+            return {}
     
     def load_additional_data(self) -> pd.DataFrame:
         """加载额外数据（多语言角色扮演数据）- 实现基类抽象方法"""
         return self.load_processed_data()
     
     def load_processed_data(self, data_file: str = None) -> pd.DataFrame:
-        """加载处理后的IVS格式数据"""
+        """
+        加载处理后的IVS格式数据
+        
+        查找优先级：
+        1. 指定的data_file
+        2. processed_dir中最新的llm_roleplay_ml_processed_responses_ivs_format_*.pkl
+        """
         if data_file is None:
-            # 尝试多个可能的路径
-            possible_paths = [
-                self.data_path / "multilingual_roleplay_processed_responses_ivs_format.pkl",
-                getattr(self, 'multilingual_data_path', None) and Path(self.multilingual_data_path) / "multilingual_roleplay_processed_responses_ivs_format.pkl",
-                self.processed_dir / "multilingual_roleplay_processed_responses_ivs_format.pkl"
-            ]
-            
-            # 过滤掉None值并查找存在的文件
-            for path in filter(None, possible_paths):
-                if path.exists():
-                    data_file = path
-                    break
-            else:
-                # 如果都没找到，查找最新的IVS格式文件
+            # 查找最新的IVS格式文件（与data_processor保存的文件名一致）
+            ivs_files = list(self.processed_dir.glob("llm_roleplay_ml_processed_responses_ivs_format_*.pkl"))
+            if not ivs_files:
+                # 尝试查找旧格式文件（向后兼容）
                 ivs_files = list(self.processed_dir.glob("multilingual_roleplay_ivs_format_*.pkl"))
                 if not ivs_files:
-                    raise FileNotFoundError(f"未找到多语言IVS格式数据文件，查找路径: {[str(p) for p in possible_paths if p]}")
-                data_file = max(ivs_files, key=lambda x: x.stat().st_mtime)
+                    raise FileNotFoundError(
+                        f"未找到多语言IVS格式数据文件\n"
+                        f"查找路径: {self.processed_dir}\n"
+                        f"期望文件名: llm_roleplay_ml_processed_responses_ivs_format_*.pkl"
+                    )
+                print(f"⚠️ 使用旧格式文件")
+            data_file = max(ivs_files, key=lambda x: x.stat().st_mtime)
         else:
             data_file = Path(data_file)
         
@@ -109,6 +107,16 @@ class MultilingualRoleplayPCAAnalysis(BasePCAAnalyzer):
         """合并数据（多语言实现）- 实现基类抽象方法，应用数据质量筛选"""
         # 准备IVS数据（应用标准筛选）
         ivs_data = self.prepare_ivs_data()
+        
+        # 保持country_code为数字格式（与Stage0一致）
+        # 不再映射为国家名称，因为多语言数据现在也使用数字代码
+        print(f"🔍 IVS country_code类型: {ivs_data['country_code'].dtype}")
+        
+        # 确保country_code为float类型（与Stage0一致）
+        ivs_data['country_code'] = ivs_data['country_code'].astype(float)
+        
+        print(f"📊 IVS数据国家数: {ivs_data['country_code'].nunique()}")
+        
         ivs_data['data_source'] = 'IVS'
         
         # 加载多语言数据
@@ -123,6 +131,10 @@ class MultilingualRoleplayPCAAnalysis(BasePCAAnalyzer):
             multilingual_data_copy = multilingual_data.copy()
             multilingual_data_copy['data_source'] = 'Multilingual'
             
+            # 确保多语言数据的country_code也是float类型（与IVS数据一致）
+            print(f"🔍 多语言数据 country_code类型: {multilingual_data_copy['country_code'].dtype}")
+            multilingual_data_copy['country_code'] = multilingual_data_copy['country_code'].astype(float)
+            
             # 关键修复：对多语言数据应用相同的筛选逻辑
             print(f"🔄 对多语言数据应用数据质量筛选...")
             print(f"   筛选前: {len(multilingual_data_copy)} 行")
@@ -136,21 +148,17 @@ class MultilingualRoleplayPCAAnalysis(BasePCAAnalyzer):
             multilingual_data_copy = multilingual_data_copy[valid_ivs_mask]
             print(f"   移除全NaN行后: {len(multilingual_data_copy)} 行")
             
-            # 3. 检查数据质量
+            # 3. 检查数据质量（使用统一配置）
+            from src.base.ivs_question_processor import IVSQuestionProcessor
+            
             for col in self.iv_qns:
-                if col in multilingual_data_copy.columns:
-                    # 移除异常值（超出合理范围）
-                    if col in ['A008', 'A165', 'E018', 'E025']:
-                        # 1-4范围
-                        mask = (multilingual_data_copy[col] >= 1) & (multilingual_data_copy[col] <= 4)
+                if col in multilingual_data_copy.columns and col in IVSQuestionProcessor.QUESTION_CONFIG:
+                    config = IVSQuestionProcessor.QUESTION_CONFIG[col]
+                    if config["type"] == "single":
+                        min_val, max_val = config["scale"]
+                        mask = (multilingual_data_copy[col] >= min_val) & (multilingual_data_copy[col] <= max_val)
                         multilingual_data_copy.loc[~mask, col] = np.nan
-                    elif col in ['F063', 'F118', 'F120', 'G006']:
-                        # 1-10范围
-                        mask = (multilingual_data_copy[col] >= 1) & (multilingual_data_copy[col] <= 10)
-                        multilingual_data_copy.loc[~mask, col] = np.nan
-                    elif col in ['Y002', 'Y003']:
-                        # 特殊处理，保持原值
-                        pass
+                    # Y002, Y003 等多选题保持原值
             
             # 再次应用thresh=6筛选（清理异常值后）
             multilingual_data_copy = multilingual_data_copy.dropna(subset=self.iv_qns, thresh=6)
@@ -159,6 +167,15 @@ class MultilingualRoleplayPCAAnalysis(BasePCAAnalyzer):
             if len(multilingual_data_copy) == 0:
                 print("⚠️ 多语言数据筛选后为空，仅使用IVS数据")
                 return ivs_data
+            
+            # 确保两个数据集使用相同的字段名
+            # Multilingual数据使用'country_code'，IVS数据也使用'country_code'（已映射为名称）
+            # 添加'country'字段作为别名
+            if 'country_code' in ivs_data.columns and 'country' not in ivs_data.columns:
+                ivs_data['country'] = ivs_data['country_code']
+            
+            if 'country_code' in multilingual_data_copy.columns and 'country' not in multilingual_data_copy.columns:
+                multilingual_data_copy['country'] = multilingual_data_copy['country_code']
             
             # 高效的列对齐
             all_columns = list(set(ivs_data.columns) | set(multilingual_data_copy.columns))
@@ -191,165 +208,36 @@ class MultilingualRoleplayPCAAnalysis(BasePCAAnalyzer):
             print(f"❌ 数据合并失败: {e}")
             return multilingual_data.copy()
     
-    def prepare_pca_data(self, df: pd.DataFrame) -> Tuple[pd.DataFrame, np.ndarray, List[str]]:
-        """准备PCA分析数据"""
-        print("准备PCA分析数据...")
-        
-        # 选择用于PCA的问题列
-        pca_columns = [col for col in self.question_ids if col in df.columns]
-        print(f"用于PCA的问题: {pca_columns}")
-        
-        # 提取数据矩阵
-        X = df[pca_columns].values
-        
-        # 检查数据质量
-        print(f"数据形状: {X.shape}")
-        print(f"缺失值数量: {np.isnan(X).sum()}")
-        
-        # 创建实体标签
-        entity_labels = []
-        for _, row in df.iterrows():
-            label = f"{row['model']}_{row['country']}_{row['language']}"
-            entity_labels.append(label)
-        
-        return df[['entity_id', 'model', 'country', 'language'] + pca_columns], X, entity_labels
-    
-    def perform_multilingual_pca_analysis(self, X: np.ndarray, use_ppca: bool = True) -> Tuple[np.ndarray, PCA, Dict]:
-        """执行多语言特有的PCA分析"""
-        print(f"执行PCA分析 (使用PPCA: {use_ppca and PPCA is not None})...")
-        
-        pca_results = {}
-        
-        if use_ppca and PPCA is not None and np.isnan(X).any():
-            print("使用PPCA处理缺失数据...")
-            # 使用PPCA处理缺失数据
-            try:
-                ppca = PPCA()
-                X_filled = ppca.fit_transform(X, d=self.n_components)
-            except Exception as e:
-                print(f"PPCA失败，使用标准PCA: {e}")
-                use_ppca = False
-            
-            if not use_ppca:
-                # 使用标准PCA处理缺失数据
-                print("使用标准PCA...")
-                # 删除包含缺失值的行
-                valid_mask = ~np.isnan(X).any(axis=1)
-                X_clean = X[valid_mask]
-                
-                if len(X_clean) == 0:
-                    raise ValueError("所有数据都包含缺失值，无法进行PCA分析")
-                
-                print(f"有效数据行数: {len(X_clean)}/{len(X)}")
-                
-                # 标准化
-                scaler = StandardScaler()
-                X_scaled = scaler.fit_transform(X_clean)
-                
-                # PCA
-                pca = PCA(n_components=self.n_components)
-                pca_coords_clean = pca.fit_transform(X_scaled)
-                
-                # 为所有数据创建坐标（缺失数据用NaN填充）
-                pca_coords = np.full((len(X), self.n_components), np.nan)
-                pca_coords[valid_mask] = pca_coords_clean
-                
-                pca_results['method'] = 'StandardPCA'
-                pca_results['valid_mask'] = valid_mask
-                pca_results['scaler'] = scaler
-            else:
-                # 使用填充后的数据进行标准PCA
-                scaler = StandardScaler()
-                X_scaled = scaler.fit_transform(X_filled)
-                
-                pca = PCA(n_components=self.n_components)
-                pca_coords = pca.fit_transform(X_scaled)
-                
-                pca_results['method'] = 'PPCA + StandardPCA'
-                pca_results['ppca'] = ppca
-                pca_results['scaler'] = scaler
-            
-        else:
-            print("使用标准PCA...")
-            # 删除包含缺失值的行
-            valid_mask = ~np.isnan(X).any(axis=1)
-            X_clean = X[valid_mask]
-            
-            if len(X_clean) == 0:
-                raise ValueError("所有数据都包含缺失值，无法进行PCA分析")
-            
-            print(f"有效数据行数: {len(X_clean)}/{len(X)}")
-            
-            # 标准化
-            scaler = StandardScaler()
-            X_scaled = scaler.fit_transform(X_clean)
-            
-            # PCA
-            pca = PCA(n_components=self.n_components)
-            pca_coords_clean = pca.fit_transform(X_scaled)
-            
-            # 为所有数据创建坐标（缺失数据用NaN填充）
-            pca_coords = np.full((len(X), self.n_components), np.nan)
-            pca_coords[valid_mask] = pca_coords_clean
-            
-            pca_results['method'] = 'StandardPCA'
-            pca_results['valid_mask'] = valid_mask
-            pca_results['scaler'] = scaler
-        
-        # 保存PCA信息
-        pca_results['pca'] = pca
-        pca_results['explained_variance_ratio'] = pca.explained_variance_ratio_
-        pca_results['components'] = pca.components_
-        pca_results['n_components'] = self.n_components
-        
-        print(f"解释方差比例: {pca.explained_variance_ratio_}")
-        print(f"累计解释方差: {pca.explained_variance_ratio_.sum():.3f}")
-        
-        return pca_coords, pca, pca_results
-    
-    def create_results_dataframe(self, df: pd.DataFrame, pca_coords: np.ndarray, entity_labels: List[str]) -> pd.DataFrame:
-        """创建包含PCA结果的DataFrame"""
-        results_df = df.copy()
-        
-        # 添加PCA坐标
-        results_df['PC1'] = pca_coords[:, 0]
-        results_df['PC2'] = pca_coords[:, 1]
-        results_df['entity_label'] = entity_labels
-        
-        # 添加文化区域信息
-        results_df['cultural_region'] = results_df['country'].map(
-            self.cultural_regions.get('country_cultural_mapping', {})
-        )
-        
-        # 添加语言家族信息
-        language_families = {
-            'zh-cn': '汉藏语系',
-            'ru': '印欧语系',
-            'es-la': '印欧语系',
-            'ar': '闪含语系'
-        }
-        results_df['language_family'] = results_df['language'].map(language_families)
-        
-        return results_df
+    # prepare_pca_data() 已删除 - 使用 base.perform_pca_analysis() 自动处理
+    # perform_multilingual_pca_analysis() 已删除 - 使用 base.perform_pca_analysis() 替代
+    # create_results_dataframe() 已删除 - base.perform_pca_analysis() 已包含rescaling
     
     def analyze_language_effects(self, results_df: pd.DataFrame) -> Dict:
-        """分析语言效应"""
-        print("分析语言效应...")
+        """分析语言效应（Stage3特有）"""
+        print("\n🌐 分析语言效应...")
+        
+        # 确保有language列
+        if 'language' not in results_df.columns:
+            print("⚠️ 数据中没有language列，跳过语言效应分析")
+            return {'language_statistics': {}, 'language_differences': {}}
         
         language_analysis = {}
         
-        # 按语言分组分析
+        # 按语言分组分析（使用PC1_rescaled和PC2_rescaled）
+        pc1_col = 'PC1_rescaled' if 'PC1_rescaled' in results_df.columns else 'PC1'
+        pc2_col = 'PC2_rescaled' if 'PC2_rescaled' in results_df.columns else 'PC2'
+        
         for language in results_df['language'].unique():
             lang_data = results_df[results_df['language'] == language]
             
             if len(lang_data) > 0:
                 language_analysis[language] = {
                     'count': len(lang_data),
-                    'countries': lang_data['country'].unique().tolist(),
-                    'pc1_mean': lang_data['PC1'].mean() if not lang_data['PC1'].isna().all() else np.nan,
-                    'pc1_std': lang_data['PC1'].std() if not lang_data['PC1'].isna().all() else np.nan,
-                    'pc2_mean': lang_data['PC2'].mean() if not lang_data['PC2'].isna().all() else np.nan,
-                    'pc2_std': lang_data['PC2'].std() if not lang_data['PC2'].isna().all() else np.nan,
+                    'countries': lang_data['country'].unique().tolist() if 'country' in lang_data.columns else [],
+                    'pc1_mean': lang_data[pc1_col].mean() if not lang_data[pc1_col].isna().all() else np.nan,
+                    'pc1_std': lang_data[pc1_col].std() if not lang_data[pc1_col].isna().all() else np.nan,
+                    'pc2_mean': lang_data[pc2_col].mean() if not lang_data[pc2_col].isna().all() else np.nan,
+                    'pc2_std': lang_data[pc2_col].std() if not lang_data[pc2_col].isna().all() else np.nan,
                 }
         
         # 计算语言间差异
@@ -375,319 +263,624 @@ class MultilingualRoleplayPCAAnalysis(BasePCAAnalyzer):
             'language_differences': language_differences
         }
     
-    def create_visualizations(self, results_df: pd.DataFrame, pca_results: Dict, language_analysis: Dict, suffix: str = None):
-        """创建可视化图表"""
-        if suffix is None:
-            suffix = datetime.now().strftime("%Y%m%d_%H%M%S")
+    def save_results(self, entity_scores: pd.DataFrame = None, prefix: str = "roleplay_ml_pca"):
+        """保存分析结果（覆盖基类方法，使用Stage3命名规范）
         
-        print("创建可视化图表...")
+        Args:
+            entity_scores: 实体分数数据（聚合后的国家级别数据）
+            prefix: 文件名前缀
+        """
+        print(f"\n{'='*60}")
+        print(f"💾 保存Stage3 PCA分析结果")
+        print(f"{'='*60}")
         
-        # 设置图表样式
-        plt.style.use('default')
+        save_dir = self.data_path / "llm_pca" / "multilingual"
+        save_dir.mkdir(parents=True, exist_ok=True)
         
-        # 1. 多语言文化地图
-        self._plot_multilingual_cultural_map(results_df, suffix)
-        
-        # 2. 语言对比图
-        self._plot_language_comparison(results_df, suffix)
-        
-        # 3. 模型对比图
-        self._plot_model_comparison(results_df, suffix)
-        
-        # 4. PCA载荷图
-        self._plot_pca_loadings(pca_results, suffix)
-        
-        # 5. 解释方差图
-        self._plot_explained_variance(pca_results, suffix)
-        
-        print("可视化图表创建完成")
-    
-    def _plot_multilingual_cultural_map(self, results_df: pd.DataFrame, suffix: str):
-        """绘制多语言文化地图"""
-        fig, ax = plt.subplots(1, 1, figsize=(12, 8))
-        
-        # 为每种语言设置不同颜色
-        language_colors = {
-            'zh-cn': '#FF6B6B',
-            'ru': '#4ECDC4', 
-            'es-la': '#45B7D1',
-            'ar': '#FFA07A'
-        }
-        
-        # 绘制每种语言的点
-        for language in results_df['language'].unique():
-            lang_data = results_df[results_df['language'] == language]
-            valid_data = lang_data.dropna(subset=['PC1', 'PC2'])
+        # 1. 保存完整的PCA结果（包含问卷级别的IVS数据）
+        if self.pca_results is not None:
+            # 带时间戳的版本
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            results_file = save_dir / f'{prefix}_results_{timestamp}.pkl'
+            self.pca_results.to_pickle(results_file)
+            print(f"✅ PCA完整结果: {results_file.name}")
+            print(f"   - 行数: {len(self.pca_results)}")
             
-            if len(valid_data) > 0:
-                ax.scatter(valid_data['PC1'], valid_data['PC2'], 
-                          c=language_colors.get(language, 'gray'),
-                          label=language, s=100, alpha=0.7)
-                
-                # 添加国家标签
-                for _, row in valid_data.iterrows():
-                    ax.annotate(row['country'][:3], 
-                               (row['PC1'], row['PC2']),
-                               xytext=(5, 5), textcoords='offset points',
-                               fontsize=8, alpha=0.8)
+            # 最新版本（用于训练和可视化）
+            results_file_latest = save_dir / f'{prefix}_results_latest.pkl'
+            self.pca_results.to_pickle(results_file_latest)
+            print(f"✅ PCA完整结果（最新）: {results_file_latest.name}")
         
-        ax.set_xlabel('PC1 (传统 vs 世俗理性价值观)')
-        ax.set_ylabel('PC2 (生存 vs 自我表达价值观)')
-        ax.set_title('多语言角色扮演文化地图')
-        ax.legend()
-        ax.grid(True, alpha=0.3)
-        
-        plt.tight_layout()
-        plt.savefig(self.results_dir / f'multilingual_cultural_map_{suffix}.png', 
-                   dpi=300, bbox_inches='tight')
-        plt.close()
-    
-    def _plot_language_comparison(self, results_df: pd.DataFrame, suffix: str):
-        """绘制语言对比图"""
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
-        
-        # PC1对比
-        language_pc1 = []
-        language_labels = []
-        
-        for language in results_df['language'].unique():
-            lang_data = results_df[results_df['language'] == language]
-            valid_pc1 = lang_data['PC1'].dropna()
+        # 2. 保存实体分数（聚合后的国家级别数据）
+        if entity_scores is not None:
+            # 带时间戳的版本
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            scores_file = save_dir / f'{prefix}_entity_scores_{timestamp}.pkl'
+            entity_scores.to_pickle(scores_file)
+            print(f"✅ 实体分数（聚合）: {scores_file.name}")
+            print(f"   - 行数: {len(entity_scores)}")
             
-            if len(valid_pc1) > 0:
-                language_pc1.extend(valid_pc1.tolist())
-                language_labels.extend([language] * len(valid_pc1))
-        
-        if language_pc1:
-            pc1_df = pd.DataFrame({'Language': language_labels, 'PC1': language_pc1})
-            sns.boxplot(data=pc1_df, x='Language', y='PC1', ax=ax1)
-            ax1.set_title('PC1 按语言分布')
-            ax1.set_ylabel('PC1 (传统 vs 世俗理性)')
-        
-        # PC2对比
-        language_pc2 = []
-        language_labels2 = []
-        
-        for language in results_df['language'].unique():
-            lang_data = results_df[results_df['language'] == language]
-            valid_pc2 = lang_data['PC2'].dropna()
+            # 最新版本（用于分析对比）
+            scores_file_latest = save_dir / f'{prefix}_entity_scores_latest.pkl'
+            entity_scores.to_pickle(scores_file_latest)
+            print(f"✅ 实体分数（最新）: {scores_file_latest.name}")
             
-            if len(valid_pc2) > 0:
-                language_pc2.extend(valid_pc2.tolist())
-                language_labels2.extend([language] * len(valid_pc2))
-        
-        if language_pc2:
-            pc2_df = pd.DataFrame({'Language': language_labels2, 'PC2': language_pc2})
-            sns.boxplot(data=pc2_df, x='Language', y='PC2', ax=ax2)
-            ax2.set_title('PC2 按语言分布')
-            ax2.set_ylabel('PC2 (生存 vs 自我表达)')
-        
-        plt.tight_layout()
-        plt.savefig(self.results_dir / f'language_comparison_{suffix}.png', 
-                   dpi=300, bbox_inches='tight')
-        plt.close()
-    
-    def _plot_model_comparison(self, results_df: pd.DataFrame, suffix: str):
-        """绘制模型对比图"""
-        fig, ax = plt.subplots(1, 1, figsize=(12, 8))
-        
-        # 为每个模型设置不同形状
-        model_markers = {
-            'openai/gpt-4o-mini': 'o',
-            'google/gemini-2.0-flash-001': 's',
-            'anthropic/claude-3.7-sonnet': '^',
-            'meta-llama/llama-3.3-70b-instruct': 'D',
-            'deepseek/deepseek-chat-v3-0324': 'v',
-            'qwen/qwq-32b': 'p',
-            'mistralai/mistral-nemo:free': '*'
-        }
-        
-        for model in results_df['model'].unique():
-            model_data = results_df[results_df['model'] == model]
-            valid_data = model_data.dropna(subset=['PC1', 'PC2'])
+            # JSON格式（便于查看）
+            json_file = save_dir / f'{prefix}_entity_scores_latest.json'
+            entity_scores.to_json(json_file, orient='records', indent=2, force_ascii=False)
+            print(f"✅ JSON格式: {json_file.name}")
             
-            if len(valid_data) > 0:
-                marker = model_markers.get(model, 'o')
-                ax.scatter(valid_data['PC1'], valid_data['PC2'],
-                          marker=marker, s=100, alpha=0.7,
-                          label=model.split('/')[-1])
+            # CSV格式（便于查看）
+            csv_file = save_dir / f'{prefix}_entity_scores_latest.csv'
+            entity_scores.to_csv(csv_file, index=False, encoding='utf-8')
+            print(f"✅ CSV格式: {csv_file.name}")
+            
+            # 统计信息
+            if 'data_source' in entity_scores.columns:
+                print(f"\n📊 实体分数统计:")
+                print(f"   - IVS国家: {len(entity_scores[entity_scores['data_source'] == 'IVS'])} 个")
+                print(f"   - Multilingual: {len(entity_scores[entity_scores['data_source'] == 'Multilingual'])} 条")
         
-        ax.set_xlabel('PC1 (传统 vs 世俗理性价值观)')
-        ax.set_ylabel('PC2 (生存 vs 自我表达价值观)')
-        ax.set_title('多语言角色扮演 - 模型对比')
-        ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
-        ax.grid(True, alpha=0.3)
-        
-        plt.tight_layout()
-        plt.savefig(self.results_dir / f'model_comparison_{suffix}.png', 
-                   dpi=300, bbox_inches='tight')
-        plt.close()
+        print(f"\n📁 保存位置: {save_dir}")
+        print(f"{'='*60}")
     
-    def _plot_pca_loadings(self, pca_results: Dict, suffix: str):
-        """绘制PCA载荷图"""
-        fig, ax = plt.subplots(1, 1, figsize=(10, 8))
+    def run_multilingual_analysis_for_runner(self, use_fixed_pca: bool = True) -> pd.DataFrame:
+        """为run脚本运行多语言分析，返回实体分数DataFrame
         
-        components = pca_results['components']
-        
-        # 绘制载荷向量
-        for i, question_id in enumerate(self.question_ids):
-            if i < components.shape[1]:
-                ax.arrow(0, 0, components[0, i], components[1, i],
-                        head_width=0.02, head_length=0.02, fc='red', ec='red')
-                ax.text(components[0, i] * 1.1, components[1, i] * 1.1,
-                       question_id, fontsize=10, ha='center', va='center')
-        
-        ax.set_xlim(-1, 1)
-        ax.set_ylim(-1, 1)
-        ax.set_xlabel(f'PC1 ({pca_results["explained_variance_ratio"][0]:.1%})')
-        ax.set_ylabel(f'PC2 ({pca_results["explained_variance_ratio"][1]:.1%})')
-        ax.set_title('PCA载荷图 - 多语言角色扮演')
-        ax.grid(True, alpha=0.3)
-        ax.axhline(y=0, color='k', linestyle='-', alpha=0.3)
-        ax.axvline(x=0, color='k', linestyle='-', alpha=0.3)
-        
-        plt.tight_layout()
-        plt.savefig(self.results_dir / f'pca_loadings_{suffix}.png', 
-                   dpi=300, bbox_inches='tight')
-        plt.close()
-    
-    def _plot_explained_variance(self, pca_results: Dict, suffix: str):
-        """绘制解释方差图"""
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
-        
-        # 解释方差比例
-        variance_ratio = pca_results['explained_variance_ratio']
-        ax1.bar(range(1, len(variance_ratio) + 1), variance_ratio)
-        ax1.set_xlabel('主成分')
-        ax1.set_ylabel('解释方差比例')
-        ax1.set_title('各主成分解释方差比例')
-        
-        # 累计解释方差
-        cumsum_variance = np.cumsum(variance_ratio)
-        ax2.plot(range(1, len(cumsum_variance) + 1), cumsum_variance, 'bo-')
-        ax2.set_xlabel('主成分数量')
-        ax2.set_ylabel('累计解释方差比例')
-        ax2.set_title('累计解释方差比例')
-        ax2.set_ylim(0, 1)
-        
-        plt.tight_layout()
-        plt.savefig(self.results_dir / f'explained_variance_{suffix}.png', 
-                   dpi=300, bbox_inches='tight')
-        plt.close()
-    
-    def save_analysis_results(self, results_df: pd.DataFrame, pca_results: Dict, 
-                             language_analysis: Dict, suffix: str = None) -> Dict:
-        """保存分析结果"""
-        if suffix is None:
-            suffix = datetime.now().strftime("%Y%m%d_%H%M%S")
-        
-        # 保存结果DataFrame
-        results_file = self.results_dir / f'multilingual_pca_results_{suffix}.pkl'
-        with open(results_file, 'wb') as f:
-            pickle.dump(results_df, f)
-        
-        # 保存CSV格式
-        csv_file = self.results_dir / f'multilingual_pca_results_{suffix}.csv'
-        results_df.to_csv(csv_file, index=False, encoding='utf-8')
-        
-        # 保存分析结果
-        analysis_results = {
-            'pca_results': {k: v for k, v in pca_results.items() if k not in ['pca', 'ppca', 'scaler']},
-            'language_analysis': language_analysis,
-            'timestamp': datetime.now().isoformat(),
-            'n_samples': len(results_df),
-            'n_languages': results_df['language'].nunique(),
-            'n_models': results_df['model'].nunique(),
-            'n_countries': results_df['country'].nunique()
-        }
-        
-        analysis_file = self.results_dir / f'multilingual_analysis_results_{suffix}.json'
-        with open(analysis_file, 'w', encoding='utf-8') as f:
-            json.dump(analysis_results, f, ensure_ascii=False, indent=2, default=str)
-        
-        print(f"分析结果已保存:")
-        print(f"  PCA结果: {results_file}")
-        print(f"  CSV格式: {csv_file}")
-        print(f"  分析报告: {analysis_file}")
-        
-        return {
-            'results_file': results_file,
-            'csv_file': csv_file,
-            'analysis_file': analysis_file
-        }
-    
-    def run_multilingual_analysis(self, data_file: str = None) -> Dict:
-        """运行完整的多语言PCA分析"""
-        print("=== 多语言角色扮演PCA分析 ===")
-        
-        # 1. 加载数据
-        print("1. 加载处理后的数据...")
-        df = self.load_processed_data(data_file)
-        
-        # 2. 准备PCA数据
-        print("2. 准备PCA分析数据...")
-        pca_df, X, entity_labels = self.prepare_pca_data(df)
-        
-        # 3. 执行PCA分析
-        print("3. 执行PCA分析...")
-        pca_coords, pca, pca_results = self.perform_multilingual_pca_analysis(X)
-        
-        # 4. 创建结果DataFrame
-        print("4. 创建结果DataFrame...")
-        results_df = self.create_results_dataframe(pca_df, pca_coords, entity_labels)
-        
-        # 5. 分析语言效应
-        print("5. 分析语言效应...")
-        language_analysis = self.analyze_language_effects(results_df)
-        
-        # 6. 创建可视化
-        print("6. 创建可视化图表...")
-        self.create_visualizations(results_df, pca_results, language_analysis)
-        
-        # 7. 保存结果
-        print("7. 保存分析结果...")
-        file_paths = self.save_analysis_results(results_df, pca_results, language_analysis)
-        
-        # 8. 显示摘要
-        print("\\n=== 分析结果摘要 ===")
-        print(f"样本数: {len(results_df)}")
-        print(f"语言数: {results_df['language'].nunique()}")
-        print(f"模型数: {results_df['model'].nunique()}")
-        print(f"国家数: {results_df['country'].nunique()}")
-        print(f"解释方差: PC1={pca_results['explained_variance_ratio'][0]:.1%}, PC2={pca_results['explained_variance_ratio'][1]:.1%}")
-        
-        print("\\n各语言PC1均值:")
-        for lang, stats in language_analysis['language_statistics'].items():
-            if not np.isnan(stats['pc1_mean']):
-                print(f"  {lang}: {stats['pc1_mean']:.3f}")
-        
-        return {
-            'results_df': results_df,
-            'pca_results': pca_results,
-            'language_analysis': language_analysis,
-            'file_paths': file_paths
-        }
-    
-    def run_multilingual_analysis_for_runner(self) -> pd.DataFrame:
-        """为run脚本运行多语言分析，返回实体分数DataFrame"""
+        Args:
+            use_fixed_pca: 是否使用固定的PCA模型（Stage0的模型），默认True
+        """
         print("🚀 开始多语言角色扮演PCA分析...")
         
-        # 使用基类的方法运行完整分析
-        entity_scores = super().run_full_analysis()
+        if use_fixed_pca:
+            # 【新方法】使用固定的PCA模型，确保坐标系一致
+            entity_scores = self.run_analysis_with_fixed_pca()
+        else:
+            # 【旧方法】重新拟合PCA（不推荐，会导致坐标系变化）
+            print("⚠️ 警告：使用重新拟合PCA模式，坐标系可能与Stage0不一致")
+            entity_scores = super().run_full_analysis()
+        
+        # Stage3特有：分析语言效应
+        if hasattr(self, 'pca_results') and self.pca_results is not None and 'language' in self.pca_results.columns:
+            print("\n🌐 分析语言效应...")
+            language_analysis = self.analyze_language_effects(self.pca_results)
+            
+            # 打印语言统计摘要
+            if language_analysis['language_statistics']:
+                print("\n📊 各语言PC1均值（rescaled）:")
+                for lang, stats in language_analysis['language_statistics'].items():
+                    if not np.isnan(stats['pc1_mean']):
+                        print(f"   {lang}: {stats['pc1_mean']:.3f} (n={stats['count']})")
+            
+            # 保存语言分析结果
+            analysis_file = self.processed_dir / 'roleplay_ml_language_analysis_latest.json'
+            with open(analysis_file, 'w', encoding='utf-8') as f:
+                json.dump(language_analysis, f, ensure_ascii=False, indent=2, default=str)
+            print(f"✅ 语言分析结果: {analysis_file.name}")
         
         print(f"✅ 多语言PCA分析完成: {len(entity_scores)} 个实体")
         return entity_scores
+    
+    def run_analysis_with_fixed_pca(self) -> pd.DataFrame:
+        """使用固定的PCA模型运行分析（推荐方法）
+        
+        这个方法使用Stage0训练的PCA模型来转换Stage3的数据，
+        确保所有坐标都在同一个坐标系中，使得距离计算有意义。
+        
+        Returns:
+            实体分数DataFrame
+        """
+        print("\n" + "="*60)
+        print("🔄 使用固定PCA模型进行分析（与Stage0坐标系一致）")
+        print("="*60)
+        
+        # 1. 加载固定的PCA模型
+        pca_model_path = Path('data/country_values/pca_model_fixed.pkl')
+        if not pca_model_path.exists():
+            raise FileNotFoundError(
+                f"固定PCA模型不存在: {pca_model_path}\n"
+                "请先运行Stage0分析生成PCA模型：python src/country_values/pca_analysis.py"
+            )
+        
+        pca_model = self.load_pca_model(pca_model_path)
+        
+        # 2. 加载IVS数据（作为基准）
+        print("\n📊 加载IVS基准数据...")
+        if not self.load_base_data():
+            raise ValueError("加载IVS数据失败")
+        
+        ivs_data = self.prepare_ivs_data()
+        ivs_data['data_source'] = 'IVS'
+        print(f"   IVS数据: {len(ivs_data)} 行")
+        
+        # 3. 加载多语言角色扮演数据
+        print("\n📊 加载多语言角色扮演数据...")
+        multilingual_data = self.load_processed_data()
+        multilingual_data['data_source'] = 'Multilingual'
+        print(f"   多语言数据: {len(multilingual_data)} 行")
+        
+        # 4. 对IVS数据应用固定PCA
+        print("\n🔄 对IVS数据应用固定PCA...")
+        ivs_pca = self.transform_with_fixed_pca(ivs_data, pca_model)
+        ivs_pca['country_code'] = ivs_data['country_code'].values
+        ivs_pca['data_source'] = 'IVS'
+        if 'year' in ivs_data.columns:
+            ivs_pca['year'] = ivs_data['year'].values
+        
+        # 5. 对多语言数据应用固定PCA
+        print("\n🔄 对多语言数据应用固定PCA...")
+        ml_pca = self.transform_with_fixed_pca(multilingual_data, pca_model)
+        
+        # 添加元数据
+        ml_pca['country_code'] = multilingual_data['country_code'].values
+        ml_pca['data_source'] = 'Multilingual'
+        
+        # 添加多语言特有的元数据
+        for col in ['model_name', 'language', 'Country']:
+            if col in multilingual_data.columns:
+                ml_pca[col] = multilingual_data[col].values
+        
+        # 6. 合并结果
+        print("\n📊 合并PCA结果...")
+        self.pca_results = pd.concat([ivs_pca, ml_pca], ignore_index=True)
+        print(f"   合并后总行数: {len(self.pca_results)}")
+        
+        # 7. 合并国家元数据
+        self.pca_results = self.prepare_country_codes_for_merge(self.pca_results)
+        self.pca_results = self.merge_country_metadata(self.pca_results, on_column='country_code_clean')
+        
+        # 8. 计算实体分数
+        print("\n📊 计算实体分数...")
+        entity_scores = self.calculate_entity_scores()
+        
+        # 9. 保存结果
+        self.save_results(entity_scores)
+        
+        # 10. 打印摘要
+        self.print_summary(entity_scores)
+        
+        return entity_scores
+
+
+class LanguageComparisonAnalyzer:
+    """语言对比分析器 - 分析英文vs本国语言的效果"""
+    
+    def __init__(self):
+        """初始化语言对比分析器"""
+        from scipy.spatial.distance import euclidean
+        self.euclidean = euclidean
+    
+    @staticmethod
+    def normalize_country_name(name):
+        """标准化国家名称，处理各种命名变体"""
+        if pd.isna(name):
+            return None
+        name = str(name).strip()
+        
+        # 标准化映射表（处理完全不同的命名）
+        name_mapping = {
+            'Russian Federation': 'Russia',
+            'Korea, Republic of': 'Korea',
+            'Taiwan, Province of China': 'Taiwan',
+            'United States of America': 'United States',
+            'Viet Nam': 'Vietnam',
+        }
+        
+        # 如果在映射表中，直接替换
+        if name in name_mapping:
+            name = name_mapping[name]
+        
+        # 去除常见后缀
+        name = name.replace(' (the)', '').replace('(the)', '')
+        name = name.replace(' (Islamic Republic of)', '').replace('(Islamic Republic of)', '')
+        name = name.replace(' (Bolivarian Republic of)', '').replace('(Bolivarian Republic of)', '')
+        
+        return name.strip()
+    
+    def build_country_coords_dict(self, real_countries: pd.DataFrame):
+        """构建真实国家的坐标字典
+        
+        Args:
+            real_countries: IVS真实国家数据
+            
+        Returns:
+            Tuple[Dict, Dict]: (坐标字典, 名称映射字典)
+        """
+        # 先对IVS数据按国家分组并计算平均坐标
+        real_country_avg = real_countries.groupby('Country')[['PC1_rescaled', 'PC2_rescaled']].mean()
+        
+        # 为真实国家建立查找字典（使用标准化的Country名称）
+        real_country_coords = {}
+        real_country_name_mapping = {}  # 映射：标准化名称 -> 原始名称
+        for country_name, row in real_country_avg.iterrows():
+            if pd.notna(country_name) and country_name != 'Unknown':
+                normalized_name = self.normalize_country_name(country_name)
+                if normalized_name:
+                    real_country_coords[normalized_name] = (row['PC1_rescaled'], row['PC2_rescaled'])
+                    real_country_name_mapping[normalized_name] = country_name
+        
+        return real_country_coords, real_country_name_mapping
+    
+    def calculate_en_native_baseline(self, en_native_data: pd.DataFrame, real_country_coords: Dict):
+        """计算en-native（英语母语国家）的基准表现
+        
+        Args:
+            en_native_data: en-native数据
+            real_country_coords: 真实国家坐标字典
+            
+        Returns:
+            Tuple[Dict, List]: (基准字典, 所有距离列表)
+        """
+        en_native_countries_raw = en_native_data['country_code'].dropna().unique()
+        en_native_countries = set(self.normalize_country_name(name) for name in en_native_countries_raw if self.normalize_country_name(name))
+        en_native_baseline = {}
+        all_en_native_distances = []
+        
+        for country_name_normalized in en_native_countries:
+            if country_name_normalized in real_country_coords:
+                print(f"   🔍 匹配到en-native国家: {country_name_normalized}")
+                real_coords = real_country_coords[country_name_normalized]
+                country_en_native = en_native_data[
+                    en_native_data['country_code'].apply(self.normalize_country_name) == country_name_normalized
+                ]
+                distances = []
+                models_data = {}
+                
+                for _, row in country_en_native.iterrows():
+                    model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
+                    distance = self.euclidean(real_coords, model_coords)
+                    distances.append(distance)
+                    all_en_native_distances.append(distance)
+                    
+                    model_name = row.get('model_name', 'Unknown')
+                    models_data[model_name] = distance
+                
+                en_native_baseline[country_name_normalized] = {
+                    'avg_distance': np.mean(distances) if distances else None,
+                    'models': models_data
+                }
+        
+        print(f"📊 en-native基准: {len(en_native_baseline)} 个英语母语国家")
+        if all_en_native_distances:
+            print(f"📊 en-native平均距离: {np.mean(all_en_native_distances):.3f} （基准）")
+        
+        return en_native_baseline, all_en_native_distances
+    
+    def calculate_country_distances(self, matchable_countries, real_country_coords, 
+                                   native_data, english_data, en_native_data):
+        """计算每个国家的本国语言、英文、en-native距离
+        
+        Args:
+            matchable_countries: 可匹配的国家列表
+            real_country_coords: 真实国家坐标字典
+            native_data: 本国语言数据
+            english_data: 英文数据
+            en_native_data: en-native数据
+            
+        Returns:
+            Dict: 国家对比结果字典
+        """
+        country_comparisons = {}
+        for country_name_normalized in matchable_countries:
+            real_coords = real_country_coords[country_name_normalized]
+            country_results = {
+                'real_coordinates': real_coords,
+                'native_distances': [],
+                'english_distances': [],
+                'en_native_distances': [],
+                'models': {}
+            }
+            
+            # 计算本国语言距离
+            country_native = native_data[
+                native_data['country_code'].apply(self.normalize_country_name) == country_name_normalized
+            ]
+            for _, row in country_native.iterrows():
+                model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
+                distance = self.euclidean(real_coords, model_coords)
+                country_results['native_distances'].append(distance)
+                
+                model_name = row.get('model_name', 'Unknown')
+                if model_name not in country_results['models']:
+                    country_results['models'][model_name] = {}
+                country_results['models'][model_name]['native_distance'] = distance
+            
+            # 计算英文距离
+            country_english = english_data[
+                english_data['country_code'].apply(self.normalize_country_name) == country_name_normalized
+            ]
+            for _, row in country_english.iterrows():
+                model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
+                distance = self.euclidean(real_coords, model_coords)
+                country_results['english_distances'].append(distance)
+                
+                model_name = row.get('model_name', 'Unknown')
+                if model_name not in country_results['models']:
+                    country_results['models'][model_name] = {}
+                country_results['models'][model_name]['english_distance'] = distance
+            
+            # 计算en-native距离
+            country_en_native = en_native_data[
+                en_native_data['country_code'].apply(self.normalize_country_name) == country_name_normalized
+            ]
+            for _, row in country_en_native.iterrows():
+                model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
+                distance = self.euclidean(real_coords, model_coords)
+                country_results['en_native_distances'].append(distance)
+                
+                model_name = row.get('model_name', 'Unknown')
+                if model_name not in country_results['models']:
+                    country_results['models'][model_name] = {}
+                country_results['models'][model_name]['en_native_distance'] = distance
+            
+            # 计算平均距离
+            country_results['avg_native_distance'] = np.mean(country_results['native_distances']) if country_results['native_distances'] else None
+            country_results['avg_english_distance'] = np.mean(country_results['english_distances']) if country_results['english_distances'] else None
+            country_results['avg_en_native_distance'] = np.mean(country_results['en_native_distances']) if country_results['en_native_distances'] else None
+            
+            country_comparisons[country_name_normalized] = country_results
+        
+        return country_comparisons
+    
+    def analyze_model_specific_language_performance(self, native_data, english_data, 
+                                                   real_country_coords, matchable_countries):
+        """分析每个模型的语言效果对比
+        
+        Args:
+            native_data: 本国语言数据
+            english_data: 英文数据
+            real_country_coords: 真实国家坐标字典
+            matchable_countries: 可匹配的国家列表
+            
+        Returns:
+            Dict: 模型分析结果字典
+        """
+        model_analysis = {}
+        
+        # 获取所有模型
+        all_models = set()
+        if 'model_name' in native_data.columns:
+            all_models.update(native_data['model_name'].dropna().unique())
+        if 'model_name' in english_data.columns:
+            all_models.update(english_data['model_name'].dropna().unique())
+        
+        for model_name in all_models:
+            model_stats = {
+                'model_name': model_name,
+                'native_distances': [],
+                'english_distances': [],
+                'native_avg_distance': None,
+                'english_avg_distance': None,
+                'language_improvement': None,
+                'countries_analyzed': [],
+                'native_count': 0,
+                'english_count': 0
+            }
+            
+            # 分析该模型在每个国家的表现（使用标准化名称匹配）
+            for country_name_normalized in matchable_countries:
+                real_coords = real_country_coords[country_name_normalized]
+                
+                # 本国语言数据
+                model_native = native_data[
+                    (native_data['country_code'].apply(self.normalize_country_name) == country_name_normalized) & 
+                    (native_data['model_name'] == model_name)
+                ]
+                
+                for _, row in model_native.iterrows():
+                    model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
+                    distance = self.euclidean(real_coords, model_coords)
+                    model_stats['native_distances'].append(distance)
+                    model_stats['native_count'] += 1
+                
+                # 英文数据
+                model_english = english_data[
+                    (english_data['country_code'].apply(self.normalize_country_name) == country_name_normalized) & 
+                    (english_data['model_name'] == model_name)
+                ]
+                
+                for _, row in model_english.iterrows():
+                    model_coords = (row['PC1_rescaled'], row['PC2_rescaled'])
+                    distance = self.euclidean(real_coords, model_coords)
+                    model_stats['english_distances'].append(distance)
+                    model_stats['english_count'] += 1
+                
+                # 如果该模型在这个国家有数据，记录
+                if len(model_native) > 0 or len(model_english) > 0:
+                    model_stats['countries_analyzed'].append(country_name_normalized)
+            
+            # 计算平均距离
+            if model_stats['native_distances']:
+                model_stats['native_avg_distance'] = float(np.mean(model_stats['native_distances']))
+            if model_stats['english_distances']:
+                model_stats['english_avg_distance'] = float(np.mean(model_stats['english_distances']))
+            
+            # 计算改进百分比
+            if model_stats['native_avg_distance'] and model_stats['english_avg_distance']:
+                native_avg = model_stats['native_avg_distance']
+                english_avg = model_stats['english_avg_distance']
+                improvement = ((native_avg - english_avg) / native_avg) * 100
+                model_stats['language_improvement'] = float(improvement)
+            
+            model_analysis[model_name] = model_stats
+        
+        return model_analysis
+    
+    def calculate_language_distance_comparison(self, real_countries, multilingual_native, 
+                                              multilingual_english, multilingual_en_native):
+        """计算三种语言类型的距离对比：en-native（基准）vs en vs native
+        
+        Args:
+            real_countries: IVS真实国家数据
+            multilingual_native: 本国语言数据
+            multilingual_english: 英文数据
+            multilingual_en_native: en-native数据
+            
+        Returns:
+            Dict: 对比结果字典
+        """
+        print("📏 计算距离对比...")
+        
+        comparison_results = {
+            'summary': {},
+            'country_details': {},
+            'model_performance': {},
+            'language_effectiveness': {},
+            'model_specific_analysis': {},
+            'en_native_baseline': {}
+        }
+        
+        # 使用传入的分离后数据
+        native_data = multilingual_native
+        english_data = multilingual_english
+        en_native_data = multilingual_en_native
+        
+        print(f"📊 本国语言数据: {len(native_data)} 个实体")
+        print(f"📊 英文数据(非英语国家): {len(english_data)} 个实体")
+        print(f"📊 英语母语国家(en-native): {len(en_native_data)} 个实体")
+        
+        # 构建真实国家坐标字典
+        real_country_coords, real_country_name_mapping = self.build_country_coords_dict(real_countries)
+        print(f"📊 真实国家数量: {len(real_country_coords)}")
+        
+        # 获取多语言数据中的国家列表
+        all_multilingual_data = pd.concat([native_data, english_data, en_native_data], ignore_index=True)
+        multilingual_countries_raw = all_multilingual_data['country_code'].dropna().unique()
+        multilingual_countries = set(self.normalize_country_name(name) for name in multilingual_countries_raw if self.normalize_country_name(name))
+        print(f"📊 多语言数据覆盖的国家: {len(multilingual_countries)}")
+        
+        # 找到可以匹配的国家
+        matchable_countries = real_country_coords.keys() & multilingual_countries
+        print(f"📊 可匹配的国家数量: {len(matchable_countries)}")
+        print(f"📊 可匹配的国家: {sorted(list(matchable_countries))}")
+        
+        # 计算en-native基准
+        en_native_baseline, all_en_native_distances = self.calculate_en_native_baseline(en_native_data, real_country_coords)
+        
+        # 按国家分组计算距离（本国语言 vs 英文）
+        country_comparisons = self.calculate_country_distances(matchable_countries, real_country_coords, native_data, english_data, en_native_data)
+        
+        # 汇总统计
+        all_native_distances = []
+        all_english_distances = []
+        
+        for country_data in country_comparisons.values():
+            if country_data['native_distances']:
+                all_native_distances.extend(country_data['native_distances'])
+            if country_data['english_distances']:
+                all_english_distances.extend(country_data['english_distances'])
+        
+        comparison_results['summary'] = {
+            'total_countries_analyzed': len(country_comparisons),
+            'en_native_avg_distance': float(np.mean(all_en_native_distances)) if all_en_native_distances else None,
+            'native_language_avg_distance': float(np.mean(all_native_distances)) if all_native_distances else None,
+            'english_language_avg_distance': float(np.mean(all_english_distances)) if all_english_distances else None,
+            'language_improvement': None,
+            'native_vs_en_native': None,
+            'english_vs_en_native': None
+        }
+        
+        # 保存en-native基准信息
+        comparison_results['en_native_baseline'] = en_native_baseline
+        
+        # 计算改进百分比
+        if comparison_results['summary']['native_language_avg_distance'] and comparison_results['summary']['english_language_avg_distance']:
+            native_avg = comparison_results['summary']['native_language_avg_distance']
+            english_avg = comparison_results['summary']['english_language_avg_distance']
+            improvement = ((native_avg - english_avg) / native_avg) * 100
+            comparison_results['summary']['language_improvement'] = float(improvement)
+        
+        if comparison_results['summary']['native_language_avg_distance'] and comparison_results['summary']['en_native_avg_distance']:
+            native_avg = comparison_results['summary']['native_language_avg_distance']
+            en_native_avg = comparison_results['summary']['en_native_avg_distance']
+            diff = ((native_avg - en_native_avg) / en_native_avg) * 100
+            comparison_results['summary']['native_vs_en_native'] = float(diff)
+        
+        if comparison_results['summary']['english_language_avg_distance'] and comparison_results['summary']['en_native_avg_distance']:
+            english_avg = comparison_results['summary']['english_language_avg_distance']
+            en_native_avg = comparison_results['summary']['en_native_avg_distance']
+            diff = ((english_avg - en_native_avg) / en_native_avg) * 100
+            comparison_results['summary']['english_vs_en_native'] = float(diff)
+        
+        comparison_results['country_details'] = country_comparisons
+        
+        # 按模型分析语言效果
+        print("\n📊 按模型分析语言效果...")
+        model_analysis = self.analyze_model_specific_language_performance(
+            native_data, english_data, real_country_coords, matchable_countries
+        )
+        comparison_results['model_specific_analysis'] = model_analysis
+        
+        # 输出统计信息
+        self._print_comparison_summary(comparison_results, model_analysis)
+        
+        return comparison_results
+    
+    def _print_comparison_summary(self, comparison_results, model_analysis):
+        """打印对比分析摘要"""
+        print(f"\n✅ 分析了 {comparison_results['summary']['total_countries_analyzed']} 个国家")
+        
+        # 显示三种语言类型的平均距离
+        print(f"\n📊 三种语言类型平均距离对比:")
+        if comparison_results['summary']['en_native_avg_distance']:
+            print(f"   🇺🇸 en-native (英语母语国家): {comparison_results['summary']['en_native_avg_distance']:.3f} ← 基准")
+        if comparison_results['summary']['english_language_avg_distance']:
+            print(f"   🌏 en (非英语国家用英语): {comparison_results['summary']['english_language_avg_distance']:.3f}")
+        if comparison_results['summary']['native_language_avg_distance']:
+            print(f"   🗣️  native (本国语言): {comparison_results['summary']['native_language_avg_distance']:.3f}")
+        
+        # 显示对比en-native基准的差距
+        print(f"\n📊 与en-native基准对比:")
+        if comparison_results['summary']['english_vs_en_native'] is not None:
+            diff = comparison_results['summary']['english_vs_en_native']
+            if diff > 0:
+                print(f"   en (非英语国家用英语) 比 en-native 差 {diff:.1f}%")
+            else:
+                print(f"   en (非英语国家用英语) 比 en-native 好 {-diff:.1f}%")
+        
+        if comparison_results['summary']['native_vs_en_native'] is not None:
+            diff = comparison_results['summary']['native_vs_en_native']
+            if diff > 0:
+                print(f"   native (本国语言) 比 en-native 差 {diff:.1f}%")
+            else:
+                print(f"   native (本国语言) 比 en-native 好 {-diff:.1f}%")
+        
+        # 显示native vs english对比
+        print(f"\n📊 native vs english 对比:")
+        if comparison_results['summary']['language_improvement']:
+            improvement = comparison_results['summary']['language_improvement']
+            if improvement > 0:
+                print(f"   英文比本国语言好 {improvement:.1f}%")
+            else:
+                print(f"   本国语言比英文好 {-improvement:.1f}%")
+        
+        # 输出每个模型的分析结果
+        print(f"\n🤖 各模型语言效果对比:")
+        for model_name, model_stats in model_analysis.items():
+            if model_stats['native_avg_distance'] and model_stats['english_avg_distance']:
+                native_avg = model_stats['native_avg_distance']
+                english_avg = model_stats['english_avg_distance']
+                improvement = ((native_avg - english_avg) / native_avg) * 100
+                
+                print(f"   {model_name.split('/')[-1]}:")
+                print(f"     本国语言: {native_avg:.3f}, 英文: {english_avg:.3f}")
+                if improvement > 0:
+                    print(f"     → 英文效果更好 ({improvement:.1f}%)")
+                else:
+                    print(f"     → 本国语言效果更好 ({-improvement:.1f}%)")
 
 
 def main():
     """主函数"""
-    analyzer = MultilingualRoleplayPCAAnalysis()
+    # 使用绝对路径，从项目根目录运行
+    analyzer = MultilingualRoleplayPCAAnalysis(data_path="data")
     
     try:
-        result = analyzer.run_complete_analysis()
-        print("\\n✅ 多语言PCA分析完成！")
-        print("\\n下一步可以运行可视化:")
-        print("  python src/roleplay/multilingual_roleplay_visualization.py")
+        entity_scores = analyzer.run_multilingual_analysis_for_runner()
+        print("\n✅ 多语言PCA分析完成！")
+        print(f"✅ 生成实体分数: {len(entity_scores)} 个")
+        print("\n下一步可以运行可视化:")
+        print("  python src/roleplay_multilingual/multilingual_roleplay_visualization.py")
         
     except Exception as e:
         print(f"❌ PCA分析失败: {e}")

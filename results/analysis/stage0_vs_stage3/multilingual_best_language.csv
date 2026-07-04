@@ -1,0 +1,6 @@
+country,languages,best_choice,best_distance,english_distance,best_native_distance,conclusion
+Belgium,"['fr', 'de']",de,2.3582921433663353,2.8692805682552036,2.3582921433663353,Native
+Hong Kong,"['zh-cn', 'zh-hk']",English,1.559300736505874,1.559300736505874,1.8527903998371102,English
+Luxembourg,"['fr', 'de']",fr,2.419658269871729,2.9737400083388517,2.419658269871729,Native
+Macao,"['zh-cn', 'pt']",zh-cn,1.3015055581236494,1.4780398422261931,1.3015055581236494,Native
+Switzerland,"['fr', 'de', 'it']",fr,1.7350729849872277,2.3165009017783804,1.7350729849872277,Native

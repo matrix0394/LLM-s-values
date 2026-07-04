@@ -69,7 +69,7 @@ class RoleplayEnglishAnalysisRunner:
     def _load_cultural_regions(self):
         """加载文化区域配置"""
         try:
-            cultural_regions_path = self.config_path / "cultural_regions.json"
+            cultural_regions_path = self.config_path / "country" / "cultural_regions.json"
             with open(cultural_regions_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 return data.get('cultural_regions', {})
@@ -102,6 +102,29 @@ class RoleplayEnglishAnalysisRunner:
             "West & South Asia": "India"
         }
         return test_countries_by_region
+    
+    def _get_stage3_test_countries(self):
+        """获取Stage 3使用的测试国家（新提示词测试）
+        
+        注意：
+        1. 使用Stage 2的国家名称格式（与cultural_regions.json一致）
+        2. 小规模测试：3个国家，重复3次
+        """
+        # 小规模测试：3个国家（2个非英语 + 1个英语母语）
+        test_countries = [
+            "China",
+            "Spain",
+            "United States"
+            # 完整测试时改为10个国家：
+            # "China", "Singapore",
+            # "Russian Federation",
+            # "Mexico", "Argentina",
+            # "Spain",
+            # "Egypt", "Morocco",
+            # "United States", "United Kingdom"
+        ]
+        
+        return test_countries
     
     def _get_all_countries(self):
         """获取所有109个国家"""
@@ -162,10 +185,12 @@ class RoleplayEnglishAnalysisRunner:
         
         # 选择国家和模型
         if test_mode:
-            print("🧪 测试模式：每个文化区域选择1个国家")
-            test_countries_by_region = self._get_test_countries_by_region()
-            countries = list(test_countries_by_region.values())
-            print(f"测试国家: {countries}")
+            print("🧪 测试模式：使用3个国家（China, Spain, United States）")
+            countries = self._get_stage3_test_countries()
+            print(f"   • 儒家文化圈: China")
+            print(f"   • 天主教欧洲: Spain")
+            print(f"   • 英语母语国家: United States")
+            print(f"   • 总计: {len(countries)} 个国家，覆盖3个文化区域")
         else:
             print("🌍 完整模式：使用所有109个国家")
             countries = self._get_all_countries()
@@ -214,11 +239,11 @@ class RoleplayEnglishAnalysisRunner:
         print(f"⏰ 开始时间: {datetime.now()}")
         
         try:
-            # 使用并发访谈
-            results = interview.batch_interview_concurrent(
+            # 使用并发访谈（统一接口）
+            results = interview.batch_interview(
                 model_names=models,
-                countries=countries,
-                max_workers=3  # 控制并发数避免API限制
+                entities=countries,
+                max_workers=3  # 控制并发数避免API限制，1为串行，>1为并行
             )
             
             if results and results.get('successful_tasks', 0) > 0:
@@ -299,7 +324,7 @@ class RoleplayEnglishAnalysisRunner:
             # 创建数据处理器，使用正确的配置路径
             processor = LLMCountryRoleplayDataProcessor(
                 data_dir=str(self.data_path),
-                config_path=str(self.config_path / "llm_models.json")
+                config_path=str(self.config_path / "models" / "llm_models.json")
             )
             
             # 检查是否有访谈数据需要处理
@@ -341,18 +366,11 @@ class RoleplayEnglishAnalysisRunner:
         print("="*60)
         
         try:
-            # 创建PCA分析器，使用正确的数据路径（指向包含IVS数据的country_values目录）
+            # 创建PCA分析器，传入项目data根目录
+            # 分析器会自动在 data/country_values 中查找IVS数据
+            # 在 data/roleplay_English 中查找角色扮演数据
             analyzer = LLMCountryRoleplayPCAAnalyzer(
-                data_path=str(self.project_root / "data" / "country_values")
-            )
-            
-            # 手动设置正确的roleplay数据路径
-            analyzer.roleplay_data_path = self.data_path
-            
-            # 手动设置roleplay数据处理器的路径
-            analyzer.data_processor = LLMCountryRoleplayDataProcessor(
-                data_dir=str(self.data_path),
-                config_path=str(self.config_path / "llm_models.json")
+                data_path=str(self.project_root / "data")
             )
             
             # 检查处理后的数据（查找最新文件）
@@ -608,6 +626,59 @@ class RoleplayEnglishAnalysisRunner:
             traceback.print_exc()
             return False
     
+    def step6_distance_analysis(self):
+        """步骤6: 距离分析"""
+        print("\n" + "="*60)
+        print("📏 步骤6: 文化距离分析")
+        print("="*60)
+        
+        try:
+            # 创建PCA分析器
+            print("\n1️⃣ 初始化PCA分析器...")
+            analyzer = LLMCountryRoleplayPCAAnalyzer(
+                data_path=str(self.project_root / "data")
+            )
+            
+            # 加载PCA结果
+            print("\n2️⃣ 加载PCA结果...")
+            latest_pca_file = self.data_path / "roleplay_pca_entity_scores_latest.pkl"
+            
+            if not latest_pca_file.exists():
+                # 查找带时间戳的PCA结果文件
+                pca_files = list(self.data_path.glob("roleplay_pca_entity_scores_*.pkl"))
+                if pca_files:
+                    latest_pca_file = max(pca_files, key=lambda x: x.stat().st_mtime)
+                else:
+                    print("❌ 未找到PCA结果文件，请先运行PCA分析")
+                    return False
+            
+            entity_scores = pd.read_pickle(latest_pca_file)
+            print(f"✅ 成功加载PCA结果: {len(entity_scores)} 个实体")
+            
+            # 计算距离
+            print("\n3️⃣ 计算文化距离...")
+            distance_df = analyzer.calculate_distances(entity_scores)
+            
+            if distance_df.empty:
+                print("❌ 距离计算失败")
+                return False
+            
+            # 保存距离分析结果
+            print("\n4️⃣ 保存距离分析结果...")
+            saved_path = analyzer.save_distances(distance_df)
+            
+            print(f"\n✅ 距离分析完成!")
+            print(f"📊 计算了 {len(distance_df)} 个距离值")
+            print(f"💾 结果已保存到: {saved_path}")
+            
+            return True
+            
+        except Exception as e:
+            print(f"❌ 距离分析失败: {e}")
+            import traceback
+            traceback.print_exc()
+            return False
+    
     def run_complete_analysis(self, test_mode=True, force_restart=False, skip_interview=False, consensus_count=5):
         """运行完整分析流程"""
         print("🚀 开始Roleplay English完整分析流程...")
@@ -649,6 +720,12 @@ class RoleplayEnglishAnalysisRunner:
         else:
             print("❌ 可视化失败")
         
+        # 步骤6: 距离分析
+        if self.step6_distance_analysis():
+            success_steps.append("距离分析")
+        else:
+            print("❌ 距离分析失败")
+        
         # 总结
         print("\n" + "="*60)
         print("🎉 Roleplay English分析完成!")
@@ -681,65 +758,92 @@ class RoleplayEnglishAnalysisRunner:
 def main():
     """主函数"""
     
-    print("🎭 Roleplay English Analysis Runner")
-    print("=" * 60)
+    print("\n" + "="*70)
+    print("🎭 Stage2: Roleplay English 分析系统")
+    print("="*70)
+    print("\n请选择要执行的操作：")
+    print("\n1️⃣  重新全部访谈 (所有109个国家，所有模型)")
+    print("2️⃣  测试小规模访谈 (3个国家：China/Spain/USA，所有模型)")
+    print("3️⃣  只分析现有数据 (数据处理 → PCA → 可视化)")
+    print("0️⃣  退出")
+    print("\n" + "="*70)
     
     try:
         # 创建分析运行器
         runner = RoleplayEnglishAnalysisRunner()
         
-        # 询问运行模式
-        print("\n🔧 选择运行模式:")
-        print("1. 测试模式 - 每个文化区域1个国家，所有7个模型")
-        print("2. 完整模式 - 所有109个国家，所有7个模型")
-        print("3. 仅分析模式 - 跳过访谈，直接分析现有数据")
-        
-        mode_choice = input("请选择模式 (1/2/3，默认1): ").strip()
-        
-        # 询问是否启用多次提问取众数
-        consensus_count = 5  # 默认5次，保持三阶段一致
-        if mode_choice in ["1", "2", ""]:
-            print("\n🔄 多次提问取众数设置:")
-            print("每个问题可以提问多次并取众数，提高回答的稳定性")
-            consensus_input = input("每个问题提问次数 (1-5，默认5): ").strip()
+        while True:
             try:
-                consensus_count = int(consensus_input) if consensus_input else 5
-                consensus_count = max(1, min(5, consensus_count))  # 限制在1-5之间
-            except ValueError:
-                consensus_count = 5
+                choice = input("\n请输入选项 (0-3): ").strip()
+                
+                if choice == '0':
+                    print("👋 退出程序")
+                    return 0
+                elif choice in ['1', '2', '3']:
+                    break
+                else:
+                    print("❌ 无效选项，请输入 0-3")
+            except (KeyboardInterrupt, EOFError):
+                print("\n\n👋 用户取消，退出程序")
+                return 0
+        
+        # 处理选项1: 重新全部访谈
+        if choice == '1':
+            print("\n🚀 选项1: 重新全部访谈")
+            print("  - 109个国家")
+            print("  - 7个模型")
+            print("  - 共识轮数: 3轮")
+            print("  - 然后自动运行 数据处理 → PCA → 可视化")
             
-            if consensus_count > 1:
-                print(f"✅ 启用多次提问取众数：每个问题提问 {consensus_count} 次")
-            else:
-                print("✅ 使用单次提问模式")
+            confirm = input("\n确认执行? (y/n): ").strip().lower()
+            if confirm != 'y':
+                print("❌ 已取消")
+                return 0
+            
+            success = runner.run_complete_analysis(
+                test_mode=False,  # 完整模式
+                force_restart=True,  # 强制重新开始
+                skip_interview=False,
+                consensus_count=3
+            )
         
-        if mode_choice == "2":
-            test_mode = False
-            skip_interview = False
-            print("🌍 选择完整模式")
-        elif mode_choice == "3":
-            test_mode = True
-            skip_interview = True
-            print("📊 选择仅分析模式")
-        else:
-            test_mode = True
-            skip_interview = False
-            print("🧪 选择测试模式")
+        # 处理选项2: 测试小规模访谈
+        elif choice == '2':
+            print("\n🧪 选项2: 测试小规模访谈")
+            print("  - 3个国家: China, Spain, United States")
+            print("  - 7个模型")
+            print("  - 共识轮数: 3轮")
+            print("  - 然后自动运行 数据处理 → PCA → 可视化")
+            
+            confirm = input("\n确认执行? (y/n): ").strip().lower()
+            if confirm != 'y':
+                print("❌ 已取消")
+                return 0
+            
+            success = runner.run_complete_analysis(
+                test_mode=True,  # 测试模式
+                force_restart=True,  # 强制重新开始
+                skip_interview=False,
+                consensus_count=3
+            )
         
-        # 询问是否强制重新开始
-        force_restart = False
-        if not skip_interview:
-            restart_input = input("\n是否强制重新开始访谈？(y/n，默认n): ").strip().lower()
-            if restart_input in ['y', 'yes', '是']:
-                force_restart = True
-        
-        # 运行完整分析
-        success = runner.run_complete_analysis(
-            test_mode=test_mode, 
-            force_restart=force_restart, 
-            skip_interview=skip_interview,
-            consensus_count=consensus_count
-        )
+        # 处理选项3: 只分析现有数据
+        elif choice == '3':
+            print("\n📊 选项3: 只分析现有数据")
+            print("  - 跳过访谈步骤")
+            print("  - 运行: 数据处理 → PCA → 可视化")
+            
+            confirm = input("\n确认执行? (y/n): ").strip().lower()
+            if confirm != 'y':
+                print("❌ 已取消")
+                return 0
+            
+            success = runner.run_complete_analysis(
+                test_mode=True,  # 使用test_mode（不影响分析）
+                force_restart=False,
+                skip_interview=True,  # 跳过访谈
+                consensus_count=3
+            )
         
         if success:
             print("\n🎊 分析完成!")

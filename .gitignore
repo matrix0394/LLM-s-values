@@ -1,87 +1,115 @@
-# Python缓存
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# 虚拟环境
+# Virtual Environment
 venv/
-env/
 ENV/
+env/
+.venv
 
-# 大型数据文件（> 100MB）
-# IVS原始数据
-data/raw/*.sav
-data/**/ivs_df.pkl
-data/**/ivs_df_backup.pkl
-
-# 大型JSON数据文件
-data/**/valid_data.json
-
-# 备份目录（包含大量重复的大文件）
-data/backup/
-data/backup_*/
-
-# 中间结果文件（PCA等，可重新生成）
-data/**/pca_results*.pkl
-data/**/roleplay_pca_results*.pkl
-data/**/llm_pca_results*.pkl
-data/**/llm_processed_responses*.pkl
-data/**/*_processed_responses*.pkl
-results/**/*.pkl
-
-# 带时间戳的临时文件 - 已允许上传（用户已清理旧文件）
-# data/**/interview_data_*_202*.json
-# data/**/llm_responses_*_202*.json
-# data/**/*_202*.pkl
-# results/**/*_202*.html
-# results/**/*_202*.png
-
-# 大型HTML可视化文件 - 已允许上传（用户已清理旧文件）
-# results/**/*.html
-# *.html
-
-# 临时文件
-temp_*.png
-temp_*.json
-
-# 日志文件
-logs/
-*.log
-
-# 测试输出
-simple_multilingual_test_*.csv
-simple_multilingual_test_*.json
-
-# IDE配置
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# 操作系统文件
 .DS_Store
-Thumbs.db
 
-# 敏感信息（如果有API密钥等）
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# 不上传 model_cultural_comp-main 目录
+model_cultural_comp-main/
+
+# 超大文件 (>100MB) - 原始数据
+data/country_values/ivs_df.pkl
+data/raw/*.sav
+data/raw/*.dta
+data/raw/*.spss
+
+# 备份目录
+data/backup/
+**/backup/
+**/*backup*/
+
+# 大型处理结果文件 (可重新生成)
+data/country_values/valid_data.json
+data/country_values/valid_data.pkl
+data/**/*_pca_results*.pkl
+data/**/pca_results*.pkl
+data/**/llm_pca_results*.pkl
+data/**/roleplay_pca_results*.pkl
+data/**/*_processed_responses*.pkl
+
+# 结果文件中的大文件
+results/**/*.pkl
+results/**/cultural_analysis_results.pkl
+
+# 日志文件
+logs/
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+
+# 大型可视化文件 (可选择性上传)
+# results/**/*.html
+
+# 数据文件大小限制
+# 排除超过10MB的JSON文件（保留小文件）
+# 如果需要更精确控制，可以具体指定路径
+
+# 多语言 roleplay 超大结果文件（不上传到 GitHub）
+data/roleplay_multilingual/llm_responses_roleplay_ml/
+data/roleplay_multilingual/roleplay_ml_pca_results_*.csv
+data/roleplay_multilingual/roleplay_ml_pca_entity_scores_*.pkl
+results/roleplay_multilingual/roleplay_ml_dashboard/
+data/country_values/ivs_df.pkl.bak
+data/llm_values/interview_raw/
+data/llm_values/llm_processed_responses_ivs_format_*.json
+
+# 缓存和临时文件
+__pycache__/
+*.pyc
+*.log
+*.bak
+data/*/_archive/
+.hypothesis/
+
+# 本机环境和密钥
 .env
-*.key
-*.secret
+.env.local
+.env.*.local
+.cursor/
+.mplconfig/
 
-# 但是保留一些重要的小配置文件
-!config/**/*.json
-!config/**/*.pkl
-!**/country_codes.pkl
-!**/cultural_regions.json
-
-# 保留最终结果的轻量级版本
-!results/**/*.json
-!results/**/*.csv
-!results/**/*.md
-
-# 保留小型可视化图片（< 2MB的重要图表）
-!results/llm_values/*.png
-!results/country_values/*.png
-
+# 本地打包副本和官方原始大数据
+*.zip
+LLM's values/
+The Value Atlas of AI/
+data/**/*.sav
+data/**/*.dta
+data/**/*.spss

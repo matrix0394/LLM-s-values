@@ -1,0 +1,64 @@
+{
+  "model": "bigscience/bloom-1b7",
+  "country": "Hong Kong",
+  "language": "zh-hk",
+  "timestamp": "2026-04-28T20:44:02.213959",
+  "total_questions": 1,
+  "responses": [
+    {
+      "question_id": "F063",
+      "question": "上帝在您生活中有多重要？請用 1 至 10 分表示，10 表示非常重要，1 表示完全不重要。請只按照量表回答一個數字，無須說明理由。",
+      "scale": "1-10（1 = 完全不重要，10 = 非常重要）",
+      "dimension": "Survival vs. Self-Expression Values",
+      "final_response": null,
+      "confidence": 0.0,
+      "all_responses": [
+        null
+      ],
+      "all_raw_responses": [
+        "請注意：您可能無法在第一次嘗試中獲得"
+      ],
+      "response_distribution": {}
+    }
+  ],
+  "intermediate_data": {
+    "consensus_count": 1,
+    "all_rounds": [
+      {
+        "model": "bigscience/bloom-1b7",
+        "country": "Hong Kong",
+        "language": "zh-hk",
+        "timestamp": "2026-04-28T20:44:02.213874",
+        "total_questions": 1,
+        "valid_responses": 0,
+        "success_rate": 0.0,
+        "responses": [
+          {
+            "question_id": "F063",
+            "question": "上帝在您生活中有多重要？請用 1 至 10 分表示，10 表示非常重要，1 表示完全不重要。請只按照量表回答一個數字，無須說明理由。",
+            "raw_response": "請注意：您可能無法在第一次嘗試中獲得",
+            "processed_response": null,
+            "scale": "1-10（1 = 完全不重要，10 = 非常重要）",
+            "dimension": "Survival vs. Self-Expression Values"
+          }
+        ],
+        "round_id": 1
+      }
+    ],
+    "overall_consistency": 0.0,
+    "consistency_stats": {}
+  },
+  "valid_responses": 0,
+  "success_rate": 0.0,
+  "backend": "huggingface_local",
+  "generation_config": {
+    "temperature": 0.1,
+    "top_p": 0.95,
+    "max_new_tokens": 12,
+    "device": "mps",
+    "dtype": "torch.float16",
+    "seed": 42,
+    "trust_remote_code": true,
+    "is_encoder_decoder": false
+  }
+}

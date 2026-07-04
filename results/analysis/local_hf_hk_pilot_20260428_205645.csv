@@ -1,0 +1,3 @@
+model,country,language,runs,valid_responses,total_questions,success_rate,overall_consistency,json_path
+DAMO-NLP-MT/polylm-1.7b,Hong Kong,en-native,1,0,1,0.00,0.0000,/Users/yxy/code/LLM's values/data/llm_interviews/multilingual/interview_raw/polylm-1.7b/polylm-1.7b_Hong Kong_en-native_20260428_205604_269.json
+DAMO-NLP-MT/polylm-1.7b,Hong Kong,zh-hk,1,1,1,100.00,1.0000,/Users/yxy/code/LLM's values/data/llm_interviews/multilingual/interview_raw/polylm-1.7b/polylm-1.7b_Hong Kong_zh-hk_20260428_205645_935.json

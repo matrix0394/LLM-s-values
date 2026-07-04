@@ -4,134 +4,86 @@ import pandas as pd
 import numpy as np
 from sklearn.svm import SVC
 import os
+import sys
+from pathlib import Path
 
-class CulturalMapVisualizer:
-    def __init__(self, data_path="../data"):
-        self.data_path = data_path
-        self.cultural_region_colors = {
-            'African-Islamic': '#000000',      # 黑色 - 与cultural_regions.json一致
-            'Confucian': '#56b4e9',           # 蓝色
-            'Latin America': '#cc79a7',       # 粉色
-            'Protestant Europe': '#d55e00',   # 橙红色
-            'Catholic Europe': '#e69f00',     # 橙色
-            'English-Speaking': '#009e73',    # 绿色
-            'Orthodox Europe': '#0072b2',     # 深蓝色
-            'West & South Asia': '#f0e442',   # 黄色
-        }
+# 添加项目路径以使用base模块
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
+from src.base.base_cultural_map_visualizer import BaseCulturalMapVisualizer
+
+
+class CulturalMapVisualizer(BaseCulturalMapVisualizer):
+    """Country Values可视化器 - 继承统一的base类"""
+    
+    def __init__(self, data_path="../data", results_path="../results"):
+        """初始化可视化器"""
+        super().__init__(data_path=data_path, results_path=results_path)
+        # 使用继承自base的统一颜色方案
+        # self.cultural_region_colors 已经由父类定义
+    
+    def load_data(self) -> pd.DataFrame:
+        """实现抽象方法 - 加载国家分数数据"""
+        return self.load_country_scores()
     
     def load_country_scores(self):
-        """
-        加载国家分数数据
-        """
-        country_scores_path = os.path.join(self.data_path, "country_scores_pca.pkl")
+        """加载国家分数数据"""
+        country_scores_path = os.path.join(str(self.data_path), "country_scores_pca.pkl")
         return pd.read_pickle(country_scores_path)
     
     def plot_cultural_map(self, country_scores_pca=None, figsize=(14, 10), save_path=None):
         """
-        绘制文化地图
-        参考7-pca-db.ipynb的实现
+        绘制文化地图 - 使用base的方法，添加伊斯兰国家标注
         """
         if country_scores_pca is None:
             country_scores_pca = self.load_country_scores()
         
-        plt.figure(figsize=figsize)
+        # 使用base的基础绘图方法
+        fig = self.plot_basic_cultural_map(
+            data=country_scores_pca,
+            figsize=figsize,
+            title='Inglehart-Welzel Cultural Map',
+            show_labels=False,  # 我们自己添加标签以支持伊斯兰标注
+            save_path=None  # 先不保存
+        )
         
-        # 为每个文化区域绘制对应颜色和样式的点
+        # 添加国家名称标签（支持伊斯兰国家的斜体标注）
+        ax = plt.gca()
         for region, color in self.cultural_region_colors.items():
             subset = country_scores_pca[country_scores_pca['Cultural Region'] == region]
             if len(subset) > 0:
-                # 添加国家名称标签
-                for i, row in subset.iterrows():
+                for _, row in subset.iterrows():
                     if 'Islamic' in country_scores_pca.columns and row['Islamic']:
-                        plt.text(row['PC1_rescaled'], row['PC2_rescaled'], row['Country'], 
-                                color=color, fontsize=10, fontstyle='italic')
+                        ax.text(row['PC1_rescaled'], row['PC2_rescaled'], row['Country'], 
+                               color=color, fontsize=10, fontstyle='italic')
                     else:
-                        plt.text(row['PC1_rescaled'], row['PC2_rescaled'], row['Country'], 
-                                color=color, fontsize=10)
-                
-                # 创建基于文化区域的散点图
-                plt.scatter(subset['PC1_rescaled'], subset['PC2_rescaled'], 
-                           label=region, color=color, s=50, alpha=0.7)
-        
-        plt.xlabel('Survival vs. Self-Expression Values')
-        plt.ylabel('Traditional vs. Secular Values')
-        plt.title('Inglehart-Welzel Cultural Map')
-        
-        # 添加图例
-        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
-        plt.grid(True, alpha=0.3)
-        plt.tight_layout()
+                        ax.text(row['PC1_rescaled'], row['PC2_rescaled'], row['Country'], 
+                               color=color, fontsize=10)
         
         if save_path:
             plt.savefig(save_path, dpi=300, bbox_inches='tight')
             print(f"Cultural map saved to {save_path}")
         
         plt.show()
+        return fig
     
     def plot_decision_boundary(self, country_scores_pca=None, figsize=(14, 10), save_path=None):
         """
-        绘制决策边界
-        参考7-pca-db.ipynb的决策边界可视化
+        绘制决策边界 - 直接使用base的方法
         """
         if country_scores_pca is None:
             country_scores_pca = self.load_country_scores()
         
-        # 准备训练数据
-        vis_data = country_scores_pca.dropna()[["PC1_rescaled", "PC2_rescaled", "Cultural Region"]]
-        vis_data['label'] = pd.Categorical(vis_data['Cultural Region']).codes
-        
-        # 创建颜色映射
-        tups = vis_data[['label', 'Cultural Region']].drop_duplicates().sort_values(by='label')
-        tups['color'] = tups['Cultural Region'].map(self.cultural_region_colors)
-        
-        # 处理缺失的颜色映射，使用默认颜色
-        tups['color'] = tups['color'].fillna('#808080')  # 灰色作为默认颜色
-        
-        tups.reset_index(drop=True, inplace=True)
-        cmap = mcolors.ListedColormap(tups['color'].values)
-        
-        # 训练SVM分类器
-        X = vis_data[['PC1_rescaled', 'PC2_rescaled']].values
-        y = vis_data['label'].values
-        
-        clf = SVC(kernel='rbf', gamma='scale', C=1.0)
-        clf.fit(X, y)
-        
-        # 创建网格用于绘制决策边界
-        h = 0.02  # 网格步长
-        x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
-        y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
-        xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
-                            np.arange(y_min, y_max, h))
-        
-        # 预测网格点
-        Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
-        Z = Z.reshape(xx.shape)
-        
-        plt.figure(figsize=figsize)
-        
-        # 绘制决策边界
-        plt.contourf(xx, yy, Z, alpha=0.3, cmap=cmap)
-        
-        # 绘制数据点
-        for region, color in self.cultural_region_colors.items():
-            subset = country_scores_pca[country_scores_pca['Cultural Region'] == region]
-            if len(subset) > 0:
-                plt.scatter(subset['PC1_rescaled'], subset['PC2_rescaled'], 
-                           label=region, color=color, s=50, edgecolors='black', linewidth=0.5)
-        
-        plt.xlabel('Survival vs. Self-Expression Values')
-        plt.ylabel('Traditional vs. Secular Values')
-        plt.title('Cultural Map with Decision Boundaries')
-        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
-        plt.grid(True, alpha=0.3)
-        plt.tight_layout()
-        
-        if save_path:
-            plt.savefig(save_path, dpi=300, bbox_inches='tight')
-            print(f"Decision boundary plot saved to {save_path}")
+        # 直接使用base类的决策边界方法
+        fig = super().plot_decision_boundary(
+            data=country_scores_pca,
+            target_column='Cultural Region',
+            figsize=figsize,
+            save_path=save_path
+        )
         
         plt.show()
+        return fig
     
     def create_summary_statistics(self, country_scores_pca=None):
         """

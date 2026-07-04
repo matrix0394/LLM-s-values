@@ -1,0 +1,28 @@
+country,cultural_region,native_language,colonial_power,native_distance_mean,en_distance_mean,advantage_mean,n_models,is_en_native
+Kenya,Sub-Saharan Africa (British),en,UK,1.8275,1.8275,0.0,20,True
+Nigeria,Sub-Saharan Africa (British),en,UK,1.4557,1.4557,0.0,20,True
+Ghana,Sub-Saharan Africa (British),en,UK,1.4037,1.4037,0.0,20,True
+South Africa,Sub-Saharan Africa (British),en,UK,2.2466,2.2466,0.0,20,True
+Zimbabwe,Sub-Saharan Africa (British),en,UK,1.667,1.667,0.0,20,True
+Zambia,Sub-Saharan Africa (British),en,UK,1.8188,1.8188,0.0,20,True
+Mali,Sub-Saharan Africa (French),fr,FR,2.4309,2.0036,17.5754,20,False
+Burkina Faso,Sub-Saharan Africa (French),fr,FR,2.1444,1.7689,17.5073,20,False
+Argentina,Latin America (Spanish),es,ES,2.35,2.4129,-2.6757,20,False
+Bolivia,Latin America (Spanish),es,ES,1.6396,1.3145,19.824,20,False
+Chile,Latin America (Spanish),es,ES,1.8797,1.6995,9.5866,20,False
+Colombia,Latin America (Spanish),es,ES,2.227,1.9954,10.3994,20,False
+Ecuador,Latin America (Spanish),es,ES,2.1829,1.8953,13.1776,20,False
+Guatemala,Latin America (Spanish),es,ES,1.9485,2.0015,-2.7171,20,False
+Mexico,Latin America (Spanish),es,ES,1.7924,1.5768,12.0302,20,False
+Nicaragua,Latin America (Spanish),es,ES,1.9179,1.5849,17.3653,20,False
+Peru,Latin America (Spanish),es,ES,1.3575,1.388,-2.2437,20,False
+Uruguay,Latin America (Spanish),es,ES,3.0482,3.2044,-5.1251,20,False
+Venezuela,Latin America (Spanish),es,ES,2.7597,3.0336,-9.9265,20,False
+Brazil,Latin America (Portuguese),pt,PT,2.0197,1.9474,3.5775,20,False
+Haiti,Latin America (French),fr,FR,3.2791,2.6108,20.3809,20,False
+China,Confucian,zh-cn,JP,0.9744,0.9737,0.0737,20,False
+Japan,Confucian,ja,-,1.849,1.7877,3.3172,20,False
+"Korea, Republic of",Confucian,ko,JP,1.4976,1.4531,2.9678,20,False
+"Taiwan, Province of China",Confucian,zh-tw,JP,2.7325,1.9932,27.0543,20,False
+Hong Kong,Confucian,zh-hk,UK,2.073,1.5593,24.781,20,False
+Macao,Confucian,pt,PT,1.5055,1.478,1.8212,20,False

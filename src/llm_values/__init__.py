@@ -4,7 +4,7 @@ LLM分析模块
 """
 
 # 导出核心类，简化外部导入
-from .llm_questionnaire import LLMResponse, IVSQuestions, ResponseValidator
+from src.base.ivs_questionnaire import LLMResponse, IVSQuestions, ResponseValidator
 # 注意：LLMInterview 因为依赖base模块，请直接导入避免循环依赖
 # from .llm_interview import LLMInterview
 

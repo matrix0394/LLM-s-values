@@ -53,17 +53,21 @@ class ProcessedRoleplayResponse:
             'G006': self.G006,
             'Y002_first': self.Y002_first,
             'Y002_second': self.Y002_second,
-            'Y002_materialist': self.Y002_materialist
+            'Y002_materialist': self.Y002_materialist,
+            'Y002': self.Y002_materialist  # 直接添加Y002列（与IVS格式一致）
         }
         
         # 处理Y003的多个值 - 使用base中的统一方法
         if self.Y003_values:
             y003_result = IVSQuestionProcessor.process_y003(self.Y003_values)
-            # 使用base方法的二进制编码结果
+            # 保存y003_score（这是PCA分析需要的）
+            result['Y003'] = y003_result["y003_score"]
+            # 同时保存二进制编码（用于调试和验证）
             for key, value in y003_result["binary_encoding"].items():
                 result[key] = value
         else:
-            # 如果没有Y003值，设置所有为0
+            # 如果没有Y003值，设置为NaN
+            result['Y003'] = np.nan
             for i in range(1, 12):
                 result[f'Y003_{i}'] = 0
                 
@@ -88,7 +92,7 @@ class LLMCountryRoleplayDataProcessor:
             current_path = Path(__file__).parent
             while current_path.name != "LLM's values" and current_path.parent != current_path:
                 current_path = current_path.parent
-            config_path = current_path / 'config' / 'llm_models.json'
+            config_path = current_path / 'config' / 'models' / 'llm_models.json'
             
         self.data_dir = Path(data_dir)
         self.config_path = Path(config_path)
@@ -124,7 +128,7 @@ class LLMCountryRoleplayDataProcessor:
         while current_path.name != "LLM's values" and current_path.parent != current_path:
             current_path = current_path.parent
         
-        cultural_config_path = current_path / 'config' / 'cultural_regions.json'
+        cultural_config_path = current_path / 'config' / 'country' / 'cultural_regions.json'
         try:
             with open(cultural_config_path, 'r', encoding='utf-8') as f:
                 config = json.load(f)
@@ -476,6 +480,12 @@ class LLMCountryRoleplayDataProcessor:
             # 选择角色扮演数据的相关列（检查列是否存在）
             roleplay_columns = ['model_name', 'data_source']
             
+            # 添加元数据列（如果存在）
+            metadata_cols = ['model_region', 'cultural_region']
+            for col in metadata_cols:
+                if col in roleplay_df.columns:
+                    roleplay_columns.append(col)
+            
             # 检查country_code列
             if 'country_code' in roleplay_df.columns:
                 roleplay_columns.append('country_code')
@@ -486,15 +496,16 @@ class LLMCountryRoleplayDataProcessor:
             available_questions = []
             for q in ivs_questions:
                 if q in roleplay_df.columns:
+                    # 如果Y003列已经存在（从to_dict()中计算好的），直接使用
                     available_questions.append(q)
                 elif q == 'Y002' and 'Y002_materialist' in roleplay_df.columns:
                     # Y002特殊处理
                     available_questions.append('Y002_materialist')
-                elif q == 'Y003' and any(col.startswith('Y003_') for col in roleplay_df.columns):
-                    # Y003特殊处理，选择第一个Y003相关列
+                elif q == 'Y003' and 'Y003' not in roleplay_df.columns:
+                    # Y003后备方案：如果Y003列不存在，包含所有二进制编码列用于重建
                     y003_cols = [col for col in roleplay_df.columns if col.startswith('Y003_')]
                     if y003_cols:
-                        available_questions.append(y003_cols[0])
+                        available_questions.extend(y003_cols)
             
             roleplay_columns.extend(available_questions)
             
@@ -506,16 +517,33 @@ class LLMCountryRoleplayDataProcessor:
             if 'country_name' in roleplay_selected.columns and 'country_code' not in roleplay_selected.columns:
                 roleplay_selected = roleplay_selected.rename(columns={'country_name': 'country_code'})
             
-            # 处理Y002和Y003的特殊情况
-            if 'Y002_materialist' in roleplay_selected.columns:
-                roleplay_selected['Y002'] = roleplay_selected['Y002_materialist']
-                roleplay_selected = roleplay_selected.drop('Y002_materialist', axis=1)
-            
-            # 处理Y003（选择第一个Y003相关列作为Y003）
-            y003_cols = [col for col in roleplay_selected.columns if col.startswith('Y003_')]
-            if y003_cols:
-                roleplay_selected['Y003'] = roleplay_selected[y003_cols[0]]
-                roleplay_selected = roleplay_selected.drop(y003_cols, axis=1)
+            # Y002和Y003现在应该已经在to_dict()中计算好并保存了
+            # 只需要处理后备方案：如果Y003列不存在，从二进制编码重建
+            if 'Y003' not in roleplay_selected.columns:
+                y003_cols = [col for col in roleplay_selected.columns if col.startswith('Y003_')]
+                if y003_cols:
+                    def calc_y003_score(row):
+                        """从二进制编码计算Y003分数（后备方案）"""
+                        selected = []
+                        for col in y003_cols:
+                            val = row[col] if col in row.index else 0
+                            if pd.notna(val) and val == 1:
+                                option_num = int(col.split('_')[1])
+                                selected.append(option_num)
+                        
+                        if not selected:
+                            return np.nan
+                        
+                        result = IVSQuestionProcessor.process_y003(selected)
+                        return result["y003_score"]
+                    
+                    roleplay_selected['Y003'] = roleplay_selected.apply(calc_y003_score, axis=1)
+                    roleplay_selected = roleplay_selected.drop(y003_cols, axis=1)
+            else:
+                # Y003列已存在，删除二进制编码列（如果有的话）
+                y003_cols = [col for col in roleplay_selected.columns if col.startswith('Y003_')]
+                if y003_cols:
+                    roleplay_selected = roleplay_selected.drop(y003_cols, axis=1)
             
             # 确保所有IVS问题列都存在（缺失的用NaN填充）
             for q in ivs_questions:
@@ -527,7 +555,7 @@ class LLMCountryRoleplayDataProcessor:
             ivs_selected['model_name'] = 'Real_Country'
             
             # 给角色扮演数据添加year列
-            roleplay_selected['year'] = 2024  # 使用当前年份
+            roleplay_selected['year'] = 2025  # 使用当前年份
             
             # 合并数据
             combined_df = pd.concat([ivs_selected, roleplay_selected], ignore_index=True)
@@ -545,51 +573,108 @@ class LLMCountryRoleplayDataProcessor:
             traceback.print_exc()
             return roleplay_df
     
-    def create_ivs_compatible_dataframe(self) -> pd.DataFrame:
-        """创建与IVS数据格式兼容的DataFrame
+    def create_ivs_compatible_dataframe(self, processed_df: pd.DataFrame = None) -> pd.DataFrame:
+        """创建与IVS数据格式兼容的DataFrame（仅包含角色扮演数据）
+        
+        Args:
+            processed_df: 可选的已处理数据，如果为None则重新加载处理
         
         Returns:
-            与真实IVS数据格式兼容的DataFrame
+            与真实IVS数据格式兼容的DataFrame（仅角色扮演数据，不包含IVS）
         """
-        processed_df = self.process_all_roleplay_data()
+        # 如果没有传入数据，则重新加载处理（不合并IVS）
+        if processed_df is None:
+            processed_df = self.process_all_roleplay_data(merge_with_ivs=False)
+        else:
+            # 如果传入的是合并后的数据，只提取角色扮演部分
+            if 'data_source' in processed_df.columns:
+                processed_df = processed_df[processed_df['data_source'] == 'llm_roleplay'].copy()
+                # 重置索引以避免索引不匹配问题
+                processed_df = processed_df.reset_index(drop=True)
         
         if processed_df.empty:
             return pd.DataFrame()
         
-        # 创建兼容格式的DataFrame
+        # 创建兼容格式的DataFrame（使用.values避免索引问题）
         ivs_compatible = pd.DataFrame()
         
         # 添加元数据列
         ivs_compatible['year'] = [2025] * len(processed_df)  # 使用当前年份
-        ivs_compatible['country_code'] = processed_df['country_name']  # 使用国家名作为代码
+        
+        # 智能处理country_code列（可能是country_name或country_code）
+        if 'country_name' in processed_df.columns:
+            ivs_compatible['country_code'] = processed_df['country_name'].values
+        elif 'country_code' in processed_df.columns:
+            ivs_compatible['country_code'] = processed_df['country_code'].values
+        else:
+            raise ValueError("processed_df中既没有country_name也没有country_code列")
+        
         ivs_compatible['weight'] = [1.0] * len(processed_df)  # 统一权重
-        ivs_compatible['model_name'] = processed_df['model_name']
-        ivs_compatible['model_region'] = processed_df['model_region']
-        ivs_compatible['cultural_region'] = processed_df['cultural_region']
+        
+        # 智能处理可选的元数据列（使用.values避免索引问题）
+        if 'model_name' in processed_df.columns:
+            ivs_compatible['model_name'] = processed_df['model_name'].values
+        else:
+            ivs_compatible['model_name'] = 'Unknown'
+        
+        if 'model_region' in processed_df.columns:
+            ivs_compatible['model_region'] = processed_df['model_region'].values
+        else:
+            print(f"   ⚠️ 警告：model_region列不存在，使用'Unknown'填充")
+            ivs_compatible['model_region'] = 'Unknown'
+        
+        if 'cultural_region' in processed_df.columns:
+            ivs_compatible['cultural_region'] = processed_df['cultural_region'].values
+        else:
+            print(f"   ⚠️ 警告：cultural_region列不存在，使用'Unknown'填充")
+            ivs_compatible['cultural_region'] = 'Unknown'
+        
         ivs_compatible['data_source'] = ['llm_roleplay'] * len(processed_df)
         
-        # 添加IVS问题列
+        # 添加IVS问题列（带安全检查，使用.values避免索引问题）
         ivs_questions = ['A008', 'A165', 'E018', 'E025', 'F063', 'F118', 'F120', 'G006']
         for q in ivs_questions:
-            ivs_compatible[q] = processed_df[q]
+            if q in processed_df.columns:
+                ivs_compatible[q] = processed_df[q].values
+            else:
+                print(f"   ⚠️ 警告：{q}列不存在，使用NaN填充")
+                ivs_compatible[q] = np.nan
         
         # 处理Y002 - 使用物质主义倾向值
-        ivs_compatible['Y002'] = processed_df['Y002_materialist']
+        if 'Y002_materialist' in processed_df.columns:
+            ivs_compatible['Y002'] = processed_df['Y002_materialist'].values
+        elif 'Y002' in processed_df.columns:
+            ivs_compatible['Y002'] = processed_df['Y002'].values
+        else:
+            print(f"   ⚠️ 警告：Y002和Y002_materialist列都不存在，使用NaN填充")
+            ivs_compatible['Y002'] = np.nan
         
-        # 处理Y003 - 使用base中的统一方法获取主值
-        def get_primary_y003_value(row):
-            # 如果有Y003_processed数据，直接使用
-            if hasattr(row, 'Y003_processed') and row.Y003_processed:
-                selected_values = row.Y003_processed.get('selected_values', [])
-                return selected_values[0] if selected_values else np.nan
-            
-            # 否则从二进制编码中获取第一个选中的值
-            for i in range(1, 12):
-                if row.get(f'Y003_{i}', 0) == 1:
-                    return i
-            return np.nan
-        
-        ivs_compatible['Y003'] = processed_df.apply(get_primary_y003_value, axis=1)
+        # 处理Y003 - 优先使用已经计算好的Y003值（合并数据中已有）
+        if 'Y003' in processed_df.columns:
+            # 如果已经有Y003列（合并数据中），直接使用
+            ivs_compatible['Y003'] = processed_df['Y003'].values
+        elif 'Y003_processed' in processed_df.columns:
+            # 否则尝试从Y003_processed提取
+            def get_y003_score(row):
+                y003_proc = row.get('Y003_processed')
+                if pd.notna(y003_proc) and isinstance(y003_proc, dict):
+                    return y003_proc.get('y003_score', np.nan)
+                return np.nan
+            ivs_compatible['Y003'] = processed_df.apply(get_y003_score, axis=1).values
+        else:
+            # 最后，尝试从二进制编码重建
+            y003_cols = [col for col in processed_df.columns if col.startswith('Y003_')]
+            if y003_cols:
+                def calc_from_binary(row):
+                    selected = [int(col.split('_')[1]) for col in y003_cols if row.get(col, 0) == 1]
+                    if not selected:
+                        return np.nan
+                    result = IVSQuestionProcessor.process_y003(selected)
+                    return result["y003_score"]
+                ivs_compatible['Y003'] = processed_df.apply(calc_from_binary, axis=1).values
+            else:
+                print(f"   ⚠️ 警告：无法找到Y003相关数据，使用NaN填充")
+                ivs_compatible['Y003'] = np.nan
         
         return ivs_compatible
     
@@ -606,32 +691,47 @@ class LLMCountryRoleplayDataProcessor:
         if output_path is None:
             output_path = self.data_dir / f'llm_roleplay_processed_responses_{timestamp}.pkl'
         
-        # 处理数据（包含IVS合并）
+        # 🔄 步骤1: 处理角色扮演数据（可选择是否与IVS合并）
+        print(f"\n{'='*60}")
+        print("📊 处理角色扮演数据")
+        print(f"{'='*60}")
         processed_df = self.process_all_roleplay_data(merge_with_ivs=merge_with_ivs)
         
         if not processed_df.empty:
-            # 保存合并后的完整数据
+            # 💾 步骤2: 保存完整数据（含IVS或不含IVS，取决于merge_with_ivs参数）
+            print(f"\n💾 保存处理后的完整数据...")
             processed_df.to_pickle(output_path)
-            print(f"💾 处理后的完整数据已保存到: {output_path}")
+            print(f"   ✅ 已保存到: {output_path}")
             
-            # 同时保存一个最新版本（用于PCA分析）
             latest_path = self.data_dir / 'llm_roleplay_processed_responses_latest.pkl'
             processed_df.to_pickle(latest_path)
-            print(f"💾 最新数据已保存到: {latest_path}")
+            print(f"   ✅ 最新版本: {latest_path}")
             
-            # 保存IVS兼容格式（带时间戳）
-            ivs_path = self.data_dir / f'llm_roleplay_processed_responses_ivs_format_{timestamp}.pkl'
-            processed_df.to_pickle(ivs_path)
-            print(f"💾 IVS兼容格式数据已保存到: {ivs_path}")
+            # 💾 步骤3: 创建并保存IVS兼容格式（传入已处理的数据，避免重复加载）
+            print(f"\n🔄 创建IVS兼容格式...")
+            ivs_compatible_df = self.create_ivs_compatible_dataframe(processed_df=processed_df)
             
-            # 保存IVS格式的最新版本
-            ivs_latest_path = self.data_dir / 'llm_roleplay_processed_responses_ivs_format_latest.pkl'
-            processed_df.to_pickle(ivs_latest_path)
-            print(f"💾 IVS格式最新数据已保存到: {ivs_latest_path}")
+            if not ivs_compatible_df.empty:
+                ivs_path = self.data_dir / f'llm_roleplay_processed_responses_ivs_format_{timestamp}.pkl'
+                ivs_compatible_df.to_pickle(ivs_path)
+                print(f"   ✅ IVS格式已保存: {ivs_path}")
+                print(f"   📋 包含列: {len(ivs_compatible_df.columns)} 个")
+                if 'cultural_region' in ivs_compatible_df.columns:
+                    print(f"   ✅ cultural_region 列已包含")
+                
+                # 保存IVS格式的最新版本
+                ivs_latest_path = self.data_dir / 'llm_roleplay_processed_responses_ivs_format_latest.pkl'
+                ivs_compatible_df.to_pickle(ivs_latest_path)
+                print(f"   ✅ IVS格式最新版本: {ivs_latest_path}")
+            
+            print(f"\n{'='*60}")
+            print("✅ 数据处理完成")
+            print(f"{'='*60}\n")
             
             return processed_df
         else:
-            print("没有数据需要保存")
+            print("❌ 没有数据需要保存")
+            return None
     
     def get_summary_statistics(self) -> Dict[str, Any]:
         """获取数据摘要统计

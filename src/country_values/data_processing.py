@@ -5,14 +5,16 @@ import pickle
 import json
 
 class DataProcessor:
-    def __init__(self, data_path="data"):
+    def __init__(self, data_path="data/country_values"):
+        # 获取项目根目录
+        self.project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
         # 确保使用绝对路径
         if not os.path.isabs(data_path):
-            current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            self.data_path = os.path.join(current_dir, data_path)
+            self.data_path = os.path.join(self.project_root, data_path)
         else:
             self.data_path = data_path
-            
+
         # 确保数据目录存在
         os.makedirs(self.data_path, exist_ok=True)
         print(f"Data path resolved to: {self.data_path}")
@@ -119,35 +121,51 @@ class DataProcessor:
     def create_country_codes(self):
         """
         创建country_codes.pkl文件，包含完整的国家元数据
+        使用 cultural_regions 中的 Numeric 数字码来匹配文化区域
         """
-        # 加载配置文件
-        config_path = os.path.join(os.path.dirname(self.data_path), 'config', 'cultural_regions.json')
+        # 加载配置文件 - 从项目根目录计算
+        project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        config_path = os.path.join(project_root, 'config', 'country', 'cultural_regions.json')
         with open(config_path, 'r', encoding='utf-8') as f:
             config = json.load(f)
-        
-        # 从配置文件获取映射数据
-        cultural_regions = config['country_cultural_mapping']
-        islamic_countries_list = config['islamic_countries']
-        country_codes_mapping = config['country_codes']
-        
-        # 转换伊斯兰国家列表为字典格式
+
+        # 从 cultural_regions 获取 Numeric -> 区域 的映射
+        # cultural_regions 结构: {区域名: [numeric码列表]}
+        numeric_to_region = {}
+        for region, codes in config['cultural_regions'].items():
+            for code in codes:
+                numeric_to_region[code] = region
+
+        # 从配置文件获取 islamic_countries
+        islamic_countries_list = config.get('islamic_countries', [])
         islamic_countries = {country: True for country in islamic_countries_list}
-        
+
+        # 从配置文件获取完整的国家代码映射 (国家名 -> Numeric)
+        country_codes_mapping = config.get('country_codes', {})
+
         # 创建基础DataFrame - 使用配置文件中的完整国家代码
         country_codes = pd.DataFrame({
             'Country': list(country_codes_mapping.keys()),
             'Numeric': list(country_codes_mapping.values())
         })
-        
-        # 添加文化区域和伊斯兰标识列
-        country_codes['Cultural Region'] = country_codes['Country'].map(cultural_regions).fillna('Other')
+
+        # 使用 Numeric 数字码匹配文化区域（更可靠）
+        country_codes['Cultural Region'] = country_codes['Numeric'].map(numeric_to_region).fillna('Other')
+
+        # 伊斯兰国家通过国家名匹配
         country_codes['Islamic'] = country_codes['Country'].map(islamic_countries).fillna(False)
-        
-        # 保存文件
-        country_codes_path = os.path.join(self.data_path, "country_codes.pkl")
+
+        # 保存文件到 config/country 目录
+        config_dir = os.path.join(project_root, 'config', 'country')
+        country_codes_path = os.path.join(config_dir, "country_codes.pkl")
         country_codes.to_pickle(country_codes_path)
         print(f"Country codes saved to {country_codes_path} with {len(country_codes)} countries")
-        
+
+        # 同时保存为 JSON 格式
+        country_codes_json_path = os.path.join(config_dir, "country_codes.json")
+        country_codes.to_json(country_codes_json_path, orient='records', indent=2, force_ascii=False)
+        print(f"Country codes JSON saved to {country_codes_json_path}")
+
         return country_codes
 
 def main():
@@ -165,14 +183,16 @@ def main():
         ivs_df = processor.load_ivs_data()
         print(f"成功加载数据: {len(ivs_df)} 行, {len(ivs_df.columns)} 列")
         
-        # 2. 创建country_codes.pkl（如果不存在）
-        print("\n2. 检查并创建country_codes.pkl...")
-        country_codes_path = os.path.join(processor.data_path, "country_codes.pkl")
-        if not os.path.exists(country_codes_path):
+        # 2. 创建country_codes（如果不存在）
+        print("\n2. 检查并创建country_codes...")
+        # country_codes 现在保存在 config/country 目录
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        config_country_codes_path = os.path.join(project_root, 'config', 'country', 'country_codes.pkl')
+        if not os.path.exists(config_country_codes_path):
             country_codes = processor.create_country_codes()
-            print(f"创建了country_codes.pkl，包含 {len(country_codes)} 个国家")
+            print(f"创建了country_codes，包含 {len(country_codes)} 个国家")
         else:
-            print("country_codes.pkl 已存在")
+            print("country_codes 已存在于 config/country 目录")
         
         # 3. 获取过滤后的数据
         print("\n3. 获取过滤后的数据...")

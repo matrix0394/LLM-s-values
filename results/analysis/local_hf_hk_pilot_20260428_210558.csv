@@ -1,0 +1,5 @@
+model,country,language,runs,valid_responses,total_questions,success_rate,overall_consistency,json_path
+bigscience/bloom-1b7,Hong Kong,en-native,1,0,1,0.00,0.0000,/Users/yxy/code/LLM's values/data/llm_interviews/multilingual/interview_raw/bloom-1b7/bloom-1b7_Hong Kong_en-native_20260428_205921_552.json
+bigscience/bloom-1b7,Hong Kong,zh-hk,1,0,1,0.00,0.0000,/Users/yxy/code/LLM's values/data/llm_interviews/multilingual/interview_raw/bloom-1b7/bloom-1b7_Hong Kong_zh-hk_20260428_210211_557.json
+DAMO-NLP-MT/polylm-1.7b,Hong Kong,en-native,1,0,1,0.00,0.0000,/Users/yxy/code/LLM's values/data/llm_interviews/multilingual/interview_raw/polylm-1.7b/polylm-1.7b_Hong Kong_en-native_20260428_210353_594.json
+DAMO-NLP-MT/polylm-1.7b,Hong Kong,zh-hk,1,0,1,0.00,0.0000,/Users/yxy/code/LLM's values/data/llm_interviews/multilingual/interview_raw/polylm-1.7b/polylm-1.7b_Hong Kong_zh-hk_20260428_210558_113.json

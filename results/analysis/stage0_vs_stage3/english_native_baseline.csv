@@ -1,0 +1,381 @@
+country,original_country,config_country,language,model,is_english,is_english_native_country,native_language,native_languages,is_using_native_language,cultural_region,is_islamic,real_PC1,real_PC2,llm_PC1,llm_PC2,distance
+Australia,Australia,Australia,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.2422310204336195,3.4541302327872607,3.313357617352637
+Australia,Australia,Australia,en-native,claude-sonnet-4.5,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.522627069633016,2.780336285267228,2.978895176005988
+Australia,Australia,Australia,en-native,deepseek-chat,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.972448414806629,1.2357183894190735,2.6511529240971083
+Australia,Australia,Australia,en-native,deepseek-chat-v3.1,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.115853510664578,1.0427674279204808,1.7735183780570765
+Australia,Australia,Australia,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,3.206593641855808,1.9231543035548984,1.215513453064642
+Australia,Australia,Australia,en-native,gemini-2.5-flash,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.072918380293153,4.0826377125928195,3.769205358074631
+Australia,Australia,Australia,en-native,gemini-2.5-pro,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.090429964137575,4.053975378511204,3.751637299309985
+Australia,Australia,Australia,en-native,gemini-3-pro-preview,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.831246904410658,3.899640643387289,4.020431094983445
+Australia,Australia,Australia,en-native,gemma-3-4b-it,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,1.0507333776057792,2.5621428777997406,2.964160112394908
+Australia,Australia,Australia,en-native,gpt-4o,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.297932639536375,1.6785043874553285,2.151597295328784
+Australia,Australia,Australia,en-native,gpt-4o-mini,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.737465951825365,3.629212798735201,3.750236416733247
+Australia,Australia,Australia,en-native,gpt-5.1,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.072918380293153,4.0826377125928195,3.769205358074631
+Australia,Australia,Australia,en-native,grok-4.1-fast,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,4.309606028391595,2.752186634845698,2.238931471740274
+Australia,Australia,Australia,en-native,kimi-k2,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,6.04761316655584,2.5167272805310272,3.2233635709653905
+Australia,Australia,Australia,en-native,llama-3.2-3b-instruct,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,4.133086526420753,1.8567190701468623,1.3687627169222687
+Australia,Australia,Australia,en-native,llama-3.3-70b-instruct,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,5.518836559421972,2.386046490771888,2.7179843776170767
+Australia,Australia,Australia,en-native,mistral-medium-3.1,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,4.729725288801697,3.746151642025332,3.3176602269086293
+Australia,Australia,Australia,en-native,mistral-nemo,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,4.4211054540240555,2.626847283905271,2.1772285859908527
+Australia,Australia,Australia,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,4.1448784367610045,3.900626695287937,3.2741522489826416
+Australia,Australia,Australia,en-native,qwen3-max,True,True,en,[],True,English-Speaking,False,3.3721445203,0.7189674986,3.719239929771916,2.885401173624193,2.1940624630022065
+Canada,Canada,Canada,en-native,claude-3-7-sonnet-20250219,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,5.144410810452714,2.501174882862969,2.5217430587844616
+Canada,Canada,Canada,en-native,claude-sonnet-4.5,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,5.522627069633016,2.780336285267228,2.9917465166283352
+Canada,Canada,Canada,en-native,deepseek-chat,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,5.859308953387582,3.835164085206297,3.9510247835053836
+Canada,Canada,Canada,en-native,deepseek-chat-v3.1,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,6.164631838767285,2.4126484440747107,3.348604679802646
+Canada,Canada,Canada,en-native,doubao-1-5-pro-32k-250115,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,5.786545354127718,2.0509450002608816,2.8558252508086563
+Canada,Canada,Canada,en-native,gemini-2.5-flash,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,5.850445366641197,2.842606457006681,3.2933867181514374
+Canada,Canada,Canada,en-native,gemini-2.5-pro,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,4.97509817031225,3.129682362668529,2.835407839748786
+Canada,Canada,Canada,en-native,gemini-3-pro-preview,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,6.0147267882281445,2.2711737157846072,3.1528535144341387
+Canada,Canada,Canada,en-native,gemma-3-4b-it,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,2.422695267189786,2.604709185500707,1.7938890992459418
+Canada,Canada,Canada,en-native,gpt-4o,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,4.441337735394325,1.4855534259567351,1.396704985720227
+Canada,Canada,Canada,en-native,gpt-4o-mini,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,5.761488743406676,2.882208735282006,3.2440082364738427
+Canada,Canada,Canada,en-native,gpt-5.1,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,4.951075378730937,3.876686426121725,3.4274074740984983
+Canada,Canada,Canada,en-native,grok-4.1-fast,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,4.520405653188332,2.9185356430414675,2.3901054514832927
+Canada,Canada,Canada,en-native,kimi-k2,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,6.070108578184318,4.001513093402066,4.216888700754179
+Canada,Canada,Canada,en-native,llama-3.2-3b-instruct,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,3.2744293844107273,1.136642798784396,0.2158719057325899
+Canada,Canada,Canada,en-native,llama-3.3-70b-instruct,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,5.518836559421972,2.386046490771888,2.7667642270513504
+Canada,Canada,Canada,en-native,mistral-medium-3.1,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,4.60788228723948,3.5402003555542363,2.9628381209534327
+Canada,Canada,Canada,en-native,mistral-nemo,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,3.644470083761313,3.291650739652647,2.381288477690561
+Canada,Canada,Canada,en-native,phi-3-mini-128k-instruct,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,3.5661974282681235,1.405524470107686,0.6101428250645493
+Canada,Canada,Canada,en-native,qwen3-max,True,True,fr,"['fr', 'en']",False,English-Speaking,False,3.146022511,0.9631136815,4.666032165490964,2.5873853237686353,2.2245646130476384
+Ghana,Ghana,Ghana,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.3910782486102256,-1.6360974448248975,0.7437940280502229
+Ghana,Ghana,Ghana,en-native,claude-sonnet-4.5,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.5304328340168638,-1.813386397214377,0.6335594434288553
+Ghana,Ghana,Ghana,en-native,deepseek-chat,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.2740595763987803,-1.740176281281214,0.6196080410960149
+Ghana,Ghana,Ghana,en-native,deepseek-chat-v3.1,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-0.3331427845490908,-2.976412478250663,1.0684955777931942
+Ghana,Ghana,Ghana,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.9625825487428417,-2.11027018950654,0.798395625466489
+Ghana,Ghana,Ghana,en-native,gemini-2.5-flash,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.9800941325872636,-2.081607855424925,0.8241603540734818
+Ghana,Ghana,Ghana,en-native,gemini-2.5-pro,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.7692945077905256,-1.9152588472291552,0.7175240994155772
+Ghana,Ghana,Ghana,en-native,gemini-3-pro-preview,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.9800941325872636,-2.081607855424925,0.8241603540734818
+Ghana,Ghana,Ghana,en-native,gemma-3-4b-it,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-0.3159754534301471,0.4265200865647074,2.920128326614557
+Ghana,Ghana,Ghana,en-native,gpt-4o,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-0.1117926946198507,-2.8458776941542694,1.1961093044695248
+Ghana,Ghana,Ghana,en-native,gpt-4o-mini,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,0.5891578064645164,-3.2020676287602448,1.981824283242106
+Ghana,Ghana,Ghana,en-native,gpt-5.1,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.7692945077905256,-1.9152588472291552,0.7175240994155772
+Ghana,Ghana,Ghana,en-native,grok-4.1-fast,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-2.1908937573840013,-2.2479568636206952,0.9939098016898926
+Ghana,Ghana,Ghana,en-native,kimi-k2,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-0.8846375546715511,-1.7867844439115546,0.6518367708048517
+Ghana,Ghana,Ghana,en-native,llama-3.2-3b-instruct,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,1.3037226752426796,1.6628701475254783,4.736198301941417
+Ghana,Ghana,Ghana,en-native,llama-3.3-70b-instruct,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.9800941325872636,-2.081607855424925,0.8241603540734818
+Ghana,Ghana,Ghana,en-native,mistral-medium-3.1,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.7692945077905256,-1.9152588472291552,0.7175240994155772
+Ghana,Ghana,Ghana,en-native,mistral-nemo,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,0.3094258079435736,-0.2631589660050196,2.581777938045607
+Ghana,Ghana,Ghana,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,1.706603806681907,0.1515616307000655,3.840716475641658
+Ghana,Ghana,Ghana,en-native,qwen3-max,True,True,en,[],True,African-Islamic,True,-1.2028386135,-2.3556774584,-1.6018778734069636,-1.8024464530206672,0.682126730351571
+Ireland,Ireland,Ireland,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,5.120388018871402,3.2481789463161657,5.3531648511761265
+Ireland,Ireland,Ireland,en-native,claude-sonnet-4.5,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,3.772448920868708,2.4586085751620033,3.883768529794575
+Ireland,Ireland,Ireland,en-native,deepseek-chat,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,4.193103600073739,1.9603859498730931,3.7835441922233986
+Ireland,Ireland,Ireland,en-native,deepseek-chat-v3.1,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,6.244129397124152,0.6734311626792575,4.952437270380142
+Ireland,Ireland,Ireland,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,4.949019137675475,0.8835018937912523,3.8042245323543176
+Ireland,Ireland,Ireland,en-native,gemini-2.5-flash,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,2.9097889790334106,2.4069920238148255,3.3985278244004147
+Ireland,Ireland,Ireland,en-native,gemini-2.5-pro,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,4.951075378730937,3.876686426121725,5.7253234876272865
+Ireland,Ireland,Ireland,en-native,gemini-3-pro-preview,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,5.0280870554694825,2.3164841108759844,4.642098708258221
+Ireland,Ireland,Ireland,en-native,gemma-3-4b-it,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,1.221526006929617,1.2723684072060866,1.9649782743323818
+Ireland,Ireland,Ireland,en-native,gpt-4o,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,3.233347912706422,1.4003290369517192,2.7180039395518945
+Ireland,Ireland,Ireland,en-native,gpt-4o-mini,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,4.882268653095414,1.2870140023219443,3.9286688311086984
+Ireland,Ireland,Ireland,en-native,gpt-5.1,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,6.436176729733993,1.3198070380354685,5.34374740178343
+Ireland,Ireland,Ireland,en-native,grok-4.1-fast,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,3.172323563908092,1.4579967984556226,2.723951935820395
+Ireland,Ireland,Ireland,en-native,kimi-k2,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,5.542729576462553,1.721584468728263,4.718136699091509
+Ireland,Ireland,Ireland,en-native,llama-3.2-3b-instruct,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,4.150598110265174,1.828056736065247,3.6614396792759303
+Ireland,Ireland,Ireland,en-native,llama-3.3-70b-instruct,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,4.260496165331413,0.5134079855659258,3.025010267208553
+Ireland,Ireland,Ireland,en-native,mistral-medium-3.1,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,4.59688191113195,2.850520960264271,4.706939115359198
+Ireland,Ireland,Ireland,en-native,mistral-nemo,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,5.382327913837931,1.772126691197297,4.607359414481273
+Ireland,Ireland,Ireland,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,2.9666310791585837,0.9958282836070348,2.2376291059853055
+Ireland,Ireland,Ireland,en-native,qwen3-max,True,True,en,[],True,Catholic Europe,False,1.478989121,-0.6756696734,3.6513303837553774,2.6971722770410036,4.011873550415604
+Kenya,Kenya,Kenya,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.3910782486102256,-1.6360974448248975,1.4004931748936802
+Kenya,Kenya,Kenya,en-native,claude-sonnet-4.5,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.1697281586809858,-1.5055626607285044,1.143543826020585
+Kenya,Kenya,Kenya,en-native,deepseek-chat,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.3910782486102256,-1.6360974448248975,1.4004931748936802
+Kenya,Kenya,Kenya,en-native,deepseek-chat-v3.1,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.5129212501724425,-1.8420487312959923,1.612954550055594
+Kenya,Kenya,Kenya,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.8232279633362032,-1.9329812371170605,1.9235320122574449
+Kenya,Kenya,Kenya,en-native,gemini-2.5-flash,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.9800941325872636,-2.081607855424925,2.1351186018355306
+Kenya,Kenya,Kenya,en-native,gemini-2.5-pro,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.9800941325872636,-2.081607855424925,2.1351186018355306
+Kenya,Kenya,Kenya,en-native,gemini-3-pro-preview,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.9800941325872636,-2.081607855424925,2.1351186018355306
+Kenya,Kenya,Kenya,en-native,gemma-3-4b-it,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-0.1941324518679303,0.6324713730358025,1.572148429784617
+Kenya,Kenya,Kenya,en-native,gpt-4o,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.291571160243202,-1.7115139471995988,1.3565493715737773
+Kenya,Kenya,Kenya,en-native,gpt-4o-mini,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-0.3623094505176755,-1.930017207691419,1.007800920866611
+Kenya,Kenya,Kenya,en-native,gpt-5.1,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.9800941325872636,-2.081607855424925,2.1351186018355306
+Kenya,Kenya,Kenya,en-native,grok-4.1-fast,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-3.3706722230073525,-1.1135931166660251,3.199334404999465
+Kenya,Kenya,Kenya,en-native,kimi-k2,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-0.8671259708271294,-1.8154467779931696,1.1156644186623499
+Kenya,Kenya,Kenya,en-native,llama-3.2-3b-instruct,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,1.7989576066344242,1.837952713473419,3.408137446637252
+Kenya,Kenya,Kenya,en-native,llama-3.3-70b-instruct,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.4975464556891684,-1.5678328324679576,1.4632154384471674
+Kenya,Kenya,Kenya,en-native,mistral-medium-3.1,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.408589832454647,-1.6074351107432825,1.4018325869804815
+Kenya,Kenya,Kenya,en-native,mistral-nemo,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-0.4487534080863016,1.203902797341191,2.160750796306156
+Kenya,Kenya,Kenya,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,1.706603806681907,0.1515616307000655,2.176017297438922
+Kenya,Kenya,Kenya,en-native,qwen3-max,True,True,en,[],True,African-Islamic,True,-0.1760740085,-0.9395733394,-1.6018778734069636,-1.8024464530206672,1.666573332137851
+Malaysia,Malaysia,Malaysia,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.2467398354195305,0.0546396545172364,1.1216092245780132
+Malaysia,Malaysia,Malaysia,en-native,claude-sonnet-4.5,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-0.5982238585483695,-1.0313899160468611,0.18994489657170552
+Malaysia,Malaysia,Malaysia,en-native,deepseek-chat,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.1697281586809858,-1.5055626607285044,0.8908861710287443
+Malaysia,Malaysia,Malaysia,en-native,deepseek-chat-v3.1,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.1697281586809858,-1.5055626607285044,0.8908861710287443
+Malaysia,Malaysia,Malaysia,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.584366289562542,-1.8311087871022824,1.4130981104265274
+Malaysia,Malaysia,Malaysia,en-native,gemini-2.5-flash,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.0016562268829956,-1.6827056074552378,0.9422693187964443
+Malaysia,Malaysia,Malaysia,en-native,gemini-2.5-pro,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.835755719396568,-0.3908707560827913,1.3401142622144941
+Malaysia,Malaysia,Malaysia,en-native,gemini-3-pro-preview,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-2.407260019529184,-0.8650435007644341,1.833188873421492
+Malaysia,Malaysia,Malaysia,en-native,gemma-3-4b-it,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,0.3166367724403731,2.2851878618370214,3.2525325798387157
+Malaysia,Malaysia,Malaysia,en-native,gpt-4o,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.0303735732743475,-1.3282737083390244,0.6660408764964112
+Malaysia,Malaysia,Malaysia,en-native,gpt-4o-mini,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-0.1184639489599566,-0.3146966107239869,0.6976902441556597
+Malaysia,Malaysia,Malaysia,en-native,gpt-5.1,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.835755719396568,-0.3908707560827913,1.3401142622144941
+Malaysia,Malaysia,Malaysia,en-native,grok-4.1-fast,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-2.1908937573840013,-2.2479568636206952,2.1418856326722837
+Malaysia,Malaysia,Malaysia,en-native,kimi-k2,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.3910782486102256,-1.6360974448248975,1.1385669968495802
+Malaysia,Malaysia,Malaysia,en-native,llama-3.2-3b-instruct,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,1.7989576066344242,1.837952713473419,3.5803969262987727
+Malaysia,Malaysia,Malaysia,en-native,llama-3.3-70b-instruct,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.4975464556891684,-1.5678328324679576,1.1738771289133134
+Malaysia,Malaysia,Malaysia,en-native,mistral-medium-3.1,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.047885157118769,-1.2996113742574096,0.6579477598435073
+Malaysia,Malaysia,Malaysia,en-native,mistral-nemo,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,0.1508129410232382,1.6135989838418423,2.561323912334537
+Malaysia,Malaysia,Malaysia,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,2.3061701557914467,0.5612578172007169,3.2044361364430984
+Malaysia,Malaysia,Malaysia,en-native,qwen3-max,True,True,en,[],True,West & South Asia,False,-0.5742040464,-0.8429698737,-1.907200758786668,-0.3799308118890817,1.4111291252030767
+Malta,Malta,Malta,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,-0.1029889271566251,-0.85630735009892,0.6713587756784338
+Malta,Malta,Malta,en-native,claude-sonnet-4.5,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.01402974505482,-0.9603861865552368,0.6183683003012201
+Malta,Malta,Malta,en-native,deepseek-chat,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.8659899136699882,-2.1570201052493605,1.3207824091537745
+Malta,Malta,Malta,en-native,deepseek-chat-v3.1,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,1.2218702596550943,-2.159226491690899,1.6404012976702818
+Malta,Malta,Malta,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,-0.3795074555617327,-1.3575607611277687,0.17560306358837108
+Malta,Malta,Malta,en-native,gemini-2.5-flash,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.0324099777939762,0.0806168891129301,1.6148998304097295
+Malta,Malta,Malta,en-native,gemini-2.5-pro,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.7159491223539799,-1.0627373496143977,1.0906873965356432
+Malta,Malta,Malta,en-native,gemini-3-pro-preview,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.598930450142535,-0.9586585131580811,1.0355489949009482
+Malta,Malta,Malta,en-native,gemma-3-4b-it,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.8608213315937392,0.9645446707202134,2.7196246720312245
+Malta,Malta,Malta,en-native,gpt-4o,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,1.1329136364205732,-2.1196242134155745,1.5430306469562036
+Malta,Malta,Malta,en-native,gpt-4o-mini,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,3.150670805349893,-2.050455952411786,3.4757290976707753
+Malta,Malta,Malta,en-native,gpt-5.1,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.9267487471507178,-0.8963883414186278,1.35238730468713
+Malta,Malta,Malta,en-native,grok-4.1-fast,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.1163827732444403,-1.472433536115049,0.3993296588028354
+Malta,Malta,Malta,en-native,kimi-k2,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,1.8209872891874015,-1.057566933747218,2.149480317343378
+Malta,Malta,Malta,en-native,llama-3.2-3b-instruct,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,3.296266336381333,4.2611854453862295,6.784758981441929
+Malta,Malta,Malta,en-native,llama-3.3-70b-instruct,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,1.2835626849554944,-0.1670277612251268,2.0581919603784873
+Malta,Malta,Malta,en-native,mistral-medium-3.1,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,0.8531130653524495,-0.738772890975029,1.3684294022911128
+Malta,Malta,Malta,en-native,mistral-nemo,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,3.687751156856322,0.490599773963109,4.442188323595735
+Malta,Malta,Malta,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,2.4231888280028913,0.4571789807444,3.3407551291749367
+Malta,Malta,Malta,en-native,qwen3-max,True,True,en,[],True,Catholic Europe,False,-0.2817419412,-1.503431732,-0.524588176750101,-1.1890053664904603,0.3972886022130433
+New Zealand,New Zealand,New Zealand,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.2422310204336195,3.4541302327872607,3.2131090207364514
+New Zealand,New Zealand,New Zealand,en-native,claude-sonnet-4.5,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.522627069633016,2.780336285267228,2.882305461448492
+New Zealand,New Zealand,New Zealand,en-native,deepseek-chat,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,4.998834838453134,1.1468462643767976,1.6122660187770117
+New Zealand,New Zealand,New Zealand,en-native,deepseek-chat-v3.1,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,6.487815400248586,1.0853337356214476,3.0774563673931272
+New Zealand,New Zealand,New Zealand,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.786545354127718,2.0509450002608816,2.6714810424539497
+New Zealand,New Zealand,New Zealand,en-native,gemini-2.5-flash,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.40226405725417,1.913118008008038,2.2679801091961105
+New Zealand,New Zealand,New Zealand,en-native,gemini-2.5-pro,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.072918380293153,4.0826377125928195,3.6689271005481308
+New Zealand,New Zealand,New Zealand,en-native,gemini-3-pro-preview,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,6.497274465126239,2.784948738741575,3.6562898658987453
+New Zealand,New Zealand,New Zealand,en-native,gemma-3-4b-it,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,2.8673727379761287,1.3594824967586003,0.784630921492085
+New Zealand,New Zealand,New Zealand,en-native,gpt-4o,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.621116201017676,0.3511896790020646,2.244490561805477
+New Zealand,New Zealand,New Zealand,en-native,gpt-4o-mini,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,7.246590094409733,0.3253293471957497,3.8535315632548013
+New Zealand,New Zealand,New Zealand,en-native,gpt-5.1,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.072918380293153,4.0826377125928195,3.6689271005481308
+New Zealand,New Zealand,New Zealand,en-native,grok-4.1-fast,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.6219272687972905,3.072024644403423,3.1577876550180477
+New Zealand,New Zealand,New Zealand,en-native,kimi-k2,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,6.497274465126239,2.784948738741575,3.6562898658987453
+New Zealand,New Zealand,New Zealand,en-native,llama-3.2-3b-instruct,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,3.518115387535161,1.5485453717265858,0.749019490555571
+New Zealand,New Zealand,New Zealand,en-native,llama-3.3-70b-instruct,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.518836559421972,2.386046490771888,2.6248794090606893
+New Zealand,New Zealand,New Zealand,en-native,mistral-medium-3.1,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,4.729725288801697,3.746151642025332,3.217801715622626
+New Zealand,New Zealand,New Zealand,en-native,mistral-nemo,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.364816329993508,1.800789025278912,2.1819041265174257
+New Zealand,New Zealand,New Zealand,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,3.931726432954773,2.02337832952097,1.3197501993949972
+New Zealand,New Zealand,New Zealand,en-native,qwen3-max,True,True,en,[],True,English-Speaking,False,3.4231011101,0.805576675,5.336884055557319,1.7827235420503338,2.1488092428388272
+Nigeria,Nigeria,Nigeria,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-1.6193894572513852,-1.7737841189390524,0.46581063650379606
+Nigeria,Nigeria,Nigeria,en-native,claude-sonnet-4.5,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-1.5304328340168638,-1.813386397214377,0.4042590391131414
+Nigeria,Nigeria,Nigeria,en-native,deepseek-chat,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-1.5129212501724425,-1.8420487312959923,0.40596522849272443
+Nigeria,Nigeria,Nigeria,en-native,deepseek-chat-v3.1,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-1.9625825487428417,-2.11027018950654,0.928339408149672
+Nigeria,Nigeria,Nigeria,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-2.1733821735395797,-2.2766191977023102,1.1961111423490645
+Nigeria,Nigeria,Nigeria,en-native,gemini-2.5-flash,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-2.6180596443259216,-1.0313925089602043,1.5392456223584197
+Nigeria,Nigeria,Nigeria,en-native,gemini-2.5-pro,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-2.407260019529184,-0.8650435007644341,1.4238040732942565
+Nigeria,Nigeria,Nigeria,en-native,gemini-3-pro-preview,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-1.9800941325872636,-2.081607855424925,0.927795515003199
+Nigeria,Nigeria,Nigeria,en-native,gemma-3-4b-it,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-0.4378184549923637,0.2205688000936126,1.9683106335479856
+Nigeria,Nigeria,Nigeria,en-native,gpt-4o,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-1.5304328340168638,-1.813386397214377,0.4042590391131414
+Nigeria,Nigeria,Nigeria,en-native,gpt-4o-mini,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-2.3897484356847625,-0.8937058348460494,1.3941046330076885
+Nigeria,Nigeria,Nigeria,en-native,gpt-5.1,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-1.9800941325872636,-2.081607855424925,0.927795515003199
+Nigeria,Nigeria,Nigeria,en-native,grok-4.1-fast,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-3.797838109949272,0.1029712379944659,3.1164401484000903
+Nigeria,Nigeria,Nigeria,en-native,kimi-k2,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-0.8846375546715511,-1.7867844439115546,0.35610076807582497
+Nigeria,Nigeria,Nigeria,en-native,llama-3.2-3b-instruct,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,1.7814460227900026,1.866615047555034,4.563730003358298
+Nigeria,Nigeria,Nigeria,en-native,llama-3.3-70b-instruct,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-2.407260019529184,-0.8650435007644341,1.4238040732942565
+Nigeria,Nigeria,Nigeria,en-native,mistral-medium-3.1,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-1.7692945077905256,-1.9152588472291552,0.6620473467227083
+Nigeria,Nigeria,Nigeria,en-native,mistral-nemo,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-0.9921956592419942,0.665253494478556,2.273058338631851
+Nigeria,Nigeria,Nigeria,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,1.706603806681907,0.1515616307000655,3.382518421693119
+Nigeria,Nigeria,Nigeria,en-native,qwen3-max,True,True,en,[],True,African-Islamic,True,-1.1874510192,-1.5994031142,-2.046555344193306,-0.5572197642785615,1.3506318432776845
+Pakistan,Pakistan,Pakistan,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.6193894572513852,-1.7737841189390524,0.8570920029007543
+Pakistan,Pakistan,Pakistan,en-native,claude-sonnet-4.5,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.741232458813602,-1.9797354054101477,1.0420630594449531
+Pakistan,Pakistan,Pakistan,en-native,deepseek-chat,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,deepseek-chat-v3.1,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-2.1733821735395797,-2.2766191977023102,1.560958495513413
+Pakistan,Pakistan,Pakistan,en-native,gemini-2.5-flash,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,gemini-2.5-pro,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,gemini-3-pro-preview,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,gemma-3-4b-it,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-0.9000075096231274,1.494457822917334,3.045691413802543
+Pakistan,Pakistan,Pakistan,en-native,gpt-4o,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,gpt-4o-mini,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-2.3897484356847625,-0.8937058348460494,1.7268364944347387
+Pakistan,Pakistan,Pakistan,en-native,gpt-5.1,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,grok-4.1-fast,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-3.3706722230073525,-1.1135931166660251,2.615019547377148
+Pakistan,Pakistan,Pakistan,en-native,kimi-k2,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.741232458813602,-1.9797354054101477,1.0420630594449531
+Pakistan,Pakistan,Pakistan,en-native,llama-3.2-3b-instruct,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,1.7574232312086902,2.6136191110082305,4.881673785273562
+Pakistan,Pakistan,Pakistan,en-native,llama-3.3-70b-instruct,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,mistral-medium-3.1,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.9800941325872636,-2.081607855424925,1.30168817203212
+Pakistan,Pakistan,Pakistan,en-native,mistral-nemo,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-0.9053758253686204,0.9285294491128812,2.480437619750887
+Pakistan,Pakistan,Pakistan,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,0.7792191605641843,-0.3204047275400389,1.994902803882806
+Pakistan,Pakistan,Pakistan,en-native,qwen3-max,True,True,en,[],True,West & South Asia,False,-0.7922105393,-1.5493253496,-1.858251131025047,-1.8756565689538307,1.1148697717358949
+Philippines,Philippines,Philippines,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-0.6744932272892411,-1.330480094780563,0.7340300535912694
+Philippines,Philippines,Philippines,en-native,claude-sonnet-4.5,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-0.6920048111336624,-1.3018177606989478,0.764248698378392
+Philippines,Philippines,Philippines,en-native,deepseek-chat,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,0.2944856135373719,-2.6311928499310033,0.9743857942915067
+Philippines,Philippines,Philippines,en-native,deepseek-chat-v3.1,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-0.757723714742032,-1.6367221635320266,0.7098698927455176
+Philippines,Philippines,Philippines,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-0.9615622208268504,-1.795919281710035,0.9118078212306697
+Philippines,Philippines,Philippines,en-native,gemini-2.5-flash,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-1.2179354784449332,-1.8691293976431975,1.1744848357303346
+Philippines,Philippines,Philippines,en-native,gemini-2.5-pro,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-1.0246474374926176,-1.6741180553658128,0.972916244700799
+Philippines,Philippines,Philippines,en-native,gemini-3-pro-preview,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-1.4743087360630165,-1.9423395135763608,1.4386138093515275
+Philippines,Philippines,Philippines,en-native,gemma-3-4b-it,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,0.6219596578200773,0.8626722207054354,2.6701664955139606
+Philippines,Philippines,Philippines,en-native,gpt-4o,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-0.3186128813041347,-1.3326864812221018,0.4703976774685681
+Philippines,Philippines,Philippines,en-native,gpt-4o-mini,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,1.783466175332824,-2.692705378686354,2.0776509065240294
+Philippines,Philippines,Philippines,en-native,gpt-5.1,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-1.2635091112662789,-1.7759905053805911,1.211913069443633
+Philippines,Philippines,Philippines,en-native,grok-4.1-fast,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-1.713170409836679,-2.044211963591139,1.6915198539026721
+Philippines,Philippines,Philippines,en-native,kimi-k2,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,0.3271823980411783,-1.306084527919279,0.5625209141719033
+Philippines,Philippines,Philippines,en-native,llama-3.2-3b-instruct,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,2.7611246368367457,1.8141527624458955,4.518238643547596
+Philippines,Philippines,Philippines,en-native,llama-3.3-70b-instruct,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-1.1416661097040626,-1.5700392189094965,1.0992037389469156
+Philippines,Philippines,Philippines,en-native,mistral-medium-3.1,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-0.453143137360001,-1.1999453106841698,0.656917064892082
+Philippines,Philippines,Philippines,en-native,mistral-nemo,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,0.0289699394610215,1.4076476973707477,3.1295347060937755
+Philippines,Philippines,Philippines,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,2.1843271542292304,0.3553065307296218,3.052091569055514
+Philippines,Philippines,Philippines,en-native,qwen3-max,True,True,en,[],True,Other,False,-0.052852598,-1.7208171896,-0.885292852085979,-1.4968291029763332,0.8620483974650498
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,claude-3-7-sonnet-20250219,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,0.9644056017821638,-0.4970073804045572,1.1007053521611985
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,claude-sonnet-4.5,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.7570207110031228,0.3176026060827471,2.1057086259595232
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,deepseek-chat,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.3630734600491752,-1.1527345277793264,0.6587519277284603
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,deepseek-chat-v3.1,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,2.623148123295313,-1.8789907604084977,1.7722709440319304
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,doubao-1-5-pro-32k-250115,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,2.1301038343117376,-2.200748832606328,1.395025912593302
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,gemini-2.5-flash,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,-1.1191706980755831,-0.0852534060384568,2.4997571381120856
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,gemini-2.5-pro,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.8327916793991923,-0.7912351760841674,1.2505216740358998
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,gemini-3-pro-preview,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.81154144104656,-2.0036714220260925,1.0231961444410735
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,gemma-3-4b-it,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,-0.1188572824530038,1.017006955829352,2.793376580541508
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,gpt-4o,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.6434695092485705,-1.826528475299359,0.8038939766443883
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,gpt-4o-mini,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,5.450695321546535,-0.5742279440785504,4.688984317523665
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,gpt-5.1,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.8503032632436136,-0.8198975101657826,1.245992358729111
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,grok-4.1-fast,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,-1.4848592011955186,-1.906525289476984,2.3794173732486743
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,kimi-k2,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,2.089164937017275,-0.7180250601510044,1.4980244055995358
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,llama-3.2-3b-instruct,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,2.7786362206811672,1.7854904283642807,3.8792702421739547
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,llama-3.3-70b-instruct,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.3128786590117068,0.0706416623563085,1.7215283589744494
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,mistral-medium-3.1,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,2.369722722817994,0.465755856150048,2.545565927684005
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,mistral-nemo,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.0076565923498566,2.0947876561172993,3.69119939276711
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,phi-3-mini-128k-instruct,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,3.4443544267059067,1.199573183636591,3.796182893222663
+Puerto Rico,Puerto Rico,Puerto Rico,en-native,qwen3-max,True,True,es,['es'],False,Latin America,False,0.873943067,-1.5939890585,1.0112199429459845,-1.0415108057459903,0.5692777533292626
+Rwanda,Rwanda,Rwanda,en-native,claude-3-7-sonnet-20250219,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.6018778734069636,-1.8024464530206672,0.45287468362476085
+Rwanda,Rwanda,Rwanda,en-native,claude-sonnet-4.5,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.56685470571812,-1.859771121183898,0.4502925371776048
+Rwanda,Rwanda,Rwanda,en-native,deepseek-chat,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.9625825487428417,-2.11027018950654,0.9185943990489727
+Rwanda,Rwanda,Rwanda,en-native,deepseek-chat-v3.1,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-0.7477809154306471,-3.3019586046244416,1.747859639135356
+Rwanda,Rwanda,Rwanda,en-native,doubao-1-5-pro-32k-250115,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-2.01651600428852,-2.127992579394446,0.973611020332711
+Rwanda,Rwanda,Rwanda,en-native,gemini-2.5-flash,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.9625825487428417,-2.11027018950654,0.9185943990489727
+Rwanda,Rwanda,Rwanda,en-native,gemini-2.5-pro,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.5304328340168638,-1.813386397214377,0.3947608461251403
+Rwanda,Rwanda,Rwanda,en-native,gemini-3-pro-preview,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-3.159872598210615,-0.9472441084702552,2.077548046335622
+Rwanda,Rwanda,Rwanda,en-native,gemma-3-4b-it,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.4918165789760534,-0.6111762408852377,1.0443035465318766
+Rwanda,Rwanda,Rwanda,en-native,gpt-4o,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.2740595763987803,-1.740176281281214,0.15314441314906171
+Rwanda,Rwanda,Rwanda,en-native,gpt-4o-mini,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-0.5731090753144135,-2.096366215887189,0.7857842217798846
+Rwanda,Rwanda,Rwanda,en-native,gpt-5.1,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.741232458813602,-1.9797354054101477,0.6619267549702036
+Rwanda,Rwanda,Rwanda,en-native,grok-4.1-fast,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-3.0299770776816306,-2.4695701592009027,2.029110841187617
+Rwanda,Rwanda,Rwanda,en-native,kimi-k2,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.7237208749691804,-2.0083977394917625,0.6641800812417321
+Rwanda,Rwanda,Rwanda,en-native,llama-3.2-3b-instruct,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,1.763934438945581,1.8952773816366493,4.585809909160477
+Rwanda,Rwanda,Rwanda,en-native,llama-3.3-70b-instruct,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.7364081294628306,-1.6697052824827356,0.5482128089175463
+Rwanda,Rwanda,Rwanda,en-native,mistral-medium-3.1,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.373566664765804,-1.6647597789065125,0.1899283446834676
+Rwanda,Rwanda,Rwanda,en-native,mistral-nemo,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,0.736591694885494,-1.4797233206655105,1.9323914079946265
+Rwanda,Rwanda,Rwanda,en-native,phi-3-mini-128k-instruct,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,1.706603806681907,0.1515616307000655,3.3919974693097066
+Rwanda,Rwanda,Rwanda,en-native,qwen3-max,True,True,fr,['fr'],False,African-Islamic,True,-1.1913142687,-1.6113103613,-1.8407395471806256,-1.9043189030354457,0.7124655766137551
+Singapore,Singapore,Singapore,en-native,claude-3-7-sonnet-20250219,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,-0.0912034790939336,-0.5391253371537469,0.6594361306984102
+Singapore,Singapore,Singapore,en-native,claude-sonnet-4.5,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.2695011962419444,-0.2313016006678739,0.20083158489016834
+Singapore,Singapore,Singapore,en-native,deepseek-chat,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.1476581946797278,-0.4372528871389687,0.43902998916457775
+Singapore,Singapore,Singapore,en-native,deepseek-chat-v3.1,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.0258151931175112,-0.6432041736100635,0.6780004691294691
+Singapore,Singapore,Singapore,en-native,doubao-1-5-pro-32k-250115,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,-1.2602418857608937,-0.5201305715637583,1.6751419559929293
+Singapore,Singapore,Singapore,en-native,gemini-2.5-flash,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.3303957704995424,-0.2064273207622067,0.16147029178893904
+Singapore,Singapore,Singapore,en-native,gemini-2.5-pro,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,1.1407617444058198,0.3696178739342142,0.8964681210895109
+Singapore,Singapore,Singapore,en-native,gemini-3-pro-preview,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.3584578194764657,-0.2709038789431987,0.22548579520254683
+Singapore,Singapore,Singapore,en-native,gemma-3-4b-it,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.7678254509636064,0.3216194437233344,0.5591231243049688
+Singapore,Singapore,Singapore,en-native,gpt-4o,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.729712959944846,0.0011056334432974,0.38623947433033284
+Singapore,Singapore,Singapore,en-native,gpt-4o-mini,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,1.3977770827015177,-0.6006378659090974,1.1888889472631372
+Singapore,Singapore,Singapore,en-native,gpt-5.1,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.4474144427109873,-0.3105061572185235,0.28340360744091214
+Singapore,Singapore,Singapore,en-native,grok-4.1-fast,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,-2.0039871496278434,-1.4171458333813007,2.721159750052055
+Singapore,Singapore,Singapore,en-native,kimi-k2,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.2471652830467512,-0.5126693895136704,0.4773378186638256
+Singapore,Singapore,Singapore,en-native,llama-3.2-3b-instruct,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,3.1534079123740093,1.9091813552560009,3.4207379086984036
+Singapore,Singapore,Singapore,en-native,llama-3.3-70b-instruct,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,-0.3195146877350933,-0.6768120112679017,0.9173816184512896
+Singapore,Singapore,Singapore,en-native,mistral-medium-3.1,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.2695011962419444,-0.2313016006678739,0.20083158489016834
+Singapore,Singapore,Singapore,en-native,mistral-nemo,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,1.6720976197519266,1.844093159753652,2.308497132912202
+Singapore,Singapore,Singapore,en-native,phi-3-mini-128k-instruct,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,2.428013157353663,0.7672091036718115,2.2347969899186957
+Singapore,Singapore,Singapore,en-native,qwen3-max,True,True,zh-cn,"['zh-cn', 'en']",False,West & South Asia,False,0.3463254582,-0.0457447138,0.1630329891630015,-0.1630369883109339,0.21760883912568288
+South Africa,South Africa,South Africa,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,2.2577352691600674,0.5127599540228783,2.6494820165920565
+South Africa,South Africa,South Africa,en-native,claude-sonnet-4.5,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,1.9138868802541824,0.4662292243906118,2.334317650556058
+South Africa,South Africa,South Africa,en-native,deepseek-chat,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-0.2843320216129645,0.4692813445941108,1.340580333375789
+South Africa,South Africa,South Africa,en-native,deepseek-chat-v3.1,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-0.0454703478393028,0.5711537946088889,1.4159402345492949
+South Africa,South Africa,South Africa,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,1.81103545171976,-0.4296513869501925,1.8751932370266158
+South Africa,South Africa,South Africa,en-native,gemini-2.5-flash,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,0.2192627325031134,0.7552251926925644,1.617192638507341
+South Africa,South Africa,South Africa,en-native,gemini-2.5-pro,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-0.3602940865962699,2.009329785212665,2.8743348768797743
+South Africa,South Africa,South Africa,en-native,gemini-3-pro-preview,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-0.2704055615401866,-0.969119744307408,0.2817649650882284
+South Africa,South Africa,South Africa,en-native,gemma-3-4b-it,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,0.3166367724403731,2.2851878618370214,3.147508203680427
+South Africa,South Africa,South Africa,en-native,gpt-4o,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-0.0629819316837244,0.599816128690504,1.445039982316767
+South Africa,South Africa,South Africa,en-native,gpt-4o-mini,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,2.957258617611659,1.5725332575381703,3.833071809045966
+South Africa,South Africa,South Africa,en-native,gpt-5.1,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-0.4236866070196026,0.291992392204631,1.2068468677216995
+South Africa,South Africa,South Africa,en-native,grok-4.1-fast,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-2.39631946270481,0.8216486103812652,2.9041303435497032
+South Africa,South Africa,South Africa,en-native,kimi-k2,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,1.2382904432446686,-0.4524595985530094,1.3157487674471529
+South Africa,South Africa,South Africa,en-native,llama-3.2-3b-instruct,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,1.879313623540368,1.2490475119431843,2.825176846100213
+South Africa,South Africa,South Africa,en-native,llama-3.3-70b-instruct,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-0.097555188397539,1.3826344162430766,2.2285798163210453
+South Africa,South Africa,South Africa,en-native,mistral-medium-3.1,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,1.197700638207381,1.154127440662252,2.3391756983509273
+South Africa,South Africa,South Africa,en-native,mistral-nemo,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,0.702333706970153,3.5173032972488856,4.420846549227934
+South Africa,South Africa,South Africa,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,2.9666310791585837,0.9958282836070348,3.5061424553222267
+South Africa,South Africa,South Africa,en-native,qwen3-max,True,True,en,[],True,African-Islamic,True,-0.0176905444,-0.8445139031,-0.3018436054573861,0.4979436786757258,1.3722009040134802
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.8182441355521464,-0.4195330901644066,0.8957017070379005
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,claude-sonnet-4.5,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.356055080921382,-1.6934221129881275,0.5298331123379697
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,deepseek-chat,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.6018778734069636,-1.8024464530206672,0.5068038225039461
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,deepseek-chat-v3.1,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.3910782486102256,-1.6360974448248975,0.46439657411792984
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.8232279633362032,-1.9329812371170605,0.631172568655149
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,gemini-2.5-flash,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-2.3897484356847625,-0.8937058348460494,0.7871157834157059
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,gemini-2.5-pro,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-3.587038485152535,0.2693202461902356,2.4441053093371448
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,gemini-3-pro-preview,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-3.159872598210615,-0.9472441084702552,1.4831814958615295
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,gemma-3-4b-it,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.722819954418811,1.695546726334337,3.005567991315576
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,gpt-4o,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.0807715354464644,-1.545164939003829,0.6827411692507777
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,gpt-4o-mini,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-0.5786757126628583,-0.5471038448351583,1.3742789926134837
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,gpt-5.1,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.9800941325872636,-2.081607855424925,0.8136904193008504
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,grok-4.1-fast,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-3.797838109949272,0.1029712379944659,2.51131901622383
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,kimi-k2,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-0.8671259708271294,-1.8154467779931696,0.9928863687166806
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,llama-3.2-3b-instruct,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,0.7975562058620818,2.168113204086737,4.294680480096179
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,llama-3.3-70b-instruct,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-2.146062432560329,-0.4818032619038598,0.9305873139766027
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,mistral-medium-3.1,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-1.5304328340168638,-1.813386397214377,0.5384939806992699
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,mistral-nemo,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-0.8959028292139234,3.849998720727082,5.225687920699303
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,2.3061701557914467,0.5612578172007169,4.4413690810221205
+Zimbabwe,Zimbabwe,Zimbabwe,en-native,qwen3-max,True,True,en,[],True,African-Islamic,True,-1.7217417889,-1.3100210716,-2.029043760348884,-0.5858820983601766,0.7866458887079983
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,0.275882629438103,-0.8671012886298836,1.5330588571309398
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,claude-sonnet-4.5,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,0.5159850115542397,-1.2165933716939317,1.4294987799200367
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,deepseek-chat,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,0.8379278646930648,-2.092543547068369,1.409870100876573
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,deepseek-chat-v3.1,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,0.238361515583525,-2.5022397335690196,0.8846484149579558
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-0.026371564758891,-2.6863111316526957,0.7678278257516882
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,gemini-2.5-flash,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-0.3131332545389347,-1.3126116992299115,0.8714405031093246
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,gemini-2.5-pro,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-1.3580323718492449,-0.1871258560532349,2.110187374995274
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,gemini-3-pro-preview,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-1.0527094864695412,-1.609641497184821,0.7202264786480835
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,gemma-3-4b-it,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-0.3577189562266655,0.9151345058145738,3.0675922197720347
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,gpt-4o,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,0.8050414863653694,-2.3380971118147884,1.3894837970402045
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,gpt-4o-mini,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,4.554294585722044,-1.7860464757540888,5.137816309610746
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,gpt-5.1,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-0.9133549010629024,-1.4323525447953414,0.790664209036828
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,grok-4.1-fast,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-1.9625825487428417,-2.11027018950654,1.3920520997609358
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,kimi-k2,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,1.3618801424761608,-2.2718928802366407,1.9370032324319488
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,llama-3.2-3b-instruct,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,2.300912873133844,1.5817455283347246,4.704953449927339
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,llama-3.3-70b-instruct,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-0.587223482440839,-0.3417105207568956,1.803399551923016
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,mistral-medium-3.1,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,0.107810697640113,-0.6899583419031501,1.6056118001307182
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,mistral-nemo,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,0.5299332448025339,1.891042756087743,4.1835289200750605
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,2.9666310791585837,0.9958282836070348,4.7307099886511805
+Trinidad and Tobago,Trinidad and Tobago,Trinidad and Tobago,en-native,qwen3-max,True,True,en,[],True,Latin America,False,-0.5709646656,-2.1450367793,-0.3243390170858649,-0.9868421341953132,1.1841617484339664
+United Kingdom,United Kingdom,United Kingdom,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,5.266253812014932,2.7071261693340647,2.6680729943895805
+United Kingdom,United Kingdom,United Kingdom,en-native,claude-sonnet-4.5,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,3.894291922430925,2.664559861633098,1.7303551146895253
+United Kingdom,United Kingdom,United Kingdom,en-native,deepseek-chat,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,1.09585137403981,2.547871136271168,2.4852764558473464
+United Kingdom,United Kingdom,United Kingdom,en-native,deepseek-chat-v3.1,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,2.535741751789454,2.7278160852732,1.7181787896400735
+United Kingdom,United Kingdom,United Kingdom,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,2.779427754913887,3.1397186582153895,2.054966317049658
+United Kingdom,United Kingdom,United Kingdom,en-native,gemini-2.5-flash,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,2.914613308384182,2.717022146742236,1.6167170000182487
+United Kingdom,United Kingdom,United Kingdom,en-native,gemini-2.5-pro,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,3.7009564907091472,4.040071404891853,2.9818752877622705
+United Kingdom,United Kingdom,United Kingdom,en-native,gemini-3-pro-preview,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,5.837758112147547,3.1812989140157075,3.4098655701978338
+United Kingdom,United Kingdom,United Kingdom,en-native,gemma-3-4b-it,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,1.0507333776057792,2.5621428777997406,2.5304040700399777
+United Kingdom,United Kingdom,United Kingdom,en-native,gpt-4o,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,4.853255168750033,2.9237310761974347,2.5016509749540647
+United Kingdom,United Kingdom,United Kingdom,en-native,gpt-4o-mini,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,5.737465951825365,3.629212798735201,3.6257003553021625
+United Kingdom,United Kingdom,United Kingdom,en-native,gpt-5.1,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,3.7009564907091472,4.040071404891853,2.9818752877622705
+United Kingdom,United Kingdom,United Kingdom,en-native,grok-4.1-fast,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,2.5104782518656665,3.926184681805222,2.878570062177736
+United Kingdom,United Kingdom,United Kingdom,en-native,kimi-k2,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,5.602935695769498,3.761953969273133,3.6258036267725697
+United Kingdom,United Kingdom,United Kingdom,en-native,llama-3.2-3b-instruct,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,3.284321389885356,2.7405854084158134,1.6341113889484944
+United Kingdom,United Kingdom,United Kingdom,en-native,llama-3.3-70b-instruct,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,3.9252152252178822,2.741720058892551,1.8132340439317196
+United Kingdom,United Kingdom,United Kingdom,en-native,mistral-medium-3.1,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,3.153474982157843,2.8188945967570147,1.7049463779476013
+United Kingdom,United Kingdom,United Kingdom,en-native,mistral-nemo,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,4.397082662442743,3.3738513473584666,2.5926927860778806
+United Kingdom,United Kingdom,United Kingdom,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,3.5661974282681235,1.405524470107686,0.5279651713458303
+United Kingdom,United Kingdom,United Kingdom,en-native,qwen3-max,True,True,en,[],True,English-Speaking,False,3.1259015109,1.1141712012,2.0909047825698264,2.7696247499900637,1.952368991726661
+Zambia,Zambia,Zambia,en-native,claude-3-7-sonnet-20250219,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.3910782486102256,-1.6360974448248975,1.1943720112257448
+Zambia,Zambia,Zambia,en-native,claude-sonnet-4.5,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.408589832454647,-1.6074351107432825,1.1736246600762335
+Zambia,Zambia,Zambia,en-native,deepseek-chat,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.3910782486102256,-1.6360974448248975,1.1943720112257448
+Zambia,Zambia,Zambia,en-native,deepseek-chat-v3.1,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.7237208749691804,-2.0083977394917625,1.6678244944113962
+Zambia,Zambia,Zambia,en-native,doubao-1-5-pro-32k-250115,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.8407395471806256,-1.9043189030354457,1.6331684915720714
+Zambia,Zambia,Zambia,en-native,gemini-2.5-flash,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.9800941325872636,-2.081607855424925,1.8573419628455883
+Zambia,Zambia,Zambia,en-native,gemini-2.5-pro,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.7692945077905256,-1.9152588472291552,1.6065116324173014
+Zambia,Zambia,Zambia,en-native,gemini-3-pro-preview,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.9800941325872636,-2.081607855424925,1.8573419628455883
+Zambia,Zambia,Zambia,en-native,gemma-3-4b-it,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,0.7613142432267155,1.0399611730949152,2.3376973336395466
+Zambia,Zambia,Zambia,en-native,gpt-4o,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.2740595763987803,-1.740176281281214,1.2610824339174216
+Zambia,Zambia,Zambia,en-native,gpt-4o-mini,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-0.5731090753144135,-2.096366215887189,1.6371726632456056
+Zambia,Zambia,Zambia,en-native,gpt-5.1,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.9800941325872636,-2.081607855424925,1.8573419628455883
+Zambia,Zambia,Zambia,en-native,grok-4.1-fast,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-3.797838109949272,0.1029712379944659,2.877730625468972
+Zambia,Zambia,Zambia,en-native,kimi-k2,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-0.8671259708271294,-1.8154467779931696,1.308633660731287
+Zambia,Zambia,Zambia,en-native,llama-3.2-3b-instruct,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,1.3212342590871011,1.634207813443863,3.1517830599957706
+Zambia,Zambia,Zambia,en-native,llama-3.3-70b-instruct,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.7364081294628306,-1.6697052824827356,1.3790464722666114
+Zambia,Zambia,Zambia,en-native,mistral-medium-3.1,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.5304328340168638,-1.813386397214377,1.4101681516550812
+Zambia,Zambia,Zambia,en-native,mistral-nemo,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.0867189198249596,2.2541181438059117,2.7682101834184905
+Zambia,Zambia,Zambia,en-native,phi-3-mini-128k-instruct,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,1.706603806681907,0.1515616307000655,2.7738580264790653
+Zambia,Zambia,Zambia,en-native,qwen3-max,True,True,en,[],True,African-Islamic,True,-0.9866468608,-0.512282623,-1.6018778734069636,-1.8024464530206672,1.4293466714436307

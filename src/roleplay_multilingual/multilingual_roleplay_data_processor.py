@@ -17,18 +17,19 @@ import sys
 # 添加项目路径
 sys.path.append(str(Path(__file__).parent.parent.parent))
 from src.base.ivs_question_processor import IVSQuestionProcessor
+from src.utils.country_name_standardizer import CountryNameStandardizer
 
 
 class MultilingualRoleplayDataProcessor:
     """多语言角色扮演数据处理器"""
     
-    def __init__(self, data_path: str = "../data"):
+    def __init__(self, data_path: str = "data"):
         self.data_path = Path(data_path)
-        self.results_dir = self.data_path / "results" / "multilingual_roleplay"
-        self.processed_dir = self.data_path / "processed"
+        self.raw_data_dir = self.data_path / "llm_interviews" / "multilingual" / "interview_raw"
+        self.processed_dir = self.data_path / "llm_interviews" / "multilingual" / "processed"
         
         # 确保目录存在
-        self.results_dir.mkdir(parents=True, exist_ok=True)
+        self.raw_data_dir.mkdir(parents=True, exist_ok=True)
         self.processed_dir.mkdir(parents=True, exist_ok=True)
         
         # IVS问题列表
@@ -36,161 +37,269 @@ class MultilingualRoleplayDataProcessor:
         
         # 加载配置
         self.multilingual_config = self._load_multilingual_config()
-        self.question_mapping = self._create_question_mapping()
+        # 使用统一的问题配置（从 IVSQuestionProcessor）
+        self.question_mapping = IVSQuestionProcessor.QUESTION_CONFIG
+        # 加载文化区域映射
+        self.cultural_mapping = self._load_cultural_mapping()
+        # 国家名称标准化器（用于获取数字代码）
+        self.country_standardizer = CountryNameStandardizer()
     
     def _load_multilingual_config(self) -> Dict:
         """加载多语言配置"""
-        possible_paths = [
-            Path("config/multilingual_questions_complete.json"),
-            Path("../config/multilingual_questions_complete.json"),
-            Path("../../config/multilingual_questions_complete.json")
-        ]
+        # 统一配置文件路径
+        config_path = Path(__file__).parent.parent.parent / 'config' / 'questions' / 'multilingual' / 'multilingual_questions_complete.json'
         
-        for config_path in possible_paths:
-            if config_path.exists():
-                with open(config_path, 'r', encoding='utf-8') as f:
-                    return json.load(f)
+        if config_path.exists():
+            with open(config_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
         
-        print("警告: 未找到多语言配置文件")
+        print(f"⚠️ 未找到多语言配置文件: {config_path}")
         return {}
     
-    def _create_question_mapping(self) -> Dict:
-        """创建问题ID到标准格式的映射"""
-        return {
-            "A008": {"type": "single", "scale": (1, 4), "reverse": False},
-            "A165": {"type": "single", "scale": (1, 2), "reverse": False},
-            "E018": {"type": "single", "scale": (1, 3), "reverse": False},
-            "E025": {"type": "single", "scale": (1, 3), "reverse": False},
-            "F063": {"type": "single", "scale": (1, 10), "reverse": False},
-            "F118": {"type": "single", "scale": (1, 10), "reverse": False},
-            "F120": {"type": "single", "scale": (1, 10), "reverse": False},
-            "G006": {"type": "single", "scale": (1, 4), "reverse": False},
-            "Y002": {"type": "multi", "options": 4, "choices": 2},
-            "Y003": {"type": "multi", "options": 11, "choices": 5}
-        }
+    def _load_cultural_mapping(self) -> Dict:
+        """加载文化区域映射"""
+        config_path = Path(__file__).parent.parent.parent / 'config' / 'country' / 'cultural_regions.json'
+        
+        try:
+            with open(config_path, 'r', encoding='utf-8') as f:
+                config = json.load(f)
+                return config.get('country_cultural_mapping', {})
+        except Exception as e:
+            print(f"⚠️ 加载文化区域配置失败: {e}")
+            return {}
     
     def load_multilingual_results(self, results_file: str = None) -> Dict:
-        """加载多语言角色扮演结果"""
+        """
+        加载多语言角色扮演结果
+        支持两种方式：
+        1. 从单独的JSON文件加载（新的batch_interview格式）
+        2. 从汇总文件加载（旧格式）
+        """
         if results_file is None:
-            # 查找最新的结果文件
-            result_files = list(self.results_dir.glob("multilingual_roleplay_*.json"))
-            if not result_files:
-                raise FileNotFoundError("未找到多语言角色扮演结果文件")
-            results_file = max(result_files, key=lambda x: x.stat().st_mtime)
+            # 查找所有新格式文件，优先使用pkl格式（占用空间小）
+            pkl_files = list(self.raw_data_dir.glob("roleplay_results_ml_*.pkl"))
+            json_files = list(self.raw_data_dir.glob("roleplay_results_ml_*.json"))
+            
+            # 优先选择最新的pkl文件，如果没有pkl再选json
+            if pkl_files:
+                results_file = max(pkl_files, key=lambda x: x.stat().st_mtime)
+                print(f"✅ 找到 PKL 格式文件（优先）: {results_file.name}")
+            elif json_files:
+                results_file = max(json_files, key=lambda x: x.stat().st_mtime)
+                print(f"✅ 找到 JSON 格式文件: {results_file.name}")
+            else:
+                # 如果没有汇总文件，尝试从单独的JSON文件加载
+                print("⚠️ 未找到汇总文件，尝试从单独的JSON文件加载...")
+                return self._load_from_individual_files()
         else:
             results_file = Path(results_file)
         
-        print(f"加载结果文件: {results_file}")
+        print(f"📂 加载结果文件: {results_file}")
         
-        with open(results_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
+        # 根据文件扩展名选择加载方式
+        if results_file.suffix == '.pkl':
+            with open(results_file, 'rb') as f:
+                data = pickle.load(f)
+        else:
+            with open(results_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        
+        # 验证数据格式
+        if isinstance(data, dict) and 'results' in data:
+            print(f"📊 加载了 {len(data.get('results', []))} 个结果")
+        else:
+            raise ValueError(f"不支持的数据格式，期望 {{results: [...]}}")
+        
+        return data
+    
+    def _load_from_individual_files(self) -> Dict:
+        """从单独的JSON/PKL文件加载数据（支持从模型子文件夹加载）
+
+        Deduplication strategy:
+        - Each interview exists as both .json and .pkl; prefer .json to avoid
+          pickle deserialization issues.
+        - Multiple runs for the same (model, country, language) may exist with
+          different timestamps; keep only the latest.
+        """
+        json_files = []
+        pkl_files = []
+
+        def _collect(directory):
+            for f in directory.glob("*_*_*.json"):
+                if not f.name.startswith("roleplay_results_ml_"):
+                    json_files.append(f)
+            for f in directory.glob("*_*_*.pkl"):
+                if not f.name.startswith("roleplay_results_ml_"):
+                    pkl_files.append(f)
+
+        _collect(self.raw_data_dir)
+        for subdir in self.raw_data_dir.iterdir():
+            if subdir.is_dir():
+                _collect(subdir)
+
+        # Prefer JSON; only fall back to PKL for stems without a JSON counterpart
+        json_stems = {f.stem for f in json_files}
+        individual_files = list(json_files)
+        for f in pkl_files:
+            if f.stem not in json_stems:
+                individual_files.append(f)
+
+        if not individual_files:
+            raise FileNotFoundError(
+                f"未找到任何访谈数据文件\n查找路径: {self.raw_data_dir}\n（已搜索根目录和子文件夹）"
+            )
+
+        print(f"📂 找到 {len(individual_files)} 个单独的访谈文件 "
+              f"(去除json/pkl重复后，原始 {len(json_files)+len(pkl_files)} 个)")
+
+        # Parse all files and deduplicate by (model, country, language)
+        unique_results: Dict[tuple, dict] = {}
+        duplicates = 0
+
+        for file_path in individual_files:
+            try:
+                if file_path.suffix == '.pkl':
+                    import pickle
+                    with open(file_path, 'rb') as f:
+                        data = pickle.load(f)
+                else:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+
+                filename = file_path.stem
+                parts = filename.split('_')
+
+                timestamp_idx = -1
+                for i, part in enumerate(parts):
+                    if part.isdigit() and len(part) == 8:
+                        timestamp_idx = i
+                        break
+
+                if timestamp_idx < 2:
+                    continue
+
+                model_country_lang = parts[:timestamp_idx]
+                if len(model_country_lang) >= 3:
+                    language = model_country_lang[-1]
+                    country = model_country_lang[-2]
+                    model = '_'.join(model_country_lang[:-2])
+                elif len(model_country_lang) == 2:
+                    country = model_country_lang[-1]
+                    model = model_country_lang[0]
+                    language = ''
+                else:
+                    continue
+
+                # Build a sortable timestamp from filename parts
+                ts_parts = parts[timestamp_idx:]
+                file_timestamp = '_'.join(ts_parts)
+
+                result = {
+                    "model": model,
+                    "country": country,
+                    "language": language,
+                    "timestamp": data.get("timestamp", file_timestamp),
+                    "success_rate": data.get("success_rate", 1.0),
+                    "responses": data.get("responses", []),
+                    "_file_timestamp": file_timestamp,
+                }
+
+                key = (model, country, language)
+                if key in unique_results:
+                    duplicates += 1
+                    # Keep the EARLIEST run to match original paper data
+                    if file_timestamp < unique_results[key].get("_file_timestamp", ""):
+                        unique_results[key] = result
+                else:
+                    unique_results[key] = result
+
+            except Exception as e:
+                print(f"⚠️ 跳过文件 {file_path.name}: {e}")
+                continue
+
+        print(f"🔄 去除了 {duplicates} 条重复记录（同一 model/country/language 的多次运行）")
+        print(f"✅ 保留了 {len(unique_results)} 个唯一组合")
+
+        results = []
+        for r in unique_results.values():
+            r.pop("_file_timestamp", None)
+            results.append(r)
+
+        return {"results": results}
     
     def process_single_response(self, response: Dict) -> Dict:
-        """处理单个回答"""
+        """处理单个回答 - 支持新旧两种格式"""
+        # 检测格式：新格式有entity_id，旧格式有country和language
+        if "entity_id" in response:
+            # 新格式：解析entity_id (格式: "Country_language")
+            entity_id = response.get("entity_id", "")
+            parts = entity_id.split("_", 1)  # 只分割一次
+            country = parts[0] if len(parts) > 0 else ""
+            language = parts[1] if len(parts) > 1 else ""
+            model = response.get("model_name", "")
+        else:
+            # 旧格式：直接使用字段
+            model = response.get("model", "")
+            country = response.get("country", "")
+            language = response.get("language", "")
+        
         processed = {
-            "model": response.get("model", ""),
-            "country": response.get("country", ""),
-            "language": response.get("language", ""),
+            "model": model,
+            "country": country,
+            "language": language,
             "timestamp": response.get("timestamp", ""),
-            "success_rate": response.get("success_rate", 0),
+            "success_rate": response.get("success_rate", 1.0),
             "processed_answers": {}
         }
         
-        # 处理每个问题的回答
+        # 处理每个问题的回答（统一格式）
         for resp in response.get("responses", []):
             question_id = resp.get("question_id", "")
             
-            # 处理新格式（包含final_response）和旧格式（processed_response）
-            if "final_response" in resp:
-                # 新格式：多次重复取众数
-                processed_response = resp.get("final_response", "")
-                # 使用最后一次的原始回答作为代表
+            # Use final_response (majority vote across attempts) as the
+            # canonical answer.  Fall back to processed_response, then to the
+            # last element of all_responses.
+            raw_response = str(resp.get("final_response") or resp.get("processed_response") or "")
+            if not raw_response.strip():
                 all_responses = resp.get("all_responses", [])
-                raw_response = ""
                 if all_responses:
-                    # 找到最后一个有效的原始回答
                     for attempt_resp in reversed(all_responses):
-                        if attempt_resp.get("raw_response"):
+                        if isinstance(attempt_resp, str) and attempt_resp.strip():
+                            raw_response = attempt_resp
+                            break
+                        elif isinstance(attempt_resp, dict) and attempt_resp.get("raw_response"):
                             raw_response = attempt_resp["raw_response"]
                             break
-            else:
-                # 旧格式：单次回答
-                raw_response = resp.get("raw_response", "")
-                processed_response = resp.get("processed_response", "")
+                else:
+                    raw_response = resp.get("raw_response", "")
             
             if question_id in self.question_mapping:
                 processed_answer = self._process_answer(
-                    question_id, processed_response, raw_response
+                    question_id, raw_response, raw_response
                 )
                 processed["processed_answers"][question_id] = processed_answer
         
         return processed
     
     def _process_answer(self, question_id: str, processed_response: str, raw_response: str) -> Dict:
-        """处理单个问题的回答"""
-        question_info = self.question_mapping[question_id]
-        
-        result = {
-            "question_id": question_id,
-            "raw_response": raw_response,
-            "processed_response": processed_response,
-            "valid": False,
-            "numeric_value": None,
-            "standardized_value": None
-        }
-        
-        if not processed_response:
-            return result
-        
-        try:
-            if question_info["type"] == "single":
-                # 单选题处理
-                value = int(processed_response.strip())
-                min_val, max_val = question_info["scale"]
-                
-                if min_val <= value <= max_val:
-                    result["valid"] = True
-                    result["numeric_value"] = value
-                    # 标准化到0-1区间
-                    result["standardized_value"] = (value - min_val) / (max_val - min_val)
-                    
-                    # 如果需要反向编码
-                    if question_info.get("reverse", False):
-                        result["standardized_value"] = 1 - result["standardized_value"]
-            
-            elif question_info["type"] == "multi":
-                # 多选题处理 - 使用统一的处理器
-                if question_id in ["Y002", "Y003"]:
-                    unified_result = IVSQuestionProcessor.validate_and_process_response(raw_response, question_id)
-                    if unified_result["valid"]:
-                        result["valid"] = True
-                        result["numeric_value"] = unified_result["numeric_value"]
-                        result["standardized_value"] = unified_result["standardized_value"]
-                        # 保存额外的分析结果
-                        if question_id == "Y002" and "materialist_score" in unified_result:
-                            result["materialist_score"] = unified_result["materialist_score"]
-                        elif question_id == "Y003":
-                            # 保存Y003的详细分析结果
-                            for key, value in unified_result.items():
-                                if key not in ["question_id", "raw_response", "processed_response", "numeric_value", "standardized_value", "valid"]:
-                                    result[key] = value
-                else:
-                    # 其他多选题的处理逻辑（如果有的话）
-                    values = [int(x.strip()) for x in processed_response.split()]
-                    result["valid"] = True
-                    result["numeric_value"] = values
-                    result["standardized_value"] = len(values)  # 简单处理
-        
-        except (ValueError, AttributeError) as e:
-            print(f"处理问题 {question_id} 的回答时出错: {e}")
-        
-        return result
+        """处理单个问题的回答 - 使用统一的处理器"""
+        # 直接使用 base 的统一处理器
+        return IVSQuestionProcessor.validate_and_process_response(raw_response, question_id)
     
     def process_all_results(self, results_data: Dict) -> pd.DataFrame:
         """处理所有结果，转换为DataFrame格式"""
         processed_data = []
         
-        for result in results_data.get("results", []):
+        # 处理results：可能是字典或列表
+        results = results_data.get("results", [])
+        if isinstance(results, dict):
+            # 如果是字典，遍历值
+            results_list = list(results.values())
+        else:
+            # 如果是列表，直接使用
+            results_list = results
+        
+        for result in results_list:
             processed = self.process_single_response(result)
             
             # 创建一行数据
@@ -225,32 +334,98 @@ class MultilingualRoleplayDataProcessor:
         ivs_data = []
         
         for _, row in df.iterrows():
+            country_name = row["country"]
+            # 获取数字country_code（与Stage0保持一致）
+            numeric_code = self.country_standardizer.get_numeric_code(country_name)
+            if numeric_code is None:
+                print(f"⚠️ 无法找到国家 '{country_name}' 的数字代码，跳过")
+                continue
+            
             ivs_row = {
-                # 基本信息
-                "country_code": row["country"],  # 使用国家名作为代码
-                "year": 2024,  # 多语言数据的年份
+                # 基本信息 - 使用数字代码作为country_code（与Stage0一致）
+                "country_code": float(numeric_code),  # 使用数字代码，与Stage0格式一致
+                "Country": country_name,  # 保留国家名称
+                "year": 2025,  # 多语言数据的年份
                 "weight": 1.0,  # 权重
                 "data_source": "multilingual_roleplay",
                 "model_name": row["model"],
                 "model_region": self._get_model_region(row["model"]),
-                "cultural_region": self._get_cultural_region(row["country"]),
+                "cultural_region": self._get_cultural_region(country_name),
                 "language": row["language"],
-                "entity_id": f"{row['model']}_{row['country']}_{row['language']}"
+                "entity_id": f"{row['model']}_{country_name}_{row['language']}"
             }
             
-            # 添加标准化的问题答案
+            # 添加问题答案（与Stage2保持一致）
             for question_id in self.question_mapping.keys():
-                standardized_col = f"{question_id}_standardized"
                 valid_col = f"{question_id}_valid"
                 
-                if row[valid_col] and pd.notna(row[standardized_col]):
-                    ivs_row[question_id] = row[standardized_col]
+                # 检查valid_col是否存在且为True
+                is_valid = False
+                if valid_col in row.index:
+                    val = row[valid_col]
+                    # 处理可能是数组或标量的情况
+                    if isinstance(val, (list, np.ndarray)):
+                        is_valid = bool(val[0]) if len(val) > 0 else False
+                    else:
+                        is_valid = bool(val)
+                
+                # Y002 → materialist_score (1=materialist, 2=mixed, 3=postmaterialist)
+                # Y003 → y003_score (traditional − secular-rational, range -2..+2)
+                # Recompute from raw response to match WVS IVS coding scheme.
+                if question_id == 'Y002':
+                    raw_col = f"{question_id}_raw"
+                    if is_valid and raw_col in row.index and row[raw_col]:
+                        try:
+                            nums = [int(x) for x in str(row[raw_col]).split()]
+                            if len(nums) >= 2:
+                                ivs_row[question_id] = float(IVSQuestionProcessor.process_y002(nums[0], nums[1]))
+                            else:
+                                ivs_row[question_id] = np.nan
+                        except (ValueError, TypeError):
+                            ivs_row[question_id] = np.nan
+                    else:
+                        ivs_row[question_id] = np.nan
+                elif question_id == 'Y003':
+                    raw_col = f"{question_id}_raw"
+                    if is_valid and raw_col in row.index and row[raw_col]:
+                        try:
+                            nums = [int(x) for x in str(row[raw_col]).split()]
+                            result = IVSQuestionProcessor.process_y003(nums)
+                            ivs_row[question_id] = float(result["y003_score"])
+                        except (ValueError, TypeError):
+                            ivs_row[question_id] = np.nan
+                    else:
+                        ivs_row[question_id] = np.nan
                 else:
-                    ivs_row[question_id] = np.nan
+                    # 其他问题使用standardized值
+                    standardized_col = f"{question_id}_standardized"
+                    if is_valid and standardized_col in row.index:
+                        std_val = row[standardized_col]
+                        # 处理可能是数组的情况
+                        if isinstance(std_val, (list, np.ndarray)):
+                            std_val = std_val[0] if len(std_val) > 0 else np.nan
+                        if pd.notna(std_val):
+                            ivs_row[question_id] = std_val
+                        else:
+                            ivs_row[question_id] = np.nan
+                    else:
+                        ivs_row[question_id] = np.nan
             
             ivs_data.append(ivs_row)
         
-        return pd.DataFrame(ivs_data)
+        # 转换为DataFrame
+        ivs_df = pd.DataFrame(ivs_data)
+        
+        # 🔧 筛选：至少需要6个问题的有效回答（与Stage0真实国家数据保持一致）
+        iv_qns = ["A008", "A165", "E018", "E025", "F063", "F118", "F120", "G006", "Y002", "Y003"]
+        original_count = len(ivs_df)
+        ivs_df = ivs_df.dropna(subset=iv_qns, thresh=6)
+        filtered_count = original_count - len(ivs_df)
+        
+        if filtered_count > 0:
+            print(f"⚠️ 过滤了 {filtered_count} 个有效回答数<6的结果")
+        
+        return ivs_df
     
     def _get_model_region(self, model_name: str) -> str:
         """获取模型区域"""
@@ -271,13 +446,7 @@ class MultilingualRoleplayDataProcessor:
     
     def _get_cultural_region(self, country: str) -> str:
         """获取文化区域"""
-        cultural_mapping = {
-            "China": "Confucian",
-            "Russian Federation": "Orthodox Europe",
-            "Mexico": "Latin America", 
-            "Egypt": "African-Islamic"
-        }
-        return cultural_mapping.get(country, "Unknown")
+        return self.cultural_mapping.get(country, "Unknown")
     
     def calculate_statistics(self, df: pd.DataFrame) -> Dict:
         """计算统计信息"""
@@ -333,26 +502,49 @@ class MultilingualRoleplayDataProcessor:
         return stats
     
     def save_processed_data(self, df: pd.DataFrame, ivs_df: pd.DataFrame, stats: Dict, suffix: str = None):
-        """保存处理后的数据"""
+        """
+        保存处理后的数据（与Stage2保持一致的命名规范）
+        
+        文件命名：
+        - 处理后数据：llm_roleplay_ml_processed_responses_*.pkl
+        - IVS格式数据：llm_roleplay_ml_processed_responses_ivs_format_*.pkl
+        """
         if suffix is None:
             suffix = datetime.now().strftime("%Y%m%d_%H%M%S")
         
-        # 保存原始处理数据
-        processed_file = self.processed_dir / f"multilingual_roleplay_processed_{suffix}.pkl"
+        print(f"\n{'='*60}")
+        print(f"💾 步骤3: 保存处理后的数据")
+        print(f"{'='*60}")
+        
+        # 保存原始处理数据（与Stage2命名一致）
+        processed_file = self.processed_dir / f"llm_roleplay_ml_processed_responses_{suffix}.pkl"
         with open(processed_file, 'wb') as f:
             pickle.dump(df, f)
+        print(f"✅ 原始处理数据: {processed_file.name}")
         
-        # 保存IVS格式数据
-        ivs_file = self.processed_dir / f"multilingual_roleplay_ivs_format_{suffix}.pkl"
+        # 保存IVS格式数据（与Stage2命名一致）
+        ivs_file = self.processed_dir / f"llm_roleplay_ml_processed_responses_ivs_format_{suffix}.pkl"
         with open(ivs_file, 'wb') as f:
             pickle.dump(ivs_df, f)
+        print(f"✅ IVS格式数据: {ivs_file.name}")
+        
+        # 保存JSON格式（便于查看）
+        ivs_json_file = self.processed_dir / f"llm_roleplay_ml_processed_responses_ivs_format_{suffix}.json"
+        ivs_df.to_json(ivs_json_file, orient='records', indent=2, force_ascii=False)
+        print(f"✅ IVS格式JSON: {ivs_json_file.name}")
         
         # 保存CSV格式（便于查看）
-        csv_file = self.processed_dir / f"multilingual_roleplay_processed_{suffix}.csv"
+        csv_file = self.processed_dir / f"llm_roleplay_ml_processed_responses_{suffix}.csv"
         df.to_csv(csv_file, index=False, encoding='utf-8')
+        print(f"✅ 原始处理CSV: {csv_file.name}")
         
-        ivs_csv_file = self.processed_dir / f"multilingual_roleplay_ivs_format_{suffix}.csv"
+        ivs_csv_file = self.processed_dir / f"llm_roleplay_ml_processed_responses_ivs_format_{suffix}.csv"
         ivs_df.to_csv(ivs_csv_file, index=False, encoding='utf-8')
+        print(f"✅ IVS格式CSV: {ivs_csv_file.name}")
+        
+        print(f"\n📁 保存位置: {self.processed_dir}")
+        print(f"📊 数据量: 原始 {len(df)} 行, IVS格式 {len(ivs_df)} 行")
+        print(f"{'='*60}")
         
         # 保存统计信息
         stats_file = self.processed_dir / f"multilingual_roleplay_stats_{suffix}.json"
@@ -421,85 +613,134 @@ class MultilingualRoleplayDataProcessor:
         """处理多语言数据并直接返回IVS格式的DataFrame"""
         print("📊 处理多语言数据到IVS格式...")
         
-        # 1. 直接加载JSON文件
+        # 1. 加载多语言结果数据（使用统一的加载方法）
         if results_file is None:
-            raise ValueError("必须提供结果文件路径")
+            # 自动查找最新的roleplay_results文件
+            print("📂 自动查找最新的访谈结果...")
+            results_data = self.load_multilingual_results()
+        else:
+            # 使用指定的文件
+            print(f"📂 加载指定文件: {results_file}")
+            with open(results_file, 'r', encoding='utf-8') as f:
+                results_data = json.load(f)
         
-        with open(results_file, 'r', encoding='utf-8') as f:
-            raw_data = json.load(f)
+        # 检查数据格式（只支持新格式）
+        if isinstance(results_data, dict) and 'results' in results_data:
+            # 新格式：{results: [...]}
+            print(f"✅ 检测到新格式数据")
+            return self._process_new_format_to_ivs(results_data)
+        else:
+            raise ValueError(f"不支持的数据格式，期望 {{results: [...]}}")
+    
+    def _process_new_format_to_ivs(self, results_data: Dict) -> pd.DataFrame:
+        """处理新格式数据（{results: [...]）到IVS格式"""
+        results_list = results_data.get('results', [])
+        print(f"✅ 加载了 {len(results_list)} 个访谈结果")
         
-        print(f"✅ 加载了 {len(raw_data)} 个国家的数据")
+        # 去重：对于同一个 (model, country, language) 组合，只保留最新的一条
+        unique_results = {}
+        duplicates = 0
         
-        # 2. 转换数据结构并处理
+        for result in results_list:
+            model_name = result.get('model_name', result.get('model'))
+            country_raw = result.get('country')
+            if isinstance(country_raw, dict):
+                country = country_raw.get('name')
+            else:
+                country = country_raw
+            language = result.get('language')
+            
+            key = (model_name, country, language)
+            
+            if key in unique_results:
+                # 已存在，比较时间戳，保留最新的
+                existing_timestamp = unique_results[key].get('timestamp', '')
+                current_timestamp = result.get('timestamp', '')
+                if current_timestamp > existing_timestamp:
+                    unique_results[key] = result
+                duplicates += 1
+            else:
+                unique_results[key] = result
+        
+        print(f"🔄 去除了 {duplicates} 条重复记录")
+        print(f"✅ 保留了 {len(unique_results)} 个唯一组合")
+        
         ivs_data = []
-        total_responses = 0
         
-        for country, country_data in raw_data.items():
-            for language, lang_data in country_data.items():
-                for model_name, model_responses in lang_data.items():
-                    for response_data in model_responses:
-                        if 'responses' in response_data:
-                            # 创建IVS格式的行
-                            ivs_row = {
-                                'country_code': country,
-                                'Country': country,  # 添加Country字段用于可视化
-                                'model_name': model_name,
-                                'language': language,
-                                'data_source': 'Multilingual',
-                                'year': 2024,
-                                'weight': 1.0,
-                                'Cultural Region': self._get_cultural_region(country)  # 添加文化区域
-                            }
+        for result in unique_results.values():
+            # 提取model_name（可能是'model_name'或'model'）
+            model_name = result.get('model_name', result.get('model'))
+            
+            # 提取country（可能是字符串或字典）
+            country_raw = result.get('country')
+            if isinstance(country_raw, dict):
+                country = country_raw.get('name')
+            else:
+                country = country_raw
+            
+            language = result.get('language')
+            responses = result.get('responses', [])
+            
+            # 获取数字country_code（与Stage0保持一致）
+            numeric_code = self.country_standardizer.get_numeric_code(country)
+            if numeric_code is None:
+                print(f"⚠️ 无法找到国家 '{country}' 的数字代码，跳过")
+                continue
+            
+            # 创建IVS格式的行
+            ivs_row = {
+                'country_code': float(numeric_code),  # 使用数字代码，与Stage0格式一致
+                'Country': country,  # 保留国家名称
+                'model_name': model_name,
+                'language': language,
+                'data_source': 'Multilingual',
+                'year': 2025,
+                'weight': 1.0,
+                'Cultural Region': self._get_cultural_region(country),
+                'entity_id': f"{model_name}_{country}_{language}"
+            }
+            
+            # 处理responses（使用统一处理器）
+            if isinstance(responses, list):
+                for item in responses:
+                    if isinstance(item, dict) and 'question_id' in item:
+                        question_id = item['question_id']
+                        if question_id in self.iv_qns:
+                            # 获取回答文本（优先使用 final_response）
+                            answer = item.get('final_response') or item.get('processed_response', '')
                             
-                            # 添加IVS问题的回答
-                            responses = response_data['responses']
+                            # 使用统一处理器验证和处理
+                            result = IVSQuestionProcessor.validate_and_process_response(answer, question_id)
                             
-                            # 处理不同的responses格式
-                            if isinstance(responses, dict):
-                                # 旧格式：{question_id: answer}
-                                response_items = responses.items()
-                            elif isinstance(responses, list):
-                                # 新格式：[{question_id: ..., final_response: ...}, ...]
-                                # 优先使用 final_response（众数），否则用 processed_response，最后用 raw_response
-                                response_items = [(item['question_id'], 
-                                                  item.get('final_response', 
-                                                          item.get('processed_response', 
-                                                                  item.get('raw_response', '')))) 
-                                                for item in responses if isinstance(item, dict) and 'question_id' in item]
+                            if result["valid"]:
+                                # 根据问题类型选择合适的值
+                                if question_id == "Y002" and "materialist_score" in result:
+                                    # Y002 使用物质主义倾向分数
+                                    ivs_row[question_id] = result["materialist_score"]
+                                elif question_id == "Y003" and "y003_score" in result:
+                                    # Y003 使用计算的分数
+                                    ivs_row[question_id] = result["y003_score"]
+                                else:
+                                    # 其他问题使用 numeric_value
+                                    ivs_row[question_id] = result["numeric_value"]
                             else:
-                                print(f"⚠️ 未知的responses格式: {type(responses)}")
-                                continue
-                            
-                            for question_id, answer in response_items:
-                                if question_id in self.iv_qns:  # 使用基类的问题列表
-                                    # 处理答案
-                                    if isinstance(answer, str) and answer.strip():
-                                        try:
-                                            # 尝试转换为数字
-                                            if ' ' in answer:
-                                                # 处理多选题（如Y002, Y003）
-                                                numeric_value = float(answer.split()[0])
-                                            else:
-                                                numeric_value = float(answer)
-                                            ivs_row[question_id] = numeric_value
-                                        except ValueError:
-                                            ivs_row[question_id] = np.nan
-                                    else:
-                                        ivs_row[question_id] = np.nan
-                            
-                            ivs_data.append(ivs_row)
-                            total_responses += 1
+                                ivs_row[question_id] = np.nan
+            else:
+                print(f"⚠️ 不支持的responses格式: {type(responses)}")
+            
+            ivs_data.append(ivs_row)
         
-        print(f"✅ 处理了 {total_responses} 个回答")
+        print(f"✅ 处理了 {len(ivs_data)} 个回答")
         
-        # 3. 创建DataFrame
+        # 创建DataFrame
         ivs_df = pd.DataFrame(ivs_data)
         print(f"✅ 创建了 {len(ivs_df)} 个IVS格式记录")
         
-        # 4. 保存处理后的数据
-        output_path = self.data_path / "multilingual_roleplay_processed_responses_ivs_format.pkl"
-        ivs_df.to_pickle(output_path)
-        print(f"💾 保存IVS格式数据到: {output_path}")
+        # 添加字段别名以兼容PCA分析
+        if 'model_name' in ivs_df.columns:
+            ivs_df['model'] = ivs_df['model_name']
+        if 'country_code' in ivs_df.columns:
+            ivs_df['country'] = ivs_df['country_code']
         
         return ivs_df
 

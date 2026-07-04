@@ -6,10 +6,12 @@
 import pandas as pd
 import numpy as np
 import os
+import pickle
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any
 from dataclasses import dataclass
 import json
-from src.core.ivs_question_processor import IVSQuestionProcessor
+from src.base.ivs_question_processor import IVSQuestionProcessor
 
 
 @dataclass
@@ -70,16 +72,12 @@ class LLMDataProcessor:
             config_path: 模型配置文件路径
         """
         if data_dir is None:
-            data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+            data_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
         if config_path is None:
-            config_path = os.path.join(os.path.dirname(__file__), '..', 'config', 'llm_models.json')
+            config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'models', 'llm_models.json')
             
         self.data_dir = Path(data_dir)
         self.config_path = Path(config_path)
-        self.llm_responses_dir = self.data_dir / 'llm_responses'
-        
-        # 确保目录存在
-        self.llm_responses_dir.mkdir(exist_ok=True)
         
         # 加载模型配置
         self.models_config = self._load_models_config()
@@ -101,68 +99,69 @@ class LLMDataProcessor:
     
     def _get_model_region(self, model_id: str) -> str:
         """获取模型所属地区"""
-        for category_name, models in self.models_config.get("models", {}).items():
-            if model_id in models:
-                return models[model_id].get("region", "Unknown")
+        models = self.models_config.get("models", {})
+        if model_id in models:
+            return models[model_id].get("region", "Unknown")
         return "Unknown"
     
-    def load_model_responses(self, model_id: str) -> Optional[pd.DataFrame]:
-        """加载指定模型的回答数据
-        
-        Args:
-            model_id: 模型ID
-            
-        Returns:
-            DataFrame或None
-        """
-        # 尝试多种文件格式
-        possible_files = [
-            self.llm_responses_dir / f"{model_id}_responses.pkl",
-            self.llm_responses_dir / f"{model_id}_responses.csv",
-            self.llm_responses_dir / f"{model_id}.pkl",
-            self.llm_responses_dir / f"{model_id}.csv"
-        ]
-        
-        for file_path in possible_files:
-            if file_path.exists():
-                try:
-                    if file_path.suffix == '.pkl':
-                        return pd.read_pickle(file_path)
-                    elif file_path.suffix == '.csv':
-                        return pd.read_csv(file_path)
-                except Exception as e:
-                    print(f"加载文件失败 {file_path}: {e}")
-                    continue
-        
-        print(f"未找到模型 {model_id} 的回答文件")
-        return None
-    
     def load_all_responses(self) -> List[pd.DataFrame]:
-        """加载所有模型的回答数据"""
+        """加载所有模型的回答数据（从独立文件加载）"""
         all_dataframes = []
         
-        # 获取所有pickle和csv文件
-        pkl_files = list(self.llm_responses_dir.glob("*.pkl"))
-        csv_files = list(self.llm_responses_dir.glob("*.csv"))
-        
-        all_files = pkl_files + csv_files
-        
-        for file_path in all_files:
-            try:
-                if file_path.suffix == '.pkl':
-                    df = pd.read_pickle(file_path)
-                elif file_path.suffix == '.csv':
-                    df = pd.read_csv(file_path)
-                else:
-                    continue
+        # 从interview_raw目录加载所有独立模型文件
+        interview_raw_dir = self.data_dir / "llm_values" / "interview_raw"
+        if interview_raw_dir.exists():
+            # 只加载独立模型文件（排除合并文件）
+            individual_files = [f for f in interview_raw_dir.glob("*.pkl") 
+                               if not f.name.startswith("llm_interview_raw_")]
+            
+            if not individual_files:
+                print(f"⚠️ 未找到独立模型文件")
+                return all_dataframes
+            
+            print(f"🔍 找到 {len(individual_files)} 个独立模型文件")
+            
+            for file_path in individual_files:
+                try:
+                    with open(file_path, 'rb') as f:
+                        data = pickle.load(f)
                     
-                # 添加文件来源信息
-                df['source_file'] = file_path.name
-                all_dataframes.append(df)
-                
-            except Exception as e:
-                print(f"加载文件失败 {file_path}: {e}")
-                continue
+                    # 独立文件格式：直接是单个模型的数据
+                    if isinstance(data, dict):
+                        model_name = data.get('model_name', data.get('model', ''))
+                        if not model_name:
+                            print(f"⚠️ {file_path.name}: 无法识别模型名称")
+                            continue
+                        
+                        # 转换为DataFrame格式
+                        rows = []
+                        for response in data.get('responses', []):
+                            if isinstance(response, dict):
+                                rows.append({
+                                    'model_name': model_name,
+                                    'question_id': response.get('question_id'),
+                                    'response': (response.get('final_response') or 
+                                               response.get('processed_response') or 
+                                               response.get('response')),
+                                    'is_valid': response.get('is_valid', True),
+                                    'source_file': file_path.name
+                                })
+                        
+                        if rows:
+                            df = pd.DataFrame(rows)
+                            all_dataframes.append(df)
+                            print(f"   ✅ {model_name}: {len(rows)} 条回答")
+                        else:
+                            print(f"   ⚠️ {model_name}: 无有效回答")
+                            
+                except Exception as e:
+                    print(f"   ❌ {file_path.name}: 加载失败 - {e}")
+                    continue
+        
+        if all_dataframes:
+            print(f"\n📊 总计加载: {len(all_dataframes)} 个模型")
+        else:
+            print(f"\n⚠️ 未加载到任何数据")
         
         return all_dataframes
     
@@ -173,7 +172,7 @@ class LLMDataProcessor:
             df: 包含模型回答的DataFrame
             
         Returns:
-            ProcessedResponse或None
+            ProcessedResponse或None（如果有效回答数<6则返回None）
         """
         if df.empty:
             return None
@@ -188,6 +187,9 @@ class LLMDataProcessor:
             model_region=model_region
         )
         
+        # 统计有效回答数
+        valid_count = 0
+        
         # 处理每个问题的回答
         for _, row in df.iterrows():
             if not row.get('is_valid', False):
@@ -198,31 +200,47 @@ class LLMDataProcessor:
             
             if question_id == 'A008':
                 result.A008 = response
+                valid_count += 1
             elif question_id == 'A165':
                 result.A165 = response
+                valid_count += 1
             elif question_id == 'E018':
                 result.E018 = response
+                valid_count += 1
             elif question_id == 'E025':
                 result.E025 = response
+                valid_count += 1
             elif question_id == 'F063':
                 result.F063 = response
+                valid_count += 1
             elif question_id == 'F118':
                 result.F118 = response
+                valid_count += 1
             elif question_id == 'F120':
                 result.F120 = response
+                valid_count += 1
             elif question_id == 'G006':
                 result.G006 = response
+                valid_count += 1
             elif question_id == 'Y002':
                 if isinstance(response, (tuple, list)) and len(response) == 2:
                     result.Y002_first = response[0]
                     result.Y002_second = response[1]
                     # 计算物质主义倾向
                     result.Y002_materialist = IVSQuestionProcessor.process_y002(response[0], response[1])
+                    valid_count += 1
             elif question_id == 'Y003':
                 if isinstance(response, (tuple, list)):
                     result.Y003_values = list(response)
+                    valid_count += 1
                 elif isinstance(response, int):
                     result.Y003_values = [response]
+                    valid_count += 1
+        
+        # 🔧 筛选：只保留有效回答数≥6的模型
+        if valid_count < 6:
+            print(f"⚠️ {model_name}: 有效回答数不足 ({valid_count}/10)，已过滤")
+            return None
         
         return result
     
@@ -273,11 +291,11 @@ class LLMDataProcessor:
         # 创建兼容格式的DataFrame
         ivs_compatible = pd.DataFrame()
         
-        # 添加元数据列（修复标量赋值问题）
-        ivs_compatible['year'] = [2025] * len(processed_df)  # 使用当前年份
-        ivs_compatible['country_code'] = processed_df['model_name']  # 使用模型名作为"国家"代码
+        # 添加元数据列（与Stage0格式对应）
+        ivs_compatible['year'] = [2025] * len(processed_df)  # 2025表示当前年份
+        ivs_compatible['country_code'] = processed_df['model_name']  # 使用模型名作为标识
         ivs_compatible['weight'] = [1.0] * len(processed_df)  # 统一权重
-        ivs_compatible['model_region'] = processed_df['model_region']
+        ivs_compatible['model_region'] = processed_df['model_region']  # LLM特有字段
         
         # 添加IVS问题列
         ivs_questions = ['A008', 'A165', 'E018', 'E025', 'F063', 'F118', 'F120', 'G006']
@@ -287,39 +305,71 @@ class LLMDataProcessor:
         # 处理Y002 - 使用物质主义倾向值
         ivs_compatible['Y002'] = processed_df['Y002_materialist']
         
-        # 处理Y003 - 选择最重要的一个值作为代表
-        def get_primary_y003_value(row):
+        # 处理Y003 - 使用IVSQuestionProcessor计算传统vs世俗理性分数
+        def get_y003_score(row):
+            """计算Y003的分数（与IVS处理一致）"""
+            # 收集被选中的选项
+            selected_values = []
             for i in range(1, 12):
                 if row.get(f'Y003_{i}', 0) == 1:
-                    return i
-            return np.nan
+                    selected_values.append(i)
+            
+            if not selected_values:
+                return np.nan
+            
+            # 使用IVSQuestionProcessor计算分数（与Stage0一致）
+            result = IVSQuestionProcessor.process_y003(selected_values)
+            return result["y003_score"]  # 返回计算分数，不是选项编号
         
-        ivs_compatible['Y003'] = processed_df.apply(get_primary_y003_value, axis=1)
+        ivs_compatible['Y003'] = processed_df.apply(get_y003_score, axis=1)
         
         return ivs_compatible
     
-    def save_processed_data(self, output_path: str = None):
-        """保存处理后的数据
+    def save_processed_data(self, output_path: str = None) -> Optional[str]:
+        """
+        保存处理后的数据为标准IVS格式
         
         Args:
-            output_path: 输出文件路径
+            output_path: 输出文件路径（可选）
+        
+        Returns:
+            保存的文件路径，如果保存失败则返回None
         """
         if output_path is None:
-            output_path = self.data_dir / 'llm_processed_responses.pkl'
+            # Stage1专用路径：data/llm_values/，带时间戳
+            from datetime import datetime
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            llm_values_dir = self.data_dir / 'llm_values'
+            llm_values_dir.mkdir(parents=True, exist_ok=True)
+            output_path = llm_values_dir / f'llm_processed_responses_ivs_format_{timestamp}.pkl'
         
-        processed_df = self.process_all_models()
+        # 只保存IVS兼容格式（标准格式）
+        ivs_compatible = self.create_ivs_compatible_dataframe()
         
-        if not processed_df.empty:
-            processed_df.to_pickle(output_path)
-            print(f"处理后的数据已保存到: {output_path}")
+        if not ivs_compatible.empty:
+            # 保存带时间戳的版本
+            ivs_compatible.to_pickle(output_path)
+            print(f"✅ LLM数据已保存（IVS标准格式）: {output_path}")
+            print(f"   - 模型数量: {len(ivs_compatible)}")
+            print(f"   - 数据格式与Stage0的valid_data.pkl一致")
             
-            # 同时保存IVS兼容格式
-            ivs_compatible = self.create_ivs_compatible_dataframe()
-            ivs_path = str(output_path).replace('.pkl', '_ivs_format.pkl')
-            ivs_compatible.to_pickle(ivs_path)
-            print(f"IVS兼容格式数据已保存到: {ivs_path}")
+            # 同时保存JSON格式（便于查看）
+            json_path = str(output_path).replace('.pkl', '.json')
+            ivs_compatible.to_json(json_path, orient='records', indent=2)
+            print(f"   - JSON格式: {json_path}")
+            
+            # 同时保存标准文件名版本（不带时间戳，用于后续步骤）
+            llm_values_dir = self.data_dir / 'llm_values'
+            standard_path = llm_values_dir / 'llm_values_ivs_format.pkl'
+            ivs_compatible.to_pickle(standard_path)
+            standard_json_path = llm_values_dir / 'llm_values_ivs_format.json'
+            ivs_compatible.to_json(standard_json_path, orient='records', indent=2)
+            print(f"   - 标准路径: {standard_path}")
+            
+            return str(standard_path)
         else:
-            print("没有数据需要保存")
+            print("⚠️ 没有数据需要保存")
+            return None
     
     def get_summary_statistics(self) -> Dict[str, Any]:
         """获取数据摘要统计

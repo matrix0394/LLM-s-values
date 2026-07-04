@@ -21,7 +21,8 @@ class LLMCountryRoleplayPCAAnalyzer(BasePCAAnalyzer):
     
     def __init__(self, data_path: str = "data"):
         """初始化角色扮演PCA分析器"""
-        super().__init__(data_path)
+        # 传递ivs_data_subdir="country_values"以正确加载IVS数据
+        super().__init__(data_path, ivs_data_subdir="country_values")
         
         # 设置roleplay专用的保存路径
         self.roleplay_data_path = Path(data_path) / "roleplay_English"
@@ -32,16 +33,16 @@ class LLMCountryRoleplayPCAAnalyzer(BasePCAAnalyzer):
         self.roleplay_data = None
     
     def load_additional_data(self) -> pd.DataFrame:
-        """加载角色扮演数据（优先使用最新的带时间戳文件）"""
+        """加载角色扮演数据（优先使用IVS格式，用于PCA分析）"""
         try:
             # 查找最新的带时间戳文件
             print("🔍 查找最新的角色扮演数据文件...")
             
-            # 1. 优先查找最新版本文件
-            latest_file = self.roleplay_data_path / "llm_roleplay_processed_responses_latest.pkl"
-            if latest_file.exists():
-                self.roleplay_data = pd.read_pickle(latest_file)
-                print(f"✅ 加载最新角色扮演数据: {latest_file.name} - {self.roleplay_data.shape}")
+            # 1. 优先查找IVS格式最新版本文件（用于PCA分析）
+            latest_ivs_file = self.roleplay_data_path / "llm_roleplay_processed_responses_ivs_format_latest.pkl"
+            if latest_ivs_file.exists():
+                self.roleplay_data = pd.read_pickle(latest_ivs_file)
+                print(f"✅ 加载最新IVS格式数据: {latest_ivs_file.name} - {self.roleplay_data.shape}")
                 return self.roleplay_data
             
             # 2. 查找带时间戳的IVS格式文件（最新的）
@@ -52,7 +53,16 @@ class LLMCountryRoleplayPCAAnalyzer(BasePCAAnalyzer):
                 print(f"✅ 加载带时间戳的IVS格式数据: {latest_ivs_file.name} - {self.roleplay_data.shape}")
                 return self.roleplay_data
             
-            # 3. 查找带时间戳的原始处理文件（最新的）
+            # 3. 如果没有IVS格式，尝试加载原始格式（需要转换）
+            latest_file = self.roleplay_data_path / "llm_roleplay_processed_responses_latest.pkl"
+            if latest_file.exists():
+                print(f"⚠️ 仅找到原始格式数据，需要IVS格式用于PCA分析")
+                self.roleplay_data = pd.read_pickle(latest_file)
+                print(f"   加载原始数据: {latest_file.name} - {self.roleplay_data.shape}")
+                print(f"   建议：运行数据处理器生成IVS格式数据")
+                return self.roleplay_data
+            
+            # 4. 查找带时间戳的原始处理文件（最新的）
             processed_files = list(self.roleplay_data_path.glob("llm_roleplay_processed_responses_*.pkl"))
             if processed_files:
                 latest_processed_file = max(processed_files, key=lambda x: x.stat().st_mtime)
@@ -116,40 +126,27 @@ class LLMCountryRoleplayPCAAnalyzer(BasePCAAnalyzer):
             print(f"🔄 应用数据质量筛选...")
             print(f"   筛选前: {len(data)} 行")
             
-            # 1. 确保有足够的IVS问题回答（至少6个）
-            data_filtered = data.dropna(subset=self.iv_qns, thresh=6)
-            print(f"   thresh=6筛选后: {len(data_filtered)} 行")
+            # 分别处理IVS和LLM数据
+            ivs_data = data[data['data_source'] == 'IVS'].copy()
+            llm_data = data[data['data_source'].isin(['llm_roleplay', 'Roleplay'])].copy()
             
-            # 2. 移除所有IVS问题都为NaN的行
-            valid_ivs_mask = data_filtered[self.iv_qns].notna().any(axis=1)
-            data_filtered = data_filtered[valid_ivs_mask]
-            print(f"   移除全NaN行后: {len(data_filtered)} 行")
+            print(f"   IVS数据: {len(ivs_data)} 行, LLM数据: {len(llm_data)} 行")
             
-            # 3. 数据范围检查和异常值清理
-            for col in self.iv_qns:
-                if col in data_filtered.columns:
-                    # 移除异常值（超出合理范围）
-                    if col in ['A008', 'A165', 'E018', 'E025']:
-                        # 1-4范围
-                        mask = (data_filtered[col] >= 1) & (data_filtered[col] <= 4)
-                        data_filtered.loc[~mask, col] = np.nan
-                    elif col in ['F063', 'F118', 'F120', 'G006']:
-                        # 1-10范围
-                        mask = (data_filtered[col] >= 1) & (data_filtered[col] <= 10)
-                        data_filtered.loc[~mask, col] = np.nan
-                    elif col in ['Y002', 'Y003']:
-                        # Y002: 1-3, Y003: 1-3 (修复异常值)
-                        mask = (data_filtered[col] >= 1) & (data_filtered[col] <= 3)
-                        data_filtered.loc[~mask, col] = np.nan
+            # IVS数据：thresh=6（允许NaN，PPCA可以处理均匀分布的4.2% NaN）
+            ivs_filtered = ivs_data.dropna(subset=self.iv_qns, thresh=6)
+            print(f"   IVS thresh=6后: {len(ivs_filtered)} 行")
             
-            # 4. 再次应用thresh=6筛选（清理异常值后）
-            data_filtered = data_filtered.dropna(subset=self.iv_qns, thresh=6)
-            print(f"   异常值清理后: {len(data_filtered)} 行")
+            # LLM数据：必须完全回答（高度集中的NaN会导致Varimax失败）
+            llm_filtered = llm_data.dropna(subset=self.iv_qns, thresh=6)
+            print(f"   LLM thresh=6后: {len(llm_filtered)} 行")
+            llm_filtered = llm_filtered.dropna(subset=self.iv_qns, how='any')
+            print(f"   LLM完全回答后: {len(llm_filtered)} 行")
             
-            # 5. 最终检查：移除所有IVS问题都为NaN的行
-            final_mask = data_filtered[self.iv_qns].notna().any(axis=1)
-            data_filtered = data_filtered[final_mask]
-            print(f"   最终有效数据: {len(data_filtered)} 行")
+            # 合并
+            data_filtered = pd.concat([ivs_filtered, llm_filtered], ignore_index=True)
+            print(f"   合并后总数据: {len(data_filtered)} 行")
+            
+            # 注意：不做异常值清理，保持与参考项目一致
             
             return data_filtered
             
@@ -182,6 +179,11 @@ class LLMCountryRoleplayPCAAnalyzer(BasePCAAnalyzer):
                 return filtered_data
         
         try:
+            # 准备IVS数据
+            ivs_data = self.prepare_ivs_data()
+            ivs_data['data_source'] = 'IVS'
+            print(f"✅ 准备IVS数据: {len(ivs_data)} 行")
+            
             # 处理角色扮演数据 - 应用相同的筛选标准
             roleplay_data_copy = additional_data.copy()
             roleplay_data_copy['data_source'] = 'Roleplay'
@@ -190,34 +192,22 @@ class LLMCountryRoleplayPCAAnalyzer(BasePCAAnalyzer):
             print(f"🔄 对roleplay数据应用数据质量筛选...")
             print(f"   筛选前: {len(roleplay_data_copy)} 行")
             
-            # 1. 确保有足够的IVS问题回答（至少6个）
+            # 1. 确保有足够的IVS问题回答（至少6个）- 用于保存
             roleplay_data_copy = roleplay_data_copy.dropna(subset=self.iv_qns, thresh=6)
             print(f"   thresh=6筛选后: {len(roleplay_data_copy)} 行")
             
-            # 2. 移除所有IVS问题都为NaN的行
-            valid_ivs_mask = roleplay_data_copy[self.iv_qns].notna().any(axis=1)
-            roleplay_data_copy = roleplay_data_copy[valid_ivs_mask]
-            print(f"   移除全NaN行后: {len(roleplay_data_copy)} 行")
+            # 2. PCA分析要求：LLM数据必须完全回答所有10个问题
+            # 原因：LLM的NaN高度集中在某些列(E018:68%, G006:59%)，导致PPCA数值不稳定
+            # 而IVS数据的NaN分布均匀(4.2%)，PPCA可以处理
+            before_dropna = len(roleplay_data_copy)
+            if before_dropna > 0:
+                roleplay_data_copy = roleplay_data_copy.dropna(subset=self.iv_qns, how='any')
+                retention_rate = len(roleplay_data_copy)/before_dropna*100 if before_dropna > 0 else 0
+                print(f"   完全回答筛选后: {len(roleplay_data_copy)} 行 (保留 {retention_rate:.1f}%)")
+            else:
+                print(f"   ⚠️ thresh=6筛选后数据已为空，跳过完全回答筛选")
             
-            # 3. 检查数据质量
-            for col in self.iv_qns:
-                if col in roleplay_data_copy.columns:
-                    # 移除异常值（超出合理范围）
-                    if col in ['A008', 'A165', 'E018', 'E025']:
-                        # 1-4范围
-                        mask = (roleplay_data_copy[col] >= 1) & (roleplay_data_copy[col] <= 4)
-                        roleplay_data_copy.loc[~mask, col] = np.nan
-                    elif col in ['F063', 'F118', 'F120', 'G006']:
-                        # 1-10范围
-                        mask = (roleplay_data_copy[col] >= 1) & (roleplay_data_copy[col] <= 10)
-                        roleplay_data_copy.loc[~mask, col] = np.nan
-                    elif col in ['Y002', 'Y003']:
-                        # 特殊处理，保持原值
-                        pass
-            
-            # 再次应用thresh=6筛选（清理异常值后）
-            roleplay_data_copy = roleplay_data_copy.dropna(subset=self.iv_qns, thresh=6)
-            print(f"   最终有效数据: {len(roleplay_data_copy)} 行")
+            # 注意：不做异常值清理，与参考项目保持一致，避免改变数据分布
             
             if len(roleplay_data_copy) == 0:
                 print("⚠️ 角色扮演数据筛选后为空，仅使用IVS数据")
@@ -286,7 +276,7 @@ class LLMCountryRoleplayPCAAnalyzer(BasePCAAnalyzer):
                 print(f"   {source}: {count} 个实体")
         
         # 角色扮演数据统计
-        roleplay_data = entity_scores[entity_scores['data_source'] == 'Roleplay'] if 'data_source' in entity_scores.columns else pd.DataFrame()
+        roleplay_data = entity_scores[entity_scores['data_source'] == 'llm_roleplay'] if 'data_source' in entity_scores.columns else pd.DataFrame()
         
         if not roleplay_data.empty:
             print(f"\n🎭 角色扮演数据统计:")
@@ -329,6 +319,195 @@ class LLMCountryRoleplayPCAAnalyzer(BasePCAAnalyzer):
             print(f"💾 保存最新实体分数到: {scores_path_latest}")
         
         return entity_scores
+    
+    def calculate_distances(self, entity_scores: pd.DataFrame) -> pd.DataFrame:
+        """计算LLM角色扮演结果与真实国家IVS数据的文化距离
+        
+        Args:
+            entity_scores: PCA分析后的实体分数数据
+            
+        Returns:
+            包含距离信息的DataFrame
+        """
+        print("\n" + "=" * 80)
+        print("📏 计算文化距离：LLM角色扮演 vs 真实国家IVS数据")
+        print("=" * 80)
+        
+        # 分离LLM角色扮演数据和真实IVS数据
+        # 兼容两种data_source值: 'llm_roleplay'和'Roleplay'
+        roleplay_data = entity_scores[entity_scores['data_source'].isin(['llm_roleplay', 'Roleplay'])].copy()
+        ivs_data = entity_scores[entity_scores['data_source'] == 'IVS'].copy()
+        
+        if roleplay_data.empty:
+            print("❌ 没有找到角色扮演数据")
+            return pd.DataFrame()
+        
+        if ivs_data.empty:
+            print("❌ 没有找到真实IVS数据作为基准")
+            return pd.DataFrame()
+        
+        print(f"✅ 角色扮演数据: {len(roleplay_data)} 个实体")
+        print(f"✅ 真实IVS数据: {len(ivs_data)} 个国家")
+        
+        # 构建真实国家的坐标字典（同时使用country_code和country_name作为key）
+        real_country_coords = {}
+        real_country_by_name = {}
+        
+        for _, row in ivs_data.iterrows():
+            country_code = row.get('S003', row.get('country_code'))
+            country_name = row.get('Country', '')
+            coords = {
+                'pc1': row['PC1_rescaled'],
+                'pc2': row['PC2_rescaled'],
+                'country_name': country_name
+            }
+            
+            # 使用数字代码作为key
+            if pd.notna(country_code):
+                try:
+                    code_str = str(int(float(country_code)))
+                    real_country_coords[code_str] = coords
+                except (ValueError, TypeError):
+                    pass
+            
+            # 同时使用国家名称作为key
+            if pd.notna(country_name):
+                real_country_by_name[country_name] = coords
+        
+        print(f"📍 建立了 {len(real_country_coords)} 个真实国家的文化坐标基准")
+        
+        # 计算距离
+        distance_results = []
+        
+        for _, roleplay_row in roleplay_data.iterrows():
+            model_name = roleplay_row.get('model_name', roleplay_row.get('Model Name', ''))
+            model_region = roleplay_row.get('model_region', roleplay_row.get('Model Region', ''))
+            country_name_from_row = roleplay_row.get('country_name', roleplay_row.get('Country', ''))
+            country_code_from_row = roleplay_row.get('country_code', roleplay_row.get('S003', ''))
+            cultural_region = roleplay_row.get('cultural_region', roleplay_row.get('Cultural Region', ''))
+            
+            roleplay_pc1 = roleplay_row['PC1_rescaled']
+            roleplay_pc2 = roleplay_row['PC2_rescaled']
+            
+            # 尝试找到对应的真实数据（先用数字代码，再用国家名称）
+            real_coords = None
+            match_key = None
+            
+            # 方法1: 尝试用数字代码匹配
+            if pd.notna(country_code_from_row):
+                try:
+                    code_str = str(int(float(country_code_from_row)))
+                    if code_str in real_country_coords:
+                        real_coords = real_country_coords[code_str]
+                        match_key = code_str
+                except (ValueError, TypeError):
+                    pass
+            
+            # 方法2: 如果数字代码没匹配上，尝试用国家名称匹配
+            if not real_coords and pd.notna(country_code_from_row):
+                # country_code可能是国家名称
+                if str(country_code_from_row) in real_country_by_name:
+                    real_coords = real_country_by_name[str(country_code_from_row)]
+                    match_key = str(country_code_from_row)
+            
+            # 方法3: 用country_name字段匹配
+            if not real_coords and pd.notna(country_name_from_row):
+                if country_name_from_row in real_country_by_name:
+                    real_coords = real_country_by_name[country_name_from_row]
+                    match_key = country_name_from_row
+            
+            if real_coords:
+                real_pc1 = real_coords['pc1']
+                real_pc2 = real_coords['pc2']
+                
+                # 计算欧氏距离
+                distance = np.sqrt(
+                    (roleplay_pc1 - real_pc1)**2 + 
+                    (roleplay_pc2 - real_pc2)**2
+                )
+                
+                # 使用country_name_from_row或country_code_from_row作为显示的国家名称
+                display_country_name = country_name_from_row if pd.notna(country_name_from_row) else str(country_code_from_row)
+                real_country_name = real_coords['country_name']
+                
+                distance_results.append({
+                    'model_name': model_name,
+                    'model_region': model_region,
+                    'roleplay_country': display_country_name,
+                    'real_country': real_country_name,
+                    'country_code': match_key,
+                    'cultural_region': cultural_region,
+                    'distance': distance,
+                    'roleplay_pc1': roleplay_pc1,
+                    'roleplay_pc2': roleplay_pc2,
+                    'real_pc1': real_pc1,
+                    'real_pc2': real_pc2
+                })
+        
+        distance_df = pd.DataFrame(distance_results)
+        
+        if not distance_df.empty:
+            print(f"\n✅ 计算了 {len(distance_df)} 个距离值")
+            print(f"\n📊 距离统计:")
+            print(f"   平均距离: {distance_df['distance'].mean():.3f}")
+            print(f"   标准差: {distance_df['distance'].std():.3f}")
+            print(f"   最小距离: {distance_df['distance'].min():.3f}")
+            print(f"   最大距离: {distance_df['distance'].max():.3f}")
+            
+            # 按模型统计
+            print(f"\n📊 按模型统计平均距离:")
+            model_stats = distance_df.groupby('model_name')['distance'].agg(['mean', 'std', 'count'])
+            for model_name, row in model_stats.iterrows():
+                print(f"   {model_name}:")
+                print(f"      平均距离: {row['mean']:.3f} ± {row['std']:.3f} (n={int(row['count'])})")
+            
+            # 按文化区域统计
+            if 'cultural_region' in distance_df.columns:
+                print(f"\n📊 按文化区域统计平均距离:")
+                region_stats = distance_df.groupby('cultural_region')['distance'].agg(['mean', 'std', 'count'])
+                for region, row in region_stats.iterrows():
+                    if pd.notna(region):
+                        print(f"   {region}:")
+                        print(f"      平均距离: {row['mean']:.3f} ± {row['std']:.3f} (n={int(row['count'])})")
+        else:
+            print("❌ 没有计算出任何距离值")
+        
+        return distance_df
+    
+    def save_distances(self, distance_df: pd.DataFrame, prefix: str = "roleplay_distance"):
+        """保存距离分析结果
+        
+        Args:
+            distance_df: 距离分析结果DataFrame
+            prefix: 文件名前缀
+        """
+        from datetime import datetime
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        # 保存到roleplay_English数据目录
+        data_csv_path = self.roleplay_data_path / f"{prefix}_analysis_{timestamp}.csv"
+        distance_df.to_csv(data_csv_path, index=False)
+        print(f"💾 保存距离分析到数据目录: {data_csv_path}")
+        
+        # 同时保存一个不带时间戳的版本
+        data_csv_latest = self.roleplay_data_path / f"{prefix}_analysis_latest.csv"
+        distance_df.to_csv(data_csv_latest, index=False)
+        print(f"💾 保存最新距离分析: {data_csv_latest}")
+        
+        # 保存到results目录（用于报告和可视化）
+        results_dir = self.data_path.parent / "results" / "roleplay_English"
+        results_dir.mkdir(parents=True, exist_ok=True)
+        
+        results_csv_path = results_dir / f"{prefix}_analysis_{timestamp}.csv"
+        distance_df.to_csv(results_csv_path, index=False)
+        print(f"💾 保存距离分析到结果目录: {results_csv_path}")
+        
+        # 保存pkl格式（便于后续分析）
+        data_pkl_path = self.roleplay_data_path / f"{prefix}_analysis_{timestamp}.pkl"
+        distance_df.to_pickle(data_pkl_path)
+        print(f"💾 保存距离分析PKL: {data_pkl_path}")
+        
+        return results_csv_path
 
 
 def main():

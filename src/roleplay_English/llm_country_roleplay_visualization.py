@@ -28,8 +28,8 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
         """初始化角色扮演可视化器"""
         super().__init__(data_path, results_path)
         
-        # 创建角色扮演专用的结果子目录
-        self.roleplay_results_path = self.results_path / "roleplay_visualization"
+        # 创建角色扮演专用的结果子目录（统一命名为roleplay_dashboard）
+        self.roleplay_results_path = self.results_path / "roleplay_dashboard"
         self.roleplay_results_path.mkdir(exist_ok=True)
         
         # 角色扮演特有的颜色映射
@@ -51,22 +51,34 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
         # 合并到扩展颜色中
         self.extended_colors.update(self.model_region_colors)
         
+        # 📊 统一的可视化格式标准（继承自base）
+        # matplotlib格式
+        self.REAL_COUNTRY_SIZE = 50      # 真实国家点大小（base标准）
+        self.REAL_COUNTRY_ALPHA = 0.7    # 真实国家透明度（base标准）
+        self.ROLEPLAY_SIZE = 100         # 角色扮演点大小
+        self.ROLEPLAY_ALPHA = 0.8        # 角色扮演透明度
+        
+        # plotly格式（HTML交互式图表）
+        self.PLOTLY_REAL_SIZE = 8        # 真实国家点大小
+        self.PLOTLY_REAL_OPACITY = 0.7   # 真实国家透明度（与base一致）
+        self.PLOTLY_ROLEPLAY_SIZE = 12   # 角色扮演点大小
+        self.PLOTLY_ROLEPLAY_OPACITY = 0.8  # 角色扮演透明度
+        
         # 设置样式
         sns.set_style("whitegrid")
     
     def load_data(self) -> pd.DataFrame:
-        """加载角色扮演PCA结果数据"""
-        # 根据实际文件结构更新数据路径
+        """加载角色扮演PCA结果数据（从标准路径）"""
+        # 标准路径：data/roleplay_English/roleplay_pca_entity_scores_latest.pkl
+        roleplay_dir = self.data_path / "roleplay_English"
+        
         data_paths = [
-            # 模型目录下的PCA结果
-            self.data_path / "models" / "roleplay_pca_results.pkl",
-            self.data_path / "models" / "roleplay_entity_scores_pca.pkl",
-            # processed目录下的处理后数据
-            self.data_path / "processed" / "llm_roleplay_processed_responses_ivs_format.pkl",
-            # results子目录下的数据
-            self.data_path / "results" / "llm_responses_roleplay" / "final_processed_roleplay_data.pkl",
-            self.data_path / "results" / "llm_responses_roleplay" / "roleplay_results.pkl",
-            # 兼容旧路径
+            # 1. 优先：最新版本（标准路径）
+            roleplay_dir / "roleplay_pca_entity_scores_latest.pkl",
+            # 2. 带时间戳的最新文件
+            *sorted(roleplay_dir.glob("roleplay_pca_entity_scores_*.pkl"), 
+                   key=lambda x: x.stat().st_mtime, reverse=True),
+            # 3. 兼容旧路径
             self.data_path / "roleplay_pca_entity_scores.pkl",
             self.data_path / "llm_roleplay_entity_scores.pkl"
         ]
@@ -77,7 +89,11 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
                 print(f"✅ 加载角色扮演数据: {data_path} - {data.shape}")
                 return data
         
-        raise FileNotFoundError(f"未找到角色扮演数据文件，尝试的路径: {[str(p) for p in data_paths]}")
+        raise FileNotFoundError(
+            f"未找到角色扮演数据文件\n"
+            f"期望路径: {roleplay_dir / 'roleplay_pca_entity_scores_latest.pkl'}\n"
+            f"请先运行PCA分析生成数据"
+        )
     
     def _get_point_label(self, row: pd.Series) -> str:
         """获取数据点标签 - 角色扮演特定实现"""
@@ -136,18 +152,9 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
         return real_countries, roleplay_data
     
     def _assign_cultural_regions(self, roleplay_data: pd.DataFrame) -> pd.DataFrame:
-        """为角色扮演数据分配文化区域"""
-        # 国家到文化区域的映射
-        country_to_region = {
-            'United States': 'English-Speaking',
-            'Brazil': 'Latin America',
-            'China': 'Confucian',
-            'Egypt': 'African-Islamic',
-            'France': 'Catholic Europe',
-            'Germany': 'Protestant Europe',
-            'India': 'West & South Asia',
-            'Russian Federation': 'Orthodox Europe'
-        }
+        """为角色扮演数据分配文化区域 - 从配置文件自动加载"""
+        # 尝试从配置文件加载完整映射
+        country_to_region = self._load_country_cultural_mapping()
         
         # 为缺失的Cultural Region分配值
         for idx, row in roleplay_data.iterrows():
@@ -156,9 +163,41 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
                 if country in country_to_region:
                     roleplay_data.at[idx, 'Cultural Region'] = country_to_region[country]
                 else:
-                    roleplay_data.at[idx, 'Cultural Region'] = 'Other'
+                    # 如果在配置文件中也找不到，标记为Unknown而不是Other
+                    roleplay_data.at[idx, 'Cultural Region'] = 'Unknown'
+                    print(f"⚠️ 未找到国家'{country}'的文化区域映射")
         
         return roleplay_data
+    
+    def _load_country_cultural_mapping(self) -> dict:
+        """从配置文件加载国家到文化区域的完整映射"""
+        try:
+            import json
+            from pathlib import Path
+            
+            # 找到配置文件路径 - 需要到项目根目录
+            # data_path = .../data/roleplay_English, parent = .../data, parent.parent = 项目根
+            config_path = self.data_path.parent.parent / 'config' / 'country' / 'cultural_regions.json'
+            
+            with open(config_path, 'r', encoding='utf-8') as f:
+                config = json.load(f)
+                mapping = config.get('country_cultural_mapping', {})
+                print(f"✅ 从配置文件加载了 {len(mapping)} 个国家的文化区域映射")
+                return mapping
+        except Exception as e:
+            print(f"⚠️ 加载文化区域配置失败: {e}，使用默认映射")
+            # 返回基本映射作为后备
+            return {
+                'United States': 'English-Speaking',
+                'Brazil': 'Latin America',
+                'China': 'Confucian',
+                'Spain': 'Catholic Europe',
+                'Egypt': 'African-Islamic',
+                'France': 'Catholic Europe',
+                'Germany': 'Protestant Europe',
+                'India': 'West & South Asia',
+                'Russian Federation': 'Orthodox Europe'
+            }
     
     def _assign_model_regions(self, roleplay_data: pd.DataFrame) -> pd.DataFrame:
         """为角色扮演数据分配模型区域"""
@@ -201,15 +240,30 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
         
         fig, ax = plt.subplots(figsize=figsize)
         
-        # 绘制真实国家（背景）
+        # 绘制真实国家（背景）- 使用base中的标准格式
         if not real_countries.empty:
             for region in real_countries['Cultural Region'].unique():
                 if pd.isna(region):
                     continue
                 subset = real_countries[real_countries['Cultural Region'] == region]
                 color = self.get_color_for_region(region)
+                
+                # 先添加国家名称标签（像Stage1一样）
+                for _, row in subset.iterrows():
+                    country_name = self._get_point_label(row)
+                    if country_name:
+                        # 检查是否为伊斯兰国家（使用较小的字体）
+                        if 'Islamic' in subset.columns and row.get('Islamic', False):
+                            ax.text(row['PC1_rescaled'], row['PC2_rescaled'], country_name, 
+                                   color=color, fontsize=8, fontstyle='italic', ha='center', va='bottom')
+                        else:
+                            ax.text(row['PC1_rescaled'], row['PC2_rescaled'], country_name, 
+                                   color=color, fontsize=8, ha='center', va='bottom')
+                
+                # 再绘制散点
                 ax.scatter(subset['PC1_rescaled'], subset['PC2_rescaled'], 
-                          label=f"{region} (Real)", color=color, s=30, alpha=0.3)
+                          label=f"{region} (Real)", color=color, 
+                          s=self.REAL_COUNTRY_SIZE, alpha=self.REAL_COUNTRY_ALPHA)
         
         # 绘制角色扮演数据（前景）
         if not roleplay_data.empty:
@@ -237,7 +291,8 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
                         marker = self.model_markers.get(model_region, 'o')
                         ax.scatter(model_subset['PC1_rescaled'], model_subset['PC2_rescaled'],
                                   label=f"{region} ({model_region})", color=color, 
-                                  s=100, alpha=0.8, marker=marker, edgecolors='black', linewidth=1)
+                                  s=self.ROLEPLAY_SIZE, alpha=self.ROLEPLAY_ALPHA, 
+                                  marker=marker, edgecolors='black', linewidth=1)
                         
                         # 添加标签
                         for _, row in model_subset.iterrows():
@@ -297,10 +352,25 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
             row, col = i // cols, i % cols
             ax = axes[row, col] if rows > 1 else axes[col]
             
-            # 绘制真实国家背景
+            # 绘制真实国家背景 - 使用base中的标准格式（按区域上色）
             if not real_countries.empty:
-                ax.scatter(real_countries['PC1_rescaled'], real_countries['PC2_rescaled'],
-                          c='lightgray', s=20, alpha=0.5, label='Real Countries')
+                for region in real_countries['Cultural Region'].unique():
+                    if pd.isna(region):
+                        continue
+                    subset = real_countries[real_countries['Cultural Region'] == region]
+                    color = self.get_color_for_region(region)
+                    
+                    # 添加国家标签（使用更小字体，因为子图较小）
+                    for _, row in subset.iterrows():
+                        country_name = self._get_point_label(row)
+                        if country_name:
+                            ax.text(row['PC1_rescaled'], row['PC2_rescaled'], country_name, 
+                                   color=color, fontsize=6, ha='center', va='bottom', alpha=0.6)
+                    
+                    # 绘制散点（略微降低透明度作为背景）
+                    ax.scatter(subset['PC1_rescaled'], subset['PC2_rescaled'],
+                              color=color, s=self.REAL_COUNTRY_SIZE, alpha=0.4, 
+                              label=f'{region} (Real)')
             
             # 绘制该模型的角色扮演数据
             model_data = roleplay_data[roleplay_data.get('model_name', '') == model]
@@ -310,8 +380,10 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
                     continue
                 subset = model_data[model_data['Cultural Region'] == region]
                 color = self.get_color_for_region(region)
+                # 使用统一的角色扮演格式
                 ax.scatter(subset['PC1_rescaled'], subset['PC2_rescaled'],
-                          label=region, color=color, s=60, alpha=0.8)
+                          label=region, color=color, 
+                          s=self.ROLEPLAY_SIZE, alpha=self.ROLEPLAY_ALPHA)
                 
                 # 添加国家标签
                 for _, row in subset.iterrows():
@@ -430,8 +502,8 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
                     name=f'{region} (Real Countries)',
                     marker=dict(
                         color=color,
-                        size=8,
-                        opacity=0.7,
+                        size=self.PLOTLY_REAL_SIZE,          # 使用统一标准
+                        opacity=self.PLOTLY_REAL_OPACITY,    # 使用统一标准
                         line=dict(width=1, color='white')
                     ),
                     hovertemplate=(
@@ -468,8 +540,8 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
                             name=f'{region} ({model})',
                             marker=dict(
                                 color=base_color,
-                                size=6,
-                                opacity=0.8,
+                                size=self.PLOTLY_ROLEPLAY_SIZE,        # 使用统一标准
+                                opacity=self.PLOTLY_ROLEPLAY_OPACITY,  # 使用统一标准
                                 symbol='diamond',
                                 line=dict(width=1, color='black')
                             ),
@@ -550,7 +622,11 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
                         y=region_real['PC2_rescaled'],
                         mode='markers',
                         name=f'{region} (Real Countries)',
-                        marker=dict(color=color, size=10, opacity=0.8),
+                        marker=dict(
+                            color=color, 
+                            size=self.PLOTLY_REAL_SIZE,        # 使用统一标准
+                            opacity=self.PLOTLY_REAL_OPACITY   # 使用统一标准
+                        ),
                         text=self._get_display_text(region_real),
                         hovertemplate='<b>%{text}</b><br>Type: Real Country<br>PC1: %{x:.3f}<br>PC2: %{y:.3f}<extra></extra>'
                     ))
@@ -570,7 +646,12 @@ class LLMCountryRoleplayVisualizer(BaseCulturalMapVisualizer):
                             y=model_data['PC2_rescaled'],
                             mode='markers',
                             name=f'{region} ({model})',
-                            marker=dict(color=color, size=8, opacity=0.6, symbol='diamond'),
+                            marker=dict(
+                                color=color, 
+                                size=self.PLOTLY_ROLEPLAY_SIZE,        # 使用统一标准
+                                opacity=self.PLOTLY_ROLEPLAY_OPACITY,  # 使用统一标准
+                                symbol='diamond'
+                            ),
                             text=self._get_display_text(model_data),
                             hovertemplate=f'<b>%{{text}}</b><br>Model: {model}<br>Type: Roleplay<br>PC1: %{{x:.3f}}<br>PC2: %{{y:.3f}}<extra></extra>'
                         ))
