@@ -16,6 +16,7 @@ Stage1: LLM Multilingual Values 完整分析运行脚本
 import os
 import sys
 import argparse
+import json
 from pathlib import Path
 from datetime import datetime
 
@@ -26,6 +27,50 @@ sys.path.append(str(project_root))
 # 导入所需模块
 from src.llm_values.llm_multilingual_interview import LLMMultilingualInterview, UN_LANGUAGE_NAMES_ZH
 from src.llm_values.llm_multilingual_data_processor import LLMMultilingualDataProcessor
+
+
+def load_models_from_file(models_file: str) -> list:
+    """Load enabled model ids from a JSON list or config object."""
+    path = Path(models_file)
+    if not path.is_absolute():
+        path = project_root / path
+
+    with open(path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    if isinstance(data, list):
+        entries = data
+    elif isinstance(data, dict) and isinstance(data.get('models'), list):
+        entries = data['models']
+    else:
+        raise ValueError("models file must be a JSON list or an object with a models list")
+
+    model_ids = []
+    for entry in entries:
+        if isinstance(entry, str):
+            model_ids.append(entry)
+        elif isinstance(entry, dict):
+            if entry.get('enabled', True) is False:
+                continue
+            model_id = entry.get('id') or entry.get('model')
+            if model_id:
+                model_ids.append(model_id)
+
+    # Keep order while removing duplicates.
+    seen = set()
+    unique_model_ids = []
+    for model_id in model_ids:
+        if model_id not in seen:
+            unique_model_ids.append(model_id)
+            seen.add(model_id)
+
+    if not unique_model_ids:
+        raise ValueError(f"no enabled models found in {path}")
+
+    print(f"📋 从模型列表加载 {len(unique_model_ids)} 个启用模型: {path}")
+    for model_id in unique_model_ids:
+        print(f"   - {model_id}")
+    return unique_model_ids
 
 
 class LLMMultilingualAnalysisRunner:
@@ -632,6 +677,9 @@ def main():
   
   # 命令行模式 - 指定模型和语言
   python run_llm_multilingual_analysis.py --models gpt-4o claude-3-opus --languages en zh-cn fr
+
+  # 从模型列表文件读取启用模型
+  python run_llm_multilingual_analysis.py --models-file config/models/models_to_test.json --languages en --consensus-count 1 --step interview
   
   # 命令行模式 - 只处理现有数据
   python run_llm_multilingual_analysis.py --skip interview
@@ -646,6 +694,8 @@ def main():
     
     parser.add_argument('--models', nargs='+', 
                        help='指定要测试的模型列表')
+    parser.add_argument('--models-file',
+                       help='从JSON文件读取要测试的模型列表（支持models[].id和enabled字段）')
     parser.add_argument('--languages', nargs='+',
                        help='指定要使用的语言列表 (en, fr, es, ru, ar, zh-cn)')
     parser.add_argument('--skip-existing', action='store_true',
@@ -669,6 +719,14 @@ def main():
     
     args = parser.parse_args()
     
+    model_names = args.models
+    if args.models_file:
+        file_models = load_models_from_file(args.models_file)
+        if model_names:
+            model_names = model_names + [m for m in file_models if m not in model_names]
+        else:
+            model_names = file_models
+
     # 创建运行器
     runner = LLMMultilingualAnalysisRunner()
     
@@ -677,7 +735,7 @@ def main():
         not args.step and 
         not args.force and 
         not args.skip and 
-        not args.models and 
+        not model_names and 
         not args.languages and
         not args.skip_existing
     )
@@ -691,7 +749,7 @@ def main():
             # 运行特定步骤
             if args.step == 'interview':
                 runner.step1_multilingual_interview(
-                    model_names=args.models,
+                    model_names=model_names,
                     languages=args.languages,
                     skip_existing=args.skip_existing,
                     force_rerun=args.force,
@@ -707,7 +765,7 @@ def main():
                 runner.step5_visualization()
             elif args.step == 'all':
                 runner.run_full_analysis(
-                    model_names=args.models,
+                    model_names=model_names,
                     languages=args.languages,
                     skip_existing=args.skip_existing,
                     force_interview=args.force,
@@ -719,7 +777,7 @@ def main():
         else:
             # 运行完整流程
             runner.run_full_analysis(
-                model_names=args.models,
+                model_names=model_names,
                 languages=args.languages,
                 skip_existing=args.skip_existing,
                 force_interview=args.force,

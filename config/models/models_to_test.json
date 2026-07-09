@@ -1,0 +1,91 @@
+{
+  "description": "Smoke-test model list for new LLM values runs via OpenRouter.",
+  "defaults": {
+    "languages": ["en"],
+    "consensus_count": 1,
+    "step": "interview"
+  },
+  "models": [
+    {
+      "id": "google/gemma-3-4b-it",
+      "display_name": "Gemma 3 4B",
+      "provider": "Google",
+      "purpose": "debug",
+      "status": "verified_working",
+      "enabled": true,
+      "notes": "Completed 10/10 English IVS questions and PCA smoke test."
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "display_name": "Mistral Nemo",
+      "provider": "Mistral",
+      "purpose": "debug",
+      "status": "candidate",
+      "enabled": true,
+      "notes": "Small/medium instruction model candidate."
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "display_name": "Gemini 2.5 Flash",
+      "provider": "Google",
+      "purpose": "debug",
+      "status": "candidate",
+      "enabled": true,
+      "notes": "Fast low-cost candidate; code gives Gemini longer timeout/retries."
+    },
+    {
+      "id": "qwen/qwen2.5-7b-instruct",
+      "display_name": "Qwen2.5 7B Instruct",
+      "provider": "Alibaba",
+      "purpose": "debug",
+      "status": "candidate",
+      "enabled": true,
+      "notes": "OpenRouter-listed small instruction model."
+    },
+    {
+      "id": "microsoft/phi-4",
+      "display_name": "Phi 4",
+      "provider": "Microsoft",
+      "purpose": "debug",
+      "status": "candidate",
+      "enabled": true,
+      "notes": "Use this instead of unavailable phi-3-mini endpoint."
+    },
+    {
+      "id": "mistralai/ministral-8b-2512",
+      "display_name": "Ministral 3 8B 2512",
+      "provider": "Mistral",
+      "purpose": "debug",
+      "status": "candidate",
+      "enabled": true,
+      "notes": "OpenRouter-listed 8B-scale candidate."
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "display_name": "GPT-4.1 Mini",
+      "provider": "OpenAI",
+      "purpose": "quality_check",
+      "status": "candidate",
+      "enabled": false,
+      "notes": "Stronger comparison model; disabled by default to keep smoke tests cheap."
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "display_name": "Llama 3.2 3B",
+      "provider": "Meta",
+      "purpose": "debug",
+      "status": "known_issue",
+      "enabled": false,
+      "notes": "Observed NoneType response parsing failure on A008."
+    },
+    {
+      "id": "microsoft/phi-3-mini-128k-instruct",
+      "display_name": "Phi-3 Mini",
+      "provider": "Microsoft",
+      "purpose": "debug",
+      "status": "unavailable_404",
+      "enabled": false,
+      "notes": "OpenRouter returned: No endpoints found."
+    }
+  ]
+}
