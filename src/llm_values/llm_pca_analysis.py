@@ -18,6 +18,12 @@ from src.base.ivs_question_processor import IVSQuestionProcessor
 
 class LLMPCAAnalyzer(BasePCAAnalyzer):
     """LLM PCA分析器 - 继承基类，专注于LLM+IVS数据的联合分析"""
+
+    EXPECTED_REFERENCE_COUNTRIES = 112
+    EXPECTED_RESCALE_PARAMS = {
+        'PC1': (1.81, 0.38),
+        'PC2': (1.61, -0.01),
+    }
     
     def __init__(self, data_path: str = "data"):
         """
@@ -146,7 +152,11 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
         
         entity_scores = super().calculate_entity_scores(group_by)
         
-        # 添加有用的标识列
+        return self._add_llm_identity_columns(entity_scores)
+
+    def _add_llm_identity_columns(self, entity_scores: pd.DataFrame) -> pd.DataFrame:
+        """Add stable model/language labels to aggregated LLM rows."""
+        entity_scores = entity_scores.copy()
         entity_scores['is_llm'] = entity_scores['data_source'] == 'LLM'
         
         # 为LLM添加模型和语言信息。country_code 对每个多语言实体都是唯一的，
@@ -197,6 +207,56 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
             scores_json = output_dir / f"{prefix}_entity_scores.json"
             entity_scores.to_json(scores_json, orient='records', indent=2)
             print(f"💾 保存JSON格式到: {scores_json}")
+
+    def _validate_fixed_pca_model(self, pca_model: Dict[str, Any]) -> None:
+        """Validate that the frozen model is the paper-compatible PPCA model."""
+        required_keys = {
+            'ppca_C', 'ppca_means', 'ppca_stds', 'rotation_matrix',
+            'pc_rescale_params', 'question_ids',
+        }
+        missing = sorted(required_keys.difference(pca_model))
+        if missing:
+            raise ValueError(f"固定PCA模型缺少字段: {', '.join(missing)}")
+
+        if list(pca_model['question_ids']) != self.iv_qns:
+            raise ValueError("固定PCA模型的问题顺序与当前10题配置不一致")
+
+        for component, expected in self.EXPECTED_RESCALE_PARAMS.items():
+            actual = tuple(pca_model['pc_rescale_params'].get(component, ()))
+            if len(actual) != 2 or not np.allclose(actual, expected):
+                raise ValueError(
+                    f"固定PCA模型的{component}缩放参数不一致: "
+                    f"期望{expected}, 实际{actual}"
+                )
+
+    def _load_reference_country_scores(self) -> pd.DataFrame:
+        """Load the lightweight, frozen 112-country paper reference table."""
+        reference_path = self.data_path / "country_values" / "country_scores_pca.json"
+        if not reference_path.exists():
+            raise FileNotFoundError(f"正式国家坐标不存在: {reference_path}")
+
+        country_scores = pd.read_json(reference_path)
+        required_columns = {
+            'country_code', 'data_source', 'PC1_rescaled', 'PC2_rescaled',
+            'Cultural Region', 'Country',
+        }
+        missing = sorted(required_columns.difference(country_scores.columns))
+        if missing:
+            raise ValueError(f"正式国家坐标缺少字段: {', '.join(missing)}")
+
+        country_count = country_scores['Country'].dropna().nunique()
+        if country_count != self.EXPECTED_REFERENCE_COUNTRIES:
+            raise ValueError(
+                f"正式国家坐标应包含{self.EXPECTED_REFERENCE_COUNTRIES}个国家/地区，"
+                f"当前为{country_count}个。请恢复交接包中的country_scores_pca.json"
+            )
+
+        country_scores = country_scores.copy()
+        country_scores['data_source'] = 'IVS'
+        country_scores['is_llm'] = False
+        print(f"✅ 加载正式国家坐标: {reference_path}")
+        print(f"   - 国家/地区数量: {country_count}")
+        return country_scores
     
     def run_analysis_with_fixed_pca(self) -> pd.DataFrame:
         """使用固定的PCA模型运行分析（推荐方法）
@@ -211,27 +271,19 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
         print("🔄 使用固定PCA模型进行Stage1分析（与Stage0坐标系一致）")
         print("="*60)
         
-        # 1. 加载固定的PCA模型
-        pca_model_path = Path('data/country_values/pca_model_fixed.pkl')
+        # 1. 加载并校验交接包中的固定PCA模型和112国坐标。
+        pca_model_path = self.data_path / 'country_values' / 'pca_model_fixed.pkl'
         if not pca_model_path.exists():
             raise FileNotFoundError(
                 f"固定PCA模型不存在: {pca_model_path}\n"
-                "请先运行Stage0分析生成PCA模型：python src/country_values/pca_analysis.py"
+                "请恢复交接包中的data/country_values/pca_model_fixed.pkl"
             )
         
         pca_model = self.load_pca_model(pca_model_path)
+        self._validate_fixed_pca_model(pca_model)
+        country_scores = self._load_reference_country_scores()
         
-        # 2. 加载IVS数据（作为基准）
-        print("\n📊 加载IVS基准数据...")
-        if not self.load_base_data():
-            raise ValueError("加载IVS数据失败")
-        
-        ivs_data = self.prepare_ivs_data()
-        ivs_data['data_source'] = 'IVS'
-        ivs_data['model_name'] = None
-        print(f"   IVS数据: {len(ivs_data)} 行")
-        
-        # 3. 加载LLM数据
+        # 2. 加载LLM数据
         print("\n📊 加载LLM数据...")
         llm_data = self.load_additional_data()
         if llm_data.empty:
@@ -240,45 +292,49 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
         llm_prepared = self._prepare_llm_data_for_pca(llm_data)
         print(f"   LLM数据: {len(llm_prepared)} 行")
         
-        # 4. 对IVS数据应用固定PCA
-        print("\n🔄 对IVS数据应用固定PCA...")
-        ivs_pca = self.transform_with_fixed_pca(ivs_data, pca_model)
-        ivs_pca['country_code'] = ivs_data['country_code'].values
-        ivs_pca['data_source'] = 'IVS'
-        ivs_pca['model_name'] = None
-        if 'year' in ivs_data.columns:
-            ivs_pca['year'] = ivs_data['year'].values
-        
-        # 5. 对LLM数据应用固定PCA
+        # 3. 只投影LLM。国家基准直接使用交接包中的固定坐标，避免本地
+        # ivs_df.pkl来源不一致时污染论文基准。
         print("\n🔄 对LLM数据应用固定PCA...")
         llm_pca = self.transform_with_fixed_pca(llm_prepared, pca_model)
-        
-        # 添加元数据
-        llm_pca['country_code'] = llm_prepared['country_code'].values
+        llm_pca = self._add_metadata_to_pca_results(llm_pca, llm_prepared)
         llm_pca['data_source'] = 'LLM'
         llm_pca['Cultural Region'] = 'AI Model'
-        
-        # 添加模型名称
-        if 'model_name' in llm_prepared.columns:
-            llm_pca['model_name'] = llm_prepared['model_name'].values
-        
-        # 6. 合并结果
-        print("\n📊 合并PCA结果...")
-        self.pca_results = pd.concat([ivs_pca, llm_pca], ignore_index=True)
-        print(f"   合并后总行数: {len(self.pca_results)}")
-        
-        # 7. 合并国家元数据
-        self.pca_results = self.prepare_country_codes_for_merge(self.pca_results)
-        self.pca_results = self.merge_country_metadata(self.pca_results, on_column='country_code_clean')
-        
-        # 8. 计算实体分数
+
+        # 4. 计算LLM实体分数。固定模式下输入已经是每个模型-语言一条记录，
+        # 直接聚合即可，无需把AI实体送入国家代码匹配逻辑。
+        self.pca_results = llm_pca
         print("\n📊 计算实体分数...")
-        entity_scores = self.calculate_entity_scores()
-        
-        # 9. 保存结果
+        group_columns = [
+            column for column in ['country_code', 'data_source', 'model_name', 'language']
+            if column in self.pca_results.columns
+        ]
+        aggregations = {
+            'PC1_rescaled': 'mean',
+            'PC2_rescaled': 'mean',
+            'Cultural Region': 'first',
+        }
+        llm_entity_scores = (
+            self.pca_results
+            .groupby(group_columns, dropna=False)
+            .agg(aggregations)
+            .reset_index()
+        )
+        llm_entity_scores = self._add_llm_identity_columns(llm_entity_scores)
+        print(f"✅ LLM实体聚合完成: {len(llm_entity_scores)} 条记录")
+
+        # 5. 拼接固定的112国坐标，形成可视化和论文分析统一输入。
+        entity_scores = pd.concat(
+            [country_scores, llm_entity_scores],
+            ignore_index=True,
+            sort=False,
+        )
+        print(f"✅ 合并正式基准: {len(country_scores)}个国家/地区 + "
+              f"{len(llm_entity_scores)}条LLM记录 = {len(entity_scores)}个实体")
+
+        # 6. 保存结果
         self.save_results(entity_scores)
-        
-        # 10. 打印摘要
+
+        # 7. 打印摘要
         self.print_summary(entity_scores)
         
         return entity_scores
@@ -310,7 +366,7 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
             print("\n🤖 LLM vs 国家统计:")
             llm_count = entity_scores['is_llm'].sum()
             country_count = (~entity_scores['is_llm']).sum()
-            print(f"   - LLM模型: {llm_count} 个")
+            print(f"   - LLM记录: {llm_count} 条")
             print(f"   - 国家: {country_count} 个")
             
             if llm_count > 0:

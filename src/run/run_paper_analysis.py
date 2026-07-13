@@ -268,45 +268,71 @@ def run_study1(intrinsic_df: pd.DataFrame) -> dict:
     print(f"  Models: {n_models}")
     print(f"  Model-language combinations: {n_combinations}")
 
-    # PC1 = Secular-Rational (Traditional vs Secular-Rational)
-    # PC2 = Self-Expression (Survival vs Self-Expression)
+    # Frozen PPCA coordinate definition used by the manuscript and figures:
+    # PC1 = Self-Expression (Survival vs Self-Expression)
+    # PC2 = Secular-Rational (Traditional vs Secular-Rational)
     lang_groups = llm.groupby("language")
     lang_stats = {}
     for lang, g in lang_groups:
         lang_stats[lang] = {
             "n": len(g),
-            "secular_rational_mean": fmt(g["PC1_rescaled"].mean()),
-            "secular_rational_std": fmt(g["PC1_rescaled"].std()),
-            "self_expression_mean": fmt(g["PC2_rescaled"].mean()),
-            "self_expression_std": fmt(g["PC2_rescaled"].std()),
+            "secular_rational_mean": fmt(g["PC2_rescaled"].mean()),
+            "secular_rational_std": fmt(g["PC2_rescaled"].std()),
+            "self_expression_mean": fmt(g["PC1_rescaled"].mean()),
+            "self_expression_std": fmt(g["PC1_rescaled"].std()),
         }
 
-    print("\n  Per-language Secular-Rational (PC1) means:")
+    print("\n  Per-language Secular-Rational (PC2) means:")
     for lang in sorted(lang_stats.keys()):
         s = lang_stats[lang]
         print(f"    {lang:8s}: mean={s['secular_rational_mean']:.3f}, std={s['secular_rational_std']:.3f}, n={s['n']}")
 
-    # One-way ANOVA on PC1 (Secular-Rational) across languages
-    pc1_groups = [g["PC1_rescaled"].values for _, g in lang_groups]
-    if len(pc1_groups) >= 2:
-        f_sr, p_sr = stats.f_oneway(*pc1_groups)
+    # One-way ANOVA on PC2 (Secular-Rational) across languages
+    sr_groups = [g["PC2_rescaled"].dropna().values for _, g in lang_groups]
+    if len(sr_groups) >= 2 and all(len(group) >= 2 for group in sr_groups):
+        f_sr, p_sr = stats.f_oneway(*sr_groups)
     else:
         f_sr, p_sr = np.nan, np.nan
 
-    # One-way ANOVA on PC2 (Self-Expression) across languages
-    pc2_groups = [g["PC2_rescaled"].values for _, g in lang_groups]
-    if len(pc2_groups) >= 2:
-        f_se, p_se = stats.f_oneway(*pc2_groups)
+    # One-way ANOVA on PC1 (Self-Expression) across languages
+    se_groups = [g["PC1_rescaled"].dropna().values for _, g in lang_groups]
+    if len(se_groups) >= 2 and all(len(group) >= 2 for group in se_groups):
+        f_se, p_se = stats.f_oneway(*se_groups)
     else:
         f_se, p_se = np.nan, np.nan
 
+    def eta_squared(groups):
+        values = np.concatenate(groups)
+        grand_mean = values.mean()
+        ss_between = sum(len(group) * (group.mean() - grand_mean) ** 2 for group in groups)
+        ss_total = ((values - grand_mean) ** 2).sum()
+        return float(ss_between / ss_total) if ss_total > 0 else np.nan
+
+    eta2_sr = eta_squared(sr_groups) if not np.isnan(f_sr) else np.nan
+    eta2_se = eta_squared(se_groups) if not np.isnan(f_se) else np.nan
+
+    def tukey_hsd(groups, p_value):
+        if np.isnan(p_value) or p_value >= 0.05 or not hasattr(stats, "tukey_hsd"):
+            return None
+
+        tukey = stats.tukey_hsd(*groups)
+        languages = [lang for lang, _ in lang_groups]
+        return {
+            "languages": languages,
+            "statistic_matrix": np.asarray(tukey.statistic).round(6).tolist(),
+            "pvalue_matrix": np.asarray(tukey.pvalue).round(6).tolist(),
+        }
+
+    tukey_sr = tukey_hsd(sr_groups, p_sr)
+    tukey_se = tukey_hsd(se_groups, p_se)
+
     # Divergence between English and Arabic on Secular-Rational
-    en_sr = llm[llm["language"] == "en"]["PC1_rescaled"].mean()
-    ar_sr = llm[llm["language"] == "ar"]["PC1_rescaled"].mean()
+    en_sr = llm[llm["language"] == "en"]["PC2_rescaled"].mean()
+    ar_sr = llm[llm["language"] == "ar"]["PC2_rescaled"].mean()
     divergence = en_sr - ar_sr
 
-    print(f"\n  ANOVA Secular-Rational (PC1): F={f_sr:.3f}, p={p_sr:.4f}")
-    print(f"  ANOVA Self-Expression (PC2):  F={f_se:.3f}, p={p_se:.4f}")
+    print(f"\n  ANOVA Secular-Rational (PC2): F={f_sr:.3f}, p={p_sr:.4f}, eta²={eta2_sr:.3f}")
+    print(f"  ANOVA Self-Expression (PC1):  F={f_se:.3f}, p={p_se:.4f}, eta²={eta2_se:.3f}")
     print(f"  English-Arabic divergence on Secular-Rational: {divergence:.2f}")
 
     result = {
@@ -315,13 +341,17 @@ def run_study1(intrinsic_df: pd.DataFrame) -> dict:
         "models": models,
         "n_combinations": n_combinations,
         "language_stats": lang_stats,
-        "anova_secular_rational_pc1": {
+        "anova_secular_rational_pc2": {
             "F": fmt(f_sr), "p": fmt(p_sr, 4),
+            "eta_squared": fmt(eta2_sr),
             "significant": bool(p_sr < 0.05) if not np.isnan(p_sr) else None,
+            "tukey_hsd": tukey_sr,
         },
-        "anova_self_expression_pc2": {
+        "anova_self_expression_pc1": {
             "F": fmt(f_se), "p": fmt(p_se, 4),
+            "eta_squared": fmt(eta2_se),
             "significant": bool(p_se < 0.05) if not np.isnan(p_se) else None,
+            "tukey_hsd": tukey_se,
         },
         "en_ar_divergence_secular_rational": fmt(divergence),
     }

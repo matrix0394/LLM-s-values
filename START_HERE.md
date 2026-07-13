@@ -50,6 +50,19 @@ docs/                复现、数据流、交接说明
 
 ## 第一次运行
 
+Windows PowerShell：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+python src/run/run_paper_analysis.py --help
+python src/run/run_paper_analysis.py --study 2
+```
+
+macOS / Linux：
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -103,6 +116,19 @@ Integrated_values_surveys_1981-2022.sav
 https://www.worldvaluessurvey.org/
 ```
 
+注意：`WVS Time Series 1981-2022` 只包含 WVS，不等于论文使用的
+`WVS + EVS Integrated Values Survey`。不要仅重命名 WVS Time Series 文件后重建
+正式 PCA。正式轻量基准应满足：
+
+```text
+data/country_values/country_scores_pca.json  -> 112 个国家/地区
+data/country_values/pca_model_fixed.pkl      -> 固定 PPCA + Varimax 模型
+```
+
+新模型接入和可视化只需要上述两个正式轻量文件，不需要重新生成几 GB 的
+`ivs_df.pkl`。只有确实需要完全重建 Stage0 时，才下载完整 Integrated Values
+Survey，或向交接人索取原始 `ivs_df.pkl`。
+
 下载后放到项目约定路径：
 
 ```text
@@ -126,6 +152,20 @@ python3 src/run/run_country_values_analysis.py
   -> 和 data/country_values/country_scores_pca.json 的人类国家坐标算距离
   -> 进入 Study 1-4 / model imitation / 新优化实验比较
 ```
+
+单模型六语言 smoke test：
+
+```powershell
+python src/run/run_llm_multilingual_analysis.py --models google/gemma-3-4b-it --languages en zh-cn fr es ru ar --consensus-count 1 --step all --skip-existing
+```
+
+这条命令只用于验证自动化流程。论文 Study 1 正式口径是 20 个模型、6 种语言、
+每个模型-语言组合 5 次独立推理。正式模型、探索模型和 smoke-test 模型不能混入
+同一份统计结果。
+
+运行产生的 `data/llm_interviews/intrinsic/`、完整 PCA 中间对象和
+`results/llm_values/` 图表默认不提交 GitHub；只提交代码、配置和经过确认的轻量
+论文结果。
 
 BLOOM/PolyLM 正式补测从这个入口跑：
 
