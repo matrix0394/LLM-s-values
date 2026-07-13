@@ -28,8 +28,8 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
         """
         super().__init__(data_path)
         
-        # 配置Stage1专用的子目录
-        self.llm_data_dir = Path(data_path) / "llm_values"  # data/llm_values/
+        # PCA分析器将当前多语言Stage1结果保存到该目录。
+        self.llm_data_dir = Path(data_path) / "llm_pca" / "intrinsic"
         self.llm_results_dir = Path(results_path) / "llm_values" / "llm_dashboard"  # results/llm_values/llm_dashboard/
         
         # 创建结果目录
@@ -45,7 +45,7 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
         """
         加载LLM+IVS的PCA结果数据（Stage1专用路径）
         
-        期望文件：data/llm_values/llm_pca_entity_scores.pkl
+        期望文件：data/llm_pca/intrinsic/llm_pca_entity_scores.pkl
         由llm_pca_analysis.py生成
         """
         # Stage1专用路径
@@ -59,10 +59,10 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
             # 检查LLM数据
             if 'is_llm' in data.columns:
                 llm_count = data['is_llm'].sum()
-                print(f"   - LLM模型数量: {llm_count}")
+                print(f"   - LLM记录数量: {llm_count}")
             elif 'data_source' in data.columns:
                 llm_count = (data['data_source'] == 'LLM').sum()
-                print(f"   - LLM模型数量: {llm_count}")
+                print(f"   - LLM记录数量: {llm_count}")
             
             return data
         else:
@@ -94,6 +94,13 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
     
     def _get_point_label(self, row: pd.Series) -> str:
         """获取数据点的标签文本 - 重写以支持LLM"""
+        if (
+            row.get('data_source') == 'LLM'
+            and pd.notna(row.get('model_name'))
+            and pd.notna(row.get('language'))
+        ):
+            return f"{row['model_name']} [{row['language']}]"
+
         # 优先使用Country，然后是model_name，最后是提取的模型名
         if 'Country' in row.index and pd.notna(row['Country']):
             return str(row['Country'])
@@ -148,7 +155,7 @@ class LLMCulturalMapVisualizer(CulturalMapVisualizer):
         
         # 绘制LLM数据（使用不同的标记和颜色）
         if not llm_data.empty:
-            print(f"  🤖 绘制{len(llm_data)}个LLM模型...")
+            print(f"  🤖 绘制{len(llm_data)}条LLM记录...")
             for _, row in llm_data.iterrows():
                 model_name = self._get_point_label(row)
                 # 使用base的统一颜色方法

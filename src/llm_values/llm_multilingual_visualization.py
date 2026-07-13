@@ -88,7 +88,7 @@ class LLMMultilingualVisualizer(LLMCulturalMapVisualizer):
         """
         加载多语言PCA结果数据
         
-        期望文件：data/llm_values/llm_pca_entity_scores.pkl
+        期望文件：data/llm_pca/intrinsic/llm_pca_entity_scores.pkl
         需要包含 language 字段
         """
         data = self.load_data()

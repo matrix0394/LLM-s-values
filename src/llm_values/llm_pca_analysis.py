@@ -149,13 +149,34 @@ class LLMPCAAnalyzer(BasePCAAnalyzer):
         # 添加有用的标识列
         entity_scores['is_llm'] = entity_scores['data_source'] == 'LLM'
         
-        # 为LLM添加模型信息
+        # 为LLM添加模型和语言信息。country_code 对每个多语言实体都是唯一的，
+        # 例如 llm_google_gemma-3-4b-it_zh-cn。
         if 'is_llm' in entity_scores.columns:
             llm_rows = entity_scores['is_llm'] == True
             if llm_rows.any():
-                # 从country_code中提取模型名称
-                entity_scores.loc[llm_rows, 'extracted_model'] = entity_scores.loc[llm_rows, 'country_code'].str.replace('LLM_', '')
-        
+                llm_codes = entity_scores.loc[llm_rows, 'country_code'].astype(str)
+
+                def extract_language(code: str) -> str:
+                    for language in ['zh-cn', 'en', 'fr', 'es', 'ru', 'ar']:
+                        if code.endswith(f'_{language}'):
+                            return language
+                    return 'en'
+
+                def extract_model(code: str) -> str:
+                    model = code[4:] if code.lower().startswith('llm_') else code
+                    language = extract_language(code)
+                    suffix = f'_{language}'
+                    return model[:-len(suffix)] if model.endswith(suffix) else model
+
+                entity_scores.loc[llm_rows, 'language'] = llm_codes.map(extract_language)
+
+                if 'model_name' in entity_scores.columns:
+                    entity_scores.loc[llm_rows, 'extracted_model'] = entity_scores.loc[
+                        llm_rows, 'model_name'
+                    ].fillna(llm_codes.map(extract_model))
+                else:
+                    entity_scores.loc[llm_rows, 'extracted_model'] = llm_codes.map(extract_model)
+
         return entity_scores
     
     def save_results(self, entity_scores=None, prefix="llm_pca"):
