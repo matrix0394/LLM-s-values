@@ -364,80 +364,155 @@ def run_study1(intrinsic_df: pd.DataFrame) -> dict:
 # Study 2: Language Divergence (English Advantage)
 # ===========================================================================
 
-def compute_english_advantage_per_model(rp_df: pd.DataFrame, ivs_coords: dict) -> pd.DataFrame:
-    """Per-model paired comparison for non-English-native countries.
+STUDY2_CONFIG_PATH = PROJECT_ROOT / "config" / "study2_countries.json"
 
-    Native language is any language that is NOT 'en' or 'en-native'.
-    For French-speaking countries (France, Haiti, Mali, Burkina Faso), 'fr' IS the native language.
-    For Arabic countries, 'ar' is the native language (fr is NOT native for them).
+
+def load_study2_config() -> dict:
+    """Load and validate the paper's fixed Study 2 sample definition."""
+    with open(STUDY2_CONFIG_PATH, encoding="utf-8") as f:
+        config = json.load(f)
+
+    countries = config.get("countries", [])
+    names = [item.get("country") for item in countries]
+    if len(countries) != config.get("expected_countries"):
+        raise ValueError(
+            f"Study 2配置应包含{config.get('expected_countries')}个国家，"
+            f"当前为{len(countries)}个: {STUDY2_CONFIG_PATH}"
+        )
+    if len(names) != len(set(names)):
+        duplicates = sorted({name for name in names if names.count(name) > 1})
+        raise ValueError(f"Study 2配置存在重复国家: {duplicates}")
+    for item in countries:
+        if not item.get("benchmark_country") or not item.get("native_languages"):
+            raise ValueError(f"Study 2国家配置不完整: {item}")
+    return config
+
+
+def validate_study2_pairs(ea_df: pd.DataFrame, config: dict) -> None:
+    """Fail early when the formal 20 x 46 Study 2 panel is incomplete."""
+    expected_models = config["expected_models"]
+    expected_countries = config["expected_countries"]
+    expected_pairs = config["expected_pairs"]
+    expected_country_names = {item["benchmark_country"] for item in config["countries"]}
+
+    actual_country_names = set(ea_df["country"].dropna())
+    missing_countries = sorted(expected_country_names - actual_country_names)
+    unexpected_countries = sorted(actual_country_names - expected_country_names)
+    pair_counts = ea_df.groupby(["model_name", "country"]).size()
+    duplicate_pairs = pair_counts[pair_counts != 1]
+
+    errors = []
+    if ea_df["model_name"].nunique() != expected_models:
+        errors.append(
+            f"模型数应为{expected_models}，当前为{ea_df['model_name'].nunique()}"
+        )
+    if ea_df["country"].nunique() != expected_countries:
+        errors.append(
+            f"国家数应为{expected_countries}，当前为{ea_df['country'].nunique()}"
+        )
+    if len(ea_df) != expected_pairs:
+        errors.append(f"唯一模型-国家配对应为{expected_pairs}，当前为{len(ea_df)}")
+    if missing_countries:
+        errors.append(f"缺失国家: {', '.join(missing_countries)}")
+    if unexpected_countries:
+        errors.append(f"配置外国家: {', '.join(unexpected_countries)}")
+    if not duplicate_pairs.empty:
+        preview = [f"{model}/{country}={count}" for (model, country), count
+                   in duplicate_pairs.head(10).items()]
+        errors.append(f"重复或异常配对: {', '.join(preview)}")
+
+    if errors:
+        raise ValueError("Study 2自动检查失败:\n- " + "\n- ".join(errors))
+
+    print(
+        f"  ✅ Study 2自动检查通过: {expected_models}个模型 × "
+        f"{expected_countries}个国家 = {expected_pairs}个唯一配对"
+    )
+
+def compute_english_advantage_per_model(rp_df: pd.DataFrame, ivs_coords: dict) -> pd.DataFrame:
+    """Build one English-vs-native pair for every formal model-country cell.
+
+    Countries with multiple official/native languages are averaged in PCA
+    coordinate space before distance is calculated.  They therefore still
+    contribute exactly one observation per model and do not receive extra
+    statistical weight.
     """
+    config = load_study2_config()
     llm = rp_df[rp_df["data_source"] != "IVS"].copy()
     llm = llm[~llm["model_name"].isin(EXCLUDED_ROLEPLAY)]
-    llm = llm[~llm["Country"].isin(EN_NATIVE_COUNTRIES)]
-
-    # English data: use 'en' where available, fall back to 'en-native'
-    # (e.g. Hong Kong has en-native but not en, since it was previously
-    # classified as EN_NATIVE and interviewed with en-native tag)
-    en_df = llm[llm["language"].isin(["en", "en-native"])].copy()
-    # Prefer 'en' over 'en-native': drop en-native rows for countries that have 'en'
-    countries_with_en = set(en_df[en_df["language"] == "en"]["Country"].unique())
-    en_df = en_df[~((en_df["language"] == "en-native") & en_df["Country"].isin(countries_with_en))]
-
-    # Native = everything except en and en-native.
-    # For Arabic countries that also have fr data, we pick only 'ar' as native.
-    # For French-speaking countries (France, Haiti, Mali, Burkina Faso), 'fr' is native.
-    FRENCH_NATIVE_COUNTRIES = {"France", "Haiti", "Mali", "Burkina Faso",
-                               "Belgium", "Luxembourg", "Switzerland"}
-    native_df = llm[~llm["language"].isin(["en", "en-native"])].copy()
-
-    # For Arabic countries, keep only 'ar' as native (exclude 'fr')
-    arabic_mask = native_df["Country"].isin(ARABIC_COUNTRIES_12) & (native_df["language"] == "fr")
-    native_df = native_df[~arabic_mask]
 
     rows = []
-    for country in native_df["Country"].dropna().unique():
-        matched = match_country(country, ivs_coords)
-        if matched is None:
+    diagnostics = []
+    for item in config["countries"]:
+        country = item["country"]
+        benchmark_country = item["benchmark_country"]
+        native_languages = item["native_languages"]
+        if benchmark_country not in ivs_coords:
+            diagnostics.append(f"{country}: 找不到IVS基准 {benchmark_country}")
             continue
-        ivs = ivs_coords[matched]
+        ivs = ivs_coords[benchmark_country]
+        country_df = llm[llm["Country"] == country]
 
-        c_en = en_df[en_df["Country"] == country]
-        c_nat = native_df[native_df["Country"] == country]
+        for model in sorted(llm["model_name"].dropna().unique()):
+            model_df = country_df[country_df["model_name"] == model]
+            en_m = model_df[model_df["language"].isin(["en", "en-native"])].copy()
+            if "en" in set(en_m["language"]):
+                en_m = en_m[en_m["language"] == "en"]
+            nat_m = model_df[model_df["language"].isin(native_languages)]
 
-        for native_lang in c_nat["language"].unique():
-            nat_l = c_nat[c_nat["language"] == native_lang]
-            for model in nat_l["model_name"].unique():
-                nat_m = nat_l[nat_l["model_name"] == model]
-                en_m = c_en[c_en["model_name"] == model]
-                if nat_m.empty or en_m.empty:
-                    continue
+            present_native = set(nat_m["language"])
+            missing_native = sorted(set(native_languages) - present_native)
+            if en_m.empty or missing_native:
+                missing = []
+                if en_m.empty:
+                    missing.append("英语")
+                if missing_native:
+                    missing.append("母语:" + ",".join(missing_native))
+                diagnostics.append(f"{country}/{model}: 缺少{'、'.join(missing)}")
+                continue
 
-                d_native = euclidean(
-                    nat_m["PC1_rescaled"].mean(), nat_m["PC2_rescaled"].mean(),
-                    ivs["PC1"], ivs["PC2"],
-                )
-                d_en = euclidean(
-                    en_m["PC1_rescaled"].mean(), en_m["PC2_rescaled"].mean(),
-                    ivs["PC1"], ivs["PC2"],
-                )
+            # Average all configured native-language coordinates first, then
+            # calculate one native distance for this model-country pair.
+            native_coords = nat_m.groupby("language")[[
+                "PC1_rescaled", "PC2_rescaled"
+            ]].mean().mean()
+            english_coords = en_m[["PC1_rescaled", "PC2_rescaled"]].mean()
 
-                ea_pct = (d_native - d_en) / d_native * 100 if d_native > 0 else 0.0
-                log_ratio = float(np.log(d_en / d_native)) if d_native > 0 and d_en > 0 else np.nan
+            d_native = euclidean(
+                native_coords["PC1_rescaled"], native_coords["PC2_rescaled"],
+                ivs["PC1"], ivs["PC2"],
+            )
+            d_en = euclidean(
+                english_coords["PC1_rescaled"], english_coords["PC2_rescaled"],
+                ivs["PC1"], ivs["PC2"],
+            )
 
-                rows.append({
-                    "country": matched,
-                    "native_language": native_lang,
-                    "model_name": model,
-                    "cultural_region": ivs["cultural_region"],
-                    "is_islamic": ivs["is_islamic"],
-                    "d_native": d_native,
-                    "d_english": d_en,
-                    "english_advantage_pct": ea_pct,
-                    "log_ratio": log_ratio,
-                    "d_diff": d_native - d_en,
-                })
+            ea_pct = (d_native - d_en) / d_native * 100 if d_native > 0 else 0.0
+            log_ratio = float(np.log(d_en / d_native)) if d_native > 0 and d_en > 0 else np.nan
 
-    return pd.DataFrame(rows)
+            rows.append({
+                "country": benchmark_country,
+                "study2_country": country,
+                "native_language": "+".join(native_languages),
+                "model_name": model,
+                "cultural_region": ivs["cultural_region"],
+                "is_islamic": ivs["is_islamic"],
+                "d_native": d_native,
+                "d_english": d_en,
+                "english_advantage_pct": ea_pct,
+                "log_ratio": log_ratio,
+                "d_diff": d_native - d_en,
+            })
+
+    result = pd.DataFrame(rows)
+    if diagnostics:
+        print("  ⚠️ Study 2数据缺失预览:")
+        for message in diagnostics[:20]:
+            print(f"    - {message}")
+        if len(diagnostics) > 20:
+            print(f"    ...另有{len(diagnostics) - 20}项")
+    validate_study2_pairs(result, config)
+    return result
 
 
 def run_study2(ea_df: pd.DataFrame) -> dict:
