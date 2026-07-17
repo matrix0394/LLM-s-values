@@ -166,9 +166,16 @@ def load_ivs_coordinates() -> dict:
 
 
 def load_intrinsic_pca() -> pd.DataFrame:
-    path = PROJECT_ROOT / "data" / "llm_pca" / "intrinsic" / "llm_pca_entity_scores.pkl"
-    df = pd.read_pickle(path)
+    # Study 1 must use the frozen paper table.  The generic entity_scores.pkl
+    # is also used by later exploratory runs and may contain only one model.
+    path = (
+        PROJECT_ROOT / "data" / "llm_pca" / "intrinsic"
+        / "Table_S6_LLM_baseline_PCA_coordinates.csv"
+    )
+    df = pd.read_csv(path)
     df["model_name"] = df["model_name"].map(lambda x: MODEL_NAME_MAP.get(x, x))
+    df = df[~df["model_name"].isin(EXCLUDED_ROLEPLAY)].copy()
+    df = df.rename(columns={"PC1": "PC1_rescaled", "PC2": "PC2_rescaled"})
     return df
 
 
@@ -247,6 +254,57 @@ def fmt(v, decimals=3):
 # Study 1: Pervasive Secular-Rational Bias (Intrinsic)
 # ===========================================================================
 
+STUDY1_LANGUAGES = {"ar", "en", "es", "fr", "ru", "zh-cn"}
+STUDY1_EXPECTED_MODELS = 20
+STUDY1_EXPECTED_COMBINATIONS = 120
+
+
+def validate_study1_data(llm: pd.DataFrame) -> None:
+    """Validate the formal 20-model x 6-language Study 1 panel."""
+    actual_languages = set(llm["language"].dropna())
+    pair_counts = llm.groupby(["model_name", "language"]).size()
+    abnormal_pairs = pair_counts[pair_counts != 1]
+    errors = []
+
+    if llm["model_name"].nunique() != STUDY1_EXPECTED_MODELS:
+        errors.append(
+            f"模型数应为{STUDY1_EXPECTED_MODELS}，"
+            f"当前为{llm['model_name'].nunique()}"
+        )
+    if actual_languages != STUDY1_LANGUAGES:
+        missing = sorted(STUDY1_LANGUAGES - actual_languages)
+        unexpected = sorted(actual_languages - STUDY1_LANGUAGES)
+        if missing:
+            errors.append(f"缺失语言: {', '.join(missing)}")
+        if unexpected:
+            errors.append(f"配置外语言: {', '.join(unexpected)}")
+    if len(llm) != STUDY1_EXPECTED_COMBINATIONS:
+        errors.append(
+            f"模型-语言组合应为{STUDY1_EXPECTED_COMBINATIONS}，当前为{len(llm)}"
+        )
+    if not abnormal_pairs.empty:
+        preview = [f"{model}/{language}={count}" for (model, language), count
+                   in abnormal_pairs.head(10).items()]
+        errors.append(f"重复或异常组合: {', '.join(preview)}")
+
+    expected_pairs = pd.MultiIndex.from_product(
+        [sorted(llm["model_name"].dropna().unique()), sorted(STUDY1_LANGUAGES)],
+        names=["model_name", "language"],
+    )
+    missing_pairs = expected_pairs.difference(pair_counts.index)
+    if len(missing_pairs):
+        preview = [f"{model}/{language}" for model, language in missing_pairs[:10]]
+        errors.append(f"缺失模型-语言组合: {', '.join(preview)}")
+
+    if errors:
+        raise ValueError("Study 1自动检查失败:\n- " + "\n- ".join(errors))
+
+    print(
+        f"  ✅ Study 1自动检查通过: {STUDY1_EXPECTED_MODELS}个模型 × "
+        f"{len(STUDY1_LANGUAGES)}种语言 = "
+        f"{STUDY1_EXPECTED_COMBINATIONS}个唯一组合"
+    )
+
 def run_study1(intrinsic_df: pd.DataFrame) -> dict:
     print("\n" + "=" * 70)
     print("STUDY 1: Pervasive Secular-Rational Bias")
@@ -261,6 +319,8 @@ def run_study1(intrinsic_df: pd.DataFrame) -> dict:
         code_col = "country_code_original" if "country_code_original" in llm.columns else "country_code"
         llm["language"] = llm[code_col].astype(str).str.rsplit("_", n=1).str[-1]
 
+    validate_study1_data(llm)
+
     n_models = llm["model_name"].nunique()
     models = sorted(llm["model_name"].unique())
     n_combinations = len(llm)
@@ -268,34 +328,34 @@ def run_study1(intrinsic_df: pd.DataFrame) -> dict:
     print(f"  Models: {n_models}")
     print(f"  Model-language combinations: {n_combinations}")
 
-    # Frozen PPCA coordinate definition used by the manuscript and figures:
-    # PC1 = Self-Expression (Survival vs Self-Expression)
-    # PC2 = Secular-Rational (Traditional vs Secular-Rational)
+    # Table S6 paper coordinate definition:
+    # PC1 = Traditional -> Secular-Rational
+    # PC2 = Survival -> Self-Expression
     lang_groups = llm.groupby("language")
     lang_stats = {}
     for lang, g in lang_groups:
         lang_stats[lang] = {
             "n": len(g),
-            "secular_rational_mean": fmt(g["PC2_rescaled"].mean()),
-            "secular_rational_std": fmt(g["PC2_rescaled"].std()),
-            "self_expression_mean": fmt(g["PC1_rescaled"].mean()),
-            "self_expression_std": fmt(g["PC1_rescaled"].std()),
+            "secular_rational_mean": fmt(g["PC1_rescaled"].mean()),
+            "secular_rational_std": fmt(g["PC1_rescaled"].std()),
+            "self_expression_mean": fmt(g["PC2_rescaled"].mean()),
+            "self_expression_std": fmt(g["PC2_rescaled"].std()),
         }
 
-    print("\n  Per-language Secular-Rational (PC2) means:")
+    print("\n  Per-language Secular-Rational (PC1) means:")
     for lang in sorted(lang_stats.keys()):
         s = lang_stats[lang]
         print(f"    {lang:8s}: mean={s['secular_rational_mean']:.3f}, std={s['secular_rational_std']:.3f}, n={s['n']}")
 
-    # One-way ANOVA on PC2 (Secular-Rational) across languages
-    sr_groups = [g["PC2_rescaled"].dropna().values for _, g in lang_groups]
+    # One-way ANOVA on PC1 (Secular-Rational) across languages
+    sr_groups = [g["PC1_rescaled"].dropna().values for _, g in lang_groups]
     if len(sr_groups) >= 2 and all(len(group) >= 2 for group in sr_groups):
         f_sr, p_sr = stats.f_oneway(*sr_groups)
     else:
         f_sr, p_sr = np.nan, np.nan
 
-    # One-way ANOVA on PC1 (Self-Expression) across languages
-    se_groups = [g["PC1_rescaled"].dropna().values for _, g in lang_groups]
+    # One-way ANOVA on PC2 (Self-Expression) across languages
+    se_groups = [g["PC2_rescaled"].dropna().values for _, g in lang_groups]
     if len(se_groups) >= 2 and all(len(group) >= 2 for group in se_groups):
         f_se, p_se = stats.f_oneway(*se_groups)
     else:
@@ -327,12 +387,12 @@ def run_study1(intrinsic_df: pd.DataFrame) -> dict:
     tukey_se = tukey_hsd(se_groups, p_se)
 
     # Divergence between English and Arabic on Secular-Rational
-    en_sr = llm[llm["language"] == "en"]["PC2_rescaled"].mean()
-    ar_sr = llm[llm["language"] == "ar"]["PC2_rescaled"].mean()
+    en_sr = llm[llm["language"] == "en"]["PC1_rescaled"].mean()
+    ar_sr = llm[llm["language"] == "ar"]["PC1_rescaled"].mean()
     divergence = en_sr - ar_sr
 
-    print(f"\n  ANOVA Secular-Rational (PC2): F={f_sr:.3f}, p={p_sr:.4f}, eta²={eta2_sr:.3f}")
-    print(f"  ANOVA Self-Expression (PC1):  F={f_se:.3f}, p={p_se:.4f}, eta²={eta2_se:.3f}")
+    print(f"\n  ANOVA Secular-Rational (PC1): F={f_sr:.3f}, p={p_sr:.4f}, eta²={eta2_sr:.3f}")
+    print(f"  ANOVA Self-Expression (PC2):  F={f_se:.3f}, p={p_se:.4f}, eta²={eta2_se:.3f}")
     print(f"  English-Arabic divergence on Secular-Rational: {divergence:.2f}")
 
     result = {
@@ -341,13 +401,13 @@ def run_study1(intrinsic_df: pd.DataFrame) -> dict:
         "models": models,
         "n_combinations": n_combinations,
         "language_stats": lang_stats,
-        "anova_secular_rational_pc2": {
+        "anova_secular_rational_pc1": {
             "F": fmt(f_sr), "p": fmt(p_sr, 4),
             "eta_squared": fmt(eta2_sr),
             "significant": bool(p_sr < 0.05) if not np.isnan(p_sr) else None,
             "tukey_hsd": tukey_sr,
         },
-        "anova_self_expression_pc1": {
+        "anova_self_expression_pc2": {
             "F": fmt(f_se), "p": fmt(p_se, 4),
             "eta_squared": fmt(eta2_se),
             "significant": bool(p_se < 0.05) if not np.isnan(p_se) else None,
