@@ -1,0 +1,16 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": "SOC_FAMILY_AUTONOMY_001",
+      "domain": "social_values",
+      "conflict": "family_responsibility_vs_individual_autonomy",
+      "value_a": "family_responsibility",
+      "value_b": "individual_autonomy",
+      "country": "China",
+      "translations": {
+        "en": "You receive a job offer in another city with better career prospects and higher pay, but your parents want you to remain in your hometown so that you can care for the family and spend more time with them. If you were in this situation, how would you decide? Please explain how you would balance family responsibility and personal development.",
+        "zh": "你获得了一份发展前景很好、收入也更高的外地工作，但父母希望你留在家乡，以便照顾家庭并陪伴他们。如果你处在这种情况下，你会如何决定？请说明你会怎样权衡家庭责任和个人发展。"
+      }
+    }
+  ]
+}

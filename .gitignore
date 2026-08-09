@@ -87,6 +87,7 @@ data/roleplay_multilingual/llm_responses_roleplay_ml/
 data/roleplay_multilingual/roleplay_ml_pca_results_*.csv
 data/roleplay_multilingual/roleplay_ml_pca_entity_scores_*.pkl
 results/roleplay_multilingual/roleplay_ml_dashboard/
+results/orientalism/
 data/country_values/ivs_df.pkl.bak
 data/llm_values/interview_raw/
 data/llm_values/llm_processed_responses_ivs_format_*.json

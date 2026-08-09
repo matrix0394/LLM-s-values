@@ -1,0 +1,21 @@
+{
+  "run_id": "orientalism_phase2a_soc_family_china_mock_smoke",
+  "provider": "mock",
+  "scenario_file": "config/scenarios/orientalism_phase2a.json",
+  "output_file": "results/orientalism/phase2a_soc_family_china_smoke/raw_responses.jsonl",
+  "model": "mock-phase2a",
+  "base_url": "mock://offline",
+  "api_key_env": "UNUSED_FOR_MOCK",
+  "temperature": 0.7,
+  "seed": 42,
+  "repeats": 1,
+  "timeout": 60,
+  "max_retries": 0,
+  "country_conditions": [
+    {
+      "country": "China",
+      "languages": ["en", "zh"]
+    }
+  ],
+  "scenario_ids": ["SOC_FAMILY_01"]
+}
