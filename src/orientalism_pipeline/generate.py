@@ -190,6 +190,9 @@ def run_generation(
                 scenario_id=scenario.scenario_id,
                 prompt_language=language,
                 repeat_id=repeat_id,
+                scenario_version=scenario.scenario_version,
+                prompt_template_version=prompt.prompt_template_version,
+                prompt_fingerprint=prompt.fingerprint,
             )
             if task_key in completed:
                 skipped += 1

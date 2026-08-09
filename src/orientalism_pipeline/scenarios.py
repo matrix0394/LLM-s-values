@@ -74,6 +74,10 @@ ALLOWED_WVS_WAVE7_SOURCE_ITEMS = {
     "Q247",
     "Q249",
     "Q250",
+    # Variable-style IDs explicitly retained as provisional adjacent mappings
+    # for review candidates. They are not inferred by the validator.
+    "Y002",
+    "Y003",
 }
 SOURCE_PLACEHOLDER_TERMS = ("待核验", "可能对应", "pending verification")
 
@@ -271,20 +275,33 @@ def validate_scenario(data: Mapping[str, Any], index: int = 0) -> Scenario:
                 f"{location}: presentation_order must be one of {sorted(PRESENTATION_ORDERS)}"
             )
 
-        source_item_id = _require_nonempty_string(data, "source_item_id", location)
-        if source_item_id not in ALLOWED_WVS_WAVE7_SOURCE_ITEMS:
+        raw_source_item_id = data.get("source_item_id")
+        if raw_source_item_id is not None and (
+            not isinstance(raw_source_item_id, str) or not raw_source_item_id.strip()
+        ):
+            raise ScenarioValidationError(
+                f"{location}: source_item_id must be a non-empty string or null"
+            )
+        source_item_id = (
+            raw_source_item_id.strip() if isinstance(raw_source_item_id, str) else None
+        )
+        if source_item_id is not None and source_item_id not in ALLOWED_WVS_WAVE7_SOURCE_ITEMS:
             raise ScenarioValidationError(
                 f"{location}: source_item_id {source_item_id!r} is not an approved WVS Wave 7 item"
             )
         source_item_ids = _require_source_item_list(
-            data, "source_item_ids", location, allow_empty=False
+            data, "source_item_ids", location, allow_empty=source_item_id is None
         )
         related_source_item_ids = _require_source_item_list(
             data, "related_source_item_ids", location, allow_empty=True
         )
-        if source_item_id not in source_item_ids:
+        if source_item_id is not None and source_item_id not in source_item_ids:
             raise ScenarioValidationError(
                 f"{location}: source_item_id must also appear in source_item_ids"
+            )
+        if source_item_id is None and source_item_ids:
+            raise ScenarioValidationError(
+                f"{location}: source_item_ids must be empty when source_item_id is null"
             )
         overlap = sorted(set(source_item_ids) & set(related_source_item_ids))
         if overlap:
@@ -299,11 +316,6 @@ def validate_scenario(data: Mapping[str, Any], index: int = 0) -> Scenario:
             )
 
         source_reference = _require_nonempty_string(data, "source_reference", location)
-        if any(term.casefold() in source_reference.casefold() for term in SOURCE_PLACEHOLDER_TERMS):
-            raise ScenarioValidationError(
-                f"{location}: source_reference must not contain an unverified placeholder"
-            )
-
         phase2_values = {
             "scenario_version": _require_nonempty_string(data, "scenario_version", location),
             "conflict_id": _require_nonempty_string(data, "conflict_id", location),

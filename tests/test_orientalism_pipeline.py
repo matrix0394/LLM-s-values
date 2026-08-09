@@ -34,6 +34,12 @@ PHASE2A_SMOKE_CONFIG = (
     / "experiments"
     / "orientalism_phase2a_soc_family_china_smoke.json"
 )
+PHASE2A_CANDIDATE_SCENARIO_FILE = (
+    PROJECT_ROOT
+    / "config"
+    / "scenarios"
+    / "orientalism_phase2a_revision_candidate.json"
+)
 
 
 def valid_scenario_data() -> dict:
@@ -779,3 +785,52 @@ def test_output_contains_complete_v2_prompt_snapshot(tmp_path: Path) -> None:
             f"{record['system_prompt']}\n\n{record['user_prompt']}"
         )
         json.dumps(record, ensure_ascii=False)
+
+
+def test_task_key_changes_when_prompt_or_scenario_revision_changes() -> None:
+    common = {
+        "model": "mock-model",
+        "country": "China",
+        "scenario_id": "SOC_FAMILY_01",
+        "prompt_language": "en",
+        "repeat_id": 0,
+    }
+    baseline = make_task_key(
+        **common,
+        scenario_version="0.2-draft",
+        prompt_template_version="country_identity_v1",
+        prompt_fingerprint="a" * 64,
+    )
+    changed_scenario = make_task_key(
+        **common,
+        scenario_version="0.2-review-candidate",
+        prompt_template_version="country_identity_v1",
+        prompt_fingerprint="a" * 64,
+    )
+    changed_prompt = make_task_key(
+        **common,
+        scenario_version="0.2-draft",
+        prompt_template_version="country_identity_v2",
+        prompt_fingerprint="b" * 64,
+    )
+
+    assert len({baseline, changed_scenario, changed_prompt}) == 3
+
+
+def test_phase2a_revision_candidate_validates_and_stays_draft() -> None:
+    scenarios = load_scenarios(PHASE2A_CANDIDATE_SCENARIO_FILE)
+
+    assert len(scenarios) == 12
+    assert all(scenario.scenario_version == "0.2-review-candidate" for scenario in scenarios)
+    assert all(scenario.status == "draft" for scenario in scenarios)
+
+
+def test_candidate_allows_explicitly_unverified_wvs_mapping_without_guessing() -> None:
+    candidates = {scenario.scenario_id: scenario for scenario in load_scenarios(PHASE2A_CANDIDATE_SCENARIO_FILE)}
+    gender = candidates["SOC_GENDER_01"]
+    family = candidates["SOC_FAMILY_01"]
+
+    assert gender.source_item_id is None
+    assert gender.source_item_ids == ()
+    assert family.source_item_id == "Y003"
+    assert family.source_mapping_type == "adjacent"

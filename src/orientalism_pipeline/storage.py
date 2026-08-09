@@ -17,14 +17,25 @@ def make_task_key(
     scenario_id: str,
     prompt_language: str,
     repeat_id: int,
+    scenario_version: str | None = None,
+    prompt_template_version: str | None = None,
+    prompt_fingerprint: str | None = None,
 ) -> str:
-    """Create a stable key for one generation task."""
+    """Create a stable key for one reproducible generation task.
+
+    The optional version and fingerprint fields preserve compatibility with
+    legacy Phase 1 callers while preventing a changed scenario or prompt from
+    being mistaken for an already-completed task in new runs.
+    """
     identity = {
         "model": model,
         "country": country,
         "scenario_id": scenario_id,
         "prompt_language": prompt_language,
         "repeat_id": repeat_id,
+        "scenario_version": scenario_version,
+        "prompt_template_version": prompt_template_version,
+        "prompt_fingerprint": prompt_fingerprint,
     }
     encoded = json.dumps(identity, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(encoded.encode("utf-8")).hexdigest()

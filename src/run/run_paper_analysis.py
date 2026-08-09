@@ -492,10 +492,10 @@ def validate_study2_pairs(ea_df: pd.DataFrame, config: dict) -> None:
 def compute_english_advantage_per_model(rp_df: pd.DataFrame, ivs_coords: dict) -> pd.DataFrame:
     """Build one English-vs-native pair for every formal model-country cell.
 
-    Countries with multiple official/native languages are averaged in PCA
-    coordinate space before distance is calculated.  They therefore still
-    contribute exactly one observation per model and do not receive extra
-    statistical weight.
+    For countries with multiple official/native languages, calculate one
+    distance per language and then average those distances.  This preserves
+    the error observed in every language while each model-country still
+    contributes exactly one observation.
     """
     config = load_study2_config()
     llm = rp_df[rp_df["data_source"] != "IVS"].copy()
@@ -531,17 +531,28 @@ def compute_english_advantage_per_model(rp_df: pd.DataFrame, ivs_coords: dict) -
                 diagnostics.append(f"{country}/{model}: 缺少{'、'.join(missing)}")
                 continue
 
-            # Average all configured native-language coordinates first, then
-            # calculate one native distance for this model-country pair.
-            native_coords = nat_m.groupby("language")[[
-                "PC1_rescaled", "PC2_rescaled"
-            ]].mean().mean()
+            # Paper method for multilingual countries: calculate the distance
+            # for each native language separately, then average distances.
+            # Averaging coordinates first could let errors in opposite
+            # directions cancel each other out and understate the true error.
+            native_language_distances = []
+            for language in native_languages:
+                language_rows = nat_m[nat_m["language"] == language]
+                language_coords = language_rows[[
+                    "PC1_rescaled", "PC2_rescaled"
+                ]].mean()
+                native_language_distances.append(
+                    euclidean(
+                        language_coords["PC1_rescaled"],
+                        language_coords["PC2_rescaled"],
+                        ivs["PC1"],
+                        ivs["PC2"],
+                    )
+                )
+
+            d_native = float(np.mean(native_language_distances))
             english_coords = en_m[["PC1_rescaled", "PC2_rescaled"]].mean()
 
-            d_native = euclidean(
-                native_coords["PC1_rescaled"], native_coords["PC2_rescaled"],
-                ivs["PC1"], ivs["PC2"],
-            )
             d_en = euclidean(
                 english_coords["PC1_rescaled"], english_coords["PC2_rescaled"],
                 ivs["PC1"], ivs["PC2"],

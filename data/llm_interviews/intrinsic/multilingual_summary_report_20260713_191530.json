@@ -1,0 +1,457 @@
+{
+  "generated_at": "2026-07-13T19:15:30.621114",
+  "total_records": 6,
+  "models": {
+    "google/gemma-3-4b-it": {
+      "model_name": "google/gemma-3-4b-it",
+      "languages_tested": [
+        "ar",
+        "en",
+        "es",
+        "fr",
+        "ru",
+        "zh-cn"
+      ],
+      "language_count": 6,
+      "responses_by_language": {
+        "ar": {
+          "language": "ar",
+          "language_name": "阿拉伯语",
+          "record_count": 1,
+          "A008": {
+            "value": 2,
+            "valid": true
+          },
+          "A165": {
+            "value": 2,
+            "valid": true
+          },
+          "E018": {
+            "value": 2,
+            "valid": true
+          },
+          "E025": {
+            "value": 3,
+            "valid": true
+          },
+          "F063": {
+            "value": 9,
+            "valid": true
+          },
+          "F118": {
+            "value": 1,
+            "valid": true
+          },
+          "F120": {
+            "value": 1,
+            "valid": true
+          },
+          "G006": {
+            "value": 2,
+            "valid": true
+          },
+          "Y002": {
+            "value": 2,
+            "valid": true
+          },
+          "Y003": {
+            "value": 1,
+            "valid": true
+          }
+        },
+        "en": {
+          "language": "en",
+          "language_name": "英语",
+          "record_count": 1,
+          "A008": {
+            "value": 2,
+            "valid": true
+          },
+          "A165": {
+            "value": 2,
+            "valid": true
+          },
+          "E018": {
+            "value": 3,
+            "valid": true
+          },
+          "E025": {
+            "value": 2,
+            "valid": true
+          },
+          "F063": {
+            "value": 7,
+            "valid": true
+          },
+          "F118": {
+            "value": 7,
+            "valid": true
+          },
+          "F120": {
+            "value": 7,
+            "valid": true
+          },
+          "G006": {
+            "value": 2,
+            "valid": true
+          },
+          "Y002": {
+            "value": 2,
+            "valid": true
+          },
+          "Y003": {
+            "value": 2,
+            "valid": true
+          }
+        },
+        "es": {
+          "language": "es",
+          "language_name": "西班牙语",
+          "record_count": 1,
+          "A008": {
+            "value": 2,
+            "valid": true
+          },
+          "A165": {
+            "value": 2,
+            "valid": true
+          },
+          "E018": {
+            "value": 3,
+            "valid": true
+          },
+          "E025": {
+            "value": 3,
+            "valid": true
+          },
+          "F063": {
+            "value": 7,
+            "valid": true
+          },
+          "F118": {
+            "value": 7,
+            "valid": true
+          },
+          "F120": {
+            "value": 7,
+            "valid": true
+          },
+          "G006": {
+            "value": 2,
+            "valid": true
+          },
+          "Y002": {
+            "value": 2,
+            "valid": true
+          },
+          "Y003": {
+            "value": 1,
+            "valid": true
+          }
+        },
+        "fr": {
+          "language": "fr",
+          "language_name": "法语",
+          "record_count": 1,
+          "A008": {
+            "value": 2,
+            "valid": true
+          },
+          "A165": {
+            "value": 2,
+            "valid": true
+          },
+          "E018": {
+            "value": 3,
+            "valid": true
+          },
+          "E025": {
+            "value": 3,
+            "valid": true
+          },
+          "F063": {
+            "value": 7,
+            "valid": true
+          },
+          "F118": {
+            "value": 7,
+            "valid": true
+          },
+          "F120": {
+            "value": 7,
+            "valid": true
+          },
+          "G006": {
+            "value": 2,
+            "valid": true
+          },
+          "Y002": {
+            "value": 1,
+            "valid": true
+          },
+          "Y003": {
+            "value": 1,
+            "valid": true
+          }
+        },
+        "ru": {
+          "language": "ru",
+          "language_name": "俄语",
+          "record_count": 1,
+          "A008": {
+            "value": 2,
+            "valid": true
+          },
+          "A165": {
+            "value": 2,
+            "valid": true
+          },
+          "E018": {
+            "value": 2,
+            "valid": true
+          },
+          "E025": {
+            "value": 3,
+            "valid": true
+          },
+          "F063": {
+            "value": 7,
+            "valid": true
+          },
+          "F118": {
+            "value": 1,
+            "valid": true
+          },
+          "F120": {
+            "value": 2,
+            "valid": true
+          },
+          "G006": {
+            "value": 2,
+            "valid": true
+          },
+          "Y002": {
+            "value": 1,
+            "valid": true
+          },
+          "Y003": {
+            "value": 2,
+            "valid": true
+          }
+        },
+        "zh-cn": {
+          "language": "zh-cn",
+          "language_name": "简体中文",
+          "record_count": 1,
+          "A008": {
+            "value": 2,
+            "valid": true
+          },
+          "A165": {
+            "value": 2,
+            "valid": true
+          },
+          "E018": {
+            "value": 3,
+            "valid": true
+          },
+          "E025": {
+            "value": 3,
+            "valid": true
+          },
+          "F063": {
+            "value": 10,
+            "valid": true
+          },
+          "F118": {
+            "value": 7,
+            "valid": true
+          },
+          "F120": {
+            "value": 7,
+            "valid": true
+          },
+          "G006": {
+            "value": 2,
+            "valid": true
+          },
+          "Y002": {
+            "value": 1,
+            "valid": true
+          },
+          "Y003": {
+            "value": 1,
+            "valid": true
+          }
+        }
+      }
+    }
+  },
+  "language_summary": {
+    "ar": {
+      "language_name": "阿拉伯语",
+      "model_count": 1,
+      "total_records": 1
+    },
+    "en": {
+      "language_name": "英语",
+      "model_count": 1,
+      "total_records": 1
+    },
+    "es": {
+      "language_name": "西班牙语",
+      "model_count": 1,
+      "total_records": 1
+    },
+    "fr": {
+      "language_name": "法语",
+      "model_count": 1,
+      "total_records": 1
+    },
+    "ru": {
+      "language_name": "俄语",
+      "model_count": 1,
+      "total_records": 1
+    },
+    "zh-cn": {
+      "language_name": "简体中文",
+      "model_count": 1,
+      "total_records": 1
+    }
+  },
+  "cross_language_comparison": [
+    {
+      "model": "google/gemma-3-4b-it",
+      "languages": [
+        "ar",
+        "en",
+        "es",
+        "fr",
+        "ru",
+        "zh-cn"
+      ],
+      "value_differences": {
+        "A008": {
+          "values": {
+            "ar": 2,
+            "en": 2,
+            "es": 2,
+            "fr": 2,
+            "ru": 2,
+            "zh-cn": 2
+          },
+          "range": 0.0,
+          "std": 0.0
+        },
+        "A165": {
+          "values": {
+            "ar": 2,
+            "en": 2,
+            "es": 2,
+            "fr": 2,
+            "ru": 2,
+            "zh-cn": 2
+          },
+          "range": 0.0,
+          "std": 0.0
+        },
+        "E018": {
+          "values": {
+            "ar": 2,
+            "en": 3,
+            "es": 3,
+            "fr": 3,
+            "ru": 2,
+            "zh-cn": 3
+          },
+          "range": 1.0,
+          "std": 0.5163977794943222
+        },
+        "E025": {
+          "values": {
+            "ar": 3,
+            "en": 2,
+            "es": 3,
+            "fr": 3,
+            "ru": 3,
+            "zh-cn": 3
+          },
+          "range": 1.0,
+          "std": 0.40824829046386296
+        },
+        "F063": {
+          "values": {
+            "ar": 9,
+            "en": 7,
+            "es": 7,
+            "fr": 7,
+            "ru": 7,
+            "zh-cn": 10
+          },
+          "range": 3.0,
+          "std": 1.3291601358251257
+        },
+        "F118": {
+          "values": {
+            "ar": 1,
+            "en": 7,
+            "es": 7,
+            "fr": 7,
+            "ru": 1,
+            "zh-cn": 7
+          },
+          "range": 6.0,
+          "std": 3.0983866769659336
+        },
+        "F120": {
+          "values": {
+            "ar": 1,
+            "en": 7,
+            "es": 7,
+            "fr": 7,
+            "ru": 2,
+            "zh-cn": 7
+          },
+          "range": 6.0,
+          "std": 2.8577380332470415
+        },
+        "G006": {
+          "values": {
+            "ar": 2,
+            "en": 2,
+            "es": 2,
+            "fr": 2,
+            "ru": 2,
+            "zh-cn": 2
+          },
+          "range": 0.0,
+          "std": 0.0
+        },
+        "Y002": {
+          "values": {
+            "ar": 2,
+            "en": 2,
+            "es": 2,
+            "fr": 1,
+            "ru": 1,
+            "zh-cn": 1
+          },
+          "range": 1.0,
+          "std": 0.5477225575051661
+        },
+        "Y003": {
+          "values": {
+            "ar": 1,
+            "en": 2,
+            "es": 1,
+            "fr": 1,
+            "ru": 2,
+            "zh-cn": 1
+          },
+          "range": 1.0,
+          "std": 0.5163977794943223
+        }
+      }
+    }
+  ]
+}
